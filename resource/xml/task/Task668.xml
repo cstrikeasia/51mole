@@ -1,0 +1,64 @@
+<Tasks ID="668" Name="黑影的目標" AwardMsg="恭喜你獲得1條狼牙項鏈（裝扮），2條河豚和10000摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="407">
+		<EnterMap MapID="407">
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="驚訝" Msg="怎麼都是老人家？村裡沒有年輕人了嗎？" Option=""/>
+				<Talk NpcID="10309" Face="傷心" Msg="是呀，一夜之間，我們村的年輕人都變現在這樣了……嗚嗚嗚……" Option="是誰那麼可惡！"/>
+				<Talk NpcID="10000" Face="生氣" Msg="我一定要揪出兇手！不然我的名字就倒過來念！" Option="樂樂摩？我覺得還挺好聽的…… "/>
+				<Talk NpcID="10000" Face="生氣" Msg="不帶這樣的！你應該幫我一起調查才對！" Option="我沒說不幫忙呀……"/>
+				<Talk NpcID="10002" Face="焦急" Msg="你們別鬧了。姐姐，你們還記得當時都發生了什麼嗎？" Option=""/>
+				<Talk NpcID="10309" Face="傷心" Msg="當時我們都在睡覺，一醒來就變這樣了……" Option="我們先到週圍找找，看看有沒有兇手遺留的痕跡吧！"/>
+			</Action>
+			<Action Cmd="GO_MAP" MapID="408" MapType="0"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="408">
+		<EnterMap MapID="408">
+			<Action Cmd="ADD_EVENT" Param="task668"/>
+			<Action Cmd="GO_MAP" MapID="407" MapType="0"/>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="3" TarMapID="407">
+		<EnterMap MapID="407">
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" TarMapID="407">
+		<EnterMap MapID="407">
+			<Action Cmd="PLAY_MOVIE"  Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+				<Action Cmd="SAY">
+					<Talk NpcID="10000" Face="無聊" Msg="咦，他怎麼就閃了？我還沒亮出真本事呢……" Option="……"/>
+					<Talk NpcID="10000" Face="驚訝" Msg="對了，{$username}你快告訴我你怎麼突然變得那麼厲害？吃興奮劑了？" Option="吃興奮劑是犯法的……"/>
+					<Talk NpcID="10000" Face="驚訝" Msg="你快告訴我呀！快告訴我呀！" Option="先去看看麼麼怎麼樣了。"/>
+				</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="PLAY_MOVIE"  Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			<Action Cmd="PLAY_MOVIE"  Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			<Action Cmd="PLAY_MOVIE"  Param="105" Name="movie_105" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+	
+</Tasks>
+
+
+
+
+

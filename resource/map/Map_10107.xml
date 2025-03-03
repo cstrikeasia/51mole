@@ -1,0 +1,15 @@
+<Map>
+	<NpcList>
+		<Npc ID="10056" Layer="controlLevel" Name="臭臭二號" Ex="269" Ey="393" Cmd="s" Param="1" />
+	</NpcList>
+	
+	<Triggers>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10056" Face="正常" Msg="我也想像豬豬一樣，什麼都不用幹，哈哈！" Option="沒什麼事，我先走了！" Cmd="none" Param="6" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+
