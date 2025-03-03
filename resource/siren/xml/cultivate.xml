@@ -1,0 +1,86 @@
+<!--海妖系統 養成模式配表-->
+<Xml>
+	<Fishes>
+		<Fish ID="1623000" Name="菠蘿魚" Speed="3" Force="1" Intro="菠蘿魚能發出芬芳的水果氣息" Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="180" LevelNum="40,100" Price="10" Type="1" Max="99999" Star="1"  Ability="" Tools="" Life="10" GetWay="商店購買"/>
+		<Fish ID="1623001" Name="冰菠蘿" Speed="3" Force="1" Intro="冰菠蘿是菠蘿魚的藍色變種" Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="180" LevelNum="40,100" Price="10" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="商店購買"/>
+		<Fish ID="1623002" Name="金傲蕉" Speed="3" Force="1" Intro="金傲蕉很孤僻和敏感，需要溫柔對待" Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="120" LevelNum="40,100" Price="10" Type="1" Max="99999"  Ability="" Tools="" Life="10" GetWay="冒險模式"/>
+		<Fish ID="1623003" Name="食人花花" Speed="3" Force="1" Intro="食人花花非常兇狠，小心你的手指" Food="1633000,1633001,1633002" Product="1633004" ProductCD="300" LevelNum="" Price="10" Type="1" Max="99999" Star="2" Ability="" Tools="" Life="10" GetWay="冒險模式"/>
+		<Fish ID="1623005" Name="火龍果魚" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="120" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式"/>
+		<Fish ID="1623006" Name="番茄茄" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633039" ProductCD="600" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式"/>
+		<Fish ID="1623008" Name="玉米米" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633039" ProductCD="600" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式"/>
+		<Fish ID="1623009" Name="烤腸西瓜" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633039" ProductCD="480" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式"/>
+		<Fish ID="1623014" Name="南瓜先生" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633040" ProductCD="1200" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式"/>
+		<Fish ID="1623011" Name="蒜頭阿呆" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633040" ProductCD="1200" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式"/>
+		<Fish ID="1623023" Name="幸運楊桃" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633040" ProductCD="1200" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式"/>
+		<Fish ID="1623015" Name="黃金漢堡魚" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633041" ProductCD="1800" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式"/>
+        <Fish ID="1623016" Name="花心卷" Speed="3" Force="1" Intro="花心卷性情溫和，標致的髮型是它的特點" Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="180" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="海底樂園超級大水桶"/>
+        <Fish ID="1623020" Name="夢露雲吞" Speed="3" Force="1" Intro="蘿蔔白白的皮膚十分光滑喲！" Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="180" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式"/>
+        <Fish ID="1623013" Name="蘿蔔白白" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="180" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式"/>
+        <Fish ID="1623007" Name="胖妞茄子" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633039" ProductCD="480" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式"/>
+        <Fish ID="1623010" Name="蘑菇蝌蚪" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633040" ProductCD="1800" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式"/>
+        <Fish ID="1623019" Name="蝦餃廚子" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633039" ProductCD="600" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="海底樂園超級巨浪"/>
+        <Fish ID="1623018" Name="留戀哥" Speed="3" Force="1" Intro="全身長滿刺的留戀哥，馴化後可以成合格的坐騎" Food="1633000,1633001,1633002,1633042" Product="0" ProductCD="600" LevelNum="" Price="30" Type="2" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式" NeedBall="1"/>
+        <Fish ID="1623017" Name="李小籠" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002,1623042" Product="0,1633003,1633040" ProductCD="600" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="海底冰泉限時活動" NeedBall="1"/>
+        <Fish ID="1623021" Name="葡提提" Speed="3" Force="1" Intro="馴化後會變為富有異域風情的坐騎哦" Food="1633000,1633001,1633002,1633042" Product="0" ProductCD="600" LevelNum="" Price="30" Type="2" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式" NeedBall="1"/>
+        <Fish ID="1623022" Name="金芒果" Speed="3" Force="1" Intro="全身散發著芒果的香氣" Food="1633000,1633001,1633002,1633042" Product="0" ProductCD="600" LevelNum="" Price="30" Type="2" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式" NeedBall="1"/>
+        <Fish ID="1623025" Name="燒賣弟" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="180" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="海底樂園超級大水桶"/>
+        <Fish ID="1623027" Name="花菜子" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="180" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="海底樂園超級大水桶"/>
+        <Fish ID="1623024" Name="麻球理工" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633039" ProductCD="480" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="海底樂園超級巨浪"/>
+        <Fish ID="1623026" Name="水蜜桃姐姐" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633040" ProductCD="1800" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="海底冰泉限時活動"/>
+        <Fish ID="1623032" Name="奮鬥小土豆" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633039" ProductCD="480" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="COSPLAY大賽第四季"/>
+        <Fish ID="1623033" Name="過橋米錢" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633040" ProductCD="1800" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="COSPLAY大賽第四季"/>
+        <Fish ID="1623030" Name="安心油條" Speed="3" Force="1" Intro="" Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="180" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay=""/>
+        <Fish ID="1623029" Name="桃花小饅頭" Speed="3" Force="1" Intro=""  Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="180" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay=""/>
+        <Fish ID="1623012" Name="火爆椒" Speed="3" Force="1" Intro=""  Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="180" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="我們的豐收祭"/>
+        <Fish ID="1623028" Name="小青菜" Speed="3" Force="1" Intro=""  Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="180" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="我們的豐收祭"/>
+        <Fish ID="1623031" Name="卷心阿菜" Speed="3" Force="1" Intro=""  Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="180" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="遊戲達人活躍度寶箱"/>
+        <Fish ID="1623044" Name="夏威夷寶石" Speed="3" Force="1" Intro=""  Food="1633000,1633001,1633002" Product="0,1633003,1633004" ProductCD="180" LevelNum="40,100" Price="30" Type="1" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="遊戲達人活躍度寶箱"/>
+	</Fishes>
+	<Properties>
+		<Property ID="1633000 " Name="彩色魚食" Speed="1.5" AddHung="10"  Tradability="" Prize="" Type="102" Max="99999" VipOnly="" VipBuyAble="" />
+		<Property ID="1633001 " Name="優良魚食" Speed="1.5" AddHung="20"  Tradability="" Prize="" Type="102" Max="99999" VipOnly="" VipBuyAble="" />
+		<Property ID="1633002 " Name="高級魚食" Speed="1.5" AddHung="30"  Tradability="" Prize="" Type="102" Max="99999" VipOnly="" VipBuyAble="" />
+		<Property ID="1633042 " Name="坐騎魚食" Speed="1.5" AddHung="30"  Tradability="" Prize="" Type="102" Max="99999" VipOnly="" VipBuyAble="" />
+		<Property ID="1633043 " Name="定心丸" Speed="1.5" AddHung="30"  Tradability="" Prize="" Type="102" Max="99999" VipOnly="" VipBuyAble="" />
+
+		<Property ID="1633003" Name="銀貝殼" Speed="1.5"   Tradability="" Prize="1" Type="105" Max="99999" VipOnly="" VipBuyAble="" />
+		<Property ID="1633004" Name="金貝殼" Speed="1.5"   Tradability="" Prize="3" Type="105" Max="99999" VipOnly="" VipBuyAble="" />
+		<Property ID="1633007" Name="鑽石貝殼" Speed="1.5"   Tradability="" Prize="10" Type="105" Max="99999" VipOnly="" VipBuyAble="" />
+		<Property ID="1633039" Name="白珍珠" Speed="1"   Tradability="" Prize="10" Type="105" Max="99999" VipOnly="" VipBuyAble="" />
+		<Property ID="1633041" Name="藍珍珠" Speed="1"   Tradability="" Prize="20" Type="105" Max="99999" VipOnly="" VipBuyAble="" />
+		<Property ID="1633040" Name="黑珍珠" Speed="1"   Tradability="" Prize="30" Type="105" Max="99999" VipOnly="" VipBuyAble="" />
+
+		<Property ID="1633005" Name="海洋背景" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble=""IsBG="1" />
+		<Property ID="1633006" Name="黃珊瑚" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633008" Name="紫珊瑚" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633009" Name="黃珊瑚水草" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633010" Name="紫珊瑚水草" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633027" Name="粉紅鹿角珊瑚" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633028" Name="棕黃鹿角珊瑚" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633029" Name="暗紅掌形珊瑚" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633030" Name="朱紅掌形珊瑚" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633031" Name="紫色樹珊瑚" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633032" Name="黃色樹珊瑚" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633047" Name="海螺小窩" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633049" Name="螃蟹蒸籠" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633050" Name="章魚醬油瓶" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633051" Name="貝殼調味罐" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		
+		<Property ID="1633060" Name="水晶吊燈" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633061" Name="鑽石海螺" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633048" Name="海底秋千" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633046" Name="鑽石噴泉" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633045" Name="醉章魚發泡機" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633044" Name="珊瑚礁背景" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble=""IsBG="1" />
+		<Property ID="1633053" Name="華麗宮殿背景" Speed="0" Tradability="" Price="" Type="103" Max="1" VipOnly="" VipBuyAble=""IsBG="1"/>
+		<Property ID="1633052" Name="漂亮的果汁杯" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+	    <Property ID="1633055" Name="珍珠樹" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+	    <Property ID="1633057" Name="金珊瑚" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+	    <Property ID="1633056" Name="銀珊瑚" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+        <Property ID="1633059" Name="美人魚音樂盒" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+		<Property ID="1633058" Name="鑽石珊瑚" Speed="0"   Tradability="" Prize="" Type="103" Max="" VipOnly="" VipBuyAble="" />
+	</Properties>
+</Xml>
+
+
+
