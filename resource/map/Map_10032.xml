@@ -1,0 +1,37 @@
+<Map>
+	<NpcList>
+		<Npc ID="10036" Layer="depthLevel" Name="捷克" Ex="656" Ey="454"  Cmd="s" Param="100" AddTaskOption="1" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="item_12202" Layer="controlLevel" Ex="540" Ey="230" Cmd="act" Param="getItem12202" />
+		
+		<Trigger ResName="go_26" Layer="controlLevel" Ex="747" Ey="326" Cmd="alt_map" Param="26" />
+		<Trigger ResName="go_350" Layer="depthLevel" Ex="754" Ey="447" Cmd="alt_map" Param="350" Tips="貓的夜市"/>
+		
+		<Trigger ResName="book1_mc" Layer="controlLevel" Ex="198" Ey="417" Cmd="p" Param="HaMuLaiTeBookPanel" />
+		<Trigger ResName="book2_mc" Layer="controlLevel" Ex="205" Ey="325" Cmd="p" Param="HaMuLaiTeBookPanel" />
+		<Trigger ResName="book3_mc" Layer="controlLevel" Ex="345" Ey="265" Cmd="p" Param="HaMuLaiTeBookPanel" />
+		<Trigger ResName="book4_mc" Layer="controlLevel" Ex="660" Ey="312" Cmd="p" Param="HaMuLaiTeBookPanel" />
+		<Trigger ResName="book5_mc" Layer="controlLevel" Ex="666" Ey="337" Cmd="p" Param="HaMuLaiTeBookPanel" />
+		<Trigger ResName="book6_mc" Layer="controlLevel" Ex="465" Ey="551" Cmd="p" Param="HaMuLaiTeBookPanel" />
+		<Trigger ResName="book7_mc" Layer="controlLevel" Ex="589" Ey="524" Cmd="p" Param="HaMuLaiTeBookPanel" />
+		<Trigger ResName="book8_mc" Layer="controlLevel" Ex="809" Ey="517" Cmd="p" Param="HaMuLaiTeBookPanel" />
+		<Trigger ResName="book9_mc" Layer="controlLevel" Ex="760" Ey="398" Cmd="p" Param="HaMuLaiTeBookPanel" />
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="121" NpcID="10036" Face="正常" Msg="萬聖節？怎麼有種似曾相識的感覺！" Option="送你15個月餅" Cmd="act" Param="getMoonCakePrize"  />
+		<Talk ID="122" NpcID="10036" Face="正常" Msg="萬聖節？怎麼有種似曾相識的感覺！" Option="你太客氣了" Cmd="act" Param="getPrize"  />
+		<Talk ID="123" NpcID="10036" Face="正常" Msg="不用這麼客氣，你已經送給過我月餅了" Option="嗯，好的" Cmd="none" Param=""/>
+	
+		<Talk ID="100" NpcID="10036" Face="正常" Msg="書房裡保存了很多關於摩爾莊園的書籍，小摩爾們想了解摩爾莊園就要來書房。" Option="好的，我知道了" Cmd="none" Param="1" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10036" Face="正常" Msg="謝謝你告訴我關於摩利亞的故事，希望明天也能見到你。" Option="我知道了" Cmd="none" Param="1" AddTaskOption="1" />
+<!-- 		<Talk ID="101" NpcID="10036" Face="正常" Msg="你心中有努力的目標嗎？" Option="沒有。$正在準備制定。$有。" Cmd="s$s$s" Param="102$102$102" /> -->
+<!-- 		<Talk ID="102" NpcID="10036" Face="正常" Msg="恩，和我一樣。目標不在乎高低，關鍵在於落實。如果只是空談，不如不要制定。去吧，菩提大伯在等你呢。" Option="好，我現在就過去。" Cmd="act" Param="loveTestMap" /> -->
+	</Talks>
+</Map>
+
+
+
+

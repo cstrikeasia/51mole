@@ -1,0 +1,18 @@
+<Map>
+	<NpcList>
+		
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_4" Layer="controlLevel" Ex="105" Ey="496" Cmd="alt_map" Param="4" Tips="摩爾拉雅山腳" />
+		<Trigger ResName="go_40" Layer="controlLevel" Ex="195" Ey="295" Cmd="alt_map" Param="40" Tips="漿果秘道" />
+		<Trigger ResName="go_37" Layer="controlLevel" Ex="645" Ey="244" Cmd="alt_map" Param="37" Tips="摩爾拉雅山頂" />
+		<Trigger ResName="go_34" Layer="controlLevel" Ex="748" Ey="268" Cmd="alt_map" Param="34" Tips="獵人小屋" />
+	</Triggers>
+	<Talks>
+	</Talks>
+</Map>
+
+
+
+

@@ -1,0 +1,21 @@
+<Map>
+	<NpcList>
+		<Npc ID="10053" Layer="controlLevel" Name="獵人M" Ex="308" Ey="272" Cmd="s" Param="2" AddTaskOption="1" />
+	</NpcList>
+	
+	<Triggers>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="2" NpcID="10053" Face="正常" Msg="我是週遊世界的獵人M，你找我有什麼事嗎？" Option="我有許多豬豬幣$沒什麼事" Cmd="act$none" Param="OpenPigExchange$1" AddTaskOption="1" />
+	
+		<Talk ID="3650" NpcID="10053" Face="正常" Msg="SMC小獵人職業正在火熱召集中，你有這個勇氣加入這個勇敢與智慧共存的職業嗎？" Option="野生動物知識問答！$觀察訓練和抓捕訓練！$參加馴養訓練！$沒什麼事" Cmd="act$act$act$none" Param="Open3650$Open3652$Open3653$1"/>
+	
+		<Talk ID="3651" NpcID="10053" Face="正常" Msg="你已經通過了這項考驗，看看還有什麼沒有完成的吧！" Option="好的"  />
+	
+	</Talks>
+</Map>
+
+
+
+
