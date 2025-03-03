@@ -1,0 +1,106 @@
+<Tasks ID="659" Name="月亮是個奶油蛋糕" AwardMsg="恭喜你獲得1個暗黑藍莓派（摩靈）、1個木之抹茶卷（裝扮）和1萬摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="38">
+		<EnterMap MapID="38">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10016" Face="開心" Msg="快來看看，重新調試完成的登月機器，一定能帶你們飛到月亮上去！" Option=""/>
+				<Talk NpcID="10002" Face="開心" Msg="麼麼好開心呀，可以去月亮上找哥哥去啦！樂樂，{$username}，你們一起去嗎？" Option=""/>
+				<Talk NpcID="10000" Face="開心" Msg="我要去我要去！{$username}一定也一起去的啦！對吧？" Option="（憨笑）嘿嘿，怎麼能少了我呢！"/>
+				<Talk NpcID="10016" Face="開心" Msg="那麼就準備吧，大家各就各位，RX準備啟動！" Option="等會等會，這次一定成功嗎？公主也在哎！"/>
+				<Talk NpcID="10016" Face="開心" Msg="放心了！RX已經去過月亮上了！" Option="真的嗎？那麼厲害？"/>
+				<Talk NpcID="10305" Face="正常" Msg="Bibo，RX本週已經完成了半程和全程兩次實驗，確保安全無誤，請大家開始登月之旅吧！" Option="耶！好開心啊！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="38">
+		<EnterMap MapID="38">			
+			<Action Cmd="OPEN_PANEL"  Param="LauchRocketStartPanel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="finishLauchRocket"/>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="順利登陸月球，哇，好棒啊！這是真的嗎？不會是我做夢吧？"/>
+			<Action Cmd="GO_MAP" MapID="403" MapType="0"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="3" TarMapID="403">
+		<EnterMap MapID="403">		
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			
+		    <Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+		    <Action Cmd="SAY">
+				<Talk NpcID="10000" Face="開心" Msg="哇，都是好吃的！這裡就是月亮嗎？" Option=""/>
+				<Talk NpcID="10002" Face="開心" Msg="好漂亮啊，哥哥就住在這裡嗎？麼麼也想搬到這裡來住了呢！" Option="我怎麼感覺有點不大對呢？一點都漂不起來，和大伯說的不一樣啊！"/>
+				<Talk NpcID="10002" Face="疑惑" Msg="大伯說的？月亮上可以飛嗎？" Option="對啊~"/>
+				<Talk NpcID="10002" Face="正常" Msg="大伯還說月亮不是奶油的呢！現在看來真是個奶油做的呢！" Option="可是這裡真的是月亮嗎？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+		    <Action Cmd="SAY">
+				<Talk NpcID="10002" Face="開心" Msg="走吧！冒險開始，麼麼要去找哥哥住的地方！" Option="布多多布少少要是來了，一定開心的要命，這裡都是好吃的……"/>
+				<Talk NpcID="10002" Face="開心" Msg="快看快看，這裡是一條巧克力河流哎，好想吃哦！" Option="這裡大概就是我們在莊園裡看到的，月亮上的陰影吧！"/>
+				<Talk NpcID="10002" Face="開心" Msg="對哦！好好玩哦~" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="4" TarMapID="403">
+		<EnterMap MapID="403">		
+			 <Action Cmd="SAY">
+				<Talk NpcID="10000" Face="驚訝" Msg="天黑了？" Option="好像天黑的有點快啊！"/>
+				<Talk NpcID="10002" Face="疑惑" Msg="就是啊，怎麼會天黑的？" Option="公主，你看那裡！"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6"/>
+			
+		    <Action Cmd="OPEN_PANEL" Param="Task659Panel"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="5" TarMapID="403">
+		<EnterMap MapID="403">		
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="驚訝" Msg="喂，怎麼鑽進去了？" Option="巧克力上插了一把劍哎。"/>
+				<Talk NpcID="10002" Face="疑惑" Msg="感覺剛才沒有看到這個東西啊" Option="拔出劍說不定就能抓到蝴蝶了。"/>
+				<Talk NpcID="10000" Face="開心" Msg="我來我來！" Option=""/>
+			</Action>
+			
+		    <Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>
+
+
