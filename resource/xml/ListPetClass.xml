@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListAll>   
+ 
+		<item ID="1" Type="no" Name="語言課1" Price="100" AllDays="7"/>
+		<item ID="2" Type="no" Name="語言課2" Price="100" AllDays="14"/>
+		<item ID="11" Type="1" Name="飛行課" Price="100" AllDays="7"/>
+		<item ID="12" Type="1" Name="潛水課" Price="100" AllDays="7"/>
+		<item ID="13" Type="1" Name="手工課" Price="100" AllDays="1"/>
+		<item ID="14" Type="1" Name="清泥巴課" Price="100" AllDays="7"/>
+		<item ID="15" Type="1" Name="英語課" Price="100" AllDays="14"/>
+		<item ID="16" Type="1" Name="動物課1" Price="300" AllDays="3"/>
+  
+</ListAll>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
