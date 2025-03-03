@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 用來配置蘑菇嚮導
+    根據蘑菇嚮導面板上的4個標籤，這裡也分為了4個分類
+    在熱門問題分類下，會配置一些莊園近期的重大系統或者功能的FAQ，同時一些太舊的FAQ也會刪除。
+    在莊園遊戲分類下，會配置一些遊戲的說明，並且提供快捷的跳轉入口。
+    在新手指導分類下，會配置一些關於新手引導相關的問題和常用功能的跳轉；
+    在公民管理處分類下，會配置莊園常見NPC的介紹和跳轉功能。
+    要注意一點，每個分類下配置的順序，和實際顯示出來的順序剛好是相反的哦
+-->
+<wizard>
+	<content id="2" name="熱門問題">
+		<item>
+			<ico>momoshanghui.swf</ico>
+			<bigico>yilianbig.swf</bigico>
+			<que>    摩摩商會有什麼作用呢？ </que>
+		<ans>    為了能夠更好的規劃米勒大道後期的建設，另外對所有摩爾的店鋪進行統一的管理，所以在麼麼公主的倡議下建立了摩摩商會，而伊蓮通過競選成為了會長，以後小摩爾們有任何與米勒大道建設相關的問題都可以去找伊蓮哦。</ans>
+		</item>
+		<item>
+			<ico>jianzhushi.swf</ico>
+			<bigico>tommybig.swf</bigico>
+			<que>    成為建築師後可以做什麼呢？  </que>
+		<ans>    只要成為了建築師，你就可以去建設署在湯米精心準備的工作區中去製作各種的傢俱，從精製小巧的桌椅到龐大複雜的小屋，應有盡有，不過你必須要通過不斷的努力，來提高自己建築師的級別，才能製作更多更好的傢俱。</ans>
+		</item>
+		<item>
+			<ico>make.swf</ico>
+			<bigico>tommybig.swf</bigico>
+			<que>    我要如何製造自己喜愛的傢俱呢？ </que>
+		<ans>    首先要通過湯米的重重考驗成為建築師，帶上充足的材料，在建設署的工作區裡選擇想要製作的傢俱，開始動手建造啦。\n    要是沒有你心中想要的傢俱，你只要寫信告訴公民管理處，就有機會在這裡把它們製作出來哦。</ans>
+		</item>
+		<item>
+			<ico>chongchonggu.swf</ico>
+			<bigico>putibig.swf</bigico>
+			<que>    蟲蟲穀有哪些食材？怎麼獲取？ </que>
+		<ans>    在四季如春的蟲蟲穀中，總是不斷的有新發現，最近這裡出現了3種稀有食材，分別是蟲蟲穀波浪菜、蟲蟲穀岩石菇和蟲蟲穀卷卷菜，只要帶上你的拉姆，使用對應的水、火、木三系技能，就可以得到啦。</ans>
+		</item>
+		<item>
+			<ico>jinmogu.swf</ico>
+			<bigico>jessbig.swf</bigico>
+			<que>    如何領取金蘑菇嚮導徽章？ </que>
+		<ans>    通過了SMC中成為蘑菇嚮導的職業任務後，在愛心嚮導社領取全套嚮導服務套裝並且穿戴起來，在場景中坐下，努力提升自己的嚮導等級。將金蘑菇嚮導升到頂級，然後就可以領取愛心嚮導社的金蘑菇嚮導徽章啦。</ans>
+		</item>
+			<item>
+			<ico>kaicanting.swf</ico>
+			<bigico>tommybig.swf</bigico>
+			<que>    我要如何開設餐廳？ </que>
+		<ans>    先要去摩摩商會領取找伊蓮摩摩土地卡，然後再來建設署找我就可以建立一個屬於自己的餐廳啦，不過每個小摩爾只能建立一個餐廳哦。</ans>
+		</item>
+		<item>
+			<ico>kaicantingzuoshenmo.swf</ico>
+			<bigico>yilianbig.swf</bigico>
+			<que>    開設餐廳後能夠做些什麼？  </que>
+		<ans>    開設餐廳之後你就可以親手製作美味的菜肴，來招待前來吃飯的拉姆了。通過你的努力經營，還可以更換更多更好的房型，製作更加神奇的菜肴哦。</ans>
+		</item>
+		<item>
+			<ico>wuxing.swf</ico>
+			<bigico>feili.swf</bigico>
+			<que>    怎樣做出五星級菜品？ </que>
+		<ans>    菜品也有星級啦！哈哈！菲力專門研製的五星級菜品！只要大家堅持反復做好每一道菜就一定會有收穫！升到五星級還會有額外的收益呢！\n    菲力小秘訣:“沒有做不好的菜式，只有不動手的廚師”，大家努力呦！</ans>
+		</item>
+		<item>
+			<ico>toukui.swf</ico>
+			<bigico>qishishen.swf</bigico>
+			<que>    怎樣成為森林騎士？ </que>
+		<ans>    大家要通過森林騎士訓練，努力提升自己的森林騎士等級，最終戰勝土林長老，就可以成為榮耀的森林騎士了！</ans>
+		</item>
+		<item>
+			<ico>lushuye.swf</ico>
+			<bigico>tulinzhanglao.swf</bigico>
+			<que>    龍之幻境在哪裡呢？ </que>
+		<ans>    土林長老用法術幻化出來的龍之幻境就在藤蔓森林裡，大家可以去幻境裡挑戰暗黑巨龍，提高自己的戰鬥技巧哦！</ans>
+		</item>
+		<item>
+			<ico>longdan1.swf</ico>
+			<bigico>fudanr8.swf</bigico>
+			<que>    孵蛋機能孵化龍蛋嗎？ </que>
+		<ans>    當然可以啦，大衛的孵蛋機R8研製成功嘍！快帶上你想要孵化的龍蛋去農場發明屋找R8幫忙孵出飛龍吧！大家留在黑森林裡孵化的龍蛋也能從R8這裡取出來哦！</ans>
+		</item>
+		<item>
+			<ico>fiveyunduo.swf</ico>
+			<bigico>moontuzi.swf</bigico>
+			<que>    怎樣得到超級點點豆？ </que>
+		<ans>    金燦燦的超級點點豆可是來自天上的禮物，價值連城哦！超級棒的點點豆能兌換很多好東西呢！大家可以成為超級拉姆或者購買一些大禮包時就能獲得超級點點豆，甚至在完成一些任務後也有可能獲得超級點點豆哦！</ans>
+		</item>
+		<item>
+			<ico>supperdoudou.swf</ico>
+			<bigico>yilianjiejie.swf</bigico>
+			<que>    超級點點豆有什麼作用？ </que>
+		<ans>    超級點點豆是月光光兔從天上帶來的禮物，使用超級點點豆可以買到漂亮的裝扮以及許多平時很難得到的寶貝喲！快打開《天上來的禮物》瞭解更多點點豆的秘密吧</ans>
+		</item>
+		<item>
+			<ico>lahmteacher.swf</ico>
+			<bigico>putidabo.swf</bigico>
+			<que>    怎樣成為拉姆小導師？ </que>
+		<ans>    想要成為拉姆小導師，一定要通過入職考驗哦！菩提大伯會通過大家對小拉姆各個方面的瞭解情況來挑選出合格的拉姆小導師哦！大家快去接受考驗，成為拉姆小導師吧！</ans>
+		</item>
+		<item>
+			<ico>dog.swf</ico>
+			<bigico>peiyuwo.swf</bigico>
+			<que>    怎麼讓派對狗狗配成對？ </que>
+		<ans>    需要2個小摩爾分別帶領成年的紳士派對犬和派對禮賓犬來到陽光牧場的陽光育嬰室中，進行配對，24小時之後小摩爾就可以來領取一隻屬於自己的幼崽。要注意哦！每只禮賓犬只能配對1次。</ans>
+		</item>
+		<item>
+			<ico>diandiandou.swf</ico>
+			<bigico>lutaidapao.swf</bigico>
+			<que>    怎麼玩超級點點豆開大炮？ </que>
+		<ans>    在城堡露臺上有一門點點豆大炮，只要點擊大炮放入一定數量的超級點點豆後，就可以開啟大炮啦！豐富的獎勵等你來領取哦！</ans>
+		</item>
+<item>
+			<ico>longbag.swf</ico>
+			<bigico>zuoqi.swf</bigico>
+			<que>    飛龍背包怎麼不見了？ </que>
+		<ans>    飛龍背包現在升級為騎寵背包了喲！這可是大衛的又一項偉大的發明。背包裡不僅能夠裝飛龍，還可以看到屬於你的坐騎呢，點開你的騎寵背包看看吧！</ans>
+		</item>
+				<item>
+			<ico>jiankangyingyangshi.swf</ico>
+			<bigico>kelao.swf</bigico>
+			<que>    如何成為健康營養師？</que>
+		<ans>    去愛心教堂找克勞神父，他會告訴你如何成為健康營養師的。成為健康營養師還要通過克勞神父的考驗才行喲！</ans>
+		</item>
+					<item>
+			<ico>nangua.swf</ico>
+			<bigico>chaojilamu.swf</bigico>
+			<que>    如何參與南瓜賽跑呢？</que>
+		<ans>    參加南瓜賽跑的地點就在愛心教堂門口喲！快帶上你的超級拉姆一起去吧！比比看誰是第一名。</ans>
+		</item>
+					<item>
+			<ico>jiankangyingyangshi.swf</ico>
+			<bigico>jiankangyingyangshitaozhuang.swf</bigico>
+			<que>    健康營養師的套裝如何得到呢？</que>
+		<ans>    入職健康營養師只是初級的營養師呢，隨著你對健康營養的瞭解，你的等級會不斷提高，就可以得到健康營養師的套裝了。現在就去學習健康營養的知識吧！</ans>
+		</item>
+	
+		<item>
+			<ico>aixinfenbi.swf</ico>
+			<bigico>lamu.swf</bigico>
+			<que>    如何使用愛心粉筆？ </que>
+		<ans>    在花嬸的小攤能買到愛心粉筆呢！給小拉姆們上課的時候，看誰不認真就用愛心粉筆扔他吧！</ans>
+		</item>
+
+		             <item>
+		<ico>tianshiyuan.swf</ico>
+		<bigico>ailianna.swf</bigico>
+		<que>    如何進入天使園？ </que>
+		<ans>    在自己的家園裡點擊“天使園”的牌子就能進入天使園樂哦！</ans>
+		</item>
+		<item>
+		<ico>yunduo.swf</ico>
+		<bigico>ailianbaobao.swf</bigico>
+		<que>    如何拯救天使種子？ </que>
+		<ans>    登上神秘湖雲海點擊雲海陽光區和烏雲區進入遊戲。點擊滑鼠起跳，踏著雲朵向上跳，遇到天使種子就把它們救出來吧！</ans>
+		</item>
+    <item>
+		<ico>tianshiyuan.swf</ico>
+		<bigico>lingqijingti.swf</bigico>
+		<que>    天使園的靈氣如何補充？ </que>
+		<ans>    在天使園的左上角點擊補充靈氣的按鈕，就可以用你的農牧產品給自己的天使園補充靈氣了哦！</ans>
+		</item>
+		
+		<item>
+		<ico>tianshidan.swf</ico>
+		<bigico>liwuhe.swf</bigico>
+		<que>    怎樣獲得龍蛋？ </que>
+		<ans>    目前想獲得龍蛋的話，可以聯繫擁有超級拉姆的好友，詢問他們是否還存有龍蛋，如果他們願意，請他們將龍蛋放入友誼寶盒內，你前往領取。</ans>
+		</item>
+		
+		<item>
+		<ico>ninimomo.swf</ico>
+		<bigico>xuexue.swf</bigico>
+		<que>    怎麼得到坐騎？ </que>
+		<ans>    有以下幾種天使可以做為坐騎：尼尼莫莫，紅孩兒，茸茸斯達，艾蓮娜，雪雪，愛心美刺，絢螢火，這些天使都在騎寵背包裡哦。</ans>
+		</item>
+		
+		<item>
+		<ico>dixiacheng.swf</ico>
+		<bigico>dashuguai.swf</bigico>
+		<que>    怎樣挖掘地下寶藏？ </que>
+		<ans>    通過尼爾拉塔地下古城門，就可以進入地下城，開始挖掘各種寶藏。</ans>
+		</item>
+		
+		<item>
+		<ico>tianshiyuan.swf</ico>
+		<bigico>ailianna.swf</bigico>
+		<que>    怎樣獲得天使種子？ </que>
+		<ans>    獲得天使種子的方法有很多，可以登上神秘湖雲海點擊雲海陽光區和烏雲區拯救天使種子，翻開梅森雜貨箱也有機會獲得天使種子，關注每週新天使，也有機會獲得天使種子。</ans>
+		</item>
+	</content>
+	<content  id="0" name="莊園遊戲">
+		<item>
+			<ico>huaxue.swf</ico>
+		<que> 滑雪：位於摩爾拉雅山頂，由於那裡終年積雪，因此成為了莊園的滑雪勝地，想要去體驗一下的小摩爾們去看看吧。</que>
+			<mapID> 37 </mapID>
+		</item>
+		<item>
+			<ico>dachu.swf</ico>
+		<que> 開心大廚：位於摩爾餐廳之中，想要學到尼克積累多年的做菜經驗的摩爾可不要錯過哦～。</que>
+			<mapID> 17 </mapID>
+		</item>
+		<item>
+			<ico>fish.swf</ico>
+			<que> 釣魚：位於神秘湖畔，在這個平靜的碼頭可以悠閒的享受釣魚帶來的樂趣。</que>
+			<mapID> 8 </mapID>
+		</item>
+		<item>
+			<ico>zongdongyuan.swf</ico>
+			<que> 冰上總動員：位於摩爾拉雅滑冰場，在那裡出現了奇怪的外星人，每一個小摩爾都要與入侵者鬥志鬥勇保衛莊園。 </que>
+			<mapID> 5 </mapID>
+		</item>
+		<item>
+			<ico>paopaolong.swf</ico>
+			<que> 泡泡龍：位於淘淘樂街的寵物店，在這裡有一台有趣的泡泡龍遊戲機，彩虹姐姐有空的時候很喜歡玩。 </que>
+			<mapID> 21 </mapID>
+		</item>
+		<item>
+			<ico>jiliu.swf</ico>
+			<que> 激流勇進：位於漿果叢林的彩虹瀑布，這裡河水湍急，很適合喜歡漂流運動的摩爾來挑戰自我。 </que>
+			<mapID>42</mapID>
+		</item>
+		<item>
+			<ico>bahe.swf</ico>
+			<que> 拔河：位於拉姆運動場中，這是一個考驗團隊配合的遊戲，小摩爾們找上各自的好友來互相競爭吧。 </que>
+			<mapID> 68 </mapID>
+		</item>
+		<item>
+			<ico>fangkuai.swf</ico>
+			<que> 摩羅斯方塊：位於摩爾城堡地下，經典的益智類小遊戲深受眾多摩爾的歡迎。</que>
+			<mapID> 14 </mapID>
+		</item>
+		<item>
+			<ico>wuziqi.swf</ico>
+			<que> 五子棋：位於城堡書房，平時看書覺得困倦的時候，麼麼公主總是會拉著身邊的侍衛一起對戰幾局的。 </que>
+			<mapID> 32 </mapID>
+		</item>
+		<item>
+			<ico>xiangqi.swf</ico>
+			<que> 象棋：位於獵人小屋之中，在暖意融融的小屋中與好友下兩局象棋，看看窗外的雪景，真是很有意境呀。 </que>
+			<mapID> 34 </mapID>
+		</item>
+		<item>
+			<ico>pinpan.swf</ico>
+			<que> 快樂拼盤：位於西部遊樂場，色彩豐富，容易上手，學習了一天之後可以來好好放鬆一下。</que>
+			<mapID> 6 </mapID>
+		</item>
+		<item>
+			<ico>nongfu.swf</ico>
+		<que> 摩爾小農夫:位於開心農場，由於梅森為了豐富莊園植物品種而四處奔波，這塊田地就交給小摩爾們來照看啦。</que>
+			<mapID> 10 </mapID>
+		</item>
+		<item>
+			<ico>guoshi.swf</ico>
+		<que> 摘果實:位於漿果叢林的大樹下面，小摩爾們在拉姆的幫助下，利用神奇的蹦床去大樹上摘取新鮮的果實。</que>
+			<mapID> 41 </mapID>
+		</item>
+		<item>
+			<ico>yinghuochong.swf</ico>
+		<que> 抓螢火蟲:位於漿果叢林的樹洞中，小摩爾們要仔細辨認各種顏色的螢火蟲，細心和謹慎是這款遊戲的秘訣。</que>
+			<mapID> 41 </mapID>
+		</item>
+		<item>
+			<ico>pig.swf</ico>
+		<que> 豬豬快跑:位於陽光牧場門口，這裡都是尤尤精心飼養的紅豬，為了它們的健康成長，帶領著可愛的豬豬進行遊戲吧。</que>
+			<mapID> 9 </mapID>
+		</item>
+		<item>
+			<ico>shoot.swf</ico>
+		<que> 警室射擊:位於摩爾莊園警署，想要體驗射擊的樂趣嗎？快來摩爾莊園警署吧，不過不能把槍支帶出警署哦。</que>
+			<mapID> 44 </mapID>
+		</item>
+		<item>
+			<ico>tiaoshui.swf</ico>
+			<que> 跳水:位於東部遊樂場，無論是炎熱的夏天還是寒冷的冬季，喜歡水的小摩爾們都會在這裡展示跳水絕技。</que>
+			<mapID> 7 </mapID>
+		</item>
+		<item>
+			<ico>aichiyu.swf</ico>
+		<que> 拉姆愛吃魚:位於神秘的摩羅地海，拉姆見到美味的魚兒就會不停的吃呀吃呀，然後就會變成一隻巨大的拉姆咯。</que>
+			<mapID> 50 </mapID>
+		</item>
+		<item>
+			<ico>dance.swf</ico>
+		<que> 摩爾愛跳舞:位於東部遊樂場，在這裡每一個感受到音樂魅力的小摩爾都會沉浸在舞蹈的快樂之中。</que>
+			<mapID> 7 </mapID>
+		</item>
+		<item>
+			<ico>renzhi.swf</ico>
+			<que> 營救人質:位於摩爾莊園警署，在這裡你成為一個勇敢的員警，孤身一人沖過重重障礙，解救人質。</que>
+			<mapID> 44 </mapID>
+		</item>
+		<item>
+			<ico>dagong.swf</ico>
+		<que> 餐廳打工:位於摩爾餐廳中，玩家會身穿上服務員套裝，幫助尼克應付各種各樣的顧客，保證餐廳經營順利。</que>
+			<mapID> 17 </mapID>
+		</item>
+		<item>
+			<ico>zhaocha.swf</ico>
+		<que> 摩摩來找茬:位於西部遊樂場的遊戲小屋，這裡有很多有趣的圖片，但總有一些錯誤，小摩爾們去把錯誤找出來吧。</que>
+			<mapID> 22 </mapID>
+		</item>
+		<item>
+			<ico>caoping.swf</ico>
+		<que> 修剪小草坪:位於拉姆運動場，這一個非常考驗玩家邏輯推理能力的遊戲，你能夠解決這裡的重重謎題嗎？</que>
+			<mapID> 68 </mapID>
+		</item>
+		<item>
+			<ico>lianliankan.swf</ico>
+		<que> 無敵連連看:位於西部遊樂場的遊戲小屋中，小摩爾可以在這裡比比看，究竟誰的眼力好、反應快。</que>
+			<mapID> 22 </mapID>
+		</item>
+		<item>
+			<ico>class.swf</ico>
+			<que> 摩爾大課堂:位於摩爾大學，帶上你的好友一起來這裡開始入緊張的搶答遊戲吧，在歡快的氣氛中還能增長知識。</que>
+			<mapID> 77 </mapID>
+		</item>
+		<item>
+			<ico>icecream.swf</ico>
+			<que> 經營冰淇淋小屋:位於摩爾城堡，你能夠在這裡製作各種冰淇淋，並且體會到經營一個店鋪的艱辛。</que>
+			<mapID> 1 </mapID>
+		</item>
+		<item>
+			<ico>huanyou.swf</ico>
+			<que> 環游摩爾莊園：位於摩爾拉雅山頂，通過這個遊戲你能欣賞到從空中看摩爾莊園樂趣，體驗到環游莊園的驚險。</que>
+			<mapID> 37 </mapID>
+		</item>
+		<item>
+			<ico>pintu.swf</ico>
+			<que> 修復摩爾名畫：位於城堡的二樓，是一個非常考驗小摩爾們記憶力的遊戲，喜歡接受挑戰的小摩爾們不要錯過哦。</que>
+			<mapID> 16 </mapID>
+		</item>
+		<item>
+			<ico>jinpai.swf</ico>
+			<que> 金牌消防員：位於消防署，火災永遠是莊園最大的隱患，每當有火情出現，消防員們總是會出現在第一線。</que>
+			<mapID> 75 </mapID>
+		</item>
+		<item>
+			<ico>airfly.swf</ico>
+			<que> 飛行棋：位於西部遊樂場，想要體驗刺激的空戰嗎？那就帶上你的好友來比賽一場，看看誰是最棒的飛行員。</que>
+			<mapID> 6 </mapID>
+		</item>
+		<item>
+			<ico>xunbao.swf</ico>
+			<que> 神秘湖底尋寶：位於SMC基地，神秘湖總是埋藏著很多寶藏，吸引著無數的探險者來此尋寶。</que>
+			<mapID> 31 </mapID>
+		</item>
+		<item>
+			<ico>banyungong.swf</ico>
+			<que> 陽光搬運工：位於陽光牧場，尤尤管理的陽光牧場每天都要搬運很多飼料，喜歡動物的小摩爾們快去幫忙吧。</que>
+			<mapID> 79 </mapID>
+		</item>
+	  <item>
+			<ico>puhao.swf</ico>
+			<que> 彈鋼琴：位於摩爾大劇院，可以為你彈奏的曲目錄音哦！也可以將你的作品上傳！也許會被《樂譜》所收集呢！</que>
+			<mapID> 60 </mapID>
+		</item>
+		<item>
+			<ico>tanzhu.swf</ico>
+			<que> 摩摩彈珠台：位於摩摩商會，要想辦法不讓彈珠掉下來才會拿高分！得分越高獲得的獎勵也就越多哦！</que>
+			<mapID> 149 </mapID>
+		</item>
+		<item>
+			<ico>longzhihuanjing.swf</ico>
+			<que> 龍之幻境：位於藤蔓森林，在幻境中不斷的挑戰怪物，不但可以提高你的戰鬥技巧，還能獲得不錯的獎勵！</que>
+			<mapID> 151 </mapID>
+		</item>
+		<item>
+			<ico>xuexiji.swf</ico>
+			<que> 學習機小遊戲：位於拉姆學院教導處，學習機中有不少小遊戲，能體驗這些遊戲的樂趣，還能鍛煉腦力！</que>
+			<mapID>53 </mapID>
+		</item>
+		<item>
+			<ico>wawadongyuan.swf</ico>
+			<que> 娃娃總動員：位於淘淘樂街的花嬸小攤上，各種娃娃真假難辨，絕對考驗眼力和準確力哦！</que>
+			<mapID> 3 </mapID>
+		</item>
+		<item>
+			<ico>fruitpengpeng.swf</ico>
+			<que> 水果碰碰：位於淘淘樂街的花嬸小攤上，只要擊中花嬸擺放的水果，就有機會得到花嬸準備的獎品！</que>
+			<mapID> 3 </mapID>
+		</item>
+				<item>
+			<ico>mofazhen.swf</ico>
+			<que> 色彩幻陣：位於尼爾拉塔第一層，解開色彩幻陣謎題，就能知道尼爾拉的秘密，用你的智慧和勇氣去挑戰吧！</que>
+			<mapID> 84 </mapID>
+		</item>
+					<item>
+			<ico>nanguasaipao.swf</ico>
+			<que> 南瓜賽跑：南瓜也會賽跑？在愛心教堂的門口，正在舉行南瓜賽跑的遊戲呢！比比看誰是第一名！</que>
+			<mapID> 2 </mapID>
+		</item>				
+<item>
+			<ico>football.swf</ico>
+			<que> 足球：愛運動的小摩爾們，快和朋友來摩爾足球場，展開一場激烈的足球大戰吧！</que>
+			<mapID> 38 </mapID>
+		</item>
+		<item>
+			<ico>darongshu.swf</ico>
+			<que> 拯救大榕樹：大家快來拯救大榕樹吧！</que>
+			<mapID> 22 </mapID>
+		</item>
+				<item>
+			<ico>huabi.swf</ico>
+			<que> 樂塗塗：快來塗上你喜愛的色彩吧。</que>
+			<mapID> 59 </mapID>
+		</item>
+</content>
+	
+	<content  id="1" name="新手指導">
+		<item>
+			<ico>level.swf</ico>
+			<bigico>putibig.swf</bigico>
+			<que> 我要如何提升摩爾等級呢？ </que>
+			<ans>    玩分佈在莊園裡的各種小遊戲，就可以獲得提升等級的經驗啦！玩得越多，等級越高哦！</ans>
+		</item>
+		<item>
+			<ico>meili.swf</ico>
+			<bigico>yilian.swf</bigico>
+			<que> 我要如何提升魅力值呢？</que>
+			<ans>    玩莊園裡的一些小遊戲，可以很快來增加魅力值，比如：陽光牧場陽光草舍裡的搬運工；東部遊樂場的摩爾愛跳舞；摩爾拉雅滑冰場的冰上總動員遊戲。</ans>
+		</item>
+		<item>
+			<ico>zhihui.swf</ico>
+			<bigico>putibig.swf</bigico>
+			<que> 我要如何提升智慧值呢？ </que>
+			<ans>    玩莊園裡的一些小遊戲，可以增加較多智慧值，比如：城堡二樓的拼圖大師遊戲；西部遊樂場遊戲小屋裡的摩摩來找茬；摩爾城堡的冰淇淋小屋遊戲。</ans>
+		</item>
+		<item>
+			<ico>liliang.swf</ico>
+			<bigico>tommybig.swf</bigico>
+			<que> 我要如何提升力量值呢？ </que>
+			<ans>    玩莊園裡的一些小遊戲，可以增加力量值，比如：拉姆運動場的修剪小草坪遊戲；摩爾拉雅山頂的環游莊園；漿果叢林的捉螢火蟲遊戲。</ans>
+		</item>
+		<item>
+			<ico>smc.swf</ico>
+			<que> 我要如何加入SMC呢？ </que>
+			<clickX>920</clickX>
+			<clickY>40</clickY>
+		</item>	
+		<item>
+			<ico>cloth.swf</ico>
+			<bigico>putibig.swf</bigico>
+			<que> 我要到哪裡去購買漂亮的衣服？ </que>
+			<!--    淘淘樂街服裝店裡出售莊園裡最時尚的衣服，打開《摩爾時尚》這本書，就可以買到衣服啦！每個月都會有新衣服被製作出來喲！-->
+			<needMap>20</needMap>
+			<clickX>920</clickX>
+			<clickY>400</clickY>
+		</item>
+		<item>
+			<ico>jiaju.swf</ico>
+			<bigico>tommybig.swf</bigico>
+			<que> 我要去哪裡採購精美的傢俱？ </que>
+			<!--    淘淘樂街道具店裡出售莊園裡最精緻的傢俱，打開《摩爾裝潢》這本書，就可以買到傢俱啦！每個月都會有新傢俱被製作出來喲！\n要是在自己的家園中，點擊螢幕右邊的《摩爾家園》，就可以買到最新的家園裝飾嘍！-->
+			<needMap>19</needMap>
+			<clickX>890</clickX>
+			<clickY>400</clickY>
+		</item>
+		<item>
+			<ico>baibaoji.swf</ico>
+			<que> 從哪裡可以瞭解莊園裡這麼多神奇的物種？ </que>
+			<clickX>165</clickX>
+			<clickY>45</clickY>
+		</item>
+		<item>
+			<ico>game.swf</ico>
+			<que> 莊園裡的小遊戲都在哪裡？ </que>
+			<clickX>295</clickX>
+			<clickY>200</clickY>
+		</item>
+			<item>
+			<ico>friend.swf</ico>
+			<que> 我要如何結識新朋友？ </que>
+			<clickX>657</clickX>
+			<clickY>533</clickY>
+		</item>
+    <item>
+			<ico>moerdou.swf</ico>
+			<bigico>nikeshen.swf</bigico>
+			<que> 怎樣快速賺取摩爾豆呢？ </que>
+			<ans>    大家可以去尼爾拉塔找湯米打工哦！戴上安全帽，拿起小鐵鍬，每天參加勞動兩分鐘，湯米就會給你一份不錯的報酬呦！大家還可以去餐廳打工，尼克會教你如何當一名優秀的服務生，只要迅速有效的為顧客服務就會得到報酬哦！</ans>
+		</item>
+	</content>
+	
+	<content id="3" name="公民管理處">
+			
+			<item>
+			<ico>hanqing.swf</ico>
+			<que>漢青：菩提大伯的老朋友，從東方而來，是一個喜歡到各個地方尋找珍寶的商人，現在已經離開莊園了。</que>
+			</item>
+			<item>
+			<ico>yali.swf</ico>
+			<que>丫麗：漢青的女兒，第一次跟著爸爸旅行。她喜歡搜集不少有趣的東西，是個好奇心很重但正義感也很強的小摩爾！不過也已經離開莊園了。</que>
+			</item>
+		<item>
+			<ico>hunterM.swf</ico>
+			<que> 獵人M：原本居住摩爾拉雅山腳下的小木屋，現在他已經回到黑森林的家中，大家找不到他。</que>
+		</item>
+		<item>
+			<ico>momo.swf</ico>
+			<que> 麼麼公主：莊園裡最受歡迎的公主，熱衷於舉辦各種活動，平時會在城堡裡學習各種宮廷禮儀。</que>
+		</item>
+		<item>
+			<ico>puti.swf</ico>
+			<que> 菩提大伯：經驗豐富、知識淵博的長者，不過偶爾也會搞搞惡作劇，但是莊園一旦發生危難，他總是沖在最前面。</que>
+		</item>
+		<item>
+			<ico>sierte.swf</ico>
+			<que> 絲爾特姐姐：摩爾大學校長，在摩爾時報中開設自己的專欄，對時尚有獨到見解，擅長解決小摩爾們的心理問題。 </que>
+			<mapID> 77 </mapID>
+		</item>	
+		<item>
+			<ico>kevin.swf</ico>
+			<que> 凱文老師：穿梭于摩爾莊園所有運動場所的極限運動高手，身體素質十分出眾，目前在拉姆學院擔任老師。 </que>
+			<mapID> 52 </mapID>
+		</item>
+		<item>
+			<ico>tutu.swf</ico>
+			<que> 兔兔主編：外向、活潑但有強烈的責任心，本著打破砂鍋問到底的精神，每週為小摩爾們帶來最新的時報。 </que>
+			<mapID> 59 </mapID>
+		</item>
+		<item>
+			<ico>dawei.swf</ico>
+			<que> 大衛：莊園的發明家，晚上睡的很晚，都在發明屋裡工作。</que>
+			<mapID> 10 </mapID>
+		</item>
+		<item>
+			<ico>mason.swf</ico>
+			<que> 梅森：開心農場的農場主，外表忠厚，但是有些囉嗦，每天都早起勞作。 </que>
+			<mapID> 10 </mapID>
+		</item>
+		<item>
+			<ico>roc.swf</ico>
+			<que> 洛克行政官：居民管理處的行政官，坐在城堡一樓的辦公室，收集並且處理所有小摩爾的疑問。</que>
+			<mapID> 15 </mapID>
+		</item>
+		<item>
+			<ico>haha.swf</ico>
+			<que> 魔法師哈哈：在東部遊樂場的魔法馬車裡面，負責把小摩爾手中的神奇密碼兌換成真正的禮物。</que>
+			<mapID> 24 </mapID>
+		</item>
+		<item>
+			<ico>yilian.swf</ico>
+			<que> 伊蓮：摩摩商會的會長，處理所有與米勒大道相關的事情。</que>
+			<mapID> 142 </mapID>
+		</item>
+		<item>
+			<ico>caihong.swf</ico>
+			<que> 彩虹姐姐：非常喜歡拉姆，專門開設了寵物商店，出售各種拉姆用品，同時還負責照看小摩爾們託管的拉姆。</que>
+			<mapID> 21 </mapID>
+		</item>
+		<item>
+			<ico>tommy.swf</ico>
+			<que> 湯米：建設署的署長，負責建築師的考核，並且為建築師們提供了一個專屬的工作區。</que>
+			<mapID> 143 </mapID>
+		</item>
+		<item>
+			<ico>nick.swf</ico>
+			<que> 尼克：摩爾莊園中的頂級廚師，烹飪出很多新式的拉姆食品，現在又和拉姆菲力一起在米勒大道開設了一家分店。</que>
+			<mapID> 17 </mapID>
+		</item>
+		<item>
+			<ico>xisuo.swf</ico>
+			<que> 西索：一個天生的工作狂，對服裝有著出眾的品位，現在負責服裝店的經營。</que>
+			<mapID>20</mapID>
+		</item>
+		<item>
+			<ico>aier.swf</ico>
+			<que>艾爾警官：勇敢智慧的警官，解決莊園的各種案件!莊園有任何異變都逃不過他的眼鏡。</que>
+			<mapID>47</mapID>
+		</item>
+				<item>
+			<ico>crow.swf</ico>
+			<que>克勞神父：在愛心教堂為每個小摩爾們禱告祈福，發現了超級拉姆的秘密。對健康營養生活也很有心得。</que>
+			<mapID>18</mapID>
+		</item>
+      <item>
+			<ico>yoyo2.swf</ico>
+			<que>尤尤：認真打理陽光草舍，對小動物們富有極大的愛心，關愛有加，有關牧場的一切問題都難不倒。</que>
+			<mapID>79</mapID>
+			</item>
+		<item>
+			<ico>jackhead.swf</ico>
+			<que> 捷克王子：勤奮、好學的捷克王子，在地下城的風波中，用智慧保衛了莊園。</que>
+		</item>
+
+	</content>
+</wizard>
