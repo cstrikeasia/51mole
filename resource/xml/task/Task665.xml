@@ -1,0 +1,101 @@
+<Tasks ID="665" Name="黑魔法學院" AwardMsg="恭喜你獲得1只鈴鐺貓（摩靈）、5個藤蔓墓碑種子（家園種子）和10000摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="350">
+		<EnterMap MapID="350">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10307" Face="焦急" Msg="空間混亂？" Option=""/>
+				<Talk NpcID="10036" Face="生氣" Msg="是不是和你們上次過來的時候不一樣？" Option="是呀，到處都是圈圈是怎麼回事？"/>
+				<Talk NpcID="10036" Face="生氣" Msg="沙沙，你去檢查一下。" Option=""/>
+				<Talk NpcID="10307" Face="生氣" Msg="恩！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10307" Face="焦急" Msg="我飛了半天呢，怎麼你們比我先到？" Option="(⊙v⊙)嗯……我們一直在這裡啊……"/>
+				<Talk NpcID="10307" Face="生氣" Msg="什麼什麼？我飛了那麼久又飛回來了？ " Option=""/>
+				<Talk NpcID="10036" Face="生氣" Msg="從剛才開始你一直在飛嗎？" Option=""/>
+				<Talk NpcID="10307" Face="焦急" Msg="是啊，飛的葉子都累了啦！！而且而且，一路上黑漆漆的，好恐怖哦~！" Option=""/>
+				<Talk NpcID="10036" Face="生氣" Msg="恩……看來真的是空間凌亂，你再去試一下！" Option=""/>
+				<Talk NpcID="10307" Face="疑惑" Msg="又是我？不要不要，讓{$username}去試試看啊……" Option="咦？關我什麼事？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10036" Face="生氣" Msg="剛才發生什麼事了？" Option="我一回頭看到我的屁股留在好遠好遠的地方，嚇死我了！！！"/>
+				<Talk NpcID="10036" Face="生氣" Msg="果然是空間錯亂！！ " Option=""/>
+				<Talk NpcID="10307" Face="焦急" Msg="捷克，你的能力？" Option=""/>
+				<Talk NpcID="10036" Face="生氣" Msg="我不確定我的能力現在是不是能用，但是可以試一下。" Option=""/>
+			</Action>
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="350">
+		<EnterMap MapID="350">
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10307" Face="開心" Msg="捷克，太棒了！你的能力！！" Option=""/>
+				<Talk NpcID="10036" Face="悲傷" Msg="啊……頭……怎麼回事？ " Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="利用最後一點力量，捷克跟上了古德摩•零，傳送口的終點是什麼地方？有什麼在等著我們？"/>
+			
+			<Action Cmd="GO_MAP" MapID="406" MapType="0"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="3" TarMapID="406">
+		<EnterMap MapID="406">	
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10307" Face="焦急" Msg="（小小聲）完蛋了王子又變成黑貓了！" Option="（小小聲）王子是不是為了混進去啊？你看這裡沒有一個正常的人！！"/>
+				<Talk NpcID="10307" Face="焦急" Msg="（小小聲）不知道，怎麼辦？ " Option="（小小聲）我們倆要不也偽裝一下？"/>
+				<Talk NpcID="10307" Face="焦急" Msg="（小小聲）好呀好呀！ " Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10307" Face="生氣" Msg="（小小聲）噓~~~小聲點，剛才的偽裝不夠完美，我想弄得完美一點" Option="（小小聲）那也不用打我啊，痛死了！"/>
+				<Talk NpcID="10307" Face="生氣" Msg="（小小聲）走路的時候一瘸一拐的啊，有種走不穩的感覺。" Option="（小小聲）哦~（真是拿你沒辦法...）"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106"/>
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>
+
+

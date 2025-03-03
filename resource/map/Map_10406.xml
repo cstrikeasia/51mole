@@ -1,0 +1,11 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_350" Layer="controlLevel" Ex="175" Ey="310" Cmd="alt_map" Param="350" Tips="貓的夜市" />
+	</Triggers>
+	<Talks>
+	</Talks> 
+</Map>
+
+
