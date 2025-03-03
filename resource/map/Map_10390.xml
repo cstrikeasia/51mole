@@ -1,0 +1,29 @@
+<Map>
+	<Triggers>
+		<Trigger ResName="go_391" Layer="controlLevel" Ex="493" Ey="295" Cmd="alt_map" Param="391"  Tips="珊瑚平原"/>
+		<Trigger ResName="go_389" Layer="controlLevel" Ex="256" Ey="511" Cmd="alt_map" Param="389"  Tips="摩界之門"/>  
+		<Trigger ResName="mc1" Layer="topLevel" Ex="0" Ey="0" Cmd="act" Param="getItem1"  Tips=""/>  
+		<Trigger ResName="mc2" Layer="topLevel" Ex="0" Ey="0" Cmd="act" Param="getItem2"  Tips=""/>  
+		<Trigger ResName="mc3" Layer="topLevel" Ex="0" Ey="0" Cmd="act" Param="getItem3"  Tips=""/>  
+		<Trigger ResName="mc4" Layer="topLevel" Ex="0" Ey="0" Cmd="act" Param="getItem4"  Tips=""/>  
+		<Trigger ResName="mc5" Layer="topLevel" Ex="0" Ey="0" Cmd="act" Param="getItem5"  Tips=""/>  
+		<Trigger ResName="flowermc" Layer="topLevel" Ex="401" Ey="410" Cmd="act" Param="selectSay"  Tips="食人花妖"/>
+	</Triggers>
+	<Talks>
+		<Talk ID="1" NpcID="10289" Face="正常" Msg="你是誰！我可是食人花！我雖然書讀的少，但是我可不傻，你別騙我！" Option="" Cmd="none" Param="2" AddTaskOption="1"/>
+		<Talk ID="2" NpcID="10289" Face="正常" Msg="想知道發生了什麼？有些事情對你來說還是不知道為好……不過你要是真想知道，也不是沒辦法。接受我的考驗，全部通過了我就告訴你。" Option="我接受你考驗！" Cmd="act" Param="startChallege" AddTaskOption="1"/>
+		<Talk ID="10" NpcID="10289" Face="正常" Msg="昨天隻睡了十六個小時，太困了。不過看在你今天表現還不錯，還想來找我聊天的話，等明天我睡醒了再來吧。" Option="……晚安……" Cmd="act" Param="taskover" AddTaskOption="1"/>
+		<Talk ID="20" NpcID="10289" Face="正常" Msg="文字：最近一直感覺錢不夠用，小朋友借點錢來用用啦。我這朵花也是花品很好的一朵花，100萬摩爾豆我不要你，就10萬！10萬我也不要，借個1萬塊來用用啦~~~" Option="1萬塊……簡直是搶劫啊……我腳一跺牙一咬算了給你吧！" Cmd="s" Param="21" AddTaskOption="1"/>
+		<Talk ID="21" NpcID="10289" Face="正常" Msg="終於等到你，還好我沒放棄。摩爾兄的大恩大德我阿花這輩子也忘不了，1萬塊我就拿去了~" Option="T _T ……你竟然來真的……" Cmd="act" Param="task1" AddTaskOption="1"/>
+		<Talk ID="30" NpcID="10289" Face="正常" Msg="最近一直感覺錢不夠用，小朋友借點錢來用用啦。我這朵花也是花品很好的一朵花，100萬摩爾豆我不要你，就10萬！10萬我也不要，借個1萬塊來用用啦~~~" Option="1萬塊……簡直是搶劫啊……我腳一跺牙一咬算了給你吧！" Cmd="s" Param="31" AddTaskOption="1"/>
+		<Talk ID="31" NpcID="10289" Face="正常" Msg="哇哈哈哈哈哈！被本大爺耍了吧！本大爺哪會在乎你那區區1萬摩爾豆~不過沒想到你倒是挺有愛心的。好，今天心情不錯。我阿花今天終於遇到和自己一樣有愛心的人了，給你一點特別獎勵吧。" Option="好不要臉的一朵花……" Cmd="act" Param="task2" AddTaskOption="1"/>
+		<Talk ID="40" NpcID="10289" Face="正常" Msg="人生在世，技多不壓身啊。我阿花不僅能吃能睡，而且還是個腦筋急轉彎高手！敢來比劃比劃麼？！請聽題：A和C誰比較高呢？" Option="A比較高。$C比較高。" Cmd="s$s" Param="41$42" AddTaskOption="1"/>
+		<Talk ID="41" NpcID="10289" Face="正常" Msg="猜錯啦！果然還是我阿花比較厲害，你還是回去多讀點書再來吧~" Option="我再想想。" Cmd="act" Param="taskover" AddTaskOption="1"/>
+		<Talk ID="42" NpcID="10289" Face="正常" Msg="怎麼會這樣……我出的題竟然這麼輕易就被答對了……ABCD（A比C低），一般人不應該能想得到啊。" Option="我可不是一般人。" Cmd="act" Param="task3" AddTaskOption="1"/>
+		<Talk ID="50" NpcID="10289" Face="正常" Msg="最近有好多小摩爾到我們食人花園來，也不知道發生了什麼事兒。我也好想到你們莊園裡逛逛呢……不過我這樣應該會嚇到許多小朋友吧。特別是莊園淘淘樂街裡那位美女花嬸，溫柔可愛善良聰慧……餵餵餵，你吐什麼。其實我有封信想要交給她，給你4片花瓣，幫我轉交一下這封信？" Option="有勇氣！我幫你！" Cmd="act" Param="letter" AddTaskOption="1"/>
+		<Talk ID="60" NpcID="10289" Face="正常" Msg="運氣也是實力的一部分。小摩爾敢不敢來我比試一下呢？規則很簡單哦，石頭剪刀布，3局2勝制。" Option="是時候展現真正的技術了" Cmd="act" Param="playGame" AddTaskOption="1"/>
+		<Talk ID="61" NpcID="10289" Face="正常" Msg="哈哈，果然還是我阿花的運氣比較好呢~" Option="..." Cmd="act" Param="taskover" AddTaskOption="1"/>
+	</Talks>
+</Map>
+
+

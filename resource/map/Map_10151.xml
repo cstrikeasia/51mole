@@ -1,0 +1,29 @@
+<Map>
+	<NpcList>
+		
+		<!--  <Npc ID="10002" Layer="depthLevel" Name="麼麼公主" Ex="545" Ey="384" Cmd="act" Param="selectSay" />-->
+		
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		<Trigger ResName="go_271" Layer="topLevel" Ex="540" Ey="440" Cmd="alt_map" Param="271" Tips="騎士訓練營" />
+		-->
+		<Trigger ResName="go_120" Layer="topLevel" Ex="55" Ey="370" Cmd="alt_map" Param="120" Tips="雲霧謎橋" />
+		<Trigger ResName="cardgamebtn" Layer="controlLevel" Ex="800" Ey="315" Cmd="act" Param="onHit" Tips="進入龍之幻境" />
+		<Trigger ResName="goto_map" Layer="controlLevel" Ex="465" Ey="145" Cmd="act" Param="fireAction_select" Tips="進入森林訓練場" />
+		<Trigger ResName="intro" Layer="depthLevel" Ex="571" Ey="409" Cmd="act" Param="callFire" Tips="喚醒木神"/>	
+		<Trigger ResName="pos" Layer="controlLevel" Ex="685" Ey="338" Cmd="act" Param="pos" Tips="敬拜木神"/>		
+	</Triggers>
+	
+	<Talks>
+		<!--
+		<Talk ID="1" NpcID="10015" Face="正常" Msg="Hi，你好啊。" Option="我很好" Cmd="none" Param="6" AddTaskOption="1" />
+		-->
+		<Talk ID="2" NpcID="10002" Face="正常" Msg="你好！" Option="領取隊服 " Cmd="act" Param="startTask" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+

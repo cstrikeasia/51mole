@@ -1,0 +1,16 @@
+<Map>
+	 <NpcList>
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_390" Layer="depthLevel" Ex="395" Ey="290" Cmd="alt_map" Param="390" Tips="食人花園"/>
+		
+		<Trigger ResName="interact_2" Layer="controlLevel" Ex="648" Ey="310" Cmd="act" Param="openBQL" Tips="拉姆菌" />
+		
+	</Triggers>
+
+	<Talks>
+	</Talks>
+</Map>
+
+
+

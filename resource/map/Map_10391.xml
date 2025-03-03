@@ -1,0 +1,20 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="animal_4" Layer="topLevel" Ex="256" Ey="511" Cmd="none" Param="ss"  Tips=""/>  
+		<Trigger ResName="go_390" Layer="controlLevel" Ex="792" Ey="372" Cmd="alt_map" Param="390"  Tips="食人花園"/>  
+		<Trigger ResName="go_392" Layer="controlLevel" Ex="315" Ey="235" Cmd="act" Param="changMap392"  Tips="水晶迷宮"/>  
+		<Trigger ResName="mc1" Layer="controlLevel" Ex="0" Ey="0" Cmd="act" Param="starfish_1"  Tips=""/>  
+		<Trigger ResName="mc2" Layer="controlLevel" Ex="0" Ey="0" Cmd="act" Param="starfish_2"  Tips=""/>  
+		<Trigger ResName="mc3" Layer="controlLevel" Ex="0" Ey="0" Cmd="act" Param="starfish_3"  Tips=""/>  
+		<Trigger ResName="mc4" Layer="controlLevel" Ex="0" Ey="0" Cmd="act" Param="starfish_4"  Tips=""/>  
+		<Trigger ResName="mc5" Layer="controlLevel" Ex="0" Ey="0" Cmd="act" Param="animal_1"  Tips=""/>  
+		<Trigger ResName="mc6" Layer="controlLevel" Ex="0" Ey="0" Cmd="act" Param="animal_2"  Tips=""/>
+		<Trigger ResName="animal_3" Layer="controlLevel" Ex="0" Ey="0" Cmd="none" Param="ss"  Tips=""/>
+	</Triggers>
+	<Talks>
+	</Talks>
+</Map>
+
+
