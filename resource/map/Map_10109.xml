@@ -1,0 +1,45 @@
+<Map>
+	<NpcList>
+		<Npc ID="10002" Layer="depthLevel" Name="麼麼公主" Ex="544" Ey="333"  Cmd="s" Param="1" AddTaskOption="1" />
+		<Npc ID="10057" Layer="depthLevel" Name="瑪麗" Ex="240" Ey="360" Cmd="s" Param="2" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_108" Layer="controlLevel" Ex="213" Ey="502" Cmd="alt_map" Param="108" Tips="長廊" />
+		<Trigger ResName="go_229" Layer="depthLevel" Ex="351" Ey="243" Cmd="act" Param="Enter229" Tips="超級拉姆俱樂部" />
+		<Trigger ResName="go_110" Layer="depthLevel" Ex="666" Ey="263" Cmd="alt_map" Param="110" Tips="麼麼的臥室" />
+		<Trigger ResName="go_111" Layer="depthLevel" Ex="830" Ey="260" Cmd="alt_map" Param="111" Tips="麼麼的密室" />
+		<Trigger ResName="weilaixing_mc" Layer="depthLevel" Ex="532" Ey="364" Cmd="act" Param="task606" Tips="未來星" />
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="121" NpcID="10224" Face="正常" Msg="中秋節快樂，嘻嘻" Option="送你25個月餅" Cmd="act" Param="getMoonCakePrize" AddTaskOption="1" />
+		<Talk ID="122" NpcID="10224" Face="正常" Msg="謝謝了，我很高興，那作為回禮，這個就送給你了，嘻嘻" Option="你太客氣了" Cmd="act" Param="getPrize" AddTaskOption="1" />
+		<Talk ID="123" NpcID="10224" Face="正常" Msg="不用這麼客氣，你已經送給過我月餅了" Option="嗯，好的" Cmd="none" Param="" AddTaskOption="1" />
+	
+		<Talk ID="1" NpcID="10002" Face="正常" Msg="咦，{$username}，很高興見到你！" Option="我也很高興見到你。" Cmd="none" Param="null" AddTaskOption="1" />
+		
+		<Talk ID="2" NpcID="10057" Face="正常" Msg="你是麼麼公主的朋友嗎？" Option="當然是！" Cmd="none" Param="" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10002" Face="正常" Msg="首屆馴獸師大賽已經正式閉幕啦。這次大賽中小摩爾優異的表現，所以麼麼要送給小摩爾最棒的獎勵~！" Option="謝謝麼麼公主。" Cmd="act" Param="getTrainReward" AddTaskOption="1" />
+        
+        <Talk ID="100" NpcID="10002" Face="正常" Msg="咦，{$username}，很高興見到你！" Option="祝公主生日快樂！$祝公主永遠都美麗！$祝公主開心每一天！" Cmd="s$s$s" Param="101$102$103"  />
+        <Talk ID="101" NpcID="10002" Face="正常" Msg="{$username}，謝謝你！有你們這群好朋友陪麼麼過生日，麼麼覺得好幸福……" Option="公主不客氣(*^__^*) " Cmd="act" Param="getVip"  />
+        <Talk ID="102" NpcID="10002" Face="正常" Msg="謝謝{$username}，你也一樣！" Option="也謝謝公主O(∩_∩)O" Cmd="act" Param="getVip"  />
+        <Talk ID="103" NpcID="10002" Face="正常" Msg="能生活在莊園這樣一個幸福的大家庭，每一天都沐浴在溫暖的陽光下，麼麼覺得，真的好開心！" Option="嘻嘻，我也覺得！" Cmd="act" Param="getVip"  />
+	
+		<Talk ID="105" NpcID="10002" Face="正常" Msg="{$username}，今天的頒獎典禮，你要記得來參加哦！" Option="麼麼公主親自主持，我肯定到！" Cmd="s" Param="106"  />
+		<Talk ID="106" NpcID="10183" Face="正常" Msg="這就是麼麼公主！！！哇~~~果然是名副其實最美麗的公主。瞧著氣質，這打扮……高貴又可愛，太萌啦！！！我輸的心服口服！！！" Option="咦~~~剛剛還一副不服氣的樣子，怎麼變得這麼快啊？？？" Cmd="s" Param="107"  />
+		<Talk ID="107" NpcID="10002" Face="正常" Msg="(*^__^*) 嘻嘻，這是你的新天使寶寶嗎？嘴巴好甜，真可愛！頒獎典禮別忘了帶著它一起哦！" Option="麼麼公主都親自邀請了，我一定把它帶著！" Cmd="act" Param="momoTalkOver"  />
+		
+		<Talk ID="108" NpcID="10002" Face="正常" Msg="親愛的小摩爾，你是來幫忙尋找我的項鏈的嗎？" Option="是的" Cmd="s" Param="109"  />
+		<Talk ID="109" NpcID="10002" Face="正常" Msg="太好了，那我要怎麼配合你呢？" Option="恩，請詳細描述一下整個過程好嗎？" Cmd="s" Param="110"  />
+		<Talk ID="110" NpcID="10002" Face="正常" Msg="好的。今天上午我突然頭部又暈又痛，之後就睡過去了，等我醒來發現已經睡過了一個小時，項鏈也就不見了。" Option="好的，我大概了解了整個過程，請允許我檢查下，看看有沒有什麼線索。" Cmd="act" Param="kfcnackTwo"  />
+		<Talk ID="111" NpcID="10002" Face="正常" Msg="尋找項鏈哦 " Option="好的" Cmd="alt_map" Param="9"  />
+		<Talk ID="112" NpcID="10002" Face="正常" Msg="草、陽光、動物，不就是陽光牧場嘛！！！ " Option="現在就去看看！" Cmd="alt_map" Param="9"  />
+		
+		
+		<Talk ID="104" NpcID="10002" Face="正常" Msg="" Option="" Cmd="s" Param=""  />
+	</Talks>
+</Map>
+
+

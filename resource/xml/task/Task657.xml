@@ -1,0 +1,72 @@
+﻿<Tasks ID="657" Name="麼麼公主日記" AwardMsg="恭喜你獲得1個木之抹茶卷（摩靈），1個啦啦音樂花（家園裝飾）和1萬摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="109">
+		<EnterMap MapID="109">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10057" Face="悲傷" Msg="總算有個人出現了，喂，{$username}，快幫我安慰一下公主吧，我不知道該怎麼辦了！" Option="公主怎麼了？是不是RK和瑞琪走了，公主不開心了？"/>
+				<Talk NpcID="10057" Face="悲傷" Msg="雖然RK家的魯比不大理我，但是瑞琪家的真理對瑪麗可好呢，瑪麗也不希望他離開呢~" Option="恩恩~"/>
+				<Talk NpcID="10057" Face="開心" Msg="哎呀，瑪麗怎麼說起自己的事情來了？總之啦，公主就是不開心，瑪麗一點辦法都沒有，快去看看她吧！" Option="好呢，去看看公主到底怎麼了！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			
+			<Action Cmd="JUMP_TASK_UI" Param="瑪麗說公主悶悶不樂的樣子啊，勸都勸不住，到底發生什麼了？我們去看看吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+			<Action Cmd="GO_MAP" MapID="111" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="111">
+		<EnterMap MapID="111">			
+		    <Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+		    <Action Cmd="SAY">
+				<Talk NpcID="10057" Face="悲傷" Msg="公主，{$username}來看你了！" Option="公主好呀，怎麼一個人在這裡啊？"/>
+				<Talk NpcID="10002" Face="悲傷" Msg="麼麼不開心了啦！不管啦！" Option="可是為什麼不開心呢？告訴我，說不定我有辦法呢？"/>
+				<Talk NpcID="10002" Face="悲傷" Msg="昨天麼麼夢到了哥哥，剛想和哥哥說話，哥哥就變成蝴蝶飛走了……" Option="是塞拉王子嗎？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="悲傷" Msg="是啊，月光下，哥哥變成的紫色的蝴蝶越飛越高，越飛越高，然後就完全消失不見了……" Option="夢嘛，只是假的呢，說不定就是塞拉王子要來看公主了呢？"/>
+				<Talk NpcID="10002" Face="疑惑" Msg="真的嗎？你不騙我嗎？" Option="騙人是小狗……"/>
+				<Talk NpcID="10002" Face="悲傷" Msg="可是，麼麼等不了那麼久，麼麼想要見哥哥……我要去找大伯……" Option="找大伯？"/>
+				<Talk NpcID="10002" Face="悲傷" Msg="大伯什麼都知道，他肯定知道哥哥去哪裡了……" Option="公主我陪你去吧！"/>
+			</Action>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="公主說大伯什麼都知道，說不定知道塞拉王子去了哪裡，我們一塊去看看吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="53" MapType="0"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="3" TarMapID="53">
+		<EnterMap MapID="53">			
+		    <Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+		    <Action Cmd="SAY">
+				<Talk NpcID="10007" Face="開心" Msg="小麼麼來看大伯啦，乖了乖了，怎麼一來就哭了？都是大孩子了，怎麼還那麼愛哭呢？" Option=""/>
+				<Talk NpcID="10002" Face="悲傷" Msg="大伯，我夢到哥哥了，告訴我哥哥在哪裡？" Option=""/>
+				<Talk NpcID="10007" Face="疑惑" Msg="慢點慢點，慢慢說啊，大伯有點混亂，麼麼夢到誰了？" Option=""/>
+				<Talk NpcID="10002" Face="悲傷" Msg="麼麼夢到塞拉哥哥了，哥哥變成蝴蝶飛走了……" Option=""/>
+				<Talk NpcID="10007" Face="疑惑" Msg="飛去哪裡了？" Option=""/>
+				<Talk NpcID="10002" Face="疑惑" Msg="我覺得大概是飛去月亮上了吧！" Option=""/>
+				<Talk NpcID="10007" Face="開心" Msg="謔謔謔，月亮上啊，那我們去月亮上找他吧？" Option=""/>
+				<Talk NpcID="10002" Face="疑惑" Msg="去月亮上？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>

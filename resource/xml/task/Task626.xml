@@ -1,0 +1,564 @@
+﻿<Tasks ID="626" Name="2013回憶錄" AwardMsg="恭喜你獲得了奇趣蛋裝扮,2000摩爾豆!" AwardBean="2000">
+	<Step ID="1" TarMapID="109">
+		<EnterMap MapID="109">
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="開心" Msg="親愛的小摩爾{$username}，2013結束了，你有沒有留下很多美好的回憶？" Option="公主，2013在莊園的每一天我都很幸福！"/>
+				<Talk NpcID="10002" Face="開心" Msg="真好，告訴你一個小秘密喲，麼麼在密室里弄了一個神奇的回憶長廊，美好的每一天麼麼都要努力努力的珍藏起來！你想不想來看看？" Option="( ⊙o⊙ )哇！公主好厲害，我只是做了個小小的時空膠囊……"/>
+				<Talk NpcID="10002" Face="開心" Msg="才沒有，時空膠囊也很厲害呢(*^__^*) 嘻嘻……麼麼帶你去看麼麼的回憶長廊，你不要告訴別人喲~" Option="嗯啊嗯啊（猛點頭）"/>
+			</Action>
+			<Action Cmd="JUMP_LOVE_TASK_UI" Param="和公主一起去她的回憶長廊看看吧！裡面一定藏著好多好多美妙的回憶呢！"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+			<Action Cmd="GO_MAP" MapID="111" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="開心" Msg="你看我的回憶長廊是不是很棒？" Option="好厲害啊，不愧是麼麼公主！"/>
+				<Talk NpcID="10002" Face="開心" Msg="請選擇你想要回憶的月份，我們一起回到2013年的那一刻吧！" Option="回憶長廊還可以時空穿梭？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="FRONT_BUFF_SET" BufferID="149" BufferStep="1"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="1"/>
+		</EnterMap>
+	</Step>
+	
+	<!-- 下麵是1月份的 -->
+	<Step ID="3" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="開心" Msg="麼麼希望自己成為一個好公主，好公主要珍惜自己的每一份回憶，好公主要努力嘗試所有的事情！2013年的1月份麼麼努力戰鬥過~" Option="( ⊙o⊙ )哇 天使之戰~"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="開心" Msg="還記得嗎？那麼時候和天使一起，和浴火重生的鳳凰一起，我們戰鬥過！" Option="記得記得！太激動人心了！"/>
+				<Talk NpcID="10002" Face="開心" Msg="(*^__^*) 嘻嘻……那麼請你去做一件事喲，麼麼在前哨戰留下了鳳凰之翼，來紀念那一次的戰鬥！去把它找來，放進這個美麗的回憶長廊裡。" Option="交給我吧！"/>
+			</Action>
+			<Action Cmd="FRONT_BUFF_SET" BufferID="137" BufferStep="1"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="1"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" TarMapID="63">
+		<EnterMap MapID="63">
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="FRONT_BUFF_SET" BufferID="137" BufferStep="2"/>
+			<Action Cmd="JUMP_LOVE_TASK_UI" Param="   親愛的的小摩爾，你很聰明喲，找到了麼麼公主藏下的鳳凰之翼，快去和公主分享吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+			<Action Cmd="GO_MAP" MapID="111" MapType="0"/>
+		</EnterMap>
+	</Step>
+		
+	<Step ID="5" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="開心" Msg="找到了鳳凰羽毛，你真棒！我們要牢牢記住天使之戰中的勇敢無畏！" Option="(*^__^*) 嘻嘻……"/>
+			</Action>
+			<Action Cmd="SEND_STATICS" StaticsID="368"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="1"/>
+		</EnterMap>
+	</Step>
+	
+	<!-- 下麵是2月份的 -->
+	<Step ID="6" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SEND_STATICS" StaticsID="361"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="開心" Msg="還記得2月的時候喜狼狼和灰羊羊來到莊園，好熱鬧呀~" Option="對喲，大家還一塊趕跑年獸呢！(*^__^*) 嘻嘻……"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="開心" Msg="灰羊羊小朋友最近又來莊園咯，他說分別一年不知道莊園的小摩爾們都還好不好呢！" Option="是嗎？他在哪裡啊？"/>
+				<Talk NpcID="10002" Face="開心" Msg="嗯，這就是麼麼給你的謎題咯！灰羊羊在哪裡呢？會不會就在炸年獸的那個山洞裡呢？哎呀呀，麼麼也不知道呀！" Option="(⊙_⊙)我去找，一定能找到的！"/>
+			</Action>
+			<Action Cmd="FRONT_BUFF_SET" BufferID="138" BufferStep="1"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="1"/>
+		</EnterMap>
+	</Step>
+	
+	<!-- 隱藏任務 -->
+	<Step ID="7" TarMapID="40">
+		<EnterMap MapID="40">
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10163" Face="正常" Msg="呵呵，你找到我了！" Option="(⊙o⊙)…你躲在這裡做什麼？"/>
+				<Talk NpcID="10163" Face="正常" Msg="等你來啊，你來了我可以把這個灰撲撲軟軟羊毛氈愛心送給你啊！" Option="灰撲撲軟軟羊毛氈愛心……"/>
+				<Talk NpcID="10163" Face="正常" Msg="是啊，是我親手做的，快點收好，呵呵！" Option="哦！"/>
+				<Talk NpcID="10163" Face="正常" Msg="88~" Option="啊？"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="FRONT_BUFF_SET" BufferID="138" BufferStep="2"/>
+			<Action Cmd="JUMP_LOVE_TASK_UI" Param="   灰羊羊送來的他親手做的灰撲撲軟軟羊毛氈愛心，這可是他的心意喲！"/>
+			<Action Cmd="SET_BUFFER" Panel="8" Step="8"/>
+			<Action Cmd="GO_MAP" MapID="111" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="8" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="開心" Msg="咦？這是灰羊羊送來的？小傢伙真是太有心了！" Option="為啥我沒有這種感覺呢？"/>
+				<Talk NpcID="10002" Face="開心" Msg="要看到他的心，充滿著對莊園的情感的愛心！" Option="公主又開始做夢了……"/>
+			</Action>
+			<Action Cmd="SEND_STATICS" StaticsID="369"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="1"/>
+		</EnterMap>
+	</Step>
+	
+	<!--下麵是3月份的-->
+	<Step ID="9" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SEND_STATICS" StaticsID="362"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="瑪麗，還記得那個時候拉姆運動會嗎？雖然經歷各種波折，但是最終的結果真的好讓麼麼感動！" Option="嗯嗯~我的拉姆好堅強，好努力！"/>
+				<Talk NpcID="10057" Face="正常" Msg="公主還真是喜歡熱鬧，瑪麗還是比較喜歡安安靜靜的在花園裡轉轉……" Option="瑪麗，拉姆也要多多運動才會更加美麗喲！"/>
+				<Talk NpcID="10002" Face="正常" Msg="好啦，我們來看看勝利的小拉姆是多麼堅強！" Option="嗯嗯~"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="那個拉姆們揮灑汗水的地方，拉姆們努力奮戰的地方，帶上你的小拉姆故地重遊一下吧！" Option="要帶上拉姆嗎？"/>
+				<Talk NpcID="10002" Face="正常" Msg="對喲，拉姆不是你最好的朋友嘛？從進入莊園，每一天它都陪伴在你的身邊啊！" Option="嗯，好，我帶他一起去！"/>
+			</Action>
+			<Action Cmd="FRONT_BUFF_SET" BufferID="139" BufferStep="1"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="1"/>
+		</EnterMap>
+	</Step>
+	
+	<!-- 隱藏任務 -->
+	<Step ID="10" TarMapID="68">
+		<EnterMap MapID="68">
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<!-- <Action Cmd="ADD_EVENT" Param="tiaoGaoJieShu" />-->
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10258" Face="正常" Msg="(*^__^*) 嘻嘻……真好真好，小拉姆跳的真好！飛飛也要加油加油！" Option="飛飛也很棒啊~"/>
+				<Talk NpcID="10258" Face="正常" Msg="超級拉姆抱枕送給你喲，是飛飛最最喜歡的喲！" Option="謝謝飛飛喲！"/>
+			</Action>
+			<Action Cmd="FRONT_BUFF_SET" BufferID="139" BufferStep="2"/>
+			<Action Cmd="JUMP_LOVE_TASK_UI" Param="   每一隻拉姆都堅強的努力過，小摩爾，你也一樣，要做一個堅強的小摩爾喲，就像你的小拉姆一樣！"/>
+			<Action Cmd="SET_BUFFER" Panel="11" Step="11"/>
+			<Action Cmd="SEND_STATICS" StaticsID="370"/>
+			<Action Cmd="GO_MAP" MapID="111" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="11" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="( ⊙o⊙ )哇！這不是飛飛最喜歡的超級拉姆抱枕嗎？送給你了？真好！" Option="嗯，把它放在3月的回憶裡，真是太合適了！"/>
+				<Talk NpcID="10002" Face="正常" Msg="是呀是呀！小拉姆們一塊真的是太萌太可愛了！好期待2014的拉姆運動會呀！" Option="我也是~"/>
+			</Action>
+			<Action Cmd="SEND_STATICS" StaticsID="362"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="1"/>
+		</EnterMap>
+	</Step>
+	
+	<!--下麵是4月份的-->
+	<Step ID="12" TarMapID="111">
+		<EnterMap MapID="111">
+				<Action Cmd="SEND_STATICS" StaticsID="363"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="不知不覺，莊園五周年的生日都已經過去那麼久了呀！" Option="是耶，那個時候許願池的水沒了，大家的夢想都實現不了了……"/>
+				<Talk NpcID="10002" Face="正常" Msg="然後大家一起守護了夢想，守護了美麗的星空龍~" Option="星空龍好美啊……"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="每一天，為自己，為大家許下美好的願望，也許那個願望就能成真！！" Option="嗯，我現在就去許願~"/>
+				<Talk NpcID="10002" Face="正常" Msg="嘻嘻，{$username}真聰明，美好的回憶就是要自己點點滴滴的去拾取喲！" Option="現在就去！"/>
+			</Action>
+			<Action Cmd="FRONT_BUFF_SET" BufferID="140" BufferStep="1"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="1"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="13" TarMapID="2">
+		<EnterMap MapID="2">
+			<Action Cmd="FRONT_BUFF_SET" BufferID="140" BufferStep="2"/>
+			<!-- <Action Cmd="ADD_EVENT" Param="xuYuanChengGong" /> -->
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			<Action Cmd="JUMP_LOVE_TASK_UI" Param="   帶著美好的夢想迎來新的一年，許願也是讓自己成長的過程，有了目標，就會更加努力！"/>
+			<Action Cmd="SET_BUFFER" Panel="14" Step="14"/>
+			<Action Cmd="GO_MAP" MapID="111" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="14" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="麼麼可以聽到許願瓶裡你的聲音喲！加油加油！新的一年變得更聰明更棒！也祝莊園新的一年變得更好！" Option="祝莊園一年比一年好！"/>
+			</Action>
+			<Action Cmd="SEND_STATICS" StaticsID="371"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="1"/>
+		</EnterMap>
+	</Step>
+	
+	<!--下麵是5月份的-->
+	<Step ID="15" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SEND_STATICS" StaticsID="364"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="悲傷" Msg="尤瑞克和卡羅拉的故事好感人呀，麼麼哭了好多次呢！" Option="進小屋的時候好希望看到卡羅拉在等著尤瑞克爺爺呢！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="210" Name="movie_210" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_210" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="悲傷" Msg="不行，我要哭了，好難受呀，不忍心的感覺~真希望他們倆能一起快快樂樂的！" Option="是呢~"/>
+				<Talk NpcID="10002" Face="悲傷" Msg="尤瑞克爺爺現在一定特別孤單難受，{$username}，去找爺爺吧！對了，這束紫羅蘭帶給他，他會開心的！" Option="嗯，這就去！"/>
+			</Action>
+			<Action Cmd="FRONT_BUFF_SET" BufferID="141" BufferStep="1"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="16" TarMapID="331">
+		<EnterMap MapID="331">
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10192" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10192" Face="悲傷" Msg="卡羅拉，你在哪裡？卡羅拉……" Option="尤瑞克爺爺我來看你了~"/>
+				<Talk NpcID="10192" Face="傷心" Msg="小摩爾，你是乖孩子，爺爺……（泣不成聲，無法繼續說話）" Option="我帶來了一束紫羅蘭，如果每天都有紫羅蘭在房間裡，不就像卡羅拉在身邊一樣嗎？"/>
+				<Talk NpcID="10192" Face="傷心" Msg="你真是太乖了~55555555555~" Option="嗯，我幫你插好喲！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />
+			<Action Cmd="FRONT_BUFF_SET" BufferID="141" BufferStep="2"/>
+			<Action Cmd="JUMP_LOVE_TASK_UI" Param="浪漫美好的事物每一個人都喜歡，珍惜屬於你的浪漫，讓生活變得多姿多彩吧！快去告訴公主尤瑞克被治癒了……"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10192" Visible="1" />
+			<Action Cmd="SET_BUFFER" Panel="17" Step="17"/>
+			<Action Cmd="GO_MAP" MapID="111" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="17" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SEND_STATICS" StaticsID="372"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="嗯，真是太好了，尤瑞克爺爺一定要幸福呢，麼麼希望每一個摩爾都幸福！" Option="(*^__^*) 嘻嘻……一定會的！我會經常去看爺爺的！"/>
+			</Action>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="2"/>
+		</EnterMap>
+	</Step>
+	
+	<!--下麵是6月份的-->
+	<Step ID="18" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SEND_STATICS" StaticsID="365"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="馬戲團來的時候給大家帶來那麼多歡聲笑語，沒想到最後卻藏著一個黑暗魔法學院……" Option="是呢！魔法學院11人真是各個身懷絕技~"/>
+				<Talk NpcID="10002" Face="正常" Msg="這也正說明了他們的可怕啊！不知道什麼時候他們一定會捲土重來的，麼麼好擔心~" Option="公主放心，有我們每一個小摩爾在，一定會努力守護莊園的！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="你知道那個通往黑森林的地方嗎？麼麼在那裡藏了一個小丑的牽線玩偶呢，自戀的華利弗總是把摩爾變成小動物，欺負和虐待摩爾！麼麼真是不喜歡他呢！" Option="嗯啊，我也不喜歡他，太自戀了吧！"/>
+				<Talk NpcID="10002" Face="開心" Msg="不過把他做成牽線木偶超級搞笑呢~！你去幫我找回來吧~剛做好的時候，傑克哥哥看到了，也覺得超級搞笑呢~" Option="好呀，我也想玩一下這個牽線小丑呢！"/>
+			</Action>
+			<Action Cmd="FRONT_BUFF_SET" BufferID="142" BufferStep="1"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="19" TarMapID="120">
+		<EnterMap MapID="120">
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />
+			<Action Cmd="FRONT_BUFF_SET" BufferID="142" BufferStep="2"/>
+			<Action Cmd="JUMP_LOVE_TASK_UI" Param="O(∩_∩)O哈哈~公主做的木偶真是太好玩了，珍惜現在，珍惜每一個朋友，不要被變成什麼都不知道的小動物喲！"/>
+			<Action Cmd="SET_BUFFER" Panel="20" Step="20"/>
+			<Action Cmd="GO_MAP" MapID="111" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="20" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="你找到啦，真是太好了，雖然那是莊園危險的時候，但是麼麼還是每天都祈禱莊園能夠平安渡過難關，你也一樣是不是？" Option="是呀，莊園的每一天我都會好好珍惜的！"/>
+				<Talk NpcID="10002" Face="正常" Msg="嗯啊，珍惜現在的每一天，不要等變成大笨熊了才後悔喲~(*^__^*) 嘻嘻……" Option="才不會變成大笨熊呢~我會珍惜珍貴的每一天的~"/>
+			</Action>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="2"/>
+		</EnterMap>
+	</Step>
+	
+	<!--下麵是7月份的-->
+	<Step ID="21" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SEND_STATICS" StaticsID="366"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="麼麼完全沒有想到魔法派和自然派的鬥爭可以延續至今……" Option="哎~為什麼不能就這樣讓世界隨著自然規律去發展呢？"/>
+				<Talk NpcID="10002" Face="正常" Msg="因為強大的力量讓人們心懷渴望啊！渴求力量到忘記自我，忘記摩爾是多麼淳樸善良的種族。" Option="我一定要努力保有莊園的純粹和美好~"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="107" Name="movie_107" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_107" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="2013年的夏天，我們一直在戰鬥戰鬥戰鬥！為此有人犧牲、為此有人失蹤，一切都是為了守護莊園的美好，你一定要記得喲！" Option="嗯，不會忘記的~"/>
+				<Talk NpcID="10002" Face="正常" Msg="好啦，現在你可以去拜訪愛蓮娜的爸爸巴圖魯了，自從愛蓮娜消失之後他應該對女兒非常想念吧！" Option="嗯，我這就去！"/>
+			</Action>
+			<Action Cmd="FRONT_BUFF_SET" BufferID="143" BufferStep="1"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="2"/>
+		</EnterMap>
+	</Step>	
+		
+	<Step ID="22" TarMapID="342">
+		<EnterMap MapID="342">
+			<Action Cmd="SAY">
+				<Talk NpcID="10213" Face="悲傷" Msg="寶貝女兒啊，怎麼到現在都沒有回來，爸爸好想你！" Option="巴圖魯叔叔，我來看你了，別擔心呀，愛蓮娜一定會平安的回來的！"/>
+				<Talk NpcID="10213" Face="悲傷" Msg="我知道，我可以感覺到女兒的氣息，她一定平安沒事，但是她難道一點都不想爸爸嗎？難道一點都不想看到爸爸嗎？" Option="她一定會回來的~有機會我可以幫你去找她喲~"/>
+				<Talk NpcID="10213" Face="悲傷" Msg="真的嗎？你不是騙我的吧？" Option="嗯啊，保證！"/>
+				<Talk NpcID="10213" Face="悲傷" Msg="愛蓮娜小時候一直帶著的螢火蟲燈送給你，你見到她就拿給她看啊~她就知道爸爸想她了！" Option="好的！"/>
+			</Action>
+			<Action Cmd="FRONT_BUFF_SET" BufferID="143" BufferStep="2"/>
+			<Action Cmd="JUMP_LOVE_TASK_UI" Param="巴圖魯真的非常思念愛蓮娜呀，希望愛蓮娜在黑魔法學院平安，能早點回來呢，快去和公主分享吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="23" Step="23"/>
+			<Action Cmd="GO_MAP" MapID="111" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="23" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="O(∩_∩)O~你回來啦，哇，還帶了螢火蟲燈回來！" Option="是啊，巴圖魯非常想念愛蓮娜，我們一定要幫他把愛蓮娜找回來！"/>
+				<Talk NpcID="10002" Face="正常" Msg="沒錯沒錯！一定要把愛蓮娜找回來！你的勇氣和愛心讓麼麼非常感動！" Option="(*^__^*) 嘻嘻……"/>
+			</Action>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="2"/>
+		</EnterMap>
+	</Step>
+	
+	<!--下麵是8月份的-->
+	<Step ID="24" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SEND_STATICS" StaticsID="367"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="悲傷" Msg="伊斯特為了愛蓮娜就這樣犧牲了，麼麼感動得哭了，那一瞬間的傳送之光那麼閃耀，那麼迷人。" Option="公主，我覺得伊斯特會回來的，也許她和愛蓮娜一起在黑魔法學院呢？"/>
+				<Talk NpcID="10002" Face="正常" Msg="真的嗎？你真是善良的小摩爾，希望她可以像鳳凰一樣擁有不死之身，這種純潔美麗的靈魂值得被珍惜！" Option="嗯！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="108" Name="movie_108" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_108" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="麼麼決定了，今年夏天一定要去尋找伊斯特和愛蓮娜，讓所有牽掛和思念他們的人能都安心！" Option="嗯啊，公主我們一塊去揭曉黑魔法學院的秘密！"/>
+				<Talk NpcID="10002" Face="靈感" Msg="真好，麼麼突然對夏天充滿了憧憬~" Option="(*^__^*) 嘻嘻……"/>
+				<Talk NpcID="10002" Face="靈感" Msg="這個月份什麼都不用去尋找，伊斯特用生命造就的傳送陣就印刻在我們每個人的心裡！" Option="嗯！公主，用傳送陣紀念這個月份吧！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="13" Name="movie_13"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_13" />
+			<Action Cmd="FRONT_BUFF_SET" BufferID="144" BufferStep="2"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="2"/>
+		</EnterMap>
+	</Step>
+	
+	<!--下麵是9月份的-->
+	<Step ID="25" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SEND_STATICS" StaticsID="368"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="九月太值得懷念了~莎士摩亞寫下了那麼盪氣迴腸的故事！" Option="公主，那個時候你們大家都好危險啊！"/>
+				<Talk NpcID="10002" Face="開心" Msg="沒事的，我們都有足夠強大的內心，能夠抗得過一切詛咒喲！" Option="嗯啊！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="109" Name="movie_109" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_109" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="悲傷" Msg="塞拉哥哥，好想見到他呀~沒想到他就這樣和我擦肩而過" Option="塞拉王子一定在心裡守護著公主呢~"/>
+				<Talk NpcID="10002" Face="正常" Msg="嗯，哥哥一定在思念我，關心我，不論什麼時候我要讓自己堅強起來，才能不讓他們擔心！" Option="嗯啊嗯啊~公主真棒"/>
+				<Talk NpcID="10002" Face="開心" Msg="好啦~麼麼拜託莎士摩亞寫了一份小禮物喲~快去找他拿吧！" Option="這麼好？我這就去！"/>
+			</Action>
+			
+			<Action Cmd="FRONT_BUFF_SET" BufferID="145" BufferStep="1"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="3"/>
+		</EnterMap>
+	</Step>	
+		
+	<Step ID="26" TarMapID="349">
+		<EnterMap MapID="349">
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10231" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="14" Name="movie_14"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_14" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10231" Face="正常" Msg="既然上帝造下他來，就算他是個人吧。憑良心說，我知道譏笑人是一樁罪過，可是他！" Option="莎士摩亞你好~！"/>
+				<Talk NpcID="10231" Face="正常" Msg="什麼人的壞處他都有一點，可是一點沒有他自己的特色，聽見畫眉唱歌，他就會手舞足蹈，見了自己的影子，也會跟他比劍。" Option="莎士摩亞你好~！"/>
+				<Talk NpcID="10231" Face="正常" Msg="一只是金的，一只是銀的，一只是鉛的。誰選擇了我，必須準備把他所有的一切作為犧牲。" Option="（超級大聲）莎士摩亞你好！！！！！！！！！"/>
+				<Talk NpcID="10231" Face="正常" Msg="嗯？誰在打擾我進行新的創作？" Option="莎士摩亞你好，是麼麼公主讓我來的呢！她說你為我們準備了一份禮物！"/>
+				<Talk NpcID="10231" Face="正常" Msg="哦哦哦，是是是，我是準備了一份禮物，一份我發自內心的祝福！快拿去！" Option="好的!"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="15" Name="movie_15"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_15" />
+			<Action Cmd="FRONT_BUFF_SET" BufferID="145" BufferStep="2"/>
+			<Action Cmd="PLAY_MOVIE" Param="999" Name="movie_999"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_999" />
+			<Action Cmd="JUMP_LOVE_TASK_UI" Param="不要嫉妒，不要仇恨，因為最後受傷害的是你自己的心靈。快去和麼麼公主分享吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="27" Step="27"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10231" Visible="1" />
+			<Action Cmd="GO_MAP" MapID="111" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="27" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="“外觀往往和事物的本身完全不符，世人都容易為表面的裝飾所欺騙。”說得真好，沒有人知道你的辛苦，只能看到你的美麗光環。想要擁有什麼，一定要自己努力喲！" Option="昂~我一定會的！"/>
+			</Action>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="3"/>
+		</EnterMap>
+	</Step>	
+	
+	<!--下麵是10月份的-->
+	<Step ID="28" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SEND_STATICS" StaticsID="369"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="說起十月，捷克哥哥總算可以不變黑貓了，麼麼好開心！" Option="(⊙o⊙)…可是我覺得王子會變黑貓比較好玩啊！"/>
+				<Talk NpcID="10002" Face="生氣" Msg="討厭，難道你喜歡哥哥一直被詛咒著嗎？" Option="沒有沒有，只是覺得王子變黑貓其實還是很酷的"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="110" Name="movie_110" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_110" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="貪婪是非常可怕的呀，哥哥被壞人迷惑才會誤入迷局，變成黑貓的呀！" Option="是哦，想起來還是蠻可怕的，我也差一點點吃了那麼美味的東西！"/>
+				<Talk NpcID="10002" Face="正常" Msg="是呀，好啦，去找那個神秘的占星師吧，看看她會給你怎樣的建議！" Option="好的，公主還真的相信占星嗎？"/>
+				<Talk NpcID="10002" Face="開心" Msg="你覺得呢？" Option="女孩子的心思真是猜不透呀！"/>
+			</Action>
+			<Action Cmd="FRONT_BUFF_SET" BufferID="146" BufferStep="1"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="3"/>
+		</EnterMap>
+	</Step>	
+		
+	<Step ID="29" TarMapID="319">
+		<EnterMap MapID="319">
+			<Action Cmd="PLAY_MOVIE" Param="16" Name="movie_16"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_16" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10129" Face="正常" Msg="公主讓你來得正是時候！" Option="你怎麼知道我要來？"/>
+				<Talk NpcID="10129" Face="正常" Msg="偶然就是必然，必然就是偶然。今天你偶然走進這裡，其實是早已安排好的必然。" Option="好深奧……"/>
+				<Talk NpcID="10129" Face="正常" Msg="“貓”是不是很精彩？從現在開始你的人生也一樣精彩，甚至更加精彩！" Option="你確定不是逗我玩的？"/>
+				<Talk NpcID="10129" Face="正常" Msg="當然，只要你把這個小水晶球帶在身邊……回去吧……" Option="好吧……"/>
+			</Action>
+			<Action Cmd="FRONT_BUFF_SET" BufferID="146" BufferStep="2"/>
+			<Action Cmd="JUMP_LOVE_TASK_UI" Param="不和陌生人說話，不吃陌生人給的東西，但是命運還是請好好掌握在自己手裡！加油！"/>
+			<Action Cmd="SET_BUFFER" Panel="30" Step="30"/>
+			<Action Cmd="GO_MAP" MapID="111" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="30" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="呀！得到祝福了呢！是不是很開心？" Option="嗯啊，希望可以永遠留在莊園，永遠那麼開心！"/>
+				<Talk NpcID="10002" Face="正常" Msg="是呢，這樣麼麼也放心了！" Option="好的"/>
+			</Action>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="3"/>
+		</EnterMap>
+	</Step>	
+	
+	<!--下麵是11月份的-->
+	<Step ID="31" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SEND_STATICS" StaticsID="370"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="說起來11月我們好像也在圍著尤瑞克爺爺忙碌呢！" Option="是哦，搞到最後他到底是不是戰勝了巨龍啊？我怎麼有點混亂？"/>
+				<Talk NpcID="10002" Face="開心" Msg="那我們再去看看吧。" Option="不對不對，被公主繞進去了，公主的生日才是11月的焦點呀！"/>
+				<Talk NpcID="10002" Face="悲傷" Msg="真不想提起，不過今年真是我最最感動的一年" Option="公主不哭，我們都是公主身後的支柱！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="111" Name="movie_111" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_111" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="悲傷" Msg="好感動怎麼辦，眼淚停不下來……" Option="好的"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="17" Name="movie_17"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_17" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10057" Face="正常" Msg="公主不哭不哭，你看瑪麗拿了什麼來！" Option="音樂盒！"/>
+				<Talk NpcID="10057" Face="正常" Msg="對呀，我們再來聽一次好不好？" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="好，都讓瑪麗替我擔心，真是不好！" Option=""/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="112" Name="movie_112" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_112" />
+			<Action Cmd="FRONT_BUFF_SET" BufferID="147" BufferStep="2"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="對，你們大家都是我的家人，都是我的支柱，都是讓麼麼成為好公主的動力！" Option="公主，我們會加油的！一直陪伴在公主身邊！"/>
+			</Action>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="3"/>
+		</EnterMap>
+	</Step>	
+	
+	<!--下麵是12月份的-->
+	<Step ID="32" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SEND_STATICS" StaticsID="371"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="這個十二月真是過得不一般，莊園一會兒失竊，一會兒冰凍的！" Option="是呀，聖誕老人還失蹤，弄得我們虛驚一場。"/>
+				<Talk NpcID="10002" Face="開心" Msg="現在回想起來，那個戰鬥還真是非常有趣呢！" Option="是哦……（陷入遐想）"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="113" Name="movie_113" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_113" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="老超爺爺是個有愛心的企鵝，收養了好多可憐的小企鵝呢，快去看看他們吧！" Option="好嘞！"/>
+			</Action>
+			<Action Cmd="FRONT_BUFF_SET" BufferID="148" BufferStep="1"/>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="3"/>
+		</EnterMap>
+	</Step>	
+		
+	<Step ID="33" TarMapID="357">
+		<EnterMap MapID="357">
+			<Action Cmd="SAY">
+				<Talk NpcID="10244" Face="正常" Msg="小摩爾，來來來，回答老超爺爺一個問題！" Option="什麼問題呀？"/>
+				<Talk NpcID="10244" Face="正常" Msg="你是比較喜歡摩爾呀還是比較喜歡企鵝呀？" Option="（皺眉頭困擾中，我是摩爾應該喜歡摩爾，可是老超爺爺也好好，怎麼辦？）"/>
+				<Talk NpcID="10244" Face="正常" Msg="哈哈哈，不用那麼困擾。" Option="爺爺，我都喜歡！"/>
+				<Talk NpcID="10244" Face="正常" Msg="回答得好，這個聖誕老人留下的禮物送給你喲，收好收好！" Option="謝謝爺爺！"/>
+			</Action>
+			<Action Cmd="FRONT_BUFF_SET" BufferID="148" BufferStep="2"/>
+			<Action Cmd="JUMP_LOVE_TASK_UI" Param="關愛貧困弱小，你的心靈會變得更加美麗！他們也會回饋你同樣的美麗喲！快去和公主分享吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="34" Step="34"/>
+			<Action Cmd="GO_MAP" MapID="111" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="34" TarMapID="111">
+		<EnterMap MapID="111">
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="沒想到老超爺爺還私自留下的了聖誕老人的禮物。" Option="嘻嘻，肯定是聖誕老人送給他的呢！"/>
+				<Talk NpcID="10002" Face="正常" Msg="對喲，不要輕易的懷疑別人，用充滿愛的心來看待世界" Option="好的"/>
+			</Action>
+			<Action Cmd="OPEN_PANEL" Param="ReviewGalleryPanel" ClearMap="1" Data="3"/>
+		</EnterMap>
+	</Step>	
+</Tasks>
