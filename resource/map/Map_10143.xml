@@ -1,0 +1,44 @@
+<Map>
+	<NpcList>
+	<!-- 
+		<Npc ID="10063" Layer="depthLevel" Name="湯米" Ex="670" Ey="380" Cmd="s" Param="1" />
+		 -->
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10063" Face="正常" Msg="Hi！歡迎光臨建設署！這裡是建築師大本營！所有出色的建築師都可以在這裡製造出令人驚歎的設計！對了！你找我有什麼事嗎？" Option="我想開設店鋪$沒什麼事！" Cmd="act$none" Param="tommy_checkHasCard$6"/>
+		
+		<Talk ID="2" NpcID="10063" Face="正常" Msg="" Option="" Cmd="none" Param="" />
+		<Talk ID="3" NpcID="10063" Face="正常" Msg="" Option="" Cmd="none" Param="" />
+		<Talk ID="4" NpcID="10063" Face="正常" Msg="不錯！想不到你對設計圖紙還是有些天分呀！不過建築師可不能總是紙上談兵！來來，坐著我屋子裡的電梯，下到模擬工地裡實地操作看看吧！在夢想建築師遊戲裡完成4個小屋就算成功喲！" Option="我想開設店鋪$好！我馬上去！" Cmd="act$none" Param="tommy_checkHasCard$0" />
+		<Talk ID="5" NpcID="10063" Face="正常" Msg="" Option="" Cmd="none" Param="" />
+		<Talk ID="6" NpcID="10063" Face="正常" Msg="" Option="" Cmd="none" Param="" />
+		
+		<Talk ID="12" NpcID="10063" Face="正常" Msg="你還沒有摩摩土地卡呢，等你在摩摩商會中領取了之後再來找我吧。" Option="立即前往$稍後再說" Cmd="gm$none" Param="149$" />
+		<Talk ID="13" NpcID="10063" Face="正常" Msg="你已經建立店鋪了呀，如果你想要更換新的房型和內部裝潢的話，直接用電話聯繫我的建築隊吧，我這裡還有很多事情要忙呢。" Option="我知道了！" Cmd="none" Param="" />
+		<Talk ID="14" NpcID="10063" Face="正常" Msg="沒問題，我立刻派遣建築隊到你的店鋪上去，不過你確定要支付3000摩爾豆的建築費用嗎？" Option="好的$我再看看" Cmd="act$none" Param="tommy_hasYXB" />
+		<Talk ID="15" NpcID="10063" Face="正常" Msg="好的，我記下來了，現在我的建築隊已經完工啦，你可以去米勒大道看看你的餐廳，以後要是有別的事情可以在我的熱線開通後用電話聯繫我哦。" Option="馬上過去$知道了" Cmd="act$none" Param="tommy_gotoMyShop$0" />
+		<Talk ID="16" NpcID="10063" Face="正常" Msg="那就叫摩摩餐廳吧，現在我的建築隊已經完工啦，你可以去米勒大道看看你的餐廳，以後要是有別的事情可以在我的熱線開通後用電話聯繫我哦。" Option="馬上過去$知道了" Cmd="act$none" Param="tommy_gotoMyShop$0" />
+		<Talk ID="17" NpcID="10063" Face="正常" Msg="" Option="" Cmd="none" Param="" />
+		<Talk ID="18" NpcID="10063" Face="正常" Msg="摩摩餐廳？真是個不錯的名字，現在我的建築隊已經完工啦，你可以去米勒大道看看你的餐廳，以後要是有別的事情記得再聯繫我哦。" Option="馬上過去$知道了" Cmd="act$none" Param="tommy_gotoMyShop$0" />
+		<Talk ID="19" NpcID="10063" Face="正常" Msg="你身上的摩爾豆好像不夠哦，多玩玩小遊戲賺取更多的摩爾豆之後再來找我吧。" Option="我知道了！" Cmd="none" Param="" />
+		<Talk ID="20" NpcID="10063" Face="正常" Msg="沒問題，我現在馬上就派建築隊過去，你們超級拉姆為了莊園的建設做了很多貢獻，我會給你們修建一套獨特的房型哦，你確定想要花費3000摩爾豆來建立店鋪嗎？" Option="好的$我再看看" Cmd="act$none" Param="tommy_hasYXB" />
+		
+		<Talk ID="22" NpcID="10063" Face="正常" Msg="你的餐廳現在已經建好了，聽說伊蓮給你們準備了新手禮包，你現在可以去摩摩商會領取了。" Option="馬上過去$回到自己的餐廳$知道了" Cmd="gm$act$none" Param="149$tommy_gotoMyShop$" />
+		<Talk ID="21" NpcID="10063" Face="正常" Msg="我的建築隊已經過去了，現在給你的餐廳起一個你喜歡的名字吧" Option="好的$就叫摩摩餐廳吧" Cmd="act$act" Param="tommy_createShop$tommy_createShopAndSetName" />
+	
+	
+		<Talk ID="1001" NpcID="10063" Face="正常" Msg="嗯！我當年接受建築師培訓時，我的老師首先就給我出了幾道難題！據說也是我的老師的老師留給他的題目，想想應該還是很有年代的古董了喲！要想成為一名建築師學徒，就先把羊皮紙上的題目做完再說吧！" Option="我要參加考試！$沒什麼事！" Cmd="act$none" Param="tommy_task221_ingame1$6"/>
+	    <Talk ID="1002" NpcID="10063" Face="正常" Msg="哈哈，恭喜你順利完成第一個考驗！我這裡有5位莊園最偉大建築師的親筆手稿！這些摩爾可都是莊園的開山鼻祖呀！學習從看開始，那些圖稿正好被我放在我的工作桌上，你去好好看看，然後把圖稿拿過來給我吧！" Option="好的，我這就去！$沒什麼事！" Cmd="act$none" Param="tommy_task221_ingame2$6"/>  
+		<Talk ID="1003" NpcID="10063" Face="正常" Msg="不錯不錯！想不到你在繪製圖紙方面還是有些天分呀！不過建築師可不能總是紙上談兵！來來，坐著我屋子裡的電梯，下到模擬工地裡實地操作看看吧！" Option="好的，我這就去！$沒什麼事！" Cmd="act$none" Param="tommy_task221_ingame3$6"/> 
+	</Talks>
+</Map>
+
+
+
