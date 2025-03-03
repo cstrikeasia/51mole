@@ -1,0 +1,42 @@
+<Map>
+	<NpcList>
+		<!-- <Npc ID="10188" Layer="depthLevel" Name="RK" Ex="510" Ey="370" Cmd="s" Param="100" />
+		
+		<Npc ID="10014" Layer="depthLevel" Name="美人魚" Ex="475" Ey="235" Cmd="s" Param="1" AddTaskOption="2" />
+		
+		<Trigger ResName="lollipops" Layer="depthLevel" Ex="835" Ey="231" Cmd="act" Param="getlollipops" Tips="獲得藍色迷你波板糖" />
+		<Trigger ResName="intro" Layer="depthLevel" Ex="477" Ey="377" Cmd="act" Param="callFire" Tips="喚醒水神"/>	
+		<Trigger ResName="pos" Layer="controlLevel" Ex="779" Ey="414" Cmd="act" Param="pos" Tips="敬拜水神"/>			
+		 -->
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_9" Layer="controlLevel" Ex="815" Ey="200" Cmd="alt_map" Param="9" Tips="進入陽光牧場"/>
+		<Trigger ResName="go_176" Layer="controlLevel" Ex="112" Ey="386" Cmd="alt_map" Param="176" Tips="進入神秘湖碼頭"/>
+		<Trigger ResName="go_31" Layer="controlLevel" Ex="133" Ey="285" Cmd="alt_map" Param="31" Tips="進入SMC基地"/>
+		<Trigger ResName="go_50" Layer="depthLevel" Ex="477" Ey="377" Cmd="alt_map" Param="50" Tips="進入摩羅地海海底"/>	
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="500" NpcID="10311" Face="正常" Msg="神秘的黑衣人把我變成了滿頭白發的老摩爾，誰來幫我恢復青春。" Option="餵他喝藥$沒什麼事" Cmd="act$none" Param="takeTheMedicine$null" />
+		<Talk ID="501" NpcID="10310" Face="正常" Msg="謝謝你好心的小摩爾。" Option="是誰把你變成這樣的？" Cmd="act" Param="backToYouthOver" />
+		<Talk ID="502" NpcID="10310" Face="正常" Msg="我隱約看到她好像有一頭長發" Option="哦，我知道了。" Cmd="act" Param="backToYouthReward" />
+		<Talk ID="503" NpcID="10310" Face="正常" Msg="她身上有陣迷人的香氣" Option="哦，我知道了。" Cmd="act" Param="backToYouthReward" />
+		<Talk ID="504" NpcID="10310" Face="正常" Msg="聽說吸取摩爾的青春可以讓他們永葆青春" Option="哦，我知道了。" Cmd="act" Param="backToYouthReward" />
+		<Talk ID="505" NpcID="10310" Face="正常" Msg="神秘黑衣人，好可怕，我不知道，不要問我了,55555" Option="哦，我知道了。" Cmd="act" Param="backToYouthReward" />
+		<Talk ID="506" NpcID="10310" Face="正常" Msg="如果她再出現，我一定會認出她。" Option="哦，我知道了。" Cmd="act" Param="backToYouthReward" />
+		<Talk ID="100" NpcID="10188" Face="正常" Msg="你好小摩爾。" Option="領取隊服$火神盃活動$暗夜遊俠隊加油" Cmd="act$p$null" Param="getItem$RidingDragonMainPanel$null" AddTaskOption="1" />
+		
+		<Talk ID="1" NpcID="10148" Face="正常" Msg="謝謝你，{$username}，又找到了一顆黑暗種子，送你一些禮物以表謝意！我們一定要阻止零的陰謀！" Option="嗯！一定不能讓他得逞！" Cmd="act" Param="getItemTwo" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10014" Face="正常" Msg="海的歌聲也撫平不了我的憂傷，寂寞的心事填滿我的心房……" Option="了解美人魚的故事$制造心形五彩珍珠項鏈$沒什麼事" Cmd="none" Param="1" AddTaskOption="1" />
+		
+		<Talk ID="3" NpcID="10013" Face="正常" Msg="快來看看花嬸的壓箱寶呀！壓箱寶裡有寶貝喲！不看不知道，一看嚇一跳呀！走過路過千萬別錯過！" Option="我要買賣東西$下次再來！" Cmd="act$none" Param="openAgicalGoods$1" AddTaskOption="1"  />
+		
+		<Talk ID="422" NpcID="10249" Face="開心" Msg="這~可不是我幹的哦~~~~" Option="呃，我相信你了！" Cmd="act" Param="dandanAct" AddTaskOption="1"/>
+		<Talk ID="423" NpcID="10249" Face="開心" Msg="這~可不是我幹的哦~~~~" Option="賣萌也沒用！這次被我抓到了吧！" Cmd="act" Param="dandanAct" AddTaskOption="1"/>
+	</Talks>
+</Map>
+
+
+
+
