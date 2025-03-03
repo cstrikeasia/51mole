@@ -1,0 +1,22 @@
+<Map>
+	<NpcList>
+	<!-- 
+		<Npc ID="10041" Layer="controlLevel" Name="梅森" Ex="608" Ey="351" Cmd="s" Param="1" />
+		 -->
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="999" NpcID="10041" Face="正常" Msg="謝謝小摩爾關心~你和小C要注意防暑哦！來，給你們喝果汁~" Option="謝謝~" Cmd="act" Param="fatherDayOver" AddTaskOption="1"  />
+		
+		<Talk ID="1" NpcID="10041" Face="正常" Msg="你好{$username}，我是梅森，收購各種農作物。如果你要加工食品、飼料或布藝，我身邊的R4機器可以幫你的忙！" Option="出售作物$沒什麼事" Cmd="act$none" Param="mason_sale$6" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+

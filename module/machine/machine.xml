@@ -1,0 +1,50 @@
+<taomee>
+	<machine>
+		<food>
+			<item id="190187" socketType="0">
+				<recipe id="190186" count="1" tip="麥穗：種植小麥可以獲得"/>
+			</item>
+		</food>
+		<animalFood>
+			<item id="190472" socketType="1">
+				<recipe id="190028" count="1" tip="胡蘿蔔：種植獲得"/>
+				<recipe id="190419" count="1" tip="玉米：種植獲得"/>
+			</item>
+			<item id="190510" socketType="2">
+				<recipe id="190141" count="1" tip="蘋果：種植獲得"/>
+			</item>
+		</animalFood>
+		<materials>
+			<item id="190473" socketType="3">
+				<recipe id="190474" count="1" tip="羊毛：成年綿羊在牧場剪羊毛獲得"/>
+			</item>
+			<item id="190459" socketType="4">
+				<recipe id="190458" count="1" tip="棉花：種植棉花可以獲得"/>
+			</item>
+			<item id="190486" socketType="5">
+				<recipe id="190249" count="1" tip="繭：養蠶獲得"/>
+			</item>
+			<item id="191033" socketType="6">
+				<recipe id="191032" count="1" tip="惡魔皮毛：天使戰鬥獲得"/>
+			</item>
+			<item id="191036" socketType="7">
+				<recipe id="190249" count="1" tip="繭：養蠶獲得"/>
+			</item>
+			<item id="190649" socketType="8">
+				<recipe id="190591" count="3" tip="火焦木：拉姆世界熔岩火洞取得"/>
+				<recipe id="190592" count="3" tip="火浮星：拉姆世界熔岩火洞取得"/>
+			</item>
+			<item id="190652" socketType="9">
+				<recipe id="190623" count="2" tip="水珍珠：拉姆世界冰之洞穴取得"/>
+				<recipe id="190610" count="2" tip="針刺草：拉姆世界惡魔樹精棲息地取得"/>
+				<recipe id="190612" count="2" tip="咕嚕果：拉姆世界樹木洞穴取得"/>
+			</item>
+			<item id="190651" socketType="10">
+				<recipe id="190625" count="3" tip="水沙石：拉姆世界水系酋長洞穴取得"/>
+				<recipe id="190624" count="3" tip="水珊瑚：拉姆世界章魚試煉場取得"/>
+			</item>
+		</materials>
+	</machine>
+</taomee>
+
+
