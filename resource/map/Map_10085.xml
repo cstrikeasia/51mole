@@ -1,0 +1,22 @@
+<Map>
+	<NpcList>
+		<Npc ID="10062" Layer="controlLevel" Name="貝塔" Ex="397" Ey="250" Cmd="s" Param="1" />
+	</NpcList>
+	
+	<Triggers>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10062" Face="正常" Msg="最近車的牌照又漲價了。。。" Option="風靈騎士$SMC" Cmd="act$act" Param="windKnight$baita_openSMC" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10062" Face="正常" Msg="小摩爾！要修車嗎？" Option="是呀，我在找一些車上的零件！" Cmd="s" Param="3" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10062" Face="正常" Msg="是什麼款式的車？老款還是新款？跑車還是越野車？" Option="我也不清楚，我描述下……." Cmd="act" Param="playMovie7" AddTaskOption="1" />
+		<Talk ID="4" NpcID="10062" Face="正常" Msg="好吧，雖然我不知道是什麼東西，但屋外的蔣誠信那裡有些舊零件，你拿去用吧，不用錢！" Option="謝謝貝塔！！！！\(^_^)/" Cmd="gm" Param="83" AddTaskOption="1" />
+		
+		<Talk ID="6" NpcID="10062" Face="正常" Msg="" Option="" Cmd="" Param="" AddTaskOption="1" />
+		<Talk ID="7" NpcID="10062" Face="正常" Msg="做的不錯，給你風靈騎士資格證，加油哦~" Option="我知道了！" Cmd="none" Param="3" AddTaskOption="1" />
+		<Talk ID="8" NpcID="10062" Face="正常" Msg="你還沒有流雲晶石，等你得到了流雲晶石再來找我吧~" Option="我知道了！" Cmd="none" Param="2" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+
