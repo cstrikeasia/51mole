@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListAll>  
+	  <item  NPCID="46"  NPCname="傑西"  NPCnamess="Jesse">
+		 <npcTips   msg="想成為嚮導的摩爾請來我這裏報到！"  tips="    很高興見到你，我是SMC嚮導指導官傑西，負責培養優秀的嚮導。;    SMC嚮導的主要職責是幫助指導剛來摩爾莊園的新公民。;    有興趣成為一個樂於助人的嚮導嗎？你可以點擊右上角SMC徽章來獲取就職任務。"  changID="no"  Job="ok"/>
+	     <JobList   JobID="0"  msg0="" msg1="    嘿，你的任務還未完成，你可以在任務列表中找到任務線索哦！"  msg2="    恭喜！你已經成為了一名嚮導。作為獎品你獲得嚮導套裝。"   msg3="    熱心助人是每個嚮導的職責，更多嚮導任務你可以點擊右上角SMC徽章獲取。"   needGood="190001;190002;190003;190004"  getGood="12060;12061;12062;12063"  needGoodname="紅色磁帶;黃色磁帶;綠色磁帶;藍色磁帶"  getGoodname="嚮導四件套"  changID="no" />
+      </item>
+
+</ListAll>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

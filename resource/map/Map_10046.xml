@@ -1,0 +1,18 @@
+<Map>
+	<NpcList>
+		<Npc ID="10037" Layer="depthLevel" Name="傑西" Ex="730" Ey="300" Cmd="s" Param="1"  AddTaskOption="1" />
+	</NpcList>
+	
+	<Triggers>
+	
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10037" Face="正常" Msg="哈哈，我是傑西，想成為愛心嚮導的小摩爾們，可以找我報名喲！每個嚮導都會竭盡全力幫助每一位需要幫助的小摩爾！" Option="謝謝，我先走啦!" Cmd="none" Param="1" AddTaskOption="1" />
+		
+		<Talk ID="2" NpcID="10037" Face="正常" Msg="恭喜你成為優秀的超級蘑菇嚮導，這是送你的超級蘑菇嚮導裝。快點擊選單欄中的“嚮導行動”，去進行巡邏，並監督不文明的小摩爾吧！" Option="恩恩，我一定每天來巡邏！" Cmd="none" Param="1" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+
