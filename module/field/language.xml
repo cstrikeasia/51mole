@@ -1,0 +1,264 @@
+﻿<taomee>
+	<language>
+		<!-- 常態 -->
+		<topic flag="0">
+			<common>
+				<sentence level="0" detail="聽說麼麼公主要過生日了，有蛋糕吃嗎？"/>
+				<sentence level="0" detail="聽說拉姆又學會新技能啦！？"/>
+				<sentence level="0" detail="小主人要好好學習，有空來看看我們哦！"/>
+				<sentence level="0" detail="如果有個看家狗，天天照顧我們，也許我們不會逃跑哦！"/>
+				<sentence level="0" detail="建築師造傢俱啦！你知道嗎？"/>
+				<sentence level="1" detail="吃飽喝好，快快長大"/>
+				<sentence level="1" detail="春暖花開，心情好好！"/>
+				<sentence level="1" detail="主人，要是你能在家裡開餐廳，我們就能吃飽了吧！"/>
+				<sentence level="1" detail="建築師要能給我們造個窩就好了"/>
+				<sentence level="2" detail="cold~"/>
+				<sentence level="2" detail="麼麼公主過生日收禮物，我也想過生日！"/>
+				<sentence level="2" detail="我也想去參加派對！"/>
+				<sentence level="2" detail="我們要健健康康的生活在莊園裡。"/>
+			</common>
+			<animal id="1270001">
+				<sentence level="1" detail="小豬，你的鼻子有兩個孔~~"/>
+				<sentence level="1" detail="小紅豬，肥嘟嘟"/>
+				<sentence level="1" detail="哪一天，豬也能去做菜嗎？"/>
+				<sentence level="1" detail="人家都說豬是這個世界最聰明的動物"/>
+				<sentence level="2" detail="pig？"/>
+			</animal>
+			<animal id="1270002">
+				<sentence level="1" detail="嘎嘎嘎~"/>
+				<sentence level="1" detail="我是醜小鴨，要變白天鵝"/>
+				<sentence level="1" detail="小黃鴨，嘎嘎嘎！"/>
+			</animal>
+			<animal id="1270005">
+				<sentence level="1" detail="彈彈跳，跳高高"/>
+				<sentence level="1" detail="黑森林"/>
+			</animal>
+			<animal id="1270006">
+				<sentence level="1" detail="咩~"/>
+				<sentence level="1" detail="我只產羊毛"/>
+				<sentence level="1" detail="我身上的羊毛，可以幫主人做超拉戰袍哦！"/>
+			</animal>
+			<animal id="1270007">
+				<sentence level="1" detail="咩~"/>
+				<sentence level="1" detail="好想出去溜溜"/>
+				<sentence level="1" detail="我身上的羊毛，可以幫主人做超拉戰袍哦！"/>
+			</animal>
+			<animal id="1270015">
+				<sentence level="1" detail="小白兔，白又白"/>
+				<sentence level="1" detail="我是紅眼睛，可我很健康"/>
+			</animal>
+			<animal id="1270016">
+				<sentence level="1" detail="大家都說我帥"/>
+				<sentence level="1" detail="我是不是帥得太過分了？"/>
+			</animal>
+			<animal id="1270017">
+				<sentence level="1" detail="肥不是我的錯"/>
+				<sentence level="1" detail="又肥又花，肥肥花兔"/>
+			</animal>
+			<animal id="1270019">
+				<sentence level="1" detail="我討厭感恩節"/>
+				<sentence level="1" detail="火雞怎麼飛?"/>
+				<sentence level="2" detail="好好照顧我，才會生小火雞"/>
+				<sentence level="2" detail="我喜歡新年，卻討厭感恩節"/>
+			</animal>
+			<animal id="1270020">
+				<sentence level="1" detail="我討厭感恩節"/>
+				<sentence level="1" detail="有母火雞來陪伴我嗎?"/>
+				<sentence level="2" detail="我喜歡新年，卻討厭感恩節"/>
+			</animal>
+			<animal id="1270026">
+				<sentence level="1" detail="我的老家在蟲蟲谷"/>
+			</animal>
+			<animal id="1270027">
+				<sentence level="1" detail="只有超級拉姆才能抓到我！"/>
+			</animal>
+			<animal id="1270028">
+				<sentence level="0" detail="想念黑森林"/>
+				<sentence level="1" detail="我想飛得更高"/>
+				<sentence level="1" detail="有一天，我一定能展翅高飛"/>
+				<sentence level="1" detail="說我是加大版的火雞？胡說！"/>
+				<sentence level="2" detail="fly"/>
+			</animal>
+			<animal id="1270036">
+				<sentence level="1" detail="我來自聖誕城"/>
+				<sentence level="1" detail="你見過聖誕老人嗎?"/>
+			</animal>
+			<animal id="1270037">
+				<sentence level="1" detail="蟲蟲谷裡有同類"/>
+				<sentence level="1" detail="松鼠和老鼠不是近親"/>
+			</animal>
+		</topic>
+		<!-- 饑餓 -->
+		<topic flag="1" >
+			<common>
+				<sentence level="0" detail="餓暈了啦"/>
+				<sentence level="0" detail="不要虐待我啦"/>
+				<sentence level="0" detail="真沒吃的了嗎？"/>
+				<sentence level="0" detail="嗚嗚~~餓"/>
+				<sentence level="1" detail="餓的前胸貼後背了"/>
+				<sentence level="1" detail="hungry"/>
+			</common>
+			<animal id="1270001">
+				<sentence level="1" detail="想吃胡蘿蔔"/>
+				<sentence level="1" detail="我沒肉，只有排骨"/>
+			</animal>
+			<animal id="1270002">
+				<sentence level="0" detail="賞個胡蘿蔔吃吃吧"/>
+			</animal>
+			<animal id="1270005">
+				<sentence level="0" detail="毛豆，毛毛豆"/>
+				<sentence level="0" detail="再餓，就瘦的趴下了"/>
+			</animal>
+			<animal id="1270006">
+				<sentence level="1" detail="羊羊羊，餓餓餓"/>
+			</animal>
+			<animal id="1270015">
+				<sentence level="0" detail="紅蘿蔔，白蘿蔔"/>
+			</animal>
+			<animal id="1270016">
+				<sentence level="0" detail="蘿蔔，給一個蘿蔔吧"/>
+			</animal>
+			<animal id="1270017">
+				<sentence level="0" detail="蘿蔔，給一個蘿蔔吧"/>
+			</animal>
+			<animal id="1270019">
+				<sentence level="0" detail="精緻雞飼料~"/>
+			</animal>
+			<animal id="1270020">
+				<sentence level="0" detail="精緻雞飼料"/>
+				<sentence level="0" detail="餓呀，去R4那加工點飼料給我吧！"/>
+			</animal>
+			<animal id="1270026">
+				<sentence level="0" detail="蟲蟲果汁，好像很美味哦"/>
+				<sentence level="0" detail="快拿點蘋果加工出蟲蟲果汁！"/>
+			</animal>
+			<animal id="1270027">
+				<sentence level="0" detail="好想吃點什麼"/>
+			</animal>
+			<animal id="1270028 ">
+				<sentence level="0" detail="我的毛毛豆在哪裡"/>
+				<sentence level="1" detail="再餓我就變火雞了"/>
+			</animal>
+			<animal id="1270036">
+				<sentence level="1" detail="咱們叫螢火草外送吧"/>
+			</animal>
+			<animal id="1270037">
+				<sentence level="1" detail="玉米，我要玉米"/>
+			</animal>
+		</topic>
+		<!-- 口渴 -->
+		<topic flag="2" >
+			<common>
+				<sentence level="1" detail="沒水啦，主人在哪裡"/>
+				<sentence level="1" detail="渴渴渴，沒水喝"/>
+			</common>
+		</topic>
+		<!-- 饑渴 -->
+		<topic flag="3">
+			<common>
+				<sentence level="0" detail="餓~渴~"/>
+				<sentence level="0" detail="不要虐待我啦，我要吃東西"/>
+				<sentence level="0" detail="又餓又渴，還不如去野餐呢"/>
+				<sentence level="0" detail="什麼時候開飯"/>
+				<sentence level="1" detail="你吃大魚大肉，我卻餓肚子！"/>
+				<sentence level="1" detail="我也要改善食物，要好好照顧我們哦！"/>
+				<sentence level="1" detail="抗議！別讓我們餓肚皮了！"/>
+				<sentence level="1" detail="再不給我吃，我就去保護動物協會抗議！"/>
+				<sentence level="1" detail="餓！渴！作為動物我覺得壓力很大！"/>
+			</common>
+			<animal id="1270001">
+				<sentence level="1" detail="夢想中的胡蘿蔔"/>
+				<sentence level="1" detail="我現在只有排骨，減肥過度了"/>
+			</animal>
+			<animal id="1270002">
+				<sentence level="0" detail="賞個胡蘿蔔吃吃吧"/>
+			</animal>
+			<animal id="1270005">
+				<sentence level="0" detail="毛豆，毛毛豆"/>
+				<sentence level="0" detail="再餓，就跳不動了"/>
+			</animal>
+			<animal id="1270006">
+				<sentence level="1" detail="羊羊羊，餓餓餓"/>
+			</animal>
+			<animal id="1270015">
+				<sentence level="0" detail="紅蘿蔔，白蘿蔔"/>
+			</animal>
+			<animal id="1270016">
+				<sentence level="0" detail="蘿蔔，我要一隻蘿蔔"/>
+			</animal>
+			<animal id="1270017">
+				<sentence level="0" detail="蘿蔔，我要一隻蘿蔔"/>
+			</animal>
+			<animal id="1270019">
+				<sentence level="0" detail="我想吃東西~"/>
+			</animal>
+			<animal id="1270020">
+				<sentence level="0" detail="精緻雞飼料"/>
+				<sentence level="0" detail="餓餓，去R4那加工點飼料給我吧！"/>
+			</animal>
+			<animal id="1270026">
+				<sentence level="0" detail="蟲蟲果汁，好像很美味哦"/>
+				<sentence level="0" detail="快拿點蘋果加工出蟲蟲果汁！"/>
+			</animal>
+			<animal id="1270027">
+				<sentence level="0" detail="好想吃點什麼"/>
+			</animal>
+			<animal id="1270028 ">
+				<sentence level="0" detail="我的毛毛豆在哪裡"/>
+				<sentence level="1" detail="餓的我要變火雞了"/>
+			</animal>
+			<animal id="1270036">
+				<sentence level="1" detail="咱們出去吃點螢火草吧"/>
+			</animal>
+			<animal id="1270037">
+				<sentence level="1" detail="玉米，我的玉米呢"/>
+			</animal>
+		</topic>
+		<!-- 滑鼠點擊 -->
+		<topic flag="4" >
+			<common>
+				<sentence level="1" detail="出去逛逛？"/>
+				<sentence level="1" detail="去拉姆世界逛逛？"/>
+			</common>
+			<animal id="1270026">
+				<sentence level="1" detail="去授粉？"/>
+				<sentence level="1" detail="放生是種美德"/>
+			</animal>
+		</topic>
+		<!-- 被抓獲 -->
+		<topic flag="5">
+			<common>
+				<sentence level="1" detail="抓~抓~抓不到"/>
+				<sentence level="1" detail="不要抓我去做菜啊"/>
+				<sentence level="1" detail="我沒肉，放過我吧"/>
+				<sentence level="1" detail="我閃，我再閃！"/>
+        <sentence level="1" detail="哎呀，被抓住了"/>
+			</common>
+		</topic>
+		<!-- 喂水 -->
+		<topic flag="6">
+			<common>
+				<sentence level="1" detail="哇，好喝"/>
+				<sentence level="1" detail="真甜啊~"/>
+				<sentence level="1" detail="喝水不會長胖"/>
+			</common>
+		</topic>
+		<!-- 餵食 -->
+		<topic flag="7" >
+			<common>
+				<sentence level="0" detail="胃口好，吃什麼都香！"/>
+				<sentence level="0" detail="多謝賞飯啦"/>
+			</common>
+			<animal id="1270028">
+				<sentence level="1" detail="吃多少我都不怕胖"/>
+			</animal>
+			<animal id="1270036">
+				<sentence level="1" detail="螢火草，我的最愛"/>
+				<sentence level="1" detail="去彩虹瀑布多割點螢火草喲！"/>
+			</animal>
+			<animal id="1270028">
+				<sentence level="1" detail="毛毛豆才好吃"/>
+			</animal>
+		</topic>
+	</language>
+</taomee>
