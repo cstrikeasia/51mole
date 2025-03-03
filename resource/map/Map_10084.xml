@@ -1,0 +1,29 @@
+<Map>
+	<NpcList>
+		<Npc ID="10161" Layer="depthLevel" Name="尼爾拉法師" Ex="694" Ey="412" Cmd="s" Param="1" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="gameBtn_bql" Layer="buttonLevel" Ex="335" Ey="320" Cmd="act" Param="openBql" Tips="" /> 
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="121" NpcID="10161" Face="正常" Msg="嗯，沒想到中秋節還有人想到老夫。" Option="送你15個月餅" Cmd="act" Param="getMoonCakePrize" AddTaskOption="1" />
+		<Talk ID="122" NpcID="10161" Face="正常" Msg="呵呵，乖，中秋節也沒什麼好送你的，就送你這個吧。" Option="你太客氣了" Cmd="act" Param="getPrize" AddTaskOption="1" />
+		<Talk ID="123" NpcID="10161" Face="正常" Msg="不用這麼客氣，你已經送給過我月餅了" Option="嗯，好的" Cmd="none" Param="" AddTaskOption="1" />
+	
+		<Talk ID="1" NpcID="10161" Face="正常" Msg="魔法隨心變——可以讓摩爾想變就變！小摩爾，你今天想好要變成什麼樣子出現在莊園裡了嗎？" Option="如何進入西部遊樂場？$龍巢迷宮的密碼。$懷念圓嘟嘟的紅鼻子,我想要變回摩爾了!$啊哦~~~我還有事,先走了喲!" Cmd="act$act$s$none" Param="howEnterMap$totem$2$6" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10161" Face="正常" Msg="{$username},變身魔法一解除,你就可以變回摩爾原有的形象了!" Option="喲嚯~我就是無敵百變小摩爾!$嗯~~~還是容我再想想吧!" Cmd="p$none" Param="RelieveTransfigurationPanel$6" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10161" Face="正常" Msg="{$username},你確定要嘗試以另外一種角色出現在莊園裡嗎？" Option="(*^__^*) 嘻嘻~確實是很想嘗試一下哦！" Cmd="s" Param="4" AddTaskOption="1" />
+		<Talk ID="4" NpcID="10161" Face="正常" Msg="魔法咒語隻會改變的你外形，但卻改變不了你的內心！你依然有著一顆摩爾的善良之心！準備好了嗎，小摩爾？" Option="我準備好了" Cmd="p" Param="TransfigurationPanel" AddTaskOption="1" />
+		<Talk ID="5" NpcID="10161" Face="正常" Msg="這文字……好熟悉，讓我想想……嗯，對了，這東西以前是一張密碼圖，後來沒妥善保管就變成了4份。我這邊有一份，既然你有需要那就送給你吧。" Option="謝謝，為什麼上面什麼都沒有呢？" Cmd="s" Param="6" AddTaskOption="1" />
+		<Talk ID="6" NpcID="10161" Face="正常" Msg="這是用極其神秘的材料製作的密碼圖，只有4份集齊才能顯示真正內容。" Option="那其他三份呢？" Cmd="s" Param="7" AddTaskOption="1" />
+		<Talk ID="7" NpcID="10161" Face="正常" Msg="其實這四塊地圖相互間是有感應的，你看它現在正指向北邊。哦！對了，當時庫拉拿了一份，說不定在庫拉城堡可以找到。" Option="好的，我這就去" Cmd="act" Param="kulachen" AddTaskOption="1" />
+		<Talk ID="8" NpcID="10161" Face="正常" Msg="唉，西部遊樂場已被人施了魔法，需要開啟神奇機關才可以。" Option="原來真的是這樣！那要怎麼開啟呢？" Cmd="s" Param="9" AddTaskOption="1" />
+		<Talk ID="9" NpcID="10161" Face="正常" Msg="別急，其實也不難。只要點擊中間的9宮格按鈕，進入尼爾拉的神奇機關，得到4個寶石，就可以了。" Option="太好了，謝謝大師指點！" Cmd="act" Param="openJewelGame" AddTaskOption="1" />
+		<Talk ID="10" NpcID="10161" Face="正常" Msg="小摩爾要先去找布多多哦" Option="太好了，謝謝大師指點！" Cmd="alt_map" Param="237" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+
