@@ -1,0 +1,57 @@
+<Map>
+	<NpcList>
+		<Npc ID="10007" Layer="depthLevel" Name="菩提大伯" Ex="487" Ey="328" Cmd="s" Param="3" AddTaskOption="1"/> 
+		<Npc ID="10008" Layer="depthLevel" Name="葡萄" Ex="519" Ey="328" Cmd="s" Param="2" AddTaskOption="1"/>
+	</NpcList>
+	
+	<Triggers>
+	
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="999" NpcID="10007" Face="正常" Msg="ZZZ~~~" Option="……" Cmd="act" Param="fatherDayOver" AddTaskOption="1"  />
+		
+		<Talk ID="121" NpcID="10228" Face="正常" Msg="嗯，小摩爾，中秋節快樂" Option="送你20個月餅" Cmd="act" Param="getMoonCakePrize" />
+		<Talk ID="122" NpcID="10228" Face="正常" Msg="幸運的月餅給他人帶來好運，也會給自己帶來好運的，這是我給你的好運禮物，請收下！" Option="你太客氣了" Cmd="act" Param="getPrize" />
+		<Talk ID="123" NpcID="10228" Face="正常" Msg="不用這麼客氣，你已經送給過我月餅了" Option="嗯，好的" Cmd="none" Param="" />
+	
+		<Talk ID="1" NpcID="10228" Face="正常" Msg="嚯嚯嚯，你好我是菩提大伯，你找我有什麼事？" Option="我馬上去看看~" Cmd="none" Param="1"  AddTaskOption="1"/>
+		<Talk ID="2" NpcID="10007" Face="正常" Msg="小摩爾，你要好好學習，天天向上，長大也能像大伯一樣強！" Option="幫忙打工$報名上課！$沒什麼事！" Cmd="act$act$none" Param="putao_Work$putao_class$6" AddTaskOption="1" />
+	    
+		<Talk ID="3" NpcID="10007" Face="正常" Msg="嚯嚯嚯，你好我是菩提大伯，你找我有什麼事？" Option="我先逛逛" Cmd="null" Param="none" AddTaskOption="1"  />
+		<Talk ID="4" NpcID="10183" Face="正常" Msg="那個……這……這位頭發很少，胡子倒很多的老爺爺不會就是菩提大伯吧？" Option="噓~~~要懂禮貌！這位就是菩提大伯！" Cmd="s" Param="5" />
+		<Talk ID="5" NpcID="10007" Face="正常" Msg="{$username}，你帶的這是……" Option="這是迪迪拉給我的神秘天使寶寶！它很想來拜訪一下菩提大伯您！" Cmd="s" Param="6" />
+		<Talk ID="6" NpcID="10007" Face="正常" Msg="熱烈歡迎！那你一定要帶它到莊園四處逛逛，好好款待一下這位小客人！" Option="嘻嘻~~~我知道！一定熱情款待！" Cmd="act" Param="putiTalkOver" />
+		
+		<Talk ID="10" NpcID="10007" Face="正常" Msg="親愛的小摩爾，你知道繪畫老師每天要做點什麼事嗎？" Option="這個……教我們畫畫呀" Cmd="s" Param="11" />
+		<Talk ID="11" NpcID="10007" Face="正常" Msg="哈哈，除了教畫畫外，是不是先得為你們準備上課的材料呢？" Option="對哦，我怎麼沒想到，那要怎麼準備呢？快告訴我吧" Cmd="s" Param="12" />
+		<Talk ID="12" NpcID="10007" Face="正常" Msg="恩，你得先去莊園找一下看看哪些圖比較適合學生臨摹呢？" Option="好類，弱弱問下，有提示嗎？" Cmd="s" Param="13" />
+		<Talk ID="13" NpcID="10007" Face="正常" Msg="好吧，看你這麼用心，就告訴你吧，在小遊戲裡找找看噢。" Option="小遊戲？臨摹繪畫有關的？ 那不是摩摩來找碴嗎！哈哈" Cmd="act" Param="openSearchGame" />
+		
+		<Talk ID="14" NpcID="10007" Face="正常" Msg="親愛的小摩爾，你知道音樂老師每天要做點什麼事嗎？" Option="這個……不就教我們唱歌了" Cmd="s" Param="15" />
+		<Talk ID="15" NpcID="10007" Face="正常" Msg="呵呵，是先要教會學生五線譜，那才算的上真正的音樂呢" Option="哦~說的也是，呵呵，去哪裡教他們呢？" Cmd="s" Param="16" />
+		<Talk ID="16" NpcID="10007" Face="正常" Msg="好吧，給你點提示，就在我們莊園裡的小遊戲中尋找吧" Option="小遊戲？ 五線譜音樂？ 哈，我想到了，拉姆藝術課！" Cmd="s" Param="17" />
+		<Talk ID="17" NpcID="10007" Face="正常" Msg="真是個聰明小摩爾，希望你可以成為“好老師”哦" Option="放心吧，我一定會用心學習和教導的！" Cmd="act" Param="musicLesson" />
+		
+		
+		<Talk ID="30" NpcID="10007" Face="正常" Msg="嚯嚯~莊園週年慶到來啦！你真是個乖摩爾，還記得給我送邀請函！" Option="慶怎麼能少可大伯您呢！（摩爾愛跳完舞條一支舞蹈）" Cmd="s" Param="31" />
+		<Talk ID="31" NpcID="10007" Face="正常" Msg="舞會邀請函？霍霍大伯耍劍厲害，這跳舞嘛……" Option="大伯，我來教您。" Cmd="act" Param="beginGame"/>
+		<Talk ID="32" NpcID="10007" Face="正常" Msg="咦！這個邀請函好像不是送給我的，嗚嗚嗚~真傷心！" Option="不好意思啦，我弄錯了o(╯□╰)o" Cmd="null" Param="none" />
+		
+		<Talk ID="200" NpcID="10007" Face="正常" Msg=" 哦，是{$username}來啦，有什麼事嗎？" Option="摩靈世界的泰尼長老想找您聊一聊。" Cmd="s" Param="201" />
+		<Talk ID="201" NpcID="10007" Face="正常" Msg="摩靈世界的大長老？這確實有必要去好好和它聊一聊關於莊園和摩靈世界的事情……{$username}，謝謝你啦。這件事我會記在心上的。" Option="那我先走了，菩提大伯再見~" Cmd="act" Param="letterTaskOver"/>
+		<Talk ID="300" NpcID="10007" Face="正常" Msg="火神盃臨近，讓我來考考你吧：每年的火神盃都在幾月舉行？" Option="八月$七月" Cmd="s$s" Param="301$302"/>
+		<Talk ID="301" NpcID="10007" Face="正常" Msg="恭喜小摩爾，答對啦。火神盃在每年的八月準時舉辦." Option="謝謝菩提大伯。" Cmd="act" Param="questionOver"/>
+		<Talk ID="302" NpcID="10007" Face="正常" Msg="太可惜，答錯了。小摩爾應該再仔細想想。" Option="我再想想" Cmd="none" Param="ss"/>
+		<Talk ID="310" NpcID="10007" Face="正常" Msg="火神盃臨近，讓我來考考你吧： 競技比賽的精神是什麼？" Option="友誼第一，比賽第二。$比賽第一，友誼第二。" Cmd="s$s" Param="311$312"/>
+		<Talk ID="311" NpcID="10007" Face="正常" Msg="恭喜小摩爾，答對啦。友誼比比賽結果更重要。" Option="謝謝菩提大伯。" Cmd="act" Param="questionOver"/>
+		<Talk ID="312" NpcID="10007" Face="正常" Msg="太可惜，答錯了。友誼比比賽結果更重要。" Option="哦，我知道啦。" Cmd="none" Param="ss"/>
+		<Talk ID="320" NpcID="10007" Face="正常" Msg="火神盃臨近，讓我來考考你吧：莊園裡已經舉辦過多少屆火神盃？" Option="四屆$十屆" Cmd="s$s" Param="321$322"/>
+		<Talk ID="321" NpcID="10007" Face="正常" Msg="恭喜小摩爾，答對啦。火神盃已經舉辦了四屆了。" Option="謝謝菩提大伯。" Cmd="act" Param="questionOver"/>
+		<Talk ID="322" NpcID="10007" Face="正常" Msg="太可惜，答錯了。小摩爾應該再仔細想想。" Option="哦，我知道啦。" Cmd="none" Param="ss"/>
+	</Talks>
+</Map>
+
+
+
+
