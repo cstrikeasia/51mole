@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 組裝線
+AwardID:成品ItemID
+ProcLv:機械工廠等級
+ItemIn：輸入物品（可以有多條，上限為4）
+ID：輸入物品ID
+Count：輸入物品數量
+IsNew：是否顯示new
+MakeLvl：車床中製作等級
+Type: 1車床製作，2探礦
+ -->
+<CPProcess>
+<machine>
+  <Proc AwardID="190947" ProcLv="1" Type="1446" IsSpecial="0" Content="產品介紹：                  為醜小鴨打造一副翅膀，實現醜小鴨飛上天空的夢想！">
+    <ItemIn ID="1613633" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613600" Count="1" Type="1" MakeLvl="1"/>    
+  </Proc>
+  <Proc AwardID="190948" ProcLv="1" Type="1447" IsSpecial="0" Content="產品介紹：                  為醜小鴨打造一副翅膀，實現醜小鴨飛上天空的夢想！">
+    <ItemIn ID="1613633" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613601" Count="1" Type="1" MakeLvl="1"/>
+  </Proc>
+
+  <Proc AwardID="1613138" ProcLv="1" Type="1243" IsSpecial="0" Content="產品介紹：                  機械工坊設備，可以建造銅礦熔爐和第2代車床">
+    <ItemIn ID="1613604" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613600" Count="50" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613601" Count="50" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613905" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="1613140" ProcLv="2" Type="1244" IsSpecial="0" Content="產品介紹：                  機械工坊設備，可以冶煉銅礦和鐵礦，需要兩隻超級豬操作">
+    <ItemIn ID="1613604" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613600" Count="50" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613601" Count="50" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613907" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="1613141" ProcLv="2" Type="1245" IsSpecial="0" Content="產品介紹：                  機械工坊設備，可以加工複雜的零件，需要兩隻超級豬操作">
+    <ItemIn ID="1613604" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613600" Count="50" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613601" Count="50" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613908" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="1613142" ProcLv="2" Type="1246" IsSpecial="0" Content="產品介紹：                  機械工坊設備，可以建造金礦熔爐和第3代車床">
+    <ItemIn ID="1613604" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613600" Count="200" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613601" Count="200" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613915" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="1613144" ProcLv="3" Type="1247" IsSpecial="0" Content="產品介紹：                  機械工坊設備，可以冶煉金礦、銅礦和鐵礦，需要三隻超級豬操作">
+    <ItemIn ID="1613604" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613600" Count="200" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613601" Count="200" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613917" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="1613145" ProcLv="3" Type="1248" IsSpecial="0" Content="產品介紹：                  機械工坊設備，可以加工最複雜的高級零件，需要三隻超級豬操作">
+    <ItemIn ID="1613604" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613600" Count="200" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613601" Count="200" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613918" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="1614009" ProcLv="1" Type="1273" IsSpecial="0" Content="產品介紹：                  機械工坊道具，對好友的鐵礦熔爐、第1代車床使用，使生產時間加倍">
+    <ItemIn ID="1613605" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613602" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613900" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="1614010" ProcLv="2" Type="1274" IsSpecial="0" Content="產品介紹：                  機械工坊道具，對好友的銅礦熔爐、第2代車床使用，使生產時間加倍">
+    <ItemIn ID="1613605" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613602" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613909" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="1614011" ProcLv="3" Type="1275" IsSpecial="0" Content="產品介紹：                  機械工坊道具，對好友的金礦熔爐、第3代車床使用，使生產時間加倍">
+    <ItemIn ID="1613605" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613602" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613919" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="1614012" ProcLv="1" Type="1276" IsSpecial="0" Content="產品介紹：                  機械工坊道具，對自己被膠住的機器使用，消除簡易膠水效果">
+    <ItemIn ID="1613606" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613602" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613900" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="1614013" ProcLv="2" Type="1277" IsSpecial="0" Content="產品介紹：                  機械工坊道具，對自己被膠住的機器使用，消除專業膠水效果">
+    <ItemIn ID="1613606" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613602" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613909" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="1614014" ProcLv="3" Type="1278" IsSpecial="0" Content="產品介紹：                  機械工坊道具，對自己被膠住的機器使用，消除萬能膠水效果">
+    <ItemIn ID="1613606" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613602" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613919" Count="1" Type="2"/>
+  </Proc>
+</machine>
+
+<house>
+  <Proc AwardID="161071" ProcLv="3" Type="1478" IsSpecial="0" IsNew="1" Content="產品介紹：                  移動城堡小屋是一座奇妙的房子，能帶著主人去到世界的每個角落！">
+    <ItemIn ID="1613634" Count="1" Type="1" MakeLvl="3"/>
+    <ItemIn ID="1613604" Count="3" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613923" Count="1" Type="2"/>
+    <ItemIn ID="1613918" Count="1" Type="2"/>
+  </Proc>
+  <Proc AwardID="161072" ProcLv="2" Type="1479" IsSpecial="0" IsNew="1" Content="產品介紹：                  小屋道具，原本是移動城堡裡的神奇家具！">
+    <ItemIn ID="1613635" Count="1" Type="1" MakeLvl="2"/>
+    <ItemIn ID="1613600" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613910" Count="1" Type="2"/>
+  </Proc>
+  <Proc AwardID="161073" ProcLv="1" Type="1480" IsSpecial="0" IsNew="1" Content="產品介紹：                  小屋道具，原本是移動城堡裡的神奇家具！">
+    <ItemIn ID="1613636" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613601" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613913" Count="1" Type="2"/>
+  </Proc>
+  <Proc AwardID="161074" ProcLv="2" Type="1481" IsSpecial="0" IsNew="1" Content="產品介紹：                  小屋道具，原本是移動城堡裡的神奇家具！">
+    <ItemIn ID="1613637" Count="2" Type="1" MakeLvl="2"/>
+    <ItemIn ID="1613616" Count="2" Type="1" MakeLvl="2"/>
+    <ItemIn ID="1613908" Count="1" Type="2"/>
+  </Proc>
+  <Proc AwardID="161075" ProcLv="1" Type="1482" IsSpecial="0" IsNew="1" Content="產品介紹：                  小屋道具，原本是移動城堡裡的神奇家具！">
+    <ItemIn ID="1613636" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613602" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613914" Count="1" Type="2"/>
+  </Proc>
+  <Proc AwardID="161076" ProcLv="1" Type="1483" IsSpecial="0" IsNew="1" Content="產品介紹：                  小屋道具，原本是移動城堡裡的神奇家具！">
+    <ItemIn ID="1613638" Count="1" Type="1" MakeLvl="2"/>
+    <ItemIn ID="1613617" Count="1" Type="1" MakeLvl="2"/>
+    <ItemIn ID="1613915" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="161040" ProcLv="1" Type="1249" IsSpecial="0" Content="產品介紹：                  小屋道具，飛船上常用的座椅">
+    <ItemIn ID="1613612" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613600" Count="10" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613601" Count="20" Type="1" MakeLvl="1"/>
+  </Proc>
+
+  <Proc AwardID="161041" ProcLv="1" Type="1250" IsSpecial="0" Content="產品介紹：                  小屋道具，艦艇上常用的餐台">
+    <ItemIn ID="1613613" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613600" Count="10" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613601" Count="20" Type="1" MakeLvl="1"/>
+  </Proc>
+
+  <Proc AwardID="161042" ProcLv="1" Type="1251" IsSpecial="0" Content="產品介紹：                  小屋道具，有人工智能的機器坦克">
+    <ItemIn ID="1613614" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613602" Count="20" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613617" Count="20" Type="1" MakeLvl="2"/>
+    <ItemIn ID="1613910" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="161043" ProcLv="1" Type="1252" IsSpecial="0" Content="產品介紹：                  小屋道具，有人工智能的機器人">
+    <ItemIn ID="1613615" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613602" Count="10" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613617" Count="10" Type="1" MakeLvl="2"/>
+    <ItemIn ID="1613911" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="161051" ProcLv="2" Type="1287" IsSpecial="0" Content="產品介紹：                  小屋道具，自由拼接賽道需要中級機械工坊才能生產">
+    <ItemIn ID="1613619" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613620" Count="5" Type="1" MakeLvl="2"/>
+    <ItemIn ID="1613600" Count="10" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613908" Count="2" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="161053" ProcLv="2" Type="1288" IsSpecial="0" Content="產品介紹：                  小屋道具，nono吊環需要中級機械工坊才能生產">
+    <ItemIn ID="1613621" Count="2" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613622" Count="2" Type="1" MakeLvl="2"/>
+    <ItemIn ID="1613601" Count="10" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613906" Count="2" Type="2"/>
+  </Proc>  
+</house>
+
+<home IsNew="1">
+  <Proc AwardID="1220267" ProcLv="1" Type="1253" IsSpecial="0" Content="產品介紹：                  家園道具，通過發條上弦來行動的機器貓咪">
+    <ItemIn ID="1613618" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613601" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613602" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613901" Count="1" Type="2"/>
+  </Proc>
+  
+  <Proc AwardID="1353320" ProcLv="3" Type="1490" IsSpecial="0" IsNew="1" Content="產品介紹：                  機械龍寶寶會成為威風機械龍天使！">
+    <ItemIn ID="1613639" Count="1" Type="1" MakeLvl="3"/>
+    <ItemIn ID="1613640" Count="1" Type="1" MakeLvl="3"/>
+    <ItemIn ID="1613600" Count="25" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613906" Count="1" Type="2"/>
+  </Proc>
+</home>
+
+<cloth>
+  <Proc AwardID="14212" ProcLv="2" Type="1330" IsSpecial="0" Content="產品介紹：                  個性裝扮，溜冰比賽專用的鞋子，穿上它可以行走速度加快1倍！">
+    <ItemIn ID="1613629" Count="2" Type="1" MakeLvl="2"/>
+    <ItemIn ID="1613600" Count="10" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613905" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="14213" ProcLv="2" Type="1331" IsSpecial="0" Content="產品介紹：                  個性裝扮，自行車比賽領先者的服裝，代表了冠軍的榮耀！">
+    <ItemIn ID="1613630" Count="2" Type="1" MakeLvl="2"/>
+    <ItemIn ID="1613602" Count="10" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613906" Count="1" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="14182" ProcLv="1" Type="1279" IsSpecial="0" Content="產品介紹：                  個性裝扮，神龍套裝的一部分，變身為神龍鬥士吧！">
+    <ItemIn ID="1613607" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613602" Count="20" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613603" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613901" Count="2" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="14183" ProcLv="1" Type="1280" IsSpecial="0" Content="產品介紹：                  個性裝扮，神龍套裝的一部分，變身為神龍鬥士吧！">
+    <ItemIn ID="1613608" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613602" Count="20" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613603" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613902" Count="2" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="14184" ProcLv="1" Type="1281" IsSpecial="0" Content="產品介紹：                  個性裝扮，神龍套裝的一部分，變身為神龍鬥士吧！">
+    <ItemIn ID="1613609" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613602" Count="20" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613603" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613903" Count="2" Type="2"/>
+  </Proc>
+
+  <Proc AwardID="14185" ProcLv="1" Type="1282" IsSpecial="0" Content="產品介紹：                  個性裝扮，神龍套裝的一部分，變身為神龍鬥士吧！">
+    <ItemIn ID="1613610" Count="1" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613602" Count="20" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613603" Count="5" Type="1" MakeLvl="1"/>
+    <ItemIn ID="1613904" Count="2" Type="2"/>
+  </Proc>
+</cloth>
+
+</CPProcess>
+
+
+

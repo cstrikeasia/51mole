@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cutepig_explor_mine>
+    <MapMine MapID="1" SceneName="摩爾城堡" LvLimit="1" NeedTime="600" GemID="1613900" Energy="5" />
+    <MapMine MapID="2" SceneName="愛心教堂" LvLimit="1" NeedTime="720" GemID="1613901" Energy="5" />
+    <MapMine MapID="3" SceneName="陽光牧場" LvLimit="1" NeedTime="900" GemID="1613902" Energy="6" />
+    <MapMine MapID="4" SceneName="摩爾足球場" LvLimit="1" NeedTime="1080" GemID="1613903" Energy="6" />
+    <MapMine MapID="5" SceneName="開心農場" LvLimit="1" NeedTime="1200" GemID="1613904" Energy="8" />
+    <MapMine MapID="6" SceneName="米勒大道" LvLimit="1" NeedTime="1320" GemID="1613905" Energy="8" />
+    <MapMine MapID="7" SceneName="淘淘樂街" LvLimit="1" NeedTime="1500" GemID="1613906" Energy="10" />
+    <MapMine MapID="8" SceneName="城堡露天花園" LvLimit="1" NeedTime="1680" GemID="1613907" Energy="10" />
+    <MapMine MapID="9" SceneName="咕嚕藝術街" LvLimit="1" NeedTime="1800" GemID="1613908" Energy="10" />
+    <MapMine MapID="10" SceneName="神秘湖碼頭" LvLimit="2" NeedTime="3600" GemID="1613909" Energy="12" />
+    <MapMine MapID="11" SceneName="神秘湖" LvLimit="2" NeedTime="3900" GemID="1613910" Energy="12" />
+    <MapMine MapID="12" SceneName="天空樹" LvLimit="2" NeedTime="4200" GemID="1613911" Energy="14" />
+    <MapMine MapID="13" SceneName="粒粒小廣場" LvLimit="2" NeedTime="4500" GemID="1613912" Energy="14" />
+    <MapMine MapID="14" SceneName="西部遊樂場" LvLimit="2" NeedTime="4800" GemID="1613913" Energy="16" />
+    <MapMine MapID="15" SceneName="東部遊樂場" LvLimit="2" NeedTime="5100" GemID="1613914" Energy="16" />
+    <MapMine MapID="16" SceneName="交通署" LvLimit="2" NeedTime="5400" GemID="1613915" Energy="18" />
+    <MapMine MapID="17" SceneName="拉姆運動場" LvLimit="2" NeedTime="6000" GemID="1613916" Energy="18" />
+    <MapMine MapID="18" SceneName="拉姆學院" LvLimit="2" NeedTime="6600" GemID="1613917" Energy="20" />
+    <MapMine MapID="19" SceneName="摩爾大學" LvLimit="2" NeedTime="7200" GemID="1613918" Energy="20" />
+    <MapMine MapID="20" SceneName="摩爾拉雅山頂" LvLimit="3" NeedTime="10800" GemID="1613919" Energy="22" />
+    <MapMine MapID="21" SceneName="摩爾拉雅溜冰場" LvLimit="3" NeedTime="11700" GemID="1613920" Energy="22" />
+    <MapMine MapID="22" SceneName="摩爾拉雅山腳" LvLimit="3" NeedTime="12600" GemID="1613921" Energy="24" />
+    <MapMine MapID="23" SceneName="蟲蟲谷" LvLimit="3" NeedTime="13500" GemID="1613922" Energy="24" />
+    <MapMine MapID="24" SceneName="尼爾拉塔" LvLimit="3" NeedTime="14400" GemID="1613923" Energy="26" />
+    <MapMine MapID="25" SceneName="漿果叢林" LvLimit="3" NeedTime="15300" GemID="1613924" Energy="26" />
+    <MapMine MapID="26" SceneName="前哨站" LvLimit="3" NeedTime="16200" GemID="1613925" Energy="28" />
+    <MapMine MapID="27" SceneName="黑森林" LvLimit="3" NeedTime="17100" GemID="1613926" Energy="28" />
+    <MapMine MapID="28" SceneName="庫拉城堡" LvLimit="3" NeedTime="18000" GemID="1613927" Energy="30" />
+</Cutepig_explor_mine>
