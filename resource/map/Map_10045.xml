@@ -1,0 +1,44 @@
+<Map>
+	<NpcList>
+		<Npc ID="10021" Layer="depthLevel" Name="艾米" Ex="277" Ey="336" Cmd="act" Param="checkAmySay" />
+		
+		<Npc ID="10015" Layer="depthLevel" Name="兔兔主編" Ex="781" Ey="294" Cmd="act" Param="checkTuSay" />
+	</NpcList>
+	
+	<Triggers>
+	
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="11" NpcID="10021" Face="正常" Msg="Hi！我是艾米！如果你想成為記者，就趕快找我或者點擊畫面右上角SMC徽章，完成記者入職考驗吧！" Option="我想加入小記者！$下次再說！" Cmd="act$none" Param="joinAimiSMC$1" AddTaskOption="1" />
+		<Talk ID="12" NpcID="10021" Face="正常" Msg="Hi！我是艾米！如果你想成為記者，就趕快找我或者點擊畫面右上角SMC徽章，完成記者入職任務吧！如果你已經是小記者啦！就趕快拿起相機，記錄下我們美好的莊園吧！" Option="我已經找齊3個相機零件！$下次再說！" Cmd="act$none" Param="aimi16TaskSMC$0" AddTaskOption="1" />
+		
+		<Talk ID="13" NpcID="10021" Face="正常" Msg="呀！你還沒有找到照相機的3個零部件哦！加油加油！再去找找吧！" Option="沒什麼事！" Cmd="none" Param="1" AddTaskOption="1" />
+		<Talk ID="14" NpcID="10021" Face="正常" Msg="真棒！你已經找齊了3個部件，完整的相機已經放在沙發上囉！你還願意繼續接受記者的考驗嗎？" Option="好的！我要成為小記者！$下次再說！" Cmd="act$none" Param="joinAimiSMC$1" AddTaskOption="1" />
+		
+		<Talk ID="15" NpcID="10021" Face="正常" Msg="Hi！我是艾米！如果你想成為記者，就趕快找我或者點擊畫面右上角SMC徽章，完成記者入職考驗吧！" Option="我已經完成所有考驗啦！$下次再說！" Cmd="act$none" Param="aimi17TaskSMC$1" AddTaskOption="1" />
+		<Talk ID="16" NpcID="10021" Face="正常" Msg="呀！你還沒有找到照相機的3個零部件哦！加油加油！再去找找吧！" Option="沒什麼事！" Cmd="none" Param="1" AddTaskOption="1" />
+		<Talk ID="17" NpcID="10021" Face="正常" Msg="恭喜你正式成為一名光榮的記者！這裡有一套記者套裝！穿上它，點擊動作欄裡的揮手，開始拍照吧！" Option="好的" Cmd="act" Param="setAimiSMC" AddTaskOption="1" />
+		<Talk ID="18" NpcID="10021" Face="正常" Msg="Hi！我是艾米！如果你想成為記者，就趕快找我或者點擊畫面右上角SMC徽章，完成記者入職考驗吧！" Option="下次再說！" Cmd="none" Param="1" AddTaskOption="1" />
+		<Talk ID="19" NpcID="10021" Face="正常" Msg="" Option="" Cmd="none" Param="1" AddTaskOption="1" />
+		<Talk ID="20" NpcID="10021" Face="正常" Msg="" Option="" Cmd="none" Param="1" AddTaskOption="1" />
+		<Talk ID="21" NpcID="10021" Face="正常" Msg="" Option="" Cmd="none" Param="1" AddTaskOption="1" />
+		<Talk ID="23" NpcID="10021" Face="正常" Msg="你已經順利完成第一個考驗，想要成為記者還需要通過第二個考驗哦！" Option="好的！我要成為小記者！$下次再說！" Cmd="act$none" Param="joinAimiSMC$1" AddTaskOption="1" />
+				    		
+		<Talk ID="2" NpcID="10015" Face="正常" Msg="摩爾報社已經成立五年多了，我們希望給小摩爾們帶來最新最快最全的消息！" Option="我知道啦！" Cmd="none" Param="none" AddTaskOption="1" />
+		<Talk ID="200" NpcID="10015" Face="正常" Msg="摩爾報社已經成立五年多了，我們希望給小摩爾們帶來最新最快最全的消息！" Option="最炫記者風$我知道啦！" Cmd="p$none" Param="DazzlePanel$3" AddTaskOption="1" />
+		
+		<Talk ID="3" NpcID="10015" Face="正常" Msg="{$username},你來了啊！這次六一節，我們摩爾報社要做一期特別專題......" Option="有什麼需要我幫忙的麼？" Cmd="s" Param="4" AddTaskOption="1" />
+		<Talk ID="4" NpcID="10015" Face="正常" Msg="我要請你幫我去調查一下，大家小時候會玩些什麼遊戲。那麼這次專題的標題就叫……" Option="恩......?" Cmd="s" Param="5" AddTaskOption="1" />
+		<Talk ID="5" NpcID="10015" Face="正常" Msg="就叫“那年我們一起玩遊戲！”你看怎麼樣？這裡有我收集的一些老照片……" Option="恩，好的！" Cmd="none" Param="1" AddTaskOption="1" />
+		
+		<Talk ID="30" NpcID="10015" Face="正常" Msg="嘻嘻，週年慶邀請函，我終於想到這週報導主題了！" Option="那請快收下這邀請函吧！" Cmd="s" Param="31" />
+		<Talk ID="31" NpcID="10015" Face="正常" Msg="你既然來了，那就讓我採訪下吧，不然……" Option="採訪？好吧，你可別問一些奇怪問題" Cmd="act" Param="beginGame"/>
+		<Talk ID="32" NpcID="10015" Face="正常" Msg="咦！這個邀請函好像不是送給我的，嗚嗚嗚~真傷心！" Option="不好意思啦，我弄錯了o(╯□╰)o" Cmd="null" Param="none" />
+<!-- 		<Talk ID="101" NpcID="10015" Face="正常" Msg="小摩爾是一個熱愛工作的人嗎？同意“工作就是報酬”這樣的格言嗎？" Option="那要看為誰工作。$完全同意。$我不同意。" Cmd="s$s$s" Param="102$102$102" /> -->
+<!-- 		<Talk ID="102" NpcID="10015" Face="正常" Msg="兔兔就是一個特別熱愛工作的人！採訪什麼的最開心了~咦，聽說大衛最近又發明了什麼好東西？可是我這篇報道還沒寫完啊，怎麼辦怎麼辦……" Option="別著急，我去幫你看看吧。" Cmd="act" Param="loveTestMap" /> -->
+	</Talks>
+</Map>
+
+
+
