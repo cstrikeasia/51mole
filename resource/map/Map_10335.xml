@@ -1,0 +1,27 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_123" Layer="controlLevel" Ex="123" Ey="200" Cmd="alt_map" Param="123" Tips="拉姆神秘世界" />
+		<Trigger ResName="go_336" Layer="depthLevel" Ex="158" Ey="411" Cmd="alt_map" Param="336" Tips="時光聖殿" />
+		<Trigger ResName="training_response" Layer="controlLevel" Ex="543" Ey="267" Cmd="p" Param="AgilePracticePanel" Tips="反應訓練" />
+		<Trigger ResName="training_speed" Layer="controlLevel" Ex="785" Ey="345" Cmd="act" Param="openSpeedTrainingGame" Tips="速度訓練" />
+		<Trigger ResName="training_force" Layer="depthLevel" Ex="254" Ey="273" Cmd="act" Param="openBreakStoneGame" Tips="力量訓練" />
+		<Trigger ResName="training_top" Layer="depthLevel" Ex="349" Ey="360" Cmd="p" Param="KnightElementFightTopPanel" Tips="訓練排行榜" />
+		<Trigger ResName="training_intr" Layer="depthLevel" Ex="571" Ey="360" Cmd="act" Param="openIntr" Tips="訓練介紹" />
+		<Trigger ResName="jiang_mc" Layer="depthLevel" Ex="148" Ey="398" Cmd="p" Param="ActualCombatPanel" Tips="元素騎士訓練營" />
+		
+		<Trigger ResName="seat0" Layer="controlLevel" Ex="296" Ey="426" Cmd="act" Param="seat" Data="0" Tips="元素訓練" />
+		<Trigger ResName="seat1" Layer="controlLevel" Ex="329" Ey="407" Cmd="act" Param="seat" Data="1" Tips="元素訓練" />
+		<Trigger ResName="seat2" Layer="controlLevel" Ex="436" Ey="348" Cmd="act" Param="seat" Data="2" Tips="元素訓練" />
+		<Trigger ResName="seat3" Layer="controlLevel" Ex="480" Ey="348" Cmd="act" Param="seat" Data="3" Tips="元素訓練" />
+		<Trigger ResName="seat4" Layer="controlLevel" Ex="594" Ey="415" Cmd="act" Param="seat" Data="4" Tips="元素訓練" />
+		<Trigger ResName="seat5" Layer="controlLevel" Ex="629" Ey="432" Cmd="act" Param="seat" Data="5" Tips="元素訓練" />
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+

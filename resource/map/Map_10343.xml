@@ -1,0 +1,14 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_342" Layer="controlLevel" Ex="918" Ey="383" Cmd="alt_map" Param="342"  Tips="永夜哨站"/>
+		<Trigger ResName="go_345" Layer="controlLevel" Ex="502" Ey="366" Cmd="alt_map" Param="345"  Tips="王者大廳"/>
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+

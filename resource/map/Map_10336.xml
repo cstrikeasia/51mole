@@ -1,0 +1,27 @@
+<Map>
+	<NpcList>
+		<Npc ID="10204" Layer="controlLevel" Name="時之女神石像" Ex="443" Ey="339" Cmd="act" Param="click10204" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_335" Layer="controlLevel" Ex="123" Ey="350" Cmd="alt_map" Param="335" Tips="元素騎士訓練營" />
+		<Trigger ResName="go_120" Layer="controlLevel" Ex="756" Ey="453" Cmd="alt_map" Param="120" Tips="雲霧謎橋" />
+		<Trigger ResName="go_337" Layer="controlLevel" Ex="516" Ey="357" Cmd="alt_map" Param="337" Tips="蘑菇森林" />
+		
+		
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10204" Face="正常" Msg="小摩爾，你有什麼事嗎？" Option="時空之門$邀請參加時空之門$我要成為元素騎士$沒什麼事" Cmd="act$act$act$none" Param="openSpaceTimeGame$inviteGame$openTransf$2" AddTaskOption="1" />
+		
+		<Talk ID="2" NpcID="10204" Face="正常" Msg="元素石碑已啟動，小摩爾，拿出你的勇氣接受考驗吧。" Option="知道了" Cmd="none" Param="2" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10204" Face="正常" Msg="沒有拿到騎士資格證書的小摩爾是無法接受元素的考驗的。元素騎士資格證書可以去元素騎士訓練營參與活動後獲得" Option="我現在就去$知道了" Cmd="alt_map$none" Param="335$2" AddTaskOption="1" />
+		
+		<Talk ID="4" NpcID="10204" Face="正常" Msg="小摩爾，你有什麼事嗎？" Option="時空之門$邀請參加時空之門$我要成為水靈騎士$我要成為火靈騎士$我要成為風靈騎士$我要成為地靈騎士$沒什麼事" Cmd="act$act$act$act$act$act$none" Param="openSpaceTimeGame$inviteGame$waterKnight$fireKnight$windKnight$groundKnight$2" AddTaskOption="1" />
+		<Talk ID="5" NpcID="10204" Face="正常" Msg="小摩爾，你還沒有拿到相應資格證，無法轉職。" Option="知道了" Cmd="none" Param="2" AddTaskOption="1" />
+		<Talk ID="6" NpcID="10204" Face="正常" Msg="小摩爾，你已經成為元素騎士了，好好表現。" Option="時空之門$邀請參加時空之門$知道了" Cmd="act$act$none" Param="openSpaceTimeGame$inviteGame$2" AddTaskOption="1" />
+		
+	</Talks>
+</Map>
+
+

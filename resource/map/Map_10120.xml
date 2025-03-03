@@ -1,0 +1,26 @@
+<Map>
+	<NpcList>
+		<!--
+		<Npc ID="10002" Layer="controlLevel" Name="麼麼公主" Ex="358" Ey="460" Cmd="s" Param="1" />
+		-->
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+		<Trigger ResName="go_336" Layer="controlLevel" Ex="580" Ey="145" Cmd="alt_map" Param="336" Tips="時光聖殿" />
+		<Trigger ResName="go_121" Layer="controlLevel" Ex="80" Ey="310" Cmd="alt_map" Param="121" Tips="拉姆世界叢林" />
+		<Trigger ResName="go_61" Layer="controlLevel" Ex="120" Ey="450" Cmd="alt_map" Param="61" Tips="前哨站" />
+		<Trigger ResName="go_151" Layer="controlLevel" Ex="760" Ey="360" Cmd="alt_map" Param="151" Tips="藤蔓森林" />
+	</Triggers>
+	
+	<Talks>
+		<!--
+		<Talk ID="1" NpcID="10015" Face="正常" Msg="Hi，你好啊。" Option="我很好" Cmd="none" Param="6" AddTaskOption="1" />
+		-->
+	</Talks>
+</Map>
+
+
+

@@ -1,0 +1,38 @@
+<Map>
+	<NpcList>
+		<Npc ID="10213" Layer="depthLevel" Name="巴圖魯" Ex="214" Ey="226" Cmd="s" Param="341" Data="6" AddTaskOption="1" />
+		<Npc ID="10216" Layer="depthLevel" Name="艾蓮娜" Ex="819" Ey="274" Cmd="s" Param="2" AddTaskOption="1" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_339" Layer="controlLevel" Ex="839" Ey="173" Cmd="alt_map" Param="339"  Tips="龍巢迷宮"/>
+		<Trigger ResName="go_343" Layer="controlLevel" Ex="93" Ey="418" Cmd="alt_map" Param="343"  Tips="摩利亞王城"/>
+		<Trigger ResName="mbmsms" Layer="controlLevel" Ex="645" Ey="434" Cmd="act" Param="openTollgateFucn"  Tips="無盡深淵"/>
+		<Trigger ResName="sugar_intro_btn" Layer="depthLevel" Ex="646" Ey="410" Cmd="p" Param="FruitSugarIntroPanel" />
+		
+		<Trigger ResName="posBtn0" Layer="controlLevel" Ex="722" Ey="412" Cmd="act" Param="goMole0" />
+		<Trigger ResName="posBtn1" Layer="controlLevel" Ex="668" Ey="443" Cmd="act" Param="goMole1" />
+		<Trigger ResName="xiaoGou_mc" Layer="depthLevel" Ex="690" Ey="268" Cmd="p" Param="CatchFishImprovePanel"  Tips="撈魚"/>
+		<Trigger ResName="weilaixing_mc" Layer="depthLevel" Ex="535" Ey="391" Cmd="p" Param="WeiLaiXingBigClassPanel"  Tips="蒙牛未來星"/>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10213" Face="正常" Msg="歡迎來到永夜哨站，我是這裡的酋長，巴圖魯。" Option="您好！" Cmd="none" Param="1" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10216" Face="正常" Msg="摩爾莊園會不會比摩利亞更漂亮呢？好想去看看~哎嘿嘿。" Option="隨時歡迎你來玩~" Cmd="none" Param="1" AddTaskOption="1" />
+		<Talk ID="4" NpcID="10216" Face="正常" Msg="{$username}，遇到什麼難事了，我能幫你做些什麼呢？" Option="我要點亮火炬，但是我沒有火種，你能幫幫我嗎？" Cmd="s" Param="5" AddTaskOption="0" />
+		<Talk ID="5" NpcID="10216" Face="正常" Msg="當然可以，我可以把火種給你，但是能不能帶著盧瓦伊去參觀下摩爾莊園。回來給我講講關與摩爾莊園的故事。" Option="當然，我願意帶她去參觀摩爾莊園" Cmd="s" Param="6" AddTaskOption="0" />
+		<Talk ID="6" NpcID="10216" Face="正常" Msg="盧瓦伊拿著火種，{$username}會帶你前往摩爾莊園，點燃火炬。記得回來給我講講你的所見所聞哦~" Option="我們這就出發" Cmd="s" Param="7" AddTaskOption="0" />
+		<Talk ID="7" NpcID="10216" Face="正常" Msg="先不要走，火神已經甦醒，不要忘記帶盧瓦伊去熔岩火山去看看哦~" Option="放心啦，我不會忘記的" Cmd="act" Param="fireCup0" AddTaskOption="0" />
+		
+		<Talk ID="341" NpcID="10213" Face="正常" Msg="歡迎來到永夜哨站，我是這裡的酋長，巴圖魯。" Option="您好！" Cmd="none" Param="1" AddTaskOption="1" />
+		<Talk ID="342" NpcID="10213" Face="正常" Msg="歡迎來到永夜哨站，我是這裡的酋長，巴圖魯。" Option="您好！$酋長好，我來看你了！" Cmd="none$s" Param="1$343" AddTaskOption="1" />
+		<Talk ID="343" NpcID="10213" Face="正常" Msg="小摩爾，感謝你來看我，但我還是很思念我的女兒。。。" Option="放心，你的女兒一定會沒事了~" Cmd="act" Param="npcSwapPrize" AddTaskOption="1" Data="6"  />
+	
+		<Talk ID="100" NpcID="10279" Face="正常" Msg="我愧對莊園，我多麼希望跟大家說聲對不起。" Option="你也是有苦衷的，我們都知道。" Cmd="s" Param="101" />
+		<Talk ID="101" NpcID="10279" Face="正常" Msg="你把我召喚出來，讓我有機會跟大家說對不起，這點禮物就當我的小小心意。" Option="你太客氣啦！" Cmd="act" Param="WorshipNPC_over" />
+		
+	
+	</Talks>
+</Map>
+
+

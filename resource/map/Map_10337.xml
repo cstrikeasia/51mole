@@ -1,0 +1,24 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="tollgate_mc" Layer="depthLevel" Ex="600" Ey="190" Cmd="act" Param="openTollgate"  Tips="試煉洞穴"/>
+		<Trigger ResName="go_336" Layer="depthLevel" Ex="800" Ey="387" Cmd="alt_map" Param="336"  Tips="時光聖殿"/>
+		<Trigger ResName="go_339" Layer="depthLevel" Ex="228" Ey="166" Cmd="alt_map" Param="339"  Tips="龍巢迷宮"/>
+		<Trigger ResName="pala_mc" Layer="depthLevel" Ex="210" Ey="410" Cmd="act" Param="shenme"  Tips="挑戰小惡魔"/>
+		<!-- Trigger ResName="gameIntr_btn" Layer="depthLevel" Ex="529" Ey="347" Cmd="act" Param="gameIntr"  Tips="蘑菇料理遊戲規則" -->
+		<Trigger ResName="moguxie_mc" Layer="depthLevel" Ex="445" Ey="238" Cmd="act" Param="moguxie"  Tips="邪惡蘑菇"/>
+		<!-- Trigger ResName="seat0" Layer="controlLevel" Ex="293" Ey="391" Cmd="act" Param="onSeat" Data="0" Tips=""/>
+		<Trigger ResName="seat1" Layer="controlLevel" Ex="366.45" Ey="422.8" Cmd="act" Param="onSeat" Data="1" Tips=""/>
+		<Trigger ResName="seat2" Layer="controlLevel" Ex="466.9" Ey="412" Cmd="act" Param="onSeat" Data="2" Tips=""/>
+		<Trigger ResName="seat3" Layer="controlLevel" Ex="583.05" Ey="425.35" Cmd="act" Param="onSeat" Data="3" Tips=""/>
+		<Trigger ResName="seat4" Layer="controlLevel" Ex="656.45" Ey="456.4" Cmd="act" Param="onSeat" Data="4" Tips=""/>
+		<Trigger ResName="seat5" Layer="controlLevel" Ex="756.9" Ey="445.6" Cmd="act" Param="onSeat" Data="5" Tips="" -->
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+

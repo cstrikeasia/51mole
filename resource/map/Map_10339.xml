@@ -1,0 +1,57 @@
+<Map>
+	<NpcList>
+		<Npc ID="10219" Layer="topLevel" Name="摩摩兔" Ex="494" Ey="380" Cmd="s" Param="431" Data="5"/>
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="shenme_mc" Layer="depthLevel" Ex="670" Ey="232" Cmd="act" Param="openTollgate"  Tips="挑戰巨型赤蠍"/>
+		<!-- 
+		<Trigger ResName="ootemDecipher_btn" Layer="topLevel" Ex="861" Ey="488" Cmd="p" Param="DecodeIntroPanel"  Tips="圖騰破譯說明"/>
+		<Trigger ResName="ootemGame_btn" Layer="topLevel" Ex="460" Ey="253" Cmd="p" Param="DecodeGamePanel"  Tips="圖騰破譯"/>
+		 -->
+		<Trigger ResName="go_337" Layer="controlLevel" Ex="900" Ey="233" Cmd="alt_map" Param="337"  Tips="蘑菇森林"/>
+		<Trigger ResName="go_342" Layer="controlLevel" Ex="305" Ey="251" Cmd="alt_map" Param="342"  Tips="永夜哨站"/>
+		<Trigger ResName="mbmsms" Layer="controlLevel" Ex="227" Ey="508" Cmd="act" Param="openTollgateFucn"  Tips="龍巢迷宮"/>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10217" Face="正常" Msg="唔……好痛……" Option="咦，兔子君，你腫麼啦？$哦，再見！" Cmd="s$none" Param="2$1" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10217" Face="正常" Msg="我叫摩摩兔，我媽媽叫我去種3個紅色漿果，可是我現在腿受傷了，到家肯定要被媽媽罵死了……" Option="嗯，我來幫你吧！$哦，再見！" Cmd="act$none" Param="accDay1$1" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10217" Face="正常" Msg="3個紅色漿果呢？" Option="嗯，給你！$稍等！" Cmd="act$none" Param="overDay1$1" AddTaskOption="1" />
+		
+		<Talk ID="5" NpcID="10217" Face="正常" Msg="唔……繼續好痛……我媽媽這次叫我去交通署找蔣誠信打工，我去不了啊！！" Option="摩摩兔別擔心，我再幫你次！$哦，再見！" Cmd="act$none" Param="accDay2$1" AddTaskOption="1" />
+		<Talk ID="6" NpcID="10217" Face="正常" Msg="交通署蔣誠信那邊工作完成了？" Option="稍等！" Cmd="none" Param="1" AddTaskOption="1" />
+		<Talk ID="7" NpcID="10217" Face="正常" Msg="交通署蔣誠信那邊工作完成了？" Option="嗯，是的。$稍等！" Cmd="act$none" Param="overDay2$1" AddTaskOption="1" />
+		
+		<Talk ID="8" NpcID="10217" Face="正常" Msg="雖然我的腳沒事了，但稍微還是有點痛，你能繼續幫助我嗎？這次只要2個桑葉就好了！可以去漿果叢林找螳螂換哦！" Option="額，你有點過分了啊！好吧！$哦，再見！" Cmd="act$none" Param="accDay3$1" AddTaskOption="1" />
+		<Talk ID="9" NpcID="10217" Face="正常" Msg="2個桑葉好了嗎？" Option="嗯，是的。$稍等！" Cmd="act$none" Param="overDay3$1" AddTaskOption="1" />
+		
+		<Talk ID="11" NpcID="10219" Face="正常" Msg="我的腿傷雖然好了，但我心靈受到的創傷難以平復，麻煩你再幫我去搞3個蜘蛛絲來吧！貌似去找漿果密道蜘蛛就可以獲得誒！" Option="兔子君，幫你最後一次哦！$哦，再見！" Cmd="act$none" Param="accDay4$1" AddTaskOption="1" />
+		<Talk ID="12" NpcID="10219" Face="正常" Msg="3個蜘蛛絲好了嗎？" Option="嗯，是的。$稍等！" Cmd="act$none" Param="overDay4$1" AddTaskOption="1" />
+		
+		<Talk ID="13" NpcID="10219" Face="正常" Msg="咦，你又來了啊~哎呀，我肚子疼了，我媽媽給我的任務怕是完不成了，要不你幫我去弄1個速成柚木啊，速成柚木種子可以在家園商店裡買到的" Option="餵，兔子君你夠了！真的最後一次！$幫你才怪！" Cmd="act$none" Param="accDay5$1" AddTaskOption="1" />
+		<Talk ID="14" NpcID="10219" Face="正常" Msg="速成柚木好了嗎？" Option="嗯，是的。$稍等！" Cmd="act$none" Param="overDay5$1" AddTaskOption="1" />
+		
+		<Talk ID="16" NpcID="10219" Face="正常" Msg="求求你了，好心的小摩爾，最後一次，就最後一次，幫我去弄1個螢火草吧~在彩虹瀑布那裡應該會有的。" Option="好吧，再幫你一次吧！$懶得理你！" Cmd="act$none" Param="accDay6$1" AddTaskOption="1" />
+		<Talk ID="17" NpcID="10219" Face="正常" Msg="1個螢火草好了嗎？" Option="嗯，是的。$稍等！" Cmd="act$none" Param="overDay6$1" AddTaskOption="1" />
+		
+		<Talk ID="19" NpcID="10219" Face="正常" Msg="我媽媽叫我去賺錢，我才不高興呢，要不你給我幾個金豆？" Option="啊？哦，拿去。$才不給你呢！" Cmd="act$act" Param="play1$play1" AddTaskOption="1" />
+		
+		
+		<Talk ID="20" NpcID="10219" Face="正常" Msg="啊……糟了！媽媽，我沒……" Option="……" Cmd="s" Param="21" AddTaskOption="1" />
+		<Talk ID="21" NpcID="10218" Face="生氣" Msg="怪不得這幾天叫你做事也不喊累了，原來找了個冤大頭！" Option="……" Cmd="act" Param="play2" AddTaskOption="1" />
+		
+		<Talk ID="22" NpcID="10215" Face="正常" Msg="小摩爾，所有的經歷我都看在眼裡，這其實是我對你的一次考驗。" Option="考驗？" Cmd="s" Param="23" AddTaskOption="1" />
+		<Talk ID="23" NpcID="10215" Face="正常" Msg="對，火神盃不僅僅需要拼搏精神和勇氣，更重要的是你們的愛心。" Option="原來是這樣！" Cmd="s" Param="24" AddTaskOption="1" />
+		<Talk ID="24" NpcID="10215" Face="正常" Msg="小摩爾，你做的很好，這些東西就獎勵給你吧。" Option="過獎了" Cmd="act" Param="getAward" AddTaskOption="1" />
+		
+		<Talk ID="25" NpcID="10217" Face="正常" Msg="小摩爾，幫了我大忙了，太謝謝你了。" Option="沒關係啦" Cmd="none" Param="1" AddTaskOption="1" />
+		<Talk ID="26" NpcID="10219" Face="正常" Msg="小摩爾，幫了我大忙了，太謝謝你了。" Option="沒關係啦" Cmd="none" Param="1" AddTaskOption="1" />
+		
+		<Talk ID="431" NpcID="10219" Face="正常" Msg="呀~~~好疼！你不能見死不救啊~~" Option="哦，再見！" Cmd="none" Param="1" AddTaskOption="1" />
+		<Talk ID="432" NpcID="10219" Face="正常" Msg="呀~~~好疼！你不能見死不救啊~~" Option="摩摩兔，你又假裝受傷啦？！$哦，再見！" Cmd="s$none" Param="433$1" AddTaskOption="1" />
+		<Talk ID="433" NpcID="10219" Face="正常" Msg="什麼嘛，原來是你！上次都怪你，害我被我媽媽打了好幾頓" Option="要不叫你媽媽再打你一次？" Cmd="act" Param="npcSwapPrize" AddTaskOption="1" Data="5" />
+	</Talks>
+</Map>
+
+

@@ -1,0 +1,13 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_343" Layer="controlLevel" Ex="903" Ey="460" Cmd="alt_map" Param="343"  Tips="摩利亞王城"/>
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
