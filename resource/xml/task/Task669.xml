@@ -1,0 +1,92 @@
+<Tasks ID="669" Name="塞拉是你嗎?" AwardMsg="恭喜你獲得1個藍色拉姆爬架（家具），2個夜女王曇花種子和10000摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="407">
+		<EnterMap MapID="407">
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="407">
+		<EnterMap MapID="407">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="焦急" Msg="我一定要想出個完美的辦法來！你們誰都別打擾我！" Option="摩樂樂，你都轉了快1小時了……"/>
+				<Talk NpcID="10000" Face="驚訝" Msg="有那麼久嗎？難怪我肚子餓了……" Option="……公主，我認為我們應該回去搬救兵，現在的情況太危險了！"/>
+				<Talk NpcID="10002" Face="悲傷" Msg="可是我們還沒找到辦法救艾蓮娜，也沒抓到兇手……" Option=""/>
+				<Talk NpcID="10000" Face="生氣" Msg="就是就是！那個黑衣人太囂張了，我一定要抓到他！" Option="但麼麼你現在很危險，只有騎士團才能更好得保護你！"/>
+				<Talk NpcID="10000" Face="正常" Msg="我也能保護公主！" Option="而且麼麼你的生日快到了，大家一定希望給你過個熱鬧的生日。你不能讓大家擔心。"/>
+				<Talk NpcID="10002" Face="悲傷" Msg="我不想讓大家擔心……" Option="那就快回去吧，救艾蓮娜的事兒我們可以再想辦法！ "/>
+				<Talk NpcID="10000" Face="疑惑" Msg="{$username}你的語氣好奇怪，平時你是這麼說話的嗎？" Option="摩樂樂你想多了。 "/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="3" TarMapID="407">
+		<EnterMap MapID="407">
+		
+			<Action Cmd="OPEN_PANEL" Param="Task669Panel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="task669" />
+			<Action Cmd="JUMP_TASK_UI" Param="成功護送公主回到摩爾城堡，先去找行政官認錯吧"/>
+			<Action Cmd="GO_MAP" MapID="15" MapType="0"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" TarMapID="15">
+		<EnterMap MapID="15">
+			<Action Cmd="PLAY_MOVIE"  Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+				<Action Cmd="SAY">
+					<Talk NpcID="10047" Face="生氣" Msg="你們怎麼可以偷偷跑出去！遇到危險怎麼辦" Option="已經遇到了……"/>
+					<Talk NpcID="10002" Face="悲傷" Msg="您別生氣，我們錯了……" Option="行政官，對不起。"/>
+					<Talk NpcID="10047" Face="生氣" Msg="今天你們都先去休息，明天再來找我！" Option="行政官，有個黑衣人想綁架公主。"/>
+					<Talk NpcID="10047" Face="焦急" Msg="黑衣人？那你們有沒有受傷？" Option="您放心，大家都沒事。"/>
+					<Talk NpcID="10047" Face="焦急" Msg="我會派騎士團的人來保護公主，你們都快回去吧！" Option="恩，行政官再見。"/>
+				</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="JUMP_TASK_UI" Param="把公主遇到黑衣人襲擊的事兒告訴了行政官後，小摩爾踏上了回家的路"/>
+			<Action Cmd="GO_MAP" MapID="10" MapType="0"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+		</EnterMap>
+	</Step>
+	
+	
+	<Step ID="5" TarMapID="10">
+		<EnterMap MapID="10">
+			<Action Cmd="PLAY_MOVIE"  Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="PLAY_MOVIE"  Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			<Action Cmd="PLAY_MOVIE"  Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			<Action Cmd="JUMP_TASK_UI" Param="小摩爾的異樣原來是被塞拉附身，這可算是個好消息。但與此同時，公主卻又被黑衣人襲擊了……"/>
+			<Action Cmd="GO_MAP" MapID="109" MapType="0"/>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="6" TarMapID="109">
+		<EnterMap MapID="109">
+			<Action Cmd="PLAY_MOVIE"  Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			<Action Cmd="PLAY_MOVIE"  Param="105" Name="movie_105" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105"/>
+			<Action Cmd="PLAY_MOVIE"  Param="106" Name="movie_106" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+	
+</Tasks>
+
+
+
+
+
