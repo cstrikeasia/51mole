@@ -1,0 +1,104 @@
+﻿<Tasks ID="651" Name="第二章：月下獨奏" AwardMsg="恭喜你獲得1個魔法音符So1個音樂鴨子和10000摩爾豆" AwardBean="">
+	<Step ID="1" TarMapID="3">
+		<EnterMap MapID="3">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10013" Face="正常" Msg="{$username}，快到花嬸這裡來，別讓它們看到你！" Option="花嬸，這些音符是怎麼回事啊？怎麼會自己這樣圍過來？"/>
+				<Talk NpcID="10013" Face="正常" Msg="那麼多小摩爾和小拉姆都昏睡不醒了……花嬸也很擔心，還好花嬸耳朵不好，聽不清他們的聲音。來，買花嬸的棉花耳塞，塞上就不會被它們迷暈了……" Option="(⊙o⊙)…花嬸還真是隨時隨地都在賣東西……好了，我塞上"/>
+				<Talk NpcID="10013" Face="正常" Msg="哦喲喲，這才是好小孩。花嬸跟你說啊，前兩天我看到有個會發光的怪物從淘淘樂街經過，好嚇人呀，晚上早點回家啊，知道了嗎？" Option="恩恩！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="JUMP_TASK_UI" Param="花嬸說看到發光的怪物啊，好嚇人，去問問眼明手快的艾米吧！說不定她有什麼線索。"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+			<Action Cmd="GO_MAP" MapID="45" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="45">
+		<EnterMap MapID="45">
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10021" Face="正常" Msg="{$username}，有什麼新聞嗎？ " Option="這次真的有新聞，花嬸說……"/>
+				<Talk NpcID="10021" Face="正常" Msg="發光？我最近拍照的時候也拍到了奇怪的東西，你來看~" Option="恩~"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10021" Face="正常" Msg="你看，我昨天在開心農場采風，竟然誤打誤撞的拍進去了這個奇怪的東西。" Option="這個看起來好像是個摩爾啊……"/>
+				<Talk NpcID="10021" Face="正常" Msg="我也覺得應該是摩爾，你可以去開心農場問問大衛，他每天半夜都在搗鼓新發明，說不定看到了什麼。" Option="有道理，我這就去！"/>
+				<Talk NpcID="10021" Face="正常" Msg="有新聞一定第一時間通知我喲！" Option="好叻！"/>
+			</Action>
+			<Action Cmd="JUMP_TASK_UI" Param="艾米拍到了一個模糊的影子，看起來皮膚亮亮的，說不定就是花嬸說的那個發光的怪獸，去問問大衛是不是也看到了！"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="27" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="3" TarMapID="27">
+		<EnterMap MapID="27">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10016" Face="正常" Msg="……" Option="大衛！！"/>
+				<Talk NpcID="10016" Face="驚訝" Msg="啊？你什麼時候進來的？" Option="我都進來半天了，你也太專注了吧！"/>
+				<Talk NpcID="10016" Face="開心" Msg="大發明家總是有大發明家的優點嘛，你也不用一直誇我，哈哈哈！" Option="⊙﹏⊙b汗！！大衛，艾米說，前兩天在開心農場……"/>
+				<Talk NpcID="10016" Face="開心" Msg="看來，作為大發明家我還是走在潮流的前端的……" Option="咦？"/>
+				<Talk NpcID="10016" Face="開心" Msg="你看我已經設計了這個夜光透視鏡，想要監視這個螢光……" Option="大衛，你逗我呢？夜光透視鏡監視螢光不會瞎掉啊？"/>
+				<Talk NpcID="10016" Face="開心" Msg="NONONO！你搞錯了，這個透視鏡可以把模糊的動態畫面還原，只是還不夠完美。你照片給我。" Option="哦……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10016" Face="開心" Msg="看見了沒？對照片的還原度還是很高的吧！" Option="其實，也沒有看很清楚……只能看到有支笛子……"/>
+				<Talk NpcID="10016" Face="正常" Msg="怎麼會？拿來我來看看！！" Option="恩……"/>
+				<Talk NpcID="10016" Face="疑惑" Msg="……" Option="是不是？"/>
+				<Talk NpcID="10016" Face="疑惑" Msg="恩，我再看下圖紙……" Option="喂……"/>
+				<Talk NpcID="10016" Face="正常" Msg="……" Option="我先走啦……"/>
+				<Talk NpcID="10016" Face="正常" Msg="……" Option="……"/>
+			</Action>
+			<Action Cmd="JUMP_TASK_UI" Param="用大衛的新發明可以看到那個神秘的發光體是一個螢光膚色的摩爾，他在吹一支笛子，難道是他在搗亂？去找樂樂去！"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+			<Action Cmd="GO_MAP" MapID="239" MapType="0"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="4" TarMapID="239">
+		<EnterMap MapID="239">
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="正常" Msg="你來啦！我知道了那個音符的秘密！" Option="我覺得我也知道了！"/>
+				<Talk NpcID="10000" Face="正常" Msg="好，那我們一起說！" Option="好呀！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="開心" Msg="看來我們倆的進度是一樣的呀！" Option="恩啊！可是那個摩爾的皮膚顏色好奇怪啊！"/>
+				<Talk NpcID="10000" Face="疑惑" Msg="你看到了？" Option="恩！！我從艾米那裡看到了照片！"/>
+				<Talk NpcID="10000" Face="驚訝" Msg="( ⊙o⊙ )哇，我也想看看！" Option="聽說他晚上會出現，要不我們去外面等等？"/>
+				<Talk NpcID="10000" Face="開心" Msg="好主意！拉仔，我們走！" Option="走！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="JUMP_TASK_UI" Param="樂樂和我的進度是一樣的，聽樂樂說前哨站也開始出現音符了，說不定，他就在那裡呢！去守著看看，恩！"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+			<Action Cmd="GO_MAP" MapID="61" MapType="0"/>
+		</EnterMap>	
+	</Step>	
+	<Step ID="5" TarMapID="61">
+		<EnterMap MapID="61">
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="正常" Msg="我有點害怕……" Option="我也是……"/>
+				<Talk NpcID="10000" Face="正常" Msg="好冷……" Option="我也是……"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>					
+</Tasks>
+
