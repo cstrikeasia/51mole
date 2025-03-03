@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel>
+	<animal>
+	<!--動物-->
+		<addFarm>
+			<item id="190269" />
+			<item id="190254" />
+		</addFarm>
+		<subFarm>
+			 <item id="190260" />
+			 <item id="190265" />
+		 </subFarm>
+		 <newFarm>
+			<item id="1270035"  VipOnly="0" tips="    生長在莊園了裡的泡泡眼金魚擁有大大的眼睛和嬌小的身軀，你一定會喜歡的！"/>
+		</newFarm>
+		<waveFarm>
+			<item id="190257" pricewave="1"/>
+		</waveFarm>
+	</animal>
+	<plant>
+	<!--植物-->
+		<addFarm>
+			<item id="190202" />
+			<item id="190142" />
+		</addFarm>
+		<subFarm>
+			<item id="190141" />
+			<item id="190201" />
+		</subFarm>
+		<newFarm>
+			<item id="1230050"  VipOnly="0" tips="    青綠蒼翠的竹子一直代表著恬靜安逸和享受，喜歡的 就用超級點點豆兌換吧！"/>
+		</newFarm>
+		<waveFarm>
+			<item id="190167" pricewave="1"/>
+		</waveFarm>
+	</plant>
+</panel>
+
+
+

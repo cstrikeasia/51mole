@@ -1,0 +1,34 @@
+<Map>
+	<NpcList>
+	 
+		<Npc ID="10050" Layer="depthLevel" Name="尤尤" Ex="360" Ey="360" Cmd="s" Param="1" />
+		
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+	
+		<Talk ID="1" NpcID="10050" Face="正常" Msg="{$username}，見到你真是太高興了，我有點不好意思直接說出口，可是我真的非常非常高興見到你！" Option="嘻嘻，不給糖就搗亂！" Cmd="s" Param="3" />
+       
+        <Talk ID="3" NpcID="10050" Face="正常" Msg="啊，給，給~~我這小小的牧場，可經不起折騰呢，一會兒小動物們要被嚇跑啦" Option="我有那麼恐怖麼o(╯□╰)o" Cmd="s" Param="4" />
+	    <Talk ID="4" NpcID="10050" Face="正常" Msg="哈哈，跟你開玩笑的呢！來，送你一些糖果，願你永遠像我的小動物那樣快樂！" Option="謝謝尤尤^_^" Cmd="act$none" Param="onGetCandy" />
+	    
+	    <Talk ID="10" NpcID="10050" Face="正常" Msg="哈哈，跟你開玩笑的呢！來，送你一些糖果，願你永遠像我的小動物那樣快樂！" Option="謝謝尤尤^_^" Cmd="act$none" Param="onGetCandy" />
+	    
+	    <Talk ID="30" NpcID="10050" Face="正常" Msg="耶，週年慶邀請函，我好長時間沒參加舞會了，這次一定要好好跳舞。" Option="真期待你的舞蹈。" Cmd="s" Param="31" />
+		<Talk ID="31" NpcID="10050" Face="正常" Msg="嘿嘿，不過牧場有好多事情呀，我都沒時間練舞啦！你能幫幫我嗎？(通關陽光搬運工第一關)" Option="當然願意。" Cmd="act" Param="beginGame"/>
+		<Talk ID="32" NpcID="10050" Face="正常" Msg="咦！這個邀請函好像不是送給我的，嗚嗚嗚~真傷心！" Option="不好意思啦，我弄錯了o(╯□╰)o" Cmd="null" Param="none" />
+		<Talk ID="101" NpcID="10050" Face="正常" Msg="你是一個尊重各種遊戲規則，並遵守它們的人嗎？" Option="看情況吧。$對。$不是這樣的。" Cmd="s$s$s" Param="102$102$102" />
+		<Talk ID="102" NpcID="10050" Face="正常" Msg="其實養動物和做遊戲一樣。每個小動物都有自己的喜好，如果一定要反著來，小動物就很有可能生病甚至死亡。摩樂樂就是個對小動物很有愛心的孩子呢。" Option="我想我明白了，謝謝指點。" Cmd="act" Param="loveTestMap" />
+	</Talks>
+</Map>
+
+
+
+
+
