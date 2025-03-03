@@ -1,0 +1,17 @@
+<Map>
+	<NpcList>
+		<Npc ID="10034" Layer="depthLevel" Name="漢青" Ex="485" Ey="333" Cmd="s" Param="1" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="roomMC" Layer="depthLevel" Ex="482" Ey="193" Cmd="alt_map" Param="37" Tips="進入摩爾拉雅山頂" />
+		
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10034" Face="正常" Msg="哈哈，又要過年啦，小摩爾我們又見面了，看看今年我給你們打來了什麼禮物！" Option="謝謝漢青大伯$我不感興趣" Cmd="p$none" Param="SpringFestivalGiftPanel$null"/>
+	</Talks>
+</Map>
+
+
+

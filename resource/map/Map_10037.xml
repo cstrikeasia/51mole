@@ -1,0 +1,16 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="afuhao" Layer="depthLevel" Ex="620" Ey="210" Cmd="act" Param="onClickAFuHao" />
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10148" Face="正常" Msg="謝謝你，{$username}，又找到了一顆黑暗種子，送你一些禮物以表謝意！我們一定要阻止零的陰謀！" Option="嗯！一定不能讓他得逞！" Cmd="act" Param="getItemOne" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+
+
