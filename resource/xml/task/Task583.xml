@@ -1,0 +1,141 @@
+<Tasks ID="583" Name="誓言小屋" AwardMsg="恭喜你獲得10個經驗果實！" AwardBean="" >
+
+	<!-- 遺忘田園  -->
+	<Step ID="1" TarMapID="330">
+		<EnterMap MapID="330">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="112" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	
+	<!-- 蟲蟲谷  -->
+	<Step ID="2" TarMapID="112">
+		<EnterMap MapID="112">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10192" Face="正常" Msg="當真是歲月不饒人啊……唉！" Option="尤瑞克爺爺，您怎麼來這兒了？"/>
+				<Talk NpcID="10192" Face="開心" Msg="你們好，小摩爾。我來採些紫羅蘭——我的妻子，她最喜歡的花就是紫羅蘭。我想準備一些，等我回到家就可以送給她。" Option="尤瑞克爺爺，您對您的妻子真好！"/>
+				<Talk NpcID="10192" Face="正常" Msg="唉，可惜現在年老不中用了，半天才採這麼點，體力不支了呀……" Option="爺爺，我們來幫您一起採，人多力量大！"/>
+				<Talk NpcID="10192" Face="開心" Msg="真是一群好孩子！你們幫忙驅散迷霧，我都還沒好好謝謝你們，現在又來幫我採花，爺爺真的很感激。" Option="爺爺別客氣！那我們去採紫羅蘭了！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+<!-- 			<Action Cmd="GO_MAP" MapID="330" MapType="0" /> -->
+		</EnterMap>
+	</Step>
+	
+	<!-- 蟲蟲谷-->
+	<Step ID="3" TarMapID="112">
+		<EnterMap MapID="112">
+			<Action Cmd="OPEN_PANEL" Param="Task583Panel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="task583PanelOver"/>
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10192" Face="開心" Msg="好美的紫羅蘭！我都不知道該如何表達我的謝意了，謝謝你，小摩爾！" Option="爺爺不客氣！那我們趕緊去小木屋吧~！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="330" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 遺忘田園-->
+	<Step ID="4" TarMapID="330">
+		<EnterMap MapID="330">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="GO_MAP" MapID="331" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	
+	<!-- 小木屋-->
+	<Step ID="5" TarMapID="331">
+		<EnterMap MapID="331">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="box_btn" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10192" Face="悲傷" Msg="我好不容易回來了，可為什麼卻見不到我的貓貓？她是不是出了什麼事情……" Option="爺爺，別擔心，說不定您的妻子隻是暫時出門了……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="聽~門口傳來了聲音，有人來了。難道……是爺爺的妻子回來了？" Option="一定是的，咱們看看去！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+			<Action Cmd="GO_MAP" MapID="330" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 遺忘田園-->
+	<Step ID="6" TarMapID="330">
+		<EnterMap MapID="330">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="SET_BUFFER" Panel="7" Step="7" />
+			<Action Cmd="GO_MAP" MapID="331" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 小木屋-->
+	<Step ID="7" TarMapID="331">
+		<EnterMap MapID="331">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="box_btn" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="焦急" Msg="可憐的尤瑞克爺爺，好不容易把迷霧驅散，換來的卻是這樣的結果……這個日記本居然壞掉了……" Option="沒想到找回日記本反而讓爺爺更傷心了……"/>
+				<Talk NpcID="10000" Face="焦急" Msg="看著爺爺這麼傷心，卻不知道能為他做點什麼……" Option="有沒可能幫爺爺把日記本修復好呢？"/>
+				<Talk NpcID="10000" Face="焦急" Msg="日記本遺落在外面太久所以壞掉了，但也許還能在莊園裡找到日記的碎片呢，如果將碎片找回來，就能把日記修復好了！" Option="這樣也許能讓爺爺開心一下。"/>
+				<Talk NpcID="10009" Face="焦急" Msg="對呀，我們可以試試。雖然解決不了根本問題，但對於尤瑞克爺爺來說，也算是一種安慰。" Option="嗯，我們一起加油試試吧！"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="box_btn" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>
+
+
