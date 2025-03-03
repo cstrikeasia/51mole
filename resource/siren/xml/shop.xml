@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--海妖系統商店-->
+<XML>
+	<Items ID="1633044" Price="30000" useBean="0" ProType="1" Intro="珊瑚礁背景" Condition="" isnew="1"/>
+	<Items ID="1623000" Price="30" useBean="0" ProType="1" Intro="菠蘿魚能發出芬芳的水果氣息" Condition=""/>
+	<Items ID="1623001" Price="30" useBean="0" ProType="1" Intro="冰菠蘿是菠蘿魚的藍色變種" Condition=""/>
+	<Items ID="1633009" Price="200" useBean="0" ProType="1" Intro="美麗的珊瑚和水草能淨化水質" Condition=""/>
+	<Items ID="1633010" Price="200" useBean="0" ProType="1" Intro="美麗的珊瑚和水草能淨化水質" Condition=""/>
+	<Items ID="1633027" Price="500" useBean="0" ProType="1" Intro="美麗的珊瑚和水草能淨化水質" Condition=""/>
+	<Items ID="1633028" Price="500" useBean="0" ProType="1" Intro="美麗的珊瑚和水草能淨化水質" Condition=""/>
+	<Items ID="1633029" Price="800" useBean="0" ProType="1" Intro="美麗的珊瑚和水草能淨化水質" Condition=""/>
+	<Items ID="1633030" Price="800" useBean="0" ProType="1" Intro="美麗的珊瑚和水草能淨化水質" Condition=""/>
+	<Items ID="1633031" Price="1000" useBean="0" ProType="1" Intro="美麗的珊瑚和水草能淨化水質" Condition=""/>
+	<Items ID="1633032" Price="1000" useBean="0" ProType="1" Intro="美麗的珊瑚和水草能淨化水質" Condition=""/>
+	<Items ID="1633000" Price="2000" useBean="1" ProType="1" Intro="普通魚食" Condition=""/>
+	<Items ID="1633047" Price="10000" useBean="0" ProType="1" Intro="海螺小窩" Condition=""/>
+	<Items ID="1633049" Price="4000" useBean="0" ProType="1" Intro="螃蟹蒸籠" Condition=""/>
+	<Items ID="1633050" Price="4000" useBean="0" ProType="1" Intro="章魚醬油瓶" Condition=""/>
+	<Items ID="1633051" Price="4000" useBean="0" ProType="1" Intro="貝殼調味罐" Condition=""/>
+	<Items ID="1633042" Price="10" useBean="0" ProType="1" Intro="坐騎魚食" Condition=""/>
+	<Items ID="1633043" Price="300" useBean="0" ProType="1" Intro="定心丸" Condition=""/>
+
+
+
+</XML>
+
+
+
