@@ -1,0 +1,27 @@
+<Map>
+	<NpcList>
+		<!--
+		<Npc ID="10002" Layer="controlLevel" Name="麼麼公主" Ex="358" Ey="460" Cmd="s" Param="1" />
+		-->
+		<Npc ID="10015" Layer="depthLevel" Name="兔兔主編" Ex="124" Ey="339" Cmd="act" Param="bugbugEvent" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_80" Layer="controlLevel" Ex="165" Ey="303" Cmd="alt_map" Param="80" Tips="尼爾拉塔" />
+		
+	</Triggers>
+	
+	<Talks>
+		<!--
+		<Trigger ResName="lollipops" Layer="depthLevel" Ex="390" Ey="325" Cmd="act" Param="getlollipops" Tips="獲得綠色迷你波板糖" />
+		
+		<Talk ID="1" NpcID="10015" Face="正常" Msg="Hi，你好啊。" Option="我很好" Cmd="none" Param="6" AddTaskOption="1" />
+		<Talk ID="5" NpcID="10015" Face="正常" Msg="就叫“那年我們一起paoliu！”你看怎麼樣？這裡有我收集的一些老asaaaaaa……" Option="恩woasl的！" Cmd="none" Param="1" AddTaskOption="1" />	
+		<Talk ID="1" NpcID="10015" Face="正常" Msg="小丑：        你身上有X色迷你波板糖嗎？給我一個吧！" Option="給你！我可是很大方的！$什麼迷你波板糖？$我現在有事，待會來幫你！" Cmd="act$s$none" Param="bugbugEvent$3$4" AddTaskOption="1" />
+		-->
+		
+	</Talks>
+</Map>
+
+
+

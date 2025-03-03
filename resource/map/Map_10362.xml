@@ -1,0 +1,12 @@
+<Map>
+	 <NpcList>
+	 	
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_112" Layer="controlLevel" Ex="499" Ey="534" Cmd="alt_map" Param="112" Tips="進入蟲蟲谷"/>
+		<Trigger ResName="go_113" Layer="controlLevel" Ex="866" Ey="441" Cmd="alt_map" Param="113" Tips="進入神秘花蕊"/>
+	</Triggers>
+
+</Map>
+
+
