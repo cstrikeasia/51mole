@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--海妖系統商店-->
+<XML>
+	<Items ID="1351403" Price="200"  	Type="1750" static="0x0201F57B"/> 	
+	<Items ID="161107"  Price="50"   	Type="1751" static="0x02011453"/>
+	<Items ID="161110" 	Price="30" 		Type="1752" static="0x02011456"/>
+	<Items ID="1633045" Price="70"  	Type="1753" static="0x040A0D2D"/>
+	<Items ID="1633048" Price="70"  	Type="1754" static="0x040A0D30"/>
+	<Items ID="1633052" Price="50" 		Type="1755" static="0x040A0D34"/>
+	<Items ID="14431" 	Price="30"  	Type="1756" static="0x0201097F"/>
+	<Items ID="14432" 	Price="30" 		Type="1757" static="0x02010980"/>
+	<Items ID="14433" 	Price="70" 		Type="1758" static="0x02010981"/>
+	<Items ID="14434" 	Price="50"  	Type="1759" static="0x02010982"/>
+</XML>
+
+
+

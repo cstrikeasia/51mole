@@ -1,0 +1,11 @@
+<!--擴容
+Capacity 擴建後的容量
+NeedLevel 擴建需要的等級
+NeedShell 擴建需要的貝殼幣
+-->
+<XML>
+	<Expand Capacity="12" NeedLevel="30" NeedShell="50000"/>
+</XML>
+
+
+

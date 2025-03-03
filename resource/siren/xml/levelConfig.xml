@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--海妖系統冒險模式 關卡配表 Price:每關海洋之淚 海妖蛋殼的價格-->
+<!--WinShell 每關貝殼幣達到多少勝利-->
+<!--UnLockPet 每關解鎖的寵物 PetList 每關可供選擇的寵物有哪些 逗號分隔-->
+<!-- Init: 沒關初始給予的魚 金錢  icon2固定魚食次數不需配-->
+<!-- Lock 解鎖， Condition:解鎖條件 Coindtion="0-1" 表示 icon0上的魚 到達狀態1(中) 是會解鎖icon1 Result:解鎖物品 1,2,6 解鎖icon1,2,6-->
+<!--Monster 每關出現的怪物 AppearTime 關卡開始後多上時間出現 Interval 每隔多少秒出現-->
+<!--新增屬性 Background背景ID-->
+<!-- -->
+<XML>
+	<Area ID="1"   Background="1633005" Needlevel="0">
+	<Stage ID="1"   Name="關卡1"  WinShell="800" UnLockPet="1623000" PetList="" icon0="1623000" icon1="1633001">
+		<Init InitShell="200" Fish="1623000" FishNum="2" />
+		<AllLock>
+			<Lock Condition="0-1" Result="0" />
+			<Lock Condition="0-2" Result="1,2" />
+		</AllLock>
+	</Stage>
+	<Stage ID="2" Name="關卡2" WinShell="1000" UnLockPet="1623034" PetList="1623034" icon0="1623002" icon1="1633001" icon3="1623003" icon5="1633017">
+		<Init InitShell="200" Fish="1623002" FishNum="2" />
+		<Monster ID="1623004" AppearTime="100" Interval="180" HP="100"/>
+		<AllLock>
+			<Lock Condition="0-1" Result="0" />
+			<Lock Condition="0-2" Result="1,2,3" />
+			<Lock Condition="3-0" Result="" />
+		</AllLock>
+	</Stage>
+
+        <Stage ID="3" Name="關卡3" WinShell="1000" UnLockPet="1623035" PetList="1623034,1623035" icon0="1623006" icon1="1633001" icon3="1623003" icon5="1633017">
+		<Init InitShell="200" Fish="1623006" FishNum="2" />
+		<Monster ID="1623004" AppearTime="120" Interval="120" HP="100"/>
+		<AllLock>
+			<Lock Condition="0-1" Result="0" />
+			<Lock Condition="0-2" Result="1,2,3" />
+			<Lock Condition="3-0" Result="" />
+		</AllLock>
+	</Stage>
+
+        <Stage ID="4" Name="關卡4" WinShell="1200" UnLockPet="1623036" PetList="1623034,1623035,1623036" icon0="1623008" icon1="1633001" icon3="1623003" icon5="1633017">
+		<Init InitShell="200" Fish="1623008" FishNum="2" />
+		<Monster ID="1623004" AppearTime="120" Interval="120" HP="100"/>
+		<AllLock>
+			<Lock Condition="0-1" Result="0" />
+			<Lock Condition="0-2" Result="1,2,3" />
+			<Lock Condition="3-0" Result="" />
+		</AllLock>
+	</Stage>
+
+        <Stage ID="5" Name="關卡5" WinShell="1200" UnLockPet="1623038" PetList="1623034,1623035,1623036,1623038" icon0="1623009" icon1="1633001" icon3="1623003" icon5="1633017">
+		<Init InitShell="200" Fish="1623009" FishNum="2" />
+		<Monster ID="1623040" AppearTime="180" Interval="120" HP="50"/>
+		<AllLock>
+			<Lock Condition="0-1" Result="0" />
+			<Lock Condition="0-2" Result="1,2,3" />
+			<Lock Condition="3-0" Result="" />
+		</AllLock>
+	</Stage>
+
+        <Stage ID="6" Name="關卡6" WinShell="1500" UnLockPet="1623039" PetList="1623034,1623035,1623036,1623038,1623039" icon0="1623014" icon1="1633001" icon3="1623003" icon5="1633017">
+		<Init InitShell="200" Fish="1623014" FishNum="2" />
+		<Monster ID="1623004" AppearTime="120" Interval="120" HP="100"/>
+		<AllLock>
+			<Lock Condition="0-1" Result="0" />
+			<Lock Condition="0-2" Result="1,2,3" />
+			<Lock Condition="3-0" Result="" />
+		</AllLock>
+	</Stage>
+</Area>
+	<Area ID="2"   Background="1633044" Needlevel="0">
+        <Stage ID="1" Name="關卡1" WinShell="800" UnLockPet="1623013" PetList="" icon0="1623013" icon1="1633001" icon3="1623003" icon5="1633017">
+		<Init InitShell="200" Fish="1623013" FishNum="2" />
+		<Monster ID="1623040" AppearTime="120" Interval="120" HP="50"/>
+		<AllLock>
+			<Lock Condition="0-1" Result="0" />
+			<Lock Condition="0-2" Result="1,2,3" />
+			<Lock Condition="3-0" Result="" />
+		</AllLock>
+	</Stage>
+
+
+        <Stage ID="2" Name="關卡2" WinShell="800" UnLockPet="1623037" PetList="1623037" icon0="1623007" icon1="1633001" icon3="1623003" icon5="1633017">
+		<Init InitShell="200" Fish="1623007" FishNum="2" />
+		<Monster ID="1623004" AppearTime="100" Interval="120" HP="100"/>
+		<AllLock>
+			<Lock Condition="0-1" Result="0" />
+			<Lock Condition="0-2" Result="1,2,3" />
+			<Lock Condition="3-0" Result="" />
+		</AllLock>
+	</Stage>
+
+        <Stage ID="3" Name="關卡3" WinShell="800" UnLockPet="1623041" PetList="1623037,1623041" icon0="1623010" icon1="1633001" icon3="1623003" icon5="1633017">
+		<Init InitShell="200" Fish="1623010" FishNum="2" />
+		<Monster ID="1623043" AppearTime="120" Interval="120" HP="100"/>
+		<AllLock>
+			<Lock Condition="0-1" Result="0" />
+			<Lock Condition="0-2" Result="1,2,3" />
+			<Lock Condition="3-0" Result="" />
+		</AllLock>
+	</Stage>
+
+        <Stage ID="4" Name="關卡4" WinShell="1000" UnLockPet="1623042" PetList="1623037,1623041,1623042" icon0="1623019" icon1="1633001" icon3="1623003" icon5="1633017">
+		<Init InitShell="200" Fish="1623019" FishNum="2" />
+		<Monster ID="1623043" AppearTime="120" Interval="120" HP="100"/>
+		<AllLock>
+			<Lock Condition="0-1" Result="0" />
+			<Lock Condition="0-2" Result="1,2,3" />
+			<Lock Condition="3-0" Result="" />
+		</AllLock>
+	</Stage>
+	
+	        <Stage ID="5" Name="關卡5" WinShell="1000" UnLockPet="1623038" PetList="1623037,1623041,1623042,1623038" icon0="1623009" icon1="1633001" icon3="1623003" icon5="1633017">
+		<Init InitShell="200" Fish="1623009" FishNum="2" />
+		<Monster ID="1623043" AppearTime="120" Interval="120" HP="100"/>
+		<AllLock>
+			<Lock Condition="0-1" Result="0" />
+			<Lock Condition="0-2" Result="1,2,3" />
+			<Lock Condition="3-0" Result="" />
+		</AllLock>
+	</Stage>
+	
+	        <Stage ID="6" Name="關卡6" WinShell="1200" UnLockPet="1623035" PetList="1623037,1623041,1623042,1623038,1623035" icon0="1623014" icon1="1633001" icon3="1623003" icon5="1633017">
+		<Init InitShell="200" Fish="1623014" FishNum="2" />
+		<Monster ID="1623043" AppearTime="120" Interval="120" HP="100"/>
+		<AllLock>
+			<Lock Condition="0-1" Result="0" />
+			<Lock Condition="0-2" Result="1,2,3" />
+			<Lock Condition="3-0" Result="" />
+		</AllLock>
+	</Stage>
+	</Area>
+</XML>
+
+
+

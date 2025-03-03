@@ -1,0 +1,81 @@
+<!-- 編輯使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!--海妖系統 冒險模式配表-->
+<!-- LikeMeat:是否食肉 -->
+<!-- Monsters 怪物  怪物吃所有魚 不會長大 type==106 為怪物-->
+<!--寵物注：寵物沒有食物 產出 成長 等， 所有寵物追尋攻擊產出等全部為寫死-->
+<Xml>
+	<Fishes>
+		<Fish ID="1623000" Name="菠蘿魚" LikeMeat="0" Speed="4.5" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="菠蘿魚能發出芬芳的水果氣息" AddHung="30"/>
+		<Fish ID="1623001" Name="冰菠蘿" LikeMeat="0" Speed="4.5" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="冰菠蘿是菠蘿魚的藍色變種" AddHung="30"/>
+		<Fish ID="1623002" Name="金傲蕉" LikeMeat="0" Speed="4.5" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="金傲蕉很孤僻和敏感，需要溫柔對待" AddHung="30"/>
+		<Fish ID="1623003" Name="食人花花" LikeMeat="1" Speed="4.5" Force="1" Food="1623013,1623010,1623019,1623007,1623000,1623001,1623002,1623005,1623006,1623008,1623009,1623011,1623015,1623014" Product="1633016,1633016,1633016" ProductCD="8" LevelNum="" Price="1000" Type="1" Star="1" Ability="" Tools="" Intro="食人花花非常兇狠，小心你的手指" AddHung="30"/>
+		<Fish ID="1623005" Name="火龍果魚" LikeMeat="0" Speed="3" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="16" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="火龍果魚" AddHung="30"/>
+		<Fish ID="1623006" Name="番茄茄" LikeMeat="0" Speed="3" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="番茄茄" AddHung="30"/>
+		<Fish ID="1623016" Name="花心卷" LikeMeat="0" Speed="3" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="番茄茄" AddHung="30"/>
+		<Fish ID="1623008" Name="玉米米" LikeMeat="0" Speed="3" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="玉米米" AddHung="30"/>
+		<Fish ID="1623009" Name="烤腸西瓜" LikeMeat="0" Speed="3" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="烤腸西瓜" AddHung="30"/>
+		<Fish ID="1623014" Name="南瓜先生" LikeMeat="0" Speed="3" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="南瓜先生" AddHung="30"/>
+		<Fish ID="1623011" Name="蒜頭阿呆" LikeMeat="0" Speed="3" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="蒜頭阿呆" AddHung="30"/>
+		<Fish ID="1623015" Name="黃金漢堡魚" LikeMeat="0" Speed="3" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="黃金漢堡魚" AddHung="30"/>
+		<Fish ID="1623016" Name="花心卷" LikeMeat="0" Speed="3" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="蘿蔔白白" AddHung="30"/>
+		<Fish ID="1623013" Name="蘿蔔白白" LikeMeat="0" Speed="3" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="蘿蔔白白的皮膚十分光滑喲！" AddHung="30"/>
+		<Fish ID="1623010" Name="蘑菇蝌蚪" LikeMeat="0" Speed="3" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="蘑菇蝌蚪" AddHung="30"/>
+		<Fish ID="1623019" Name="蝦餃廚子" LikeMeat="0" Speed="3" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="蝦餃廚子" AddHung="30"/>
+		<Fish ID="1623007" Name="胖妞茄子" LikeMeat="0" Speed="3" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="胖妞茄子" AddHung="30"/>
+		<Fish ID="1623017" Name="李小籠" LikeMeat="0" Speed="3" Force="1" Food="1633000,1633001,1633002" Product="0,1633013,1633014" ProductCD="8" LevelNum="40,100" Price="100" Type="1" Star="1" Ability="" Tools="" Intro="李小籠" AddHung="30"/>
+		<Fish ID="1623018" Name="留戀哥" Speed="3" Force="1" Intro="全身長滿刺的留戀哥，馴化後可以成合格的坐騎" Food="1633000,1633001,1633002,1633042" Product="0" ProductCD="600" LevelNum="" Price="30" Type="2" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式" NeedBall="1"/>
+		<Fish ID="1623021" Name="葡提提" Speed="3" Force="1" Intro="馴化後會變為富有異域風情的坐騎哦" Food="1633000,1633001,1633002,1633042" Product="0" ProductCD="600" LevelNum="" Price="30" Type="2" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式" NeedBall="1"/>
+		<Fish ID="1623022" Name="金芒果" Speed="3" Force="1" Intro="全身散發著芒果的香氣" Food="1633000,1633001,1633002,1633042" Product="0" ProductCD="600" LevelNum="" Price="30" Type="2" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式" NeedBall="1"/>
+		<Fish ID="1623044" Name="夏威夷寶石" Speed="3" Force="1" Intro="全身散發著芒果的香氣" Food="1633000,1633001,1633002,1633042" Product="0" ProductCD="600" LevelNum="" Price="30" Type="2" Max="99999" Star="1" Ability="" Tools="" Life="10" GetWay="冒險模式" NeedBall="1"/>
+	</Fishes>
+	<Pets>
+		<Pet ID="1623034" Name="斯奈爾" Speed="5" Force="1" Type="107" Intro="斯奈爾可以幫你撿取遺落的金幣！"/>
+		<Pet ID="1623035" Name="沃特" Speed="0" Force="1" Type="107" Intro="隔一段時間會產出金幣！"/>
+		<Pet ID="1623036" Name="迪亞" Speed="0.5" Force="1" Type="107" Intro="可以微弱控制時間和空間，讓金幣掉落的速度變慢"/>
+		<Pet ID="1623037" Name="魯巴" Speed="5" Force="1" Type="107" Intro="動作敏捷並具備攻擊力，可以抵禦入侵的怪物！"/>
+		<Pet ID="1623038" Name="瑪麗" Speed="0.5" Force="1" Type="107" Intro="會唱出悠揚的歌聲，讓各種魚類產出更多的金幣"/>
+		<Pet ID="1623039" Name="琪安" Speed="0.5" Force="1" Type="107" Intro="可以幫你提供信息，讓你更好的與怪物戰鬥。"/>
+		<Pet ID="1623041" Name="普羅泰" Speed="0.5" Force="1" Type="107" Intro="怪物出現時，會把魚聚攏到身邊，保護魚兒。"/>
+		<Pet ID="1623042" Name="瑞博" Speed="0.5" Force="1" Type="107" Intro="魚兒死亡時，可能會讓你的魚兒復活哦~"/>
+	</Pets>
+	<Monsters>
+		<Fish ID="1623004" Name="章魚王" LikeMeat="1" Speed="1" Force="1" Product="1633016" Type="106" Star="1" Ability="" Tools="" Intro="隨著關卡的深入，可能會遇到越來越多的未知危險！"/>
+		<Fish ID="1623040" Name="食肉螭" LikeMeat="1" Speed="2" Force="1" Product="1633016" Type="106" Star="1" Ability="" Tools="" Intro="只有不斷且快速的餵食才能打敗它！"/>
+		<Fish ID="1623043" Name="洛克特" LikeMeat="1" Speed="3" Force="1" Product="1633016" Type="106" Star="1" Ability="" Tools="" Intro="小心它尾巴上發出的光球！！"/>
+	</Monsters>
+	<Properties>
+		<Property ID="1633000" Name="彩色魚食" Speed="2" Prize="" Type="102" Max="99999" VipOnly="" VipBuyAble="" AddHung="10"/>
+		<Property ID="1633001" Name="優良魚食" Speed="2" Prize="" Type="102" Max="99999" VipOnly="" VipBuyAble="" AddHung="20"/>
+		<Property ID="1633002" Name="高級魚食" Speed="2" Prize="" Type="102" Max="99999" VipOnly="" VipBuyAble="" AddHung="30"/>
+		<Property ID="1633033" Name="海洋之淚碎片" Speed="0" Prize="" Type="102" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633034" Name="海洋之淚碎片X2" Speed="0" Prize="" Type="102" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633035" Name="海洋之淚" Speed="0" Prize="" Type="102" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633036" Name="海妖蛋殼" Speed="0" Prize="" Type="102" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633037" Name="海妖蛋殼X2" Speed="0" Prize="" Type="102" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633038" Name="海妖蛋" Speed="0" Prize="" Type="102" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633003" Name="銀貝殼" Speed="3" Prize="1" Type="105" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633004" Name="金貝殼" Speed="3" Prize="3" Type="105" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633007" Name="鑽石貝殼" Speed="3" Prize="10" Type="105" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633039" Name="白珍珠" Speed="1" Tradability="" Prize="10" Type="105" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633041" Name="藍珍珠" Speed="1" Tradability="" Prize="20" Type="105" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633040" Name="黑珍珠" Speed="1" Tradability="" Prize="30" Type="105" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633013" Name="銀幣" Speed="3" Prize="20" Type="105" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633014" Name="金幣" Speed="3" Prize="35" Type="105" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633015" Name="星星" Speed="3" Prize="50" Type="105" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633016" Name="鑽石" Speed="3" Prize="200" Type="105" Max="99999" VipOnly="" VipBuyAble=""/>
+		<Property ID="1633017" Name="1級武器" Type="102" Attack="10"/>
+		<Property ID="1633018" Name="2級武器" Type="102" Attack="20"/>
+		<Property ID="1633019" Name="3級武器" Type="102" Attack="30"/>
+		<Property ID="1633020" Name="4級武器" Type="102" Attack="40"/>
+		<Property ID="1633021" Name="5級武器" Type="102" Attack="50"/>
+		<Property ID="1633022" Name="6級武器" Type="102" Attack="60"/>
+		<Property ID="1633023" Name="7級武器" Type="102" Attack="70"/>
+		<Property ID="1633024" Name="8級武器" Type="102" Attack="80"/>
+		<Property ID="1633025" Name="9級武器" Type="102" Attack="90"/>
+		<Property ID="1633026" Name="10級武器" Type="102" Attack="100"/>
+		<Property ID="1633057" Name="光球" Speed="6" Type="105"/>
+	</Properties>
+</Xml>
+
+
+
