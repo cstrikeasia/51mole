@@ -1,0 +1,41 @@
+<dianShop>
+	<items type="1" name="服飾傢俱">
+		<item id="13694" price="1200" />
+		<item id="13753" price="200" />
+		<item id="13754" price="300" />
+		<item id="13755" price="150" />
+	</items>
+	<items type="2" name="拉姆裝扮">
+		<item id="1200052" price="700" />
+		<item id="1200053" price="600" />
+		<item id="1200060" price="600" />
+		<item id="1200070" price="700" />
+		<item id="1200074" price="700" />
+		<item id="1200061" price="600" />
+		<item id="1200065" price="600" />
+		
+	</items>
+	<items type="3" name="家園種子">
+		<item id="1230026" price="50" />
+		<item id="1230032" price="20" />
+		<item id="1230044" price="50" />
+		<item id="1230050" price="30" />
+		<item id="1230066" price="15" />
+	</items>
+	<items type="4" name="牧場動物">
+		<item id="1270017" price="300" />
+		<item id="1270012" price="50" />
+		<item id="1270021" price="20" />
+		<item id="1270054" price="1000" />
+		<item id="1270044" price="70" />
+		<item id="1270072" price="1000" />
+		<item id="1270067" price="500" />
+	</items>
+	<items type="5" name="其他">
+		<item id="17008" price="2" />
+		<item id="190196" price="1" />
+		<item id="190309" price="4" />
+		<item id="190574" price="13" />
+		<item id="190840" price="5" />
+	</items>
+</dianShop>

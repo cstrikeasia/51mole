@@ -1,0 +1,41 @@
+<Map>
+	<NpcList>
+	 
+<!-- 		<Npc ID="10038" Layer="depthLevel" Name="凱文" Ex="631" Ey="330" Cmd="s" Param="1" /> -->
+	   
+		
+		
+
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_32" Layer="controlLevel" Ex="485" Ey="151" Cmd="alt_map" Param="32" Tips="城堡書房" />
+		<Trigger ResName="go_33" Layer="controlLevel" Ex="79" Ey="277" Cmd="alt_map" Param="33" Tips="城堡露台" />
+		<Trigger ResName="go_108" Layer="controlLevel" Ex="860" Ey="318" Cmd="alt_map" Param="108" Tips="長廊" />
+		<Trigger ResName="go_15" Layer="controlLevel" Ex="855" Ey="465" Cmd="alt_map" Param="15" Tips="城堡大廳" />
+<!-- 		<Trigger ResName="gameBtn_1" Layer="controlLevel" Ex="206" Ey="192" Cmd="act" Param="opengame" Data="1" Tips="加入遊戲" /> -->
+<!-- 		<Trigger ResName="gameBtn_2" Layer="controlLevel" Ex="308" Ey="158" Cmd="act" Param="opengame" Data="2" Tips="加入遊戲" /> -->
+<!-- 		<Trigger ResName="gameBtn_3" Layer="controlLevel" Ex="387" Ey="180" Cmd="act" Param="opengame" Data="3" Tips="加入遊戲" /> -->
+<!-- 		<Trigger ResName="gameBtn_4" Layer="controlLevel" Ex="577" Ey="139" Cmd="act" Param="opengame" Data="4" Tips="加入遊戲" /> -->
+<!-- 		<Trigger ResName="gameBtn_5" Layer="controlLevel" Ex="668" Ey="165" Cmd="act" Param="opengame" Data="5" Tips="加入遊戲" /> -->
+<!-- 		<Trigger ResName="gameBtn_6" Layer="controlLevel" Ex="748" Ey="196" Cmd="act" Param="opengame" Data="6" Tips="加入遊戲" /> -->
+		
+<!-- 		 <Trigger ResName="duihuan" Layer="controlLevel" Ex="391" Ey="499" Cmd="p" Param="MomoBirthpartyUIPanel" Tips="獎勵兌換" /> -->
+		
+<!-- 		<Trigger ResName="seat0" Layer="controlLevel" Ex="372" Ey="404" Cmd="sit" Param="3$seat" Data="0" Tips="加入遊戲" /> -->
+<!-- 		<Trigger ResName="seat1" Layer="controlLevel" Ex="432" Ey="403" Cmd="sit" Param="3$seat" Data="1" Tips="加入遊戲" /> -->
+<!-- 		<Trigger ResName="seat2" Layer="controlLevel" Ex="466" Ey="303" Cmd="sit" Param="3$seat" Data="2" Tips="加入遊戲" /> -->
+<!-- 		<Trigger ResName="seat3" Layer="controlLevel" Ex="527" Ey="305" Cmd="sit" Param="3$seat" Data="3" Tips="加入遊戲" /> -->
+<!-- 		<Trigger ResName="seat4" Layer="controlLevel" Ex="555" Ey="406" Cmd="sit" Param="3$seat" Data="4" Tips="加入遊戲" /> -->
+<!-- 		<Trigger ResName="seat5" Layer="controlLevel" Ex="612" Ey="403" Cmd="sit" Param="3$seat" Data="5" Tips="加入遊戲" /> -->
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="100" NpcID="10277" Face="正常" Msg="摩爾王國永遠不會缺少真正的勇士，摩爾王國的精神永遠不會消失！我說得對嗎？" Option="嗯，我舉雙手贊成！" Cmd="s" Param="101" />
+		<Talk ID="101" NpcID="10277" Face="正常" Msg="哈哈，看來你也是一個勇士，勇士接受我的禮物吧！" Option="非常感謝！" Cmd="act" Param="WorshipNPC_over" />
+		
+	</Talks>
+</Map>
+
+
+
