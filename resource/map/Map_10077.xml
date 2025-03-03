@@ -1,0 +1,26 @@
+<Map>
+	<NpcList>
+		<!--
+		<Npc ID="10055" Layer="controlLevel" Name="絲爾特" Ex="358" Ey="460" Cmd="s" Param="1" />
+		-->
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="tip_1Btn" Layer="depthLevel" Ex="128" Ey="245" Cmd="p" Param="Map77HelpPanel" Tips="摩爾大學公告板" /> 
+		<Trigger ResName="tip_2Btn" Layer="depthLevel" Ex="838" Ey="232" Cmd="p" Param="Map77MottoPanel" Tips="摩爾大學校訓" /> 
+		
+		<Trigger ResName="go_28" Layer="controlLevel" Ex="874" Ey="293" Cmd="alt_map" Param="28"  Tips="進入拉姆學院" /> 
+		<Trigger ResName="go_78" Layer="controlLevel" Ex="485" Ey="238" Cmd="alt_map" Param="78"  Tips="進入摩爾大學大廳" /> 
+		<Trigger ResName="go_65" Layer="controlLevel" Ex="618" Ey="200" Cmd="alt_map" Param="65" Tips="進入塗鴉館" />
+		<Trigger ResName="candyNotMc" Layer="depthLevel" Ex="301" Ey="304" Cmd="act" Param="CandyNotEvent" Tips="" />
+	</Triggers>
+	
+	<Talks>
+		<!--
+		<Talk ID="1" NpcID="10015" Face="正常" Msg="Hi，你好啊。" Option="我很好" Cmd="none" Param="6" AddTaskOption="1" />
+		-->
+	</Talks>
+</Map>
+
+
+

@@ -1,0 +1,195 @@
+<Tasks ID="581" Name="銘刻愛的小水車" AwardMsg="恭喜你獲得10個經驗果實！" AwardBean="" >
+
+	<!-- 摩爾大學  -->
+	<Step ID="1" TarMapID="77">
+		<EnterMap MapID="77">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="疑惑" Msg="{$username}，怎麼了？你怎麼一個人在這裡慌張地走來走去？" Option="嗚嗚嗚~~~我的拉姆不見了！"/>
+				<Talk NpcID="10009" Face="疑惑" Msg="什麼時候不見的？會不會是在附近玩耍，說不定過一會兒就回來了。" Option="可是我等了好久，附近都找遍了也沒有找到它……     "/>
+				<Talk NpcID="10010" Face="焦急" Msg="該不會是掉坑裡，撞樹上，或者遇到壞人了吧？！" Option="……………… "/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+<!-- 			<Action Cmd="GO_MAP" MapID="1" MapType="0" /> -->
+		</EnterMap>	
+	</Step>
+	
+	
+	<!-- 摩爾大學  -->
+	<Step ID="2" TarMapID="77">
+		<!-- 摩爾城堡 -->
+		<EnterMap MapID="77">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="正常" Msg="多多，你就知道瞎猜，小拉姆肯定是一時貪玩，忘了回來。{$username}，別信他的話！我們跟你一起找，一定能幫你把拉姆找回來！" Option="可是，該去哪兒找它呢……"/>
+				<Talk NpcID="10011" Face="正常" Msg="你們聽！你們聽！……聽到了什麼嗎？是拉姆的聲音！" Option="會不會是丫麗的拉姆，波波在說話？"/>
+ 				<Talk NpcID="10193" Face="正常" Msg="BIBO~BIBO~~~" Option="( ⊙ o ⊙ )…………"/>
+				<Talk NpcID="10009" Face="疑惑" Msg="等等~~~噓！你們仔細聽！" Option="@_@"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="329" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 遺忘田園(新場景)-->
+	<Step ID="3" TarMapID="329">
+		<EnterMap MapID="329">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="watercart" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn0" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn1" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn2" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="wood" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npcMc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10063" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="mc_bar" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="rankBtn" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="ruleBtn" Visible="0" />
+			
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10010" Face="焦急" Msg="你們確定小拉姆會來這麼陰森森的地方嗎？我看我們還是趕快走吧！" Option="不行，剛剛的聲音明明就是從這個方向傳來的。"/>
+				<Talk NpcID="10009" Face="正常" Msg="真是兩個膽小鬼，這大白天的不知道你們在怕什麼。{$username}別管他們，咱們先到處找找看。" Option="嗯！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 遺忘田園(新場景)-->
+	<Step ID="4" TarMapID="329">
+		<EnterMap MapID="329">
+			<Action Cmd="OPEN_PANEL" Param="Task581Panel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="task581PanelOver"/>
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="watercart" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn0" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn1" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn2" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="wood" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npcMc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10063" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="mc_bar" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="rankBtn" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="ruleBtn" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10010" Face="正常" Msg="我說什麼來著，我就說聽見了拉姆的聲音。現在拉姆也找到了，我們還是趕快離開這陰森的地方吧！" Option="怎麼以前沒發現莊園還有這麼一個神秘的地方。 "/>
+				<Talk NpcID="10011" Face="正常" Msg="丫麗、{$username}，多多說的對，我們還是回去了吧！" Option="來都來了，也不著急這一時半會兒的，不著急。"/>
+				<Talk NpcID="10009" Face="正常" Msg="對！既然都來了，要不我們就趁此機會，來個神秘荒地大探險！o(∩_∩)o 哈哈，好久沒這麼刺激過了。" Option="這裡有水車，應該是有摩爾住的，怎會如此荒涼呢？ "/>
+				<Talk NpcID="10010" Face="焦急" Msg="除非……除非……住在這裡的摩爾已經，已經……" Option="(⊙ｏ⊙)…………"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1" IsFullScreen="1"/>
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10010" Face="焦急" Msg="你…你……你是人是鬼？不要過來！你的水車不是我們弄壞的，不是我們。" Option="這水車，本來就是壞的，還賴我們。"/>
+				<Talk NpcID="10009" Face="焦急" Msg="這大白天的，哪裡來的鬼！多多別自己嚇自己了。不過，這個摩爾是誰？這又是什麼地方？" Option="老爺爺，請問您是？"/>
+				<Talk NpcID="10192" Face="生氣" Msg="我是尤瑞克！你們這些調皮孩子，別以為我年紀大了，行動不方便，我打人的力氣還是有的！" Option="這位老爺爺……這麼大年紀了，還兇巴巴的，一點都不慈祥。"/>
+				<Talk NpcID="10192" Face="生氣" Msg="你你你~你最心愛的東西被人弄壞了，你不生氣嗎？你不難過嗎？你還能心情平靜嗎？？？" Option="我們不是故意的，老爺爺對不起。"/>
+				<Talk NpcID="10192" Face="生氣" Msg="真是一群毛手毛腳的調皮孩子！現在，不修好我的水車，不準走！" Option="(⊙ｏ⊙)什麼？？？"/>
+				<Talk NpcID="10192" Face="生氣" Msg="什麼什麼？我說，不修好我的水車，你們一個都不準走！" Option="啊！不是吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+		</EnterMap>
+	</Step>
+	
+	
+	<!-- 遺忘田園(新場景)-->
+	<Step ID="5" TarMapID="329">
+		<EnterMap MapID="329">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="watercart" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn0" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn1" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn2" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="wood" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npcMc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10063" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="mc_bar" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="rankBtn" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="ruleBtn" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="悲傷" Msg="我們是不是真的做的有點過分了？老爺爺看起來好像很失落的樣子。" Option="可是我們沒一個人會修水車……"/>
+				<Talk NpcID="10010" Face="正常" Msg="丫麗，你怎麼忘了，我們不會修沒關系，有一個人肯定會修！" Option="噔噔噔~~~噔！莊園第一建築師——湯米！"/>
+				<Talk NpcID="10011" Face="正常" Msg="嗯~湯米一定能把這個水車修好的。" Option="事不宜遲，現在就去找湯米。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+		</EnterMap>
+	</Step>
+	
+		<!-- 遺忘田園(新場景)-->
+	<Step ID="6" TarMapID="329">
+		<EnterMap MapID="329">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="watercart" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn0" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn1" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn2" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="wood" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npcMc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10063" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="mc_bar" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="rankBtn" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="ruleBtn" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10063" Face="疑惑" Msg="你們是怎麼找到這裡的？我怎麼都不知道莊園還有個這樣的地方。" Option="這個之後我們再慢慢跟你說。"/>
+				<Talk NpcID="10009" Face="正常" Msg="嗯，先不糾結細節，現在最要緊的是修好這個水車。拜托你了，湯米。" Option="對，修水車要緊。"/>
+				<Talk NpcID="10063" Face="正常" Msg="這個水車已經破成這樣了，損毀很嚴重啊！如果要修理的話，需要大量材料。" Option="大量是多少？給個數！"/>
+				<Talk NpcID="10063" Face="正常" Msg="材料是一個問題，還有一個問題是人手。我一個人，是肯定忙不過來的，得有幾個小幫手才行。" Option="要找幫手那還不簡單！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="watercart" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn0" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn1" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="woodBtn2" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="wood" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npcMc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10063" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="mc_bar" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="rankBtn" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="ruleBtn" Visible="1" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" MapID="330"/>
+		</EnterMap>
+	</Step>
+</Tasks>
+
+
