@@ -1,0 +1,36 @@
+<Map>
+	<NpcList>
+		<!--
+		<Npc ID="10002" Layer="controlLevel" Name="麼麼公主" Ex="358" Ey="460" Cmd="s" Param="1" />
+		-->
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="set_0" Layer="depthLevel" Ex="310" Ey="400" Cmd="act" Param="goMole" Data="0" Tips="看電影" />
+		<Trigger ResName="set_1" Layer="depthLevel" Ex="320" Ey="400" Cmd="act" Param="goMole" Data="1" Tips="看電影" />
+		<Trigger ResName="set_2" Layer="depthLevel" Ex="420" Ey="400" Cmd="act" Param="goMole" Data="2" Tips="看電影" />
+		<Trigger ResName="set_3" Layer="depthLevel" Ex="440" Ey="400" Cmd="act" Param="goMole" Data="3" Tips="看電影" />
+		<Trigger ResName="set_4" Layer="depthLevel" Ex="540" Ey="400" Cmd="act" Param="goMole" Data="4" Tips="看電影" />
+		<Trigger ResName="set_5" Layer="depthLevel" Ex="560" Ey="400" Cmd="act" Param="goMole" Data="5" Tips="看電影" />
+		<Trigger ResName="set_6" Layer="depthLevel" Ex="660" Ey="400" Cmd="act" Param="goMole" Data="6" Tips="看電影" />
+		<Trigger ResName="set_7" Layer="depthLevel" Ex="680" Ey="400" Cmd="act" Param="goMole" Data="7" Tips="看電影" />
+		
+		<Trigger ResName="go_3" Layer="controlLevel" Ex="33" Ey="394" Cmd="alt_map" Param="3" Tips="淘淘樂街" />
+		<Trigger ResName="go_10" Layer="controlLevel" Ex="892" Ey="452" Cmd="alt_map" Param="10" Tips="開心農場" />
+		
+		<Trigger ResName="setDrama" Layer="controlLevel" Ex="812" Ey="422" Cmd="act" Param="setDrama" Tips="我要裝飾" />
+		<Trigger ResName="openDramaInfo" Layer="controlLevel" Ex="212" Ey="422" Cmd="p" Param="CarMapDramaDIYPanel" Tips="舞台劇說明" />
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+		<!--
+		<Talk ID="1" NpcID="10015" Face="正常" Msg="Hi，你好啊。" Option="我很好" Cmd="none" Param="6" AddTaskOption="1" />
+		-->
+	</Talks>
+</Map>
+
+
+
