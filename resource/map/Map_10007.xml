@@ -1,0 +1,18 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_6" Layer="controlLevel" Ex="93" Ey="376" Cmd="alt_map" Param="6" Tips="西部遊樂場" />
+		<Trigger ResName="go_47" Layer="controlLevel" Ex="874" Ey="211" Cmd="alt_map" Param="47" Tips="粒粒小廣場" />
+		<!-- <Trigger ResName="mc_0" Layer="controlLevel" Ex="110" Ey="500" Cmd="act" Param="onMcClick" Tips="" /> -->
+		<Trigger ResName="horse_car" Layer="controlLevel" Ex="438" Ey="249" Cmd="alt_map" Param="24" Tips="魔法馬車" />
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+
+
