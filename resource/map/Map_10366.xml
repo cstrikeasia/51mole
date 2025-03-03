@@ -1,0 +1,16 @@
+<Map>
+	<NpcList>
+	 	
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="worship_Info" Layer="controlLevel" Ex="0" Ey="0" Cmd="p" Param="WorshipInfoPanel" Tips="祭拜說明面板" />
+		<Trigger ResName="go_369" Layer="controlLevel" Ex="253" Ey="506" Cmd="alt_map" Param="369" Tips="麥田村" />
+		<Trigger ResName="go_371" Layer="controlLevel" Ex="800" Ey="482" Cmd="alt_map" Param="371" Tips="草木樹海" />
+		
+		<Trigger ResName="posBtn1" Layer="controlLevel" Ex="555" Ey="425" Cmd="act" Param="setWorship" Tips="" />
+		
+	</Triggers>
+
+</Map>
+
+

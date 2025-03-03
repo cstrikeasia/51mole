@@ -1,0 +1,15 @@
+<Map>
+	 <NpcList>
+	 	<Npc ID="10278" Layer="controlLevel" Name="老超" Ex="214" Ey="339" Cmd="s" Param="4" />
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_366" Layer="depthLevel" Ex="836" Ey="222" Cmd="alt_map" Param="366" Tips="世界樹"/>
+	</Triggers>
+
+	<Talks>
+		<Talk ID="4" NpcID="10276" Face="正常" Msg="小勇士，你好，我是可愛的雪絨草，想要了解我的秘密嗎？" Option="了解時空鑰匙雪絨草" Cmd="p" Param="TimeOfSpaceKeyPanel"/>
+	</Talks>
+</Map>
+
+
+
