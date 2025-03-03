@@ -1,0 +1,23 @@
+<Map>
+	 <NpcList>
+	 	
+	</NpcList>
+	<Triggers>
+		<!--  <Trigger ResName="tollgate_1" Layer="depthLevel" Ex="410" Ey="340" Cmd="act" Param="openTollgate" Tips="邪惡的洛基" Data="1"/>
+		<Trigger ResName="tollgate_2" Layer="depthLevel" Ex="530" Ey="370" Cmd="act" Param="openTollgate" Tips="好戰的托爾" Data="2"/>
+		<Trigger ResName="tollgate_3" Layer="depthLevel" Ex="490" Ey="370" Cmd="act" Param="openTollgate" Tips="沉睡的奧丁" Data="3"/>
+		-->
+		<Trigger ResName="go_364" Layer="controlLevel" Ex="70" Ey="408" Cmd="alt_map" Param="364" Tips="地下洞穴"/>
+		<Trigger ResName="go_367" Layer="controlLevel" Ex="860" Ey="322" Cmd="alt_map" Param="367" Tips="格歷爾平原"/>
+		<Trigger ResName="go_368" Layer="controlLevel" Ex="480" Ey="213" Cmd="alt_map" Param="368" Tips="奇普力村長家"/>
+		<!-- <Trigger ResName="paizi" Layer="depthLevel" Ex="759" Ey="384" Cmd="p" Param="SavageDanceSwapPanel" Tips="野人舞會"/>
+		<Trigger ResName="seat0" Layer="controlLevel" Ex="492" Ey="213" Cmd="sit" Param="3$seat" Data="0" Tips="加入遊戲" />
+		<Trigger ResName="seat1" Layer="controlLevel" Ex="418" Ey="429" Cmd="sit" Param="3$seat" Data="1" Tips="加入遊戲" />
+		<Trigger ResName="seat2" Layer="controlLevel" Ex="521" Ey="452" Cmd="sit" Param="3$seat" Data="2" Tips="加入遊戲" />
+		<Trigger ResName="seat3" Layer="controlLevel" Ex="617" Ey="427" Cmd="sit" Param="3$seat" Data="3" Tips="加入遊戲" /> -->
+	</Triggers>
+
+</Map>
+
+
+

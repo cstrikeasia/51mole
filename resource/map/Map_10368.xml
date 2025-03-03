@@ -1,0 +1,12 @@
+<Map>
+	 <NpcList>
+	 	
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_365" Layer="controlLevel" Ex="503" Ey="300" Cmd="alt_map" Param="365" Tips="吉普豆村"/>
+	</Triggers>
+
+</Map>
+
+
+

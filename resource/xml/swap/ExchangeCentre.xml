@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	CurVersion 本期是是哪個index
+
+	Index       期號
+	NeedID		兌換物品需要的ID
+	PanelName   打開的模塊的名字
+	
+	Open	 	套裝是否開放購買
+	single      是否能查看單件 0是不可以，1是可以
+	Vip		          套裝購買的Vip等級需要       0不需要vip等級    1~~依次
+	Limit	          服裝是否顯示“限”       0是不限制               1限制
+	Out		          服裝是否顯示“絕”       0不是絕版               1絕版
+	Special     服裝時候顯示“特”       0不是特價            	 1特價
+	
+	id          單件的id
+	price       單件的價格
+	TypeID	         後台提供的TypeID
+	NeedCount	需要數量
+	GoodId      生成的物品
+	NeedID		加載的兌換物品的ID
+	Ensure      是否有二次確認框             0 不彈出而且確認框提示         1彈出二次確認框提示
+	SwapTypeID  兌換幣能否兌換，0表示不能兌換，TYPEID值表示能兌換的代幣 11
+	Showparts  0表示不顯示，1表示顯示
+	
+	注：
+	TPYEID規則：同套衣服先配部件，部件配完再配套裝ID，配完第一套再按此種方法配第二套
+	比如：3件套部件，頭，衣服，鞋子 ID2000-2003
+	頭 2000
+	衣服 2001
+	鞋子 2002
+	套裝 2003
+	以此類推
+
+ -->
+<Info CurVersion = "5">
+	<Version Index = "1" NeedID = "1351473" PanelName = "WeenActivityPanel" SwapTypeID = "0">
+		<suit>
+			<Good ID="102002" Name="蝴蝶絲帶套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2197">
+				<Parts id ="14825" price= "20"  TypeID="2192" NeedCount="30" GoodId="101997" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="14826" price= "20"  TypeID="2193" NeedCount="30" GoodId="101998" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="14827" price= "30"  TypeID="2194" NeedCount="40" GoodId="101999" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="14828" price= "30"  TypeID="2195" NeedCount="40" GoodId="102000" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="14829" price= "20"  TypeID="2196" NeedCount="30" GoodId="102001" NeedID = "1351473" Ensure = "1"/>
+			</Good>
+			
+			<Good ID="102007" Name="綠林笛手套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2202">
+				<Parts id ="14044" price= "20"  TypeID="2198" NeedCount="30" GoodId="102003" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="14047" price= "15"  TypeID="2199" NeedCount="20" GoodId="102004" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="14045" price= "30"  TypeID="2200" NeedCount="40" GoodId="102005" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="14046" price= "15"  TypeID="2201" NeedCount="20" GoodId="102006" NeedID = "1351473" Ensure = "1"/>
+			</Good>
+			
+			<Good ID="101967" Name="繽紛雙魚女套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2180">
+				<Parts id ="14814" price= "40"  TypeID="2151" NeedCount="50" GoodId="101963" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="14815" price= "60"  TypeID="2152" NeedCount="80" GoodId="101964" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="14816" price= "60"  TypeID="2153" NeedCount="80" GoodId="101965" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="14817" price= "40"  TypeID="2154" NeedCount="50" GoodId="101966" NeedID = "1351473" Ensure = "1"/>
+			</Good>
+			
+			<Good ID="101995" Name="蔬菜營養套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2187">
+				<Parts id ="12870" price= "20"  TypeID="2183" NeedCount="30" GoodId="101113" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="12871" price= "30"  TypeID="2184" NeedCount="40" GoodId="101112" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="12874" price= "15"  TypeID="2185" NeedCount="20" GoodId="101130" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="12872" price= "15"  TypeID="2186" NeedCount="20" GoodId="101128" NeedID = "1351473" Ensure = "1"/>
+			</Good>
+			
+			
+			<Good ID="101980" Name="繽紛雙魚男套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2181" >
+				<Parts id ="14818" price= "40"  TypeID="2155" NeedCount="50" GoodId="101976" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="14819" price= "60"  TypeID="2156" NeedCount="80" GoodId="101977" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="14820" price= "60"  TypeID="2157" NeedCount="80" GoodId="101978" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="14821" price= "40"  TypeID="2158" NeedCount="50" GoodId="101979" NeedID = "1351473" Ensure = "1"/>
+			</Good>
+
+			
+			<Good ID="101975" Name="暖春家具" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2182">
+				<Parts id ="1220306" price= "100" TypeID="2159" NeedCount="120" GoodId="101968" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="1220307" price= "50"  TypeID="2160" NeedCount="70" GoodId="101969" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="1220308" price= "50"  TypeID="2161" NeedCount="70" GoodId="101970" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="1220309" price= "50"  TypeID="2162" NeedCount="70" GoodId="101971" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="1220310" price= "50"  TypeID="2163" NeedCount="70" GoodId="101972" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="1220311" price= "50"  TypeID="2164" NeedCount="70" GoodId="101973" NeedID = "1351473" Ensure = "1"/>
+				<Parts id ="1220312" price= "50"  TypeID="2165" NeedCount="70" GoodId="101974" NeedID = "1351473" Ensure = "1"/>
+			</Good>
+		</suit>
+		
+		<danjian>
+			<Parts id ="1653000" price= "20"  TypeID="2166" NeedCount="20" GoodId="101981" NeedID = "1351473" Ensure = "0"/>
+			<Parts id ="1653001" price= "35"  TypeID="2167" NeedCount="35" GoodId="101982" NeedID = "1351473" Ensure = "0"/>
+			<Parts id ="1653002" price= "80"  TypeID="2168" NeedCount="80" GoodId="101983" NeedID = "1351473" Ensure = "0"/>
+			<Parts id ="1653003" price= "3"  TypeID="2169" NeedCount="3" GoodId="101984" NeedID = "1351473" Ensure = "0"/>
+			<Parts id ="1653004" price= "10"  TypeID="2170" NeedCount="10" GoodId="101985" NeedID = "1351473" Ensure = "0"/>
+			<Parts id ="1653005" price= "20"  TypeID="2171" NeedCount="20" GoodId="101986" NeedID = "1351473" Ensure = "0"/>
+			<Parts id ="1653006" price= "10"  TypeID="2172" NeedCount="10" GoodId="101987" NeedID = "1351473" Ensure = "0"/>
+			<Parts id ="1653007" price= "15"  TypeID="2173" NeedCount="15" GoodId="101988" NeedID = "1351473" Ensure = "0"/>
+			<Parts id ="1653008" price= "35"  TypeID="2174" NeedCount="35" GoodId="101989" NeedID = "1351473" Ensure = "0"/>
+			<Parts id ="1653014" price= "50"  TypeID="2175" NeedCount="50" GoodId="101990" NeedID = "1351473" Ensure = "0"/>
+			<Parts id ="1653016" price= "10"  TypeID="2176" NeedCount="10" GoodId="101991" NeedID = "1351473" Ensure = "0"/>
+			<Parts id ="1653017" price= "50"  TypeID="2177" NeedCount="50" GoodId="101992" NeedID = "1351473" Ensure = "0"/>
+			<Parts id ="1653018" price= "100"  TypeID="2178" NeedCount="100" GoodId="101993" NeedID = "1351473" Ensure = "0"/>
+			<Parts id ="1653019" price= "150"  TypeID="2179" NeedCount="150" GoodId="101994" NeedID = "1351473" Ensure = "0"/>
+		</danjian>
+	</Version>
+	
+	<Version Index = "2" NeedID = "1351480" PanelName = "WeenActivityPanel" SwapTypeID = "0">
+		<suit>
+			<Good ID="102050" Name="五彩糖果禮裙" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2304">
+				<Parts id ="14867" price= "60"  TypeID="2300" NeedCount="140" GoodId="102046" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14868" price= "160"  TypeID="2301" NeedCount="360" GoodId="102047" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14869" price= "40"  TypeID="2302" NeedCount="100" GoodId="102048" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14870" price= "40"  TypeID="2303" NeedCount="100" GoodId="102049" NeedID = "1351480" Ensure = "1"/>
+			</Good>
+		
+			<Good ID="102055" Name="五彩糖果紳士禮服" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2309">
+				<Parts id ="14871" price= "60"  TypeID="2305" NeedCount="140" GoodId="102051" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14872" price= "160"  TypeID="2306" NeedCount="360" GoodId="102052" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14873" price= "40"  TypeID="2307" NeedCount="100" GoodId="102053" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14874" price= "40"  TypeID="2308" NeedCount="100" GoodId="102054" NeedID = "1351480" Ensure = "1"/>
+			</Good>
+		
+			<Good ID="102040" Name="捕蟲達人套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2289">
+				<Parts id ="12786" price= "30"  TypeID="2284" NeedCount="100" GoodId="101034" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="12787" price= "40"  TypeID="2285" NeedCount="150" GoodId="101035" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="12788" price= "30"  TypeID="2286" NeedCount="85" GoodId="101036" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="12789" price= "30"  TypeID="2287" NeedCount="85" GoodId="101037" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="12790" price= "30"  TypeID="2288" NeedCount="100" GoodId="101038" NeedID = "1351480" Ensure = "1"/>
+			</Good>
+		
+			<Good ID="102045" Name="春暖花開套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2295">
+				<Parts id ="1220138" price= "40"  TypeID="2290" NeedCount="100" GoodId="102041" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="1220139" price= "30"  TypeID="2291" NeedCount="90" GoodId="102042" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="1220140" price= "30"  TypeID="2292" NeedCount="90" GoodId="101308" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="1220141" price= "30"  TypeID="2293" NeedCount="90" GoodId="102043" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="1220142" price= "30"  TypeID="2294" NeedCount="90" GoodId="102044" NeedID = "1351480" Ensure = "1"/>
+			</Good>
+		
+		
+			<Good ID="102034" Name="白羊座男套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2270">
+				<Parts id ="14846" price= "40"  TypeID="2266" NeedCount="80" GoodId="102030" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14847" price= "30"  TypeID="2267" NeedCount="65" GoodId="102031" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14848" price= "60"  TypeID="2268" NeedCount="120" GoodId="102032" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14849" price= "30"  TypeID="2269" NeedCount="65" GoodId="102033" NeedID = "1351480" Ensure = "1"/>
+			</Good>
+		
+			<Good ID="102039" Name="春風精靈套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2275">
+				<Parts id ="14838" price= "20"  TypeID="2271" NeedCount="80" GoodId="102035" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14839" price= "30"  TypeID="2272" NeedCount="65" GoodId="102036" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14840" price= "30"  TypeID="2273" NeedCount="120" GoodId="102037" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14841" price= "20"  TypeID="2274" NeedCount="65" GoodId="102038" NeedID = "1351480" Ensure = "1"/>
+			</Good>
+			
+				
+			<Good ID="102021" Name="白羊座女套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2249">
+				<Parts id ="14842" price= "40"  TypeID="2245" NeedCount="80" GoodId="102017" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14843" price= "30"  TypeID="2246" NeedCount="65" GoodId="102018" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14844" price= "60"  TypeID="2247" NeedCount="120" GoodId="102019" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14845" price= "30"  TypeID="2248" NeedCount="65" GoodId="102020" NeedID = "1351480" Ensure = "1"/>
+			</Good>
+		
+			<Good ID="102029" Name="清新小木屋" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2257">
+				<Parts id ="161163" price= "60"  TypeID="2250" NeedCount="120" GoodId="102022" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="161164" price= "40"  TypeID="2251" NeedCount="85" GoodId="102023" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="161165" price= "40"  TypeID="2252" NeedCount="85" GoodId="102024" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="161166" price= "40"  TypeID="2253" NeedCount="85" GoodId="102025" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="161167" price= "40"  TypeID="2254" NeedCount="85" GoodId="102026" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="161168" price= "30"  TypeID="2255" NeedCount="70" GoodId="102027" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="161169" price= "30"  TypeID="2256" NeedCount="70" GoodId="102028" NeedID = "1351480" Ensure = "1"/>
+			</Good>
+		
+			<Good ID="102014" Name="粉紅庫拉COS套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2223">
+				<Parts id ="14830" price= "30"  TypeID="2218" NeedCount="65" GoodId="102013" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14831" price= "40"  TypeID="2219" NeedCount="85" GoodId="102009" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14832" price= "50"  TypeID="2220" NeedCount="100" GoodId="102010" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14833" price= "40"  TypeID="2221" NeedCount="85" GoodId="102011" NeedID = "1351480" Ensure = "1"/>
+				<Parts id ="14834" price= "40"  TypeID="2222" NeedCount="85" GoodId="102012" NeedID = "1351480" Ensure = "1"/>
+			</Good>
+		</suit>
+		
+		<danjian>
+			<Parts id ="1653000" price= "20"  TypeID="2230" NeedCount="20" GoodId="101981" NeedID = "1351480" Ensure = "0"/>
+			<Parts id ="1653001" price= "35"  TypeID="2231" NeedCount="35" GoodId="101982" NeedID = "1351480" Ensure = "0"/>
+			<Parts id ="1653002" price= "80"  TypeID="2232" NeedCount="80" GoodId="101983" NeedID = "1351480" Ensure = "0"/>
+			<Parts id ="1653003" price= "3"  TypeID="2233" NeedCount="3" GoodId="101984" NeedID = "1351480" Ensure = "0"/>
+			<Parts id ="1653004" price= "10"  TypeID="2234" NeedCount="10" GoodId="101985" NeedID = "1351480" Ensure = "0"/>
+			<Parts id ="1653005" price= "20"  TypeID="2235" NeedCount="20" GoodId="101986" NeedID = "1351480" Ensure = "0"/>
+			<Parts id ="1653006" price= "10"  TypeID="2236" NeedCount="10" GoodId="101987" NeedID = "1351480" Ensure = "0"/>
+			<Parts id ="1653007" price= "15"  TypeID="2237" NeedCount="15" GoodId="101988" NeedID = "1351480" Ensure = "0"/>
+			<Parts id ="1653008" price= "35"  TypeID="2238" NeedCount="35" GoodId="101989" NeedID = "1351480" Ensure = "0"/>
+			<Parts id ="1653014" price= "50"  TypeID="2239" NeedCount="50" GoodId="101990" NeedID = "1351480" Ensure = "0"/>
+			<Parts id ="1653016" price= "10"  TypeID="2240" NeedCount="10" GoodId="101991" NeedID = "1351480" Ensure = "0"/>
+			<Parts id ="1653017" price= "50"  TypeID="2241" NeedCount="50" GoodId="101992" NeedID = "1351480" Ensure = "0"/>
+			<Parts id ="1653018" price= "100"  TypeID="2242" NeedCount="100" GoodId="101993" NeedID = "1351480" Ensure = "0"/>
+			<Parts id ="1653019" price= "150"  TypeID="2243" NeedCount="150" GoodId="101994" NeedID = "1351480" Ensure = "0"/>
+		</danjian>
+		
+	</Version>
+		
+	<Version Index = "3" NeedID = "1351519" PanelName = "WeenActivityPanel" SwapTypeID = "0">
+		<suit>
+			<Good ID="102179" Name="情緒化小木屋" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2467">
+				<Parts id ="161187" price= "60"  TypeID="2458" NeedCount="160" GoodId="102170" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="161188" price= "40"  TypeID="2459" NeedCount="100" GoodId="102171" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="161189" price= "40"  TypeID="2460" NeedCount="100" GoodId="102172" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="161192" price= "40"  TypeID="2461" NeedCount="100" GoodId="102173" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="161193" price= "40"  TypeID="2462" NeedCount="100" GoodId="102174" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="161195" price= "40"  TypeID="2463" NeedCount="100" GoodId="102175" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="161196" price= "40"  TypeID="2464" NeedCount="100" GoodId="102176" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="161200" price= "40"  TypeID="2465" NeedCount="100" GoodId="102177" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="161201" price= "40"  TypeID="2466" NeedCount="100" GoodId="102178" NeedID = "1351519" Ensure = "1"/>
+			</Good>	
+			
+			<Good ID="102160" Name="金牛座女套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2447">
+				<Parts id ="14909" price= "40"  TypeID="2443" NeedCount="80" GoodId="102156" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="14907" price= "30"  TypeID="2444" NeedCount="65" GoodId="102157" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="14906" price= "60"  TypeID="2445" NeedCount="120" GoodId="102158" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="14908" price= "30"  TypeID="2446" NeedCount="65" GoodId="102159" NeedID = "1351519" Ensure = "1"/>
+			</Good>
+			
+			<Good ID="102105" Name="金牛座男套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2429">
+				<Parts id ="14893" price= "40"  TypeID="2425" NeedCount="80" GoodId="102101" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="14894" price= "30"  TypeID="2426" NeedCount="65" GoodId="102102" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="14895" price= "60"  TypeID="2427" NeedCount="120" GoodId="102103" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="14896" price= "30"  TypeID="2428" NeedCount="65" GoodId="102104" NeedID = "1351519" Ensure = "1"/>
+			</Good>
+		
+			<Good ID="102114" Name="浪漫田園" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2438">
+				<Parts id ="1220313" price= "60"  TypeID="2430" NeedCount="140" GoodId="102106" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="1220314" price= "40"  TypeID="2431" NeedCount="100" GoodId="102107" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="1220315" price= "40"  TypeID="2432" NeedCount="100" GoodId="102108" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="1220316" price= "40"  TypeID="2433" NeedCount="100" GoodId="102109" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="1220317" price= "40"  TypeID="2434" NeedCount="100" GoodId="102110" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="1220318" price= "40"  TypeID="2435" NeedCount="100" GoodId="102111" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="1220319" price= "40"  TypeID="2436" NeedCount="100" GoodId="102112" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="1220320" price= "40"  TypeID="2437" NeedCount="100" GoodId="102113" NeedID = "1351519" Ensure = "1"/>
+			</Good>
+		
+			<Good ID="102067" Name="夢幻蛋糕屋" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2367">
+				<Parts id ="160250" price= "80"  TypeID="2355" NeedCount="180" GoodId="100615" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="160251" price= "40"  TypeID="2356" NeedCount="100" GoodId="102056" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="160252" price= "40"  TypeID="2357" NeedCount="100" GoodId="102057" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="160253" price= "40"  TypeID="2358" NeedCount="100" GoodId="102058" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="160254" price= "40"  TypeID="2359" NeedCount="100" GoodId="102059" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="160255" price= "40"  TypeID="2360" NeedCount="100" GoodId="102060" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="160256" price= "30"  TypeID="2361" NeedCount="80" GoodId="102061" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="160257" price= "30"  TypeID="2362" NeedCount="80" GoodId="102062" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="160258" price= "30"  TypeID="2363" NeedCount="80" GoodId="102063" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="160259" price= "30"  TypeID="2364" NeedCount="80" GoodId="102064" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="160260" price= "30"  TypeID="2365" NeedCount="80" GoodId="102065" NeedID = "1351519" Ensure = "1"/>
+				<Parts id ="160261" price= "30"  TypeID="2366" NeedCount="80" GoodId="102066" NeedID = "1351519" Ensure = "1"/>
+			</Good>						
+		</suit>
+		
+		<danjian>
+			<Parts id ="1653000" price= "5"  TypeID="2341" NeedCount="20" GoodId="101981" NeedID = "1351519" Ensure = "0"/>
+			<Parts id ="1653001" price= "10"  TypeID="2342" NeedCount="35" GoodId="101982" NeedID = "1351519" Ensure = "0"/>
+			<Parts id ="1653002" price= "20"  TypeID="2343" NeedCount="80" GoodId="101983" NeedID = "1351519" Ensure = "0"/>
+			<Parts id ="1653003" price= "3"   TypeID="2344" NeedCount="3" GoodId="101984" NeedID = "1351519" Ensure = "0"/>
+			<Parts id ="1653004" price= "5"  TypeID="2345" NeedCount="10" GoodId="101985" NeedID = "1351519" Ensure = "0"/>
+			<Parts id ="1653005" price= "10"  TypeID="2346" NeedCount="20" GoodId="101986" NeedID = "1351519" Ensure = "0"/>
+			<Parts id ="1653006" price= "8"  TypeID="2347" NeedCount="10" GoodId="101987" NeedID = "1351519" Ensure = "0"/>
+			<Parts id ="1653007" price= "12"  TypeID="2348" NeedCount="15" GoodId="101988" NeedID = "1351519" Ensure = "0"/>
+			<Parts id ="1653008" price= "20"  TypeID="2349" NeedCount="35" GoodId="101989" NeedID = "1351519" Ensure = "0"/>
+			<Parts id ="1653014" price= "20"  TypeID="2350" NeedCount="50" GoodId="101990" NeedID = "1351519" Ensure = "0"/>
+			<Parts id ="1653016" price= "5"  TypeID="2351" NeedCount="10" GoodId="101991" NeedID = "1351519" Ensure = "0"/>
+			<Parts id ="1653017" price= "10"  TypeID="2352" NeedCount="50" GoodId="101992" NeedID = "1351519" Ensure = "0"/>
+			<Parts id ="1653018" price= "20" TypeID="2353" NeedCount="100" GoodId="101993" NeedID = "1351519" Ensure = "0"/>
+			<Parts id ="1653019" price= "30" TypeID="2354" NeedCount="150" GoodId="101994" NeedID = "1351519" Ensure = "0"/>
+		</danjian>
+	</Version>
+
+
+	 
+	<Version Index = "4" NeedID = "1351553" PanelName = "WeenActivityPanel" SwapTypeID = "0">
+		<suit>
+			<Good ID="102213" Name="繽紛遊樂園" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2598">
+				<Parts id ="1220321" price= "60"  TypeID="2589" NeedCount="120" GoodId="102204" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="1220322" price= "40"  TypeID="2590" NeedCount="80" GoodId="102205" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="1220323" price= "40"  TypeID="2591" NeedCount="80" GoodId="102206" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="1220324" price= "40"  TypeID="2592" NeedCount="80" GoodId="102207" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="1220325" price= "40"  TypeID="2593" NeedCount="80" GoodId="102208" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="1220326" price= "40"  TypeID="2594" NeedCount="80" GoodId="102209" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="1220327" price= "40"  TypeID="2595" NeedCount="80" GoodId="102210" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="1220330" price= "40"  TypeID="2596" NeedCount="80" GoodId="102211" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="1220331" price= "40"  TypeID="2597" NeedCount="80" GoodId="102212" NeedID = "1351553" Ensure = "1"/>
+			</Good>	
+	
+			<Good ID="102199" Name="月亮雙子演出套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2570">
+				<Parts id ="14944" price= "60"  TypeID="2566" NeedCount="150" GoodId="102195" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="14945" price= "80"  TypeID="2567" NeedCount="200" GoodId="102196" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="14946" price= "60"  TypeID="2568" NeedCount="150" GoodId="102197" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="14947" price= "60"  TypeID="2569" NeedCount="150" GoodId="102198" NeedID = "1351553" Ensure = "1"/>				
+			</Good>	
+				
+			<Good ID="102203" Name="椰菜時尚酷哥裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2574">
+				<Parts id ="14948" price= "30"  TypeID="2571" NeedCount="60" GoodId="102200" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="14949" price= "40"  TypeID="2572" NeedCount="80" GoodId="102201" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="14950" price= "30"  TypeID="2573" NeedCount="60" GoodId="102202" NeedID = "1351553" Ensure = "1"/>		
+			</Good>	
+		
+			<Good ID="102194" Name="太陽雙子演出套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2513">
+				<Parts id ="14940" price= "60"  TypeID="2509" NeedCount="150" GoodId="102190" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="14941" price= "80"  TypeID="2510" NeedCount="200" GoodId="102191" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="14942" price= "60"  TypeID="2511" NeedCount="150" GoodId="102192" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="14943" price= "60"  TypeID="2512" NeedCount="150" GoodId="102193" NeedID = "1351553" Ensure = "1"/>				
+			</Good>	
+						
+			<Good ID="102184" Name="小小攝影師套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2479">
+				<Parts id ="14918" price= "60"  TypeID="2476" NeedCount="150" GoodId="102181" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="14919" price= "60"  TypeID="2477" NeedCount="150" GoodId="102182" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="14920" price= "80"  TypeID="2478" NeedCount="200" GoodId="102183" NeedID = "1351553" Ensure = "1"/>
+				<Parts id ="14934" price= "60"  TypeID="2504" NeedCount="150" GoodId="102189" NeedID = "1351553" Ensure = "1"/>				
+			</Good>	
+								
+		</suit>
+		
+		<danjian>
+		
+		</danjian>
+	
+	</Version>
+
+	
+	
+	<Version Index = "5" NeedID = "1351582" PanelName = "WeenActivityPanel" SwapTypeID = "2368">
+		<suit>
+				<Good ID="1351601" Name="潔白獅子套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2770">
+				<Parts id ="15098" price= ""  TypeID="2766" NeedCount="60" GoodId="" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="15099" price= ""  TypeID="2767" NeedCount="120" GoodId="" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="15100" price= ""  TypeID="2768" NeedCount="60" GoodId="" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="15101" price= ""  TypeID="2769" NeedCount="120" GoodId="" NeedID = "1351582" Ensure = "1"/>	
+				
+					</Good>	
+			<Good ID="1351599" Name="銀白獅子套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2759">
+				<Parts id ="15085" price= ""  TypeID="2755" NeedCount="60" GoodId="" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="15086" price= ""  TypeID="2756" NeedCount="120" GoodId="" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="15087" price= ""  TypeID="2757" NeedCount="60" GoodId="" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="15088" price= ""  TypeID="2758" NeedCount="120" GoodId="" NeedID = "1351582" Ensure = "1"/>	
+				
+					</Good>	
+		
+			<Good ID="1351597" Name="清涼夏日水果屋" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2683">
+				<Parts id ="161217" price= ""  TypeID="2675" NeedCount="80" GoodId="" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="161218" price= ""  TypeID="2676" NeedCount="100" GoodId="" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="161219" price= ""  TypeID="2677" NeedCount="80" GoodId="" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="161220" price= ""  TypeID="2678" NeedCount="80" GoodId="" NeedID = "1351582" Ensure = "1"/>	
+				<Parts id ="161222" price= ""  TypeID="2679" NeedCount="100" GoodId="" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="161223" price= ""  TypeID="2680" NeedCount="80" GoodId="" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="161225" price= ""  TypeID="2681" NeedCount="5" GoodId="" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="161226" price= ""  TypeID="2682" NeedCount="180" GoodId="" NeedID = "1351582" Ensure = "1"/>	
+				
+				</Good>	
+		
+			<Good ID="102282" Name="巨蟹魔法師女孩" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2662">
+				<Parts id ="15015" price= "50"  TypeID="2658" NeedCount="120" GoodId="102278" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="15016" price= "60"  TypeID="2659" NeedCount="120" GoodId="102279" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="15017" price= "30"  TypeID="2660" NeedCount="60" GoodId="102280" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="15018" price= "30"  TypeID="2661" NeedCount="60" GoodId="102281" NeedID = "1351582" Ensure = "1"/>	
+				
+				</Good>	
+			
+			<Good ID="102286" Name="創作畫家套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2666">
+				<Parts id ="15019" price= "50"  TypeID="2663" NeedCount="120" GoodId="102283" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="15020" price= "60"  TypeID="2664" NeedCount="120" GoodId="102284" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="15021" price= "30"  TypeID="2665" NeedCount="60" GoodId="102285" NeedID = "1351582" Ensure = "1"/>
+				
+				</Good>	
+		
+			<Good ID="102277" Name="巨蟹魔法師男孩" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2643">
+				<Parts id ="14989" price= "50"  TypeID="2639" NeedCount="120" GoodId="102273" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="14990" price= "60"  TypeID="2640" NeedCount="120" GoodId="102274" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="14991" price= "30"  TypeID="2641" NeedCount="60" GoodId="102275" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="14992" price= "30"  TypeID="2642" NeedCount="60" GoodId="102276" NeedID = "1351582" Ensure = "1"/>		
+				
+			</Good>	
+		
+			<Good ID="102223" Name="時光聖殿家園" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2628">
+				<Parts id ="1220334" price= "100"  TypeID="2625" NeedCount="240" GoodId="102220" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="1220335" price= "60"  TypeID="2626" NeedCount="240" GoodId="102221" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="1220336" price= "40"  TypeID="2627" NeedCount="120" GoodId="102222" NeedID = "1351582" Ensure = "1"/>
+				
+			</Good>	
+		
+			<Good ID="102228" Name="粉色貓咪套裝" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2633">
+				<Parts id ="14729" price= "60"  TypeID="2629" NeedCount="120" GoodId="102224" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="14733" price= "30"  TypeID="2630" NeedCount="60" GoodId="102225" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="14732" price= "30"  TypeID="2631" NeedCount="60" GoodId="102226" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="14731" price= "60"  TypeID="2632" NeedCount="120" GoodId="102227" NeedID = "1351582" Ensure = "1"/>				
+			</Good>	
+		
+		
+			<Good ID="102218" Name="純白畫家" Open = "1" Vip = "0" Limit = "1" single = "1" TypeID="2613">
+				<Parts id ="14968" price= "60"  TypeID="2609" NeedCount="120" GoodId="102214" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="14969" price= "40"  TypeID="2610" NeedCount="80" GoodId="102215" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="14970" price= "40"  TypeID="2611" NeedCount="80" GoodId="102216" NeedID = "1351582" Ensure = "1"/>
+				<Parts id ="14971" price= "40"  TypeID="2612" NeedCount="80" GoodId="102217" NeedID = "1351582" Ensure = "1"/>	
+			</Good>	
+	
+			
+			
+		</suit>
+		
+		<danjian>
+			
+		</danjian>
+	
+	</Version>
+	
+</Info>
+
+
+
