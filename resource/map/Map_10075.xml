@@ -1,0 +1,20 @@
+<Map>
+	<NpcList>
+		<Npc ID="10039" Layer="controlLevel" Name="庫洛" Ex="331" Ey="289" Cmd="s" Param="1"  AddTaskOption="1" /> 
+	</NpcList>
+	
+	<Triggers>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="999" NpcID="10039" Face="正常" Msg="又到父親節了呀？小摩爾也要記得給你爸爸禮物哦~" Option="好~" Cmd="act" Param="fatherDayOver" AddTaskOption="1"  />
+		
+		<Talk ID="1" NpcID="10039" Face="正常" Option="火靈騎士$父親節的問候$沒什麼事" Cmd="act$act$none" Param="fireKnight$fatherDay$6" Msg="嘿，你好啊！我是SMC的消防署長庫洛，負責維護整個莊園的消防安全！有什麼需要我幫忙的麼？"  AddTaskOption="1" />
+		<Talk ID="2" NpcID="10039" Face="正常" Option="我知道了！" Cmd="none" Param="1" AddTaskOption="1" Msg="做的不錯，給你火靈騎士資格證，加油哦~" />
+		<Talk ID="3" NpcID="10039" Face="正常" Option="我知道了！" Cmd="none" Param="2" AddTaskOption="1" Msg="你還沒有火之精靈，等你得到了火之精靈再來找我吧~" />
+	</Talks>
+</Map>
+
+
+
+

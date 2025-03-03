@@ -1,0 +1,43 @@
+﻿<Tasks ID="644" Name="大大的禮物" AwardMsg="恭喜你獲得1個棒棒糖糖果樹、2顆迎紅杜鵑種子和1萬摩爾豆。" AwardBean="">
+	<Step ID="1" TarMapID="4">
+		<EnterMap MapID="4">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10222" Face="正常" Msg="{$username}，快來幫幫我！" Option="咦？你怎麼知道我的名字？( ⊙o⊙ )哇！好大的箱子啊！"/>
+				<Talk NpcID="10222" Face="正常" Msg="你是很有名的摩爾啊，我當然認識你！快幫我把這個箱子送去給麼麼公主！" Option="你確定？那麼大個箱子？怎麼也弄輛車馱一下吧！"/>
+				<Talk NpcID="10222" Face="正常" Msg="呵呵，我想這麼搬去，顯得我對莊園特別用心嘛，可是我實在搬不動了……" Option="哦，這樣啊，那我幫你一起搬吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="JUMP_TASK_UI" Param="   莫名其妙被黑衣人扔了這麼個箱子，好重啊，也不知道裡面裝著什麼。快點給公主搬去吧！恩恩！"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+			<Action Cmd="GO_MAP" MapID="109" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="109">
+		<EnterMap MapID="109">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="正常" Msg="讓我來試試吧？" Option="真奇怪，怎麼會打不開呢？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>
+

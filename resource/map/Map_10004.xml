@@ -1,0 +1,21 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="doorto143" Layer="controlLevel" Ex="626" Ey="318" Cmd="alt_map" Param="143" Tips="進入建設署" />
+		<Trigger ResName="go_47" Layer="controlLevel" Ex="98" Ey="497" Cmd="alt_map" Param="38" Tips="進入摩爾足球場" />
+		<Trigger ResName="go_5" Layer="controlLevel" Ex="933" Ey="204" Cmd="alt_map" Param="5" Tips="進入摩爾拉雅溜冰場" />
+		<Trigger ResName="go_61" Layer="controlLevel" Ex="357" Ey="222" Cmd="alt_map" Param="61" Tips="進入前哨站" />
+		<Trigger ResName="go_75" Layer="controlLevel" Ex="188" Ey="327" Cmd="alt_map" Param="75" Tips="進入消防署" />
+		<Trigger ResName="go_1" Layer="controlLevel" Ex="852" Ey="463" Cmd="alt_map" Param="1" Tips="進入摩爾城堡" />
+		<Trigger ResName="jialin_mc" Layer="controlLevel" Ex="336" Ey="206" Cmd="act" Param="goMap51"/>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="422" NpcID="10249" Face="開心" Msg="這~可不是我幹的哦~~~~" Option="呃，我相信你了！" Cmd="act" Param="dandanAct" AddTaskOption="1"/>
+		<Talk ID="423" NpcID="10249" Face="開心" Msg="這~可不是我幹的哦~~~~" Option="賣萌也沒用！這次被我抓到了吧！" Cmd="act" Param="dandanAct" AddTaskOption="1"/>
+	</Talks>
+</Map>
+
+
