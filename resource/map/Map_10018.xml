@@ -1,0 +1,29 @@
+<Map>
+	<NpcList>
+		<Npc ID="10026" Layer="controlLevel" Name="克勞" Ex="314" Ey="258" Cmd="s" Param="1" AddTaskOption="1" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="door_mc" Layer="controlLevel" Ex="164" Ey="310" Cmd="alt_map" Param="2" Tips="愛心廣場" />
+        <Trigger ResName="blessbtn" Layer="controlLevel" Ex="548" Ey="363" Cmd="act" Param="bless" Tips="" />
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="999" NpcID="10026" Face="正常" Msg="隨時歡迎你們來玩，這是小禮物！" Option="謝謝" Cmd="act" Param="fatherDayOver" AddTaskOption="1"  />
+		
+		<Talk ID="1" NpcID="10026" Face="正常" Msg="我是克勞神父，在黑森林探險中我發現了超級拉姆的秘密，你現在就想擁有它嗎？ " Option="成為超級拉姆$沒什麼事" Cmd="act$none" Param="crowBecomeVip$1" AddTaskOption="1"/>
+		
+		<Talk ID="27" NpcID="10026" Face="正常" Option="我知道了！" Cmd="none" Param="" Msg="親愛的小摩爾，你的智慧值沒有達到20呢！快去城堡二樓玩修復摩爾名畫遊戲吧，那可以增加你的智慧值哦！" />
+		<Talk ID="28" NpcID="10026" Face="正常" Option="我準備接受理論知識考核！$我有事先走了！"  Cmd="s$none" Param="29$0"  Msg="親愛的小摩爾，你也想成為一名健康營養師啊！但是健康營養師可是肩負著整個莊園中所有摩爾的健康呢！所以我必須要對你進行理論知識和健康實踐的考核哦！" />
+		<Talk ID="29" NpcID="10026" Face="正常" Option="恩，我準備好了呢！$我有事先走了！" Cmd="act$none" Param="taskInfoEvent$" Msg="親愛的小摩爾，就讓我看看你的學識是否能夠勝任這個職業吧！" />
+		<Talk ID="30" NpcID="10026" Face="正常" Option="好的！我現在就要實踐！$我有事先走了！" Cmd="s$none" Param="32$" Msg="恭喜小摩爾，你已經對健康營養知識有了一定的認知，現在我要對你進行實踐的考核囉！" />
+		<Talk ID="31" NpcID="10026" Face="正常" Option="好的！我現在就要實踐！$我有事先走了！" Cmd="s$none" Param="32$" Msg="恭喜小摩爾，你已經對健康營養知識有了一定的認知，現在我要對你進行實踐的考核囉！" />
+		<Talk ID="32" NpcID="10026" Face="正常" Option="我知道囉！$我有事先走了！" Cmd="act$none" Param="task274OpenGame$" Msg="健康的綠色食品能讓小摩爾健康的成長，而煎炸的快餐食物會讓我們可愛的小摩爾變成一個個不健康的小胖子哦！" />
+		<Talk ID="33" NpcID="10026" Face="正常" Option="恩，我會努力的哦！$我有事先走了！" Cmd="act$none" Param="task274OverGame$" Msg="親愛的小摩爾，恭喜你成為了一名合格的健康營養師哦！以後莊園中所有摩爾的健康營養就靠你囉！" />
+		
+		<Talk ID="34" NpcID="10026" Face="正常" Option="" Cmd="" Param="" Msg="" />
+					
+	</Talks>
+</Map>
+
+
