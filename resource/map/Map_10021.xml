@@ -1,0 +1,24 @@
+<Map>
+	<NpcList>
+		<Npc ID="10052" Layer="controlLevel" Name="彩虹姐姐" Ex="400" Ey="330" Cmd="s" Param="2" />
+	</NpcList>
+	
+	<Triggers>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="2" NpcID="10052" Face="正常" Msg="你的拉姆今天開心嗎？要把快樂帶給你最親密的夥伴哦！" Option="幫忙打工$托管拉姆$沒什麼事" Cmd="act$act$none" Param="rainbow_Work$rainbow_joinRainbowSMC$1"  AddTaskOption="1" />
+		
+		<Talk ID="3" NpcID="10052" Face="正常" Msg="唉，現在托管的小拉姆越來越多了，儲備的拉姆食品有些不足了，要怎樣才能籌集到更多美味的拉姆食品呢？" Option="我來幫你$我有事，先走了" Cmd="s$none" Param="5$1" />
+		<Talk ID="5" NpcID="10052" Face="正常" Msg="真是太謝謝你了，不過你先要去摩摩商會找伊蓮領取摩摩土地卡，然後再去建設署找湯米建立屬於自己的餐廳，否則是幫不了我的。" Option="我去找伊蓮$我有事，先走了" Cmd="gm$none" Param="149$1" />
+		
+		<Talk ID="6" NpcID="10183" Face="正常" Msg="這裡不是寵物店嗎？怎麼到處都是果凍呢？天啊……這些果凍都還會動！！！" Option="（無語中……）這明明就是拉姆！" Cmd="s" Param="7" />
+		<Talk ID="7" NpcID="10052" Face="正常" Msg="這些可都是小摩爾們最喜愛的小寵物——拉姆！它們長得就一副圓圓QQ的樣子，是不是很可愛呢？" Option="QQ彈彈的，也的確很像果凍！" Cmd="act" Param="rainbowTalkOver" />
+		
+		
+	</Talks>
+</Map>
+
+
+
+
