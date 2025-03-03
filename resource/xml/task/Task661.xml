@@ -1,0 +1,66 @@
+<Tasks ID="661" Name="塞拉的新世界" AwardMsg="恭喜你獲得2個兔兔壁燈（小屋裝飾）、2只小龍蝦（牧場動物）和1萬摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="403">
+		<EnterMap MapID="403">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="驚訝" Msg="什麼？什麼？我在哪裡？" Option=""/>
+				<Talk NpcID="10002" Face="無聊" Msg="樂樂，你總算醒了，你剛看到血就暈過去了？" Option=""/>
+				<Talk NpcID="10000" Face="疑惑" Msg="怎麼可能，公主殿下，像樂樂這樣健康、積極、活潑、可愛的好少年，怎麼可能看到血就暈過去呢！" Option=""/>
+				<Talk NpcID="10002" Face="無聊" Msg="可是你剛才真的暈了呀……" Option="公主，這本筆記真的是塞拉王子留下的嗎？他怎麼知道我們會來這裡？"/>
+				<Talk NpcID="10002" Face="疑惑" Msg="恩~~~這是個好問題，哥哥會不會在哪裡看著我們？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="疑惑" Msg="哥哥的筆記？" Option="飛起來了……"/>
+				<Talk NpcID="10002" Face="疑惑" Msg="哥哥，是你嗎？你可以看到麼麼了嗎？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="403">
+		<EnterMap MapID="403">		
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>	
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="3" TarMapID="403">
+		<EnterMap MapID="403">	
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="焦急" Msg="哥哥在哪裡啊？哥哥~~~~" Option="公主你看，筆記落下來了……"/>
+			</Action>	
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+				
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			
+		    <Action Cmd="SAY">
+				<Talk NpcID="10002" Face="疑惑" Msg="挑戰？哥哥，只要能見到你，怎樣的挑戰麼麼都願意承受~" Option="公主，我們會和你一起努力！"/>
+				<Talk NpcID="10000" Face="生氣" Msg="公主，什麼樣的挑戰，樂樂都會和公主一起面對！" Option=""/>
+				<Talk NpcID="10002" Face="無聊" Msg="你啊，只會暈！" Option=""/>
+				<Talk NpcID="10000" Face="無聊" Msg="公主，不要這樣啊~" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="無論如何，麼麼要去找到哥哥，找到哥哥的新世界。有捷克哥哥、洛克行政官和菩提大伯在，莊園一定會沒事的！恩啊！" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>
+
+
