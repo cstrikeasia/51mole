@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ID：任務ID
+Name：任務名稱
+Count：指定類型的操作需要完成的次數
+Gold：獎勵金幣
+Exp：獎勵經驗
+MinLevel：最小等級需求
+MaxLevel：最高適用等級
+Award：獎勵物品描述，ItemID：獎勵物品ID，Count：物品數量(該選項可以有多個，上限為5)
+Content：任務介紹
+Target：任務目標
+-->
+<CPTask>
+  <Task ID="1" Name="豬豬餓了"  Type="0" Count="1" Gold="500" Exp="" MinLevel="1" MaxLevel="40">
+    <Award ItemID="1613100 " Count="10"/>
+    <Content msg="你的豬仔看起來一副餓暈了的樣子，好像好幾天都沒吃飯了，好主人可不是這樣當的哦，快去給他們餵點東西吃吧。"/>
+    <Target msg="對豬仔進行一次餵食"/>
+    <Over msg="你看你看，他們高興都快跳起來了，看來把他們交給你就對了，以後也要好好照顧他們哦。"/>
+    <unOver msg="不是吧，你的豬仔都餓慘了，快去給他們餵點東西吃吧。"/>
+  </Task>
+  <Task ID="2" Name="洗刷刷"  Type="1" Count="1" Gold="500" Exp="" MinLevel="1" MaxLevel="40">
+    <Award ItemID="1613102" Count="10"/>
+    <Content msg="洗刷刷洗刷刷，洗刷刷洗刷刷，我的媽呀，你的豬仔都髒成什麼樣了，還不快點給他們沖個澡，要不然肥肥館可要臭氣熏天啦。"/>
+    <Target msg="給豬仔洗一次澡"/>
+    <Over msg="哈哈，洗完澡之後果然神清氣爽，豬仔們個個都精神了不少啊。"/>
+    <unOver msg="還沒幫豬仔洗澡呢，就想來領獎勵，快去快去！"/>
+  </Task>
+  <Task ID="3" Name="歡樂逗逗"  Type="2" Count="1" Gold="500" Exp="10" MinLevel="2" MaxLevel="40">
+    <Award ItemID="1613114" Count="2"/>
+    <Content msg="豬仔們怎麼都一個個無精打采的，作為主人可別忘了要常常陪他們玩哦，快去逗逗他們吧，不然他們可真要生你的氣了。"/>
+    <Target msg="對你的豬仔進行一次逗逗"/>
+    <Over msg="瞧他們開心的樣子，沒想到你還真會逗他們開心。"/>
+    <unOver msg="你再不去逗逗這些豬仔，他們可要無聊的長草了。"/>
+  </Task>
+  <Task ID="4" Name="我的豬仔我做主"  Type="3" Count="1" Gold="1000" Exp="15" MinLevel="4" MaxLevel="40">
+    <Award ItemID="1613114" Count="4"/>
+    <Content msg="既然養了豬仔，都要好好的對待他們，給他們起個好聽又上口的名字，這樣豬仔們才會死心塌地的跟著你哦，改名需要的改名卡可以去商城購買哦！"/>
+    <Target msg="對豬仔進行一次改名"/>
+    <Over msg="哇塞這名字還真符合你的風格，看來豬仔很喜歡呢。"/>
+    <unOver msg="你還沒有給豬仔給過名哦，快去試試吧。"/>
+  </Task>
+  <Task ID="5" Name="肉質訓練"  Type="4" Count="1" Gold="500" Exp="10" MinLevel="3" MaxLevel="40">
+    <Award ItemID="1613102" Count="2"/>
+    <Content msg="不鍛煉的肥肥豬可是不長肉的哦，為了他們的將來，可不能讓他們這樣偷懶下去，快去對他們進行肉質訓練。"/>
+    <Target msg="對豬仔進行一次肉質訓練"/>
+    <Over msg="哈哈，經過了訓練之後果然不一樣了，看他們彪悍的身形就知道了。"/>
+    <unOver msg="快去訓練啦，不進行肉質訓練的話，肥肥豬可是會越來越瘦哦。"/>
+  </Task>
+  <Task ID="6" Name="體重訓練"  Type="5" Count="1" Gold="500" Exp="10" MinLevel="3" MaxLevel="40">
+    <Award ItemID="1613109" Count="2"/>
+    <Content msg="對於肥肥豬來說，還有什麼比體重不達標更可怕的呢，作為他們的主人，對他們的訓練可不能鬆懈啊，快去對他們進行體重訓練。"/>
+    <Target msg="對豬仔進行一次體重訓練"/>
+    <Over msg="不訓練不知道，看看他們努力的樣子，可沒有辜負你的希望哦。"/>
+    <unOver msg="從來沒見過這麼瘦的豬仔，快去給他們進行體重訓練吧。"/>
+  </Task>
+  <Task ID="7" Name="拜拜豬仔"  Type="6" Count="1" Gold="1000" Exp="20" MinLevel="5" MaxLevel="40">
+    <Award ItemID="1613110" Count="1"/>
+    <Content msg="天下沒有不散的宴席，對於豬仔們來說，他們有自己的使命，為了我們能夠更好的生活下去，他們付出了很多，把他們出售給我吧，但是永遠不要忘記你和他們一起相處的時光。"/>
+    <Target msg="出售一隻豬仔"/>
+    <Over msg="恩，這麼好的豬仔，看來你平時沒有少對他們進行培養。"/>
+    <unOver msg="你還沒有出售過豬仔哦，把他們一直留在你身邊他們可不會成長哦。"/>
+  </Task>
+  <Task ID="8" Name="豬爸豬媽"  Type="7" Count="1" Gold="1000" Exp="25" MinLevel="6" MaxLevel="40">
+    <Award ItemID="1593018" Count="1"/>
+    <Content msg="等你的豬仔成年以後，他們就能進行培育了，別忘了帶你的母豬仔去培育哦，點擊成年的母豬就能進行培育哦，這樣你的肥肥館不久就會有小豬仔誕生啦。"/>
+    <Target msg="對豬仔進行一次培育"/>
+    <Over msg="看來你已經掌握培育的方法了，以後可別忘了常常帶母豬去培育哦，還有可能獲得神奇的變異豬仔呢。"/>
+    <unOver msg="看來你還沒有帶母豬去培育哦，趕快抓緊時間吧。"/>
+  </Task>
+  <Task ID="9" Name="小小豬"  Type="8" Count="1" Gold="1000" Exp="25" MinLevel="6" MaxLevel="40">
+    <Award ItemID="1593016" Count="1"/>
+    <Content msg="懷孕的母豬更加需要細心的照顧，除了每天基本的照顧，還有就是你的愛心和耐心啦，等你的母豬成功生下小豬仔後，可別忘了到我這邊來領一份獎勵哦。"/>
+    <Target msg="通過培育獲得一隻小豬仔"/>
+    <Over msg="哇，恭喜恭喜，多可愛的小豬仔啊。"/>
+    <unOver msg="你的母豬還沒有生崽哦，看來他們還需要你的細心照顧。"/>
+  </Task>
+  <Task ID="10" Name="加工使命"  Type="9" Count="1" Gold="2000" Exp="30" MinLevel="7" MaxLevel="40">
+    <Award ItemID="1613115" Count="1"/>
+    <Content msg="肥肥豬成年了之後就能到加工廠進行加工了，雖然我明白你有百般不舍，但這也許就是豬仔們的使命，有了他們的奉獻，小摩爾們才能像今天這麼幸福的生活著，缺少加工材料，可以去商店購買哦。"/>
+    <Target msg="進行一次加工"/>
+    <Over msg="別不捨得豬仔哦，加工之後它們才會真正實現肥肥豬的價值。"/>
+    <unOver msg="快去加工廠體驗一下加工的樂趣吧，那可會為你帶來不少摩爾豆哦。"/>
+  </Task>
+  <Task ID="11" Name="瘋狂開寶箱"  Type="10010" Count="6" Gold="500" Exp="20" MinLevel="7" MaxLevel="40">
+    <Award ItemID="1613109" Count="1"/>
+    <Content msg="哇塞，肥肥館遍地是寶箱，開啟寶箱可以獲得額外的摩爾豆不說，還有不少可觀的經驗哦，開啟6個寶箱再來找我吧。"/>
+    <Target msg="開啟6次神秘寶箱"/>
+    <Over msg="看來你還真是個閒不下來的小摩爾，這是獎勵，拿去吧！"/>
+    <unOver msg=""/>
+  </Task>
+  <Task ID="12" Name="瘋狂餵食"  Type="10000" Count="3" Gold="500" Exp="20" MinLevel="7" MaxLevel="40">
+    <Award ItemID="1613114" Count="1"/>
+    <Content msg="餵食自己和好友的豬仔，可別讓他們餓死哦，累計餵食3次豬仔就可以獲得獎勵哦。"/>
+    <Target msg="餵食3次豬仔"/>
+    <Over msg="助人為快樂之本，別忘了以後也要這樣做哦。"/>
+    <unOver msg=""/>
+  </Task>
+  <Task ID="13" Name="瘋狂逗逗"  Type="10002" Count="6" Gold="500" Exp="20" MinLevel="7" MaxLevel="40">
+    <Award ItemID="1613100" Count="5"/>
+    <Content msg="逗逗豬仔可以讓他們心情舒暢，還可以讓他們增加體重哦，快去逗逗他們吧，逗逗豬仔6次之後再來找我吧。"/>
+    <Target msg="逗逗豬仔6次"/>
+    <Over msg="看來你可真是一個會逗他們開心的小摩爾，把他們交給你照顧我就放心了。"/>
+    <unOver msg=""/>
+  </Task>
+  <Task ID="14" Name="秀豬表演pk"  Type="10011" Count="3" Gold="1000" Exp="40" MinLevel="7" MaxLevel="40">
+    <Award ItemID="1613253" Count="1"/>
+    <Content msg="帶著自己的美美豬去挑戰好友的美美豬，比比看誰的美美豬更具有魅力。讓我們養育出一隻超級魅力美美豬吧！"/>
+    <Target msg="秀豬表演pk3次"/>
+    <Over msg="美美豬我們出發吧！"/>
+    <unOver msg="美美豬表演展示個性和天賦，養育更多屬於自己的美美豬。"/>
+  </Task>
+</CPTask>

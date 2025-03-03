@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	pig:豬種
+	feed:飼料
+	dress:裝扮
+	prop:道具
+	material:材料
+	other:其他
+		rebate:促銷
+	time:限時
+	itemID:物品ID
+	goodsID:金豆購買所使用的商品ID
+	payType:購買類別, 1表示摩爾豆, 2表示金豆 3兌換
+	count:數量(單價)
+	shwoType:商品類別（熱賣1、促銷2、限時3.豬票4）
+	content:提示資訊
+ -->
+<shop>
+	<pig>
+		<rebate>
+			<items itemID="1593010" goodsID="" node="1"  payType="1" count="100" showType="2" content="初始體重15KG，成豬前長肉速度3KG/小時，出售價格5摩爾豆/KG。"/>
+			<items itemID="1593011" goodsID="" node="1" payType="1" count="100" showType="2" content="初始體重15KG，成豬前長肉速度3KG/小時，出售價格5摩爾豆/KG。"/>
+			<items itemID="1593012" goodsID="" node="1" payType="1" count="300" showType="2" content="初始體重35KG，成豬前長肉速度2KG/小時，出售價格8摩爾豆/KG。"/>
+			<items itemID="1593013" goodsID="" node="1" payType="1" count="300" showType="2" content="初始體重35KG，成豬前長肉速度2KG/小時，出售價格8摩爾豆/KG。"/>
+			<items itemID="1593043" goodsID="" node="2" payType="1" count="3500" showType="2" content="初始魅力值為10點，成豬前魅力成長速度1點/小時，出售價格30摩爾豆/點。"/>
+			<items itemID="1593044" goodsID="" node="2" payType="1" count="3500" showType="2" content="初始魅力值為10點，成豬前魅力成長速度1點/小時，出售價格30摩爾豆/點。"/>
+			<items itemID="1593045" goodsID="" node="2" payType="1" count="4000" showType="2" content="初始魅力值為12點，成豬前魅力成長速度1點/小時，出售價格32摩爾豆/點。"/>
+			<items itemID="1593046" goodsID="" node="2" payType="1" count="4000" showType="2" content="初始魅力值為12點，成豬前魅力成長速度1點/小時，出售價格32摩爾豆/點。"/>
+			<items itemID="1593014" goodsID="" node="1" payType="1" count="500" showType="2" content="初始體重50KG，成豬前長肉速度4KG/小時，出售價格7摩爾豆/KG。"/>
+			<items itemID="1593015" goodsID="" node="1" payType="1" count="500" showType="2" content="初始體重50KG，成豬前長肉速度4KG/小時，出售價格7摩爾豆/KG。"/>
+			<items itemID="1593016" goodsID="" node="1" payType="1" count="800" showType="2" content="初始體重80KG，成豬前長肉速度3KG/小時，出售價格10摩爾豆/KG。"/>
+			<items itemID="1593017" goodsID="" node="1" payType="1" count="800" showType="2" content="初始體重80KG，成豬前長肉速度3KG/小時，出售價格10摩爾豆/KG。"/>
+			<items itemID="1593047" goodsID="" node="2" payType="1" count="4500" showType="2" content="初始魅力值為14點，成豬前魅力成長速度1點/小時，出售價格34摩爾豆/點。"/>
+			<items itemID="1593048" goodsID="" node="2" payType="1" count="4500" showType="2" content="初始魅力值為14點，成豬前魅力成長速度1點/小時，出售價格34摩爾豆/點。"/>
+			<items itemID="1593049" goodsID="" node="2" payType="1" count="5000" showType="2" content="初始魅力值為16點，成豬前魅力成長速度1點/小時，出售價格36摩爾豆/點。"/>
+			<items itemID="1593050" goodsID="" node="2" payType="1" count="5000" showType="2" content="初始魅力值為16點，成豬前魅力成長速度1點/小時，出售價格36摩爾豆/點。"/>
+			<items itemID="1593018" goodsID="" node="1" payType="1" count="1000" showType="2" content="初始體重90KG，成豬前長肉速度5KG/小時，出售價格7摩爾豆/KG。"/>
+			<items itemID="1593019" goodsID="" node="1" payType="1" count="1000" showType="2" content="初始體重90KG，成豬前長肉速度5KG/小時，出售價格7摩爾豆/KG。"/>
+			<items itemID="1593039" goodsID="" node="1" payType="1" count="1000" showType="2" content="初始體重90KG，成豬前長肉速度9KG/小時，出售價格7摩爾豆/KG。"/>
+			<items itemID="1593040" goodsID="" node="1" payType="1" count="1000" showType="2" content="初始體重90KG，成豬前長肉速度9KG/小時，出售價格7摩爾豆/KG。"/>
+		</rebate>
+		<time>
+		  <items itemID="1593016" goodsID="" node="1" payType="1" count="800" showType="3" content="初始體重80KG，成豬前長肉速度3KG/小時，出售價格10摩爾豆/KG。"/>
+			<items itemID="1593017" goodsID="" node="1" payType="1" count="800" showType="3" content="初始體重80KG，成豬前長肉速度3KG/小時，出售價格10摩爾豆/KG。"/>
+			<items itemID="1593018" goodsID="" node="1" payType="1" count="1000" showType="3" content="初始體重90KG，成豬前長肉速度5KG/小時，出售價格7摩爾豆/KG。"/>
+			<items itemID="1593019" goodsID="" node="1" payType="1" count="1000" showType="3" content="初始體重90KG，成豬前長肉速度5KG/小時，出售價格7摩爾豆/KG。"/>
+			<items itemID="1593039" goodsID="" node="1" payType="1" count="1000" showType="3" content="初始體重90KG，成豬前長肉速度9KG/小時，出售價格7摩爾豆/KG。"/>
+			<items itemID="1593040" goodsID="" node="1" payType="1" count="1000" showType="3" content="初始體重90KG，成豬前長肉速度9KG/小時，出售價格7摩爾豆/KG。"/>
+		</time>
+		<exg>
+			<items itemID="1593030" payType="3" node="1" count="1"  Type="778"  showType="4" isOutDate = "1" content="限量版豬仔，絕對值得收藏。一套彩虹豬票即可兌換，截止日期：11月3日。"/>
+			<items itemID="1593037" payType="3" node="1" count="1"  Type="778"  showType="4" isOutDate = "1" content="萬聖節限量版豬仔，絕對值得收藏。一套彩虹豬票即可兌換，截止日期：11月17日。"/>
+			<items itemID="1593032" payType="3" node="1" count="1"  Type="778"  showType="4" isOutDate = "1" content="肥肥豬新品種絕對值得收藏。一套彩虹豬票即可兌換，截止日期：12月15日。"/>
+			<items itemID="1593033" payType="3" node="1" count="1"  Type="912"  showType="4" isOutDate = "1" content="肥肥豬新品種絕對值得收藏。一套彩虹豬票即可兌換，截止日期：12月15日。"/>
+			<items itemID="1593062" payType="3" node="2" count="1"  Type="778"  showType="4" isOutDate = "1" content="肥肥豬新品種絕對值得收藏。一套彩虹豬票即可兌換，截止日期：1月12日。"/>
+			<items itemID="1593073" payType="3" node="2" count="1"  Type="778"  showType="4" isOutDate = "1" content="美美豬新品種，絕對值得收藏！一套彩虹豬票即可兌換，截止日期：2月23日。"/>
+		</exg>
+	</pig>
+	<feed>
+			<rebate>
+			<items itemID="1613100" goodsID="" payType="1" count="300" showType="2" content="    上等玉米，可持續增長12小時，成長速度增加1倍。"/>
+			<items itemID="1613101" goodsID="101381" payType="2" count="8" showType="2" content="    包含10份雞蛋麥片粥，可持續增長12小時，成長速度增加1倍，且使每頭豬一次性增長10KG。"/>
+			<items itemID="1613102" goodsID="" payType="1" count="300" showType="2" content="    使用營養液，可使每頭豬豬的體重一次性增長3KG。"/>
+			<items itemID="1613104" goodsID="101382" payType="2" count="15" showType="2" content="    使用高級蛋白粉，可使每頭豬豬的體重一次性增長20KG。"/>
+			<items itemID="1613105" goodsID="101384" payType="2" count="30" showType="2" content="    包含3瓶營養液和3瓶高級蛋白粉。"/>
+			<items itemID="1613106" goodsID="101385" payType="2" count="70" showType="2" content="   包含5瓶營養液、5瓶高級蛋白粉和50份雞蛋麥片粥。"/>
+			<items itemID="1613107" goodsID="101386" payType="2" count="130" showType="2" content="   包含10瓶營養液、10瓶高級蛋白粉和100份雞蛋麥片粥。"/>
+			</rebate>
+		<time>
+			<items itemID="1613101" goodsID="101381" payType="2" count="8" showType="3" content="    包含10份雞蛋麥片粥，可持續增長12小時，成長速度增加1倍，且使每頭豬一次性增長10KG。"/>
+			<items itemID="1613104" goodsID="101382" payType="2" count="15" showType="3" content="    使用高級蛋白粉，可使每頭豬豬的體重一次性增長20KG。"/>
+			<items itemID="1613105" goodsID="101384" payType="2" count="30" showType="3" content="    包含3瓶營養液和3瓶高級蛋白粉。"/>
+			<items itemID="1613106" goodsID="101385" payType="2" count="70" showType="3" content="    包含5瓶營養液、5瓶高級蛋白粉和50份雞蛋麥片粥。"/>
+			<items itemID="1613107" goodsID="101386" payType="2" count="130" showType="3" content="    包含10瓶營養液、10瓶高級蛋白粉和100份雞蛋麥片粥。"/>
+		</time>
+	</feed>
+	<dress>
+			<rebate>
+			</rebate>
+		<time>
+			</time>
+	</dress>
+	<prop>
+		<rebate>
+			<items itemID="1613128" node="1" goodsID="101431" payType="2" count="15" showType="2" content="    使用天使卡，可以使肥肥館內的豬仔成長速度加快一倍哦，持續時間為3天。"/>
+			<items itemID="1613129" node="1" goodsID="101432" payType="2" count="15" showType="2" content="    使用惡魔卡，有幾率使好友的豬仔出現體力不支，持續時間為3天。"/>
+			<items itemID="1613130" node="1" goodsID="101433" payType="2" count="15" showType="2" content="    使用丘比特卡，可以使肥肥館內新出生的豬仔初始體重+100KG哦，持續時間為3天。"/>
+			<items itemID="1613131" node="1" goodsID="101434" payType="2" count="8" showType="2" content="    使用惡魔拜拜卡，可以解除肥肥館受到的惡魔卡效果。"/>
+			<items itemID="1613108" node="1" goodsID="" payType="1" count="10000" showType="2" content="    使用延壽藥劑，可以使豬豬的壽命延長10天或者復活死亡的豬仔哦。"/>
+			<items itemID="1613109" node="1" goodsID="" payType="1" count="5000" showType="2" content="    使用閃電成長藥劑，可以使幼年豬豬立即成年。"/>
+			<items itemID="1613110" node="1" goodsID="101387" payType="2" count="22" showType="2" content="    培育前使用基因藥水，可以使懷孕的豬豬100%生出變異豬仔。"/>
+			<items itemID="1613111" node="1" goodsID="" payType="1" count="500" showType="2" content="    使用催產針，可以減少母豬豬懷孕時間12小時。每頭豬每天可使用一次。"/>
+			<items itemID="1613112" node="1" goodsID="101388" payType="2" count="8" showType="2" content="    使用強力催產針，可使懷孕的母豬豬立即生出幼豬仔。"/>
+			<items itemID="1613113" node="1" goodsID="101389" payType="2" count="8" showType="2" content="    培育前使用多仔藥劑，可以使母豬豬100%生出2隻小豬。"/>
+			<items itemID="1613250" node="2" goodsID="" payType="1" count="500" showType="2" content="    美美豬表演中使用加油棒可提高20點得分。"/>
+			<items itemID="1613251" node="2" goodsID="" payType="1" count="2000" showType="2" content="    美美豬表演中使用粉絲團掌聲可提高100點得分。"/>
+			<items itemID="1613252" node="2" goodsID="" payType="1" count="3000" showType="2" content="    美美豬表演中使用專家肯定可提高150點得分。"/>
+			<items itemID="1613253" node="2" goodsID="" payType="1" count="1000" showType="2" content="    美美豬表演中使用閃電手可提高50點得分。"/>
+			<items itemID="1613270" node="2" goodsID="" payType="1" count="500" showType="2" content="    美美豬表演中使用煙霧彈可降低對方20點得分。"/>
+			<items itemID="1613271" node="2" goodsID="" payType="1" count="3000" showType="2" content="    美美豬表演中使用冰凍陷阱可降低對方150點得分。"/>
+			<items itemID="1613272" node="2" goodsID="" payType="1" count="2000" showType="2" content="    美美豬表演中使用闖禍小豬可降低對方100點得分。"/>
+			<items itemID="1613273" node="2" goodsID="" payType="1" count="1000" showType="2" content="    美美豬表演中使用沉默可降低對方50點得分。"/>
+			<items itemID="1613290" node="3" goodsID="" payType="1" count="10000" showType="2" content="    美美屋地燈可以讓你的美美屋更加漂亮，作用時間為96小時。"/>
+			<items itemID="1613291" node="3" goodsID="" payType="1" count="10000" showType="2" content="    美美屋緞帶可以讓你的美美屋更加漂亮，作用時間為96小時。"/>
+			<items itemID="1613292" node="3" goodsID="" payType="1" count="50000" showType="2" content="    美美屋康樂鼓手可以讓你的美美屋更加漂亮，作用時間為168小時。"/>
+			<items itemID="1613293" node="3" goodsID="" payType="1" count="40000" showType="2" content="    美美屋瀟灑吉他手可以讓你的美美屋更加漂亮，作用時間為168小時。"/>
+			<items itemID="1613294" node="3" goodsID="" payType="1" count="30000" showType="2" content="    美美屋當紅主唱可以讓你的美美屋更加漂亮，作用時間為168小時。"/>
+			<items itemID="1613295" node="3" goodsID="" payType="1" count="40000" showType="2" content="    美美屋性格BASS手可以讓你的美美屋更加漂亮，作用時間為168小時。"/>
+			<items itemID="1613296" node="3" goodsID="" payType="1" count="20000" showType="2" content="    美美屋煙霧使用後可以讓你在表演中更加精彩，作用時間為96小時。"/>
+			<items itemID="1613297" node="3" goodsID="" payType="1" count="15000" showType="2" content="    美美屋紙花使用後可以讓你在表演中更加精彩，作用時間為96小時。"/>
+			<items itemID="1614000" node="4" goodsID="101755" payType="2" count="2" showType="2" content="    機械工坊道具，對超級豬使用恢復10點能量值"/>
+			<items itemID="1614001" node="4" goodsID="101756" payType="2" count="5" showType="2" content="    機械工坊道具，對超級豬使用恢復最大能量值"/>
+			<items itemID="1614002" node="4" goodsID="101757" payType="2" count="4" showType="2" content="    機械工坊道具，對熔爐使用，加快冶煉5分鐘"/>
+			<items itemID="1614003" node="4" goodsID="101758" payType="2" count="8" showType="2" content="    機械工坊道具，對熔爐使用，加快冶煉10分鐘"/>
+			<items itemID="1614004" node="4" goodsID="" payType="1" count="5000" showType="2" content="    機械工坊道具，對車床使用，加快加工5分鐘"/>
+			<items itemID="1614005" node="4" goodsID="" payType="1" count="10000" showType="2" content="    機械工坊道具，對車床使用，加快加工10分鐘"/>
+			<items itemID="1614006" node="4" goodsID="101759" payType="2" count="8" showType="2" content="    機械工坊道具，對車床使用，加快加工30分鐘"/>
+			<items itemID="1614007" node="4" goodsID="101760" payType="2" count="15" showType="2" content="    機械工坊道具，對車床使用，加快加工1小時"/>
+			<items itemID="1614008" node="4" goodsID="101761" payType="2" count="37" showType="2" content="    機械工坊道具，對車床使用，加快加工3小時"/>
+			<items itemID="1614017" node="4" goodsID="101762" payType="2" count="15" showType="2" content="    機械工坊道具，給積勞成疾的豬仔補充能量，喝了就會恢復活力！"/>
+			</rebate>
+		<time>
+			<items itemID="1613128" node="1" goodsID="101431" payType="2" count="15" showType="3" content="    使用天使卡，可以使肥肥館內的豬仔成長速度加快一倍哦，持續時間為3天。"/>
+			<items itemID="1613129" node="1" goodsID="101432" payType="2" count="15" showType="3" content="    使用惡魔卡，有幾率使好友的豬仔出現體力不支，持續時間為3天。"/>
+			<items itemID="1613130" node="1" goodsID="101433" payType="2" count="15" showType="3" content="    使用丘比特卡，可以使肥肥館內新出生的豬仔初始體重+100KG哦，持續時間為3天。"/>
+			<items itemID="1613131" node="1" goodsID="101434" payType="2" count="8" showType="3" content="    使用惡魔拜拜卡，可以解除肥肥館受到的惡魔卡效果。"/>
+			<items itemID="1613110" node="1" goodsID="101387" payType="2" count="22" showType="3" content="    培育前使用基因藥水，可以使懷孕的豬豬100%生出變異豬仔。"/>
+			<items itemID="1613112" node="1" goodsID="101388" payType="2" count="8" showType="3" content="    使用給力催產針，可使懷孕的母豬豬立即生出幼豬仔。"/>
+			<items itemID="1613113" node="1" goodsID="101389" payType="2" count="8" showType="3" content="    培育前使用多仔藥劑，可以使母豬豬100%生出2隻小豬。"/>
+			</time>
+	</prop>
+	<material>
+		<rebate>
+			<items itemID="1613000" goodsID="" payType="1" count="1500" showType="2" content="一種上好香料，可讓加工出的午餐肉、紅燒肉和火腿香飄四溢、回味無窮。"/>
+			<items itemID="1613001" goodsID="" payType="1" count="3000" showType="2" content="用麵包粉搭配豬豬肉做出可口的食物，那種滋味無比美妙。"/>
+			<items itemID="1613002" goodsID="" payType="1" count="2500" showType="2" content="一種輔助調料，對豬柳、火腿等菜品的口味起著至關重要的作用。"/>
+			<items itemID="1613003" goodsID="" payType="1" count="2500" showType="2" content="想要做皮蛋瘦肉粥，皮蛋可不能少。"/>
+			<items itemID="1613004" goodsID="" payType="1" count="500" showType="2" content="用秘製醬料做出的必然也是秘製菜品，紅燒肉、炸豬排，都可以試試喲！"/>
+			<items itemID="1613005" goodsID="" payType="1" count="2500" showType="2" content="是製作沙拉和培根的必需品喲！"/>
+			<items itemID="1613006" goodsID="" payType="1" count="4500" showType="2" content="是製作草莓土司的必需原料。"/>
+			<items itemID="1613007" goodsID="" payType="1" count="5500" showType="2" content="用藍莓可以製作出好吃的藍莓派和漿果甜心。"/>
+			<items itemID="1613008" goodsID="" payType="1" count="2000" showType="2" content="製作培根和松餅可不能少了蜂蜜的潤色喲！"/>
+			<items itemID="1613009" goodsID="" payType="1" count="500" showType="2" content="在製作沙拉和火焰冰淇淋時，加上水果罐頭會更美味喲！"/>
+			<items itemID="1613025" goodsID="" payType="1" count="4000" showType="2" content="要做火焰冰淇淋，冰淇淋當然不能少。"/>
+			<items itemID="1613026" goodsID="" payType="1" count="1500" showType="2" content="要做壽喜燒，豆腐當然不能少。"/>
+			<items itemID="1613029" goodsID="" payType="1" count="6000" showType="2" content="雞蛋可是加工很多配方不可缺少的材料。"/>
+			<items itemID="1613030" goodsID="" payType="1" count="5000" showType="2" content="這個季節吃秋刀魚是最好不過的了。"/>
+			
+			</rebate>
+		<time>
+			<items itemID="1613006" goodsID="" payType="1" count="4500" showType="3" content="是製作草莓土司的必需原料。"/>
+			<items itemID="1613007" goodsID="" payType="1" count="5500" showType="3" content="用藍莓可以製作出好吃的藍莓派和漿果甜心。"/>
+			<items itemID="1613008" goodsID="" payType="1" count="2000" showType="3" content="製作培根和松餅可不能少了蜂蜜的潤色喲！"/>
+			<items itemID="1613009" goodsID="" payType="1" count="500" showType="3" content="在製作沙拉和火焰冰淇淋時，加上水果罐頭會更美味喲！"/>
+			<items itemID="1613025" goodsID="" payType="1" count="4000" showType="3" content="要做火焰冰淇淋，冰淇淋當然不能少。"/>
+			<items itemID="1613026" goodsID="" payType="1" count="1500" showType="3" content="要做壽喜燒，豆腐當然不能少。"/>
+			<items itemID="1613029" goodsID="" payType="1" count="6000" showType="3" content="雞蛋可是加工很多配方不可缺少的材料。"/>
+			<items itemID="1613030" goodsID="" payType="1" count="5000" showType="3" content="這個季節吃秋刀魚是最好不過的了。"/>
+		</time>
+	</material>
+	<other>
+		<rebate>
+			<items itemID="1613114" node="1" goodsID="" payType="1" count="1500" showType="2" content="使用改名卡，可以給豬豬換個新的名字。"/>
+			<items itemID="1613115" node="1" goodsID="101390" payType="2" count="8" showType="2" content="某些特定加工配方需要有小當家證書才能使用。"/>
+			<items itemID="1613117" node="1" goodsID="" payType="1" count="20000" showType="2" content="購買後開啟中級加工廠神奇配方，需要初級加工廠才能購買。"/>
+			<items itemID="1613118" node="1" goodsID="" payType="1" count="50000" showType="2" content="購買後開啟高級加工廠神奇配方，需要中級加工廠才能購買。"/>
+			<items itemID="1613132" node="1" goodsID="" payType="1" count="80000" showType="2" content="購買後開啟紅鑽加工廠神奇配方，需要高級加工廠才能購買。"/>
+			<items itemID="1613134" node="1" goodsID="" payType="1" count="20000" showType="2" Max="1" content="全新夢幻島背景，不可思議的地方，夢想啟程的國度。"/>
+			<items itemID="1613135" node="1" goodsID="" payType="1" count="30000" showType="2" Max="1" content="全新海盜港背景，非常著名的海盜聚集地，被稱為“海盜樂園”。"/>
+			<items itemID="1613136" node="1" goodsID="" payType="1" count="50000" showType="2" content="購買中級美美屋後，可以開啟2人表演。"/>
+			<items itemID="1613137" node="1" goodsID="" payType="1" count="100000" showType="2" content="購買中級美美屋後，可以開啟3人表演。"/>
+			<items itemID="1603000" node="2" goodsID="" payType="1" count="5000" showType="2" content="美美豬裝扮成此套裝，可變身成為小丑傑克。"/>
+			<items itemID="1603001" node="2" goodsID="" payType="1" count="30000" showType="2" content="美美豬裝扮成此套裝，可變身成為叢林精靈。"/>
+			<items itemID="1603002" node="2" goodsID="" payType="1" count="50000" showType="2" content="美美豬裝扮成此套裝，可變身成為小小偵探。"/>
+			<items itemID="1603003" node="2" goodsID="" payType="1" count="100000" showType="2" content="美美豬裝扮成此套裝，可變身成為當紅歌星。"/>
+			<items itemID="1603004" node="2" goodsID="" payType="1" count="150000" showType="2" content="美美豬裝扮成此套裝，可變身成為紳士假面。"/>
+		</rebate>
+		<time>
+			<items itemID="1613115" node="1" goodsID="101390" payType="2" count="8" showType="3" content="某些特定加工配方需要有小當家證書才能使用。"/>
+			<items itemID="1613117" node="1" goodsID="" payType="1" count="20000" showType="3" content="購買後開啟中級加工廠神奇配方，需要初級加工廠才能購買。"/>
+			<items itemID="1613118" node="1" goodsID="" payType="1" count="50000" showType="3" content="購買後開啟高級加工廠神奇配方，需要中級加工廠才能購買。"/>
+			<items itemID="1613132" node="1" goodsID="" payType="1" count="80000" showType="3" content="購買後開啟紅鑽加工廠神奇配方，需要高級加工廠才能購買。"/>
+			<items itemID="1613134" node="1" goodsID="" payType="1" count="20000" showType="3" Max="1" content="全新夢幻島背景，不可思議的地方，夢想啟程的國度。"/>
+			<items itemID="1613135" node="1" goodsID="" payType="1" count="30000" showType="3" Max="1" content="全新海盜港背景，非常著名的海盜聚集地，被稱為“海盜樂園”。"/>
+			<items itemID="1613136" node="1" goodsID="" payType="1" count="50000" showType="3" content="購買中級美美屋後，可以開啟2人表演。"/>
+			<items itemID="1613137" node="1" goodsID="" payType="1" count="100000" showType="3" content="購買中級美美屋後，可以開啟3人表演。"/>
+		</time>
+	</other>
+</shop>

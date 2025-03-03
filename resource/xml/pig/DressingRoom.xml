@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+id：物品ID
+isSL：是否是超拉購買
+content：物品描述
+ -->
+<xml>
+	<dress>
+		<items id="1603000" isSL="0" content="美美豬裝扮成此套裝，可變身成為小丑傑克。"/>
+		<items id="1603001" isSL="0" content="美美豬裝扮成此套裝，可變身成為小飛俠。"/>
+		<items id="1603002" isSL="0" content="美美豬裝扮成此套裝，可變身成為偵探少年。"/>
+		<items id="1603003" isSL="0" content="美美豬裝扮成此套裝，可變身成為普雷斯利。"/>
+		<items id="1603004" isSL="0" content="美美豬裝扮成此套裝，可變身成為怪盜小子。"/>
+		<items id="1603006" isSL="0" unBuy="1" content="美美豬裝扮成此套裝，可變身成為麼麼公主。"/>
+		<items id="1603007" isSL="0" unBuy="1" content="美美豬裝扮成此套裝，可變身成為鴨蛋超人。"/>
+
+	</dress>
+	<prop>
+	</prop>
+</xml>
