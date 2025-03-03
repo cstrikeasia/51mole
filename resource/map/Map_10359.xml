@@ -1,0 +1,25 @@
+<Map>
+	 <NpcList>
+	 	<Npc ID="10254" Layer="depthLevel" Name="扣扣" Ex="476" Ey="361" Cmd="s" Param="2" />
+	 	<Npc ID="10257" Layer="depthLevel" Name="海賊小兵" Ex="417" Ey="417" Cmd="s" Param="3" />
+	 	<Npc ID="10249" Layer="depthLevel" Name="蛋蛋" Ex="569" Ey="397" Cmd="s" Param="4" />
+	 	<Npc ID="10259" Layer="depthLevel" Name="扣扣" Ex="476" Ey="361" Cmd="s" Param="2" />
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_356" Layer="controlLevel" Ex="575" Ey="518" Cmd="alt_map" Param="356" Tips="浮冰島海灣" />
+		
+		<Trigger ResName="tollgate_1" Layer="depthLevel" Ex="410" Ey="430" Cmd="act" Param="openTollgate_14"  Tips="海賊囉啰"/>
+		<Trigger ResName="tollgate_0" Layer="depthLevel" Ex="290" Ey="400" Cmd="act" Param="openTollgate_15"  Tips="挑戰漢青"/>
+		<Trigger ResName="tollgate_2" Layer="depthLevel" Ex="570" Ey="415" Cmd="act" Param="openTollgate_16"  Tips="激戰蛋蛋"/>
+		<Trigger ResName="tollgate_3" Layer="depthLevel" Ex="480" Ey="350" Cmd="act" Param="openTollgate_17"  Tips="決戰扣扣"/>
+	</Triggers>
+	
+	<Talks>
+		
+		<Talk ID="2" NpcID="10254" Face="開心" Msg="哈哈哈哈哈哈哈哈！可愛的莊園，扣扣來疼愛你啦！" Option="壞人，我們一定會打敗你！$元素騎士新套裝" Cmd="none$p" Param="null$ElementKnightExploitClothesPanel" />
+		<Talk ID="3" NpcID="10257" Face="正常" Msg="跟著老大有肉吃！有肉吃！有肉吃！" Option="餵，醒醒，企鵝不吃肉！" Cmd="none" Param="2" />
+		<Talk ID="4" NpcID="10249" Face="正常" Msg="對呀，我就是那個可愛的蛋蛋呀，你沒有搞錯呀，就是我呀，嗯嗯！" Option="-_-|||" Cmd="none" Param="sda" />
+	</Talks>
+</Map>
+
+

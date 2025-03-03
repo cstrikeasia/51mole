@@ -1,0 +1,8 @@
+<Map>
+	<Triggers>
+		<Trigger ResName="go_394" Layer="controlLevel" Ex="875" Ey="351" Cmd="alt_map" Param="394"  Tips="風岩沙漠"/>  
+		<Trigger ResName="go_398" Layer="controlLevel" Ex="709" Ey="217" Cmd="alt_map" Param="398"  Tips="荊棘橋"/>  
+	</Triggers>
+</Map>
+
+
