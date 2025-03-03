@@ -1,0 +1,25 @@
+<Map>
+	<NpcList>
+		<Npc ID="10038" Layer="depthLevel" Name="凱文" Ex="631" Ey="330"  Cmd="s" Param="1" />
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="999" NpcID="10038" Face="正常" Msg="謝謝小摩爾還惦記著我~小C越來越可愛了！" Option="^__^" Cmd="act" Param="fatherDayOver" AddTaskOption="1"  />
+		
+		<Talk ID="1" NpcID="10038" Face="正常" Msg="你好{$username}，我是凱文老師，拉姆學院飛行、潛水、動物課的考官！" Option="介紹拉姆課堂$沒什麼事！" Cmd="s$none" Param="2$3" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10038" Face="正常" Msg="我右手邊樓上是飛行考試的地方，我身後是潛水考試項目！黑板上有動物考試的海報！想參加考試，要帶著你的拉姆去學院教導處找菩提大伯參加課程學習哦！" Option="恩，我知道了！" Cmd="none" Param="4" AddTaskOption="1" />
+		
+		<!-- 教師節活動 -->
+		<Talk ID="10" NpcID="10038" Face="正常" Msg="哈哈，謝謝你小摩爾，你真是有心啊！很浪漫的禮物，我先收下啦！" Option="你會用他們做什麼呀？" Cmd="s" Param="11" IsHideClose="1" />
+		<Talk ID="11" NpcID="10038" Face="正常" Msg="我會在晚上把螢火蟲釋放到黑森林的沿路，為行人點亮道路!" Option="凱文老師真是個熱心人！" Cmd="act" Param="showAward" />
+	</Talks>
+</Map>
+
+
+

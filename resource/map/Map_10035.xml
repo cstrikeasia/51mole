@@ -1,0 +1,19 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	
+	<Triggers>
+	<!-- 
+		<Trigger ResName="rickyBtn" Layer="controlLevel" Ex="769" Ey="410" Cmd="p" Param="HappySummerSuperIntroPanel" Tips="" />
+		<Trigger ResName="momoBtn" Layer="controlLevel" Ex="769" Ey="410" Cmd="act" Param="clickMomo" Tips="" /> 
+		<Trigger ResName="rkBtn" Layer="controlLevel" Ex="769" Ey="410" Cmd="p" Param="CosplayMainPanel" Tips="" /> 
+		 -->
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+
+

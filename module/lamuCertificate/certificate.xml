@@ -1,0 +1,12 @@
+<taomee>
+	<certificate>
+		<item id="1310001" isVip="0" tips="在拉姆教導處完成語言課1的學習後領取" classID="1" />
+		<item id="1310002" isVip="0" tips="在拉姆教導處報名學習英語課並通過考試後領取" classID="15" />
+		<item id="1310003" isVip="0" tips="在拉姆教導處完成清泥巴課的學習後領取" classID="14" />
+		<item id="1310004" isVip="0" tips="在拉姆教導處報名學習飛行課並通過考試後領取" classID="11" />
+		<item id="1310005" isVip="0" tips="在拉姆教導處報名學習潛水課並通過考試後領取" classID="12" />
+		<item id="1310006" isVip="1" tips="在拉姆教導處報名學習動物課1並通過考核後領取" classID="16" />
+		<item id="1310007" isVip="0" tips="在拉姆教導處完成手工課的學習後領取" classID="13" />
+		<item id="1310008" isVip="0" tips="在拉姆教導處完成語言課2的學習後領取" classID="2" />
+	</certificate>
+</taomee>
