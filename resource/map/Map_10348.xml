@@ -1,0 +1,16 @@
+<Map>
+	<NpcList>
+		<Npc ID="10223" Layer="depthLevel" Name="摩爾王靈魂" Ex="224" Ey="350" Cmd="s" Param="1" AddTaskOption="1" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_109" Layer="controlLevel" Ex="174" Ey="252" Cmd="alt_map" Param="109"  Tips="城堡露天花園"/>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10223" Face="正常" Msg="{$username}，用你的智慧解除瘋狂劇作家的詛咒吧，將大家從悲劇的結局中解救出來！" Option="我會將大家都救出來的！" Cmd="none" Param="1" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+
