@@ -1,0 +1,12 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_38" Layer="controlLevel" Ex="211" Ey="473" Cmd="alt_map" Param="38"  Tips="摩爾足球場"/> 
+<!-- 		<Trigger ResName="boss_mc" Layer="controlLevel" Ex="0" Ey="0" Cmd="p" Param="ChoseMoGameLevelPanel"  Tips=""/>  -->
+	</Triggers>
+	<Talks>
+	</Talks> 
+</Map>
+
+
