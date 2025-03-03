@@ -1,0 +1,138 @@
+﻿<Tasks ID="1009" Name="重回黑森林" AwardMsg="恭喜你獲得書籍《格曆爾傳說》（小屋道具）、5個飛鳥果實！" AwardBean="" >
+
+	<!-- 摩樂樂家  -->
+	<Step ID="1" TarMapID="239">
+		<NPC ID="10000" Option="重回黑森林"  MapID=""  >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10000" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="焦急" Msg="{$username}，剛才那個魔法陣是怎麼回事呀？裡面投射出的那道光，還射向了黑森林那邊，真是越想越覺得詭異。" Option=""/>
+				<Talk NpcID="10197" Face="焦急" Msg="是呀！那個“黑魔法學院”究竟想要幹什麼？他們都是些什麼人？" Option=""/>
+				<Talk NpcID="10000" Face="焦急" Msg="實在是有太多的謎團。這樣，我們一塊兒去黑森林看看，說不定能發現點什麼。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="120" MapType="0" />
+		</NPC>	
+	</Step>
+	
+	
+	<!-- 雲霧謎橋 -->
+	<Step ID="2" TarMapID="120">
+		<EnterMap MapID="120">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="前面就通向黑森林的深處了。魔法陣的秘密，肯定就藏在那裡面。" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="嗯！這裡也有那個紫色的光，更加說明裡面有問題。我們再往前走看看。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="悲傷" Msg="天啊，還好得救了！差點就看不到明天的太陽……" Option=""/>
+				<Talk NpcID="10060" Face="正常" Msg="剛剛真是太危險了……你們兩個小摩爾不好好呆在家，私自跑到這裡來幹什麼？" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="土靈長老，魔法陣的光束射向了黑森林那邊，我們想去看看是怎麼回事。黑魔法學院，肯定是有什麼陰謀！" Option=""/>
+				<Talk NpcID="10060" Face="正常" Msg="據我觀測，魔法陣的光束是朝著時光聖殿投射而去，那裡你們是去不了的，還是快回去吧。" Option=""/>
+				<Talk NpcID="10000" Face="驚訝" Msg="時光聖殿？那是什麼地方？都沒聽說過。為什麼我們就去不了？" Option=""/>
+				<Talk NpcID="10060" Face="正常" Msg="時光聖殿封印著巨大的能量，外人不能輕易進入。剛剛你們之所以會被震開，應該就是魔法陣能量和時光聖殿能量衝擊的作用。你們還是趕緊離開吧，這裡太危險。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="疑惑" Msg="土林長老說得不明不白的。什麼時光聖殿？這和魔法陣有關嗎？魔法陣、黑魔法學院、時光聖殿，事情真是越來越複雜了……" Option=""/>
+				<Talk NpcID="10000" Face="正常" Msg="嗯哼~這些關於莊園的不為人知的亂七八糟的事情，只要去找某個人打聽打聽就可以。" Option=""/>
+				<Talk NpcID="10197" Face="疑惑" Msg="你是說……菩提大伯？" Option=""/>
+				<Talk NpcID="10000" Face="正常" Msg="沒錯！走，我們趕緊找大伯問問去吧！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="53" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	
+	<!-- 學院教導處 -->
+	<Step ID="3" TarMapID="53">
+		<EnterMap MapID="53">
+<!-- 		<NPC ID="10007" Option="重回黑森林"  MapID=""  > 
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>  -->
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="時光聖殿？噢，多麼久遠的事情了，你們不說，我都快把這個地方給忘掉了。" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="大伯，難道你去過時光聖殿嗎？" Option=""/>
+				<Talk NpcID="10007" Face="正常" Msg="噢，不，沒去過。那是黑森林裡一個非常隱蔽的地方，外人不能輕易進入。我是以前從一本關於摩爾歷史的書上看到過。那本書叫什麼來著……噢，好像叫——“格曆爾傳說”。" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="大伯能把那本書給我們看看嗎？" Option=""/>
+				<Talk NpcID="10007" Face="正常" Msg="讓我想想放哪兒去了。好久以前的書了，瞧大伯這記性，真是比不得從前了……" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			
+			<Action Cmd="PLAY_MOVIE" Param="1003" Name="movie_1003" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1003" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="正常" Msg="原來摩爾歷史上還有這樣一段故事，以前都不知道呢！" Option=""/>
+				<Talk NpcID="10007" Face="正常" Msg="回頭我把這本書送給你們，可以拿回家好好閱讀。" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="可是，大伯，就找不到任何辦法進入時光聖殿嗎？黑魔法學院，他們的目標也許就在其中，如果我們不去阻止，恐怕莊園會面臨危險……" Option=""/>
+				<Talk NpcID="10007" Face="正常" Msg="辦法倒不是沒有。首先要瞭解地、水、火、風四大元素的關係，並通過訓練獲得元素騎士資格，才能進入時光聖殿接受考驗成為元素騎士，然後用元素之力對抗黑魔法，粉碎他們的陰謀。" Option=""/>
+				<Talk NpcID="10000" Face="正常" Msg="太好了，果然是有辦法的！大伯，快告訴我們怎麼才能獲得元素騎士資格吧！我希望現在就能進入時光聖殿，粉碎那些壞蛋的陰謀！" Option=""/>
+				<Talk NpcID="10007" Face="正常" Msg="樂樂，你總是這麼衝動。要成就大事，除了有勇，還得有謀。元素騎士資格可不是說得就能得的。此事重大，你們還是先去問問洛克行政官準備如何處理吧。" Option=""/>
+				<Talk NpcID="10000" Face="正常" Msg="啊……大伯，您說得對！我和{$username}這就去找洛克行政官！" Option=""/>
+			</Action>
+			
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1002" Name="movie_1002" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1002" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="15" MapType="0" />
+<!-- 		</NPC> -->
+		</EnterMap>
+	</Step>
+	
+	<!-- 城堡大廳 -->
+	<Step ID="4" TarMapID="15">
+		<NPC ID="10047" Option="重回黑森林"  MapID=""  >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+<!-- 			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10047" Visible="0" /> -->
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10047" Face="正常" Msg="天，你們竟然撞到了時光聖殿的封印！要不是土靈長老，那可真危險了。" Option=""/>
+				<Talk NpcID="10197" Face="焦急" Msg="洛克行政官，那我們現在怎麼辦呢？" Option=""/>
+				<Talk NpcID="10047" Face="正常" Msg="我已經讓弗蘭克團長組建了元素騎士訓練營並發佈了動員令，徵集志願者前往訓練營進行訓練，選拔元素騎士人選。" Option=""/>
+				<Talk NpcID="10000" Face="驚訝" Msg="原來一切都已經準備好了！洛克行政官，可以讓我和{$username}也成為元素騎士嗎？" Option=""/>
+				<Talk NpcID="10047" Face="正常" Msg="訓練營的大門隨時為你們敞開，但能否成為元素騎士，還要看你們自身的努力。只有通過考驗的摩爾，才具備成為元素騎士的資格。" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="嗯！我們會努力訓練的！一定要爭取通過考驗、前往時光聖殿，去阻止黑魔法學院的陰謀！" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10047" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</NPC>
+	</Step>
+</Tasks>
