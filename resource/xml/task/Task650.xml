@@ -1,0 +1,84 @@
+﻿<Tasks ID="650" Name="夢醒時分" AwardMsg="恭喜你獲得1條牧場的河豚魚,1個家園裝飾日光櫻蛤和10000摩爾豆。" AwardBean="">
+	<Step ID="1" TarMapID="237">
+		<EnterMap MapID="237">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10011" Face="正常" Msg="{$username}，樂樂，快來！哥哥睡著了，一直沒有醒過來，也沒有問我要吃的……" Option="布多多？怎麼可能，他難道不是連睡覺都在吃嗎？"/>
+				<Talk NpcID="10000" Face="疑惑" Msg="一直沒醒？會不會是身體不舒服啊？" Option="要不要找安迪來看看？"/>
+				<Talk NpcID="10000" Face="正常" Msg="喂...安迪是拉姆醫生= =" Option="哦……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10011" Face="正常" Msg="還以為哥哥醒了，原來是說夢話……" Option="他這樣多久了？"/>
+				<Talk NpcID="10011" Face="正常" Msg="恩……大概有兩三天了吧……" Option="那麼久，不要餓壞了？我去通知菩提大伯！！"/>
+				<Talk NpcID="10000" Face="正常" Msg="好嚇人，我還是去找下安迪吧，看看是不是要給布多多掛水，好擔心哦~" Option="恩恩，那我們分頭行動吧~"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="JUMP_TASK_UI" Param="布多多已經睡了兩三天了，這樣下去好危險啊，快去通知菩提大伯吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+			<Action Cmd="GO_MAP" MapID="53" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="53">
+		<EnterMap MapID="53">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10258" Face="焦急" Msg="大伯看著書看著書睡著了，一直醒不過來~飛飛好擔心呢~" Option="大伯也睡著了！！！"/>
+				<Talk NpcID="10258" Face="焦急" Msg="是啊，昨天晚上看書看得好好的，還說要做新的一期二叔自然課，突然就睡著了……" Option="不要吧……這個有點嚴重哎~我去找艾爾警官……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="JUMP_TASK_UI" Param="菩提大伯也睡著了？情況有些不對呀，快去找艾爾警官報告一下……"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="2" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="3" TarMapID="2">
+		<EnterMap MapID="2">
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="正常" Msg="哎喲，誰啊？這麼著急？" Option="樂樂，你怎麼也急急忙忙的？"/>
+				<Talk NpcID="10000" Face="正常" Msg="{$username}是你啊，我剛想去找你，安迪也睡著了，小拉姆病人們都睡著了……" Option="不會吧"/>
+				<Talk NpcID="10000" Face="疑惑" Msg="我剛才聽到一隻小拉姆迷迷糊糊的說，什麼月光下的音樂之類的……聽不懂啊……" Option="咦？是不是就是我之前聽到的音樂？"/>
+				<Talk NpcID="10000" Face="驚訝" Msg="是哦，之前你還跟我說音樂的事情。剛才我一直在想，會不會是那只在開心農場做窩的夜鶯，它好像一直在唱歌。" Option="有道理，我們去看看！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="JUMP_TASK_UI" Param="連安迪和小拉姆都睡著了，難道真的是那個詭異的音樂在搗鬼？會不會是開心農場的夜鶯呢？快去看看！"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+			<Action Cmd="GO_MAP" MapID="10" MapType="0"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="4" TarMapID="10">
+		<EnterMap MapID="10">
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="疑惑" Msg="為了讓薔薇綻放，夜鶯獻出了一腔鮮血，好可憐……" Option="╮(╯▽╰)╭有種感情你永遠不懂。"/>
+				<Talk NpcID="10000" Face="正常" Msg="看來這個線索也撲空了，要不我們去布多多家找找線索呢？" Option="好呀！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="JUMP_TASK_UI" Param="夜鶯已經死在花下，不可能一直歌唱了，好可憐。線索斷了，我們回到開頭，去布多多布少少家看看吧。"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+			<Action Cmd="GO_MAP" MapID="237" MapType="0"/>
+		</EnterMap>	
+	</Step>	
+	<Step ID="5" TarMapID="237">
+		<EnterMap MapID="237">
+			<Action Cmd="SAY">
+				<Talk NpcID="10011" Face="開心" Msg="太好了，你們總算回來了……我覺得我也要睡不醒了。" Option="你也一直睡不醒啊……"/>
+				<Talk NpcID="10011" Face="開心" Msg="有沒有找到人來幫忙？安迪也來了嗎？" Option="安迪也睡著了，看病的小拉姆也睡著了，連菩提大伯都睡著了。"/>
+				<Talk NpcID="10011" Face="焦急" Msg="不會吧，怎麼辦啊？" Option="我們也是回來找線索的。"/>
+				<Talk NpcID="10000" Face="焦急" Msg="你們快來看！這是什麼？" Option="...."/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>					
+</Tasks>
+

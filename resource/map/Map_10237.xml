@@ -1,0 +1,29 @@
+<Map>
+	<NpcList>
+		<Npc ID="10010" Layer="buttonLevel" Name="布多多" Ex="509" Ey="317" Cmd="s" Param="1" />
+		<Npc ID="10011" Layer="buttonLevel" Name="布少少" Ex="509" Ey="317" Cmd="s" Param="2" />
+	</NpcList>
+	
+	<Triggers>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="121" NpcID="10010" Face="正常" Msg="嗯，中秋節快樂，不過我月餅一直不夠吃，哎" Option="送你25個月餅" Cmd="act" Param="getMoonCakePrize0" AddTaskOption="1" />
+		<Talk ID="122" NpcID="10010" Face="正常" Msg="哇！有吃的！放心，我布多多不會白拿的，送你個禮物！" Option="你太客氣了" Cmd="act" Param="getPrize0" AddTaskOption="1" />
+		<Talk ID="123" NpcID="10010" Face="正常" Msg="不用這麼客氣，你已經送給過我月餅了" Option="嗯，好的" Cmd="none" Param="" AddTaskOption="1" />
+		
+		<Talk ID="221" NpcID="10011" Face="正常" Msg="中秋節快樂！節日睡覺什麼的最幸福了。" Option="送你15個月餅" Cmd="act" Param="getMoonCakePrize1" AddTaskOption="1" />
+		<Talk ID="222" NpcID="10011" Face="正常" Msg="哦，謝謝你，其實我還是比較想睡覺，但老師說要懂禮貌，那作為回禮，這個就給你了。" Option="你太客氣了" Cmd="act" Param="getPrize1" AddTaskOption="1" />
+		<Talk ID="223" NpcID="10011" Face="正常" Msg="不用這麼客氣，你已經送給過我月餅了" Option="嗯，好的" Cmd="none" Param="" AddTaskOption="1" />
+	
+		<Talk ID="1" NpcID="10010" Face="正常" Msg="有好吃的記得一定要告訴布多多我啊！雖然我的美美豬最近吃多了，但是我相信一定可以戰勝你哦！" Option="沒什麼事" Cmd="none" Param="none" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10011" Face="正常" Msg="不要叫醒我，我就是天天睡不夠的布少少！我的美美豬並不厲害，但是也沒這麼容易可以戰勝我喲！" Option="沒什麼事" Cmd="none" Param="7" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10011" Face="正常" Msg="哇，真是太好吃了，謝謝親愛的小摩爾！" Option="這是我親手製作的蛋撻，請吃品嘗哦" Cmd="act" Param="task585Over" AddTaskOption="1" />
+		<Talk ID="4" NpcID="10011" Face="正常" Msg="小摩爾沒有完成哦" Option="好的" Cmd="none" Param="none" AddTaskOption="1" />
+		<Talk ID="5" NpcID="10011" Face="正常" Msg="我的寶盒不見了，急死我了。機靈的小摩爾，快幫我找找吧" Option="好的，先讓我四處看看吧" Cmd="act" Param="findBoxSwap" AddTaskOption="1" />
+		<Talk ID="6" NpcID="10011" Face="正常" Msg="這個標記好熟悉啊！難道是小偷故意留下的線索？" Option="不是西部遊樂場嗎？現在就去！" Cmd="act" Param="gotoYouXi" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+
