@@ -1,0 +1,62 @@
+<!-- 
+	Socket錯誤碼配置
+		Error	協議錯誤：Cmd:協議號
+			ErrorCode :錯誤碼	Code：錯誤碼		Type：類型（1為InfoBox提示；2為Alert彈框提示;3為喇叭廣播)
+-->
+<Errors>
+	<Error CmdID="0">
+		<ErrorCode Code="0" Msg="錯誤碼" Type="2" />
+	</Error>
+	<Error CmdID="1242">
+		<ErrorCode Code="-10001" Msg="您的抽獎次數已經用完，明天再來參加吧！" Type="2" />
+	</Error>
+	<Error CmdID="1123">
+		<ErrorCode Code="-12734" Msg="你已經有該物品了！" Type="2" />
+	</Error>
+	<Error CmdID="4103">
+		<ErrorCode Code="-100254" Msg="領取時間不對" Type="2" />
+		<ErrorCode Code="-100255" Msg="今天的彩蛋你已經領取了，晚上8點開獎，8點半以後可以提前領取明天的彩蛋喲！" Type="2" />
+	</Error>
+	<Error CmdID="302">
+		<ErrorCode Code="-10027" Msg="小摩爾說話太頻繁了，歇一歇再說吧！" Type="3" />
+		<ErrorCode Code="-10028" Msg="1分鐘內說話10次被限制！" Type="3" />
+		<ErrorCode Code="-10029" Msg="小摩爾今天說了太多話，休息5分鐘再說吧！" Type="3" />
+	</Error>
+	<Error CmdID="8078">
+		<ErrorCode Code="-12793" Msg="今天你已經拿過糖果了哦，明天再來吧！" Type="2" />
+	</Error>
+	<Error CmdID="1243">
+		<ErrorCode Code="-12734" Msg="你已擁有此物品已到達上限，無法兌換了！" Type="2" />
+		<ErrorCode Code="-100316" Msg="沒有車票！" Type="2" />
+		<ErrorCode Code="-100318" Msg="每人只能領取一次坐騎哦！" Type="2" />
+		<ErrorCode Code="-100320" Msg="您已經領取過校服了,不能再領取了!" Type="2" />
+	</Error>
+	<Error CmdID="8500">
+		<ErrorCode Code="-100289" Msg="你已經和他交換過友誼了，找找別的小摩爾試試吧！" Type="2" />
+	</Error>
+	<Error CmdID="8527">
+		<ErrorCode Code="-100296" Msg="每天只能為一位摩摩小壽星投票！" Type="2" />
+	</Error>
+	<Error CmdID="8525">
+		<ErrorCode Code="-100297" Msg="今天不是你的生日哦！只有過生日的小摩爾才能保存生日派對！" Type="2" />
+	</Error>
+	<Error CmdID="7094">
+		<ErrorCode Code="-100304" Msg="隊伍已經解散了，請選擇其他隊伍吧！" Type="2" />
+		<ErrorCode Code="-100303" Msg="這個隊伍已經達到上限，請選擇其他隊伍吧！" Type="2" />
+	</Error>
+	<Error CmdID="8545">
+		<ErrorCode Code="-100311" Msg="今天次數已經達到上限，沒有獎勵了！" Type="2" />
+	</Error>
+	<Error CmdID="8816">
+		<ErrorCode Code="-100315" Msg="領取錯誤，請重試！" Type="2" />
+	</Error>
+	<Error CmdID="8617">
+		<ErrorCode Code="-100319" Msg="週五、週六、周日的14:00-14:30或19:00-19:30，記得來參加哦！" Type="2" />
+	</Error>
+	<Error CmdID="8616">
+		<ErrorCode Code="-100319" Msg="週五、週六、周日的14:00-14:30或19:00-19:30，記得來參加哦！" Type="2" />
+	</Error>
+	<Error CmdID="504">
+		<ErrorCode Code="-100321" Msg="不能頻繁使用變身道具哦！小摩爾先休息一下吧^_^" Type="2" />
+	</Error>
+</Errors>

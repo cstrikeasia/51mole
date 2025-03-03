@@ -1,0 +1,27 @@
+<Map>
+	<NpcList>
+		<Npc ID="10047" Layer="depthLevel" Name="洛克" Ex="725" Ey="260"  Cmd="s" Param="1" AddTaskOption="1" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="room_btn" Layer="controlLevel" Ex="196" Ey="328" Cmd="alt_map" Param="1" Tips="摩爾城堡" />
+		<Trigger ResName="underRoom_btn" Layer="controlLevel" Ex="202" Ey="357" Cmd="alt_map" Param="14" Tips="城堡地下" />
+		<Trigger ResName="underRoom_mask" Layer="controlLevel" Ex="202" Ey="357" Cmd="alt_map" Param="14" Tips="城堡地下" />
+		<Trigger ResName="soneRoom_btn" Layer="controlLevel" Ex="628" Ey="223" Cmd="alt_map" Param="16" Tips="城堡二樓" />
+	</Triggers>
+	
+	<Talks>
+		
+		<Talk ID="999" NpcID="10047" Face="正常" Msg="謝謝小摩爾！最近莊園的怪事挺多的，你們要小心點。" Option="好的" Cmd="act" Param="fatherDayOver" AddTaskOption="1"  />
+		
+		<Talk ID="1" NpcID="10047" Face="正常" Msg="我是洛克行政官，莊園裡所有的小摩爾都要到我這裡登記公民信息。公民管理處的一切事物都由我掌管。" Option="公民信息登記$沒什麼事" Cmd="act$none" Param="peopleResign$2"  AddTaskOption="1" />
+		
+		<Talk ID="10" NpcID="10047" Face="正常" Msg="哈哈~小摩爾別擔心，我記得我還有一張多餘的邀請函，可以送給你哦！"	 Option="哇~真的嗎？" Cmd="s" Param="11" />
+		<Talk ID="11" NpcID="10047" Face="正常" Msg="當然！我找找看……（五分鐘後）瞧我這記性，我不記得我放在哪兒了。{$username}，你能幫我找找嗎？應該就在城堡大廳的某處。找到後它就歸你了！"	 Option="嗯，好呀，我試試看！" Cmd="act" Param="getInvitation" />
+		<Talk ID="12" NpcID="10047" Face="正常" Msg=""	 Option="" Cmd="s" Param="11" />
+	</Talks>
+</Map>
+
+
+
+

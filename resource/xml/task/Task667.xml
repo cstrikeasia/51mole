@@ -1,0 +1,95 @@
+<Tasks ID="667" Name="瞬間流逝的光陰" AwardMsg="恭喜你獲得1個唐冠螺，2個白緞月季種子和10000摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="15">
+		<EnterMap MapID="15">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10047" Face="正常" Msg="這樣這樣，那樣那樣...." Option="行政官，沙沙，你們在討論什麼大事，好神秘的樣子！我能不能知道呀~~~"/>
+				<Talk NpcID="10047" Face="正常" Msg="{$username}你來了？怎麼沒多休息?" Option=""/>
+				<Talk NpcID="10307" Face="開心" Msg="我和行政官在討論怎麼幫助公主覺醒成為真王的事。" Option="舉爪！！我也要幫忙！！"/>
+				<Talk NpcID="10047" Face="開心" Msg="我們還沒完全想好怎麼做，不如{$username}你先去陪陪公主吧，她這幾天好像在為什麼事兒煩惱著。" Option="好的！哄公主的重任就交給我吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="麼麼公主為什麼那麼苦惱？是因為捷克王子，還是艾蓮娜？"/>
+			
+			<Action Cmd="GO_MAP" MapID="110" MapType="0"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	
+	 <Step ID="2" TarMapID="110">
+		<EnterMap MapID="110">
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="3" TarMapID="110">
+		<EnterMap MapID="110">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			<Action Cmd="GO_MAP" MapID="15" MapType="0"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" TarMapID="15">
+		<EnterMap MapID="15">
+			<Action Cmd="OPEN_PANEL" Param="Task667Panel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="task667" />
+				<Action Cmd="JUMP_TASK_UI" Param="成功幫麼麼公主偽裝好了，現在就溜出城堡吧！"/>
+			<Action Cmd="PLAY_MOVIE"  Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+				<Action Cmd="SAY">
+					<Talk NpcID="10047" Face="正常" Msg="{$username}，公主現在心情怎麼樣了？" Option="好多了，行政官、沙沙，我和小夥伴們先回去了~"/>
+					<Talk NpcID="10047" Face="驚訝" Msg="剛才你不是一個人來的嗎？怎麼多出2個人？" Option=""/>
+					<Talk NpcID="10000" Face="正常" Msg="行政官你忙著和沙沙說話，沒看到我們來找公主很正常！" Option=""/>
+					<Talk NpcID="10047" Face="疑惑" Msg="是這樣嗎？可是……" Option="真的是這樣。行政官你和沙沙先忙，我們走了！"/>
+				</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="PLAY_MOVIE"  Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			<Action Cmd="JUMP_TASK_UI" Param="順利從洛克行政官眼皮底下溜出城堡，麼麼公主一行人來到了神秘花海~"/>
+			<Action Cmd="GO_MAP" MapID="362" MapType="0"/>
+		
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="5" TarMapID="362">
+		<EnterMap MapID="362">
+			<Action Cmd="PLAY_MOVIE"  Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6"/>
+			<Action Cmd="PLAY_MOVIE"  Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10309" Face="傷心" Msg="年輕人，看到你們真是太好了！" Option="大媽你怎麼了？"/>
+				<Talk NpcID="10309" Face="傷心" Msg="我不是大媽，其實我正當雙十年華……" Option=""/>
+				<Talk NpcID="10000" Face="驚訝" Msg="可是你一點也不像！" Option=""/>
+				<Talk NpcID="10309" Face="傷心" Msg="那是因為我們村發生了怪事，許多年輕人一覺醒來就變成老頭老太了。嗚嗚嗚~~~想前天，我還是個貌美如花青春逼人的美麗女子！看看現在的我……嗚嗚嗚~~~" Option=""/>
+				<Talk NpcID="10002" Face="悲傷" Msg="姐姐，你別傷心，你們村莊在哪兒？我們跟你去看看！" Option=""/>
+				<Talk NpcID="10309" Face="感動" Msg="真是太謝謝你們了！" Option="公主，太危險了！"/>
+				<Talk NpcID="10000" Face="開心" Msg="有我和拉仔在，不怕！出發！" Option="……好吧"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE"  Param="7" Name="movie_7" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7"/>
+			<Action Cmd="PLAY_MOVIE"  Param="105" Name="movie_105" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>
+
+
+
+
+

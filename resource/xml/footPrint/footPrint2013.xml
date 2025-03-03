@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 2013腳印 footID 當月腳印的itemID-->
+<xml>
+  <feet name="1月腳印" footID="1352024">
+  	<foot mapID="79"  x="886" y="226" type="2002" dayType="2100000197"/>
+  	<foot mapID="45"  x="432" y="179" type="2003" dayType="2100000198"/>
+  	<foot mapID="76"  x="874" y="206" type="2004" dayType="2100000199"/>
+  	<foot mapID="32"  x="874" y="476" type="2005" dayType="2100000200"/>
+  	<foot mapID="240" x="880" y="406" type="2006" dayType="2100000201"/>
+  </feet>
+  <feet name="2月腳印" footID="1352025">
+  	<foot mapID="10"  x="819" y="307" type="2057" dayType="2100000216"/>
+  	<foot mapID="28"  x="74" y="270" type="2058" dayType="2100000217"/>
+  	<foot mapID="109"  x="834" y="357" type="2059" dayType="2100000218"/>
+  	<foot mapID="9"  x="133" y="379" type="2060" dayType="2100000219"/>
+  	<foot mapID="4" x="680" y="307" type="2061" dayType="2100000220"/>
+  </feet>
+  
+  <feet name="3月腳印" footID="1352026">
+  	<foot mapID="52"  x="563" y="217" type="2144" dayType="2100000226"/>
+  	<foot mapID="124"  x="552" y="196" type="2145" dayType="2100000227"/>
+  	<foot mapID="238"  x="390" y="420" type="2146" dayType="2100000228"/>
+  	<foot mapID="42"  x="687" y="124" type="2147" dayType="2100000229"/>
+  	<foot mapID="142" x="543" y="252" type="2148" dayType="2100000230"/>
+  </feet>
+  <feet name="4月腳印" footID="1352027">
+    <foot mapID="259"  x="354" y="439" type="2258" dayType="2100000239"/>
+  	<foot mapID="31"  x="527" y="254" type="2259" dayType="2100000240"/>
+  	<foot mapID="203"  x="732" y="317" type="2260" dayType="2100000241"/>
+  	<foot mapID="317"  x="241" y="151" type="2261" dayType="2100000242"/>
+  	<foot mapID="105" x="509" y="349" type="2262" dayType="2100000243"/>
+  </feet>
+  <feet name="5月腳印" footID="1352028">
+		<foot mapID="83" x="749" y="268" type="2369" dayType="2100000247"/>
+		<foot mapID="41" x="257" y="502" type="2370" dayType="2100000248"/>
+		<foot mapID="257" x="619" y="317" type="2371" dayType="2100000249"/>
+		<foot mapID="75" x="771" y="487" type="2372" dayType="2100000250"/>
+		<foot mapID="65" x="735" y="412" type="2373" dayType="2100000251"/>
+	</feet>
+  <feet name="6月腳印"  footID="1352029">
+		<foot mapID="24" x="660" y="370" type="2495" dayType="2100000255"/>
+		<foot mapID="72" x="680" y="468" type="2496" dayType="2100000256"/>
+		<foot mapID="236" x="790" y="290" type="2497" dayType="2100000257"/>
+		<foot mapID="76" x="725" y="330" type="2498" dayType="2100000258"/>
+		<foot mapID="43" x="910" y="200" type="2499" dayType="2100000259"/>
+  </feet>
+  <feet name="7月腳印"  footID="1352030">
+  <foot mapID="18"  x="696" y="229" type="2600" dayType="2100000265"/>
+  	<foot mapID="254"  x="913" y="304" type="2601" dayType="2100000266"/>
+  	<foot mapID="60"  x="904" y="432" type="2602" dayType="2100000267"/>
+  	<foot mapID="62"  x="927" y="359" type="2603" dayType="2100000268"/>
+  	<foot mapID="106" x="304" y="351" type="2604" dayType="2100000269"/>
+  </feet>
+  <feet name="8月腳印" footID="1352031">
+  <foot mapID="8"  x="181" y="270" type="2686" dayType="2100000286"/>
+  	<foot mapID="41"  x="543" y="201" type="2687" dayType="2100000287"/>
+  	<foot mapID="9"  x="39" y="240" type="2688" dayType="2100000288"/>
+  	<foot mapID="45"  x="594" y="217" type="2689" dayType="2100000289"/>
+  	<foot mapID="21" x="883" y="527" type="2690" dayType="2100000290"/>
+  </feet>
+  <feet name="9月腳印" footID="1352032">
+   <foot mapID="179"  x="757" y="215" type="2781" dayType="2100000311"/>
+  	<foot mapID="180"  x="936" y="218" type="2782" dayType="2100000312"/>
+  	<foot mapID="50"  x="154" y="230" type="2783" dayType="2100000313"/>
+  	<foot mapID="151"  x="876" y="410" type="2784" dayType="2100000314"/>
+  	<foot mapID="143" x="581" y="173" type="2785" dayType="2100000315"/>
+  </feet>
+  <feet name="10月腳印"  footID="1352033">
+  <foot mapID="345" x="761" y="322" type="2887" dayType="2100000333"/>
+  	<foot mapID="337"  x="67" y="299" type="2886" dayType="2100000332"/>
+ 	<foot mapID="343"  x="917" y="249" type="2885" dayType="2100000331"/>
+  	<foot mapID="42"  x="164" y="133" type="2883" dayType="2100000329"/>
+  	<foot mapID="180"  x="881" y="131" type="2884" dayType="2100000330"/>
+  </feet>
+    <feet name="11月腳印"  footID="1352034">
+    <foot mapID="183"  x="187" y="288" type="2933" dayType="2100000349"/>
+  	<foot mapID="336"  x="422" y="154" type="2934" dayType="2100000350"/>
+  	<foot mapID="112"  x="643" y="300" type="2935" dayType="2100000351"/>
+  	<foot mapID="110"  x="66" y="426" type="2936" dayType="2100000352"/>
+  	<foot mapID="339" x="540" y="133" type="2937" dayType="2100000353"/>
+  </feet>
+  <feet name="12月腳印" footID="1352035">
+  	<foot mapID="83"  x="354" y="439" type="3033" dayType="2100000374"/>
+  	<foot mapID="41"  x="527" y="254" type="3034" dayType="2100000375"/>
+  	<foot mapID="257"  x="732" y="317" type="3035" dayType="2100000376"/>
+  	<foot mapID="75"  x="241" y="151" type="3036" dayType="2100000377"/>
+  	<foot mapID="65" x="509" y="349" type="3037" dayType="2100000378"/>
+  </feet>
+</xml>

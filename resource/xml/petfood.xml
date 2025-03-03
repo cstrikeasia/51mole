@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Attr    0饑餓 1口渴 2清潔 3心情 4健康　5治療　6復活
+Tool =1 表示有功能（清泥巴）
+Tool =2 表示有功能（變色）
+-->
+<house>
+		<Item ID="180001" Name="巧克力豆" Grade="0" Price="10" Hungry="20" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/>
+		<Item ID="180002" Name="麥香牛奶" Grade="0" Price="10" Hungry="0" Thirsty="20" Sanitary="0" Spirit="0" Type="1" Attr="1" Eat="2,3,4,101" Tradability="2"/>
+		<Item ID="180003" Name="泡泡浴" Grade="0" Price="10" Hungry="0" Thirsty="0" Sanitary="20" Spirit="0" Type="1" Attr="2" Eat="2,3,4,101" Tradability="2"/>
+		<Item ID="180004" Name="運動足球" Grade="0" Price="800" Hungry="0" Thirsty="0" Sanitary="0" Spirit="15" Type="2" Max="1" Attr="3" Eat="2,3,4,101" Tradability="2"/>
+		<Item ID="180005" Name="萬能藥水" Grade="0" Price="400" Hungry="20" Thirsty="20" Sanitary="20" Spirit="20" Type="1" Curability="1" Attr="5" Eat="2,3,4,101" Tradability="2"/>
+		<Item ID="180006" Name="復活十字架" Grade="0" Price="0" Hungry="60" Thirsty="60" Sanitary="60" Spirit="60" Type="1" Rebirth="1" Attr="6" Eat="2,3,4,101" Tradability="2"/>
+		<Item ID="180007" Name="青葉粽子" Grade="0" Price="25" Hungry="20" Thirsty="0" Sanitary="0" Spirit="10" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/> 
+		<Item ID="180008" Name="漿果果汁" Grade="0" Price="20" Hungry="0" Thirsty="50" Sanitary="0" Spirit="0" Type="1" Attr="1" Eat="2,3,4,101" Tradability="2"/> 
+		<Item ID="180009" Name="青蘋果洗面乳" Grade="0" Price="20" Hungry="0" Thirsty="0" Sanitary="50" Spirit="0" Type="1" Attr="2" Eat="2,3,4,101" Tradability="2"/> 
+		<Item ID="180010" Name="冰鎮西瓜" Grade="0" Price="20" Hungry="20" Thirsty="20" Sanitary="0" Spirit="0" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/> 
+		<Item ID="180011" Name="逗寵物1" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="0" Spirit="10" Type="1" Tradability="2"/> 
+		<Item ID="180012" Name="逗寵物2" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="0" Spirit="10" Type="1" Tradability="2"/> 
+		<Item ID="180013" Name="逗寵物3" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="0" Spirit="10" Type="1" Tradability="2"/> 
+		<Item ID="180014" Name="運動可樂" Grade="0" Price="15" Hungry="0" Thirsty="30" Sanitary="0" Spirit="0" Type="1" Attr="1" Eat="2,3,4,101" Tradability="2"/> 
+		<Item ID="180015" Name="蔬菜濃湯" Grade="0" Price="0" Hungry="50" Thirsty="50" Sanitary="0" Spirit="50" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/> 
+		<Item ID="180016" Name="中秋月餅" Grade="0" Price="0" Hungry="30" Thirsty="30" Sanitary="0" Spirit="30" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/> 
+		<Item ID="180017" Name="熊熊餅乾" Grade="0" Price="15" Hungry="30" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/> 
+		<Item ID="180018" Name="摩香漢堡" Grade="0" Price="20" Hungry="40" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="0" Eat="3,4,101" Tradability="2"/> 
+	    <Item ID="180019" Name="水晶蛋糕" Grade="0" Price="40" Hungry="80" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="0" Eat="4,101" Tradability="2"/> 
+	    <Item ID="180020" Name="火腿三明治" Grade="0" Price="30" Hungry="60" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/> 
+	    <Item ID="180021" Name="兔兔胡蘿蔔汁" Grade="0" Price="30" Hungry="0" Thirsty="60" Sanitary="0" Spirit="0" Type="1" Attr="1" Eat="2,3,4,101" Tradability="2"/> 
+	    <Item ID="180022" Name="清爽沐浴露" Grade="0" Price="30" Hungry="0" Thirsty="0" Sanitary="60" Spirit="0" Type="1" Attr="2" Eat="2,3,4,101" Tradability="2"/> 
+	    <Item ID="180023" Name="魔法彈簧" Grade="0" Price="1200" Hungry="0" Thirsty="0" Sanitary="0" Spirit="30" Type="2" Max="1" Attr="3" Eat="2,3,4,101" Tradability="2"/> 
+	    <Item ID="180024" Name="喜刷刷牙膏" Grade="0" Price="15" Hungry="0" Thirsty="0" Sanitary="30" Spirit="0" Type="1" Attr="2" Eat="2,3,4,101" Tradability="2"/> 
+		<Item ID="180025" Name="跳跳布丁" Grade="0" Price="0" Hungry="20" Thirsty="20" Sanitary="0" Spirit="20" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/>
+		<Item ID="180026" Name="樂刷刷" Grade="0" Price="0" Hungry="-30" Thirsty="-30" Sanitary="-40" Spirit="0" Type="2" Max="1" Attr="3" Eat="2,3,4,101" Tool="1" Tradability="2"/>
+        <Item ID="180027" Name="可哥果" Grade="0" Price="0" Hungry="50" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/> 
+        <Item ID="180028" Name="咕咕果" Grade="0" Price="0" Hungry="0" Thirsty="50" Sanitary="0" Spirit="0" Type="1" Attr="1" Eat="2,3,4,101" Tradability="2"/> 
+        <Item ID="180029" Name="爽爽果" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="50" Spirit="0" Type="1" Attr="2" Eat="2,3,4,101" Tradability="2"/> 
+        <Item ID="180030" Name="開心果" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="0" Spirit="50" Type="1" Attr="3" Eat="2,3,4,101" Tradability="2"/> 
+        <Item ID="180031" Name="綠色變色丸" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="3" Eat="101" Tool="2" ColorType="10" Tradability="2"/> 
+        <Item ID="180032" Name="橙色變色丸" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="3" Eat="101" Tool="2" ColorType="5" Tradability="2"/> 
+        <Item ID="180033" Name="藍色變色丸" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="3" Eat="101" Tool="2" ColorType="3" Tradability="2"/> 
+        <Item ID="180034" Name="紫色變色丸" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="3" Eat="101" Tool="2" ColorType="8" Tradability="2"/> 
+        <Item ID="180035" Name="紅色變色丸" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="3" Eat="101" Tool="2" ColorType="1" Tradability="2"/> 
+        <Item ID="180036" Name="土色變色丸" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="3" Eat="101" Tool="2" ColorType="9" Tradability="2"/> 
+        <Item ID="180037" Name="粉色變色丸" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="3" Eat="101" Tool="2" ColorType="4" Tradability="2"/> 
+        <Item ID="180038" Name="灰色變色丸" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="3" Eat="101" Tool="2" ColorType="6" Tradability="2" /> 
+        <Item ID="180039" Name="黃色變色丸" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="3" Eat="101" Tool="2" ColorType="2" Tradability="2"/> 
+        <Item ID="180040" Name="黑色變色丸" Grade="0" Price="0" Hungry="0" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="3" Eat="101" Tool="2" ColorType="7" Tradability="2"/> 
+	<Item ID="180041" Name="珍味八寶飯" Grade="0" Price="0" Hungry="40" Thirsty="40" Sanitary="0" Spirit="40" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/> 
+	<Item ID="180042" Name="餃子" Grade="0" Price="0" Hungry="25" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/>
+	<Item ID="180043" Name="蘋果派" Grade="0" Price="0" Hungry="35" Thirsty="35" Sanitary="0" Spirit="35" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/>
+	<Item ID="180044" Name="草莓派" Grade="0" Price="0" Hungry="45" Thirsty="45" Sanitary="0" Spirit="45" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/>
+    <Item ID="180045" Name="拉姆小饅頭" Grade="0" Price="0" Hungry="25" Thirsty="25" Sanitary="0" Spirit="25" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/>
+	<Item ID="180046" Name="黑森林怪味圈" Grade="0" Price="0" Hungry="30" Thirsty="30" Sanitary="0" Spirit="30" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/>
+	<Item ID="180047" Name="熱狗" Grade="0" Price="40" Hungry="50" Thirsty="0" Sanitary="0" Spirit="0" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/>
+	<Item ID="180048" Name="西瓜解暑沖飲" Grade="0" Price="0" Hungry="45" Thirsty="45" Sanitary="0" Spirit="45" Type="1" Attr="1" Eat="2,3,4,101" Tradability="2"/>
+	<Item ID="180049" Name="清涼草莓浴液" Grade="0" Price="50" Hungry="0" Thirsty="0" Sanitary="50" Spirit="0" Type="1" Attr="2" Eat="2,3,4,101" Tradability="2"/>
+	<Item ID="180050" Name="水螢救治藥水" Grade="0" Price="50" Hungry="0" Thirsty="0" Sanitary="50" Spirit="0" Type="1" Attr="2" Eat="2,3,4,101" Tradability="2"/>
+	<Item ID="180051" Name="炎火救治藥水" Grade="0" Price="50" Hungry="0" Thirsty="0" Sanitary="50" Spirit="0" Type="1" Attr="2" Eat="2,3,4,101" Tradability="2"/>
+	<Item ID="180052" Name="金沙救治藥水" Grade="0" Price="50" Hungry="0" Thirsty="0" Sanitary="50" Spirit="0" Type="1" Attr="2" Eat="2,3,4,101" Tradability="2"/>
+	<Item ID="180053" Name="酸甜蘋果汁" Grade="0" Price="20" Hungry="0" Thirsty="20" Sanitary="0" Spirit="0" Type="1" Attr="1" Eat="2,3,4,101" Tradability="2"/>
+	<Item ID="180054" Name="美味花香豆" Grade="0" Price="0" Hungry="30" Thirsty="30" Sanitary="0" Spirit="30" Type="1" Attr="1" Eat="2,3,4,101" Tradability="2"/>
+	<Item ID="180055" Name="牽牛花洗面啫喱" Grade="0" Price="30" Hungry="0" Thirsty="0" Sanitary="30" Spirit="0" Type="1" Attr="2" Eat="2,3,4,101" Tradability="2"/>
+	<Item ID="180056" Name="冰酷可樂" Grade="0" Price="0" Hungry="40" Thirsty="40" Sanitary="40" Spirit="40" Type="1" Attr="1" Eat="2,3,4,101" Tradability="2"/> 
+	<Item ID="180057" Name="雪頂椰汁" Grade="0" Price="20" Hungry="0" Thirsty="20" Sanitary="0" Spirit="0" Type="1" Attr="1" Eat="2,3,4,101" Tradability="3"/> 
+	<Item ID="180058" Name="愛心魔魔球" Grade="0" Price="0" Hungry="40" Thirsty="40" Sanitary="0" Spirit="40" Type="1" Attr="0" Eat="2,3,4,101" Tradability="2"/> 
+	<Item ID="180059" Name="椰香烤餅" Grade="0" Price="0" Hungry="20" Thirsty="20" Sanitary="0" Spirit="20" Type="1" Attr="0" Eat="2,3,4,101" Tradability="3"/> 
+	<Item ID="180060" Name="拉姆魔法洗面乳" Grade="0" Price="40" Hungry="0" Thirsty="0" Sanitary="40" Spirit="0" Type="1" Attr="2" Eat="2,3,4,101" Tradability="3"/> 
+	<Item ID="180061" Name="石榴多多" Grade="0" Price="20" Tradability="2" Max="99" Type="1" Hungry="0" Thirsty="30" Sanitary="0" Spirit="0" Attr="1" Eat="2,3,4,101"/>
+    <Item ID="180062" Name="仙桃玉米酥" Grade="0" Price="0" Tradability="2" Max="99" Type="1" Hungry="30" Thirsty="30" Sanitary="0" Spirit="30" Attr="0" Eat="2,3,4,101"/>
+    <Item ID="180063" Name="石榴甜旋風" Grade="0" Price="0" Tradability="2" Max="99" Type="1" Hungry="40" Thirsty="40" Sanitary="0" Spirit="40" Attr="0" Eat="2,3,4,101"/>
+    <Item ID="180064" Name="泡泡桃汁浴" Grade="0" Price="30" Tradability="2" Type="1" Hungry="0" Thirsty="0" Sanitary="30" Spirit="0" Attr="2" Eat="2,3,4,101"/>
+	<Item ID="180065" Name="傑克南瓜酥" Grade="0" Price="0" Tradability="2" Max="99" Type="1" Hungry="40" Thirsty="40" Sanitary="0" Spirit="40" Attr="0" Eat="2,3,4,101"/>
+	<Item ID="180066" Name="南瓜巫浴液" Grade="0" Price="0" Tradability="2" Max="99" Type="1" Hungry="0" Thirsty="0" Sanitary="40" Spirit="0" Attr="0" Eat="2,3,4,101"/>
+	<Item ID="180067" Name="奶油鬼臉匹薩" Grade="0" Price="0" Tradability="2" Max="99" Type="1" Hungry="30" Thirsty="30" Sanitary="0" Spirit="30" Attr="0" Eat="2,3,4,101"/>
+	<Item ID="180068" Name="怪味南瓜汁" Grade="0" Price="0" Tradability="2" Max="99" Type="1" Hungry="20" Thirsty="20" Sanitary="0" Spirit="20" Attr="0" Eat="2,3,4,101"/>
+	<Item ID="180069" Name="百合花浴液" Grade="0" Price="0" Tradability="1" Max="99" Type="1" Hungry="0" Thirsty="0" Sanitary="30" Spirit="0" Attr="0" Eat="2,3,4,101"/>
+	<Item ID="180070" Name="雲朵麵包" Grade="0" Price="0" Tradability="1" Max="99" Type="1" Hungry="30" Thirsty="30" Sanitary="0" Spirit="30" Attr="0" Eat="2,3,4,101"/>
+	<Item ID="180071" Name="拉姆能量星" Grade="0" Price="0" Tradability="3" Type="1" Hungry="30" Thirsty="30" Sanitary="30" Spirit="30" Attr="0" Eat="2,3,4,5,101,102" Max="99" EatType="food"/>
+    <Item ID="180072" Name="蟲蟲穀特色布丁" Grade="0" Price="0" Tradability="3" Type="1" Hungry="1" Thirsty="1" Sanitary="1" Spirit="1" Attr="1" Max="99" EatType="food"/>
+    <Item ID="180073" Name="優質牛奶" Grade="0" Price="0" Tradability="3" Type="1" Hungry="50" Thirsty="50" Sanitary="0" Spirit="50" Attr="1" Eat="2,3,4,5,101,102" Max="99" EatType="drenk"/>
+    <Item ID="180097" Name="比巴蔔泡泡糖" Grade="0" Price="50" Tradability="3" Type="1" Hungry="0" Thirsty="0" Sanitary="0" Spirit="80" Attr="0" Eat="2,3,4,5,101,102" Max="99999" EatType="gum"/>
+    <Item ID="180098" Name="熊博士口嚼糖" Grade="0" Price="50" Tradability="3" Type="1" Hungry="0" Thirsty="0" Sanitary="0" Spirit="80" Attr="0" Eat="2,3,4,5,101,102" Max="99999" EatType="food"/>
+    <Item ID="180115" Name="健達奇趣蛋" Grade="0" Price="100" Tradability="2" Type="1" Hungry="40" Thirsty="0" Sanitary="0" Spirit="60" Attr="0" Eat="2,3,4,5,101,102" Max="99999" EatType="food"/>
+	</house>

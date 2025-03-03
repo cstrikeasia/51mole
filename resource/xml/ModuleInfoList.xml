@@ -1,0 +1,88 @@
+﻿<ModuleList>
+	<Module ID="10001" Name="海之迷城" ModuleName="Task460SeeCluePanel" ModuleType="p" />
+	<Module ID="10002" Name="人魚國度探險進度" ModuleName="MermaidCountrySchedulePanel" ModuleType="p" />
+	<Module ID="10003" Name="海妖的線索" ModuleName="MermaidCountryCluePanel" ModuleType="p" />
+	<Module ID="10004" Name="人魚國度探險進度 兌換面板" ModuleName="MermaidCountrySwapPanel" ModuleType="p" />
+	<Module ID="10005" Name="那些年我們一起玩的遊戲" ModuleName="BeforeGamePanel" ModuleType="p" />
+	<Module ID="10006" Name="任務檔案" ModuleName="TaskFilesPanel" ModuleType="p" />
+	<Module ID="10007" Name="希冀之海" ModuleName="Task489Panel" ModuleType="p" />
+	<Module ID="10008" Name="神殿囚徒" ModuleName="Task399SpinPanel" ModuleType="p" />
+	<Module ID="10009" Name="庫拉的煩惱-交互" ModuleName="TaskPackGame" ModuleType="g" />
+	<Module ID="10010" Name="王子之約" ModuleName="PrincerConventionUi" ModuleType="p" />
+	<Module ID="10011" Name="時空之門2-交互" ModuleName="TimeGateTwoUi" ModuleType="p" />
+	<Module ID="10012" Name="回歸調查" ModuleName="FlybackSurveyPanel" ModuleType="p" />
+	<Module ID="10013" Name="海洋之心 交互遊戲" ModuleName="SeaHeartUi" ModuleType="p" />
+	<Module ID="10014" Name="太漬系列：2敵菌大排查 交互遊戲" ModuleName="TidePanel" ModuleType="p" />
+	<Module ID="10015" Name="遊戲達人-----達人徽章 " ModuleName="DaBadges" ModuleType="p" />
+	<Module ID="10016" Name="海妖之圍----交互1 " ModuleName="SpinLobsterUi" ModuleType="p" />
+	<Module ID="10017" Name="海妖之圍----交互2 " ModuleName="RunAwayUi" ModuleType="p" />
+	<Module ID="10018" Name="海妖之圍----交互3 " ModuleName="OctopusEatUi" ModuleType="p" />
+	<Module ID="10019" Name="第一輪除菌保衛戰----遊戲 " ModuleName="TaiziGame" ModuleType="p" />
+	<Module ID="10020" Name="藏寶之地----交互1 " ModuleName="GoldMapUi" ModuleType="p" />
+	<Module ID="10021" Name="藏寶之地----交互2 " ModuleName="SpinGemUi" ModuleType="p" />
+	<Module ID="10022" Name="汰漬健康大普查 " ModuleName="TaiZiSearchUi" ModuleType="p" />
+	<Module ID="10023" Name="肯德基餐廳找東西的交互 " ModuleName="KFCSearchUi" ModuleType="p" />
+	<Module ID="10024" Name="最炫家園風面板 " ModuleName="ShinePresentPanel" ModuleType="p" />
+	<Module ID="10025" Name="小動物拔荊棘 " ModuleName="AnimalThornsPullPanel" ModuleType="p" />
+	<Module ID="10026" Name="追雲的遊戲 " ModuleName="AvoidCloudPanel" ModuleType="p" />
+	<Module ID="10027" Name="任務中用到的追雲的遊戲 " ModuleName="TaskAvoidCloudPanel2" ModuleType="p" />
+	<Module ID="10028" Name="Task515用到的穿樹洞交互 " ModuleName="CrossHole" ModuleType="p" />
+	<Module ID="10029" Name="黑森林主線任務---黑龍之戰之摩爾來找茬" ModuleName="MoleSearch" ModuleType="p" />
+	<Module ID="10030" Name="Task517給莊園的居民發請貼" ModuleName="Task517InvitationPanel" ModuleType="p" />
+	<Module ID="10031" Name="拜訪婚紗小店的面板" ModuleName="VisitWeddingShop" ModuleType="p" />
+	<Module ID="10032" Name="Task518老鷹抓小雞的交互" ModuleName="EagleGrabbedGame" ModuleType="p" />
+	<Module ID="10033" Name="Task519" ModuleName="VisitWeddingShop" ModuleType="p" />
+	<Module ID="10034" Name="肯德基調查表" ModuleName="KFCSurvey" ModuleType="p" />
+	<Module ID="10035" Name="我要抽獎的面板" ModuleName="ChouJiang" ModuleType="p" />
+	<Module ID="10036" Name="Task521得到衣服的面板" ModuleName="Task521Get" ModuleType="p" />
+	<Module ID="10037" Name="Task525製作卡片的交互" ModuleName="MakeCardUi" ModuleType="p" />
+	<Module ID="10038" Name="12星座服裝特賣" ModuleName="StarSalePanel" ModuleType="p" />
+	<Module ID="10039" Name="威尼斯魔術師" ModuleName="VeniceMaginner" ModuleType="p" />
+	<Module ID="10040" Name="水上計程車" ModuleName="WaterTaxiGame" ModuleType="p" />
+	<Module ID="10041" Name="守護傳送門" ModuleName="GuardianPortalGame" ModuleType="p" />
+	<Module ID="10042" Name="中秋投擲手裡劍" ModuleName="ShurikenGameTwo" ModuleType="p" />
+	<Module ID="10043" Name="SMC面板" ModuleName="SMCPanel" ModuleType="p" />
+	<Module ID="10044" Name="製作月餅的面板" ModuleName="MakeMoonCakePanel" ModuleType="p" />
+	<Module ID="10045" Name="task534中用到的逃跑遊戲" ModuleName="EscapeGame" ModuleType="p" />
+	<Module ID="10046" Name="天空樹關注能量的面板" ModuleName="AngelTreePanel" ModuleType="p" />
+	<Module ID="10047" Name="連接的小遊戲" ModuleName="BallGame" ModuleType="p" />
+	<Module ID="10048" Name="謎底搶先猜的面板交互" ModuleName="GuessAnswerPanel" ModuleType="p" />
+	<Module ID="10049" Name="惡魔島面板交互" ModuleName="SpainGhostPanel" ModuleType="p" />
+	<Module ID="10050" Name="小小偵探來找茬的交互" ModuleName="SmallSpyPanel" ModuleType="p" />
+	<Module ID="10051" Name="給步多多畫衣服的交互" ModuleName="MolePainter3" ModuleType="p" />
+	<Module ID="10052" Name="旋轉球的交互" ModuleName="LuRotateBalls" ModuleType="p" />
+	<Module ID="10053" Name="解釋ing的面板" ModuleName="LuExplainIngPanel" ModuleType="p" />
+	<Module ID="10054" Name="點亮小熊的面板" ModuleName="LightBearpanel" ModuleType="p" />
+	<Module ID="10055" Name="尋找黑暗種子" ModuleName="BlackSeedSearch" ModuleType="p" />
+	<Module ID="10056" Name="原子遊戲第2關" ModuleName="BallGame2" ModuleType="p" />
+	<Module ID="10057" Name="原子遊戲第3關" ModuleName="BallGame3" ModuleType="p" />
+	<Module ID="10058" Name="原子遊戲第4關" ModuleName="BallGame4" ModuleType="p" />
+	<Module ID="10059" Name="原子遊戲第17關" ModuleName="BallGame17" ModuleType="p" />
+	<Module ID="10060" Name="原子遊戲第22關" ModuleName="BallGame22" ModuleType="p" />
+	<Module ID="10061" Name="原子遊戲第24關" ModuleName="BallGame24" ModuleType="p" />
+	<Module ID="10062" Name="原子遊戲第27關" ModuleName="BallGame27" ModuleType="p" />
+	<Module ID="10063" Name="原子遊戲第29關" ModuleName="BallGame29" ModuleType="p" />
+	<Module ID="10064" Name="原子遊戲第32關" ModuleName="BallGame32" ModuleType="p" />
+	<Module ID="10065" Name="每天登陸面板" ModuleName="DailyRollPanel" ModuleType="p" />
+	<Module ID="10066" Name="耶誕節砸彩蛋的活動" ModuleName="LuckyEgg" ModuleType="p" />
+	<Module ID="10067" Name="小雪人的新衣 " ModuleName="SmallSnowClothPanel" ModuleType="p" />
+	<Module ID="10068" Name="我要砸蛋面板 " ModuleName="SmashEggPanel" ModuleType="p" />
+	<Module ID="10069" Name="新年登陸領好禮面板 " ModuleName="NewYearLoginPanel" ModuleType="p" />
+	<Module ID="10070" Name="天使尋寶大賽 " 		ModuleName="AngelTreasureCompetitionPanel" 	ModuleType="p" />
+	<Module ID="10071" Name="抓住小惡魔 " 			ModuleName="CatchSmallGhostPanel" 			ModuleType="p" />
+	<Module ID="10072" Name="一摩爾豆秒殺服裝 "		ModuleName="KillClothesPanel" 				ModuleType="p" />
+	<Module ID="10073" Name="太空來的喵星人"		ModuleName="TaskCatAlienGame" 				ModuleType="p" />
+	<Module ID="10074" Name="時裝大投稿"		    ModuleName="BangerBabyPanel" 				ModuleType="p" />
+	<Module ID="10075" Name="逃脫地牢"		   	ModuleName="MinesGamePanel" 				ModuleType="p" />
+	<Module ID="10076" Name="小小設計師"		   	ModuleName="DressGamePanel" 				ModuleType="p" />
+	<Module ID="10077" Name="李鼎記"		   		ModuleName="TomatoSauceMakePanel" 				ModuleType="p" />
+	<Module ID="10078" Name="克萊斯勒"		   	ModuleName="KeLaiSiLePanel" 				ModuleType="p" />
+	<Module ID="10079" Name="滴露畫圈圈"		   	ModuleName="DiLuCirclePicPanel" 			ModuleType="p" />
+	<Module ID="10080" Name="滴露畫圈圈"		   	ModuleName="DiluTurnPanel" 					ModuleType="p" />
+	<Module ID="10081" Name="吹蠟燭小遊戲"		   	ModuleName="KFCBlowCandlesGame" 			ModuleType="p" />
+	<Module ID="10082" Name="蛋蛋的滑冰小遊戲"		ModuleName="DanDanSkipGame" 				ModuleType="p" />
+	<Module ID="10083" Name="主線猜字遊戲"		   	ModuleName="TaskGuessWordPanel" 			ModuleType="p" />
+	<Module ID="10084" Name="健達的小遊戲"		   	ModuleName="KinderMakeEggPanel" 			ModuleType="p" />
+	<Module ID="10085" Name="回憶錄長廊面板"		ModuleName="ReviewGalleryPanel" 			ModuleType="p" />
+	<Module ID="10086" Name="建達巧克力做紙花"		ModuleName="KindaNewyearPartyPanel" 		ModuleType="p" />
+</ModuleList>

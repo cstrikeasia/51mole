@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+        <!-- This section contains information for configuring the server. -->
+
+<taomee ErrorWeb="222.73.0.112"  HouseWeb="203.73.22.201" allversion="A=A0.31" regversion="B=B0.1" indexversion="C=C0.6"   uiversion="D=D0.1"  mapversion="E=E0.1" moduleversion="F=F0.1"/>
+  <Email ip="203.73.22.200" port="8888" />
+  <DirSer ip="203.73.22.200" port="8888" />
+  <GetPassWord ip="203.73.22.194" port="80" />
+  <ModPassword ip="203.73.22.194" port="80" />
+  <PassWord ip="203.73.22.194" port="80" />
+  <RegistSer ip="203.73.22.200" port="3200" />
+  <Visitor ip="203.73.22.200" port="8888" />
+  <GameSer ip="203.73.22.202" port="4000" />
+
+</config>

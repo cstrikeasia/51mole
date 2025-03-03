@@ -1,0 +1,334 @@
+<!-- 
+ID 10000-20000 正常NPC 			20000-30000 臨時NPC
+Name
+Sex	性別（1：男 0：女 2：拉姆 3：其它
+ -->
+<NpcList>
+	<Npc ID="10000" Name="摩樂樂" Sex="1" MoveSpeed="5" />
+	<Npc ID="10001" Name="拉仔" Sex="2"  MoveSpeed="5" />
+	<Npc ID="10002" Name="麼麼公主" Sex="0"  MoveSpeed="5"  />
+	<Npc ID="10003" Name="庫拉" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10004" Name="骰子" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10005" Name="RK" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10006" Name="魯比" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10007" Name="菩提大伯" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10008" Name="葡萄" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10009" Name="丫麗" Sex="0"  MoveSpeed="5"  />
+	<Npc ID="10010" Name="布多多" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10011" Name="布少少" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10012" Name="粒粒" Sex="0"  MoveSpeed="5"  />
+	<Npc ID="10013" Name="花嬸" Sex="0"  MoveSpeed="5"  />
+	<Npc ID="10014" Name="美人魚" Sex="0"  MoveSpeed="5"  />
+	<Npc ID="10015" Name="兔兔主編" Sex="0"  MoveSpeed="5"  />
+	<Npc ID="10016" Name="大衛" Sex="1"  MoveSpeed="5"  />
+	
+	<Npc ID="10018" Name="小乖" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10019" Name="艾爾" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10020" Name="安迪" Sex="0"  MoveSpeed="5"  />
+	<Npc ID="10021" Name="艾米" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10022" Name="阿七" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10023" Name="亞撒長老" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10024" Name="閻行飛龍" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10025" Name="臭臭" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10026" Name="克勞" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10027" Name="西索" Sex="0"  MoveSpeed="5"  />
+	<Npc ID="10028" Name="迪克" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10029" Name="弗蘭克" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10030" Name="弗禮德" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10031" Name="傑拉德" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10032" Name="吉娜" Sex="0"  MoveSpeed="5"  />
+	<Npc ID="10033" Name="哈哈魔法師" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10034" Name="漢青" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10036" Name="捷克" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10037" Name="傑西" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10038" Name="凱文" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10039" Name="庫洛" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10040" Name="樂樂俠" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10041" Name="梅森" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10042" Name="尼克" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10043" Name="奇奇" Sex="3" MoveSpeed="5"  />
+	
+	<Npc ID="10045" Name="瑞琪" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10047" Name="洛克" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10048" Name="小瑞琪" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10049" Name="威爾" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10050" Name="尤尤" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10051" Name="小仔" Sex="2" MoveSpeed="5"  />
+	<Npc ID="10052" Name="彩虹姐姐" Sex="0" MoveSpeed="5"  />
+	
+	<Npc ID="10053" Name="獵人M" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10054" Name="待女" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10055" Name="絲爾特" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10056" Name="臭臭二號" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10057" Name="瑪麗" Sex="0"  MoveSpeed="5"  />
+	<Npc ID="10058" Name="伊蓮" Sex="0"  MoveSpeed="5"  />
+	<Npc ID="10059" Name="老腦袋" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10060" Name="土林長老" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10061" Name="索菲亞" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10062" Name="貝塔" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10063" Name="湯米" Sex="1"  MoveSpeed="5"  />
+	<Npc ID="10064" Name="灰姑娘" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10065" Name="小紅帽" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10066" Name="醜小鴨" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10067" Name="神秘的人魚石像" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10068" Name="KFC店員" Sex="2"  MoveSpeed="5"  />
+    <Npc ID="10069" Name="珊瑚" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10070" Name="死亡的拉姆" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10071" Name="小小亞撒" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10072" Name="木系酋長" Sex="2"  MoveSpeed="5"  />
+	
+	<Npc ID="10073" Name="小火花" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10074" Name="小火燭" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10075" Name="小火星" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10076" Name="火系酋長" Sex="2"  MoveSpeed="5"  />
+	
+	<Npc ID="10077" Name="小樹葉" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10078" Name="小樹根" Sex="2"  MoveSpeed="5"  />
+	<Npc ID="10079" Name="小樹枝" Sex="2" MoveSpeed="5"  />
+	
+	<Npc ID="10080" Name="小水珠" Sex="2" MoveSpeed="5"  />
+	<Npc ID="10081" Name="小水滴" Sex="2" MoveSpeed="5"  />
+	<Npc ID="10082" Name="小水柱" Sex="2" MoveSpeed="5"  />
+	<Npc ID="10083" Name="水系酋長" Sex="2" MoveSpeed="5"  />	
+	
+	<Npc ID="10084" Name="神秘蝸牛先生" Sex="2" MoveSpeed="5"  />
+	<Npc ID="10085" Name="神秘商人" Sex="2" MoveSpeed="5"  />	
+	<Npc ID="10086" Name="棉花糖鼓風機" Sex="2" MoveSpeed="5"  />
+	<Npc ID="10087" Name="七色花" Sex="2" MoveSpeed="5"  />	
+	<Npc ID="10088" Name="神秘人" Sex="2" MoveSpeed="5"  />	
+	<Npc ID="10089" Name="拉姆" Sex="2" MoveSpeed="5"  />
+	<Npc ID="10090" Name="保羅王子" Sex="2" MoveSpeed="5"  />
+	
+	<Npc ID="10091" Name="春田花花" Sex="2" MoveSpeed="5" />
+	<Npc ID="10092" Name="花寶" Sex="2" MoveSpeed="5"  />
+	<Npc ID="10093" Name="汰漬除菌小精靈" Sex="2" MoveSpeed="5" />
+	
+	<Npc ID="10094" Name="大箱子" Sex="2" MoveSpeed="5"  />
+	
+	<Npc ID="10095" Name="人魚公主" Sex="2" MoveSpeed="5" />
+	<Npc ID="10096" Name="其其" Sex="1" MoveSpeed="5" />
+	<Npc ID="10097" Name="龍大俠" Sex="1" MoveSpeed="5" />
+	<Npc ID="10098" Name="小海妖" Sex="2" MoveSpeed="5" />
+	<Npc ID="10099" Name="騎士" Sex="1" MoveSpeed="5" />
+	<Npc ID="10100" Name="蔣誠信" Sex="1" MoveSpeed="5" />
+	
+	<Npc ID="10101" Name="珍妮" Sex="1" MoveSpeed="5" />
+	<Npc ID="10102" Name="荷花仙" Sex="0" MoveSpeed="5" />
+	<Npc ID="10103" Name="龍二俠" Sex="0" MoveSpeed="5" />
+	<Npc ID="10104" Name="章魚王" Sex="2" MoveSpeed="5" />
+	
+	<Npc ID="10105" Name="帕帕囧" Sex="2" MoveSpeed="5" />
+	
+	<Npc ID="10106" Name="海妖王" Sex="2" MoveSpeed="5" />
+	<Npc ID="10107" Name="保羅" Sex="1" MoveSpeed="5" Desc="帥包羅" />
+	<Npc ID="10108" Name="紫風靈雲" Sex="2" MoveSpeed="5" />
+	<Npc ID="10109" Name="小動物" Sex="2" MoveSpeed="5" />       <!--蘑蘑菌刺猬 -->
+	<Npc ID="10110" Name="蘑蘑菌" Sex="2" MoveSpeed="5" />
+	<Npc ID="10111" Name="小動物" Sex="2" MoveSpeed="5" />     <!--蘑蘑菌獨角獸 -->
+	<Npc ID="10112" Name="小動物" Sex="2" MoveSpeed="5" />    <!--滿身包的蘑蘑菌 -->
+	<Npc ID="10113" Name="荊棘寶寶" Sex="2" MoveSpeed="5" />
+	<Npc ID="10114" Name="斗篷姑娘" Sex="0" MoveSpeed="5" />	
+	<Npc ID="10115" Name="毛毛頭酋長" Sex="2" MoveSpeed="5" />
+	<Npc ID="10116" Name="小毛毛頭" Sex="2" MoveSpeed="5" />
+	<Npc ID="10117" Name="菲尼克斯" Sex="3" MoveSpeed="5" />	
+	<Npc ID="10118" Name="小庫拉" Sex="0" MoveSpeed="5" />	
+	<Npc ID="10119" Name="小瑞琪" Sex="0" MoveSpeed="5" />	
+	<Npc ID="10120" Name="菩提大伯" Sex="0" MoveSpeed="5" Desc="庫拉分身假扮"  />	
+	<Npc ID="10121" Name="庫拉分身" Sex="0" MoveSpeed="5" />	
+	<Npc ID="10122" Name="愛麗莎" Sex="0" MoveSpeed="5" />	
+	<Npc ID="10123" Name="鳶尾仙子" Sex="0" MoveSpeed="5" />	
+	<Npc ID="10124" Name="保羅" Sex="0" MoveSpeed="5" Desc="夏威夷裝帥包羅"  />	
+	<Npc ID="10125" Name="籮絲" Sex="1" MoveSpeed="5" Desc="夏威夷裝籮絲"  />	
+	<Npc ID="10126" Name="小兔子" Sex="1" MoveSpeed="5" />	
+	<Npc ID="10127" Name="炸花校長" Sex="0" MoveSpeed="5" />	
+	<Npc ID="10128" Name="路人" Sex="1" MoveSpeed="5" Desc="發傳單的醬油小摩爾"  />	
+	<Npc ID="10129" Name="神秘占星師" Sex="0" MoveSpeed="5" />
+	<Npc ID="10130" Name="麼麼公主" Sex="0" MoveSpeed="5" Desc="戴著漂亮美瞳的麼麼公主"  />
+	<Npc ID="10131" Name="丫麗" Sex="0" MoveSpeed="5" Desc="戴著漂亮美瞳的丫麗"  />
+	<Npc ID="10132" Name="丫麗" Sex="0" MoveSpeed="5" Desc="戴著誇張美瞳的丫麗"  />
+	<Npc ID="10133" Name="迷你星" Sex="1" MoveSpeed="5" />
+	<Npc ID="10134" Name="宴會嘉賓" Sex="1" MoveSpeed="5" />
+	<Npc ID="10135" Name="暴走月餅" Sex="1" MoveSpeed="5" />
+	<Npc ID="10136" Name="月餅商人" Sex="1" MoveSpeed="5" />
+	
+	<Npc ID="10137" Name="風之神" Sex="1" MoveSpeed="5" />
+	<Npc ID="10138" Name="雨之神" Sex="1" MoveSpeed="5" />
+	<Npc ID="10139" Name="時之神" Sex="1" MoveSpeed="5" />
+	<Npc ID="10140" Name="光之神" Sex="1" MoveSpeed="5" />
+	<Npc ID="10141" Name="大地之神" Sex="1" MoveSpeed="5" />
+	<Npc ID="10142" Name="雪劍哥哥" Sex="1" MoveSpeed="5" />
+	<Npc ID="10143" Name="宴會大廚" Sex="1" MoveSpeed="5" />
+	<Npc ID="10144" Name="KFC小店員" Sex="1" MoveSpeed="5" />
+	<Npc ID="10145" Name="布多多" Sex="1" MoveSpeed="5"  Desc="戴著金色假發的布多多" />
+	<Npc ID="10146" Name="布多多" Sex="1" MoveSpeed="5"  Desc="全身藍色且戴著金色假發的布多多" />
+	<Npc ID="10147" Name="丫麗" Sex="0" MoveSpeed="5"  Desc="穿著一身盔甲，但是沒戴頭盔的丫麗" />
+	<Npc ID="10148" Name="雪精靈" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10149" Name="幼年麼麼公主" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10150" Name="拉姆王" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10151" Name="黑衣人" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10152" Name="黑貓捷克" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10153" Name="迪迪拉" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10154" Name="古德摩.零" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10155" Name="珠寶商人" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10156" Name="古德摩.零" Sex="0" MoveSpeed="5"  Desc="暴走的古德摩.零，有翅膀有角" />
+	<Npc ID="10157" Name="黑暗天使" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10158" Name="聖誕老人" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10159" Name="小丑" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10160" Name="帕拉" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10161" Name="尼爾拉法師" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10162" Name="喜狼狼" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10163" Name="灰羊羊" Sex="1" MoveSpeed="5"  />
+	
+	<Npc ID="10164" Name="莉蓮" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10165" Name="瑞秋" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10166" Name="泰尼" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10167" Name="尤瑞克" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10168" Name="伊森" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10169" Name="瑪納" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10170" Name="威廉" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10171" Name="漢斯" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10172" Name="站崗騎士" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10173" Name="庫拉" Sex="1" MoveSpeed="5" Desc="娘化版的，穿粉紅裙子" />
+	<Npc ID="10174" Name="點點" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10175" Name="拉姆志願者" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10176" Name="吉格斯" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10177" Name="魯魯" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10178" Name="菲斯" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10179" Name="帕拉" Sex="1" MoveSpeed="5" Desc="裝扮成拉姆的帕拉" />
+	<Npc ID="10180" Name="吉格斯" Sex="1" MoveSpeed="5" Desc="裝扮成拉姆的吉格斯" />
+	<Npc ID="10181" Name="菲斯" Sex="1" MoveSpeed="5" Desc="裝扮成拉姆的菲斯" />
+	<Npc ID="10182" Name="魯魯" Sex="1" MoveSpeed="5" Desc="裝扮成拉姆的魯魯" />
+	<Npc ID="10183" Name="神秘天使寶寶" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10184" Name="許願星" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10185" Name="流星一" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10186" Name="流星二" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10187" Name="流星三" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10188" Name="RK" Sex="1" MoveSpeed="5" Desc="優化版" />
+	<Npc ID="10189" Name="夢想守護者" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10190" Name="寶物天使" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10191" Name="偶得" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10192" Name="尤瑞克" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10193" Name="波波" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10194" Name="小萌妞 羊羊" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10195" Name="年輕尤瑞克" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10196" Name="卡羅拉" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10197" Name="小摩爾" Sex="1" MoveSpeed="5" Desc="玩家的通用形象" />
+	<Npc ID="10198" Name="瑞琪" Sex="1" MoveSpeed="5" Desc="穿龍騎士盔甲" />
+	<Npc ID="10199" Name="F4：惡魔先遣隊" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10200" Name="卡羅拉" Sex="1" MoveSpeed="5" Desc="靈魂狀態" />
+	<Npc ID="10201" Name="潘恩" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10202" Name="零零" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10203" Name="盧卡斯" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10204" Name="時之女神石像" Sex="0" MoveSpeed="5"  />
+	<Npc ID="10205" Name="招財使者" Sex="1" MoveSpeed="5"  />
+	<Npc ID="10206" Name="麼麼公主" Sex="0" MoveSpeed="5"  Desc="水靈鎧甲版"/>
+	<Npc ID="10207" Name="丫麗" Sex="0" MoveSpeed="5"  Desc="火靈鎧甲版"/>
+	<Npc ID="10208" Name="摩樂樂" Sex="1" MoveSpeed="5"  Desc="風靈鎧甲版"/>
+	<Npc ID="10209" Name="菩提大伯" Sex="1" MoveSpeed="5" Desc="土靈鎧甲版本" />
+	<Npc ID="10210" Name="華利弗" Sex="1" MoveSpeed="5" Desc="魔法學院7號" />
+	<Npc ID="10211" Name="伊絲特" Sex="0" MoveSpeed="5" Desc="魔法學院8號" />
+	<Npc ID="10212" Name="拉比特" Sex="1" MoveSpeed="5" Desc="魔法學院10號" />
+	<Npc ID="10213" Name="巴圖魯" Sex="1" MoveSpeed="5" Desc="艾蓮娜的父親，摩利亞酋長" />
+	<Npc ID="10214" Name="白衣侍衛" Sex="1" MoveSpeed="5" Desc="瑞琪喬裝" />
+	<Npc ID="10215" Name="火神" Sex="1" MoveSpeed="5" Desc="火神盃的火神" />
+	<Npc ID="10216" Name="艾蓮娜" Sex="0" MoveSpeed="5" Desc="女神之淚的摩爾形態" />
+	<Npc ID="10217" Name="受傷的摩摩兔" Sex="3" MoveSpeed="5" Desc="摩摩兔受傷狀態" />
+	<Npc ID="10218" Name="摩摩兔媽" Sex="3" MoveSpeed="5" Desc="樓上那位的媽" />
+	<Npc ID="10219" Name="摩摩兔" Sex="3" MoveSpeed="5" Desc="生活在龍巢迷宮的貪婪兔子" />
+	<Npc ID="10220" Name="女神之淚" Sex="0" MoveSpeed="5" Desc="艾蓮娜覺醒為女神之淚的樣子" />
+	<Npc ID="10221" Name="伊絲特" Sex="0" MoveSpeed="5" Desc="彌留的伊絲特，渾身是傷" />
+	<Npc ID="10222" Name="黑衣人" Sex="1" MoveSpeed="5" Desc="蒙牛未來星的客串NPC" />
+	<Npc ID="10223" Name="摩爾王靈魂" Sex="1" MoveSpeed="5" Desc="王子復仇記角色——丹麥王的靈魂，扮演者摩爾八世" />
+	<Npc ID="10224" Name="哈姆雷特" Sex="1" MoveSpeed="5" Desc="王子復仇記角色——丹麥王子哈姆雷特，扮演者麼麼公主" />
+	<Npc ID="10225" Name="克洛帝阿斯" Sex="1" MoveSpeed="5" Desc="王子復仇記角色——陰險毒殺國王的叔父，扮演者庫拉" />
+	<Npc ID="10226" Name="葛楚瑞" Sex="1" MoveSpeed="5" Desc="王子復仇記角色——不貞的皇后，扮演者哈娜皇后" />
+	<Npc ID="10227" Name="歐菲莉亞" Sex="1" MoveSpeed="5" Desc="王子復仇記角色——哈姆雷特的未婚妻，扮演者粒粒" />
+	<Npc ID="10228" Name="波洛涅斯" Sex="1" MoveSpeed="5" Desc="王子復仇記角色——歐菲莉亞的哥哥，扮演者菩提大伯" />
+	<Npc ID="10229" Name="雷地阿斯" Sex="1" MoveSpeed="5" Desc="王子復仇記角色——歐菲莉亞的哥哥，扮演者塞拉" />
+	<Npc ID="10230" Name="霍拉旭" Sex="1" MoveSpeed="5" Desc="王子復仇記角色——哈姆雷特的朋友，扮演者小摩爾，這個待定" />
+	<Npc ID="10231" Name="莎士摩亞" Sex="1" MoveSpeed="5" Desc="寫出王子復仇記角色的瘋狂劇作家，紙之國的國王" />
+	<Npc ID="10232" Name="喵喵公主" Sex="1" MoveSpeed="5" Desc="喵國度的公主" />
+	<Npc ID="10233" Name="黑貓先森" Sex="1" MoveSpeed="5" Desc="喵國度的小黑貓" />
+	<Npc ID="10234" Name="士兵" Sex="1" MoveSpeed="5" Desc="士兵" />
+	<Npc ID="10235" Name="尤瑞克" Sex="1" MoveSpeed="5" Desc="尤瑞克" />
+	<Npc ID="10236" Name="奇怪的問路人甲" Sex="1" MoveSpeed="5" Desc="奇怪的問路人甲" />
+	<Npc ID="10237" Name="奇怪的問路人乙" Sex="1" MoveSpeed="5" Desc="奇怪的問路人乙" />
+	<Npc ID="10238" Name="普通士兵" Sex="1" MoveSpeed="5" Desc="普通士兵" />
+	<Npc ID="10239" Name="麼麼公主" Sex="0" MoveSpeed="5" Desc="盛裝禮服的公主" />
+	<Npc ID="10240" Name="肖恩" Sex="3" MoveSpeed="5" Desc="肖恩" />
+	<Npc ID="10241" Name="傑西" Sex="3" MoveSpeed="5" Desc="傑西" />
+	<Npc ID="10242" Name="企鵝士兵甲" Sex="3" MoveSpeed="5" Desc="活動需要" />
+	<Npc ID="10243" Name="企鵝士兵乙" Sex="3" MoveSpeed="5" Desc="活動需要" />
+	<Npc ID="10244" Name="老超" Sex="3" MoveSpeed="5" Desc="2013年寒假主線" />
+	<Npc ID="10245" Name="聖誕老人" Sex="1" MoveSpeed="5" Desc="2013年聖誕節只有內褲的聖誕老人" />
+	<Npc ID="10246" Name="健達寶寶" Sex="1" MoveSpeed="5" Desc="健達寶寶老摩爾莊園了" />
+	<Npc ID="10247" Name="豆豆" Sex="3" MoveSpeed="5" Desc="吃飯睡覺打豆豆的那個豆豆" />
+	<Npc ID="10248" Name="聖誕老人" Sex="3" MoveSpeed="5" Desc="開心農場賣東西的NPC" />
+	<Npc ID="10249" Name="蛋蛋" Sex="3" MoveSpeed="5" Desc="會賣萌的蛋蛋" />
+	<Npc ID="10250" Name="潑卡" Sex="3" MoveSpeed="5" Desc="壽司" />
+	<Npc ID="10251" Name="貝羅" Sex="3" MoveSpeed="5" Desc="壽司" />
+	<Npc ID="10252" Name="小笨生" Sex="2" MoveSpeed="5" Desc="漢青拉姆" />
+	<Npc ID="10253" Name="漢青" Sex="3" MoveSpeed="5" Desc="海盜版" />
+	<Npc ID="10254" Name="扣扣" Sex="2" MoveSpeed="5" Desc="海盜船長" />
+	<Npc ID="10255" Name="企鵝雪人" Sex="3" MoveSpeed="5" Desc="打雪仗npc" />
+	<Npc ID="10256" Name="摩爾雪人" Sex="3" MoveSpeed="5" Desc="打雪仗npc" />
+	<Npc ID="10257" Name="海賊小兵" Sex="3" MoveSpeed="5" Desc="我是一個兵" />
+	<Npc ID="10258" Name="飛飛" Sex="2" MoveSpeed="5" Desc="我是菩提的拉姆！" />
+	<Npc ID="10259" Name="扣扣" Sex="2" MoveSpeed="5" Desc="海盜船長" />
+	<Npc ID="10260" Name="庫拉" Sex="1" MoveSpeed="5" Desc="海盜庫拉" />
+	<Npc ID="10261" Name="奧丁" Sex="1" MoveSpeed="5" Desc="奧丁" />
+	<Npc ID="10262" Name="托爾" Sex="1" MoveSpeed="5" Desc="托爾" />
+	<Npc ID="10263" Name="洛基" Sex="1" MoveSpeed="5" Desc="洛基" />
+	<Npc ID="10264" Name="伊莉絲" Sex="0" MoveSpeed="5" Desc="沒有節操的伊莉絲" />
+	<Npc ID="10265" Name="伊莉絲" Sex="0" MoveSpeed="5" Desc="掉了身體的伊莉絲一樣沒有節操存在" />
+	<Npc ID="10266" Name="2點" Sex="2" MoveSpeed="5" Desc="2點複製" />
+	<Npc ID="10267" Name="6點" Sex="5" MoveSpeed="5" Desc="6點實現願望" />
+	<Npc ID="10268" Name="4點" Sex="2" MoveSpeed="5" Desc="我是最萌最可愛的拉姆~" />
+	<Npc ID="10269" Name="小豆豆" Sex="5" MoveSpeed="5" Desc="" />
+	<Npc ID="10270" Name="5點" Sex="5" MoveSpeed="5" Desc="爆炸，一切化為廢墟" />
+	<Npc ID="10271" Name="1點" Sex="5" MoveSpeed="5" Desc="1點恢復" />
+	<Npc ID="10272" Name="3點" Sex="5" MoveSpeed="5" Desc="3點強化" />
+	<Npc ID="10273" Name="貝爾丹蒂" Sex="0" MoveSpeed="5" Desc="勇士-時之女神" />
+	<Npc ID="10274" Name="皮皮克克" Sex="0" MoveSpeed="5" Desc="勇士小摩爾" />
+	<Npc ID="10275" Name="奇普力村長" Sex="1" MoveSpeed="5" Desc="勇士-村長" />
+	<Npc ID="10276" Name="雪絨草" Sex="3" MoveSpeed="5" Desc="勇士-精靈" />
+	<Npc ID="10277" Name="摩爾王八世之魂" Sex="3" MoveSpeed="5" Desc="14年清明" />
+	<Npc ID="10278" Name="卡羅拉之魂" Sex="3" MoveSpeed="5" Desc="14年清明" />
+	<Npc ID="10279" Name="伊絲特之魂" Sex="3" MoveSpeed="5" Desc="14年清明" />	
+	<Npc ID="10280" Name="S" Sex="3" MoveSpeed="5" Desc="約瑟角色" />
+	<Npc ID="10281" Name="露莎" Sex="3" MoveSpeed="5" Desc="花仙角色" />
+	<Npc ID="10282" Name="蒙斯特" Sex="3" MoveSpeed="5" Desc="木精靈王子，魔法學院某人的偽裝" />
+	<Npc ID="10283" Name="小萌" Sex="0" MoveSpeed="5" Desc="蘑菇巫女，魔法學院某人的偽裝" />
+	<Npc ID="10284" Name="麼麼公主" Sex="0" MoveSpeed="5" Desc="失去紅鼻子，公主變精靈" />
+	<Npc ID="10285" Name="燕子" Sex="3" MoveSpeed="5" Desc="快樂王子的燕子" />
+	<Npc ID="10286" Name="吹笛人" Sex="1" MoveSpeed="5" Desc="魔法學院3號" />
+	<Npc ID="10287" Name="小C" Sex="3" MoveSpeed="5" Desc="明星摩靈" />
+	<Npc ID="10288" Name="黑暗小C" Sex="3" MoveSpeed="5" Desc="明星摩靈" />
+	<Npc ID="10289" Name="食人花妖" Sex="3" MoveSpeed="5" Desc="【食人花園】BOSS" />
+	<Npc ID="10290" Name="進擊的刺球" Sex="3" MoveSpeed="5" Desc="【食人花園】限時怪" />
+	<Npc ID="10291" Name="菩提大伯" Sex="1" MoveSpeed="5" Desc="菩提大伯鎧甲版" />
+	<Npc ID="10292" Name="摩魚" Sex="3" MoveSpeed="5" Desc="【珊瑚平原】BOSS" />
+	<Npc ID="10293" Name="小萌" Sex="0" MoveSpeed="5" Desc="黑魔法學院小萌，偽裝蘑菇巫女小萌和木精靈王子" />
+	<Npc ID="10294" Name="泰尼" Sex="3" MoveSpeed="5" Desc="摩靈世界老書記官，長老" />
+	<Npc ID="10295" Name="小恩特" Sex="3" MoveSpeed="5" Desc="長老同族的小輩" />
+	<Npc ID="10296" Name="刺蠍" Sex="3" MoveSpeed="5" Desc="【曜石迷宮】小怪" />
+	<Npc ID="10297" Name="黑龍" Sex="3" MoveSpeed="5" Desc="莊園超級大BOSS" />
+	<Npc ID="10298" Name="水蜻蜓" Sex="3" MoveSpeed="5" Desc="【鏡花水月】BOSS" />
+	<Npc ID="10299" Name="花荊藤" Sex="3" MoveSpeed="5" Desc="【荊棘橋】BOSS" />
+	<Npc ID="10300" Name="璨" Sex="3" MoveSpeed="5" Desc="明星魔靈小C人形" />
+	<Npc ID="10301" Name="明" Sex="3" MoveSpeed="5" Desc="摩靈王子人形" />
+	<Npc ID="10302" Name="電光" Sex="3" MoveSpeed="5" Desc="【快樂秘境】小怪" />
+	<Npc ID="10303" Name="豬八戒" Sex="3" MoveSpeed="5" Desc="2014年中秋節NPC" />
+	<Npc ID="10304" Name="天蓬元帥" Sex="3" MoveSpeed="5" Desc="2014年中秋節NPC" />
+	<Npc ID="10305" Name="RX" Sex="2" MoveSpeed="5" Desc="大衛的拉姆" />
+	<Npc ID="10306" Name="壞壞" Sex="2" MoveSpeed="5" Desc="捷克王子的拉姆" />
+	<Npc ID="10307" Name="沙沙" Sex="2" MoveSpeed="5" Desc="捷克王子在異世界的拉姆" />	
+	<Npc ID="10308" Name="小喵咪" Sex="3" MoveSpeed="5" Desc="尋找小貓咪" />
+	<Npc ID="10309" Name="老婦人" Sex="0" MoveSpeed="5" Desc="一夜變老的可憐人" />
+	<Npc ID="10310" Name="年輕摩爾" Sex="0" MoveSpeed="5" Desc="恢復青春" />
+	<Npc ID="10311" Name="老年摩爾" Sex="0" MoveSpeed="5" Desc="恢復青春" />
+	<Npc ID="10312" Name="弗蘭契斯科" Sex="0" MoveSpeed="5" Desc="魔法學院2號" />
+	<Npc ID="10313" Name="cos愛好者" Sex="1" MoveSpeed="5" Desc="追捕黑衣人" />
+	</NpcList>
+
+

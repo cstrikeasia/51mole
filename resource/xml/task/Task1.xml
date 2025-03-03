@@ -1,0 +1,33 @@
+<Tasks ID="482" Name="新手引導" >
+	<Step ID="1" >
+		<NPC ID="10037" Option="我要成為超級蘑菇嚮導" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10037" Face="正常" Msg="超級蘑菇嚮導的職責是在莊園中盡心盡責的巡邏，舉報莊園中不文明的小摩爾，它們的投訴公民管理處會更快的處理。你能完成這個艱巨的任務嗎？" Option="我一定行！" />
+				<Talk NpcID="10037" Face="正常" Option="我準備好了！" Msg="不知道小摩爾能不能通過超級蘑菇嚮導任命考試！我們的考驗現在就開始了！"/>
+			</Action>
+			
+			<Action Cmd="ACT_EVENT" Param="openMoleGridePanel" /><!-- 拋事件 -->
+		</NPC>
+	</Step>
+	
+	<Step ID="2" >
+		<NPC ID="10037" Option="我要成為超級蘑菇嚮導" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10037" Face="正常" Msg="恭喜你答對了所有的題目，具備成為超級蘑菇嚮導的能力，但是成為優秀的超級蘑菇嚮導必須要有很強的責任感。你能夠做到嗎？" Option="我可以、我一定行！" />
+				<Talk NpcID="10037" Face="正常" Option="哦！我一定堅定不移！" Msg="那我們做一個宣誓活動，正式歡迎你的加入。希望你的加入能夠更好的維護莊園文明、健康的生活氛圍。"/>
+			</Action>
+				
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10037" Face="正常" Msg="恭喜你成為優秀的超級蘑菇嚮導，這是送你的超級蘑菇嚮導裝。快點擊選單欄中的“嚮導行動”，去進行巡邏，並監督不文明的小摩爾吧！" Option="選單欄中的“嚮導行動”，我知道了！" />
+			</Action>
+			
+			<Action Cmd="ACT_EVENT" Param="openTopicMC" /><!-- 拋事件 -->
+		</NPC>
+	</Step>
+					
+</Tasks>
+
+

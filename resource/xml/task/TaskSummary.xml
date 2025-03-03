@@ -1,0 +1,589 @@
+<!--
+	任務總表
+	ID	任務ID
+	Name	任務名稱
+	ParentID	父任務ID（父任務完成當前任務才能開啟
+	IsVip		是否為Vip任務
+	TimeState	時間任務狀態（0：新任務；1：舊任務
+	Star	任務星級
+	
+	Detail	任務說明
+	AwardDescList	完成任務輸出獎勵描述
+	GoMap	任務所在地圖（用於面板上跳轉按鈕 GoMap="10005$1"		第一個參數是地圖ID(類型為3時，34代表肥肥館 37:新天使  第二個是類型（(0：普通跳轉 1：家園跳轉 2：小屋跳轉 3：特殊跳轉
+	NoAutoApply		通過任務面板不自動接
+	
+	&lt;	<	小於號 
+	&gt;	>	大於號 
+  	&amp;	&	
+  	&apos;	'	單引號
+  	&quot;	" 	雙引號 
+-->
+<TaskSummary>
+	<NewTask defaultShowTaskId="670">
+	
+		<Group Name="真王覺醒之路" FrameLabel="l28" IsOpen="true" >
+		    <Task ID="670" Name="真王覺醒" ParentID="669" IsVip="0" TimeState="0" 
+				Detail=" 麼麼公主的生日和繼位大典正在緊鑼密鼓的籌備著，本該是喜慶的日子，但總有隱隱的不安襲上心頭……" LockMsg="需要完成“塞拉是你嗎？”任務才能解鎖哦！"
+				AwardIDList="161458$1230154$0" AwardDescList="兔兔壁燈$蝴蝶夢種子$10000摩爾豆" GoMap="15" />
+            <Task ID="669" Name="塞拉是你嗎？" ParentID="668" IsVip="0" TimeState="0" 
+				Detail=" 公主的覺醒時刻逐漸接近，小摩爾看到了越來越多的奇怪影像，這到底是好是壞？！" LockMsg="需要完成“黑影的目標”任務才能解鎖哦！"
+				AwardIDList="160082$1230143$0" AwardDescList="藍色拉姆爬架$夜女王曇花種子$10000摩爾豆" GoMap="407" />
+            <Task ID="668" Name="黑影的目標" ParentID="667" IsVip="0" TimeState="0" 
+				Detail=" 受到襲擊的麼麼公主，行為奇怪的小摩爾，又一個黑衣人……摩樂樂突然覺得自己的壓力好大！" LockMsg="需要完成“瞬間流逝的光陰”任務才能解鎖哦！"
+				AwardIDList="18110$1270170$0" AwardDescList="狼牙項鏈$河豚$10000摩爾豆" GoMap="407" />
+			<Task ID="667" Name="瞬間流逝的光陰" ParentID="" IsVip="0" TimeState="0" 
+				Detail=" 為救出艾蓮娜苦惱的公主，想在今年公主生日時讓她成為真王的行政官……" LockMsg=""
+				AwardIDList="1220406$1230145$0" AwardDescList="唐冠螺$白緞月季種子$10000摩爾豆" GoMap="15" />	
+				
+		</Group>
+
+	<!--		<Group Name="馴獸師大賽" FrameLabel="l26" IsOpen="true" >
+
+			<Task ID="662" Name="馴獸師大賽" ParentID="" IsVip="0" TimeState="0" 
+				Detail=" 成為最強的馴獸師，馴化各式各樣的小生命，讓他們幫助我們，陪伴我們！你是那個最強的嗎？" LockMsg=""
+				AwardIDList="1720156$1593014$0" AwardDescList="小月燈$小眉$10000摩爾豆" GoMap="109" />	
+				
+		</Group>
+-->
+		<Group Name="王子與黑貓" FrameLabel="l27" IsOpen="true" >
+			<Task ID="666" Name="萬聖之夜" ParentID="665" IsVip="0" TimeState="0" 
+				Detail=" 女神之淚，兩顆摩爾之眼，零的儀式……" LockMsg="需要完成“黑魔法學院”任務才能解鎖哦！"
+				AwardIDList="1593059$1270011$0" AwardDescList="企鵝呆呆$胖胖浣熊$10000摩爾豆" GoMap="406" />	
+			<Task ID="665" Name="黑魔法學院" ParentID="664" IsVip="0" TimeState="0" 
+				Detail=" 貓的夜市變得一片混亂，零的詭計是什麼？為什麼突然又來奪取摩爾之眼？為什麼摩爾之眼和壞壞有關係？" LockMsg="需要完成“目標是摩爾之眼”任務才能解鎖哦！"
+				AwardIDList="1720173$1230132$0" AwardDescList="鈴鐺貓$藤蔓墓碑種子$10000摩爾豆" GoMap="350" />	
+			<Task ID="664" Name="目標是摩爾之眼" ParentID="663" IsVip="0" TimeState="0" 
+				Detail=" 沙沙帶著壞壞去了貓的夜市，那是個什麼樣的地方？你曾經去過嗎？也許你還不知道它的秘密……" LockMsg="需要完成“貓怪來襲”任務才能解鎖哦！"
+				AwardIDList="180111$1270143$0" AwardDescList="南瓜布丁$南瓜喵貓$10000摩爾豆" GoMap="350" />	
+			<Task ID="663" Name="貓怪來襲" ParentID="" IsVip="0" TimeState="0" 
+				Detail=" 開心的日子總是過得很快，這秋高氣爽的日子卻隱約有著些許不安，似乎有奇異的生物在莊園中蠢蠢欲動……" LockMsg=""
+				AwardIDList="1270017$18029$0" AwardDescList="肥肥花兔$貓怪鈴鐺$10000摩爾豆" GoMap="32" />	
+				
+		</Group>
+
+	<!--		<Group Name="馴獸師大賽" FrameLabel="l26" IsOpen="true" >
+
+			<Task ID="662" Name="馴獸師大賽" ParentID="" IsVip="0" TimeState="0" 
+				Detail=" 成為最強的馴獸師，馴化各式各樣的小生命，讓他們幫助我們，陪伴我們！你是那個最強的嗎？" LockMsg=""
+				AwardIDList="1720156$1593014$0" AwardDescList="小月燈$小眉$10000摩爾豆" GoMap="109" />	
+				
+		</Group>
+-->
+		<Group Name="到月亮上去" FrameLabel="l25" IsOpen="true" >
+			<Task ID="661" Name="塞拉的新世界" ParentID="660" IsVip="0" TimeState="0" 
+				Detail=" 珍獸、異獸、拉姆、摩靈、海妖、天使，歡迎翻開馴獸筆記，歡迎來到這全新的世界……" LockMsg="需要完成“巧克力中劍”任務才能解鎖哦！"
+				AwardIDList="161458$1270021$0" AwardDescList="兔兔壁燈$小龍蝦$10000摩爾豆" GoMap="403" />
+			<Task ID="660" Name="巧克力中劍" ParentID="659" IsVip="0" TimeState="0" 
+				Detail=" 我們來到了一個全是美食的世界，難道這裡就是月亮？最重要的是，我們還在這裡找到了塞拉的紫色蝴蝶……" LockMsg="需要完成“月亮是個奶油蛋糕？”任務才能解鎖哦！"
+				AwardIDList="1720158$1230154$0" AwardDescList="小花燈$蝴蝶夢種子$10000摩爾豆" GoMap="403" />
+			<Task ID="659" Name="月亮是個奶油蛋糕？" ParentID="658" IsVip="0" TimeState="0" 
+				Detail=" 大衛再次的不靠譜了，折騰了半天，登月機器竟然拋錨不幹活了，我們去看看大衛的進展吧！" LockMsg="需要完成“偉大的登月計劃”任務才能解鎖哦！"
+				AwardIDList="1720123$15891$0" AwardDescList="暗黑藍莓派$木之抹茶卷$10000摩爾豆" GoMap="38" />	
+			<Task ID="658" Name="偉大的登月計劃" ParentID="657" IsVip="0" TimeState="0" 
+				Detail=" 為了登上月球，麼麼決定去找大衛幫幫忙，我們也一塊去看看吧，大衛那裡一定有新鮮有趣的事情發生。" LockMsg="需要完成“麼麼公主日記”任務才能解鎖哦！"
+				AwardIDList="1720122$161454$0" AwardDescList="光明雞蛋布丁$紫薯月餅$10000摩爾豆" GoMap="27" />	
+			<Task ID="657" Name="麼麼公主日記" ParentID="" IsVip="0" TimeState="0" 
+				Detail=" 閒來無事的時候，麼麼公主似乎有點小情緒，有點小不開心，我們去看看她吧？" LockMsg=""
+				AwardIDList="1720121$1220181$0" AwardDescList="木之抹茶卷$啦啦音樂花$10000摩爾豆" GoMap="109" />	
+		</Group>
+
+	
+	<!--<Group Name="摩靈火神盃" FrameLabel="l24" IsOpen="true" >
+			<Task ID="656" Name="火神盃開幕" ParentID="655" IsVip="0" TimeState="0" 
+				Detail=" 三神有什麼有趣的故事啊？他們也會吵吵鬧鬧嗎？對了，大伯還說有神秘嘉賓要來參加助陣呢，好期待啊！" LockMsg="需要完成“三神的秘密”任務才能解鎖哦！"
+				AwardIDList="1593084$0" AwardDescList="怪怪石頭豬$10000摩爾豆" GoMap="53" />	
+			
+			<Task ID="655" Name="三神的秘密" ParentID="0" IsVip="0" TimeState="0" 
+				Detail=" 一年一度的火神盃又要到來了！今年有怎樣有趣的賽事在等著我們呢？好期待有木有？" LockMsg=""
+				AwardIDList="1593082$0" AwardDescList="肥肥魚尾豬$10000摩爾豆" GoMap="53" />	
+		</Group>
+
+-->
+		<Group Name="莊園小夜曲" FrameLabel="l22" IsOpen="true" >
+		<Task ID="654" Name="最終章：摩界之門" ParentID="653" IsVip="0" TimeState="0" 
+			Detail=" 失蹤的公主據說是去了黑森林的方向，公主，我們來救你了，希望你平安無事……" LockMsg="需要完成“第三樂章：妖魔舞曲”任務才能解鎖哦！"
+			AwardIDList="191216$191217$0" AwardDescList=" 拉姆菌$五色漿果$10000摩爾豆" GoMap="120" />		
+		<Task ID="653" Name="第三樂章：妖魔舞曲" ParentID="652" IsVip="0" TimeState="0" 
+			Detail=" 莊園各處的音符扭動的更加厲害了，有的小摩爾說那些音符會變成妖魔鬼怪抓走小摩爾呢，怕怕！" LockMsg="需要完成“神秘音符亂入”任務才能解鎖哦！"
+			AwardIDList="1230015$1270175$0" AwardDescList=" 黑森林奇異果種子$馬上滿分$10000摩爾豆" GoMap="109" />		
+		<Task ID="652" Name="神秘音符亂入" ParentID="651" IsVip="0" TimeState="0" 
+			Detail=" 最近莊園怪事特別多，那個月光下吹笛子的怪摩爾還沒找到，又來了個奇怪的小生物，我們快去看看！" LockMsg="需要完成“第二章：月下獨奏”任務才能解鎖哦！"
+			AwardIDList="160095$160102$0" AwardDescList=" 綠色糖果盒$粉色糖果盒滿$10000摩爾豆" GoMap="42" />		
+		<Task ID="651" Name="第二樂章：月下獨奏" ParentID="650" IsVip="0" TimeState="0" 
+			Detail=" 謎一般的音符來自哪裡？謎一般的音樂來自哪裡？不是歌唱至死的夜鶯，不是大自然的歌曲，那是什麼？" LockMsg="需要完成“第一樂章：拂曉”任務才能解鎖哦！"
+			AwardIDList="1220034$160043$0" AwardDescList=" 魔幻音符So$音樂鴨子$10000摩爾豆" GoMap="3" />		
+		<Task ID="650" Name="第一樂章：拂曉" ParentID="649" IsVip="0" TimeState="0" 
+			Detail=" 春困中總是睡不醒的小摩爾們，是不是特別想一直睡下去？可是，真的一直睡下去可不美好喲，快看布多多！" LockMsg="需要完成“序曲”任務才能解鎖哦！"
+			AwardIDList="1270170$1220411$0" AwardDescList=" 河豚$日光櫻蛤$10000摩爾豆" GoMap="237" />		
+		<Task ID="649" Name="序曲" ParentID="0" IsVip="0" TimeState="0" 
+			Detail=" 最近，半夜總是能聽到悠揚優雅，但是略帶憂傷的音樂，好像有誰躲在角落哭泣一樣……" LockMsg=""
+			AwardIDList="191212$1270133$0" AwardDescList="夏威夷寶石$燕子$10000摩爾豆" GoMap="80" />	
+		</Group>
+
+		<Group Name="少女情懷總是詩" FrameLabel="l21" IsOpen="true" >
+		<Task ID="648" Name="夢醒時分" ParentID="647" IsVip="0" TimeState="0" 
+			Detail=" 蒙斯特王子一會兒好一會兒壞，到底是怎麼回事？看起來像多重人格一樣，公主，要當心呀！" LockMsg="需要完成“他不是快樂王子”任務才能解鎖哦！"
+			AwardIDList="1593079$1220413$0" AwardDescList=" 寶石豬$金葉子$10000摩爾豆" GoMap="109" />		
+		<Task ID="647" Name="他不是快樂王子" ParentID="646" IsVip="0" TimeState="0" 
+			Detail=" 公主服下毒藥暈倒了，那個詭異的蘑菇女巫是誰？公主經歷著這樣的痛苦，蒙斯特王子又去了哪裡？" LockMsg="需要完成“公主變身記”任務才能解鎖哦！"
+			AwardIDList="161416$1220408$0" AwardDescList=" 愛心漂流瓶$萬寶螺$10000摩爾豆" GoMap="110" />		
+		<Task ID="646" Name="公主變身記" ParentID="645" IsVip="0" TimeState="0" 
+			Detail=" 骰子被擲了出去，棋子移動起來，公主似乎受到棋局的影響。怎麼的異變在等待著我們呢？" LockMsg="需要完成“與王子的相遇”任務才能解鎖哦！"
+			AwardIDList="1270168$1230149$0" AwardDescList=" 柴郡貓$鳳梨樹苗$10000摩爾豆" GoMap="110" />		
+		<Task ID="645" Name="與王子的相遇" ParentID="644" IsVip="0" TimeState="0" 
+			Detail=" 各國使節都來莊園拜訪，真是有不少帥哥呢！麼麼公主，有沒有找到你心目中的白馬王子呢？" LockMsg="需要完成“大大的禮物”任務才能解鎖哦！"
+			AwardIDList="161393$1230148$0" AwardDescList=" 蛋糕愛心床$沙漠玫瑰種子$10000摩爾豆" GoMap="16" />		
+		<Task ID="644" Name="大大的禮物" ParentID="0" IsVip="0" TimeState="0" 
+			Detail=" 這陣子大家都在忙忙碌碌的，我也要幫忙，給莊園貢獻力量，讓莊園變得更好！恩就這樣決定了，去告訴公主！" LockMsg=""
+			AwardIDList="1220401$1230144$0" AwardDescList="棒棒糖糖果樹$迎紅杜鵑種子$10000摩爾豆" GoMap="4" />	
+				
+		</Group>
+		
+	<!--	
+		<Group Name="摩爾奇異旅行" FrameLabel="l20" IsOpen="true" >	
+				
+		<Task ID="643" Name="最愛是莊園" ParentID="642" IsVip="0" TimeState="0" 
+			Detail=" 這段時間好像在環遊世界一樣。總算可以回到莊園了嗎？不知粒粒好不好，不知王子和壞壞好不好。" LockMsg="需要完成“精靈花境”任務才能解鎖哦！"
+			AwardIDList="1220400$1230145$0" AwardDescList="爆米花彈簧床$白緞月季種子$10000摩爾豆" GoMap="32" />		
+		<Task ID="642" Name="精靈花境" ParentID="641" IsVip="0" TimeState="0" 
+			Detail=" 傳說中，花花草草裡都躲著精靈。別看精靈身軀較小，卻有著強大的力量。他們是是大自然的孩子。" LockMsg="需要完成“奇異之星”任務才能解鎖哦！"
+			AwardIDList="1270160$1230142" AwardDescList="吉普豆花$2棵冬櫻樹苗" GoMap="384" />		
+		<Task ID="641" Name="奇異之星" ParentID="640" IsVip="0" TimeState="0" 
+			Detail=" 勇士國度的時空縫隙被一個神秘的黑影毀壞，這是有多脆弱啊，所以我們要被折騰到另外一個地方去了！" LockMsg="需要完成“轉動的命運之輪”任務才能解鎖哦！"
+			AwardIDList="0$1220394" AwardDescList="10000摩爾豆$月神秋千" GoMap="372" />		
+			
+		<Task ID="640" Name="轉動的命運之輪" ParentID="639" IsVip="0" TimeState="0" 
+			Detail=" 命運之輪轉動起來，一股奇異的力量讓小摩爾穿越時空，去完成一個改變摩爾一族命運的使命。" LockMsg="需要完成“遠古穿越”任務才能解鎖哦！"
+			AwardIDList="161377$1270156" AwardDescList="愛精靈莓可$噠噠鳥" GoMap="364" />		
+		<Task ID="639" Name="遠古穿越" ParentID="0" IsVip="0" TimeState="0" 
+			Detail=" 每個摩爾莊園的小摩爾都要熟讀莊園的歷史喲~要做一個有文化的小摩爾喲~恩恩，城堡書房找捷克王子了。" LockMsg=""
+			AwardIDList="161369$1270153" AwardDescList="瘋狂拉姆$星錘兔" GoMap="32" />		
+							
+		</Group>
+-->
+		
+	<!--	
+		<Group Name="新年快樂" FrameLabel="l17" IsOpen="true" >
+		
+		<Task ID="630" Name="再次起航" ParentID="629" IsVip="0" TimeState="0" 
+			Detail=" 忙了那麼久，扣扣還是沒有找到。不過積雪神殿裡那三個金呼呼的神，好像也不是那麼了不得啊，不用怕他們，我們去找找看吧！" LockMsg="需要完成“積雪神殿”任務才能解鎖哦！"
+			AwardIDList="15508$191152" AwardDescList="招財貓$2個金橘" GoMap="361" />			
+				
+		<Task ID="629" Name="積雪神殿" ParentID="627" IsVip="0" TimeState="0" 
+			Detail=" 扣扣逃往積雪神殿，在神殿的必經之路“神殿彩虹橋”我們遇到了庫拉，話說庫拉不是去找骰子了嗎？怎麼會在這裡？" LockMsg="需要完成“風波再起”任務才能解鎖哦！"
+			AwardIDList="161312$1230140" AwardDescList="傢俱燈$2個金橘種子" GoMap="360" />			
+			
+		<Task ID="627" Name="風波再起" ParentID="0" IsVip="0" TimeState="0" 
+			Detail=" 抓住扣扣啦，我們可以開心的過年啦，不過城堡還凍著呢，這怎麼行，快點讓扣扣把莊園化凍，我們把莊園裝飾起來吧！" LockMsg=""
+			AwardIDList="15514$1230140" AwardDescList="奧特曼套裝$2個金橘種子" GoMap="359" />			
+		</Group>
+-->
+	<!--	
+		<Group Name="扣扣海賊團" FrameLabel="l16" IsOpen="true" >
+		
+		<Task ID="625" Name="真相只有一個" ParentID="624" IsVip="0" TimeState="0" 
+			Detail=" 丫麗真的哭了，這回真的哭了！！她的爸爸漢青難道真的背叛莊園了嗎？" LockMsg="需要完成“激戰！扣扣海賊團！”任務才能解鎖哦！"
+			AwardIDList="161299$1673003" AwardDescList="小星星$2個元素騎士經驗藥劑（小）" GoMap="53" />
+
+		<Task ID="624" Name="激戰！扣扣海賊團！" ParentID="623" IsVip="0" TimeState="0" 
+			Detail=" 什麼什麼？漢青竟然說不來莊園過年了？怎麼會的？不行，這件事情要調查清楚！！" LockMsg="需要完成“冰雕？莊園大危機！”任務才能解鎖哦！"
+			AwardIDList="161301$1673003" AwardDescList="庫拉玩偶$2個元素騎士經驗藥劑（小）" GoMap="28" />
+			
+		<Task ID="623" Name="冰雕？莊園大危機！" ParentID="621,622" IsVip="0" TimeState="0" 
+			Detail=" 老超爺爺又給小摩爾們講故事了，果然是個有故事的企鵝！走了，去聽故事了！" LockMsg="需要完成“神秘海賊團！”和“蛋蛋的快樂元旦”任務才能解鎖哦！"
+			AwardIDList="1220361$1220362$1673003" AwardDescList="貝羅壽司$潑卡壽司$2個元素騎士經驗藥劑（小）" GoMap="10" />
+			
+		<Task ID="622" Name="蛋蛋的快樂元旦" ParentID="0" IsVip="0" TimeState="0" 
+			Detail=" 企鵝老爺爺老超似乎是一隻很有故事的企鵝，而且看起來就一副很健談的樣子，我們去陪他聊聊吧！" LockMsg=""
+			AwardIDList="1230139$161291" AwardDescList="2個山葵種子$麋鹿抱枕 " GoMap="10" />
+
+		<Task ID="621" Name="驚現！神秘海賊團！" ParentID="0" IsVip="0" TimeState="0" 
+			Detail=" 從東部沙灘碼頭望出去，可以看到一個巨大的黑色的影子，緩緩的向莊園靠近，那到底是什麼？" LockMsg=""
+			AwardIDList="1230139$161292" AwardDescList="1個山葵種子$雪人鐘錶 " GoMap="355" />
+		</Group>
+-->
+	<!--	
+		<Group Name="進擊的企鵝人" FrameLabel="l15" IsOpen="true" >
+		
+		<Task ID="620" Name="冰雪美食節" ParentID="618" IsVip="0" TimeState="0" 
+			Detail=" 艾爾警官要審問壞蛋企鵝們呢！聽說麼麼公主和菩提大伯都會到場哦！快去看看吧！" LockMsg="需要完成“積雪鎮之戰”任務才能解鎖哦！"
+			AwardIDList="1230139$161289" AwardDescList="2個山葵種子$聖誕款沙發 " GoMap="44" />
+			
+		<Task ID="618" Name="積雪鎮之戰" ParentID="617" IsVip="0" TimeState="0" 
+			Detail=" 聖誕老人果然是被企鵝綁架了，哼，壞蛋企鵝，摩爾一定會戰勝你們！" LockMsg="需要完成“倒楣的聖誕老人”任務才能解鎖哦！"
+			AwardIDList="1230139$15438" AwardDescList="2個山葵種子$摩摩忍者鏢 " GoMap="53" />
+		
+		<Task ID="617" Name="倒楣的聖誕老人" ParentID="616" IsVip="0" TimeState="1" 
+			Detail=" 聖誕老人興致很高的騎著麋鹿摩托，背著大包的禮物在兜風。肯定準備了很多禮物，快去看看吧！" LockMsg="需要完成“莊園失竊記”任務才能解鎖哦！"
+			AwardIDList="1673003$15379" AwardDescList="2個元素騎士經驗藥劑（小）$壽司企鵝刀 " GoMap="355" />
+		
+		<Task ID="616" Name="莊園失竊記" ParentID="0" IsVip="0" TimeState="1" 
+			Detail=" 素來寧靜的莊園被一通嘈雜之聲打破，究竟發生了什麼呢？" LockMsg="需要完成“最珍貴的禮物”任務才能解鎖哦！"
+			AwardIDList="1673003$15378" AwardDescList="2個元素騎士經驗藥劑（小）$壽司企鵝衣服 " GoMap="20" />
+		</Group>
+	-->
+
+		<!--第四屆火神盃任務		
+		<Group Name="第四屆火神盃" FrameLabel="l11" IsOpen="true" >
+			<Task ID="599" Name="艾蓮娜的真意" ParentID="1017,596,597,598" IsVip="0" TimeState="1" 
+			Detail="巴圖魯為了籌辦火神盃慶典可謂不遺餘力，到底是什麼讓他有如此的動力呢？" LockMsg="需要完成【黑森林冒險季】和【第四屆火神盃】的所有任務才能解鎖哦！"
+			AwardIDList="191094$15097$161248" AwardDescList="100個火神紋章$狐狸面具$艾蓮娜的日記" GoMap="342" />
+			
+			<Task ID="598" Name="跟回家的火馬" ParentID="" IsVip="0" TimeState="1" 
+			Detail="艾蓮娜在火山發現了有趣的事情，熔漿裡好像藏著什麼，趕緊去看看吧！" LockMsg=""
+			AwardIDList="191094" AwardDescList="20個火神紋章" GoMap="341" />
+
+			<Task ID="597" Name="跳過火山的勇士" ParentID="" IsVip="0" TimeState="1" 
+			Detail="謝謝你傳遞了火種，艾蓮娜又有事拜託你了，去永夜哨站找她吧~" LockMsg=""
+			AwardIDList="191094" AwardDescList="20個火神紋章" GoMap="342" />
+
+			<Task ID="596" Name="火神的復蘇" ParentID="" IsVip="0" TimeState="1" 
+			Detail="火神一直在沉睡中，今年的火神杯能不能順利進行呢？去找艾蓮娜吧！" LockMsg=""
+			AwardIDList="191094" AwardDescList="20個火神紋章" GoMap="342" />
+
+		</Group>
+		-->
+		<!--馬戲團系列任務			
+		<Group Name="馬戲團歡樂季" FrameLabel="l7" IsOpen="true" >
+
+			<Task ID="591" Name="黑魔法學院" ParentID="" IsVip="0" TimeState="1" 
+			Detail="山崩地裂、紫光騰起，發生了什麼事？去找摩樂樂，一起揭開謎團吧！" LockMsg=""
+			AwardIDList="1351553$1653005" AwardDescList="20個歡樂券$10個經驗果實（大）" GoMap="239" />
+
+			<Task ID="590" Name="魔術師與黑魔法" ParentID="" IsVip="0" TimeState="1" 
+			Detail="多多和少少被變成了熊，小丑也不見了，去找零零團長打聽打聽吧。" LockMsg=""
+			AwardIDList="1351553$1653005" AwardDescList="20個歡樂券$10個經驗果實（大）" GoMap="334" />
+			
+			<Task ID="588" Name="魔術的秘密" ParentID="" IsVip="0" TimeState="1" 
+			Detail="大嘴巴盧卡斯正在給大家表演魔術，快去圍觀吧！" LockMsg=""
+			AwardIDList="1351553$1653005" AwardDescList="20個歡樂券$10個經驗果實（大）" GoMap="6" />
+		
+			<Task ID="587" Name="馬戲團來了" ParentID="" IsVip="0" TimeState="1" 
+			Detail="公民管理處為大家準備了六一大禮，是什麼呢？問問洛克行政官吧！" LockMsg=""
+			AwardIDList="1351553$1653005" AwardDescList="20個歡樂券$10個經驗果實（大）" GoMap="15" />
+
+		</Group>		
+		-->
+		<!--		
+		
+		<Group Name="每週熱點" FrameLabel="l2"  >
+	
+				    
+		</Group>
+		-->
+		<!--		
+			
+		<Group Name="成長指引" FrameLabel="l3"  >
+			
+			<Task ID="549" Name="【SMC】珠寶師入職任務" ParentID="" IsVip="0" TimeState="1" 
+			Detail="想成為一名優秀的珠寶師嗎？趕快去淘淘樂街看看吧！" LockMsg=""
+			AwardIDList="1653003$0" AwardDescList="5個經驗果實$1000摩爾豆" GoMap="3" />
+		</Group>
+		-->
+		
+		<Group Name="其它任務" FrameLabel="l10"  >
+		<!--
+			<Task ID="628" Name="健達奇趣屋新年派對" ParentID="" IsVip="0" TimeState="1" 
+			Detail="健達寶寶邀請勤勞的摩爾們去健達奇趣屋加入新年派對，會有新年禮物送給小摩爾哦！" LockMsg=""
+			AwardIDList="1643144$180115$0" AwardDescList="健達寶寶天使$3個健達奇趣蛋$1000摩爾豆" GoMap="358" />
+				
+			<Task ID="619" Name="製作奇趣蛋" ParentID="" IsVip="0" TimeState="1" 
+			Detail="健達寶寶來到了摩爾莊園！快去認識一下這位元新朋友吧！" LockMsg=""
+			AwardIDList="15441$0" AwardDescList="奇趣蛋裝扮$2000摩爾豆" GoMap="358" />
+		-->
+			<Task ID="1404" Name="SMC入職 " ParentID="" IsVip="0" TimeState="1" 
+			Detail="快來加入新SMC職業馴獸師啊" LockMsg=""
+			AwardIDList="" AwardDescList="" GoMap="80" />
+			<!--
+			<Task ID="615" Name="別出心裁的禮物" ParentID="" IsVip="0" TimeState="0" 
+			Detail="今年，在公主生日之際，她要以最特別的方式來答謝和回饋大家的厚愛。當她拆開那個特別禮物的時候，驚呆了……" LockMsg=""
+			AwardIDList="191115$180103" AwardDescList="麼麼公主紀念章$KFC全家桶" GoMap="47" />
+									
+			<Task ID="606" Name="未來星智奪月餅" ParentID="" IsVip="0" TimeState="0" 
+			Detail="麼麼公主準備送給嫦娥姐姐的月餅丟掉了，小摩爾決定幫助麼麼公主！" LockMsg=""
+			AwardIDList="0$16022" AwardDescList="摩爾豆$幸運月餅" GoMap="109" />
+
+			<Task ID="605" Name="放手觸，自在玩" ParentID="" IsVip="0" TimeState="0" 
+			Detail="摩樂樂是莊園出名的調皮鬼，最近更被菩提大伯關禁閉了！這是怎麼回事呢？" LockMsg=""
+			AwardIDList="0" AwardDescList="摩爾豆" GoMap="204" />
+
+			<Task ID="600" Name="未來星智力大闖關" ParentID="" IsVip="0" TimeState="0" 
+			Detail="想知道你是哪個機智星人嗎？快來參加未來星智力大闖關吧，更多獎品等著你！" LockMsg=""
+			AwardIDList="0" AwardDescList="摩爾豆" GoMap="342" />
+			
+			<Task ID="595" Name="小店員升職記之招募神探團" ParentID="" IsVip="0" TimeState="1" 
+			Detail="在莊園裡幫忙尋找散落的神探道具，交給奇奇協助破案吧！可以去小小神探團任務遊戲中尋找線索喔。" LockMsg=""
+			AwardIDList="191089$1653005" AwardDescList="榮譽摩爾星$經驗果實（大）" GoMap="84" />
+
+			<Task ID="594" Name="大小摩爾去郊遊" ParentID="" IsVip="0" TimeState="1" 
+			Detail="交通署添加了一輛新車可以租哦！蔣誠信忙著張羅試駕呢！快去看看吧！" LockMsg=""
+			AwardIDList="191083" AwardDescList="哈哈魔法師禮盒" GoMap="83" />
+			<Task ID="593" Name="生日召集令" ParentID="" IsVip="0" TimeState="1" 
+			Detail="號外號外，摩爾莊園史無前例的生日狂歡開始啦！快來KFC生日飛艇留下你的生日資訊，等著收穫你的生日驚喜吧！" LockMsg=""
+			AwardIDList="180103$13052$0" AwardDescList="KFC聖誕版全家桶$花邊生日帽$5000摩爾豆" GoMap="203" />
+			<Task ID="592" Name="小店員升職記之美食店店長" ParentID="589" IsVip="0" TimeState="1" 
+			Detail="聰明的小店員們，想晉升為榮耀的美食店店長嗎？快來參加考核吧！" LockMsg="需要完成小店員升職記之超級小店員任務之後，才能開啟哦！"
+			AwardIDList="14508$14510$14511" AwardDescList="KFC店員帽$KFC店員服$KFC店員鞋" GoMap="203" />	
+		
+			<Task ID="589" Name="小店員升職記之超級小店員" ParentID="585" IsVip="0" TimeState="1" 
+			Detail="想製作美味的漢堡嗎？想把你親手做的漢堡出售給美食餐廳嗎？一切美食體驗盡在超級小店員！" LockMsg="需要完成小店員升職記之優秀小店員任務之後，才能開啟哦！"
+			AwardIDList="0" AwardDescList="2000摩爾豆" GoMap="203" />		
+		
+			<Task ID="585" Name="小店員升職記之優秀小店員" ParentID="579" IsVip="0" TimeState="1" 
+			Detail="小店員升職開始啦，現在來KFC餐廳學做蛋撻，還能請好友和莊園明星試吃，趕快加入吧！" LockMsg="需要完成普通小店員的系列任務之後，才能開啟哦！"
+			AwardIDList="0" AwardDescList="1500摩爾豆" GoMap="203" />
+	-->
+			<!--
+			<Task ID="584" Name="李錦記：幸福番茄沙司" ParentID="" IsVip="0" TimeState="1" 
+			Detail="聽說菩提大伯發現了能夠吃出幸福味道的番茄沙司哦！" LockMsg=""
+			AwardIDList="180105$0" AwardDescList="3個幸福番茄沙司$1000摩爾豆" GoMap="53" />
+			-->
+		<!--	
+			<Task ID="578" Name="普通小店員之樂游童玩區" NoAutoApply="1" ParentID="577" IsVip="0" TimeState="1" 
+			Detail="爆料啦！爆料啦！莊園裡新建了童玩區，到底是有多好玩呢？一起去看看吧！" LockMsg="需要完成普通小店員之裝扮KFC餐廳任務後才能開啟哦！"
+			AwardIDList="0" AwardDescList="1000摩爾豆" GoMap="203"/>
+			
+			<Task ID="579" Name="普通小店員之為小壽星慶生" NoAutoApply="1" ParentID="578" IsVip="0" TimeState="1" 
+			Detail="親愛的小摩爾，今天是我的生日！我有個小小心願，你能幫我完成嗎？" LockMsg="需要完成普通小店員之樂游童玩區任務後才能開啟哦！"
+			AwardIDList="0" AwardDescList="1000摩爾豆" GoMap="203"/>
+			
+			<Task ID="577" Name="普通小店員之裝扮KFC餐廳" NoAutoApply="1" ParentID="" IsVip="0" TimeState="1" 
+			Detail="想成為美食店店長嗎？快點加入小店員升職記從普通小店員做起吧！" LockMsg=""
+			AwardIDList="0" AwardDescList="1000摩爾豆" GoMap="203"/>
+-->
+		</Group>		
+	</NewTask>
+	
+	
+	<WorldTask defaultShowTaskId="1027">
+	    <Group Name="摩靈傳說" FrameLabel="l23">
+			<Task ID="1027" Name="每一天每一夜" ParentID="1026" IsVip="0" TimeState="1" 
+			Detail="眼淚模糊了視線，一直以來和我們一起笑鬧玩耍的小C，C老師，璨殿下，竟然犧牲了自己……" LockMsg="需要完成“全世界的幸福”任務才能解鎖哦！"
+			AwardIDList="1720120$1220168$0" AwardDescList="火絨蛋糕$維納摩爾音樂貝$1萬摩爾豆" GoMap="400" />	
+			<Task ID="1026" Name="全世界的幸福" ParentID="1025" IsVip="0" TimeState="1" 
+			Detail="小C為了淨化摩靈世界，為了拯救摩靈世界，用自己的生命在祈禱。此時黑龍卻再次來襲……" LockMsg="需要完成“黑龍之心”任務才能解鎖哦！"
+			AwardIDList="1720119$160453$0" AwardDescList="水冰冰摜奶杯$小豬麵包機$1萬摩爾豆" GoMap="400" />	
+			<Task ID="1025" Name="黑龍之心" ParentID="1024" IsVip="0" TimeState="1" 
+			Detail="說好的好朋友呢？說好的摩靈之王呢？喂，黑龍為什麼又攻擊我們啊？突然一下沒有了幹勁啊~" LockMsg="需要完成“滿是荊棘的歸途”任務才能解鎖哦！"
+			AwardIDList="1720067$17030$0" AwardDescList="暗能量$變身拉姆果實$1萬摩爾豆" GoMap="398" />
+			<Task ID="1024" Name="滿是荊棘的歸途" ParentID="1023" IsVip="0" TimeState="1" 
+			Detail="原來黑龍還有那麼多苦衷啊，這麼多年我們錯怪他了呀~好了，讓我們幫黑龍擺脫束縛，奪回摩靈世界！" LockMsg="需要完成“鏡花水月”任務才能解鎖哦！"
+			AwardIDList="1720066$180100$0" AwardDescList="光能量$拉姆生日蛋糕$1萬摩爾豆" GoMap="397" />
+			<Task ID="1023" Name="鏡花水月" ParentID="1022" IsVip="0" TimeState="1" 
+			Detail="給跪了啊，黑龍就是摩靈王子嗎？沒有辦法好好玩耍了呀！難道我們一直以來幫助的都是我們的敵人？" LockMsg="需要完成“寒心水牢”任務才能解鎖哦！"
+			AwardIDList="1720065$1230143$0" AwardDescList="木能量$夜女王曇花種子$1萬摩爾豆" GoMap="396" />
+			<Task ID="1022" Name="寒心水牢" ParentID="1021" IsVip="0" TimeState="1" 
+			Detail="摩靈王似乎有很多很多故事，這些故事似乎和小C有很大關係，小C又被稱為璨殿下，腦子有點亂……" LockMsg="需要完成“光明與黑暗”任務才能解鎖哦！"
+			AwardIDList="1720064$1593087$0" AwardDescList="火能量$粉紅寶石豬$1萬摩爾豆" GoMap="393" />
+			<Task ID="1021" Name="光明與黑暗" ParentID="1020" IsVip="0" TimeState="1" 
+			Detail="食人花園、珊瑚平原，摩靈的世界竟然那麼有趣，當然也是處處充滿危險，小摩爾們張大眼睛，注意安全喲！" LockMsg="需要完成“滄海桑田”任務才能解鎖哦！"
+			AwardIDList="1720063$1230058$0" AwardDescList="水能量$囧蘑菇種子$1萬摩爾豆" GoMap="391" />
+			<Task ID="1020" Name="滄海桑田" ParentID="1019" IsVip="0" TimeState="1" 
+			Detail="全新的摩靈世界，期待？激動？興奮？熱血？初戰告捷的小摩爾們，讓我們踏上探險的征程吧！公主等著我們！" LockMsg="需要完成“黑森林深處”任務才能解鎖哦！"
+			AwardIDList="1720060$1270136$0" AwardDescList="刺球$梅花鹿$1萬摩爾豆" GoMap="390" />
+			<Task ID="1019" Name="黑森林深處" ParentID="" IsVip="0" TimeState="1" 
+			Detail="在黑森林深處，那扇神秘的魔法之門開啟了，門的那一邊藏著怎樣的秘密？讓我們去一探究竟！ " LockMsg=""
+			AwardIDList="1230150$15816$0" AwardDescList="瓶子草種子$狸貓探險帽$1萬摩爾豆" GoMap="389" />
+			
+		</Group>
+		<Group Name="摩利亞之歌" FrameLabel="l9">
+			<Task ID="1018" Name="摩利亞之歌" ParentID="1017" IsVip="0" TimeState="1" 
+			Detail="女神之淚被擄走，麼麼公主也下落不明，唯一的線索只有RK留下的字條。小摩爾們能否解開字謎，找出麼麼公主的所在呢？摩利亞之歌最終章，恢復日常生活的前奏！" LockMsg="需要完成“女神之淚”任務才能解鎖哦！"
+			AwardIDList="15083$1230123" AwardDescList="黑魔法袍$2個捕蠅草種子" GoMap="346" />
+			
+			<Task ID="1017" Name="女神之淚" ParentID="1016" IsVip="0" TimeState="1" 
+			Detail="零在我們的奮力抵抗下趁亂逃跑了，難道說危機解除了？去問問瑞琪吧。" LockMsg="需要完成“第二個摩爾之眼”任務才能解鎖哦！"
+			AwardIDList="1230122$15082" AwardDescList="2個白鷺花種子$伊絲特的眼鏡" GoMap="346" />
+
+			<Task ID="1016" Name="第二個摩爾之眼" ParentID="1015" IsVip="0" TimeState="1" 
+			Detail="瑞琪團長要率領騎士團和摩利亞反抗軍進攻王者大廳了，你也一起來吧！" LockMsg="需要完成“命運的硬幣”任務才能解鎖哦！"
+			AwardIDList="1230119$15084" AwardDescList="2個曼珠沙華種子$小丑面具" GoMap="343" />
+
+			<Task ID="1015" Name="命運的硬幣" ParentID="1014" IsVip="0" TimeState="1" 
+			Detail="摩爾莊園與摩利亞結成了盟約，而弗蘭克代理團長正在找你，快去龍巢迷宮吧！" LockMsg="需要完成“永夜哨站的會面”任務才能解鎖哦！"
+			AwardIDList="1230121$161221" AwardDescList="2個君子蘭種子$愛心彩蛋椅子" GoMap="339" />
+
+			<Task ID="1014" Name="永夜哨站的會面" ParentID="1013" IsVip="0" TimeState="1" 
+			Detail="耀眼光輝之門徐徐打開，迎接我們的將是什麼呢？" LockMsg="需要完成“耀眼光輝之門”任務才能解鎖哦！"
+			AwardIDList="1230120$14993" AwardDescList="2個跳舞蘭種子$藍藍小雞仔" GoMap="339" />
+			
+			<Task ID="1013" Name="耀眼光輝之門" ParentID="1012" IsVip="0" TimeState="1" 
+			Detail="尼爾拉大法師說，只要找到圖騰，就能找到打開機關的方法，趕緊回龍巢迷宮看看吧！" LockMsg="需要完成“地下甬道機關”任務才能解鎖哦！"
+			AwardIDList="1230117$14995" AwardDescList="2個梔子花種子$粉色蛋糕裙" GoMap="339" />
+
+			<Task ID="1012" Name="地下甬道機關" ParentID="1011" IsVip="0" TimeState="1" 
+			Detail="為了早日阻止魔法派，該向地底的深處進發了。快去蘑菇森林和麼麼公主他們匯合吧！" LockMsg="需要完成“蘑菇森林遭遇戰”任務才能解鎖哦！"
+			AwardIDList="1230124$14996" AwardDescList="2個風信子種子$淡粉小皮鞋" GoMap="337" />
+
+			<Task ID="1011" Name="蘑菇森林遭遇戰" ParentID="1010" IsVip="0" TimeState="1" 
+			Detail="準備好成為元素騎士了嗎？麼麼公主和丫麗正在時光聖殿等你呢！" LockMsg="需要完成“騎士誓言之始”任務才能解鎖哦！"
+			AwardIDList="1230016$14994" AwardDescList="2個卡蘭花種子$可愛包包頭" GoMap="338" />
+		
+			<Task ID="1010" Name="騎士誓言之始" ParentID="1009" IsVip="0" TimeState="1" 
+			Detail="時光聖殿的情況不容樂觀，洛克行政官叫你趕緊去一趟。" LockMsg="需要完成“重回黑森林”任務才能解鎖哦！"
+			AwardIDList="1230096$14730" AwardDescList="2個火龍果種子$黑貓鬍鬚" GoMap="15" />
+			
+			<Task ID="1009" Name="重回黑森林" ParentID="" IsVip="0" TimeState="1" 
+			Detail="莊園突現詭異魔法陣，此事非同小可。快去找摩樂樂商量商量吧！" LockMsg=""
+			AwardIDList="161212$17010" AwardDescList="格曆爾傳說$5個飛鳥果實" GoMap="239" />
+			
+		</Group>
+
+		<Group Name="格曆爾傳說" FrameLabel="l8"  >
+		
+			<Task ID="1001" Name="午夜迷影" ParentID="" IsVip="0" TimeState="0" 
+				Detail="初來摩爾莊園，怎能不到處逛逛？就先從摩爾城堡開始吧！" LockMsg=""
+				AwardIDList="0$17017" AwardDescList="2000摩爾豆$5個水蜜桃變身糖果" GoMap="108" />
+
+			<Task ID="1002" Name="RK的預告函" ParentID="1001" IsVip="0" TimeState="0" 
+				Detail="前哨站前的恐怖黑影，真的是怪獸來了麼？快去看看吧！" LockMsg='完成"午夜迷影"任務後解鎖。'
+				AwardIDList="0$17033" AwardDescList="2000摩爾豆$5個螃蟹變變變" GoMap="61" />
+				
+		</Group>
+	</WorldTask>
+	
+	<GrowUpTask>
+		<Group Name="每日打工" FrameLabel="l3"  >
+		
+		</Group>
+		
+		<Group Name="摩爾成長" FrameLabel="l4"  >
+		
+		</Group>
+	</GrowUpTask>
+	
+	<ClassicsTask>
+	
+		<Group Name="尋回骰子" FrameLabel="l19" IsOpen="true" >
+			
+		<Task ID="638" Name="實現願望" ParentID="637" IsVip="0" TimeState="0" 
+			Detail=" 愛心廣場一戰讓4點被污染了，問題有點嚴重喲，大魔法師庫拉都有點混亂了，去找菩提大伯看看有沒有辦法吧！" LockMsg="需要完成“風穴時變”任務才能解鎖哦！"
+			AwardIDList="161368$1230141" AwardDescList="驚恐拉姆$2個魔術城山茶種子" GoMap="53" />		
+		<Task ID="637" Name="摩摩商會緊急會議" ParentID="636" IsVip="0" TimeState="0" 
+			Detail=" 愛心廣場的巨大能量衝擊，給摩爾銀行帶來了毀滅性的破壞，伊蓮會長立刻召開了摩摩商會緊急會議。" LockMsg="需要完成“風穴時變”任務才能解鎖哦！"
+			AwardIDList="161340$1270134" AwardDescList="古董電話$下金蛋的鵝" GoMap="149" />		
+		<Task ID="636" Name="風穴時變" ParentID="635" IsVip="0" TimeState="0" 
+			Detail=" 自從1點回來以後，庫拉的家越來越有家的感覺了~他們熱熱鬧鬧的日子過得好不快活，我們快去圍觀吧~" LockMsg="需要完成“絕望的拉姆”任務才能解鎖哦！"
+			AwardIDList="161345$1230029" AwardDescList="拉姆小床$2個蒲公英種子" GoMap="240" />		
+		<Task ID="635" Name="絕望的拉姆" ParentID="634" IsVip="0" TimeState="0" 
+			Detail=" 經歷了小拉姆豆豆事件之後，庫拉的女神似乎有點悶悶不樂。庫拉是不是要各種逗女神開心了呢？我們快去看看吧！" LockMsg="需要完成“彼岸的拉姆”任務才能解鎖哦！"
+			AwardIDList="161338$1230122" AwardDescList="小熊玩偶$2個白鷺花種子" GoMap="362" />		
+		<Task ID="634" Name="彼岸的拉姆" ParentID="633" IsVip="0" TimeState="0" 
+			Detail=" 拉姆運動會開始了，每一個小拉姆都跟著主人開心參賽，揮灑汗水。可是路燈下有只孤零零的小拉姆，在四處張望……" LockMsg="需要完成“135 246”任務才能解鎖哦！"
+			AwardIDList="1220386$1230120" AwardDescList="清涼桌$2個跳舞蘭種子" GoMap="47" />		
+							
+		</Group>
+
+			<Group Name="庫拉流浪記" FrameLabel="l18" IsOpen="true" >
+
+		<Task ID="633" Name="135 246" ParentID="632" IsVip="0" TimeState="0" 
+			Detail=" 找不齊骰子就不能發揮庫拉的魔法力量，就不能幫伊莉絲解決掉落身體的問題。伊莉絲決定去尋找骰子的剩下幾個分身。" LockMsg="需要完成“骰子的第六面”任務才能解鎖哦！"
+			AwardIDList="1220380$1220384" AwardDescList="秋千坐椅$太陽傘" GoMap="120" />	
+		
+		<Task ID="632" Name="骰子的第六面" ParentID="631" IsVip="0" TimeState="0" 
+			Detail=" 庫拉一直都在尋找著骰子，沒想到尋找過程中可以偶遇這樣一位“女神”。希望庫拉能找齊骰子分身，得到女神的青睞！" LockMsg="需要完成“女神伊莉絲”任務才能解鎖哦！"
+			AwardIDList="1220381$161311" AwardDescList="風箏$中國風長椅" GoMap="240" />	
+					
+		<Task ID="631" Name="女神伊莉絲" ParentID="0" IsVip="0" TimeState="0" 
+			Detail=" 庫拉被孤零零的扔在了神殿彩虹橋了，看來神都是不可信的，可是他為什麼會成為神殿守護者呢？有沒有興趣去一探究竟呀？" LockMsg=""
+			AwardIDList="1220370$191152" AwardDescList="馬年剪紙$2個金橘" GoMap="360" />			
+				
+		</Group>
+
+		<Group Name="王子復仇記" FrameLabel="l12" IsOpen="true" >
+			<Task ID="604" Name="華麗謝幕" ParentID="603" IsVip="0" TimeState="1" 
+			Detail="原來莎士摩亞是一本小說中的角色，但為什麼又要詛咒莊園呢？看來有必要繼續調查！" LockMsg="需要完成“瘋狂劇作家”任務才能解鎖哦！"
+			AwardIDList="1673003$15135" AwardDescList="2個元素騎士經驗藥劑（小）$吟游詩人的口琴" GoMap="349" />
+
+			<Task ID="603" Name="瘋狂劇作家" ParentID="602" IsVip="0" TimeState="1" 
+			Detail="麼麼公主與塞拉王子的決鬥即將開始，我們要怎麼做才能保護他們不陷入危機呢？" LockMsg="需要完成“扭轉的命運”任務才能解鎖哦！"
+			AwardIDList="1673003$15133" AwardDescList="2個元素騎士經驗藥劑（小）$紅酒杯" GoMap="15" />
+
+			<Task ID="602" Name="扭轉的命運" ParentID="601" IsVip="0" TimeState="1" 
+			Detail="菩提大伯危在旦夕，我們該怎麼辦？捷克王子提議再去找摩爾王的靈魂問問！" LockMsg="需要完成“悲劇初演”任務才能解鎖哦！"
+			AwardIDList="1673003$15134" AwardDescList="2個元素騎士經驗藥劑（小）$音符髮夾" GoMap="110" />
+
+			<Task ID="601" Name="悲劇初演" ParentID="" IsVip="0" TimeState="1" 
+			Detail="城堡書房發生了異動，所有的書都變成了同一本叫作《王子復仇記》的劇本！許多摩爾們的命運被這劇本所詛咒……" LockMsg=""
+			AwardIDList="1673003$15119" AwardDescList="2個元素騎士經驗藥劑（小）$書與筆" GoMap="32" />
+		</Group>
+
+		<Group Name="田園浪漫季" FrameLabel="l6" IsOpen="true" >
+		
+			<Task ID="586" Name="浪漫滿園" ParentID="" IsVip="0" TimeState="1" 
+			Detail="遺忘田園的迷霧終於被驅散了，尤瑞克爺爺能和妻子重逢嗎？" LockMsg=""
+			AwardIDList="1653005" AwardDescList="10個經驗果實（大）" GoMap="331" />
+		 	
+		 	<Task ID="583" Name="誓言小屋" ParentID="" IsVip="0" TimeState="1" 
+			Detail="遺忘田園的迷霧終於被驅散了，尤瑞克爺爺能和妻子重逢嗎？" LockMsg=""
+			AwardIDList="1653005" AwardDescList="10個經驗果實（大）" GoMap="330" />
+		 	
+		 	<Task ID="582" Name="迷霧之地" ParentID="" IsVip="0" TimeState="1" 
+			Detail="經過大家的共同努力，小水車終於修好了。快去遺忘田園看看吧！" LockMsg=""
+			AwardIDList="14902$1653005" AwardDescList="尤瑞克戰靴$10個經驗果實（大）" GoMap="329" />
+		 	
+		 	<Task ID="581" Name="銘刻愛的小水車" ParentID="" IsVip="0" TimeState="1" 
+			Detail="我看見小摩爾在摩爾大學附近，很著急的樣子，發生什麼事了？快去問問他吧！" LockMsg=""
+			AwardIDList="1653005" AwardDescList="10個經驗果實（大）" GoMap="77" />
+		</Group>	
+	
+	</ClassicsTask>
+	
+	<ExceptionTask>
+		<Group Name="例外任務">
+			<Task ID="300" Name="新手任務"  />
+			<Task ID="382" Name="新手引導"  />
+			<Task ID="626" Name="2013回憶錄" GoMap="109" />
+			
+			<Task ID="0" Name="我想成為蘑菇嚮導"  Detail="每個SMC嚮導都有個專用小喇叭，不過需要從摩爾莊園各場景中搜集齊4盤嚮導磁帶才能使用，找到它們後交給愛心嚮導社中的傑西！"  GoodsMap="17;19;24;32" Goods="190001;190002;190003;190004" GoodsTip="線索：快去摩爾餐廳看看;線索：快去道具店看看;線索：快去魔法馬車看看;線索：快去城堡書房看看"/>
+			<Task ID="1" Name="我想成為超級蘑菇嚮導"  Detail="傑西在愛心嚮導社等你，快去吧！通過他的考驗就可以成為優秀的超級蘑菇嚮導。"  GoodsMap="46" Goods="1_1" GoodsTip="傑西那裡完成答題"/>
+			<Task ID="8" Name="我想成為摩爾莊園警官"  Detail="每個SMC警官都必須配備一把用特殊材料製作的警用佩劍，不過遺憾的是現在這些材料奇缺，找到這些材料後交給摩爾莊園警署的艾爾警官！"  GoodsMap="5;26;7;27" Goods="190014;190015;190017;190016" GoodsTip="提示：滑冰場山洞口的小鐵鍬;提示：蘑菇洞的小鐵鍬;提示：遊樂場泳池的小鐵鍬;提示：農場發明屋的試劑瓶"/>
+			<Task ID="9" Name="摩爾警官日常值勤任務" Detail="穿上自己的警服，一起維護莊園的安定吧！可以在愛心教堂、東部遊樂場、咕嚕藝術街站崗執勤！"  GoodsMap="" Goods="9_1;9_2" GoodsTip="值勤卡;值勤卡"/>
+			<Task ID="10" Name="★精英任務：古董失竊案★" Detail=""  GoodsMap="" Goods="FlowRPG_MC" goodsTip="" />
+			<Task ID="16" Name="我想成為摩爾莊園記者"  Detail="每個記者都需要一部照相機！首先你必須在莊園裡找齊照相機的3個重要部件！找齊後到愛心教堂的摩爾報社找艾米，她那裡還會有更艱巨的考驗哦！"  GoodsMap="34;27;41" Goods="190036;190037;190038" GoodsTip=" 在寒冷雪山腳下的獵人小屋裡找到相機！;在發明家大衛工作的地方找到膠捲！;在漿果叢林大榕樹上的藍色蟲蟲身上找到閃光粉！"/>
+			<Task ID="17" Name="我想成為摩爾莊園記者"  Detail="一名合格的記者需要過人的智慧！首先你的智慧值必須達到20以上。並且需要學會使用相機，完成艾米佈置的以下所有考驗，完成後再去尋找摩爾報社的艾米吧！"  GoodsMap="45;45;45" Goods="190039;190040;190041" GoodsTip="在摩爾報社裡找到打字機，開始打字投稿！;在摩爾報社裡找到相機，開始拍照！;在摩爾報社裡找到記者手冊，好好閱讀呀！"/>
+			<Task ID="131" Name="我想成為摩爾消防員" Detail="首先你的力量值必須達到20以上，再到消防署參加入職考試，獲得消防員職業資格證，把證書交給消防署長庫洛，就能成為一名合格的消防員啦！"  GoodsMap="75" Goods="190191" GoodsTip="提示：消防署參加入職考試"/>
+			<Task ID="141" Name="我想成為駕駛員" Detail="莊園裡的駕駛員，需要十分瞭解交通規則，有高超的駕駛技術。只要你完成嘀嘀嘟嘟學習班的學習，得到炫風駕照，再向貝塔報到，就可以成為一名SMC駕駛員哦！"  GoodsMap="83" Goods="190426" GoodsTip="提示：交通署嘀嘀嘟嘟學習班"/>
+			<Task ID="365" Name="我想成為SMC小獵人" Detail="莊園中出現了許多不明生物，公民管理處與獵人M商量成立SMC小獵人職業，讓大家瞭解野生小動物並學會馴養它們。完成所有訓練後記得去找獵人M成為真正的獵人哦！"  GoodsMap="34;40;34;34" Goods="365_1;365_2;365_3;365_4" GoodsTip="去獵人小屋找獵人M進行知識問答;去漿果密道捕獲3只小豬;去獵人小屋進行抓捕訓練;去獵人小屋進行馴養訓練"/>
+			<Task ID="221" Name="我想成為初級建築師" Detail="建築師是莊園裡擁有悠久歷史的職業！成為初級建築師需要通過嚴格審核，去摩爾拉雅山腳，找建設署裡的湯米接受入職考驗吧！"  GoodsMap="143;143;143" Goods="190643;190644;190645" GoodsTip="第一步：在建設署通過湯米答題測試;第二步：在繪圖區找出5副圖稿的錯誤;第三步：在夢想建築師遊戲裡搭建4個小屋"/>
+			<Task ID="151" Name="我想成為見習騎士" Detail="在摩爾城堡與黑森林的交接處，有一座隱秘的崗哨。這裡就是皇家騎士們訓練和集結的地方。皇家騎士團在這裡選拔新的騎士，成為莊園新的守護者。"  GoodsMap="62;62;62" Goods="151_1;151_2;151_3" goodsTip="" />
+			<Task ID="152" Name="我想成為勳章騎士" Detail="現在你需要找到騎士秘密基地中的機關，召喚出代表著騎士五種能力的勳章，通過自己的努力集齊這五枚勳章就能成為一位勇敢的勳章騎士！"  GoodsMap="" Goods="12629;12630;12631;12632;12633" GoodsTip="需要紅色勇氣勳章;需要黃色力量勳章;需要藍色智慧勳章;需要綠色忠誠勳章;需要紫色愛心勳章" />
+			<Task ID="153" Name="我想成為森林騎士" Detail="你需要在森林訓練場中，通過不斷與其他騎士們進行對戰，提升自己的森林騎士等級，最終戰勝土林長老，並且領取土林長老的獎勵，就能成為榮耀的森林騎士團的一員。"  GoodsMap="151;151;151;151;151" Goods="13475;13474;13473;13472;13476" GoodsTip="累計500點森林騎士經驗後獲取;累計1500點森林騎士經驗後獲取;累計3000點森林騎士經驗後獲取;累計5000點森林騎士經驗後獲取;戰勝土林長老後獲取"/>
+			
+			<Task ID="171" Name="再現隱身衣" />
+			<Task ID="503" Name="迷失的海底樂園" />
+			<Task ID="532" Name="我想成為酒店管理師"  Detail="我們懂禮貌、樂於助人，努力成為摩爾們的好榜樣！讓我們帶你走遍莊園的每個角落！" />
+			
+			<Task ID="1401" Name="生物分類學" Detail="成為馴獸師" GoodsMap="" Goods="" GoodsTip=""/>
+			<Task ID="1402" Name="小傢伙大本領" Detail="成為馴獸師" GoodsMap="" Goods="" GoodsTip=""/>
+			<Task ID="1403" Name="成為馴化師" Detail="成為馴獸師" GoodsMap="" Goods="" GoodsTip=""/>
+			
+			<!-- 老任務 -->
+			<Task ID="161" Name="醫生職業任務" />
+			<Task ID="60" Name="未知" />
+			<Task ID="265" Name="未知" />
+			<Task ID="89" Name="未知" />
+			<Task ID="80" Name="未知" />
+			<Task ID="90" Name="未知" />
+			<Task ID="75" Name="未知" />
+			<Task ID="29" Name="機器人拼裝" />
+			<Task ID="183" Name="超拉的故事" />
+			<Task ID="77" Name="未知" />
+			<Task ID="403" Name="洛克的小貼士" />
+			<Task ID="409" Name="未知" />
+			<Task ID="175" Name="獲得魔法小衣櫃 " />
+			<Task ID="405" Name="未知" />
+			<Task ID="101" Name="未知" />
+			<Task ID="106" Name="未知" />
+			<Task ID="411" Name="未知" />
+			<Task ID="58" Name="未知" />
+			<Task ID="85" Name="捷克王子歸來" />
+			<Task ID="406" Name="皇宮一日遊" />
+			<Task ID="274" Name="我想成為健康營養師" />
+			<Task ID="577" Name="小店員升職記-普通小店員" />
+			<Task ID="578" Name="小店員升職記-樂遊" />
+			<Task ID="579" Name="小店員升職記-生日蛋糕" />
+			<Task ID="580" Name="小店員升職記-美食店店長" />
+		</Group>
+	</ExceptionTask>
+</TaskSummary>

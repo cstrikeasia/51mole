@@ -1,0 +1,2245 @@
+﻿<!--事件簿* logo=""   1=新品 2=即將下架 3=已擁有 4=套裝單品 5=限量品 6=折扣價 7=限時購 8=買就送 9=暢銷  * tips=""  活動說明* 華麗套裝id填商品id，其他的都為物品id* score=""兌換所需的積分數量   itemcout=""積分一次性可以兌換多少物品  exchageid=""後臺協議ID-->
+ <shop info=" 各位小摩爾進行購買時，金豆會先從儲值轉點的數量開始消耗喔">
+	<!--最新上架-->
+	<zuixinshangjia>
+	
+		<!--潮流單品-->
+		<chaoliudanping>
+		<!--0802-->
+		<item id="12774" logo="1" tips="超拉八折"/>
+		<item id="12775" logo="1" tips="超拉八折"/>
+		<item id="12870" logo="1" tips="超拉八折"/>
+		<item id="12871" logo="1" tips="超拉八折"/>
+		<item id="12874" logo="1" tips="超拉八折"/>
+		<item id="12875" logo="1" tips="超拉八折"/>
+		<item id="13779" logo="1" tips="超拉八折"/>
+		<!--0510-->
+		<item id="15539" logo="1" tips="超拉無八折優惠"/>
+		<item id="15540" logo="1" tips="超拉無八折優惠"/>
+		<item id="15541" logo="1" tips="超拉無八折優惠"/>
+		<item id="15542" logo="1" tips="超拉無八折優惠"/>
+		<item id="15543" logo="1" tips="超拉無八折優惠"/>
+		<!--0119-->
+		<item id="13669" logo="1" tips="超拉八折"/>
+		<item id="13670" logo="1" tips="超拉八折"/>
+		<item id="12964" logo="1" tips="超拉八折"/>
+		<item id="12965" logo="1" tips="超拉八折"/>
+		<item id="12966" logo="1" tips="超拉八折"/>
+		<!--0112-->
+		<item id="15015" logo="1" tips="超拉八折"/>
+		<item id="15016" logo="1" tips="超拉八折"/>
+		<item id="15017" logo="1" tips="超拉八折"/>
+		<item id="15018" logo="1" tips="超拉八折"/>
+		<item id="15019" logo="1" tips="超拉八折"/>
+		<item id="15020" logo="1" tips="超拉八折"/>
+		<item id="15021" logo="1" tips="超拉八折"/>
+		<!--1215-->
+		<item id="12543" logo="1" tips="超拉八折"/>
+		<item id="13317" logo="1" tips="超拉八折"/>
+		<item id="13318" logo="1" tips="超拉八折"/>
+		<item id="14993" logo="1" tips="超拉八折"/>
+		<!--1215-->
+		<item id="12372" logo="1" tips="超拉八折"/>
+		<item id="12373" logo="1" tips="超拉八折"/>
+		<!--1013-->
+		<item id="18019" logo="1" tips="超拉八折"/>
+		<item id="13268" logo="1" tips="超拉八折"/>
+		<item id="13269" logo="1" tips="超拉八折"/>
+		<item id="13270" logo="1" tips="超拉八折"/>
+		<item id="13271" logo="1" tips="超拉八折"/>
+		<item id="13297" logo="1" tips="超拉八折"/>
+		<item id="15054" logo="1" tips="超拉八折"/>
+		<!--0929-->
+		<item id="15147" logo="1" tips="超拉八折"/>
+		<item id="15148" logo="1" tips="超拉八折"/>
+		<item id="15149" logo="1" tips="超拉八折"/>
+		<item id="14076" logo="1" tips="超拉八折"/>
+		<item id="14077" logo="1" tips="超拉八折"/>
+		<item id="14078" logo="1" tips="超拉八折"/>
+		<item id="14079" logo="1" tips="超拉八折"/>
+		<item id="14080" logo="1" tips="超拉八折"/>
+		<!--0922-->
+		<item id="15085" logo="1" tips="超拉八折"/>
+		<item id="15086" logo="1" tips="超拉八折"/>
+		<item id="15087" logo="1" tips="超拉八折"/>
+		<item id="15088" logo="1" tips="超拉八折"/>
+		<item id="12192" logo="1" tips=""/>
+		<item id="15144" logo="1" tips="超拉八折"/>
+		<item id="15145" logo="1" tips="超拉八折"/>
+		<item id="15146" logo="1" tips="超拉八折"/>
+		<!--0915-->
+		<item id="12516" logo="1" tips="超拉八折"/>
+		<item id="12517" logo="1" tips="超拉八折"/>
+		<item id="13183" logo="1" tips="超拉八折"/>
+		<item id="13178" logo="1" tips="超拉八折"/>
+		<item id="13179" logo="1" tips="超拉八折"/>
+		<item id="13180" logo="1" tips="超拉八折"/>
+		<item id="15236" logo="1" tips="超拉八折"/>
+		<item id="15237" logo="1" tips="超拉八折"/>
+		<item id="15238" logo="1" tips="超拉八折"/>
+		<!--0908-->
+		<item id="12103" logo="1" tips="超拉八折"/>
+		<item id="12678" logo="1" tips="超拉專用八折"/>
+		<item id="12337" logo="1" tips="超拉八折"/>
+		<item id="13277" logo="1" tips="超拉八折"/>
+		<item id="13278" logo="1" tips="超拉八折"/>
+		<item id="13279" logo="1" tips="超拉八折"/>
+		<item id="13280" logo="1" tips="超拉八折"/>
+		<item id="13281" logo="1" tips="超拉八折"/>
+		<!--0901-->
+		<item id="12212" logo="1" tips="超拉八折"/>
+		<item id="12213" logo="1" tips="超拉八折"/>
+		<item id="12424" logo="1" tips="超拉八折"/>
+		<item id="12425" logo="1" tips="超拉八折"/>
+		<item id="12427" logo="1" tips="超拉八折"/>
+		<item id="12428" logo="1" tips="超拉八折"/>
+		<item id="12445" logo="1" tips="超拉專用八折"/>
+		<item id="13782" logo="1" tips="超拉八折"/>
+		<item id="15494" logo="1" tips="超拉八折"/>
+		<item id="15495" logo="1" tips="超拉八折"/>
+		<!--0825-->
+		<item id="12210" logo="1" tips="超拉八折"/>
+		<item id="12211" logo="1" tips="超拉八折"/>
+		<item id="12433" logo="1" tips="超拉八折"/>
+		<item id="12477" logo="1" tips="超拉八折"/>
+		<item id="12532" logo="1" tips="超拉專用八折"/>
+		<item id="12533" logo="1" tips="超拉專用八折"/>
+		<item id="13030" logo="1" tips="超拉專用八折"/>
+		<item id="13031" logo="1" tips="超拉專用八折"/>
+		<item id="13032" logo="1" tips="超拉專用八折"/>
+		<item id="15074" logo="1" tips="超拉八折"/>
+		<!--0818-->
+		<item id="12465" logo="1" tips="超拉專用八折"/>
+		<item id="12671" logo="1" tips="超拉專用八折"/>
+		<item id="12672" logo="1" tips="超拉專用八折"/>
+		<item id="12673" logo="1" tips="超拉專用八折"/>
+		<item id="13286" logo="1" tips="超拉專用八折"/>
+		<item id="13573" logo="1" tips="超拉八折"/>
+		<item id="14015" logo="1" tips="超拉八折"/>
+		<item id="14017" logo="1" tips="超拉八折"/>
+		<item id="14018" logo="1" tips="超拉八折"/>
+		<item id="14020" logo="1" tips="超拉八折"/>
+		<!--0811-->
+		<item id="12848" logo="1" tips="超拉專用八折"/>
+		<item id="12849" logo="1" tips="超拉專用八折"/>
+		<item id="15177" logo="1" tips="超拉八折"/>
+		<item id="15178" logo="1" tips="超拉八折"/>
+		<item id="15179" logo="1" tips="超拉八折"/>
+		<item id="15180" logo="1" tips="超拉八折"/>
+		<item id="15181" logo="1" tips="超拉八折"/>
+		<item id="15182" logo="1" tips="超拉八折"/>
+		<item id="15183" logo="1" tips="超拉八折"/>
+		<!--0804-->
+		<item id="12019" logo="1" tips="超拉八折"/>
+		<item id="12121" logo="1" tips="超拉八折"/>
+		<item id="12596" logo="1" tips="超拉專用八折"/>
+		<item id="13128" logo="1" tips="超拉八折"/>
+		<item id="13641" logo="1" tips="超拉八折"/>
+		<item id="13642" logo="1" tips="超拉八折"/>
+		<item id="14068" logo="1" tips="超拉八折"/>
+		<item id="14069" logo="1" tips="超拉八折"/>
+		<item id="14070" logo="1" tips="超拉八折"/>
+		<item id="15281" logo="1" tips="超拉八折"/>
+		<!--0728-->
+		<item id="12064" logo="1" tips="超拉八折"/>
+		<item id="14061" logo="1" tips="超拉八折"/>
+		<item id="14062" logo="1" tips="超拉八折"/>
+		<item id="14063" logo="1" tips="超拉八折"/>
+		<item id="14064" logo="1" tips="超拉八折"/>
+		<item id="14065" logo="1" tips="超拉八折"/>
+		<item id="14066" logo="1" tips="超拉八折"/>
+		<item id="14067" logo="1" tips="超拉八折"/>
+		<!--0721-->
+		<item id="12408" logo="1" tips="超拉八折"/>
+		<item id="12868" logo="1" tips="超拉八折"/>
+		<item id="12869" logo="1" tips="超拉八折"/>
+		<item id="13288" logo="1" tips="超拉專用八折"/>
+		<item id="13290" logo="1" tips="超拉專用八折"/>
+		<item id="13291" logo="1" tips="超拉專用八折"/>
+		<item id="13292" logo="1" tips="超拉專用八折"/>
+		<!--0714-->
+		<item id="14499" logo="1" tips="超拉八折"/>
+		<item id="14500" logo="1" tips="超拉八折"/>
+		<item id="14501" logo="1" tips="超拉八折"/>
+		<item id="14502" logo="1" tips="超拉八折"/>
+		<item id="14487" logo="1" tips="超拉八折"/>
+		<item id="14488" logo="1" tips="超拉八折"/>
+		<item id="14489" logo="1" tips="超拉八折"/>
+		<item id="14490" logo="1" tips="超拉八折"/>
+		<item id="12755" logo="1" tips="超拉八折"/>
+		<item id="12756" logo="1" tips="超拉八折"/>
+		<item id="12757" logo="1" tips="超拉八折"/>
+		<item id="12758" logo="1" tips="超拉八折"/>
+		<!--0707-->
+		<item id="12610" logo="1" tips="超拉八折"/>
+		<item id="12611" logo="1" tips="超拉八折"/>
+		<item id="12612" logo="1" tips="超拉八折"/>
+		<item id="12613" logo="1" tips="超拉八折"/>
+		<item id="12614" logo="1" tips="超拉八折"/>
+		<item id="12615" logo="1" tips="超拉八折"/>
+		<item id="12616" logo="1" tips="超拉八折"/>
+		<item id="12617" logo="1" tips="超拉八折"/>
+		<item id="12654" logo="1" tips="超拉八折"/>
+		<item id="15299" logo="1" tips="超拉八折"/>
+		<item id="15300" logo="1" tips="超拉八折"/>
+		<item id="15301" logo="1" tips="超拉八折"/>
+		<item id="15303" logo="1" tips="超拉八折"/>
+		<item id="15304" logo="1" tips="超拉八折"/>
+		<item id="15305" logo="1" tips="超拉八折"/>
+		<item id="15306" logo="1" tips="超拉八折"/>
+		<!--0630-->
+		<item id="12547" logo="1" tips="超拉八折"/>
+		<item id="12548" logo="1" tips="超拉八折"/>
+		<item id="12549" logo="1" tips="超拉八折"/>
+		<item id="12153" logo="1" tips="超拉八折"/>
+		<item id="12155" logo="1" tips="超拉八折"/>
+		<item id="12154" logo="1" tips="超拉八折"/>
+		<item id="12478" logo="1" tips="超拉八折"/>
+		<item id="12479" logo="1" tips="超拉八折"/>
+		<item id="12480" logo="1" tips="超拉八折"/>
+		<item id="12481" logo="1" tips="超拉八折"/>
+		<!--0616-->
+		<item id="12156" logo="1" tips="超拉八折"/>
+		<item id="12157" logo="1" tips="超拉八折"/>
+		<item id="12158" logo="1" tips="超拉八折"/>
+		<item id="12159" logo="1" tips="超拉八折"/>
+		<item id="12160" logo="1" tips="超拉八折"/>
+		<item id="12454" logo="1" tips="超拉八折"/>
+		<item id="13432" logo="1" tips="超拉八折"/>
+		<item id="12544" logo="1" tips="超拉八折"/>
+		<item id="12545" logo="1" tips="超拉八折"/>
+		<item id="12546" logo="1" tips="超拉八折"/>
+		<!--0609-->
+		<item id="12101" logo="1" tips="超拉八折"/>
+		<item id="12102" logo="1" tips="超拉八折"/>
+		<item id="12161" logo="1" tips="超拉八折"/>
+		<item id="12162" logo="1" tips="超拉八折"/>
+		<item id="12165" logo="1" tips="超拉八折"/>
+		<item id="12732" logo="1" tips="超拉八折"/>
+		<item id="12418" logo="1" tips="超拉八折"/>
+		<item id="12851" logo="1" tips="超拉八折"/>
+		<item id="18021" logo="1" tips="超拉八折"/>
+		<item id="18022" logo="1" tips="超拉八折"/>
+		<!--0602-->
+		<item id="12093" logo="1" tips="超拉八折"/>
+		<item id="12104" logo="1" tips="超拉八折"/>
+		<item id="12105" logo="1" tips="超拉八折"/>
+		<item id="12195" logo="1" tips="超拉八折"/>
+		<item id="12196" logo="1" tips="超拉八折"/>
+		<item id="12278" logo="1" tips="超拉八折"/>
+		<item id="12279" logo="1" tips="超拉八折"/>
+		<item id="12280" logo="1" tips="超拉八折"/>
+		<item id="13082" logo="1" tips="超拉專用八折"/>
+		<!--0526-->
+		<item id="12113" logo="1" tips="超拉八折"/>
+		<item id="12139" logo="1" tips="超拉八折"/>
+		<item id="14143" logo="1" tips="超拉八折"/>
+		<item id="15750" logo="1" tips="超拉八折"/>
+		<item id="15751" logo="1" tips="超拉八折"/>
+		<!--0519-->
+		<item id="13440" logo="1" tips="超拉專用八折"/>
+		<item id="13441" logo="1" tips="超拉專用八折"/>
+		<item id="13442" logo="1" tips="超拉專用八折"/>
+		<item id="13443" logo="1" tips="超拉專用八折"/>
+		<item id="12764" logo="1" tips="超拉八折"/>
+		<item id="12765" logo="1" tips="超拉八折"/>
+		<item id="12766" logo="1" tips="超拉八折"/>
+		<item id="12767" logo="1" tips="超拉八折"/>
+		<item id="12776" logo="1" tips="超拉八折"/>
+		<item id="12864" logo="1" tips="超拉八折"/>
+		<!--0512-->
+		<item id="12786" logo="1" tips="超拉八折"/>
+		<item id="12787" logo="1" tips="超拉八折"/>
+		<item id="12788" logo="1" tips="超拉八折"/>
+		<item id="12789" logo="1" tips="超拉八折"/>
+		<item id="12790" logo="1" tips="超拉八折"/>
+		<item id="14893" logo="1" tips="超拉八折"/>
+		<item id="14894" logo="1" tips="超拉八折"/>
+		<item id="14895" logo="1" tips="超拉八折"/>
+		<item id="14896" logo="1" tips="超拉八折"/>
+		<!--0505-->
+		<item id="18142" logo="1" tips="超拉八折"/>
+		<item id="18143" logo="1" tips="超拉八折"/>
+		<item id="18144" logo="1" tips="超拉八折"/>
+		<item id="18145" logo="1" tips="超拉八折"/>
+		<item id="18146" logo="1" tips="超拉八折"/>
+		<item id="18179" logo="1" tips="超拉八折"/>
+		<item id="18180" logo="1" tips="超拉八折"/>
+		<item id="18181" logo="1" tips="超拉八折"/>
+		<item id="18182" logo="1" tips="超拉八折"/>
+		<item id="18183" logo="1" tips="超拉八折"/>
+		<!--0428-->
+		<item id="13651" logo="1" tips="超拉八折"/>
+		<item id="13652" logo="1" tips="超拉八折"/>
+		<item id="13653" logo="1" tips="超拉八折"/>
+		<item id="15184" logo="1" tips="超拉八折"/>
+		<item id="15185" logo="1" tips="超拉八折"/>
+		<item id="15186" logo="1" tips="超拉八折"/>
+		<item id="15187" logo="1" tips="超拉八折"/>
+		<item id="14989" logo="1" tips="超拉八折"/>
+		<item id="14990" logo="1" tips="超拉八折"/>
+		<item id="14991" logo="1" tips="超拉八折"/>
+		<item id="14992" logo="1" tips="超拉八折"/>
+		<!--0421-->
+		<item id="12575" logo="1" tips="超拉八折"/>
+		<item id="12576" logo="1" tips="超拉八折"/>
+		<item id="12577" logo="1" tips="超拉八折"/>
+		<item id="12578" logo="1" tips="超拉八折"/>
+		<item id="12579" logo="1" tips="超拉八折"/>
+		<item id="12580" logo="1" tips="超拉八折"/>
+		<item id="12581" logo="1" tips="超拉八折"/>
+		<item id="12582" logo="1" tips="超拉八折"/>
+		<item id="12583" logo="1" tips="超拉八折"/>
+		<item id="14281" logo="1" tips="超拉八折"/>
+		<item id="14282" logo="1" tips="超拉八折"/>
+		<!--0414-->
+		<item id="12221" logo="1" tips="超拉八折"/>
+		<item id="15270" logo="1" tips="超拉八折"/>
+		<item id="15271" logo="1" tips="超拉八折"/>
+		<item id="15272" logo="1" tips="超拉八折"/>
+		<item id="15273" logo="1" tips="超拉八折"/>
+		<item id="15277" logo="1" tips="超拉八折"/>
+		<item id="15278" logo="1" tips="超拉八折"/>
+		<item id="15279" logo="1" tips="超拉八折"/>
+		<item id="15280" logo="1" tips="超拉八折"/>
+		<item id="15049" logo="1" tips="超拉八折"/>
+		<item id="15047" logo="1" tips="超拉八折"/>
+		<item id="15048" logo="1" tips="超拉八折"/>
+		<!--0331-->
+		<item id="13065" logo="1" tips="超拉專用八折"/>
+		<item id="13066" logo="1" tips="超拉專用八折"/>
+		<item id="13067" logo="1" tips="超拉專用八折"/>
+		<item id="13068" logo="1" tips="超拉專用八折"/>
+		<item id="12187" logo="1" tips="超拉八折"/>
+		<item id="12176" logo="1" tips="超拉八折"/>
+		<item id="15372" logo="1" tips="超拉八折"/>
+		<item id="12282" logo="1" tips="超拉八折"/>
+		<item id="12014" logo="1" tips="超拉八折"/>
+		<item id="12122" logo="1" tips="超拉八折"/>
+		<!--0324-->
+		<item id="12013" logo="1" tips="超拉八折"/>
+		<item id="12008" logo="1" tips="超拉八折"/>
+		<item id="12009" logo="1" tips="超拉八折"/>
+		<item id="12823" logo="1" tips="超拉八折"/>
+		<item id="12824" logo="1" tips="超拉八折"/>
+		<item id="12825" logo="1" tips="超拉八折"/>
+		<item id="12826" logo="1" tips="超拉八折"/>
+		<item id="12827" logo="1" tips="超拉八折"/>
+		<item id="12828" logo="1" tips="超拉八折"/>
+		<item id="12829" logo="1" tips="超拉八折"/>
+		<item id="12830" logo="1" tips="超拉八折"/>
+		<!--0317-->
+		<item id="15150" logo="1" tips="超拉八折"/>
+		<item id="15151" logo="1" tips="超拉八折"/>
+		<item id="12117" logo="1" tips="超拉八折"/>
+		<item id="12118" logo="1" tips="超拉八折"/>
+		<item id="12984" logo="1" tips="超拉八折"/>
+		<item id="12111" logo="1" tips="超拉八折"/>
+		<item id="12815" logo="1" tips="超拉八折"/>
+		<item id="12816" logo="1" tips="超拉八折"/>
+		<item id="12817" logo="1" tips="超拉八折"/>
+		<item id="12818" logo="1" tips="超拉八折"/>
+		<!--0310-->
+		<item id="15470" logo="1" tips="超拉八折"/>
+		<item id="15471" logo="1" tips="超拉八折"/>
+		<item id="15472" logo="1" tips="超拉八折"/>
+		<item id="15473" logo="1" tips="超拉八折"/>
+		<item id="15152" logo="1" tips="超拉八折"/>
+		<item id="15153" logo="1" tips="超拉八折"/>
+		<item id="15154" logo="1" tips="超拉八折"/>
+		<item id="12811" logo="1" tips="超拉八折"/>
+		<item id="12812" logo="1" tips="超拉八折"/>
+		<item id="12813" logo="1" tips="超拉八折"/>
+		<item id="12814" logo="1" tips="超拉八折"/>
+		<!--0303-->
+		<item id="12976" logo="1" tips="超拉八折"/>
+		<item id="12977" logo="1" tips="超拉八折"/>
+		<item id="15353" logo="1" tips="超拉八折"/>
+		<item id="15354" logo="1" tips="超拉八折"/>
+		<item id="15355" logo="1" tips="超拉八折"/>
+		<item id="15356" logo="1" tips="超拉八折"/>
+		<item id="15357" logo="1" tips="超拉八折"/>
+		<item id="15358" logo="1" tips="超拉八折"/>
+		<item id="15359" logo="1" tips="超拉八折"/>
+		<item id="13778" logo="1" tips="超拉八折"/>
+		<!--0224-->
+		<item id="14465" logo="1" tips="超拉八折"/>
+		<item id="14466" logo="1" tips="超拉八折"/>
+		<item id="14467" logo="1" tips="超拉八折"/>
+		<item id="14468" logo="1" tips="超拉八折"/>
+		<item id="12967" logo="1" tips="超拉八折"/>
+		<item id="12968" logo="1" tips="超拉八折"/>
+		<item id="12969" logo="1" tips="超拉八折"/>
+		<item id="12971" logo="1" tips="超拉八折"/>
+		<item id="12972" logo="1" tips="超拉八折"/>
+		<item id="12973" logo="1" tips="超拉八折"/>
+		<item id="12974" logo="1" tips="超拉八折"/>
+		<item id="12975" logo="1" tips="超拉八折"/>
+		<!--0217-->
+		<item id="13037" logo="1" tips="超拉專用八折"/>
+		<item id="13038" logo="1" tips="超拉專用八折"/>
+		<item id="13039" logo="1" tips="超拉專用八折"/>
+		<item id="13040" logo="1" tips="超拉專用八折"/>
+		<item id="13041" logo="1" tips="超拉專用八折"/>
+		<item id="15360" logo="1" tips="超拉八折"/>
+		<item id="15361" logo="1" tips="超拉八折"/>
+		<item id="15362" logo="1" tips="超拉八折"/>
+		<item id="12126" logo="1" tips="超拉八折"/>
+		<!--0210-->
+		<item id="15664" logo="1" tips="超拉八折"/>
+		<item id="15164" logo="1" tips="超拉八折"/>
+		<item id="15165" logo="1" tips="超拉八折"/>
+		<item id="15166" logo="1" tips="超拉八折"/>
+		<item id="15167" logo="1" tips="超拉八折"/>
+		<item id="15168" logo="1" tips="超拉八折"/>
+		<item id="15169" logo="1" tips="超拉八折"/>
+		<item id="12794" logo="1" tips="超拉專用八折"/>
+		<item id="12795" logo="1" tips="超拉專用八折"/>
+		<item id="12796" logo="1" tips="超拉專用八折"/>
+		<!--0203-->
+		<item id="15576" logo="1" tips="超拉八折"/>
+		<item id="15577" logo="1" tips="超拉八折"/>
+		<item id="15578" logo="1" tips="超拉八折"/>
+		<item id="15579" logo="1" tips="超拉八折"/>
+		<item id="15580" logo="1" tips="超拉八折"/>
+		<item id="12733" logo="1" tips="超拉八折"/>
+		<item id="12847" logo="1" tips="超拉八折"/>
+		<item id="12735" logo="1" tips="超拉八折"/>
+		<item id="12730" logo="1" tips="超拉八折"/>
+		<item id="13827" logo="1" tips="超拉八折"/>
+		<!--0120-->
+		<item id="12917" logo="1" tips="超拉八折"/>
+		<item id="15107" logo="1" tips="超拉八折"/>
+		<item id="15112" logo="1" tips="超拉八折"/>
+		<item id="12831" logo="1" tips="超拉八折"/>
+		<item id="12147" logo="1" tips="超拉八折"/>
+		<item id="12889" logo="1" tips="超拉專用八折"/>
+		<item id="12890" logo="1" tips="超拉專用八折"/>
+		<item id="12791" logo="1" tips="超拉專用八折"/>
+		<item id="12792" logo="1" tips="超拉專用八折"/>
+		<item id="12802" logo="1" tips="超拉專用八折"/>
+		<!--0113-->
+		<item id="12442" logo="1" tips="超拉專用八折"/>
+		<item id="12443" logo="1" tips="超拉專用八折"/>
+		<item id="12027" logo="1" tips="超拉八折"/>
+		<item id="12028" logo="1" tips="超拉八折"/>
+		<item id="12841" logo="1" tips="超拉八折"/>
+		<item id="12843" logo="1" tips="超拉八折"/>
+		<item id="15173" logo="1" tips="超拉八折"/>
+		<item id="15174" logo="1" tips="超拉八折"/>
+		<item id="15175" logo="1" tips="超拉八折"/>
+		<item id="15176" logo="1" tips="超拉八折"/>
+		<!--0106-->
+		<item id="12029" logo="1" tips="超拉八折"/>
+		<item id="12030" logo="1" tips="超拉八折"/>
+		<item id="12031" logo="1" tips="超拉八折"/>
+		<item id="12132" logo="1" tips="超拉八折"/>
+		<item id="12133" logo="1" tips="超拉八折"/>
+		<item id="12665" logo="1" tips="超拉專用八折"/>
+		<item id="12878" logo="1" tips="超拉專用八折"/>
+		<item id="12881" logo="1" tips="超拉專用八折"/>
+		<item id="12882" logo="1" tips="超拉專用八折"/>
+		<item id="12884" logo="1" tips="超拉專用八折"/>
+		<!--1230-->
+		<item id="15128" logo="1" tips="超拉八折"/>
+		<item id="15129" logo="1" tips="超拉八折"/>
+		<item id="15130" logo="1" tips="超拉八折"/>
+		<item id="15131" logo="1" tips="超拉八折"/>
+		<item id="14244" logo="1" tips="超拉八折"/>
+		<item id="14245" logo="1" tips="超拉八折"/>
+		<item id="14246" logo="1" tips="超拉八折"/>
+		<item id="14424" logo="1" tips="超拉八折"/>
+		<item id="14425" logo="1" tips="超拉八折"/>
+		<item id="14426" logo="1" tips="超拉八折"/>
+		<!--1223-->
+		<item id="18098" logo="1" tips="超拉八折"/>
+		<item id="15419" logo="1" tips="超拉八折"/>
+		<item id="15420" logo="1" tips="超拉八折"/>
+		<item id="14139" logo="1" tips="超拉八折"/>
+		<item id="14140" logo="1" tips="超拉八折"/>
+		<item id="14141" logo="1" tips="超拉八折"/>
+		<item id="14136" logo="1" tips="超拉八折"/>
+		<item id="14137" logo="1" tips="超拉八折"/>
+		<item id="14138" logo="1" tips="超拉八折"/>
+		<item id="14142" logo="1" tips="超拉八折"/>
+		<!--1216-->
+		<item id="13121" logo="1" tips="超拉專用"/>
+		<item id="13122" logo="1" tips="超拉專用"/>
+		<item id="13123" logo="1" tips="超拉專用"/>
+		<item id="13124" logo="1" tips="超拉專用"/>
+		<item id="13125" logo="1" tips="超拉專用"/>
+		<item id="13141" logo="1" tips="超拉專用"/>
+		<item id="13142" logo="1" tips="超拉專用"/>
+		<item id="13143" logo="1" tips="超拉專用"/>
+		<item id="13144" logo="1" tips="超拉專用"/>
+		<item id="12862" logo="1" tips="超拉八折"/>
+		<!--1209-->
+		<item id="15222" logo="1" tips="超拉八折"/>
+		<item id="15223" logo="1" tips="超拉八折"/>
+		<item id="15224" logo="1" tips="超拉八折"/>
+		<item id="15225" logo="1" tips="超拉無八折優惠"/>
+		<item id="12296" logo="1" tips="超拉專用八折"/>
+		<item id="12435" logo="1" tips="超拉專用八折"/>
+		<item id="12436" logo="1" tips="超拉專用八折"/>
+		<item id="12437" logo="1" tips="超拉專用八折"/>
+		<item id="18151" logo="6" tips="超拉八折"/>
+		<item id="18152" logo="6" tips="超拉八折"/>
+		<item id="18153" logo="6" tips="超拉八折"/>
+		<item id="18158" logo="6" tips="超拉八折"/>
+		
+		<!--1202-->
+		<item id="15188" logo="1" tips="超拉八折"/>
+		<item id="15189" logo="1" tips="超拉八折"/>
+		<item id="15190" logo="1" tips="超拉八折"/>
+		<item id="15191" logo="1" tips="超拉八折"/>
+		<item id="15349" logo="1" tips="超拉八折"/>
+		<item id="15350" logo="1" tips="超拉八折"/>
+		<item id="15351" logo="1" tips="超拉八折"/>
+		<item id="15352" logo="1" tips="超拉八折"/>
+		<item id="12867" logo="1" tips="超拉八折"/>
+		<item id="12866" logo="1" tips="超拉八折"/>
+		<item id="14048" logo="1" tips="超拉八折"/>
+		<item id="14049" logo="1" tips="超拉八折"/>
+		<item id="14050" logo="1" tips="超拉八折"/>
+		<item id="14051" logo="1" tips="超拉八折"/>
+		<item id="14052" logo="1" tips="超拉八折"/>
+		<!--1118-->
+		<item id="15333" logo="1" tips="超拉八折"/>
+		<item id="15334" logo="1" tips="超拉八折"/>
+		<item id="15335" logo="1" tips="超拉八折"/>
+		<item id="15336" logo="1" tips="超拉八折"/>
+		<item id="15239" logo="1" tips="超拉八折"/>
+		<item id="15240" logo="1" tips="超拉八折"/>
+		<item id="15241" logo="1" tips="超拉八折"/>
+		<item id="15242" logo="1" tips="超拉八折"/>
+		<!--1111-->
+		<item id="13287" logo="1" tips="超拉專用八折"/>
+		<item id="18189" logo="1" tips="超拉八折"/>
+		<item id="18190" logo="1" tips="超拉八折"/>
+		<item id="18191" logo="1" tips="超拉八折"/>
+		<item id="18192" logo="1" tips="超拉八折"/>
+		<item id="18193" logo="1" tips="超拉八折"/>
+		<item id="12214" logo="1" tips="超拉八折"/>
+		<item id="12215" logo="1" tips="超拉八折"/>
+		<item id="12218" logo="1" tips="超拉八折"/>
+		<item id="12219" logo="1" tips="超拉八折"/>
+		<!--1104-->
+		<item id="13908" logo="1" tips="超拉八折"/>
+		<item id="13909" logo="1" tips="超拉八折"/>
+		<item id="13910" logo="1" tips="超拉八折"/>
+		<item id="13911" logo="1" tips="超拉八折"/>
+		<item id="13947" logo="1" tips="超拉八折"/>
+		<item id="13948" logo="1" tips="超拉八折"/>
+		<item id="13949" logo="1" tips="超拉八折"/>
+		<item id="13953" logo="1" tips="超拉八折"/>
+		<item id="13954" logo="1" tips="超拉八折"/>
+		<item id="13955" logo="1" tips="超拉八折"/>
+		<!--1028-->
+		<item id="12426" logo="1" tips="超拉八折"/>
+		<item id="13020" logo="1" tips="超拉八折"/>
+		<item id="13021" logo="1" tips="超拉八折"/>
+		<item id="13022" logo="1" tips="超拉八折"/>
+		<item id="13023" logo="1" tips="超拉八折"/>
+		<item id="13027" logo="1" tips="超拉專用八折"/>
+		<item id="13028" logo="1" tips="超拉專用八折"/>
+		<item id="13029" logo="1" tips="超拉專用八折"/>
+		<item id="15274" logo="1" tips="超拉八折"/>
+		<item id="15275" logo="1" tips="超拉八折"/>
+		<item id="15276" logo="1" tips="超拉八折"/>
+		<!--1021-->
+		<item id="12259" logo="1" tips="超拉八折"/>
+		<item id="15231" logo="1" tips="超拉八折"/>
+		<item id="15232" logo="1" tips="超拉八折"/>
+		<item id="15233" logo="1" tips="超拉八折"/>
+		<item id="15234" logo="1" tips="超拉八折"/>
+		<item id="15235" logo="1" tips="超拉八折"/>
+		<item id="13024" logo="1" tips="超拉八折"/>
+		<item id="13025" logo="1" tips="超拉八折"/>
+		<item id="13026" logo="1" tips="超拉八折"/>
+		<item id="13623" logo="1" tips="超拉八折"/>
+		<!--1014-->
+		<item id="13321" logo="1" tips="超拉八折"/>
+		<item id="13322" logo="1" tips="超拉八折"/>
+		<item id="13323" logo="1" tips="超拉八折"/>
+		<item id="12374" logo="1" tips="超拉八折"/>
+		<item id="12376" logo="1" tips="超拉八折"/>
+		<item id="12348" logo="1" tips="超拉八折"/>
+		<item id="12655" logo="1" tips="超拉八折"/>
+		<item id="12656" logo="1" tips="超拉八折"/>
+		<item id="12657" logo="1" tips="超拉八折"/>
+		<item id="12341" logo="1" tips="超拉八折"/>
+		<!--0930-->
+		<item id="12144" logo="1" tips="超拉八折"/>
+		<item id="15170" logo="1" tips="超拉八折"/>
+		<item id="15171" logo="1" tips="超拉八折"/>
+		<item id="15172" logo="1" tips="超拉八折"/>
+		<item id="12865" logo="1" tips="超拉八折"/>
+		<item id="12609" logo="1" tips="超拉八折"/>
+		<item id="12981" logo="1" tips="超拉八折"/>
+		<item id="12982" logo="1" tips="超拉八折"/>
+		<item id="12400" logo="1" tips="超拉專用八折"/>
+		<!--0923-->
+		<item id="12587" logo="1" tips="超拉八折"/>
+		<item id="12867" logo="1" tips="超拉八折"/>
+		<item id="12866" logo="1" tips="超拉八折"/>
+		<item id="12140" logo="1" tips="超拉八折"/>
+		<item id="14529" logo="1" tips="超拉八折"/>
+		<item id="14530" logo="1" tips="超拉八折"/>
+		<item id="14531" logo="1" tips="超拉八折"/>
+		<item id="14532" logo="1" tips="超拉八折"/>
+		<item id="12318" logo="1" tips="超拉專用八折"/>
+		<!--0916-->
+		<item id="15466" logo="1" tips="超拉八折"/>
+		<item id="15467" logo="1" tips="超拉八折"/>
+		<item id="15468" logo="1" tips="超拉八折"/>
+		<item id="15633" logo="1" tips="超拉八折"/>
+		<item id="15634" logo="1" tips="超拉八折"/>
+		<item id="15635" logo="1" tips="超拉八折"/>
+		<item id="15636" logo="1" tips="超拉八折"/>
+		<item id="15096" logo="1" tips="超拉八折"/>
+		<!--0909-->
+		<item id="12773" logo="1" tips="超拉八折"/>
+		<item id="13191" logo="1" tips="超拉八折"/>
+		<item id="14016" logo="1" tips="超拉八折"/>
+		<item id="18133" logo="1" tips="超拉八折"/>
+		<item id="18134" logo="1" tips="超拉八折"/>
+		<item id="18135" logo="1" tips="超拉八折"/>
+		<item id="18136" logo="1" tips="超拉八折"/>
+		<item id="18137" logo="1" tips="超拉八折"/>
+		<!--0902-->
+		<item id="15229" logo="1" tips="超拉八折"/>
+		<item id="15230" logo="1" tips="超拉八折"/>
+		<item id="12127" logo="1" tips="超拉八折"/>
+		<item id="12128" logo="1" tips="超拉八折"/>
+		<item id="13950" logo="1" tips="超拉八折"/>
+		<item id="13951" logo="1" tips="超拉八折"/>
+		<item id="13952" logo="1" tips="超拉八折"/>
+		<item id="12780" logo="1" tips="超拉專用八折"/>
+		<!--0826-->
+		<item id="13034" logo="1" tips="超拉專用八折"/>
+		<item id="13035" logo="1" tips="超拉專用八折"/>
+		<item id="13036" logo="1" tips="超拉專用八折"/>
+		<item id="12106" logo="1" tips="超拉專用八折"/>
+		<item id="18023" logo="1" tips="超拉八折"/>
+		<item id="18024" logo="1" tips="超拉八折"/>
+		<item id="12088" logo="1" tips="超拉八折"/>
+		<item id="12163" logo="1" tips="超拉八折"/>
+		<!--0819-->
+		<item id="12674" logo="1" tips="超拉專用八折"/>
+		<item id="12808" logo="1" tips="超拉專用八折"/>
+		<item id="12291" logo="1" tips="超拉專用八折"/>
+		<item id="12879" logo="1" tips="超拉專用八折"/>
+		
+		<item id="15302" logo="1" tips="超拉八折"/>
+		<item id="15233" logo="1" tips="超拉八折"/>
+		<item id="12789" logo="1" tips="超拉八折"/>
+		<item id="12790" logo="1" tips="超拉八折"/>
+		<!--0812-->
+		<item id="12404" logo="1" tips="超拉八折"/>
+		<item id="12405" logo="1" tips="超拉八折"/>
+		<item id="12406" logo="1" tips="超拉八折"/>
+		<item id="12407" logo="1" tips="超拉八折"/>
+		<item id="12206" logo="1" tips="超拉八折"/>
+		<item id="12339" logo="1" tips="超拉八折"/>
+		<item id="12863" logo="1" tips="超拉八折"/>
+		<item id="12763" logo="1" tips="超拉八折"/>
+		<item id="12434" logo="1" tips="超拉八折"/>
+		<!--0805-->
+		<item id="12185" logo="1" tips="超拉八折"/>
+		<item id="12200" logo="1" tips="超拉八折"/>
+		<item id="12873" logo="1" tips="超拉八折"/>
+		<item id="12985" logo="1" tips="超拉八折"/>
+		<item id="15232" logo="1" tips="超拉八折"/>
+		<item id="15226" logo="1" tips="超拉八折"/>
+		<item id="15227" logo="1" tips="超拉八折"/>
+		<item id="15228" logo="1" tips="超拉八折"/>
+		<!--0729-->
+		<item id="15260" logo="1" tips="超拉八折"/>
+		<item id="15256" logo="1" tips="超拉八折"/>
+		<item id="14019" logo="1" tips="超拉八折"/>
+		<item id="12787" logo="1" tips="超拉八折"/>
+		<item id="12880" logo="1" tips="超拉專用八折"/>
+		<item id="12292" logo="1" tips="超拉專用八折"/>
+		<!--0722-->
+		<item id="12872" logo="1" tips="超拉八折"/>
+		
+		<item id="15250" logo="1" tips="超拉八折"/>
+		<item id="15251" logo="1" tips="超拉八折"/>
+		<item id="15252" logo="1" tips="超拉八折"/>
+		<item id="15633" logo="1" tips="超拉八折"/>
+		<item id="13289" logo="1" tips="超拉專用八折"/>
+		<!--0715-->
+		<item id="12585" logo="1" tips="超拉八折"/>
+		<item id="12586" logo="1" tips="超拉八折"/>
+		<item id="15253" logo="1" tips="超拉八折"/>
+		<item id="15259" logo="1" tips="超拉八折"/>
+		<item id="12891" logo="1" tips="超拉專用八折"/>
+		<item id="12801" logo="1" tips="超拉專用八折"/>
+		<!--0708-->
+		
+		<item id="12916" logo="1" tips="超拉八折"/>
+		<item id="15243" logo="1" tips="超拉八折"/>
+		<item id="15244" logo="1" tips="超拉八折"/>
+		<item id="15245" logo="1" tips="超拉八折"/>
+		<item id="15246" logo="1" tips="超拉八折"/>
+		<item id="12332" logo="1" tips="超拉八折"/>
+		<item id="12597" logo="1" tips="超拉專用八折"/>
+		<!--0701-->
+		<item id="13472" logo="1" tips="超拉八折"/>
+		<item id="13473" logo="1" tips="超拉八折"/>
+		<item id="13474" logo="1" tips="超拉八折"/>
+		<item id="13475" logo="1" tips="超拉八折"/>
+		<item id="13476" logo="1" tips="超拉八折"/>
+		<item id="12297" logo="1" tips="超拉專用八折"/>
+		<!--0624-->
+		<item id="12760" logo="1" tips="超拉八折"/>
+		<item id="12761" logo="1" tips="超拉八折"/>
+		<item id="12518" logo="1" tips="超拉八折"/>
+		<item id="12519" logo="1" tips="超拉八折"/>
+		<item id="12535" logo="1" tips="超拉八折"/>
+		<!--0617-->
+		<item id="12197" logo="1" tips="超拉八折"/>
+		<item id="13818" logo="1" tips="超拉八折"/>
+		<item id="14917" logo="1" tips="超拉八折"/>
+		<item id="15962" logo="1" tips="超拉八折"/>
+		<item id="12295" logo="1" tips="超拉專用八折"/>
+		<!--0610-->
+		<item id="12123" logo="1" tips="超拉八折"/>
+		<item id="12124" logo="1" tips="超拉八折"/>
+		<item id="12125" logo="1" tips="超拉八折"/>
+		<item id="12230" logo="1" tips="超拉八折"/>
+		<item id="12231" logo="1" tips="超拉八折"/>
+		<item id="12246" logo="1" tips="超拉八折"/>
+		<!--0603-->
+		<item id="15263" logo="1" tips="超拉八折"/>
+		<item id="15264" logo="1" tips="超拉八折"/>
+		<item id="15265" logo="1" tips="超拉八折"/>
+		<item id="15266" logo="1" tips="超拉八折"/>
+		<item id="12112" logo="1" tips="超拉八折"/>
+		<!--0520-->
+		<item id="14362" logo="1" tips="超拉八折"/>
+		<item id="12370" logo="1" tips="超拉八折"/>
+		<item id="12371" logo="1" tips="超拉八折"/>
+		<!--0513-->
+		<item id="12438" logo="1" tips="超拉八折"/>
+		<item id="12439" logo="1" tips="超拉八折"/>
+		<item id="12440" logo="1" tips="超拉八折"/>
+		<item id="12119" logo="1" tips="超拉八折"/>
+		<item id="12120" logo="1" tips="超拉八折"/>
+		<!--0429-->
+		<item id="13274" logo="1" tips="超拉八折"/>
+		<item id="12675" logo="1" tips="超拉專用"/>
+		<!--0422-->
+		<item id="12010" logo="1" tips="超拉八折"/>
+		<item id="12011" logo="1" tips="超拉八折"/>
+		<item id="12012" logo="1" tips="超拉八折"/>
+		<item id="13272" logo="1" tips="超拉八折"/>
+		<item id="13273" logo="1" tips="超拉八折"/>
+		<!--0415-->
+		<item id="13404" logo="1" tips="超拉八折"/>
+		<item id="13405" logo="1" tips="超拉八折"/>
+		<item id="13407" logo="1" tips="超拉八折"/>
+		<item id="13408" logo="1" tips="超拉八折"/>
+		<item id="13409" logo="1" tips="超拉八折"/>
+		<!--0401-->
+		<item id="12040" logo="1" tips="超拉八折"/>
+		<item id="12994" logo="1" tips="超拉八折"/>
+		<item id="12995" logo="1" tips="超拉八折"/>
+		<item id="12209" logo="1" tips="超拉八折"/>
+		<item id="12676" logo="1" tips="超拉專用"/>
+		<!--0318-->
+		<item id="15498" logo="1" tips="超拉八折"/>
+		<item id="15499" logo="1" tips="超拉八折"/>
+		<item id="15500" logo="1" tips="超拉八折"/>
+		<item id="15501" logo="1" tips="超拉八折"/>
+		<item id="13577" logo="1" tips="超拉八折"/>
+		<item id="15050" logo="1" tips="超拉八折"/>
+		<!--0311-->
+		<item id="14070" logo="1" tips="超拉八折"/>
+		<item id="13267" logo="1" tips="超拉八折"/>
+		<item id="13574" logo="1" tips="超拉八折"/>
+		<item id="13575" logo="1" tips="超拉八折"/>
+		<item id="13576" logo="1" tips="超拉八折"/>
+		<!--0225-->
+		<item id="14733" logo="1" tips="超拉八折"/>
+		<item id="14732" logo="1" tips="超拉八折"/>
+		<item id="14731" logo="1" tips="超拉八折"/>
+		<item id="14026" logo="1" tips="超拉八折"/>
+		<item id="14730" logo="1" tips="超拉八折"/>
+		<!--0218-->
+		<item id="12228" logo="1" tips="超拉八折"/>
+		<item id="12229" logo="1" tips="超拉八折"/>
+		<item id="12505" logo="1" tips="超拉八折"/>
+		<item id="12512" logo="1" tips="超拉八折"/>
+		<item id="12513" logo="1" tips="超拉八折"/>
+		<!--0129-->
+		<item id="12958" logo="1" tips="超拉專用"/>			
+		<item id="12959" logo="1" tips="超拉專用"/>				
+		<item id="12793" logo="1" tips="超拉專用"/>		
+		<item id="12885" logo="1" tips="超拉專用"/>		
+		<item id="12293" logo="1" tips="超拉專用"/>			
+		<!--0122-->
+		<item id="13149" logo="1" tips="超拉專用"/>	
+		<item id="12309" logo="1" tips="超拉9折"/>	
+		<item id="12065" logo="1" tips="超拉9折"/>			
+		<!--0128-->
+		<item id="15412" logo="1" tips="超拉八折"/>
+		<item id="15413" logo="1" tips="超拉八折"/>
+		<item id="15414" logo="1" tips="超拉八折"/>
+		<item id="15415" logo="1" tips="超拉八折"/>
+		<item id="15418" logo="1" tips="超拉八折"/>
+		<!--0121-->
+		<item id="15382" logo="1" tips="超拉八折"/>
+		<item id="15383" logo="1" tips="超拉八折"/>
+		<item id="12664" logo="1" tips="超拉專用八折"/>
+		<item id="12662" logo="1" tips="超拉專用八折"/>
+		<item id="12590" logo="1" tips="超拉八折"/>
+		<!--0114-->
+		<item id="12762" logo="1" tips="超拉八折"/>
+		<item id="12768" logo="1" tips="超拉八折"/>
+		<item id="12769" logo="1" tips="超拉八折"/>
+		<item id="12770" logo="1" tips="超拉八折"/>
+		<item id="12771" logo="1" tips="超拉八折"/>
+		<!--0107-->
+		<item id="15407" logo="1" tips="超拉八折"/>
+		<item id="15408" logo="1" tips="超拉八折"/>
+		<item id="15409" logo="1" tips="超拉八折"/>
+		<item id="15410" logo="1" tips="超拉八折"/>
+		<item id="15411" logo="1" tips="超拉八折"/>
+		<!--1224-->
+		<item id="15389" logo="1" tips="超拉八折"/>
+		<item id="15390" logo="1" tips="超拉八折"/>
+		<item id="15391" logo="1" tips="超拉八折"/>
+		<item id="15392" logo="1" tips="超拉八折"/>
+		<item id="15393" logo="1" tips="超拉八折"/>
+		<!--1217-->
+		<item id="18094" logo="1" tips="超拉八折"/>
+		<item id="18095" logo="1" tips="超拉八折"/>
+		<item id="18096" logo="1" tips="超拉八折"/>
+		<item id="18097" logo="1" tips="超拉八折"/>
+		<!--1210-->
+		<item id="15384" logo="1" tips="超拉八折"/>
+		<item id="15385" logo="1" tips="超拉八折"/>
+		<item id="15386" logo="1" tips="超拉八折"/>
+		<item id="15387" logo="1" tips="超拉八折"/>
+		<item id="15388" logo="1" tips="超拉八折"/>
+		<!--1203-->
+		<item id="12284" logo="1" tips="超拉八折"/>
+		<item id="12285" logo="1" tips="超拉八折"/>
+		<item id="12286" logo="1" tips="超拉八折"/>
+		<item id="12287" logo="1" tips="超拉八折"/>
+		<item id="12288" logo="1" tips="超拉專用八折"/>
+		<!--1119-->
+		<item id="13662" logo="1" tips="超拉八折"/>
+		<item id="13663" logo="1" tips="超拉八折"/>
+		<item id="13664" logo="1" tips="超拉八折"/>
+		<item id="12910" logo="1" tips="超拉八折"/>
+		<item id="12912" logo="1" tips="超拉八折"/>
+		<!--1105-->
+		<item id="12252" logo="9" tips="超拉八折"/>
+		<item id="12260" logo="9" tips="超拉八折"/>
+		<item id="13001" logo="9" tips="超拉八折"/>
+		<item id="13009" logo="9" tips="超拉八折"/>
+		<item id="12666" logo="9" tips="超拉專用八折"/>
+		<!--1029-->
+		<item id="12781" logo="9" tips="超拉專用八折"/>
+		<item id="12782" logo="9" tips="超拉八折"/>
+		<item id="12783" logo="9" tips="超拉八折"/>
+		<item id="12784" logo="9" tips="超拉八折"/>
+		<item id="12785" logo="9" tips="超拉八折"/>
+		<!--1022-->
+		<item id="13293" logo="9" tips="超拉八折"/>
+		<item id="13294" logo="9" tips="超拉八折"/>
+		<item id="13295" logo="9" tips="超拉八折"/>
+		<item id="13296" logo="9" tips="超拉八折"/>
+		<item id="12663" logo="9" tips="超拉專用八折"/>
+		<!--1015-->
+		<item id="12179" logo="9" tips="超拉八折"/>
+		<item id="12180" logo="9" tips="超拉八折"/>
+		<item id="12181" logo="9" tips="超拉八折"/>
+		<item id="12198" logo="9" tips="超拉八折"/>
+		<item id="12199" logo="9" tips="超拉八折"/>
+		<!--1001-->
+		<item id="12658" logo="9" tips="超拉八折"/>
+		<item id="12883" logo="9" tips="超拉專用八折"/>
+		<item id="12886" logo="9" tips="超拉專用八折"/>
+		<item id="12887" logo="9" tips="超拉專用八折"/>
+		<item id="12888" logo="9" tips="超拉專用八折"/>
+		<!--0917-->
+		<item id="12522" logo="9" tips="超拉八折"/>
+		<item id="12523" logo="9" tips="超拉八折"/>
+		<item id="12520" logo="9" tips="超拉八折"/>
+		<item id="12521" logo="9" tips="超拉八折"/>
+		<item id="12298" logo="9" tips="超拉八折"/>
+		<!--0910-->
+		<item id="15267" logo="9" tips="超拉八折"/>
+		<item id="15268" logo="9" tips="超拉八折"/>
+		<item id="15269" logo="9" tips="超拉八折"/>
+		<item id="12652" logo="9" tips="超拉八折"/>
+		<item id="12515" logo="9" tips="超拉八折"/>
+		<!--0903-->
+		<item id="12891" logo="9" tips="超拉專用八折"/>
+		<item id="12892" logo="9" tips="超拉專用八折"/>
+		<item id="12893" logo="9" tips="超拉專用八折"/>
+		<item id="12894" logo="9" tips="超拉專用八折"/>
+		<item id="12895" logo="9" tips="超拉專用八折"/>
+		<!--0827-->
+		<item id="13603" logo="9" tips="超拉八折"/>
+		<item id="14359" logo="9" tips="超拉八折"/>
+		<item id="14360" logo="9" tips="超拉八折"/>
+		<item id="14361" logo="9" tips="超拉八折"/>
+		<item id="12085" logo="9" tips="超拉八折"/>
+		<!--0820-->
+		<item id="12067" logo="9" tips="超拉八折"/>
+		<item id="12068" logo="9" tips="超拉八折"/>
+		<item id="12070" logo="9" tips="超拉八折"/>
+		<item id="12071" logo="9" tips="超拉八折"/>
+		<item id="12072" logo="9" tips="超拉八折"/>
+		<!--0806-->
+		<item id="18184" logo="9" tips="超拉八折"/>
+		<item id="18185" logo="9" tips="超拉八折"/>
+		<item id="18186" logo="9" tips="超拉八折"/>
+		<item id="18187" logo="9" tips="超拉八折"/>
+		<item id="12089" logo="9" tips="超拉八折"/>
+		<!--0730-->
+		<item id="13499" logo="9" tips="超拉八折"/>
+		<item id="13501" logo="9" tips="超拉八折"/>
+		<item id="13503" logo="9" tips="超拉八折"/>
+		<item id="13502" logo="9" tips="超拉八折"/>
+		<item id="13103" logo="9" tips="超拉八折"/>
+		<!--0709-->
+		<item id="13093" logo="9" tips="超拉八折"/>
+		<item id="13092" logo="9" tips="超拉八折"/>
+		<item id="13094" logo="9" tips="超拉八折"/>
+		<item id="13775" logo="9" tips="超拉八折"/>
+		<item id="13776" logo="9" tips="超拉八折"/>
+		<!--0507-->
+		<item id="14657" logo="9" tips="超拉八折"/>
+		<item id="14658" logo="9" tips="超拉八折"/>
+		<item id="14491" logo="9" tips="超拉八折"/>
+		<item id="14492" logo="9" tips="超拉八折"/>
+		<item id="14493" logo="9" tips="超拉專用"/>
+		<!--0423-->
+		<item id="15758" logo="9" tips="超拉專用八折"/>
+		<item id="15759" logo="9" tips="超拉專用八折"/>
+		<item id="12090" logo="9" tips="超拉八折"/>
+		<item id="12092" logo="9" tips="超拉八折"/>
+		<item id="12595" logo="9" tips="超拉專用"/>
+
+		<!--0402-->
+		<item id="14791" logo="9" tips="超拉八折"/>
+		<item id="14792" logo="9" tips="超拉八折"/>
+		<item id="14793" logo="9" tips="超拉八折"/>
+		<item id="14794" logo="9" tips="超拉八折"/>
+		<item id="15551" logo="9" tips="超拉八折"/>
+		<!--0319-->
+		<item id="12263" logo="9" tips="超拉八折"/>
+		<item id="12264" logo="9" tips="超拉八折"/>
+		<item id="12265" logo="9" tips="超拉八折"/>
+		<item id="12266" logo="9" tips="超拉八折"/>
+		<item id="14729" logo="9" tips="超拉八折"/>
+		<!--0312-->
+		<item id="12270" logo="9" tips="超拉八折"/>
+		<item id="12271" logo="9" tips="超拉八折"/>
+		<item id="12272" logo="9" tips="超拉八折"/>
+		<item id="12261" logo="9" tips="超拉八折"/>
+		<item id="12262" logo="9" tips="超拉八折"/>
+		<!--0305-->
+		<item id="12077" logo="9" tips="超拉八折"/>
+		<item id="12078" logo="9" tips="超拉八折"/>
+		<item id="12079" logo="9" tips="超拉八折"/>
+		<item id="12080" logo="9" tips="超拉八折"/>
+		<item id="12081" logo="9" tips="超拉八折"/>
+		<!--0226-->
+		<item id="15878" logo="9" tips="超拉八折"/>
+		
+		<item id="12267" logo="9" tips="超拉八折"/>
+		<item id="12268" logo="9" tips="超拉八折"/>
+		<item id="12269" logo="9" tips="超拉八折"/>
+		<!--0219-->
+		<item id="15648" logo="9" tips="超拉八折"/>
+		<item id="15754" logo="9" tips="超拉專用八折"/>
+		<item id="15755" logo="9" tips="超拉專用八折"/>
+		<item id="15756" logo="9" tips="超拉專用八折"/>
+		<item id="15757" logo="9" tips="超拉專用八折"/>
+		<!--0205-->
+		<item id="15446" logo="9" tips="超拉八折"/>
+		<item id="15447" logo="9" tips="超拉八折"/>
+		<item id="15645" logo="9" tips="超拉八折"/>
+		<item id="15646" logo="9" tips="超拉八折"/>
+		<item id="15647" logo="9" tips="超拉八折"/>
+		<!--0129-->
+		<item id="12866" logo="9" tips="超拉八折"/>
+		<item id="12041" logo="9" tips="超拉八折"/>
+		<item id="12779" logo="9" tips="超拉八折"/>
+		<item id="15444" logo="9" tips="超拉八折"/>
+		<item id="15445" logo="9" tips="超拉八折"/>
+		<!--0122-->
+		<item id="13656" logo="9" tips="超拉八折"/>
+		<item id="13657" logo="9" tips="超拉八折"/>
+		<item id="15442" logo="9" tips="超拉八折"/>
+		<item id="15443" logo="9" tips="超拉八折"/>
+		<!--0115-->
+		<item id="13119" logo="9" tips="超拉八折"/>
+		<item id="13120" logo="9" tips="超拉八折"/>
+		<item id="13127" logo="9" tips="超拉八折"/>
+		<item id="13654" logo="9" tips="超拉八折"/>
+		<item id="13655" logo="9" tips="超拉八折"/>
+		
+		<!--1023-->
+			<item id="13101" logo="7" tips=""/>
+			<item id="13721" logo="7" tips=""/>
+			<item id="13722" logo="7" tips=""/>
+			<item id="13917" logo="7" tips=""/>
+			<item id="13918" logo="7" tips=""/>
+			<item id="13919" logo="7" tips=""/>
+			<item id="14536" logo="7" tips=""/>
+			<item id="14537" logo="7" tips=""/>
+			<item id="14538" logo="7" tips=""/>
+			<item id="14533" logo="7" tips=""/>
+			<item id="14534" logo="7" tips=""/>
+			<item id="14535" logo="7" tips=""/>
+			<item id="13814" logo="7" tips=""/>
+			<item id="13815" logo="7" tips=""/>
+			<item id="13816" logo="7" tips=""/>
+			<item id="13817" logo="7" tips=""/>
+			<item id="13818" logo="7" tips=""/>
+			<item id="13819" logo="7" tips=""/>
+			<item id="13820" logo="7" tips=""/>
+			<item id="13821" logo="7" tips=""/>
+			<item id="13822" logo="7" tips=""/>
+			<item id="13099" logo="7" tips=""/>
+			<item id="13100" logo="7" tips=""/>
+			<item id="14494" logo="7" tips=""/>
+			<item id="14495" logo="7" tips=""/>
+			<item id="14496" logo="7" tips=""/>
+			<item id="14497" logo="7" tips=""/>
+			<item id="14498" logo="7" tips=""/>
+			<item id="13777" logo="7" tips=""/>
+			<item id="14881" logo="9" tips="超拉八折"/>
+			<item id="13095" logo="" tips="超拉八折"/>
+			<item id="13096" logo="" tips="超拉八折"/>
+			<item id="13097" logo="" tips="超拉八折"/>
+			<item id="13098" logo="" tips="超拉八折"/>
+			<item id="14915" logo="" tips="超拉八折"/>
+			<item id="14916" logo="" tips="超拉八折"/>
+			<item id="14917" logo="" tips="超拉八折"/>
+			<item id="14933" logo="" tips="超拉八折"/>
+			<item id="13308" logo="" tips="超拉八折"/>
+			<item id="14696" logo="" tips="超拉八折"/>
+			<item id="14703" logo="" tips="超拉八折"/>
+			<item id="14704" logo="" tips="超拉八折"/>
+			<item id="14705" logo="" tips="超拉八折"/>
+			<item id="14660" logo="" tips="超拉八折"/>
+			<item id="14662" logo="" tips="超拉八折"/>
+			<item id="14661" logo="" tips="超拉八折"/>
+			<item id="14694" logo="" tips="超拉八折"/>
+			<item id="14695" logo="" tips="超拉八折"/>
+			<item id="12876" logo="" tips="超拉八折"/>
+			<item id="13696" logo="" tips="超拉八折"/>
+			<item id="14536" logo="" tips="超拉八折"/>
+			<item id="14537" logo="" tips="超拉八折"/>
+			<item id="14538" logo="" tips="超拉八折"/>
+			<item id="14533" logo="" tips="超拉八折"/>
+			<item id="14534" logo="" tips="超拉八折"/>
+			<item id="14727" logo="" tips="超拉八折"/>
+			<item id="14728" logo="" tips="超拉八折"/>
+			<item id="14706" logo="" tips="超拉八折"/>
+			<item id="14707" logo="" tips="超拉八折"/>
+			<item id="14709" logo="" tips="超拉八折"/>
+			<item id="14976" logo="" tips="超拉八折"/>
+			<item id="14977" logo="" tips="超拉八折"/>
+			<item id="14978" logo="" tips="超拉八折"/>
+			<item id="12417" logo="" tips="超拉八折"/>
+			<item id="14726" logo="" tips="超拉八折"/>
+			<item id="14972" logo="" tips="超拉八折"/>
+			<item id="14973" logo="" tips="超拉八折"/>
+			<item id="14974" logo="" tips="超拉八折"/>
+			<item id="14979" logo="" tips="超拉八折"/>
+			<item id="14975" logo="" tips="超拉八折"/>
+			<item id="14950" logo="" tips="超拉八折"/>
+			<item id="14968" logo="" tips="超拉八折"/>
+			<item id="14969" logo="" tips="超拉八折"/>
+			<item id="14970" logo="" tips="超拉八折"/>
+			<item id="14971" logo="" tips="超拉八折"/>
+			<item id="14945" logo="" tips="超拉八折"/>
+			<item id="14946" logo="" tips="超拉八折"/>
+			<item id="14947" logo="" tips="超拉八折"/>
+			<item id="14948" logo="" tips="超拉八折"/>
+			<item id="14949" logo="" tips="超拉八折"/>
+			<item id="14940" logo="" tips="超拉八折"/>
+			<item id="14941" logo="" tips="超拉八折"/>
+			<item id="14942" logo="" tips="超拉八折"/>
+			<item id="14943" logo="" tips="超拉八折"/>
+			<item id="14944" logo="" tips="超拉八折"/>
+			<item id="14903" logo="" tips="超拉八折"/>
+			<item id="14918" logo="" tips="超拉八折"/>
+			<item id="14919" logo="" tips="超拉八折"/>
+			<item id="14920" logo="" tips="超拉八折"/>
+			<item id="14934" logo="" tips="超拉八折"/>
+			<item id="14904" logo="" tips="超拉八折"/>
+			<item id="14905" logo="" tips="超拉八折"/>
+			<item id="14906" logo="" tips="超拉八折"/>
+			<item id="14907" logo="" tips="超拉八折"/>
+			<item id="14908" logo="" tips="超拉八折"/>
+			<item id="14870" logo="" tips="超拉八折"/>
+			<item id="14871" logo="" tips="超拉八折"/>
+			<item id="14872" logo="" tips="超拉八折"/>
+			<item id="14873" logo="" tips="超拉八折"/>
+			<item id="14874" logo="" tips="超拉八折"/>
+			<item id="14840" logo="" tips="超拉八折"/>
+			<item id="14841" logo="" tips="超拉八折"/>
+			<item id="14867" logo="" tips="超拉八折"/>
+			<item id="14868" logo="" tips="超拉八折"/>
+			<item id="14869" logo="" tips="超拉八折"/>
+			<item id="14847" logo="" tips="超拉八折"/>
+			<item id="14848" logo="" tips="超拉八折"/>
+			<item id="14849" logo="" tips="超拉八折"/>
+			<item id="14838" logo="" tips="超拉八折"/>
+			<item id="14839" logo="" tips="超拉八折"/>
+			<item id="14842" logo="" tips="超拉八折"/>
+			<item id="14843" logo="" tips="超拉八折"/>
+			<item id="14844" logo="" tips="超拉八折"/>
+			<item id="14845" logo="" tips="超拉八折"/>
+			<item id="14846" logo="" tips="超拉八折"/>
+			<item id="14831" logo="" tips="超拉八折"/>
+			<item id="14832" logo="" tips="超拉八折"/>
+			<item id="14833" logo="" tips="超拉八折"/>
+			<item id="14834" logo="" tips="超拉八折"/>
+			<item id="14830" logo="" tips="超拉八折"/>
+			<item id="14044" logo="" tips="超拉八折"/>
+			<item id="14045" logo="" tips="超拉八折"/>
+			<item id="14046" logo="" tips="超拉八折"/>
+			<item id="14047" logo="" tips="超拉八折"/>
+			<item id="14821" logo="" tips="超拉八折"/>
+			<item id="14825" logo="" tips="超拉八折"/>
+			<item id="14826" logo="" tips="超拉八折"/>
+			<item id="14827" logo="" tips="超拉八折"/>
+			<item id="14828" logo="" tips="超拉八折"/>
+			<item id="14829" logo="" tips="超拉八折"/>
+			<item id="12346" logo="" tips="超拉八折"/>
+			<item id="12345" logo="" tips="超拉八折"/>
+			<item id="14818" logo="" tips="超拉八折"/>
+			<item id="14819" logo="" tips="超拉八折"/>
+			<item id="14820" logo="" tips="超拉八折"/>
+			<item id="14813" logo="" tips="超拉八折"/>
+			<item id="14814" logo="" tips="超拉八折"/>
+			<item id="14815" logo="" tips="超拉八折"/>
+			<item id="14816" logo="" tips="超拉八折"/>
+			<item id="14817" logo="" tips="超拉八折"/>
+			<item id="14808" logo="" tips="超拉八折"/>
+			<item id="14809" logo="" tips="超拉八折"/>
+			<item id="14810" logo="" tips="超拉八折"/>
+			<item id="14811" logo="" tips="超拉八折"/>
+			<item id="14812" logo="" tips="超拉八折"/>
+			<item id="14663" logo="" tips="超拉八折"/>
+			<item id="14664" logo="" tips="超拉八折"/>
+			<item id="14665" logo="" tips="超拉八折"/>
+			<item id="14697" logo="" tips="超拉八折"/>
+			<item id="14698" logo="" tips="超拉八折"/>
+
+
+		</chaoliudanping>
+		
+		<!--華麗套裝-->
+		<hualitaozhuang>
+			<item id="101869" logo="1" tips="超拉八折"/>
+		    <item id="101880" logo="1" tips=""/>
+			<item id="101884" logo="1" tips=""/>
+			<item id="101888" logo="1" tips=""/>
+			<item id="101892" logo="1" tips=""/>
+			<item id="101895" logo="1" tips=""/>
+			
+			<item id="100942" logo="1" tips=""/>
+			<item id="101789" logo="1" tips=""/>
+			<item id="101438" logo="1" tips=""/>
+			<item id="101508" logo="1" tips=""/>
+			<item id="101509" logo="1" tips=""/>
+			<item id="101510" logo="1" tips=""/>
+			<item id="101511" logo="1" tips=""/>
+			<item id="101512" logo="1" tips=""/>
+			<item id="101513" logo="1" tips=""/>
+			<item id="101514" logo="1" tips=""/>
+			<item id="101515" logo="1" tips=""/>
+			<item id="101516" logo="1" tips=""/>
+			<item id="101517" logo="1" tips=""/>
+			<item id="101518" logo="1" tips=""/>
+			<item id="101519" logo="1" tips=""/>
+			<item id="101520" logo="1" tips=""/>
+			<item id="101521" logo="1" tips=""/>
+			<item id="101522" logo="1" tips=""/>
+			<item id="101523" logo="1" tips=""/>
+			<item id="101524" logo="1" tips=""/>
+			<item id="101525" logo="1" tips=""/>
+			<item id="101526" logo="1" tips=""/>
+			<item id="101527" logo="1" tips=""/>
+			<item id="101528" logo="1" tips=""/>
+			<item id="101529" logo="1" tips=""/>
+			<item id="101530" logo="1" tips=""/>
+			<item id="101018" logo="1" tips=""/>
+			<item id="101814" logo="7" tips=""/>
+			<item id="101819" logo="7" tips=""/>
+			<item id="101834" logo="7" tips=""/>
+			<item id="101839" logo="7" tips=""/>
+			<item id="101844" logo="7" tips=""/>
+			<item id="102014" logo="7" tips=""/>
+			<item id="102790" logo="7" tips=""/>
+			<item id="102833" logo="7" tips=""/>
+			<item id="102838" logo="7" tips=""/>
+			<item id="100890" logo="7" tips=""/>
+			<item id="100895" logo="7" tips=""/>
+
+			<!--可上架套裝
+			<item id="100914" logo="1" tips=""/>
+			<item id="100910" logo="1" tips=""/>
+			<item id="100919" logo="1" tips=""/>
+			<item id="101792" logo="1" tips=""/>
+			<item id="100942" logo="1" tips=""/>
+			<item id="101002" logo="1" tips=""/>
+			<item id="100995" logo="1" tips=""/>
+			<item id="100998" logo="1" tips=""/>
+			<item id="101082" logo="1" tips=""/>
+			<item id="101900" logo="1" tips=""/>
+			<item id="101897" logo="" tips=""/>
+			<item id="100122" logo="" tips=""/>
+			<item id="101637" logo="" tips=""/>
+			<item id="100979" logo="" tips=""/>
+			<item id="101638" logo="" tips=""/>
+			<item id="100484" logo="" tips=""/>
+			<item id="100082" logo="" tips=""/>
+			<item id="101700" logo="" tips=""/>
+			<item id="100104" logo="" tips=""/>
+			<item id="101376" logo="" tips=""/>
+			<item id="101770" logo="" tips=""/>
+			<item id="101182" logo="" tips=""/>
+			<item id="101185" logo="" tips=""/>
+			<item id="101022" logo="" tips=""/>
+			<item id="100948" logo="" tips=""/>
+			<item id="101179" logo="" tips=""/>
+			<item id="101399" logo="" tips=""/>
+			<item id="101088" logo="" tips=""/>
+			<item id="101094" logo="" tips=""/>
+			<item id="101100" logo="" tips=""/>
+			<item id="101106" logo="" tips=""/>
+			<item id="102040" logo="" tips=""/>
+			<item id="101509" logo="" tips=""/>
+			<item id="101508" logo="" tips=""/>
+			<item id="101510" logo="" tips=""/>
+			<item id="101512" logo="" tips=""/>
+			<item id="101511" logo="" tips=""/>
+			<item id="102817" logo="" tips=""/>
+			<item id="102821" logo="" tips=""/>
+			<item id="102827" logo="" tips=""/>
+			<item id="101514" logo="" tips=""/>
+			<item id="101513" logo="" tips=""/>
+			<item id="102754" logo="" tips=""/>
+			<item id="101774" logo="" tips=""/>
+			<item id="101896" logo="" tips=""/>
+			<item id="101515" logo="" tips=""/>
+			<item id="101516" logo="" tips=""/>
+			<item id="101517" logo="" tips=""/>
+			<item id="101518" logo="" tips=""/>
+			<item id="101519" logo="" tips=""/>
+			<item id="101520" logo="" tips=""/>
+			<item id="101521" logo="" tips=""/>
+			<item id="101522" logo="" tips=""/>
+			<item id="101523" logo="" tips=""/>
+			<item id="101524" logo="" tips=""/>
+			<item id="101703" logo="" tips=""/>
+			<item id="101706" logo="" tips=""/>
+			<item id="101525" logo="" tips=""/>
+			<item id="101526" logo="" tips=""/>
+			<item id="101527" logo="" tips=""/>
+			<item id="101528" logo="" tips=""/>
+			<item id="101529" logo="" tips=""/>
+			<item id="101530" logo="" tips=""/>
+			<item id="101586" logo="" tips=""/>
+			<item id="101589" logo="" tips=""/>
+			<item id="101583" logo="" tips=""/>
+			<item id="100878" logo="" tips=""/>
+			<item id="100890" logo="" tips=""/>
+			<item id="100895" logo="" tips=""/>
+			<item id="101789" logo="" tips=""/>
+			<item id="101018" logo="" tips=""/>
+			<item id="101804" logo="" tips=""/>
+			<item id="101808" logo="" tips=""/>
+			<item id="102007" logo="" tips=""/>
+			<item id="101869" logo="" tips=""/>
+			<item id="101875" logo="" tips=""/>
+			<item id="102329" logo="" tips=""/>
+			<item id="101800" logo="" tips=""/>
+			<item id="101824" logo="" tips=""/>
+			<item id="101829" logo="" tips=""/>
+			<item id="101819" logo="" tips=""/>
+			<item id="101834" logo="" tips=""/>
+			<item id="101839" logo="" tips=""/>
+			<item id="101814" logo="" tips=""/>
+			<item id="101844" logo="" tips=""/>
+			<item id="102325" logo="" tips=""/>
+			<item id="102321" logo="" tips=""/>
+			<item id="101859" logo="" tips=""/>
+			<item id="101849" logo="" tips=""/>
+			<item id="101854" logo="" tips=""/>
+			<item id="101864" logo="" tips=""/>
+			<item id="102316" logo="" tips=""/>
+			<item id="101880" logo="" tips=""/>
+			<item id="101892" logo="" tips=""/>
+			<item id="101884" logo="" tips=""/>
+			<item id="101895" logo="" tips=""/>
+			<item id="101888" logo="" tips=""/>
+			<item id="102228" logo="" tips=""/>
+			<item id="102667" logo="" tips=""/>
+			<item id="101967" logo="" tips=""/>
+			<item id="101980" logo="" tips=""/>
+			<item id="102002" logo="" tips=""/>
+			<item id="102014" logo="" tips=""/>
+			<item id="102039" logo="" tips=""/>
+			<item id="102021" logo="" tips=""/>
+			<item id="102034" logo="" tips=""/>
+			<item id="102050" logo="" tips=""/>
+			<item id="102055" logo="" tips=""/>
+			<item id="102105" logo="" tips=""/>
+			<item id="102164" logo="" tips=""/>
+			<item id="102160" logo="" tips=""/>
+			<item id="102748" logo="" tips=""/>
+			<item id="102184" logo="" tips=""/>
+			<item id="102194" logo="" tips=""/>
+			<item id="102199" logo="" tips=""/>
+			<item id="102203" logo="" tips=""/>
+			<item id="102218" logo="" tips=""/>
+			<item id="102233" logo="" tips=""/>
+			<item id="102239" logo="" tips=""/>
+			<item id="102277" logo="" tips=""/>
+			<item id="102282" logo="" tips=""/>
+			<item id="102293" logo="" tips=""/>
+			<item id="102334" logo="" tips=""/>
+			<item id="102346" logo="" tips=""/>
+			<item id="102350" logo="" tips=""/>
+			<item id="102387" logo="" tips=""/>
+			<item id="102389" logo="" tips=""/>
+			<item id="102391" logo="" tips=""/>
+			<item id="102388" logo="" tips=""/>
+			<item id="102390" logo="" tips=""/>
+			<item id="102408" logo="" tips=""/>
+			<item id="102808" logo="" tips=""/>
+			<item id="102809" logo="" tips=""/>
+			<item id="102417" logo="" tips=""/>
+			<item id="102422" logo="" tips=""/>
+			<item id="102486" logo="" tips=""/>
+			<item id="102485" logo="" tips=""/>
+			<item id="102520" logo="" tips=""/>
+			<item id="102521" logo="" tips=""/>
+			<item id="102522" logo="" tips=""/>
+			<item id="102523" logo="" tips=""/>
+			<item id="102531" logo="" tips=""/>
+			<item id="102555" logo="" tips=""/>
+			<item id="102676" logo="" tips=""/>
+			<item id="102690" logo="" tips=""/>
+			<item id="102695" logo="" tips=""/>
+			<item id="102790" logo="" tips=""/>
+			<item id="191643眼鏡有問題" logo="1" tips=""/>
+			-->
+
+			
+		</hualitaozhuang>
+		
+		<!--家園小屋-->
+		<xinchaojiaju>
+			<!--1027-->
+			<item id="161472" logo="" tips=""/>
+			<item id="161473" logo="" tips=""/>
+			<item id="161474" logo="" tips=""/>
+			<!--1020-->
+			<item id="161388" logo="" tips="超拉八折"/>
+			<item id="161389" logo="" tips="超拉八折"/>
+			<item id="161390" logo="" tips="超拉八折"/>
+			<item id="161391" logo="" tips="超拉八折"/>
+			<!--1013-->
+			<item id="161387" logo="" tips="超拉八折"/>
+			<!--0929-->
+			<item id="161386" logo="" tips="超拉八折"/>
+			<!--0922-->
+			<item id="161385" logo="" tips="超拉八折"/>
+			<!--0915-->
+			<item id="161384" logo="" tips="超拉八折"/>
+			<!--0908-->
+			<item id="160223" logo="" tips="超拉八折"/>
+			<!--0901-->
+			<item id="161240" logo="" tips="超拉八折"/>
+			<!--0825-->
+			<item id="161201" logo="" tips="超拉八折"/>
+			<!--0818-->
+			<item id="161200" logo="" tips="超拉八折"/>
+			<!--0804-->
+			<item id="161244" logo="1" tips="超拉八折"/>
+			<!--0728-->
+			<item id="161242" logo="1" tips="超拉八折"/>
+			<item id="161243" logo="1" tips="超拉八折"/>
+			<!--0721-->
+			<item id="161237" logo="1" tips="超拉八折"/>
+			<item id="161238" logo="1" tips="超拉八折"/>
+			<item id="161239" logo="1" tips="超拉八折"/>
+			<!--0609-->
+			<item id="160242" logo="1" tips="超拉八折"/>
+			<!--0526-->
+			<item id="161347" logo="1" tips="超拉八折"/>
+			<item id="161348" logo="1" tips="超拉八折"/>
+			<item id="161349" logo="1" tips="超拉八折"/>
+			<item id="161350" logo="1" tips="超拉八折"/>
+			<item id="161351" logo="1" tips="超拉八折"/>
+			<item id="161352" logo="1" tips="超拉八折"/>
+			<!--0310-->
+			<item id="161196" logo="1" tips="超拉八折"/>
+			<!--1202-->
+			<item id="161269" logo="1" tips="超拉八折"/>
+			<item id="161270" logo="1" tips="超拉八折"/>
+			<item id="161271" logo="1" tips="超拉八折"/>
+			<item id="161272" logo="1" tips="超拉八折"/>
+			<item id="161273" logo="1" tips="超拉八折"/>
+			<!--1118-->
+			<item id="161266" logo="1" tips="超拉八折"/>
+			<item id="161267" logo="1" tips="超拉八折"/>
+			<item id="161268" logo="1" tips="超拉八折"/>
+			<!--1111-->
+			<item id="161265" logo="1" tips="超拉八折"/>
+			<!--1104-->
+			<item id="161264" logo="1" tips="超拉八折"/>
+			<!--1028-->
+			<item id="160483" logo="1" tips="超拉八折"/>
+			<!--1021-->
+			<item id="160831" logo="1" tips="超拉八折"/>
+			<!--0909-->
+			<item id="160081" logo="1" tips="超拉八折"/>
+			<!--0826-->
+			<item id="160038" logo="1" tips="超拉八折"/>
+			<!--0805-->
+			<item id="160031" logo="1" tips="超拉八折"/>
+			<!--0722-->
+			<item id="160841" logo="1" tips="超拉八折"/>
+			<!--0701-->
+			<item id="1220324" logo="1" tips="超拉八折"/>
+			<!--0624-->
+			<item id="1220323" logo="1" tips="超拉八折"/>
+			<!--0617-->
+			<item id="1220334" logo="1" tips="超拉八折"/>
+			<!--0610-->
+			<item id="1220322" logo="1" tips="超拉八折"/>
+			<!--0603-->
+			<item id="1220321" logo="1" tips="超拉八折"/>
+			<!--0513-->
+			<item id="1220141" logo="1" tips="超拉八折"/>
+			<!--0429-->
+			<item id="161131" logo="1" tips="超拉八折"/>
+			<!--0422-->
+			<item id="160055" logo="1" tips="超拉八折"/>
+			<!--0415-->
+			<item id="160497" logo="1" tips="超拉八折"/>
+			<!--0401-->
+			<item id="1220352" logo="1" tips="超拉八折"/>
+			<!--0311-->
+			<item id="1220350" logo="1" tips="超拉八折"/>
+			<!--0225-->
+			<item id="161125" logo="1" tips="超拉八折"/>
+			<!--0128-->
+			<item id="1220188" logo="1" tips="超拉八折"/>
+			<!--0121-->
+			<item id="1220391" logo="1" tips="超拉八折"/>
+			<!--0114-->
+			<item id="160888" logo="1" tips="超拉專用八折"/>
+			<!--0107-->
+			<item id="160868" logo="1" tips="超拉專用八折"/>
+			<!--1224-->
+			<item id="160856" logo="1" tips="超拉專用八折"/>
+			<!--1217-->
+			<item id="160846" logo="1" tips="超拉專用八折"/>
+			<!--1210-->
+			<item id="160837" logo="1" tips="超拉專用八折"/>
+			<!--1203-->
+			<item id="160821" logo="1" tips="超拉專用八折"/>
+			<!--1119-->
+			<item id="160807" logo="1" tips="超拉專用八折"/>
+			<!--1105-->
+			<item id="160783" logo="1" tips="超拉專用八折"/>
+			<!--1029-->
+			<item id="160772" logo="1" tips="超拉專用八折"/>
+			<!--1022-->
+			<item id="160756" logo="1" tips="超拉專用八折"/>
+			<!--1015-->
+			<item id="160739" logo="1" tips="超拉專用八折"/>
+			<!--1001-->
+			<item id="160724" logo="1" tips="超拉專用八折"/>
+			<!--0917-->
+			<item id="160039" logo="1" tips="超拉八折"/>
+			<!--0910-->
+			<item id="161132" logo="1" tips="超拉八折"/>
+			<!--0903-->
+			<item id="161130" logo="1" tips="超拉八折"/>
+			<!--0827-->
+			<item id="161129" logo="1" tips="超拉八折"/>
+			<!--0820-->
+			<item id="161128" logo="1" tips="超拉八折"/>
+			<!--0806-->
+			<item id="161127" logo="1" tips="超拉八折"/>
+			<!--0730-->
+			<item id="161126" logo="1" tips="超拉八折"/>
+			<!--0709-->
+			<item id="161125" logo="1" tips="超拉八折"/>
+			<!--0423-->
+			<item id="160798" logo="1" tips="超拉八折"/>
+			<!--0416-->
+			<item id="161414" logo="1" tips="超拉八折"/>
+			<!--0402-->
+			<item id="161383" logo="1" tips="超拉八折"/>
+			<!--0319-->
+			<item id="161005" logo="1" tips="超拉八折"/>
+			<!--0312-->
+			<item id="161327" logo="1" tips="超拉八折"/>
+			<!--0305-->
+			<item id="160973" logo="1" tips="超拉八折"/>
+			<!--0219-->
+			<item id="1220195" logo="1" tips="超拉八折"/>
+			<!--0205-->
+			<item id="1220138" logo="1" tips="超拉八折"/>
+			<!--0129-->
+			<item id="1220307" logo="1" tips="超拉八折"/>
+			<!--0122-->
+			<item id="1220306" logo="1" tips="超拉八折"/>
+			<!--0115-->
+			<item id="160342" logo="1" tips="超拉八折"/>
+			<!--0108-->
+			<item id="160738" logo="1" tips="超拉八折"/>
+			<!--1231-->
+			<item id="161004" logo="1" tips="超拉八折"/>
+			<!--1218-->
+			<item id="160691" logo="1" tips="超拉八折"/>
+			<!--1211-->
+			<item id="160427" logo="" tips="超拉八折"/>
+			<!--1204-->
+			<item id="160078" logo="" tips="超拉八折"/>
+			<!--1127-->
+			<item id="160641" logo="" tips="超拉八折"/>
+			<!--1120-->
+			<item id="160128" logo="" tips="超拉八折"/>		
+			<!--1113-->
+			<item id="160343" logo="" tips="超拉八折"/>		
+			<!--1106-->
+			<item id="160250" logo="" tips="超拉八折"/>		
+			<item id="160455" logo="" tips=""/>
+			<item id="160456" logo="" tips=""/>
+			<item id="160459" logo="" tips=""/>
+			<item id="160453" logo="" tips=""/>
+			<item id="160454" logo="" tips=""/>
+			<item id="160451" logo="" tips=""/>
+			<item id="160458" logo="" tips=""/>
+			<item id="160460" logo="" tips=""/>
+			<item id="161204" logo="" tips="超拉下殺2折!!"/>
+			<item id="161301" logo="" tips=""/>
+			<item id="161302" logo="" tips=""/>
+			<item id="161303" logo="" tips=""/>
+			<item id="161304" logo="" tips=""/>
+			<item id="161305" logo="" tips=""/>
+			<item id="161306" logo="" tips=""/>
+			<item id="161307" logo="" tips=""/>
+			<item id="161308" logo="" tips=""/>
+			<item id="161309" logo="" tips=""/>
+			<item id="160700" logo="" tips=""/>
+			<item id="160179" logo="" tips=""/>
+			<item id="161505" logo="" tips=""/>
+			<item id="161507" logo="" tips=""/>
+			<item id="161107" logo="" tips=""/>
+			<item id="161108" logo="" tips=""/>
+			<item id="161105" logo="" tips=""/>
+			<item id="161104" logo="" tips=""/>
+			<item id="161078" logo="" tips=""/>
+			<item id="161081" logo="" tips=""/>
+			<item id="161082" logo="" tips=""/>
+			<item id="161083" logo="" tips=""/>
+			<item id="161084" logo="" tips=""/>
+			<item id="161086" logo="" tips=""/>
+			<item id="161087" logo="" tips=""/>
+			<item id="161088" logo="" tips=""/>
+			<item id="161089" logo="" tips=""/>
+			<item id="161090" logo="" tips=""/>
+			<item id="161470" logo="" tips=""/>
+			<item id="161471" logo="" tips=""/>
+			
+			
+		</xinchaojiaju>
+		
+		<!--家園背景-->
+		<jiayuandidai>
+			<!--1103-->
+			<item id="1220313" logo="1" tips=""/>
+			<!--0811-->
+			<item id="1220351" logo="1" tips="超拉八折"/>
+			<!--0728-->
+			<item id="1220059" logo="1" tips="超拉八折"/>
+			<!--0721-->
+			<item id="1220412" logo="1" tips="超拉八折"/>
+			<!--0714-->
+			<item id="1220309" logo="1" tips="超拉八折"/>
+			<!--0707-->
+			<item id="1220319" logo="1" tips="超拉八折"/>
+			<!--0630-->
+			<item id="1220242" logo="1" tips="超拉八折"/>
+			<!--0616-->
+			<item id="1220127" logo="1" tips="超拉八折"/>
+			<!--0512-->
+			<item id="1220015" logo="1" tips="超拉八折"/>
+			<!--0512-->
+			<item id="1220140" logo="1" tips="超拉專用八折"/>
+			<!--0505-->
+			<item id="1220079" logo="1" tips="超拉八折"/>
+			<!--0428-->
+			<item id="1220024" logo="1" tips="超拉八折"/>
+			<!--0421-->
+			<item id="1220022" logo="1" tips="超拉專用八折"/>
+			<!--0414-->
+			<item id="1220014" logo="1" tips="超拉八折"/>
+			<!--0331-->
+			<item id="1220027" logo="1" tips="超拉八折"/>
+			<!--0324-->
+			<item id="1220025" logo="1" tips="超拉八折"/>
+			<!--0317-->
+			<item id="1220023" logo="1" tips="超拉八折"/>
+			<!--0224-->
+			<item id="1220414" logo="1" tips="超拉八折"/>
+			<!--0217-->
+			<item id="1220335" logo="1" tips="超拉八折"/>
+			<!--0210-->
+			<item id="1220331" logo="1" tips="超拉八折"/>
+			<!--0203-->
+			<item id="1220330" logo="1" tips="超拉八折"/>
+			<!--0120-->
+			<item id="1220125" logo="1" tips="超拉八折"/>
+			<!--0113-->
+			<item id="1220026" logo="1" tips="超拉八折"/>
+			<!--0106-->
+			<item id="1220013" logo="1" tips="超拉八折"/>
+			<!--1230-->
+			<item id="1220028" logo="1" tips="超拉八折"/>
+			<!--1223-->
+			<item id="1220016" logo="1" tips="超拉八折"/>
+			<!--1216-->
+			<item id="1220318" logo="1" tips="超拉八折"/>
+			<!--1209-->
+			<item id="1220320" logo="1" tips="超拉八折"/>
+			<!--1202-->
+			<item id="1220029" logo="1" tips="超拉八折"/>
+			<!--1014-->
+			<item id="1220317" logo="1" tips="超拉八折"/>
+			<!--0930-->
+			<item id="1220142" logo="1" tips="超拉八折"/>
+			<!--0923-->
+			<item id="1220131" logo="1" tips="超拉八折"/>
+			<!--0916-->
+			<item id="1220130" logo="1" tips="超拉八折"/>
+			<!--0902-->
+			<item id="1220325" logo="1" tips="超拉八折"/>
+			<!--0819-->
+			<item id="1220315" logo="1" tips="超拉八折"/>
+			<!--0812-->
+			<item id="1220314" logo="1" tips="超拉八折"/>
+			<!--0729-->
+			<item id="1220342" logo="1" tips="超拉八折"/>
+			<!--0715-->
+			<item id="1220262" logo="1" tips="超拉八折"/>
+			<!--0708-->
+			<item id="1220187" logo="1" tips="超拉八折"/>
+			<!--0923-->
+			<item id="161115" logo="1" tips="超拉無八折優惠"/>
+			<!--0916-->
+			<item id="160963" logo="1" tips="超拉無八折優惠"/>
+			<item id="161246" logo="1" tips="超拉無八折優惠"/>
+			<item id="161247" logo="1" tips="超拉無八折優惠"/>
+			<!--0902-->
+			<item id="160198" logo="1" tips="超拉無八折優惠"/>
+			<item id="160197" logo="1" tips="超拉無八折優惠"/>
+			<item id="160196" logo="1" tips="超拉無八折優惠"/>
+			<item id="160195" logo="1" tips="超拉無八折優惠"/>
+			<item id="160194" logo="1" tips="超拉無八折優惠"/>
+			
+			<!--1023-->			
+			<item id="1220204" logo="7" tips=""/>
+			<item id="1220205" logo="7" tips=""/>
+			<item id="1220207" logo="7" tips=""/>
+			<item id="1220209" logo="7" tips=""/>
+			<item id="1220208" logo="7" tips=""/>
+			<item id="1220210" logo="7" tips=""/>
+			<item id="1220041" logo="7" tips=""/>
+			<item id="1220073" logo="7" tips=""/>
+			<item id="1220074" logo="7" tips=""/>
+			<item id="1220075" logo="7" tips=""/>
+			<item id="1220076" logo="7" tips=""/>
+			<item id="1220353" logo="7" tips=""/>
+			<item id="1220354" logo="7" tips=""/>
+			<item id="1220355" logo="7" tips=""/>
+			<item id="1220357" logo="7" tips=""/>
+			<item id="1220358" logo="7" tips=""/>
+			<item id="1220360" logo="7" tips=""/>
+			<item id="1220364" logo="7" tips=""/>
+			<item id="1220366" logo="7" tips=""/>
+			<item id="1220084" logo="7" tips=""/>
+			<item id="1220017" logo="7" tips=""/>
+			<item id="1220021" logo="7" tips=""/>     
+			<item id="1220055" logo="7" tips=""/>
+			<item id="1220058" logo="7" tips=""/>
+			<item id="1220091" logo="7" tips=""/>
+			<item id="1220092" logo="7" tips=""/>
+			<item id="1220093" logo="7" tips=""/>
+			<item id="161112" logo="7" tips=""/>
+			<item id="1220290" logo="7" tips=""/>
+			<item id="1220292" logo="7" tips=""/>
+            <item id="1220294" logo="7" tips=""/>
+			<item id="161077" logo="7" tips=""/>
+            <item id="1220182" logo="7" tips=""/>
+			<item id="1220438" logo="7" tips=""/>
+			<item id="1220439" logo="7" tips=""/>
+			<item id="1220440" logo="7" tips=""/>
+			<item id="1220441" logo="7" tips=""/>
+            <item id="1220442" logo="7" tips=""/>
+			<item id="160815" logo="7" tips=""/>	
+			<item id="1220002" logo="7" tips=""/>
+			<item id="1220110" logo="7" tips=""/>
+			<item id="1220154" logo="7" tips=""/>
+			<item id="1220171" logo="7" tips=""/>
+			<item id="1220172" logo="7" tips=""/>
+			<item id="1220212" logo="7" tips=""/>
+			<item id="160271" logo="7" tips=""/>
+			<item id="160911" logo="7" tips=""/>
+			<item id="161441" logo="7" tips=""/>
+	</jiayuandidai>
+		<molezuoqi>
+
+		</molezuoqi>
+	</zuixinshangjia>
+
+	<!--服飾家園-->
+	<fushijiayuan>
+		<!--潮流單品-->
+		<chaoliudanpin>
+		<item id="12592" logo="1" tips="超拉八折"/>
+		<item id="12420" logo="9" tips=""/>
+		<item id="12421" logo="9" tips=""/>
+		<item id="12422" logo="9" tips=""/>
+		<item id="12423" logo="9" tips=""/>
+		<item id="12416" logo="9" tips=""/>
+		<item id="12419" logo="9" tips=""/>
+		<item id="14536" logo="" tips=""/>
+		<item id="14537" logo="" tips=""/>
+		<item id="14538" logo="" tips=""/>
+		<item id="14533" logo="" tips=""/>
+		<item id="14534" logo="" tips=""/>
+		<item id="14535" logo="" tips=""/>
+		<!--item id="14526" logo="9" tips=""/-->
+		<item id="14528" logo="9" tips=""/>
+		<item id="14527" logo="9" tips=""/>
+		<item id="13912" logo="" tips=""/>
+		<item id="13853" logo="" tips=""/>
+		<item id="13852" logo="" tips=""/>
+		<item id="13851" logo="" tips=""/>
+		<item id="13850" logo="" tips=""/>
+		<item id="12097" logo="" tips=""/>
+		<item id="12096" logo="" tips=""/>
+		<item id="12098" logo="" tips=""/>
+		<item id="12091" logo="9" tips=""/>
+		<item id="12163" logo="" tips=""/>
+		<item id="12164" logo="" tips=""/>
+		<!--<item id="12212" logo="" tips=""/>-->
+		<!--<item id="12213" logo="" tips=""/>-->
+		<item id="12225" logo="" tips=""/>
+		<item id="12224" logo="" tips=""/>
+		<item id="12226" logo="" tips=""/>
+		<item id="12652" logo="9" tips=""/>
+		<item id="12653" logo="9" tips=""/>
+		<item id="13187" logo="" tips=""/>
+		<item id="13188" logo="" tips=""/>
+		<item id="13189" logo="" tips=""/>
+		<item id="12004" logo="9" tips=""/>
+		<item id="12005" logo="9" tips=""/>
+		<item id="12006" logo="9" tips=""/>
+		<item id="12001" logo="" tips=""/>
+		<item id="12002" logo="" tips=""/>
+		<item id="12003" logo="" tips=""/>
+		<item id="12283" logo="" tips=""/>
+		<item id="12993" logo="" tips=""/>
+		<item id="13308" logo="9" tips=""/>
+		<item id="12753" logo="" tips=""/>
+		<item id="12177" logo="9" tips=""/>
+		<item id="12178" logo="9" tips=""/>
+		<item id="12182" logo="" tips=""/>
+		<item id="12183" logo="" tips=""/>
+		<item id="12184" logo="" tips=""/>
+		
+		<item id="12460" logo="" tips=""/>
+		<item id="12461" logo="" tips=""/>
+		<item id="12462" logo="" tips=""/>
+		<item id="12466" logo="" tips=""/>
+		<item id="12467" logo="" tips=""/>
+		<item id="12468" logo="" tips=""/>
+        <item id="12469" logo="" tips=""/>
+	    <item id="12470" logo="" tips=""/>
+        <item id="12471" logo="" tips=""/>
+        <item id="12409" logo="9" tips=""/>
+        <item id="12410" logo="9" tips=""/>
+        <item id="13522" logo="" tips=""/>
+        <item id="13523" logo="" tips=""/>
+		<item id="13917" logo="1" tips=""/>
+		<item id="13918" logo="1" tips=""/>
+		<item id="13919" logo="1" tips=""/>
+		</chaoliudanpin>
+
+		<!--華麗套裝-->
+		<hualitaozhuang>
+			
+			<item id="102850" logo="7" tips="限時特賣"/>
+			<item id="102239" logo="" tips=""/>
+			<item id="102748" logo="" tips=""/>
+			<item id="102749" logo="" tips=""/>
+			<item id="101179" logo="" tips=""/>
+			<item id="102754" logo="" tips=""/>
+			<item id="101770" logo="" tips=""/>
+			<item id="101771" logo="" tips=""/>
+			<item id="101774" logo="" tips=""/>    
+      		<item id="101700" logo="" tips=""/>
+			<item id="101703" logo="" tips=""/>
+			<item id="101706" logo="" tips=""/>
+			<item id="101637" logo="" tips=""/>
+			<item id="101638" logo="" tips=""/>
+			<item id="101641" logo="" tips=""/>
+		    <item id="101376" logo="" tips=""/>
+			<item id="101018" logo="" tips=""/>
+
+
+		</hualitaozhuang>
+		<!--新潮傢俱-->
+		<xinchaojiaju>
+
+			<item id="160410" logo="9" tips="超拉五折"/>
+			<item id="160013" logo="9" tips="超拉八折"/>
+			<item id="160037" logo="9" tips="超拉八折"/>
+			<item id="160059" logo="9" tips="超拉八折"/>
+			<item id="160135" logo="9" tips="超拉八折"/>
+			<item id="160136" logo="9" tips="超拉八折"/>
+			<item id="160137" logo="9" tips="超拉八折"/>
+			<item id="160138" logo="9" tips="超拉八折"/>
+			<item id="160139" logo="9" tips="超拉八折"/>
+			<item id="160140" logo="9" tips="超拉八折"/>
+			<item id="160175" logo="" tips="超拉八折"/>
+			<item id="160176" logo="" tips="超拉八折"/>
+			<item id="160177" logo="" tips="超拉八折"/>
+			<item id="160178" logo="" tips="超拉八折"/>
+			<item id="160179" logo="" tips="超拉八折"/>
+			<item id="160180" logo="" tips="超拉八折"/>
+			<item id="160184" logo="" tips="超拉八折"/>
+			<item id="160186" logo="" tips="超拉八折"/>
+			<item id="160187" logo="" tips="超拉八折"/>
+			<item id="160188" logo="" tips="超拉八折"/>
+			<item id="160189" logo="" tips="超拉八折"/>
+			<item id="160190" logo="" tips="超拉八折"/>
+			<item id="160214" logo="" tips="超拉八折"/>
+			<item id="160215" logo="" tips="超拉八折"/>
+			<item id="160216" logo="" tips="超拉八折"/>
+			<item id="160217" logo="" tips="超拉八折"/>
+			<item id="160218" logo="" tips="超拉八折"/>
+			<item id="160219" logo="" tips="超拉八折"/>
+			<item id="160220" logo="" tips="超拉八折"/>
+			<item id="160221" logo="" tips="超拉八折"/>
+			<item id="160222" logo="" tips="超拉八折"/>
+			<item id="160224" logo="" tips="超拉八折"/>
+			<item id="160225" logo="" tips="超拉八折"/>
+			<item id="160226" logo="" tips="超拉八折"/>
+			<item id="160227" logo="" tips="超拉八折"/>
+			<item id="160251" logo="" tips="超拉八折"/>
+			<item id="160252" logo="" tips="超拉八折"/>
+			<item id="160253" logo="" tips="超拉八折"/>
+			<item id="160254" logo="" tips="超拉八折"/>
+			<item id="160255" logo="" tips="超拉八折"/>
+			<item id="160256" logo="" tips="超拉八折"/>
+			<item id="160257" logo="" tips="超拉八折"/>
+			<item id="160258" logo="" tips="超拉八折"/>
+			<item id="160260" logo="" tips="超拉八折"/>
+			<item id="160261" logo="" tips="超拉八折"/>
+			<item id="160265" logo="" tips="超拉八折"/>
+			<item id="160294" logo="" tips="超拉八折"/>
+			<item id="160345" logo="" tips="超拉八折"/>
+			<item id="160360" logo="" tips="超拉八折"/>
+			<item id="160370" logo="" tips="超拉八折"/>
+			<item id="160412" logo="" tips="超拉八折"/>
+			<item id="160413" logo="" tips="超拉八折"/>
+			<item id="160414" logo="" tips="超拉八折"/>
+			<item id="160415" logo="" tips="超拉八折"/>
+			<item id="160416" logo="" tips="超拉八折"/>
+			<item id="160417" logo="" tips="超拉八折"/>
+			<item id="160418" logo="" tips="超拉八折"/>
+			<item id="160452" logo="" tips="超拉八折"/>
+			<item id="160465" logo="" tips="超拉八折"/>
+			<item id="160504" logo="" tips="超拉八折"/>
+			<item id="160506" logo="" tips="超拉八折"/>
+			<item id="160507" logo="" tips="超拉八折"/>
+			<item id="160508" logo="" tips="超拉八折"/>
+			<item id="160509" logo="" tips="超拉八折"/>
+			<item id="160510" logo="" tips="超拉八折"/>
+			<item id="160511" logo="" tips="超拉八折"/>
+			<item id="160525" logo="" tips="超拉八折"/>
+			<item id="160527" logo="" tips="超拉八折"/>
+			<item id="160528" logo="" tips="超拉八折"/>
+			<item id="160530" logo="" tips="超拉八折"/>
+			<item id="160531" logo="" tips="超拉八折"/>
+			<item id="160532" logo="" tips="超拉八折"/>
+			<item id="160534" logo="" tips="超拉八折"/>
+			<item id="160535" logo="" tips="超拉八折"/>
+			<item id="160537" logo="" tips="超拉八折"/>
+			<item id="160602" logo="" tips="超拉八折"/>
+			<item id="160659" logo="" tips="超拉八折"/>
+			<item id="160661" logo="" tips="超拉八折"/>
+			<item id="160662" logo="" tips="超拉八折"/>
+			<item id="160663" logo="" tips="超拉八折"/>
+			<item id="160664" logo="" tips="超拉八折"/>
+			<item id="160680" logo="" tips="超拉八折"/>
+			<item id="160681" logo="" tips="超拉八折"/>
+			<item id="160682" logo="" tips="超拉八折"/>
+			<item id="160683" logo="" tips="超拉八折"/>
+			<item id="160684" logo="" tips="超拉八折"/>
+			<item id="160685" logo="" tips="超拉八折"/>
+			<item id="160709" logo="" tips="超拉八折"/>
+			<item id="160710" logo="" tips="超拉八折"/>
+			<item id="160711" logo="" tips="超拉八折"/>
+			<item id="160713" logo="" tips="超拉八折"/>
+			<item id="160714" logo="" tips="超拉八折"/>
+			<item id="160725" logo="" tips="超拉八折"/>
+			<item id="160726" logo="" tips="超拉八折"/>
+			<item id="160727" logo="" tips="超拉八折"/>
+			<item id="160728" logo="" tips="超拉八折"/>
+			<item id="160729" logo="" tips="超拉八折"/>
+			<item id="160730" logo="" tips="超拉八折"/>
+			<item id="160754" logo="" tips="超拉八折"/>
+			<item id="160798" logo="" tips="超拉八折"/>
+			<item id="161120" logo="" tips="超拉八折"/>
+			<item id="161164" logo="" tips="超拉八折"/>
+			<item id="161165" logo="" tips="超拉八折"/>
+			<item id="161166" logo="" tips="超拉八折"/>
+			<item id="161167" logo="" tips="超拉八折"/>
+			<item id="161168" logo="" tips="超拉八折"/>
+			<item id="161169" logo="" tips="超拉八折"/>
+			<item id="161188" logo="" tips="超拉八折"/>
+			<item id="161189" logo="" tips="超拉八折"/>
+			<item id="161190" logo="" tips="超拉八折"/>
+			<item id="161192" logo="" tips="超拉八折"/>
+			<item id="161193" logo="" tips="超拉八折"/>
+			<item id="161195" logo="" tips="超拉八折"/>
+
+			<item id="160034" logo="1" tips=""/>
+			<item id="160056" logo="1" tips=""/>
+			<item id="160057" logo="1" tips=""/>
+			<item id="160058" logo="1" tips=""/>
+			<item id="160061" logo="" tips=""/>
+			<item id="160119" logo="" tips=""/>
+			<item id="160121" logo="" tips=""/>
+			<item id="160122" logo="" tips=""/>
+			<item id="160123" logo="" tips=""/>
+			<item id="160124" logo="" tips=""/>
+			<item id="160125" logo="" tips=""/>
+			<item id="160126" logo="" tips=""/>
+			<item id="160185" logo="" tips=""/>
+			<item id="160194" logo="" tips=""/>
+			<item id="160195" logo="" tips=""/>
+			<item id="160196" logo="" tips=""/>
+			<item id="160197" logo="" tips=""/>
+			<item id="160198" logo="" tips=""/>
+			<item id="160240" logo="" tips=""/>
+			<item id="160480" logo="" tips=""/>
+			<item id="160481" logo="" tips=""/>
+			<item id="160482" logo="" tips=""/>
+			<item id="160485" logo="" tips=""/>
+			<item id="160487" logo="" tips=""/>
+			<item id="160491" logo="" tips=""/>
+			<item id="160505" logo="" tips=""/>
+			<item id="160541" logo="" tips=""/>
+			<item id="160545" logo="" tips=""/>
+			<item id="160609" logo="" tips=""/>
+			<item id="160612" logo="" tips=""/>
+			<item id="160613" logo="" tips=""/>
+			<item id="160614" logo="" tips=""/>
+			<item id="160615" logo="" tips=""/>
+			<item id="160616" logo="" tips=""/>
+			<item id="160660" logo="" tips=""/>
+			<item id="160666" logo="" tips=""/>
+			<item id="160667" logo="" tips=""/>
+			<item id="160804" logo="" tips=""/>
+			<item id="160860" logo="" tips=""/>
+			<item id="160863" logo="" tips=""/>
+			<item id="160963" logo="" tips=""/>
+			<item id="161078" logo="" tips=""/>
+			<item id="161081" logo="" tips=""/>
+			<item id="161082" logo="" tips=""/>
+			<item id="161083" logo="" tips=""/>
+			<item id="161084" logo="" tips=""/>
+			<item id="161086" logo="" tips=""/>
+			<item id="161087" logo="" tips=""/>
+			<item id="161088" logo="" tips=""/>
+			<item id="161089" logo="" tips=""/>
+			<item id="161090" logo="" tips=""/>
+			<item id="161104" logo="" tips=""/>
+			<item id="161105" logo="" tips=""/>
+			<item id="161107" logo="" tips=""/>
+			<item id="161108" logo="" tips=""/>
+			<item id="161112" logo="" tips=""/>
+			<item id="161115" logo="" tips=""/>
+
+			<!--可重新販售家具
+			
+			<item id="161431" logo="" tips="超拉八折"/>
+			<item id="161241" logo="" tips=""/>
+			-->
+	
+		</xinchaojiaju>
+		<!--家園地帶-->
+		<jiayuandidai>
+
+			<item id="161455" logo="1" tips="超拉八折"/>
+			<item id="161462" logo="1" tips=""/>
+			<item id="161465" logo="1" tips=""/>
+			<item id="161483" logo="1" tips=""/>
+			<item id="161489" logo="1" tips=""/>
+			<item id="160078" logo="9" tips="超拉八折"/>
+			<item id="160128" logo="9" tips="超拉八折"/>
+			<item id="160174" logo="9" tips="超拉八折"/>
+			<item id="160205" logo="9" tips="超拉八折"/>
+			<item id="160250" logo="9" tips="超拉八折"/>
+			<item id="160271" logo="" tips="超拉八折"/>
+			<item id="160342" logo="" tips="超拉八折"/>
+			<item id="160343" logo="" tips="超拉八折"/>
+			<item id="160419" logo="" tips=""/>
+			<item id="160427" logo="" tips="超拉八折"/>
+			<item id="160539" logo="" tips=""/>
+			<item id="160640" logo="" tips=""/>
+			<item id="160641" logo="" tips="超拉八折"/>
+			<item id="160652" logo="" tips=""/>
+			<item id="160691" logo="" tips="超拉八折"/>
+			<item id="160720" logo="" tips=""/>
+			<item id="160738" logo="" tips="超拉八折"/>
+			<item id="160757" logo="" tips=""/>
+			<item id="160803" logo="" tips=""/>
+			<item id="160815" logo="" tips="超拉八折"/>
+			<item id="160892" logo="" tips=""/>
+			<item id="160911" logo="" tips=""/>
+			<item id="160973" logo="" tips="超拉八折"/>
+			<item id="161004" logo="" tips="超拉八折"/>
+			<item id="161005" logo="" tips="超拉八折"/>
+			<item id="161077" logo="" tips=""/>
+			<item id="161112" logo="" tips=""/>
+			<item id="161163" logo="" tips="超拉八折"/>
+			<item id="161187" logo="" tips="超拉五折"/>
+			<item id="161204" logo="" tips="超拉二折"/>
+			<item id="161245" logo="" tips=""/>
+			<item id="161274" logo="" tips=""/>
+			<item id="161294" logo="" tips=""/>
+			<item id="161327" logo="" tips=""/>
+			<item id="161336" logo="" tips=""/>
+			<item id="161383" logo="" tips="超拉八折"/>
+			<item id="161414" logo="" tips="超拉八折"/>
+			<item id="161441" logo="" tips=""/>
+
+			</jiayuandidai>
+	</fushijiayuan>
+	<!--絕版坐騎-->
+	<juebanzuoqi>
+		<!--坐騎-->
+		<molezuoqi>
+		<item id="1350117" logo="" tips="超拉八折"/>
+		<item id="1350115" logo="" tips="超拉八折"/>
+		<item id="1350133" logo="" tips="超拉八折"/>
+		<item id="1350127" logo="" tips="超拉八折"/>
+		<item id="1350121" logo="" tips="超拉八折"/>
+		<item id="1350119" logo="" tips="超拉八折"/>
+		<item id="1350124" logo="" tips="超拉八折"/>
+		<item id="1350112" logo="" tips="超拉八折"/>
+		<item id="1350122" logo="" tips="超拉八折"/>
+		<item id="1350111" logo="" tips="超拉八折"/>
+		<item id="1350123" logo="1" tips="超拉八折"/>
+		<item id="1350125" logo="1" tips="超拉八折"/>
+		<item id="1350175" logo="1" tips="超拉八折"/>
+		<item id="1350173" logo="1" tips="超拉八折"/>
+		<item id="1350170" logo="1" tips="超拉八折"/>
+		<item id="1350160" logo="9" tips="超拉八折"/>
+		<item id="1350154" logo="9" tips="超拉八折"/>
+		<item id="1350153" logo="9" tips="超拉八折"/>
+		<item id="1350152" logo="9" tips="超拉八折"/>
+		<item id="1350151" logo="9" tips="超拉八折"/>
+		<item id="1350150" logo="9" tips="超拉八折"/>
+		<item id="1350149" logo="" tips="超拉八折"/>
+		<item id="1350148" logo="" tips="超拉八折"/>
+		<item id="1350147" logo="" tips="超拉八折"/>
+		<item id="1350146" logo="" tips="超拉八折"/>
+		<item id="1350145" logo="" tips="超拉八折"/>
+		<item id="1350144" logo="" tips="超拉八折"/>
+		<item id="1350143" logo="" tips="超拉八折"/>
+		<item id="1350142" logo="" tips="超拉八折"/>
+		<item id="1350141" logo="" tips="超拉八折"/>
+		<item id="1350140" logo="" tips="超拉八折"/>
+		<item id="1350139" logo="" tips="超拉八折"/>
+		<item id="1350138" logo="" tips="超拉八折"/>
+		<item id="1350137" logo="" tips="超拉八折"/>
+		<item id="1350136" logo="" tips="超拉八折"/>
+		<item id="1350135" logo="" tips="超拉八折"/>
+		<item id="1350134" logo="" tips="超拉八折"/>
+		<item id="1350131" logo="" tips="超拉八折"/>
+		<item id="1350130" logo="" tips="超拉八折"/>
+		<item id="1350129" logo="" tips="超拉八折"/>
+		<item id="1350128" logo="" tips="超拉八折"/>
+		<item id="1350048" logo="" tips="超拉八折"/>
+		<item id="1350045" logo="" tips=""/>
+		<item id="1350044" logo="" tips=""/>
+		<item id="1350041" logo="" tips="超拉八折"/>
+		<item id="1350040" logo="" tips=""/>
+		<item id="1350039" logo="" tips="超拉八折"/>
+		<item id="1350038" logo="" tips="超拉八折"/>
+		<item id="1350036" logo="" tips="超拉八折"/>
+		<item id="1350035" logo="" tips="超拉八折"/>
+		<item id="1350033" logo="" tips="超拉八折"/>
+		<item id="1350032" logo="" tips="超拉八折"/>
+		<item id="1350030" logo="" tips=""/>
+		<item id="1350029" logo="" tips="超拉八折"/>
+		<item id="1350027" logo="" tips=""/>
+		<item id="1350024" logo="" tips=""/>
+		<item id="1350023" logo="" tips="超拉八折"/>
+		<item id="1350022" logo="" tips="超拉八折"/>
+		<item id="1350021" logo="" tips="超拉八折"/>
+		<item id="1350017" logo="" tips="超拉八折"/>
+		<item id="1350016" logo="" tips="超拉八折"/>
+		<item id="1350015" logo="" tips="超拉八折"/>
+		<item id="1350014" logo="" tips="超拉八折"/>
+		<item id="1350013" logo="" tips="超拉八折"/>
+		<item id="1350011" logo="" tips="超拉八折"/>
+		<!--可重新上架坐騎
+		
+		<item id="1350118" logo="" tips="超拉八折"/>
+		<item id="1350046" logo="" tips="超拉八折"/>
+		<item id="1350155" logo="" tips="超拉八折"/>
+		<item id="1350176" logo="" tips="超拉八折"/>
+		-->
+
+		<!--龍蛋-->
+		<item id="191215" logo="1" tips="超拉八折"/>
+		<item id="190708" logo="1" tips=""/>
+		<item id="190709" logo="1" tips=""/>
+		<item id="190710" logo="1" tips="超拉八折"/>
+		<item id="190711" logo="1" tips="超拉八折"/>
+		<item id="191086" logo="1" tips="超拉八折"/>
+		<item id="191023" logo="9" tips="超拉五折"/>
+		<item id="190716" logo="9" tips="超拉八折"/>
+		<item id="190714" logo="" tips=""/>
+		<item id="190713" logo="" tips=""/>
+		<item id="190712" logo="" tips="超拉八折"/>
+		<item id="190690" logo="" tips="超拉五折"/>
+		<item id="190681" logo="" tips="超拉八折"/>
+		<!--可重新販售龍蛋
+		
+		<item id="190715" logo="1" tips=""/>
+		
+		-->
+
+		</molezuoqi>
+	</juebanzuoqi>
+	<!--種子動物-->
+	<zhongzidongwu>
+		<!--神奇種子-->
+		<shenqizhongzi>
+			<item id="16022" logo="1" tips=""/>
+			<item id="1353109" logo="1" tips=""/>
+			<item id="1230143" logo="1" tips=""/>
+			<item id="1230147" logo="1" tips=""/>
+			<item id="1230105" logo="1" tips=""/>
+			<item id="1230106" logo="1" tips=""/>
+			<item id="1230057" logo="9" tips=""/>
+			<item id="1230051" logo="9" tips=""/>
+			<item id="1230083" logo="" tips=""/>
+			<item id="1230058" logo="" tips=""/>
+			<item id="1230054" logo="" tips=""/>
+			
+		</shenqizhongzi>
+		<!--可愛動物-->
+		<keaidongwu>
+			<item id="1270072" logo="1" tips=""/>
+			<item id="1270073" logo="1" tips=""/>
+			<item id="1270068" logo="9" tips=""/>
+			<item id="1270069" logo="9" tips=""/>
+			<item id="1270054" logo="9" tips=""/>
+			<item id="1270071" logo="9" tips=""/>
+			<item id="1270144" logo="" tips=""/>
+			<item id="1270078" logo="" tips=""/>
+			<item id="1270079" logo="" tips=""/>
+			<item id="1270033" logo="" tips=""/>
+			<item id="1270038" logo="" tips=""/>
+			<item id="1270058" logo="" tips=""/>
+		</keaidongwu>
+
+	</zhongzidongwu>
+	<!--最新活動-->
+	<zuixinhuodong>
+			<!--優惠活動-->
+			<youhuihuodong>
+
+			</youhuihuodong>
+
+			<!--積分兌換-->
+			<jifenduihuan>
+				<item id="15216"  price="4000" itemcout="1" exchangeID="4170" vip="0.8"/>
+				<item id="13581"  price="4000" itemcout="1" exchangeID="4169" vip="0.8"/>
+				<item id="13520"  price="4000" itemcout="1" exchangeID="4168" vip="0.8"/>
+				<item id="13519"  price="4000" itemcout="1" exchangeID="4167" vip="0.8"/>
+				<item id="13713"  price="4000" itemcout="1" exchangeID="4166" vip="0.8"/>
+				<item id="13712"  price="4000" itemcout="1" exchangeID="4165" vip="0.8"/>
+				<item id="13711"  price="4000" itemcout="1" exchangeID="4164" vip="0.8"/>
+				<item id="13907"  price="4000" itemcout="1" exchangeID="4163" vip="0.8"/>
+				<item id="13906"  price="4000" itemcout="1" exchangeID="4162" vip="0.8"/>
+				<item id="13905"  price="4000" itemcout="1" exchangeID="4161" vip="0.8"/>
+				<item id="13550"  price="4000" itemcout="1" exchangeID="4160" vip="0.8"/>
+				<item id="13549"  price="4000" itemcout="1" exchangeID="4159" vip="0.8"/>
+				<item id="13548"  price="4000" itemcout="1" exchangeID="4158" vip="0.8"/>
+				<item id="13340"  price="4000" itemcout="1" exchangeID="4157" vip="0.8"/>
+				<item id="13339"  price="4000" itemcout="1" exchangeID="4156" vip="0.8"/>
+				<item id="13343"  price="4000" itemcout="1" exchangeID="4155" vip="0.8"/>
+				<item id="13342"  price="4000" itemcout="1" exchangeID="4154" vip="0.8"/>
+				<item id="13341"  price="4000" itemcout="1" exchangeID="4153" vip="0.8"/>
+				<item id="13586"  price="4000" itemcout="1" exchangeID="4152" vip="0.8"/>
+				<item id="13585"  price="4000" itemcout="1" exchangeID="4151" vip="0.8"/>
+				<item id="13584"  price="4000" itemcout="1" exchangeID="4150" vip="0.8"/>
+				<item id="13583"  price="4000" itemcout="1" exchangeID="4149" vip="0.8"/>
+				<item id="13582"  price="4000" itemcout="1" exchangeID="4148" vip="0.8"/>
+				<item id="13813"  price="4000" itemcout="1" exchangeID="4147" vip="0.8"/>
+				<item id="13810"  price="4000" itemcout="1" exchangeID="4144" vip="0.8"/>
+				<item id="13811"  price="4000" itemcout="1" exchangeID="4145" vip="0.8"/>
+				<item id="13812"  price="4000" itemcout="1" exchangeID="4146" vip="0.8"/>
+				<item id="12594"  price="4000" itemcout="1" exchangeID="4142" vip="0.8"/>
+				<item id="14087"  price="4000" itemcout="1" exchangeID="4143" vip="0.8"/>
+				<item id="13593"  price="4000" itemcout="1" exchangeID="4138" vip="0.8"/>
+				<item id="13596"  price="4000" itemcout="1" exchangeID="4139" vip="0.8"/>
+				<item id="12679"  price="4000" itemcout="1" exchangeID="4140" vip="0.8"/>
+				<item id="13319"  price="4000" itemcout="1" exchangeID="4141" vip="0.8"/>
+				<item id="13931"  price="4000" itemcout="1" exchangeID="903" vip="0.8"/>
+				<item id="14739"  price="4000" itemcout="1" exchangeID="3753" vip="0.8"/>
+				<item id="14740"  price="4000" itemcout="1" exchangeID="3754" vip="0.8"/>
+				<item id="14741"  price="4000" itemcout="1" exchangeID="3755" vip="0.8"/>
+				<item id="14742"  price="4000" itemcout="1" exchangeID="3756" vip="0.8"/>
+				<item id="14292"  price="4000" itemcout="1" exchangeID="3757" vip="0.8"/>
+				<item id="14293"  price="4000" itemcout="1" exchangeID="3758" vip="0.8"/>
+				<item id="14294"  price="4000" itemcout="1" exchangeID="3759" vip="0.8"/>
+				<item id="14295"  price="4000" itemcout="1" exchangeID="3760" vip="0.8"/>
+				<item id="15710"  price="4000" itemcout="1" exchangeID="3761" vip="0.8"/>
+				<item id="15711"  price="4000" itemcout="1" exchangeID="3762" vip="0.8"/>
+				<item id="15712"  price="4000" itemcout="1" exchangeID="3763" vip="0.8"/>
+				<item id="1613111"  price="200" itemcout="1" exchangeID="3764" vip="0.6"/>
+      			<item id="1613108"  price="1500" itemcout="1" exchangeID="3765" vip="0.6"/>
+			    <item id="1730008"  price="1000" itemcout="1" exchangeID="3766" vip="0.6"/>
+
+			   	<item id="16012"  price="75" itemcout="5" exchangeID="373" vip="0.8"/>
+				<item id="16012"  price="150" itemcout="10" exchangeID="374" vip="0.8"/>
+				<item id="16012"  price="225" itemcout="15" exchangeID="375" vip="0.8"/>
+				<item id="16012"  price="375" itemcout="25" exchangeID="376" vip="0.8"/>
+				<item id="16012"  price="750" itemcout="50" exchangeID="377" vip="0.8"/>
+			</jifenduihuan>
+	</zuixinhuodong>
+</shop>
+

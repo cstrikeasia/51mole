@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SuitList>
+	<Suit ResID="14399" NeedID="190964" NeedCount="30" TypeID="1649" DataType="" />
+	<Suit ResID="14363" NeedID="190964" NeedCount="30" TypeID="1650" DataType="" />
+	<Suit ResID="14364" NeedID="190964" NeedCount="60" TypeID="1651" DataType="" />
+	<Suit ResID="14365" NeedID="190964" NeedCount="30" TypeID="1652" DataType="" />
+	<Suit ResID="14366" NeedID="190964" NeedCount="20" TypeID="1653" DataType="" />
+	
+	<Suit ResID="14367" NeedID="190964" NeedCount="30" TypeID="1654" DataType="" />
+	<Suit ResID="14368" NeedID="190964" NeedCount="60" TypeID="1655" DataType="" />
+	<Suit ResID="14369" NeedID="190964" NeedCount="30" TypeID="1656" DataType="" />
+	<Suit ResID="14370" NeedID="190964" NeedCount="20" TypeID="1657" DataType="" />
+	
+	<Suit ResID="14401" NeedID="190964" NeedCount="120" TypeID="1658" DataType="" />
+	
+	<Suit ResID="1200096" NeedID="190964" NeedCount="90" TypeID="1659" DataType="" />
+	<Suit ResID="1200095" NeedID="190964" NeedCount="90" TypeID="1660" DataType="" />
+	
+	<Suit ResID="13690" NeedID="190964" NeedCount="30" TypeID="1661" DataType="" />
+	<Suit ResID="13691" NeedID="190964" NeedCount="20" TypeID="1662" DataType="" />
+	<Suit ResID="13693" NeedID="190964" NeedCount="50" TypeID="1663" DataType="" />
+	<Suit ResID="13692" NeedID="190964" NeedCount="60" TypeID="1664" DataType="" />
+	
+	<Suit ResID="13686" NeedID="190964" NeedCount="30" TypeID="1665" DataType="" />
+	<Suit ResID="13687" NeedID="190964" NeedCount="20" TypeID="1666" DataType="" />
+	<Suit ResID="13688" NeedID="190964" NeedCount="60" TypeID="1667" DataType="" />
+	<Suit ResID="13689" NeedID="190964" NeedCount="50" TypeID="1668" DataType="" />
+	
+	<Suit ResID="13175" NeedID="190964" NeedCount="30" TypeID="1669" DataType="" />
+	<Suit ResID="13176" NeedID="190964" NeedCount="60" TypeID="1670" DataType="" />
+	<Suit ResID="13177" NeedID="190964" NeedCount="30" TypeID="1671" DataType="" />
+	
+	<Suit ResID="13172" NeedID="190964" NeedCount="30" TypeID="1672" DataType="" />
+	<Suit ResID="13173" NeedID="190964" NeedCount="60" TypeID="1673" DataType="" />
+	<Suit ResID="13174" NeedID="190964" NeedCount="30" TypeID="1674" DataType="" />
+	
+	<Suit ResID="13440" NeedID="190964" NeedCount="30" TypeID="1675" DataType="" />
+	<Suit ResID="13441" NeedID="190964" NeedCount="50" TypeID="1676" DataType="" />
+	<Suit ResID="13442" NeedID="190964" NeedCount="30" TypeID="1677" DataType="" />
+	<Suit ResID="13443" NeedID="190964" NeedCount="30" TypeID="1678" DataType="" />
+	
+	<Suit ResID="14269" NeedID="190964" NeedCount="30" TypeID="1679" DataType="" />
+	<Suit ResID="14270" NeedID="190964" NeedCount="50" TypeID="1680" DataType="" />
+	<Suit ResID="14271" NeedID="190964" NeedCount="30" TypeID="1681" DataType="" />
+	<Suit ResID="14272" NeedID="190964" NeedCount="30" TypeID="1682" DataType="" />
+	
+	<Suit ResID="160128" NeedID="190964" NeedCount="220" TypeID="1683" DataType="" />
+	<Suit ResID="160372" NeedID="190964" NeedCount="80" TypeID="1684" DataType="" />
+	<Suit ResID="160214" NeedID="190964" NeedCount="60" TypeID="1685" DataType="" />
+	<Suit ResID="160238" NeedID="190964" NeedCount="60" TypeID="1686" DataType="" />
+	<Suit ResID="160247" NeedID="190964" NeedCount="60" TypeID="1687" DataType="" />
+	<Suit ResID="160264" NeedID="190964" NeedCount="70" TypeID="1688" DataType="" />
+	<Suit ResID="160265" NeedID="190964" NeedCount="60" TypeID="1689" DataType="" />
+	<Suit ResID="160240" NeedID="190964" NeedCount="70" TypeID="1690" DataType="" />
+	
+	<!-- 大蝦裝 -->
+	<Suit ResID="13418" NeedID="190964" NeedCount="50" TypeID="1713" DataType="" />
+	<Suit ResID="13419" NeedID="190964" NeedCount="60" TypeID="1714" DataType="" />
+</SuitList>

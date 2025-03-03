@@ -1,0 +1,20 @@
+﻿<taomee debug="0">
+	<ext>
+		<item name="摩爾莊園....." path="dll/TaomeeCoreDLL.swf" ver="081224"/>
+		<item name="摩爾配置....." path="dll/ClientConfigDLL.swf" ver="081224"/>
+		<item name="摩爾裝備....." path="dll/ClientCommonDLL.swf" ver="081224"/>
+		<item name="摩爾信息....." path="dll/ClientSocketDLL.swf" ver="081224"/>
+		<item name="摩爾物品....." path="dll/ClientAppDLL.swf" ver="081224"/>
+	</ext>
+	<beans>
+		<group id="1">
+			<Bean id="dynamicUserLogic" class="com.logic.PeopleCountLogic.dynamicUserLogic" />
+			<Bean id="StageActionLogic" class="com.logic.StageActionLogic.StageActionLogic" />
+			<Bean id="JobLogic" class="com.logic.JobLogic.JobLogic" />
+			<Bean id="JobView" class="com.view.JobView.JobView" />
+			<Bean id="itemSystemLogic" class="com.logic.itemSystemLogic.itemSystemLogic" />
+			<Bean id="toolLogic" class="com.logic.toolLogic.toolLogic" />
+			<Bean id="MapControlLogic" class="com.logic.MapControlLogic.MapControlLogic" />
+		</group>
+	</beans>
+</taomee>
