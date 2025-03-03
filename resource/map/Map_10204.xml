@@ -1,0 +1,15 @@
+﻿<Map>
+	<NpcList>
+		<Npc ID="10001" Layer="controlLevel" Name="拉仔" Ex="632" Ey="314" Cmd="s" Param="1" />
+	</NpcList>
+	
+	<Triggers>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10001" Face="正常" Msg="你好呀，我就是拉仔，我身後的這棵大樹就是我和摩樂樂的新家——美麗的天空樹哦。參加拉仔的挑戰，贏取愛心勳章，可以兌換可愛的遊戲道具!" Option="兌換愛心獎勵" Cmd="act" Param="openSkyTreeAward" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+

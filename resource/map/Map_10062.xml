@@ -1,0 +1,33 @@
+<Map>
+	<NpcList>
+		<Npc ID="10029" Layer="controlLevel" Name="弗蘭克" Ex="498" Ey="209" Cmd="s" Param="1" /> 
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="999" NpcID="10029" Face="正常" Msg="謝謝你們。最近前哨站有些不太平，就不留你們玩了，快些回家吧！" Option="好的，拜拜~" Cmd="act" Param="fatherDayOver" AddTaskOption="1"  />
+		
+		<Talk ID="1" NpcID="10029" Face="正常" Msg="你是想來參加騎士訓練的嗎？現在莊園危機四伏，每一名摩爾莊園的公民都應該加入進來，為了莊園的平安而戰鬥。" Option="參加森林騎士訓練$參加騎士選拔賽$查看選拔賽成績$我想挑戰你$沒什麼事$大長老的委托" Cmd="act$act$act$act$act$act" Param="frank_checkSayWhat$frank_joinGame$frank_lookMark$frank_challenge$none$selectSay"  AddTaskOption="1" />
+		
+		<Talk ID="2" NpcID="10029" Face="正常" Msg="我真為你感到驕傲，不過你最好先通過基礎的騎士選拔賽，取得紅色訓練服，這樣你才能得到土林長老準備的禮物。你現在準備好了嗎？" Option="我準備好了$參加騎士選拔賽$查看選拔賽成績$我想挑戰你" Cmd="act$act$act$act" Param="frank_jumpMap$frank_joinGame$frank_lookMark$frank_challenge" />
+		<Talk ID="3" NpcID="10029" Face="正常" Msg="我真為你感到驕傲，有你這種精神，摩爾莊園一定會解決所有危機的。對了，土林長老那裡還為所有獲得紅色訓練服的摩爾準備了禮物，你快去領取吧。" Option="馬上過去$參加騎士選拔賽$查看選拔賽成績$我想挑戰你" Cmd="act$act$act$act" Param="frank_jumpMap$frank_joinGame$frank_lookMark$frank_challenge" />
+		
+		<Talk ID="10" NpcID="10029" Face="正常" Msg="餵！那個小摩爾！別站在那兒，妨礙大家訓練！" Option="餵！那個小摩爾！別站在那兒，妨礙大家訓練！" Cmd="s" Param="11" />
+		<Talk ID="11" NpcID="10029" Face="正常" Msg="餵！那個小摩爾！別站在那兒，妨礙大家訓練！" Option="我嗎？我從來不接受什麼採訪。" Cmd="s" Param="12" />
+		<Talk ID="12" NpcID="10029" Face="正常" Msg="餵！那個小摩爾！別站在那兒，妨礙大家訓練！" Option="誒？！真的是我小時候。那時候爸爸給我買了台遊戲機，我就天天打，練得技術高超，無人能敵！" Cmd="s" Param="13" />
+		<Talk ID="13" NpcID="10029" Face="正常" Msg="餵！那個小摩爾！別站在那兒，妨礙大家訓練！" Option="沉迷遊戲是不好，這不沒考上大學，跑來參加騎士團了嘛……" Cmd="s" Param="14" />
+		<Talk ID="14" NpcID="10029" Face="正常" Msg="餵！那個小摩爾！別站在那兒，妨礙大家訓練！" Option="恩，好的，我幫你蓋個章！" Cmd="act" Param="task488Swap1533" />
+		
+		<Talk ID="100" NpcID="10029" Face="正常" Msg="摩界之門的開啟對於莊園是個巨大的威脅。現在瑞琪不在，就由我弗蘭克帶領大家來抵抗邪惡摩靈的入侵！" Option="許多正義的摩靈也會與我們並肩戰鬥！" Cmd="s" Param="101" />
+		<Talk ID="101" NpcID="10029" Face="正常" Msg="哈哈，這真是個好消息。有了它們的幫助，我就更有信心把那些怪物阻攔在莊園之外了。幫我給大長老帶句話，皇家騎士團多謝那些充滿正義感的摩靈們鼎力相助。" Option="嗯嗯，皇家騎士團必勝！" Cmd="act" Param="letterTaskOver" />
+		
+	</Talks>
+</Map>
+
+
+

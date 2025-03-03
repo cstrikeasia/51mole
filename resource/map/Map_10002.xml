@@ -1,0 +1,46 @@
+<Map>
+	<NpcList>
+<!-- 		<Npc ID="10308" Layer="topLevel" Name="小喵咪" Ex="0" Ey="0" Cmd="s" Param="100" /> -->
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_1" Layer="controlLevel" Ex="884" Ey="384" Cmd="alt_map" Param="1" Tips="摩爾城堡" />
+		<Trigger ResName="go_9" Layer="controlLevel" Ex="153" Ey="347" Cmd="alt_map" Param="9" Tips="陽光牧場" />
+		
+		<Trigger ResName="go_18" Layer="controlLevel" Ex="680" Ey="300" Cmd="alt_map" Param="18" Tips="愛心教堂內" />
+		<Trigger ResName="go_70" Layer="controlLevel" Ex="600" Ey="338" Cmd="alt_map" Param="70" Tips="愛心救治室" />
+		
+		<Trigger ResName="go_69" Layer="controlLevel" Ex="482" Ey="303" Cmd="alt_map" Param="69" Tips="摩爾銀行" />
+		
+		<Trigger ResName="go_45" Layer="controlLevel" Ex="265" Ey="161" Cmd="alt_map" Param="45" Tips="摩爾報社" />
+		<Trigger ResName="go_46" Layer="controlLevel" Ex="191" Ey="276" Cmd="alt_map" Param="46" Tips="愛心嚮導社" />
+		<Trigger ResName="go_222" Layer="controlLevel" Ex="177" Ey="151" Cmd="alt_map" Param="222" Tips="電視牆" />
+		<Trigger ResName="go_44" Layer="controlLevel" Ex="119" Ey="284" Cmd="alt_map" Param="44" Tips="摩爾莊園警署" />
+		
+		<Trigger ResName="wishBtn" Layer="controlLevel" Ex="374" Ey="439" Cmd="act" Param="openWish" Tips="" />
+		<Trigger ResName="wish1_btn" Layer="controlLevel" Ex="374" Ey="439" Cmd="act" Param="openWish" Tips="" />
+			
+		
+<!-- 		<Trigger ResName="mogu2_mc" Layer="controlLevel" Ex="494" Ey="325" Cmd="p" Param="" Tips="" /> -->
+		
+		<Trigger ResName="crazyhat" Layer="depthLevel" Ex="348" Ey="497" Cmd="p" Param="CrazyTeePartyPanel" Tips="瘋帽子的下午茶" />
+		<!-- <Trigger ResName="lollipops" Layer="depthLevel" Ex="466" Ey="270" Cmd="act" Param="getlollipops" Tips="獲得紅色迷你波板糖" /> -->
+		
+		<Trigger ResName="doudouB" Layer="controlLevel" Ex="600" Ey="400" Cmd="intr" Param="AskJobPanel" Tips="問作業禮包" />
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10013" Face="正常" Msg="快來看看花嬸的壓箱寶呀！壓箱寶裡有寶貝喲！不看不知道，一看嚇一跳呀！走過路過千萬別錯過！" Option="我要買賣東西!$下次再來" Cmd="null" Param="2" />
+		<Talk ID="2" NpcID="10191" Face="開心" Msg="哇！這裡就是摩爾莊園啊！你~你~~你~~~，真的有小摩爾啊！" Option="蒸的？還煮的呢！你是誰呀？" Cmd="s" Param="2" />
+		<Talk ID="3" NpcID="10191" Face="開心" Msg="我叫偶得，來自《寶貝》劇組，我平時最喜歡玩的就是摩爾莊園了！" Option="歡迎您" Cmd="null" Param="null" />
+		<Talk ID="4" NpcID="10207" Face="正常" Msg="我們是代表熱情的火焰隊，我們的口號是“激情似火，冠軍歸我！”我們的主場一定會是最熱火朝天的一個~火元素的各位，都來給火焰隊加油哦！ " Option="參加火神盃" Cmd="act" Param="sport1" />
+		<Talk ID="422" NpcID="10249" Face="開心" Msg="這~可不是我幹的哦~~~~" Option="呃，我相信你了！" Cmd="act" Param="dandanAct" AddTaskOption="1"/>
+		<Talk ID="423" NpcID="10249" Face="開心" Msg="這~可不是我幹的哦~~~~" Option="賣萌也沒用！這次被我抓到了吧！" Cmd="act" Param="dandanAct" AddTaskOption="1"/>
+		<Talk ID="8888" NpcID="10207" Face="正常" Msg="你已經是我們火元素隊的隊員了！" Option="我要交紋章$領取袖章$領取隊服" Cmd="act$act$act" Param="sport2$sport3$sport4" />
+
+		<Talk ID="3333" NpcID="10287" Face="正常" Msg="討厭，被你找到了o(︶︿︶)o" Option="我知道你是讓著我的~摸摸~" Cmd="act" Param="xiaocfind" AddTaskOption="1" IsHideClose="1" />
+		<Talk ID="100" NpcID="10308" Face="正常" Msg="喵在這裡等你很久了" Option="嘻嘻，知道你最好了 " Cmd="act" Param="overGame"/>
+	</Talks>
+</Map>
+
+

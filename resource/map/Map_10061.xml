@@ -1,0 +1,33 @@
+<Map>
+	<NpcList>
+		<!--
+		<Npc ID="10002" Layer="controlLevel" Name="麼麼公主" Ex="358" Ey="460" Cmd="s" Param="1" />
+		-->
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_4" Layer="controlLevel" Ex="875" Ey="420" Cmd="alt_map" Param="4" Tips="摩爾拉雅山腳" />
+		<Trigger ResName="go_120" Layer="controlLevel" Ex="800" Ey="265" Cmd="alt_map" Param="120" Tips="雲霧謎橋" />
+		<Trigger ResName="go_62" Layer="controlLevel" Ex="356" Ey="340" Cmd="alt_map" Param="62" Tips="騎士訓練場" />
+		<Trigger ResName="go_63" Layer="controlLevel" Ex="570" Ey="270" Cmd="alt_map" Param="63" Tips="騎士要塞塔頂" />
+		<Trigger ResName="go_64" Layer="controlLevel" Ex="370" Ey="430" Cmd="alt_map" Param="64" Tips="騎士秘密基地" />
+		<!-- 
+		<Trigger ResName="recall_mc" Layer="controlLevel" Ex="357" Ey="336" Cmd="p" Param="HappySummerBlackForestRecallPanel" Tips="" /> 
+		<Trigger ResName="seat_mc" Layer="controlLevel" Ex="540" Ey="384" Cmd="act" Param="checkSeat" Tips="" /> 
+		<Trigger ResName="seat1" Layer="controlLevel" Ex="422" Ey="483" Cmd="act" Param="zhangang" Data="1" Tips="為莊園站崗" />
+		<Trigger ResName="seat2" Layer="controlLevel" Ex="581" Ey="486" Cmd="act" Param="zhangang" Data="2" Tips="為莊園站崗" />
+		<Trigger ResName="infoBtn" Layer="controlLevel" Ex="656" Ey="367" Cmd="p" Param="ZhuangyuanZhangangpanel" Tips="為莊園站崗" /> 
+		 -->
+		
+		
+	</Triggers>
+	
+	<Talks>
+		<!--
+		<Talk ID="1" NpcID="10015" Face="正常" Msg="Hi，你好啊。" Option="我很好" Cmd="none" Param="6" AddTaskOption="1" />
+		-->
+	</Talks>
+</Map>
+
+
+

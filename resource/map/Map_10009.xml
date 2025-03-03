@@ -1,0 +1,35 @@
+<Map>
+	<NpcList>
+		<!-- 
+		<Npc ID="10013" Layer="buttonLevel" Name="花嬸" Ex="560" Ey="290" Cmd="s" Param="3" />
+		<Trigger ResName="lollipops" Layer="depthLevel" Ex="523" Ey="245" Cmd="act" Param="getlollipops" Tips="獲得黃色迷你波板糖" />
+		 -->
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="river_mc" Layer="controlLevel" Ex="93" Ey="350" Cmd="alt_map" Param="8" Tips="進入神秘湖"/>
+		<Trigger ResName="map_79" Layer="controlLevel" Ex="113" Ey="287" Cmd="alt_map" Param="79" Tips="進入陽光草舍"/>
+		<Trigger ResName="map_107" Layer="controlLevel" Ex="207" Ey="307" Cmd="alt_map" Param="107" Tips="進入陽光培育室"/>
+		<Trigger ResName="btn" Layer="controlLevel" Ex="733" Ey="184" Cmd="alt_map" Param="2" Tips="進入愛心廣場"/>
+		<Trigger ResName="footBtn" Layer="controlLevel" Ex="896" Ey="307" Cmd="alt_map" Param="10" Tips="進入開心農場"/>
+		<Trigger ResName="map_mason" Layer="controlLevel" Ex="429" Ey="262" Cmd="alt_map" Param="106" Tips="進入尤尤小屋"/>		
+		<Trigger ResName="snakeSingle" Layer="controlLevel" Ex="697" Ey="502" Cmd="act" Param="snakeGame" Tips="單人貪吃蛇"/>	
+		<Trigger ResName="intro" Layer="controlLevel" Ex="313" Ey="465" Cmd="act" Param="snakeGameIntro" Tips="馴蛇伏摩遊戲說明"/>			
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10148" Face="正常" Msg="謝謝你，{$username}，又找到了一顆黑暗種子，送你一些禮物以表謝意！我們一定要阻止零的陰謀！" Option="嗯！一定不能讓他得逞！" Cmd="act" Param="getItemTwo" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10014" Face="正常" Msg="海的歌聲也撫平不了我的憂傷，寂寞的心事填滿我的心房……" Option="了解美人魚的故事$制造心形五彩珍珠項鏈$沒什麼事" Cmd="none" Param="1" AddTaskOption="1" />
+		
+		<Talk ID="3" NpcID="10013" Face="正常" Msg="快來看看花嬸的壓箱寶呀！壓箱寶裡有寶貝喲！不看不知道，一看嚇一跳呀！走過路過千萬別錯過！" Option="我要買賣東西$下次再來！" Cmd="act$none" Param="openAgicalGoods$1" AddTaskOption="1"  />
+		<Talk ID="422" NpcID="10249" Face="開心" Msg="這~可不是我幹的哦~~~~" Option="呃，我相信你了！" Cmd="act" Param="dandanAct" AddTaskOption="1"/>
+		<Talk ID="423" NpcID="10249" Face="開心" Msg="這~可不是我幹的哦~~~~" Option="賣萌也沒用！這次被我抓到了吧！" Cmd="act" Param="dandanAct" AddTaskOption="1"/>
+		
+		<Talk ID="3333" NpcID="10287" Face="正常" Msg="又被你找到了……不理你了(╰_╯)#" Option="麼麼噠，小C那麼好，怎麼舍得不理人家(╯3╰)" Cmd="act" Param="xiaocfind" AddTaskOption="1" IsHideClose="1" />
+		
+	</Talks>
+</Map>
+
+
+
+

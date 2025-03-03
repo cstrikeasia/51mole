@@ -1,0 +1,30 @@
+<Map>
+	<NpcList>
+		<!--
+		<Npc ID="10002" Layer="controlLevel" Name="麼麼公主" Ex="358" Ey="460" Cmd="s" Param="1" />-->
+		<Npc ID="10100" Layer="controlLevel" Name="蔣誠信" Ex="197" Ey="227" Cmd="s" Param="2" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_10" Layer="buttonLevel" Ex="120" Ey="433" Cmd="alt_map" Param="10" Tips="開心農場" />
+		<Trigger ResName="go_28" Layer="buttonLevel" Ex="866" Ey="372" Cmd="alt_map" Param="28" Tips="拉姆學院" />
+		<Trigger ResName="go_85" Layer="buttonLevel" Ex="732" Ey="221" Cmd="alt_map" Param="85" Tips="交通署大廳" />
+	</Triggers>
+	
+	<Talks>
+		<!--
+		<Talk ID="1" NpcID="10015" Face="正常" Msg="Hi，你好啊。" Option="我很好" Cmd="none" Param="6" AddTaskOption="1" />
+		-->
+		<Talk ID="2" NpcID="10100" Face="正常" Msg="貝塔是全莊園最棒的司機！" Option="龍王丸號大現身" Cmd="s$act" Param="3" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10100" Face="正常" Msg="是貝塔喊你過來的吧！我已經把東西打包好了！你開車送過去神秘湖碼頭吧！" Option="謝謝！我這就出發！" Cmd="act" Param="goGame4" AddTaskOption="1" />
+		
+		<Talk ID="99" NpcID="10100" Face="正常" Msg="" Option="" Cmd="none" Param="6" AddTaskOption="1" />
+		
+		<Talk ID="422" NpcID="10249" Face="開心" Msg="這~可不是我幹的哦~~~~" Option="呃，我相信你了！" Cmd="act" Param="dandanAct" AddTaskOption="1"/>
+		<Talk ID="423" NpcID="10249" Face="開心" Msg="這~可不是我幹的哦~~~~" Option="賣萌也沒用！這次被我抓到了吧！" Cmd="act" Param="dandanAct" AddTaskOption="1"/>
+		
+	</Talks>
+</Map>
+
+
+

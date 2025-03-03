@@ -1,0 +1,21 @@
+<Map>
+	<NpcList>
+		<!--
+		<Npc ID="10002" Layer="controlLevel" Name="麼麼公主" Ex="358" Ey="460" Cmd="s" Param="1" />
+		-->
+	</NpcList>
+	
+	<Triggers>
+	</Triggers>
+	
+	<Talks>
+		<!--
+		<Talk ID="1" NpcID="10015" Face="正常" Msg="Hi，你好啊。" Option="我很好" Cmd="none" Param="6" AddTaskOption="1" />-->
+		<Talk ID="2" NpcID="10097" Face="正常" Msg="年輕人動作就是快啊，下次老夫再有什麼體力活，一定找你們幫忙，哈哈哈！我去去就來！" Option="感覺是把我們當壯丁啊~囧rz" Cmd="act" Param="transTaskOver" AddTaskOption="1" />
+		
+		
+	</Talks>
+</Map>
+
+
+

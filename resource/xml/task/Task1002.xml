@@ -1,0 +1,87 @@
+<Tasks ID="1002" Name="RK的預告函" AwardMsg="恭喜你獲得2000摩爾豆、5個螃蟹變變變！" AwardBean="" >
+
+	<!-- 	前哨站 -->
+	<Step ID="1" TarMapID="61">
+		<NPC ID="10201" Option="RK的預告函"  MapID="" Layer="depthLevel" Name="潘恩" Ex="470" Ey="380" Px="470" Py="400"  Msg="天啊，前哨站居然會出現怪獸？！真是恐怖呢！" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_0" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_1" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_2" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_3" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_4" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_5" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_6" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10201" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="15" MapType="0" />
+		</NPC>
+	</Step>
+	
+	<!-- 	城堡大廳 -->
+	<Step ID="2" TarMapID="15">
+		<NPC ID="10047" Option="RK的預告函"  MapID="" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10047" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10047" Face="正常" Msg="剛才我正在辦公，忽然有人射進來一支飛鏢，上面有張紙條。我取下來一看，有RK的署名。來，給你們看看。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="驚訝" Msg="這個RK是什麼人呀？竟然這麼膽大！" Option=""/>
+				<Talk NpcID="10029" Face="正常" Msg="他可是摩爾歷史上最最難纏的怪盜，摩爾警署的頭號通緝犯！莊園的多起案件都與他有關。" Option=""/>
+				<Talk NpcID="10197" Face="驚訝" Msg="怎麼一直都沒把他給抓住呢？" Option=""/>
+				<Talk NpcID="10029" Face="正常" Msg="別說抓了，所有人連他長什麼樣、住在哪裡，至今都沒有一點頭緒。" Option=""/>
+				<Talk NpcID="10029" Face="正常" Msg="更可惡的，是他每次都會事先通知作案的時間、地點，甚至在大家眼皮底下出現，但他每次都能成功逃脫，讓大家一點辦法都沒有……" Option=""/>
+				<Talk NpcID="10197" Face="驚訝" Msg="怪不得今晚他留了這張紙條。可是，這上面說的內容，我一點也沒明白……" Option=""/>
+				<Talk NpcID="10029" Face="正常" Msg="難道……和皇家密室裡的東西有關……" Option=""/>
+				<Talk NpcID="10047" Face="正常" Msg="咳咳~事關重大，在沒有弄清來由之前我們也不要胡亂猜測。這位新來的小摩爾，我和法蘭克團長還有事要商量，就請你先回去休息吧。" Option=""/>
+				<Talk NpcID="10197" Face="驚訝" Msg="啊？……哦，好吧。（什麼事情這麼神秘？）" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="32" MapType="0" />
+		</NPC>
+	</Step>
+	
+	<!-- 	城堡書房 -->
+	<Step ID="3" TarMapID="32">
+		<EnterMap MapID="32" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10036" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10036" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

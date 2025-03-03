@@ -1,0 +1,10 @@
+<Tasks ID="1404" Name="SMC入職" AwardMsg="" AwardBean="">
+	<Step ID="1" TarMapID="80">
+		<EnterMap MapID="80">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>
+

@@ -1,0 +1,29 @@
+<Map>
+	<NpcList>
+	<!-- 
+		<Npc ID="10016" Layer="depthLevel" Name="大衛" Ex="660" Ey="335" Cmd="s" Param="2" AddTaskOption="1" />
+	
+	<Trigger ResName="lollipops" Layer="depthLevel" Ex="390" Ey="325" Cmd="act" Param="getlollipops" Tips="獲得綠色迷你波板糖" />
+		<Npc ID="10022" Layer="depthLevel" Name="阿七" Ex="495" Ey="477" Cmd="s" Param="2" AddTaskOption="1" />
+		-->
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_68" Layer="controlLevel" Ex="143" Ey="469" Cmd="alt_map" Param="83" Tips="進入交通署" />
+		<Trigger ResName="go_52" Layer="controlLevel" Ex="261" Ey="272" Cmd="act" Param="goMap52" Tips="進入拉姆課堂" />
+		
+		<Trigger ResName="go_3" Layer="controlLevel" Ex="77" Ey="390" Cmd="alt_map" Param="3" Tips="進入淘淘樂街" />
+		<Trigger ResName="go_77" Layer="controlLevel" Ex="523" Ey="134" Cmd="alt_map" Param="77" Tips="進入摩爾大學" />
+		<Trigger ResName="go_81" Layer="controlLevel" Ex="38" Ey="119" Cmd="act" Param="goMap81" Tips="進入魔法閣樓" />
+		<Trigger ResName="go_53" Layer="controlLevel" Ex="721" Ey="263" Cmd="act" Param="goMap53" Tips="進入學院教導處" />
+		<Trigger ResName="go_2" Layer="controlLevel" Ex="883" Ey="375" Cmd="alt_map" Param="68" Tips="進入拉姆運動場" />
+		<Trigger ResName="flagBtn" Layer="controlLevel" Ex="798" Ey="278" Cmd="act" Param="clickFlag" />		
+	</Triggers>
+					
+	<Talks>
+	</Talks>
+</Map>
+
+
+
+
