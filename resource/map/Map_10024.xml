@@ -1,0 +1,24 @@
+<Map>
+	<NpcList>
+		<Npc ID="10033" Layer="buttonLevel" Name="哈哈魔法師" Ex="240" Ey="194" Cmd="s" Param="2" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="superPetNPC" Layer="controlLevel" Ex="601" Ey="400" Cmd="act" Param="isOpenCloakClothesPanel" />
+	</Triggers>
+	
+	<Talks>
+		<!--		<Talk ID="2" NpcID="10033" Face="正常" Msg="我哈哈要成為莊園中最厲害的魔法師呢！" Option="神奇的水晶球$關於神奇密碼$沒什麼事" Cmd="s$act$none" Param="3$magicCode$1" AddTaskOption="1" />-->
+		<Talk ID="2" NpcID="10033" Face="正常" Msg="我哈哈要成為莊園中最厲害的魔法師呢！" Option="關於蛛絲隱身衣$關於神奇密碼$沒什麼事" Cmd="s$act$none" Param="4$magicCode$1" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10033" Face="正常" Msg="最近，哈哈魔法師得到了一個神奇的水晶球喲！它能夠猜中小摩爾的心思，你想要試試嗎？"  Option="哇！好呀！" Cmd="act" Param="playCrystal" AddTaskOption="1" />
+		<Talk ID="4" NpcID="10033" Face="正常" Msg="小摩爾也對隱身衣有興趣嗎？也難怪，不被別人所看見的感覺，確實很奇妙！"  Option="可我還沒有隱身衣，怎麼辦呢？" Cmd="s" Param="5" AddTaskOption="1" />
+		<Talk ID="5" NpcID="10033" Face="正常" Msg="前些日子，因為一股不知名的力量，導致隱身衣的製作秘籍失傳。不過，經過我多日研究，終於又給找回來了！"  Option="我也可以製作隱身衣了，對嗎？？" Cmd="s" Param="6" AddTaskOption="1" />
+		<Talk ID="6" NpcID="10033" Face="正常" Msg="沒錯！不過隱身衣的製作工藝極為復雜，需要有超級拉姆的幫忙才行。帶著你的超級拉姆，找到魔法馬車裡的織布機，它會告訴你關於隱身衣的秘密！"  Option="好的，謝謝哈哈魔法師！" Cmd="none" Param="9" AddTaskOption="1" />
+		<Talk ID="100" NpcID="10033" Face="正常" Msg="我有可以恢復青春的藥水，但是要小摩爾自己去配比哦！"  Option="快讓我試試吧！$我再看看。" Cmd="p$none" Param="BackToYouthGamePanel$null" />
+		<Talk ID="101" NpcID="10033" Face="正常" Msg="你已經可以去試試你配出的恢復青春藥水了。"  Option="我要去幫助他們。" Cmd="act" Param="youthChangeMap" />
+	</Talks>
+</Map>
+
+
+
+
