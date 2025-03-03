@@ -1,0 +1,87 @@
+<Tasks ID="660" Name="巧克力中劍" AwardMsg="恭喜你獲得1個小花燈（摩靈）、2個蝴蝶夢種子（家園種子）和1萬摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="403">
+		<EnterMap MapID="403">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="焦急" Msg="搞不定了，放棄了，交給你們了！" Option=""/>
+				<Talk NpcID="10002" Face="疑惑" Msg="說不定不是硬拔的呢，麼麼覺得哥哥一定留下了什麼提示。" Option="公主，你環繞著智慧之光哎~"/>
+				<Talk NpcID="10002" Face="靈感" Msg="一定是哥哥防止陌生人看到才設定了機關！" Option="恩恩，我們來找找看吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="開心" Msg="好棒啊，麼麼找到了哥哥留下的線索。" Option="可是，這只能說明塞拉王子有留下印記，這個怎麼打開呢？"/>
+				<Talk NpcID="10002" Face="疑惑" Msg="恩……我們再來研究下吧！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="403">
+		<EnterMap MapID="403">		
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>	
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>	
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="3" TarMapID="403">
+		<EnterMap MapID="403">		
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			
+		    <Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+		    <Action Cmd="SAY">
+				<Talk NpcID="10002" Face="焦急" Msg="{$username}，快醒醒了啦！" Option="（驚醒）咦？發生什麼事了？"/>
+				<Talk NpcID="10002" Face="生氣" Msg="總算醒過來了，怎麼回事嘛！樂樂暈了，你醉了！" Option="啊？"/>
+				<Talk NpcID="10002" Face="正常" Msg="我發現這個巧克力劍拔出來之後，裡面是一串密碼，完全不會弄啊，快幫我忙了啦！" Option="好吧，我來看看！就是還有點暈暈的~"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="4" TarMapID="403">
+		<EnterMap MapID="403">	
+		    <Action Cmd="OPEN_PANEL"  Param="BallGameStartPanel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="finishBallGame"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="5" TarMapID="403">
+		<EnterMap MapID="403">		
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="疑惑" Msg="咦？一本書耶~！" Option="是什麼呀？"/>
+				<Talk NpcID="10002" Face="開心" Msg="難道是哥哥的日記？說不定哥哥特地留給我的呢！" Option="⊙﹏⊙b汗，塞拉王子真的知道公主會來這裡嗎？"/>
+				<Talk NpcID="10002" Face="開心" Msg="不管啦，我要看看呢！" Option=""/>
+			</Action>
+			
+		    <Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106" />
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>
+
+
