@@ -1,0 +1,140 @@
+<exchange>
+	<baozang>
+		<item id="161183" star="3"  socketID = "435" check = "1">
+			<exitem id="1453079" num="1"/>
+			<exitem id="1453080" num="1"/>
+			<exitem id="1453081" num="1"/>	
+		</item>
+		<item id="161184" star="3"  socketID = "436" check = "0">
+			<exitem id="1453082" num="1"/>
+			<exitem id="1453083" num="1"/>
+			<exitem id="1453084" num="1"/>
+		</item>
+		<item id="161185" star="3"  socketID = "437" check = "1">
+			<exitem id="1453085" num="1"/>
+			<exitem id="1453086" num="1"/>
+			<exitem id="1453087" num="1"/>	
+		</item>
+		<item id="161186" star="3"  socketID = "438" check = "0">
+			<exitem id="1453088" num="1"/>
+			<exitem id="1453089" num="1"/>
+			<exitem id="1453090" num="1"/>	
+		</item>
+		<item id="161179" star="1"  socketID = "378" check = "1">
+			<exitem id="1453063" num="1"/>
+			<exitem id="1453064" num="1"/>
+			<exitem id="1453065" num="1"/>
+			<exitem id="1453066" num="1"/>		
+		</item>
+		<item id="161180" star="2"  socketID = "379" check = "0">
+			<exitem id="1453067" num="1"/>
+			<exitem id="1453068" num="1"/>
+			<exitem id="1453069" num="1"/>
+			<exitem id="1453070" num="1"/>	
+		</item>
+			<item id="161181" star="2"  socketID = "380" check = "1">
+			<exitem id="1453071" num="1"/>
+			<exitem id="1453072" num="1"/>
+			<exitem id="1453073" num="1"/>
+			<exitem id="1453074" num="1"/>		
+		</item>
+		<item id="161182" star="3"  socketID = "381" check = "0">
+			<exitem id="1453075" num="1"/>
+			<exitem id="1453076" num="1"/>
+			<exitem id="1453077" num="1"/>
+			<exitem id="1453078" num="1"/>		
+		</item>		
+		<item id="161175" star="1"  socketID = "367" check = "1">
+			<exitem id="1453040" num="1"/>
+			<exitem id="1453041" num="1"/>
+			<exitem id="1453042" num="1"/>
+			<exitem id="1453043" num="1"/>		
+		</item>
+		<item id="161176" star="2"  socketID = "368" check = "1">
+			<exitem id="1453044" num="1"/>
+			<exitem id="1453045" num="1"/>
+			<exitem id="1453046" num="1"/>
+			<exitem id="1453047" num="1"/>	
+		</item>
+		<item id="161177" star="2"  socketID = "369" check = "1">
+			<exitem id="1453048" num="1"/>
+			<exitem id="1453049" num="1"/>
+			<exitem id="1453050" num="1"/>
+			<exitem id="1453051" num="1"/>		
+		</item>
+		<item id="161178" star="3"  socketID = "370" check = "1">
+			<exitem id="1453052" num="1"/>
+			<exitem id="1453053" num="1"/>
+			<exitem id="1453054" num="1"/>
+			<exitem id="1453055" num="1"/>		
+		</item>
+		<item id="161171" star="1"  socketID = "360" check = "1">
+			<exitem id="1453024" num="1"/>
+			<exitem id="1453025" num="1"/>
+			<exitem id="1453026" num="1"/>
+			<exitem id="1453027" num="1"/>		
+		</item>
+		<item id="161172" star="2"  socketID = "361" check = "1">
+			<exitem id="1453028" num="1"/>
+			<exitem id="1453029" num="1"/>
+			<exitem id="1453030" num="1"/>
+			<exitem id="1453031" num="1"/>	
+		</item>
+			<item id="161173" star="2"  socketID = "362" check = "1">
+			<exitem id="1453032" num="1"/>
+			<exitem id="1453033" num="1"/>
+			<exitem id="1453034" num="1"/>
+			<exitem id="1453035" num="1"/>		
+		</item>
+		<item id="161174" star="1"  socketID = "363" check = "1">
+			<exitem id="1453036" num="1"/>
+			<exitem id="1453037" num="1"/>
+			<exitem id="1453038" num="1"/>
+			<exitem id="1453039" num="1"/>		
+		</item>
+	</baozang>
+	<lingshi>
+		<item id="1453004" star="2"  socketID = "348" check = "1">
+			<exitem id="1453008" num="2"/>
+			<exitem id="1453009" num="2"/>
+			<exitem id="1453010" num="1"/>	
+		</item>
+			<item id="1453013" star="2"  socketID = "358" check = "1">
+			<exitem id="1453002" num="5"/>
+			<exitem id="1453018" num="3"/>
+			<exitem id="1453019" num="1"/>	
+		</item>
+	</lingshi>
+	<daoju>
+		<item id="1453301" star="1"  socketID = "349" check = "0">
+			<exitem id="1453011" num="1"/>
+			<exitem id="1453012" num="1"/>
+			<exitem id="1453002" num="5"/>	
+		</item>
+	</daoju>
+	<other>
+		<item id="1353247" star="2"  socketID = "371" check = "1">
+			<exitem id="1453056" num="1"/>
+			<exitem id="1453057" num="1"/>
+			<exitem id="1453058" num="1"/>
+			<exitem id="1453059" num="1"/>		
+		</item>
+		<item id="1353242" star="2"  socketID = "364" check = "1">
+			<exitem id="1453020" num="1"/>
+			<exitem id="1453021" num="1"/>
+			<exitem id="1453022" num="1"/>
+			<exitem id="1453023" num="1"/>		
+		</item>
+		<item id="1353233" star="1"  socketID = "347" check = "1">
+			<exitem id="1453005" num="1"/>
+			<exitem id="1453006" num="1"/>
+			<exitem id="1453007" num="1"/>	
+		</item>
+			<item id="1353235" star="2"  socketID = "357" check = "0">
+			<exitem id="1453014" num="1"/>
+			<exitem id="1453015" num="1"/>
+			<exitem id="1453016" num="1"/>
+			<exitem id="1453017" num="1"/>		
+		</item>
+	</other>
+</exchange>

@@ -1,0 +1,14 @@
+﻿<!--天使園商店配置
+type:
+	1, 摩爾豆
+	2，點點豆
+	3，米幣
+price：
+	米幣類型不用配置價格,只能用商品ID
+discount:超拉折扣
+-->
+
+<root>
+	<item id="1453301" type="2" price="30"/>
+	<item id="1453302" type="3" price="30" discount="0.5"/>
+</root>

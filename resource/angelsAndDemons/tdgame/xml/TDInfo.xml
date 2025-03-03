@@ -1,0 +1,226 @@
+<TD>
+<!--天使和魔鬼-->
+<roles path="">
+
+	<!--魔鬼    ATK初始攻擊力   ASPD:被攻擊幾次後，施展攻擊一次  ATR:攻擊範圍 attackgrid是否格子攻擊方式 slowFrame停止攻擊多少幀-->
+	<role id="10000" nick="羅勒" price="0" speed="1.5" f="0" life="30" exp="6" rate="10" count="1" talks="嘿嘿，有一天我也能當老大！/,你有沒有覺得其實我蠻有氣質的？" talkFrame="240" talkRandom="0.15"/>
+	<role id="10001" nick="枯枯" price="0" speed="1.3" f="0" life="40" exp="6" rate="10" count="1" talks="我們是枯枯，我們是枯枯！/,為了老大，衝啊！" talkFrame="240" talkRandom="0.15"/>
+	<role id="10002" nick="嘿啦" price="0" speed="1.5" f="0" life="30" exp="6" rate="10" count="1" talks="嘿嘿嘿，看我打你！/,老大威武！" talkFrame="240" talkRandom="0.15"/>
+	<role id="10003" nick="嘔噠" price="0" speed="1.3" f="0" life="40" exp="6" rate="10" count="1" talks="嘔？噠噠噠！你不行滴！/,看偶秒殺你！/,嘔嘔！殺啦殺啦！" talkFrame="240" talkRandom="0.15"/>
+	<role id="10004" nick="毛球" price="0" speed="1.7" f="0" life="40" exp="6" rate="10" count="1" talks="我是毛球，我是威武的毛球！/,仙人掌不知道什麼是失敗！" talkFrame="240" talkRandom="0.15"/>
+	<role id="10005" nick="刺球" price="0" speed="1.5" f="0" life="30" exp="6" rate="10" count="1" talks="老大，我們挺你！/,擋路的都要被滅！/,別得意，老大來了你就知道厲害！" talkFrame="240" talkRandom="0.15"/>	
+	<role id="10006" nick="假面" price="0" speed="1.5" f="0" life="30" exp="6" rate="10" count="1" talks="我家老大是仙人掌中的騎士！/,我的假面是不是很酷？" talkFrame="240" talkRandom="0.15"/>		
+	<role id="10007" nick="嘎嘎" price="0" speed="1.7" f="0" life="40" exp="6" rate="10" count="1" talks="殺啊…………/,衝啊…………/,啊……………" talkFrame="240" talkRandom="0.15"/>			
+	<role id="10400" nick="便便樹" price="0" speed="1.3" f="0" life="100" exp="40" talks="傑拉德將軍萬歲！/,便便樹也是有尊嚴的！" talkFrame="240" talkRandom="0.15" slowFrame="96"/>
+	<role id="10401" nick="啊嗚花" price="0" speed="1.3" f="0" life="100" exp="50"  ATK="0" ATR="100" ASPD="15" attackgrid="1" maxAttack="1000"  talks="啊嗚啊嗚啊嗚！誰給我送點心來啦？/,哈哈哈，摩羅島也是你能闖的？" talkFrame="240" talkRandom="0.15" slowFrame="96"/>
+	<role id="10402" nick="刺青" price="0" speed="1.5" f="0" life="100" exp="60"  ATK="40" ATR="1" ASPD="15" attackgrid="1" maxAttack="1"  talks="要不要來點音樂？/,想要戰勝我？哈哈哈……/,我比我哥哥酷多了！" talkFrame="240" talkRandom="0.15"/>
+	<role id="10403" nick="青刺" price="0" speed="1.7" f="0" life="120" exp="60"  ATK="40" ATR="1" ASPD="15" attackgrid="1" maxAttack="1"  talks="我會成為仙人掌中最偉大的仙人掌！/,你！不要小看我，小看我會很慘！" talkFrame="240" talkRandom="0.15" slowFrame="96"/>
+	<role id="10404" nick="黑焱" price="0" speed="1.7" f="0" life="150" exp="120"  ATK="40" ATR="1" ASPD="15" attackgrid="1" maxAttack="1"  talks="我的主人是最為強大的！/,為了主人，拼了！/,你不怕我用暗黑之火燒死你嗎？" talkFrame="240" talkRandom="0.15" slowFrame="96"/>
+	<role id="10387"  nick="焰螢火" price="0" speed="1.6" f="0" life="40" exp="8" talks="戰鬥是我的強項/,我們來好好戰鬥一場吧！" talkFrame="240" talkRandom="0.15"/>
+	<role id="10386"  nick="茸茸斯達" price="0" speed="1.6" f="0" life="35" exp="8" talks="我的毛髮是不是很柔軟？/,好吧，我們來比試一下吧！" talkFrame="240" talkRandom="0.15"/>
+	<role id="10385"  nick="閃電蛙" price="0" speed="3.6" f="0" life="30" exp="8" talks="閃電蛙，霹靂霹靂啪。/,賜予我力量吧！我是閃電蛙！" talkFrame="240" talkRandom="0.15"/>
+	<role id="10384"  nick="果凍泡泡" price="0" speed="1.5" f="0" life="35" exp="6" talks="咕嘟咕嘟，噴灑水珠/,果凍泡泡什麼都不怕" talkFrame="240" talkRandom="0.15"/>
+	<role id="10383"  nick="魔魔咕唧" price="0" speed="1.5" f="0" life="30" exp="6" talks="咕唧咕唧……" talkFrame="240" talkRandom="0.15"/>
+	<role id="10382"  nick="蘑音" price="0" speed="1.5" f="0" life="25" exp="6" talks="大家來聽我的演唱會吧！/,啦啦啦啦啦啦啦！" talkFrame="240" talkRandom="0.15"/>
+	<role id="10381"  nick="紅孩兒" price="0" speed="2.2" f="0" life="71" exp="8" talks="火焰的力量是危險的，小心使用。/,現在是紅孩兒show time" talkFrame="240" talkRandom="0.15"/>
+	<role id="10380"  nick="八爪" price="0" speed="3.6" f="0" life="71" exp="8"/>
+	<role id="10379"  nick="薇薇" price="0" speed="2.2" f="0" life="71" exp="8"/>
+	<role id="10009" nick="唉卡卡" price="0" speed="1.6" f="0" life="40" exp="8" rate="10" count="1" talks="快說你沒看見我~/,卡卡，來較量較量？" talkFrame="240" talkRandom="0.15"/>	
+	<role id="10010" nick="唉卡卡" price="0" speed="1.6" f="0" life="20" exp="8" rate="10" count="1" talks="卡卡卡，你看見我就是個悲劇~" talkFrame="240" talkRandom="0.15" beAttackIDS="1" energy="10"/>	
+	<role id="10405" nick="牙黑牙" price="0" speed="1.7" f="0" life="150" exp="120"  ATK="50" ATR="5" ASPD="10" attackgrid="1" maxAttack="1" talks="黑，是一種心態，你不懂~/,我的牙不是黑的，是比黑還要黑~/,牙哈哈哈哈~就讓黑暗吞噬你們吧~" talkFrame="240" talkRandom="0.15" sound="10"/>	
+	<role id="10012" nick="囧明" price="0" speed="1.6" f="0" life="40" exp="8" rate="10" count="1"/>	
+	<role id="10013" nick="囧明" price="0" speed="1.6" f="0" life="20" exp="8" rate="10" count="1" beAttackIDS="1" energy="15"/>	
+	<role id="10406" nick="殘明" price="0" speed="1.7" f="0" life="150" exp="120"  ATK="50" ATR="4" ASPD="10" attackgrid="1" maxAttack="1" talks="哼哼，我的四眼軍團是不滅的！/,跟我鬥？你能比我更壞嗎？/,No No No，誰都別想比我更兇殘！" talkFrame="240" talkRandom="0.15" sound="10"/>
+	<role id="10015" nick="哇哇" price="0" speed="1.6" f="0" life="30" exp="8" rate="10" count="1"/>	
+	<role id="10016" nick="哇哇" price="0" speed="1.6" f="0" life="15" exp="8" rate="10" count="1" beAttackIDS="1" energy="15" talks="哇~~~~~~~~~~~~~~~~~/,我的大尖牙是有殺傷力的！/,我穿了防彈衣，我不怕你！" talkFrame="240" talkRandom="0.15" />	
+	<role id="10018" nick="咚嘎" price="0" speed="1.7" f="0" life="30" exp="8" rate="10" count="1"/>	
+	<role id="10019" nick="咚嘎" price="0" speed="1.7" f="0" life="15" exp="8" rate="10" count="1" beAttackIDS="1" energy="15" talks="你知道本大爺是誰嗎？/,有本事就來挑戰本大爺的防護罩！/,噗！" talkFrame="240" talkRandom="0.15" />	
+	<role id="10407" nick="愚昧" price="0" speed="1.7" f="0" life="150" exp="120"  ATK="50" ATR="4" ASPD="15" attackgrid="1" maxAttack="1" talks="摩爾都是愚昧的！/,愚昧痛恨搶走寶石的摩爾~" talkFrame="240" talkRandom="0.15" sound="10"/>
+	<role id="10021" nick="葫嚕嚕" price="0" speed="2.4" f="0" life="30" exp="16" rate="10" count="1"/>	
+	<role id="10022" nick="葫嚕嚕" price="0" speed="2.4" f="0" life="15" exp="17" rate="10" count="1" beAttackIDS="1" energy="15"/>	
+	<role id="10408" nick="多拉" price="0" speed="2.2" f="0" life="250" exp="120"  ATK="50" ATR="4" ASPD="15" attackgrid="1" maxAttack="1" talks="我是潘朵拉寶盒！！哈哈哈！/,知道我藏著什麼嘛？不告訴你！" talkFrame="240" talkRandom="0.15" sound="10"/>
+	<role id="10387"  nick="焰螢火" price="0" speed="1.6" f="0" life="40" exp="8" talks="戰鬥是我的強項/,我們來好好戰鬥一場吧！" talkFrame="240" talkRandom="0.15"/>
+	<role id="10023" nick="香腸醜醜" price="0" speed="2.4" f="0" life="60" exp="8" rate="10" count="1"/>	
+	<role id="10024" nick="香腸胖胖雞" price="0" speed="2.4" f="0" life="60" exp="8" rate="10" count="1"/>	
+	<role id="10501" nick="海盜嘍嘍" price="0" speed="1.5" f="0" life="50" exp="10" rate="10" count="1" talks="踏平這個星球！" talkFrame="240" talkRandom="0.15" slowFrame="96"/>
+	<role id="10502" nick="海盜軍曹" price="0" speed="1.8" f="0" life="250" exp="50" talks="星際海盜，稱霸宇宙！" talkFrame="240" talkRandom="0.15" slowFrame="96"/>
+	<role id="10503" nick="海盜探子" price="0" speed="2.4" f="0" life="40" exp="20" rate="10" count="1" talks="沒什麼能瞞得過我！" talkFrame="240" talkRandom="0.15" slowFrame="96"/>
+	<role id="10504" nick="海盜少尉" price="0" speed="2.0" f="0" life="500" exp="75" talks="哼哼，在我眼裡你們就是些蟲子！" talkFrame="240" talkRandom="0.15" slowFrame="96"/>
+	<role id="10505" nick="海盜爪牙" price="0" speed="1.8" f="0" life="50" exp="30" rate="10" count="1" talks="跟著老大，有肉吃！" talkFrame="240" talkRandom="0.15" slowFrame="96"/>
+	<role id="10506" nick="海盜大佐" price="0" speed="2.4" f="0" life="500" exp="150" talks="你是誰，在我面前居然敢這麼放肆！退下！" talkFrame="240" talkRandom="0.15" slowFrame="96"/>
+	
+	<role id="10601" nick="天狗小兵" price="0" speed="1.3" f="0" life="100" exp="50"  ATK="0" ATR="100" ASPD="15" attackgrid="1" maxAttack="1000"  talks="啊嗚啊嗚啊嗚！/,哈哈哈，不要自不量力啦？" talkFrame="240" talkRandom="0.15" slowFrame="96"/>
+	<role id="10602" nick="天狗戰士" price="0" speed="1.5" f="0" life="100" exp="60"  ATK="40" ATR="1" ASPD="15" attackgrid="1" maxAttack="1"  talks="要不要來點音樂？/,想要戰勝我？哈哈哈……/,我比我哥哥酷多了！" talkFrame="240" talkRandom="0.15"/>
+	<role id="10603" nick="天狗武將" price="0" speed="1.7" f="0" life="120" exp="60"  ATK="40" ATR="1" ASPD="15" attackgrid="1" maxAttack="1"  talks="沒有什麼能夠阻擋！/,你！不要小看我，小看我會很慘！" talkFrame="240" talkRandom="0.15" slowFrame="96"/>
+	<role id="10604" nick="黑暗天使" price="0" speed="1.7" f="0" life="150" exp="120"  ATK="40" ATR="1" ASPD="15" attackgrid="1" maxAttack="1"  talks="啊嗚啊嗚啊嗚！/,哈哈哈，不要自不量力啦？" talkFrame="240" talkRandom="0.15" slowFrame="96"/>
+	
+	<!--天使   ATK：初始攻擊力  ASPD:初始攻擊速度(毫秒) ATR:攻擊範圍 skill：技能  price:價格 recPrice回收價格  maxAttack最多攻擊幾個對象 star得到星星的概率 slow減慢攻擊物件的速度  slowFrame減慢物件的時間間隔（以Frame為單位 性能考慮）  rage打出暴擊的概率  rageRate暴擊的攻擊力倍數  attackgrid是否格子攻擊方式-->
+	<role id="1353407" ATK="5" ATR="1" ASPD="500" life="20" price="4" recPrice="2" f="1" nick="霓衫" sound="1"/>
+	<role id="1353408" ATK="5" ATR="2" ASPD="1200" life="20" price="5" recPrice="2" f="1" nick="象鼻菇" sound="5"/>
+	<role id="1353410" ATK="25" ATR="1" ASPD="1500" life="30" price="7" recPrice="3" f="1" nick="果凍泡泡" sound="5"/>
+	<role id="1353409" ATK="8" ATR="2" ASPD="1000" life="30" price="6" recPrice="3" f="1" nick="魔魔咕唧" sound="1"/>
+	<role id="1353412" ATK="7" ATR="1" ASPD="1000" life="20" price="5" recPrice="2" f="1" star="0.1" nick="嘟嚕力士" sound="2"/>
+	<role id="1353413" ATK="10" ATR="1" ASPD="800" life="20" price="5" recPrice="2" f="1" nick="蘑音" sound="1"/>
+	<role id="1353411" ATK="5" ATR="1" ASPD="800" life="20" price="6" recPrice="3" f="1" maxAttack="3" nick="刺噗噗" sound="4"/>
+	<role id="1353405" ATK="0" ATR="1" ASPD="1400" life="20" price="6" recPrice="3" f="1" slow="0.5" slowFrame="30" maxAttack="1000" nick="茸茸斯達" attackgrid="1" sound="3"/>
+	<role id="1353403" ATK="8" ATR="1" ASPD="1000" life="20" price="5" recPrice="2" f="1" maxAttack="3" nick="尼尼莫莫" sound="3"/>
+	<role id="1353415" ATK="10" ATR="2" ASPD="1400" life="40" price="8" recPrice="4" f="1" maxAttack="1000" nick="焰螢火" attackgrid="1" sound="3"/>
+	<role id="1353418" ATK="12" ATR="1" ASPD="800" life="25" price="6" recPrice="3" f="1" nick="閃電蛙" sound="4"/>
+	<role id="1353424" ATK="35" ATR="1" ASPD="1400" life="30" price="6" recPrice="3" f="1" nick="呐呐" sound="4"/>
+	<role id="1353422" ATK="6" ATR="2" ASPD="1500" life="25" price="6" recPrice="3" f="1" maxAttack="4" nick="草莓糕糕" sound="4"/>
+	<role id="1353427" ATK="15" ATR="1" ASPD="1200" life="30" price="7" recPrice="3" f="1" maxAttack="4" nick="擺擺醬" sound="5"/>
+	<role id="1353429" ATK="9" ATR="1" ASPD="1000" life="25" price="6" recPrice="3" f="1" star="0.2" nick="星星超人" sound="1"/>
+	<role id="1353417" ATK="20" ATR="1" ASPD="1100" life="40" price="8" recPrice="4" f="1" maxAttack="4" rage="0.2" rageRate="2" nick="土豆將軍" sound="2"/>
+	<role id="1353431" ATK="9" ATR="2" ASPD="1300" life="25" price="6" recPrice="3" f="1" nick="機靈晶晶" sound="4"/>
+	<role id="1354035" ATK="12" ATR="2" ASPD="1000" life="40" price="7" recPrice="3" f="1" nick="仙人美眉" sound="1"/>
+	<role id="1354039" ATK="10" ATR="1" ASPD="1400" life="40" price="8" recPrice="4" f="1" slow="0.4" slowFrame="30" maxAttack="1000" nick="薇薇" attackgrid="1" sound="3"/>
+	<role id="1354037" ATK="13" ATR="1" ASPD="500" life="40" price="7" recPrice="3" f="1" nick="仙呱呱" sound="4"/>
+	<role id="1354047" ATK="12" ATR="3" ASPD="1300" life="50" price="9" recPrice="4" f="1" maxAttack="10" nick="紅孩兒" sound="5"/>
+	<role id="1354045" ATK="15" ATR="2" ASPD="1100" life="40" price="7" recPrice="3" f="1" nick="小紫" sound="2"/>
+	<role id="1354043" ATK="15" ATR="2" ASPD="1600" life="40" price="9" recPrice="4" f="1" maxAttack="5" nick="八爪" sound="5"/>
+	<role id="1354041" ATK="5" ATR="3" ASPD="1500" life="50" price="7" recPrice="3" f="1" maxAttack="5" nick="皮艾爾" sound="5"/>
+	<role id="1354049" ATK="40" ATR="2" ASPD="1500" life="60" price="9" recPrice="4" f="1" nick="櫻花" sound="1"/>
+	<role id="1354059" ATK="20" ATR="1" ASPD="1500" life="60" price="7" recPrice="3" f="1" nick="岩靈" rage="0.15" rageRate="2" sound="2"/>
+	<role id="1354061" ATK="10" ATR="2" ASPD="1500" life="40" price="6" recPrice="3" f="1" maxAttack="8" nick="妙妙" sound="5"/>
+	<role id="1354063" ATK="18" ATR="1" ASPD="1200" life="60" price="7" recPrice="3" f="1" maxAttack="4" nick="香香乳酪" sound="5"/>
+	<role id="1354069" ATK="10" ATR="1" ASPD="1500" life="30" price="6" recPrice="3" f="1" nick="赤金之翼" sound="1" attackIDS="1"/>
+	<role id="1354067" ATK="5" ATR="3" ASPD="1500" life="40" price="8" recPrice="4" f="1" slow="0.7" slowFrame="30" maxAttack="1000" nick="遠古猛獁" attackgrid="1" sound="3"/>
+	<role id="1354065" ATK="15" ATR="2" ASPD="1300" life="60" price="7" recPrice="3" f="1" nick="飛兒" sound="5" attackIDS="1"/>
+	<role id="1354071" ATK="25" ATR="1" ASPD="1300" life="50" price="7" recPrice="3" f="1" nick="明之劍" sound="5" attackIDS="1"/>
+	<role id="1354073" ATK="20" ATR="1" ASPD="1200" life="40" price="7" recPrice="4" f="1" maxAttack="4" nick="璀璨晶靈" sound="2"/>
+	<role id="1354079" ATK="15" ATR="2" ASPD="1500" life="45" price="8" recPrice="4" f="1" maxAttack="4" rage="0.15" rageRate="2" nick="葉岩" sound="2"/>
+	<role id="1354077" ATK="12" ATR="3" ASPD="1500" life="60" price="7" recPrice="3" f="1" nick="愛蓮女王" sound="5" attackIDS="1"/>
+	<role id="1354075" ATK="40" ATR="3" ASPD="1400" life="80" price="10" recPrice="5" f="1" nick="曼巴雷蛇" rage="0.15" rageRate="2" attackIDS="1" sound="1"/>
+	<role id="1354087" ATK="18" ATR="2" ASPD="1400" life="30" price="7" recPrice="3" f="1" nick="寶石流星" sound="4"/>
+	<role id="1354085" ATK="28" ATR="1" ASPD="1400" life="40" price="7" recPrice="3" f="1" nick="元寶香爐" sound="3" attackIDS="1"/>
+	<role id="1354083" ATK="15" ATR="2" ASPD="1600" life="40" price="8" recPrice="4" f="1" star="0.1" nick="KO力士" maxAttack="4" sound="2"/>
+	<role id="1354081" ATK="50" ATR="1" ASPD="4000" life="50" price="8" recPrice="4" f="1" nick="飛天豬" sound="4"/>
+	<role id="1354095" ATK="20" ATR="2" ASPD="1600" life="50" price="7" recPrice="3" f="1" nick="寶石螺" sound="3"/>
+	<role id="1354097" ATK="25" ATR="1" ASPD="1600" life="40" price="4" recPrice="2" f="1" nick="美味桶桶" sound="4"/>
+	<role id="1354093" ATK="16" ATR="2" ASPD="1400" life="40" price="8" recPrice="4" f="1" maxAttack="5" nick="閃閃金幣" sound="2"/>
+	<role id="1354089" ATK="15" ATR="2" ASPD="1000" life="60" price="9" recPrice="4" f="1" maxAttack="5" nick="小時" sound="1" attackIDS="1"/>
+	<role id="1354090" ATK="40" ATR="3" ASPD="1400" life="70" price="10" recPrice="5" f="1" slow="0.6" slowFrame="30" nick="小分" rage="0.25" rageRate="2" attackIDS="1" sound="1"/>
+	<role id="1354098" ATK="10" ATR="2" ASPD="700" life="30" price="7" recPrice="3" f="1" maxAttack="3" nick="咕嚕企鵝" sound="4"/>
+	<role id="1354100" ATK="15" ATR="1" ASPD="500" life="50" price="7" recPrice="3" f="1" nick="吉祥葫蘆" sound="4"/>
+	<role id="1354102" ATK="80" ATR="3" ASPD="3000" life="80" price="10" recPrice="5" f="1" nick="雙峰奇駝" rage="0.1" rageRate="2" sound="3" attackIDS="1"/>
+	<role id="1354124" ATK="8" ATR="3" ASPD="1500" life="40" price="7" recPrice="3" f="1" maxAttack="5" nick="星艾爾" sound="5"/>
+	<role id="1354118" ATK="10" ATR="1" ASPD="500" life="40" price="6" recPrice="3" f="1" nick="粽粽乖乖" sound="4"/>
+	<role id="1354120" ATK="30" ATR="1" ASPD="1800" life="30" price="7" recPrice="3" f="1" nick="醜王亨利" sound="1"/>
+	<role id="1354122" ATK="15" ATR="2" ASPD="1300" life="30" price="7" recPrice="3" f="1" slow="0.7" slowFrame="30" nick="機靈冰冰" sound="4"/>
+	<role id="1354091" ATK="5" ATR="2" ASPD="500" life="40" price="8" recPrice="4" f="1" nick="金剛鬥士" sound="4"/>
+	<role id="1354114" ATK="25" ATR="1" ASPD="1400" life="40" price="7" recPrice="3" f="1" nick="橘怪怪氣球" rage="0.15" rageRate="2" sound="5"/>
+	<role id="1354112" ATK="28" ATR="1" ASPD="1400" life="40" price="7" recPrice="3" f="1" nick="紅怪怪氣球" rage="0.1" rageRate="2" sound="5"/>
+	<role id="1354116" ATK="19" ATR="1" ASPD="1500" life="40" price="7" recPrice="3" f="1" maxAttack="3" nick="藍怪怪氣球" rage="0.06" rageRate="2" sound="5"/>
+	<role id="1354110" ATK="20" ATR="1" ASPD="1500" life="40" price="7" recPrice="3" f="1" maxAttack="3" nick="粉怪怪氣球" rage="0.07" rageRate="2" sound="5"/>
+	<role id="1354104" ATK="21" ATR="1" ASPD="1500" life="40" price="7" recPrice="3" f="1" maxAttack="3" nick="玫紅怪氣球" rage="0.08" rageRate="2" sound="5"/>
+	<role id="1354108" ATK="22" ATR="1" ASPD="1500" life="40" price="7" recPrice="3" f="1" maxAttack="3" nick="紫怪怪氣球" rage="0.09" rageRate="2" sound="5"/>
+	<role id="1354106" ATK="18" ATR="1" ASPD="1500" life="40" price="7" recPrice="3" f="1" maxAttack="3" nick="黃怪怪氣球" rage="0.05" rageRate="2" sound="5"/>
+	<role id="1354126" ATK="22" ATR="2" ASPD="1500" life="40" price="7" recPrice="3" f="1" nick="包子糰糰" sound="2"/>
+	<role id="1354130" ATK="10" ATR="2" ASPD="1000" life="40" price="7" recPrice="3" f="1" maxAttack="4" nick="麼麼漿果" sound="1" attackIDS="1"/>
+	<role id="1354128" ATK="25" ATR="1" ASPD="1200" life="50" price="8" recPrice="4" f="1" maxAttack="4" nick="乖仔不倒翁" sound="1" attackIDS="1"/>
+	<role id="1354132" ATK="20" ATR="2" ASPD="1600" life="80" price="8" recPrice="4" f="1" maxAttack="4" nick="萊夫子" sound="3"/>
+	<role id="1354135" ATK="80" ATR="4" ASPD="2000" life="80" price="12" recPrice="6" f="1" slow="0.6" slowFrame="30" nick="青焰伯爵" rage="0.1" rageRate="2" sound="3" attackIDS="1"/>
+	<role id="1354134" ATK="30" ATR="3" ASPD="1400" life="80" price="10" recPrice="5" f="1" maxAttack="4" nick="彩羽伯爵" sound="1" attackIDS="1"/>
+	<role id="1354136" ATK="33" ATR="1" ASPD="1800" life="70" price="7" recPrice="3" f="1" nick="粉妞妞" rage="0.1" rageRate="2" sound="5"/>
+	<role id="1354138" ATK="22" ATR="2" ASPD="1600" life="70" price="8" recPrice="4" f="1" maxAttack="4" nick="橙苗苗" sound="4"/>
+	<role id="1354140" ATK="10" ATR="2" ASPD="800" life="70" price="8" recPrice="4" f="1" nick="蓬蓬頭菇" sound="3" attackIDS="1"/>
+	<role id="1354142" ATK="30" ATR="3" ASPD="1700" life="70" price="10" recPrice="5" f="1" nick="瑪奇朵喵" sound="2"/>
+	<role id="1354144" ATK="26" ATR="1" ASPD="1200" life="70" price="8" recPrice="4" f="1" maxAttack="3" nick="聖蛋樹" sound="1" attackIDS="1"/>
+	<role id="1354146" ATK="100" ATR="1" ASPD="1800" life="80" price="12" recPrice="6" f="1" nick="三眼金蟾" sound="2"/>
+	<role id="1354148" ATK="40" ATR="4" ASPD="1400" life="80" price="12" recPrice="6" f="1" maxAttack="4" nick="霹靂雷龍" sound="3" attackIDS="1"/>
+	<role id="1354150" ATK="35" ATR="3" ASPD="500" life="80" price="12" recPrice="6" f="1" nick="霹靂火龍" rage="0.1" rageRate="2" sound="4" attackIDS="1"/>
+	<role id="1354152" ATK="25" ATR="2" ASPD="1500" life="60" price="8" recPrice="4" f="1" nick="夢境泡泡魚" sound="2"/>
+	<role id="1354154" ATK="28" ATR="1" ASPD="1200" life="80" price="8" recPrice="4" f="1" maxAttack="3" nick="棉棉兔" slow="0.7" slowFrame="30" sound="1" attackIDS="1"/>
+	<role id="1354156" ATK="35" ATR="1" ASPD="1500" life="70" price="7" recPrice="3" f="1" nick="酷翠兒" rage="0.15" rageRate="2" sound="4"/>
+	<role id="1354159" ATK="50" ATR="4" ASPD="1600" life="70" price="12" recPrice="6" f="1" slow="0.6" slowFrame="30" nick="四足岩虎" rage="0.15" rageRate="2" sound="3" attackIDS="1"/>
+	<role id="1354161" ATK="35" ATR="2" ASPD="1500" life="70" price="9" recPrice="4" f="1" nick="白熊王子" sound="2" attackIDS="1"/>
+	<role id="1354163" ATK="30" ATR="1" ASPD="1500" life="50" price="7" recPrice="3" f="1" nick="白眉仙人" sound="3" attackIDS="1"/>
+	<role id="1354165" ATK="25" ATR="2" ASPD="1500" life="50" price="8" recPrice="4" f="1" maxAttack="3" nick="忍者蜂" sound="4" attackIDS="1"/>
+	<role id="1354167" ATK="30" ATR="1" ASPD="1300" life="50" price="7" recPrice="3" f="1" maxAttack="3" nick="大葉子" sound="5" attackIDS="1"/>
+	<role id="1354169" ATK="28" ATR="2" ASPD="1500" life="60" price="9" recPrice="4" f="1" maxAttack="3" nick="巴拉鳥" rage="0.15" rageRate="2"  sound="1" attackIDS="1"/>
+	<role id="1354171" ATK="30" ATR="3" ASPD="1600" life="60" price="9" recPrice="4" f="1" nick="狸貓苗苗" sound="2" attackIDS="1"/>
+	<role id="1354173" ATK="32" ATR="1" ASPD="1400" life="70" price="7" recPrice="3" f="1" nick="火刺蝟" sound="2"/>
+	<role id="1354175" ATK="32" ATR="3" ASPD="1500" life="60" price="9" recPrice="4" f="1" nick="彩蟹妹" sound="3"/>
+	<role id="1354177" ATK="26" ATR="2" ASPD="1500" life="70" price="8" recPrice="4" f="1" maxAttack="3" nick="超人鼠" sound="4"/>
+	<role id="1354179" ATK="26" ATR="1" ASPD="1600" life="50" price="7" recPrice="3" f="1" nick="磁圈仔" sound="5" slow="0.7" slowFrame="30" attackIDS="1"/>
+	<role id="1354181" ATK="45" ATR="3" ASPD="1400" life="90" price="12" recPrice="6" f="1" maxAttack="4" nick="貓梨熊" sound="1" attackIDS="1"/>
+	<role id="1354183" ATK="32" ATR="2" ASPD="1400" life="60" price="9" recPrice="4" f="1" nick="荷魯斯" sound="2" attackIDS="1"/>
+	<role id="1354185" ATK="70" ATR="4" ASPD="1600" life="100" price="12" recPrice="6" f="1" nick="斯芬克斯" sound="2" attackIDS="1"/>
+	<role id="1354187" ATK="30" ATR="2" ASPD="1500" life="80" price="8" recPrice="4" f="1" maxAttack="4" nick="月月仙女" sound="2" attackIDS="1"/>
+	<role id="1354189" ATK="80" ATR="3" ASPD="1700" life="80" price="12" recPrice="6" f="1" nick="五斑靈鹿" sound="5" slow="0.7" slowFrame="30" attackIDS="1"/>
+	<role id="1354191" ATK="40" ATR="2" ASPD="1500" life="70" price="8" recPrice="4" f="1" nick="雷角多利" rage="0.15" rageRate="2" sound="4"/>
+	<role id="1354195" ATK="50" ATR="3" ASPD="1500" life="80" price="12" recPrice="6" f="1" maxAttack="3" nick="帕帕露" rage="0.15" rageRate="2" sound="3"/>
+	<role id="1354193" ATK="60" ATR="2" ASPD="1600" life="100" price="10" recPrice="5" f="1" nick="海豹圈圈" sound="1"/>
+	<role id="1354199" ATK="100" ATR="1" ASPD="1600" life="60" price="12" recPrice="6" f="1" maxAttack="4" nick="六角羚羊" sound="2" attackIDS="1"/>
+	<role id="1354201" ATK="45" ATR="2" ASPD="1500" life="60" price="8" recPrice="4" f="1" nick="美人璐璐" rage="0.1" rageRate="2" sound="4" attackIDS="1"/>
+	<role id="1354197" ATK="45" ATR="3" ASPD="1400" life="50" price="10" recPrice="5" f="1" nick="梅魯" sound="1"/>
+	<role id="1354203" ATK="20" ATR="4" ASPD="1500" life="40" price="12" recPrice="6" f="1" maxAttack="5" nick="魔角巴魯" sound="2" attackIDS="1"/>
+	<role id="1354205" ATK="90" ATR="3" ASPD="1600" life="60" price="12" recPrice="6" f="1" nick="七彩鸚鵡" sound="4" attackIDS="1"/>
+	<role id="1354207" ATK="55" ATR="2" ASPD="1600" life="60" price="10" recPrice="5" f="1" maxAttack="4" nick="松鼠果果" sound="3" attackIDS="1"/>
+	<role id="1354209" ATK="80" ATR="4" ASPD="1600" life="100" price="12" recPrice="6" f="1" nick="金福蛛" rage="0.1" rageRate="2" sound="4" attackIDS="1"/>
+	<role id="1354211" nick="紅鼻子魯道夫" ASPD="1600" ATK="70" ATR="3" f="1" life="60" price="12" recPrice="6" sound="1" />
+	<role id="1354213" nick="斯諾伊" ASPD="1500" ATK="40" ATR="1" maxAttack="4" attackIDS="1" f="1" life="70" price="12" recPrice="6" sound="2" />
+	<role id="1354215" nick="莫古蘇" ASPD="1400" ATK="70" ATR="2" attackIDS="1" f="1" life="80" price="12" recPrice="6" sound="3" />
+	<role id="1354217" nick="祥雲九尾" ASPD="1400" ATK="40" ATR="4" maxAttack="6" attackIDS="1" f="1" life="90" price="14" recPrice="7" sound="4" />	
+  <role id="1354218" nick="水之寶瓶" ASPD="1200" ATK="20" ATR="3" maxAttack="4" slow="0.7" slowFrame="30" f="1" life="50" price="12" recPrice="6" sound="3" />
+  <role id="1354220" nick="祥瑞搖鈴" ASPD="1200" ATK="55" ATR="2" slow="0.7" slowFrame="30" f="1" life="60" price="12" recPrice="6" sound="2" />
+  <role id="1354222" nick="雪精靈" ASPD="1200" ATK="70" ATR="2" attackIDS="1" f="1" life="60" price="12" recPrice="6" sound="1" />
+  <role id="1354224" nick="冰雪精靈龍" ASPD="1500" ATK="50" ATR="3" maxAttack="4" slow="0.7" slowFrame="30" f="1" life="100" price="12" recPrice="6" sound="5" />
+  <role id="1354226" nick="雙魚天使" ASPD="1400" ATK="45" ATR="3" maxAttack="2" attackIDS="1" rage="0.1" rageRate="2" f="1" life="60" price="12" recPrice="6" sound="2" />
+  <role id="1354228" nick="雪麒麟" ASPD="1500" ATK="55" ATR="3" maxAttack="4" slow="0.7" slowFrame="30" f="1" life="120" price="14" recPrice="7" sound="5" />
+  <role id="1354229" nick="時光魔書" ASPD="1500" ATK="70" ATR="3" rage="0.25" rageRate="2" f="1" life="50" price="12" recPrice="6" sound="3" />
+  <role id="1354231" nick="白羊天使" ASPD="1200" ATK="75" ATR="2" f="1" life="80" price="12" recPrice="6" sound="2" />
+  <role id="1354233" nick="招財吼姆" ASPD="1500" ATK="70" ATR="2" attackIDS="1" f="1" life="60" price="12" recPrice="6" sound="1" />
+  <role id="1354235" nick="幻彩蝴蝶" ASPD="1300" ATK="50" ATR="3" maxAttack="4" attackIDS="1" rage="0.1" rageRate="2" f="1" life="55" price="12" recPrice="6" sound="4" />
+  <role id="1354237" nick="華冠海豚" ASPD="1500" ATK="70" ATR="2" maxAttack="3" slow="0.7" slowFrame="30" f="1" life="60" price="12" recPrice="6" sound="3" />
+  <role id="1354238" nick="火焰金牛" ASPD="1500" ATK="55" ATR="3" maxAttack="5" slow="0.7" slowFrame="30" f="1" life="60" price="12" recPrice="6" sound="2" />
+  <role id="1354240" nick="威風機械龍" ASPD="1200" ATK="100" ATR="3" maxAttack="2" attackIDS="1" rage=".1" rageRate="2" f="1" life="100" price="12" recPrice="6" sound="1" />
+  <role id="1354242" nick="淑女露絲" ASPD="1400" ATK="75" ATR="3" attackIDS="1" rage=".1" rageRate="2" f="1" life="60" price="12" recPrice="6" sound="5" />
+  <role id="1354244" nick="雙子天使" ASPD="1400" ATK="60" ATR="3" maxAttack="2" attackIDS="1" rage=".1" rageRate="2" f="1" life="60" price="12" recPrice="6" sound="5" />
+  <role id="1354246" nick="巨蟹天使" ASPD="1400" ATK="60" ATR="3" maxAttack="2" attackIDS="1" rage=".1" rageRate="2" f="1" life="60" price="12" recPrice="6" sound="5" />
+  <role id="1354249" nick="金翼獅王" ASPD="1200" ATK="80" ATR="3" maxAttack="4" attackIDS="1" rage=".1" rageRate="2" f="1" life="80" price="12" recPrice="6" sound="3" />
+  <role id="1354251" nick="處女座天使" ASPD="1400" ATK="60" ATR="3" maxAttack="2" attackIDS="1" rage=".1" rageRate="2" f="1" life="60" price="12" recPrice="6" sound="5" /> 
+  <role id="1354253" nick="天枰座天使" ASPD="1200" ATK="80" ATR="3" maxAttack="4" attackIDS="1" rage=".1" rageRate="2" f="1" life="80" price="12" recPrice="6" sound="3" />
+  <role id="1354255" nick="天蠍座天使" ASPD="1200" ATK="80" ATR="3" maxAttack="4" attackIDS="1" rage=".1" rageRate="2" f="1" life="80" price="12" recPrice="6" sound="3" />
+  <role id="1354259" nick="射手座天使" ASPD="1200" ATK="80" ATR="3" maxAttack="4" attackIDS="1" rage=".1" rageRate="2" f="1" life="80" price="12" recPrice="6" sound="3" />
+  <role id="1354257" nick="摩羯座天使" ASPD="1200" ATK="80" ATR="3" maxAttack="4" attackIDS="1" rage=".1" rageRate="2" f="1" life="80" price="12" recPrice="6" sound="3" />
+
+<!--塔防怪物-->
+  <role id="10388"  nick="絢螢火" ATK="90" ASPD="20" price="0" speed="2.5" f="0" life="45" exp="0" talks="你看我是不是發出月亮的光芒？/,讓我們來較量一下！" talkFrame="240" talkRandom="0.15" sound="6"/>
+	<role id="10389"  nick="愛蓮娜" ATK="70" ASPD="20" price="0" speed="2" f="0" life="35" exp="0" talks="愛蓮娜愛奔跑~/,愛蓮娜力氣大~" talkFrame="240" talkRandom="0.15" sound="6"/>
+	<role id="10390"  nick="愛心美刺" ATK="80" ASPD="20" price="0" speed="2.2" f="0" life="40" exp="0" talks="我是最美的天使！/,你是不是被我的美麗打敗了？" talkFrame="240" talkRandom="0.15" sound="6"/>
+	<role id="10391"  nick="紫色勛章騎士" ATK="50" ASPD="20" price="0" speed="1.5" f="0" life="45" exp="0" talks="為莊園榮譽而戰！/,保衛莊園！" talkFrame="240" talkRandom="0.15" sound="7"/>
+	<role id="10392"  nick="森林騎士" ATK="70" ASPD="20" price="0" speed="2" f="0" life="55" exp="0" talks="偉大的森林騎士~！/,偉大的森林力量！" talkFrame="240" talkRandom="0.15" sound="7"/>
+	<role id="10393"  nick="藍色勛章騎士" ATK="60" ASPD="20" price="0" speed="1.7" f="0" life="50" exp="0" talks="挑戰自我！/,不斷提高！" talkFrame="240" talkRandom="0.15" sound="7"/>
+	<role id="10394"  nick="黑貓1" ATK="90" ASPD="20" price="0" speed="2.5" f="0" life="50" exp="0" talks="喵？？/,喵嗚？？" talkFrame="240" talkRandom="0.15" sound="9"/>
+	<role id="10395"  nick="黑貓2" ATK="100" ASPD="20" price="0" speed="2.7" f="0" life="55" exp="0" talks="咪嘎嘎！！！！！/,喵咪咪！" talkFrame="240" talkRandom="0.15" sound="9"/>
+	<role id="10396"  nick="黑貓3" ATK="110" ASPD="20" price="0" speed="3" f="0" life="60" exp="0" talks="不許笑我！/,我不是大餅臉！" talkFrame="240" talkRandom="0.15" sound="9"/>
+	<role id="10397"  nick="火拉姆" ATK="30" ASPD="20" price="0" speed="1.5" f="0" life="25" exp="0" talks="燃燒吧！/,我們是霹靂火系！" talkFrame="240" talkRandom="0.15" sound="8"/>
+	<role id="10398"  nick="水拉姆" ATK="50" ASPD="20" price="0" speed="2" f="0" life="35" exp="0" talks="我們是神奇水系！/,我們能潤澤萬物！" talkFrame="240" talkRandom="0.15" sound="8"/>
+	<role id="10399"  nick="木拉姆" ATK="40" ASPD="20" price="0" speed="1.7" f="0" life="30" exp="0" talks="我們是彈力木系！/,我們能上天入地！" talkFrame="240" talkRandom="0.15" sound="8"/>
+	<role id="10008"  nick="呼答答" ATK="100" ASPD="20" price="0" speed="2" f="0" life="71" exp="0" talks="黑牙老大威武！/,黑牙老大最帥！/,黑牙老大，我崇拜你！" talkFrame="240" talkRandom="0.15" sound="8"/>
+	<role id="10011"  nick="獨明" ATK="70" ASPD="20" price="0" speed="2" f="0" life="36" exp="0" talks="讓我來守衛老大吧！/,戰鬥中，保證老大安全是關鍵！/,不戰勝我，別想靠近老大的寶貝！" talkFrame="240" talkRandom="0.15" sound="8"/>
+	<role id="10014"  nick="嗷嗷" ATK="70" ASPD="20" price="0" speed="2" f="0" life="20" exp="0" sound="8"/>
+	<role id="10017"  nick="魔角" ATK="80" ASPD="20" price="0" speed="2" f="0" life="30" exp="0" sound="8"/>
+	<role id="10020"  nick="錢袋袋" ATK="80" ASPD="20" price="0" speed="2" f="0" life="40" exp="0" sound="8"/>
+
+</roles>
+
+<!--ASPD代表 提高那麼多的意思 比方說0.3  就代表 攻擊平率是原來速度的0.7-->
+<props>
+	<prop id="1353381" cdFrame="240" ATKScale="0" ATR="0" ASPDScale="0" stopFrame="0" rage="0.5" rageRate="2" tips="暴擊球\n50%機率使怪物受到暴擊傷害（持續10秒）" godMode="0"/>
+	<prop id="1353382" cdFrame="240" ATKScale="0" ATR="0" ASPDScale="0" stopFrame="48" rage="0" rageRate="0" tips="暈暈球\n50%機率使怪物暈眩2秒（持續10秒）" strongMode="1" strongRate = "0.5"/>
+	<prop id="1353383" cdFrame="240" ATKScale="0" ATR="0" ASPDScale="0.5" stopFrame="0" rage="0" rageRate="0" tips="敏捷球\n提高天使攻擊速度100%（持續10秒）"/>
+	<prop id="1353384" cdFrame="240" ATKScale="0" ATR="0" ASPDScale="0" stopFrame="0" rage="0" rageRate="0" godMode="1" tips="無敵球\n保護天使不受到傷害（持續10秒）"/>
+	<prop id="1353385" cdFrame="240" ATKScale="0" ATR="2" ASPDScale="0" stopFrame="0" rage="0" rageRate="0" tips="膨脹球\n提高天使攻擊範圍（持續10秒）"/>
+	<prop id="1353386" cdFrame="240" ATKScale="1" ATR="0" ASPDScale="0" stopFrame="0" rage="0" rageRate="0" tips="力量球\n提高天使攻擊力100%（持續10秒）"/>
+	<prop id="1353387" cdFrame="240" ATKScale="0" ATR="0" ASPDScale="0" stopFrame="0" rage="0" rageRate="0" slowSclae="0.5" tips="減速球\n使怪物減速（持續10秒）"/>
+</props>
+<dragon>
+  <item id="1350022" realATK="50" random="0.5" cdFrame="960" useFrame="960" ATKScale="0" ATR="0" ASPDScale="0" stopFrame="0" rage="0" rageRate="0" tips="戰鬥坐騎：\n    50%的機率施放全\n場攻擊"/> 
+  <item id="1350024" realATK="60" random="0.5" cdFrame="960" useFrame="960" ATKScale="0" ATR="0" ASPDScale="0" stopFrame="0" rage="0" rageRate="0" tips="戰鬥坐騎：\n    50%的機率施放全\n場攻擊"/> 
+  <item id="1350025" realATK="70" random="0.6" cdFrame="960" useFrame="960" ATKScale="0" ATR="0" ASPDScale="0" stopFrame="0" rage="0" rageRate="0" tips="戰鬥坐騎：\n    60%的機率施放全\n場攻擊"/> 
+  <item id="1350027" realATK="80" random="0.65" cdFrame="960" useFrame="960" ATKScale="0" ATR="0" ASPDScale="0" stopFrame="0" rage="0" rageRate="0" tips="戰鬥坐騎：\n    65%的機率施放全\n場攻擊"/> 
+  <item id="1350028" realATK="80" random="0.65" cdFrame="960" useFrame="960" ATKScale="0" ATR="0" ASPDScale="0" stopFrame="0" rage="0" rageRate="0" tips="戰鬥坐騎：\n    65%的機率施放全\n場攻擊"/> 
+  </dragon>
+</TD>

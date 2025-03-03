@@ -1,0 +1,67 @@
+<map id="17">
+  <paths>
+    <path id="1" time="5000" sx="1008" sy="143"/>
+    <path id="2" time="5000" sx="1011" sy="217"/>
+    <path id="3" time="5000" sx="988" sy="299"/>
+  </paths>
+  <grids>
+    <grid coord="24_-12" type="2"/>
+    <grid coord="23_-11" type="2"/>
+    <grid coord="22_-10" type="2"/>
+    <grid coord="21_-9" type="2"/>
+    <grid coord="20_-8" type="2"/>
+    <grid coord="19_-7" type="2"/>
+    <grid coord="18_-6" type="2"/>
+    <grid coord="17_-5" type="2"/>
+    <grid coord="16_-4" type="2"/>
+    <grid coord="15_-3" type="2"/>
+    <grid coord="14_-2" type="2"/>
+    <grid coord="13_-1" type="2"/>
+    <grid coord="12_0" type="2"/>
+    <grid coord="11_1" type="2"/>
+    <grid coord="10_2" type="2"/>
+    <grid coord="9_3" type="2"/>
+    <grid coord="8_4" type="2"/>
+    <grid coord="30_-12" type="2"/>
+    <grid coord="29_-11" type="2"/>
+    <grid coord="28_-10" type="2"/>
+    <grid coord="27_-9" type="2"/>
+    <grid coord="26_-8" type="2"/>
+    <grid coord="25_-7" type="2"/>
+    <grid coord="24_-6" type="2"/>
+    <grid coord="23_-5" type="2"/>
+    <grid coord="22_-4" type="2"/>
+    <grid coord="21_-3" type="2"/>
+    <grid coord="20_-2" type="2"/>
+    <grid coord="19_-1" type="2"/>
+    <grid coord="18_0" type="2"/>
+    <grid coord="17_1" type="2"/>
+    <grid coord="16_2" type="2"/>
+    <grid coord="15_3" type="2"/>
+    <grid coord="14_4" type="2"/>
+    <grid coord="13_5" type="2"/>
+    <grid coord="12_6" type="2"/>
+    <grid coord="11_7" type="2"/>
+    <grid coord="33_-8" type="2"/>
+    <grid coord="32_-7" type="2"/>
+    <grid coord="31_-6" type="2"/>
+    <grid coord="30_-5" type="2"/>
+    <grid coord="29_-4" type="2"/>
+    <grid coord="28_-3" type="2"/>
+    <grid coord="27_-2" type="2"/>
+    <grid coord="26_-1" type="2"/>
+    <grid coord="25_0" type="2"/>
+    <grid coord="24_1" type="2"/>
+    <grid coord="23_2" type="2"/>
+    <grid coord="22_3" type="2"/>
+    <grid coord="21_4" type="2"/>
+    <grid coord="20_5" type="2"/>
+    <grid coord="19_6" type="2"/>
+    <grid coord="18_7" type="2"/>
+    <grid coord="17_8" type="2"/>
+    <grid coord="16_9" type="2"/>
+    <grid coord="15_10" type="2"/>
+    <grid coord="14_11" type="2"/>
+  </grids>
+  <items/>
+</map>
