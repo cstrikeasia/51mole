@@ -1,0 +1,19 @@
+<Map>
+	 <NpcList>
+	 	<Npc ID="10260" Layer="depthLevel" Name="庫拉" Ex="423" Ey="353"  Cmd="s" Param="1" AddTaskOption="1"/>
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="goto_357" Layer="controlLevel" Ex="488" Ey="542" Cmd="alt_map" Param="357" Tips="進入積雪鎮" />
+		<Trigger ResName="goto_361" Layer="controlLevel" Ex="488" Ey="337" Cmd="alt_map" Param="361" Tips="進入積雪神殿" />
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10260" Face="感動" Msg="我的女神是不是特別可愛？特別優雅？特別迷人？特別……" Option="莊園週年慶到來啦！$庫拉的考驗$元素騎士新套裝" Cmd="act$act$p" Param="npcTalk$openTollgate$ElementKnightExploitClothesPanel"/>
+		
+		<Talk ID="30" NpcID="10260" Face="正常" Msg="哇哈哈，竟然有人邀請我去參加週年慶舞會，小子你以為我是那麼容易被邀請的嗎？" Option="那怎樣才能邀請你？" Cmd="s" Param="31" />
+		<Talk ID="31" NpcID="10260" Face="正常" Msg="接受我的考驗吧，看看你實力如何，我再考慮要不要收下這邀請函。(挑戰元素騎士副本一次)" Option="那看我的厲害！" Cmd="act" Param="beginGame"/>
+		<Talk ID="32" NpcID="10260" Face="正常" Msg="咦！這個邀請函好像不是送給我的，嗚嗚嗚~真傷心！" Option="不好意思啦，我弄錯了o(╯□╰)o" Cmd="null" Param="none" />
+	</Talks>
+</Map>
+
+

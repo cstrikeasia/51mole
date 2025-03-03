@@ -1,0 +1,23 @@
+<Map>
+	<NpcList>
+		<Npc ID="10244" Layer="controlLevel" Name="老超" Ex="317" Ey="379" Cmd="s" Param="4" />
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_356" Layer="controlLevel" Ex="494" Ey="207" Cmd="alt_map" Param="356" Tips="進入浮冰島海灣"/>
+		<Trigger ResName="go_360" Layer="controlLevel" Ex="147" Ey="425" Cmd="alt_map" Param="360" Tips="進入神殿彩虹橋"/>
+		
+		<Trigger ResName="boxMc" Layer="controlLevel" Ex="340" Ey="253" Cmd="p" Param="PayAlertParyPanel" Tips="捐獻"/>
+<!-- 		<Trigger ResName="bellMc" Layer="controlLevel" Ex="417" Ey="281" Cmd="act" Param="pLayBell" Tips="敲鈴鐺" /> -->
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10245" Face="正常" Msg="啊哈哈，我聖誕老人又回來了！" Option="你繼續站著估計不久又會被凍住吧！" Cmd="s" Param="2"/>
+		<Talk ID="2" NpcID="10245" Face="正常" Msg="哈哈哈，我才不信，為了感謝你救了我，送你個禮物！" Option="這是我應該做的！" Cmd="act" Param="getNPCItem"/>
+		<Talk ID="3" NpcID="10245" Face="正常" Msg="哎呀呀呀，好冷……" Option="聖誕老人別著涼了！" Cmd="none" Param="1"/>
+		
+		<Talk ID="4" NpcID="10244" Face="正常" Msg="小摩爾，來來來，爺爺給你講故事啊~" Option="老超爺爺，謝謝你(*^__^*) 嘻嘻……" Cmd="none" Param="null"/>
+		
+	</Talks>
+</Map>
+
+
