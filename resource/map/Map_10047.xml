@@ -1,0 +1,20 @@
+<Map>
+	<NpcList>
+<!-- 		<Npc ID="10001" Layer="depthLevel" Name="拉仔" Ex="720" Ey="470" Cmd="s" Param="1" /> -->
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_7" Layer="buttonLevel" Ex="53" Ey="403" Cmd="alt_map" Param="7" Tips="進入東部遊樂場" />
+		<Trigger ResName="go_4" Layer="buttonLevel" Ex="839" Ey="299" Cmd="alt_map" Param="38" Tips="進入摩爾足球場" />
+		
+	</Triggers>
+	
+	<Talks>
+<!-- 		<Talk ID="1" NpcID="10001" Face="正常" Msg="麼麼公主生日大狂歡，恭喜麼麼公主成為真王！" Option="馬上去看看$稍後再去" Cmd="p$none" Param="TaskFilesPanel$null"/> -->
+	
+	
+	</Talks>
+</Map>
+
+
+

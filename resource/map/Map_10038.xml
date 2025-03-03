@@ -1,0 +1,36 @@
+<Map>
+	<NpcList>
+		<!--<Npc ID="10038" Layer="depthLevel" Name="凱文" Ex="423" Ey="302" Cmd="s" Param="2" />
+		<Npc ID="10003" Layer="depthLevel" Name="庫拉" Ex="581" Ey="326" Cmd="s" Param="3" />-->
+		
+	</NpcList>
+	
+	
+	<Triggers>
+<!--  		<Trigger ResName="go_4" Layer="controlLevel" Ex="45" Ey="460" Cmd="alt_map" Param="4" Tips="摩爾拉雅山腳" /> -->
+<!--  		<Trigger ResName="go_47" Layer="controlLevel" Ex="926" Ey="468" Cmd="alt_map" Param="47" Tips="粒粒小廣場" /> -->
+		<!--<Trigger ResName="mc_0" Layer="depthLevel" Ex="240" Ey="337" Cmd="act" Param="onMcClick" Tips="" />
+		<Trigger ResName="posBtn0" Layer="controlLevel" Ex="668" Ey="140" Cmd="act" Param="goMole0" />
+		<Trigger ResName="posBtn1" Layer="controlLevel" Ex="668" Ey="240" Cmd="act" Param="goMole1" />
+		<Trigger ResName="posBtn2" Layer="controlLevel" Ex="775" Ey="240" Cmd="act" Param="goMole2" />
+		<Trigger ResName="posBtn3" Layer="controlLevel" Ex="775" Ey="140" Cmd="act" Param="goMole3"/>
+		
+		<!-- <Trigger ResName="paizi" Layer="depthLevel" Ex="670" Ey="197" Cmd="p" Param="SavageDanceSwapPanel" Tips="夏日舞會"/>
+		<Trigger ResName="seat0" Layer="controlLevel" Ex="495" Ey="165" Cmd="sit" Param="3$seat" Data="0" Tips="加入遊戲" />
+		<Trigger ResName="seat1" Layer="controlLevel" Ex="390" Ey="240" Cmd="sit" Param="3$seat" Data="1" Tips="加入遊戲" />
+		<Trigger ResName="seat2" Layer="controlLevel" Ex="492" Ey="270" Cmd="sit" Param="3$seat" Data="2" Tips="加入遊戲" />
+		<Trigger ResName="seat3" Layer="controlLevel" Ex="590" Ey="240" Cmd="sit" Param="3$seat" Data="3" Tips="加入遊戲" /> -->
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="2" NpcID="10038" Face="正常" Msg="135隊的小拉姆雖敗猶榮，凱文老師為你們驕傲！" Option="我要領獎" Cmd="act" Param="kaiwenPrize" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10003" Face="正常" Msg="哈哈哈哈，我就知道我的246隊是最強大的！" Option="我要領獎" Cmd="act" Param="kulaPrize" AddTaskOption="1" />
+		
+		<Talk ID="4" NpcID="10038" Face="正常" Msg="135隊的小拉姆都是好樣的！快來領獎吧！" Option="好的" Cmd="act" Param="winGame" AddTaskOption="1" />
+		<Talk ID="5" NpcID="10038" Face="正常" Msg="135隊的小拉姆雖敗猶榮，凱文老師為你們驕傲！" Option="好的" Cmd="act" Param="failGame" AddTaskOption="1" />
+		<Talk ID="6" NpcID="10003" Face="正常" Msg="哈哈哈哈，我就知道我的246隊是最強大的！" Option="好的" Cmd="act" Param="winGame" AddTaskOption="1" />
+		<Talk ID="7" NpcID="10003" Face="正常" Msg="什麼？輸？NONONO！一定是凱文老師動了手腳！噓！別讓他知道！" Option="好的" Cmd="act" Param="failGame" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+

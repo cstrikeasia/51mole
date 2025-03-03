@@ -1,0 +1,71 @@
+<!-- 
+	TypeID	 后台提供的TypeID
+	NeedID		兑换物品需要的ID
+	NeedCount	需要数量
+	ResID		生成的物品
+	GoodsID     商品ID
+ -->
+<Exchange NeedID="191153" >
+	<Item TypeID="3248" NeedCount="30" ResID="15225" GoodsID="102426" GoodsPrize="30"/>
+	<Item TypeID="3249" NeedCount="30" ResID="12344" GoodsID="101614" GoodsPrize="30"/>
+<!--
+	<Item TypeID="3250" NeedCount="30" ResID="12352" GoodsID="101661" GoodsPrize="30"/>
+-->	
+	<Item TypeID="3251" NeedCount="30" ResID="15545" GoodsID="102637" GoodsPrize="30"/>
+	<Item TypeID="3252" NeedCount="30" ResID="15546" GoodsID="102638" GoodsPrize="30"/>
+	<Item TypeID="3253" NeedCount="50" ResID="15552" GoodsID="102639" GoodsPrize="30"/>
+	<Item TypeID="3254" NeedCount="50" ResID="15553" GoodsID="102640" GoodsPrize="30"/>
+	<Item TypeID="3255" NeedCount="50" ResID="15554" GoodsID="102641" GoodsPrize="30"/>
+<!--<Item TypeID="3256" NeedCount="50" ResID="14138" GoodsID="101795" GoodsPrize="18"/>
+-->	<Item TypeID="3257" NeedCount="50" ResID="15496" GoodsID="102584" GoodsPrize="30"/>
+	<Item TypeID="3258" NeedCount="50" ResID="15497" GoodsID="102585" GoodsPrize="30"/>
+<!--<Item TypeID="3259" NeedCount="50" ResID="14137" GoodsID="101794" GoodsPrize="30"/>
+	<Item TypeID="3179" NeedCount="40" ResID="15505" GoodsID="102597" GoodsPrize="30"/> 
+	<Item TypeID="3180" NeedCount="30" ResID="15506" GoodsID="102598" GoodsPrize="26"/> 
+	<Item TypeID="3181" NeedCount="30" ResID="15507" GoodsID="102599" GoodsPrize="26"/> 
+	<Item TypeID="3182" NeedCount="40" ResID="13721" GoodsID="102600" GoodsPrize="30"/>
+	<Item TypeID="3183" NeedCount="40" ResID="13722" GoodsID="102601" GoodsPrize="30"/>
+-->	<Item TypeID="3184" NeedCount="40" ResID="13697" GoodsID="102602" GoodsPrize="30"/>
+	<Item TypeID="3185" NeedCount="30" ResID="13677" GoodsID="101617" GoodsPrize="15"/>
+	<Item TypeID="3186" NeedCount="30" ResID="13678" GoodsID="101618" GoodsPrize="18"/>
+	<Item TypeID="3187" NeedCount="30" ResID="13679" GoodsID="101619" GoodsPrize="10"/>
+	<Item TypeID="3188" NeedCount="30" ResID="13680" GoodsID="101615" GoodsPrize="15"/>
+	<Item TypeID="3189" NeedCount="30" ResID="13681" GoodsID="101616" GoodsPrize="18"/>
+	<Item TypeID="3190" NeedCount="30" ResID="13314" GoodsID="102603" GoodsPrize="26"/>
+	<Item TypeID="3191" NeedCount="30" ResID="13315" GoodsID="102604" GoodsPrize="26"/>
+	<Item TypeID="3192" NeedCount="30" ResID="13316" GoodsID="102605" GoodsPrize="26"/>
+<!-- 	<Item TypeID="3193" NeedCount="30" ResID="13178" GoodsID="101627" GoodsPrize="15"/>
+	<Item TypeID="3194" NeedCount="30" ResID="13179" GoodsID="101629" GoodsPrize="18"/>
+	<Item TypeID="3195" NeedCount="30" ResID="13180" GoodsID="101628" GoodsPrize="10"/>
+	<Item TypeID="3196" NeedCount="30" ResID="13181" GoodsID="101946" GoodsPrize="15"/>
+	<Item TypeID="3197" NeedCount="30" ResID="13182" GoodsID="101947" GoodsPrize="18"/>
+	<Item TypeID="3198" NeedCount="30" ResID="13183" GoodsID="101948" GoodsPrize="10"/>
+-->	<Item TypeID="3199" NeedCount="10" ResID="12919" GoodsID="102606" GoodsPrize="8"/>
+	<Item TypeID="3200" NeedCount="10" ResID="12920" GoodsID="102607" GoodsPrize="8"/>
+	<Item TypeID="3201" NeedCount="10" ResID="12921" GoodsID="102608" GoodsPrize="8"/>
+	<Item TypeID="3202" NeedCount="10" ResID="12922" GoodsID="102609" GoodsPrize="8"/>
+	<Item TypeID="3203" NeedCount="10" ResID="12923" GoodsID="102610" GoodsPrize="8"/>
+	<Item TypeID="3204" NeedCount="10" ResID="12924" GoodsID="102611" GoodsPrize="8"/>
+	<Item TypeID="3205" NeedCount="10" ResID="12925" GoodsID="102612" GoodsPrize="8"/>
+	<Item TypeID="3206" NeedCount="10" ResID="12926" GoodsID="102613" GoodsPrize="8"/>
+	<Item TypeID="3207" NeedCount="10" ResID="12927" GoodsID="102614" GoodsPrize="8"/>
+	<Item TypeID="3208" NeedCount="10" ResID="12928" GoodsID="102615" GoodsPrize="8"/>
+	<Item TypeID="3209" NeedCount="10" ResID="12929" GoodsID="102616" GoodsPrize="8"/>
+	<Item TypeID="3210" NeedCount="10" ResID="12930" GoodsID="102617" GoodsPrize="8"/>
+	<Item TypeID="3211" NeedCount="10" ResID="12931" GoodsID="102618" GoodsPrize="8"/>
+	<Item TypeID="3212" NeedCount="10" ResID="12932" GoodsID="102619" GoodsPrize="8"/>
+	<Item TypeID="3213" NeedCount="10" ResID="12933" GoodsID="102620" GoodsPrize="8"/>
+	<Item TypeID="3214" NeedCount="10" ResID="12934" GoodsID="102621" GoodsPrize="8"/>
+	<Item TypeID="3215" NeedCount="10" ResID="12935" GoodsID="102622" GoodsPrize="8"/>
+	<Item TypeID="3216" NeedCount="10" ResID="12936" GoodsID="102623" GoodsPrize="8"/>
+	<Item TypeID="3217" NeedCount="10" ResID="12937" GoodsID="102624" GoodsPrize="8"/>
+	<Item TypeID="3218" NeedCount="10" ResID="12938" GoodsID="102625" GoodsPrize="8"/>
+	<Item TypeID="3219" NeedCount="10" ResID="12939" GoodsID="102626" GoodsPrize="8"/>
+	<Item TypeID="3220" NeedCount="10" ResID="12940" GoodsID="102627" GoodsPrize="8"/>
+	<Item TypeID="3221" NeedCount="10" ResID="12941" GoodsID="102628" GoodsPrize="8"/>
+	<Item TypeID="3222" NeedCount="10" ResID="12942" GoodsID="102629" GoodsPrize="8"/>
+	<Item TypeID="3223" NeedCount="10" ResID="12943" GoodsID="102630" GoodsPrize="8"/>
+	<Item TypeID="3224" NeedCount="10" ResID="12944" GoodsID="102631" GoodsPrize="8"/>
+	
+
+</Exchange>
