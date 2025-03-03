@@ -1,0 +1,113 @@
+<Tasks ID="1021" Name="光明與黑暗" AwardMsg="恭喜獲得1個水能量（摩靈）、2顆囧蘑菇種子（家園種子）和1萬摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="391">
+		<EnterMap MapID="391">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="正常" Msg="我們走吧！他們倆不知道要鬧到什麼時候，到時候又打起來……" Option="恩，我也覺得是！！"/>
+				<Talk NpcID="10287" Face="失望" Msg="那就麻利麻利的溜，速度速度！" Option="老師，我覺得你來到摩靈世界之後，突然一下非常的女王！你自己有沒有覺得？"/>
+				<Talk NpcID="10287" Face="失望" Msg="璨是為了成為女王而誕生的！" Option="這氣場！"/>
+				<Talk NpcID="10287" Face="失望" Msg="速度速度！" Option="是，女王大人！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="什麼情況？流沙？餵，會不會死掉啊？公主，公主等著我，我會找來小仙草救你的呀，等著我啊……"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+			<Action Cmd="GO_MAP" MapID="392" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="392">
+		<EnterMap MapID="392">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>			
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="驚訝" Msg="這是什麼地方啊？" Option="我感覺這是一個陰謀！！"/>
+				<Talk NpcID="10287" Face="正常" Msg="應該是有誰想要見我們。" Option="女王大人，我們差點被流沙淹死哎。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			
+            <Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>			
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="焦急" Msg="累死我了，幹嘛一直追我……" Option="樂樂，肯定是你剛才到處亂摸，他們生氣了……"/>
+				<Talk NpcID="10000" Face="焦急" Msg="我又不要他們東西！！C老師，你不是說有人找我們嗎？人呢？" Option="對哦！我們跑了這麼半天也沒人出來！我們是不是又跑回剛才進來的地方了？"/>
+				<Talk NpcID="10000" Face="疑惑" Msg="好像是哎，跟剛才是同一個地方哎，怎麼破？" Option=""/>
+				<Talk NpcID="10287" Face="疑惑" Msg="你們到底在跑什麼？完全停不下來……" Option=""/>
+				<Talk NpcID="10000" Face="焦急" Msg="一大群蜜蜂在追我們啊……" Option=""/>
+				<Talk NpcID="10287" Face="失望" Msg="哎，在你們開始跑的10秒鐘，我就搞定他們了啊……" Option=""/>	
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+
+            <Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			
+			<!--<Action Cmd="JUMP_TASK_UI" Param="到了這個全新的世界，小C似乎擁有了更加強大的力量，希望我們可以快些適應，快些找到救治公主的辦法。"/>  -->
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="392" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="3" TarMapID="392">
+		<EnterMap MapID="392">	
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="驚訝" Msg="原來是這樣啊！" Option="老師真是太帥了！"/>
+				<Talk NpcID="10287" Face="失望" Msg="你們倆站起來，看這裡的地面！" Option="地面怎麼了？"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+	
+			<Action Cmd="JUMP_TASK_UI" Param="突然冒出來一個叫泰尼的老爺子，也不知道是什麼人，脾氣很大呀，和小C認識很久的樣子哎~跟著去看看吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+			<Action Cmd="GO_MAP" MapID="393" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" TarMapID="393">
+		<EnterMap MapID="393">
+		    <Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="疑惑" Msg="{$username}，你有沒有感覺這裡有點陰森啊？" Option="是啊，旁邊好多眼睛在看的感覺。"/>
+				<Talk NpcID="10295" Face="正常" Msg="長老好像醒了，璨殿下。" Option=""/>
+				<Talk NpcID="10294" Face="生氣" Msg="你們又當我已經死了是不是？我還年輕得很、健康得很！！" Option="那個……"/>
+				<Talk NpcID="10287" Face="失望" Msg="他是摩靈世界的書記官，活了2000年，就是不肯退休。一直在記錄著摩靈世界的歷史，有什麼不知道的問他就對了！" option=""/>
+				<Talk NpcID="10294" Face="生氣" Msg="問我？我就告訴你們嗎？哼！問問題是要付出代價的！！" Option="-_-|||"/>
+				<Talk NpcID="10287" Face="失望" Msg="泰尼伯伯，他們只是想知道，您一直服用的小仙草葉片在哪裡可以找到啦……" option="（猛點頭）長老爺爺，告訴我們吧，好擔心麼麼公主啊！"/>
+				<Talk NpcID="10294" Face="生氣" Msg="公主？璨殿下才是真正的公主！！哎，現在這個時代啊，真是不如老王在的時候……" Option=""/>
+				<Talk NpcID="10287" Face="失望" Msg="泰尼伯伯，您又來了！" option=""/>
+				<Talk NpcID="10294" Face="開心" Msg="好了好了，璨小姐一生氣，泰尼就沒辦法了！不過我要先說明啊，小仙草什麼的，我可沒有用啊，我還年輕得很！" Option=""/>
+				<Talk NpcID="10287" Face="失望" Msg="泰尼伯伯，我特地從小仙草的棲息地進來的，為什麼沒有看到它們？" option=""/>
+				<Talk NpcID="10294" Face="生氣" Msg="他們消失好久啦！還不是那些可惡的黑魔法叛徒！！想當年……" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10294" Face="生氣" Msg="咳咳，總之，，現在這個亂七八糟的樣子，都是那幫壞小子！！" Option=""/>
+				<Talk NpcID="10287" Face="失望" Msg="泰尼伯伯，小仙草們去了哪裡有線索嗎？" Option=""/>
+				<Talk NpcID="10294" Face="正常" Msg="應該是和王子在一起，在那個大裂谷裡！" Option="那我們去吧！"/>
+				<Talk NpcID="10287" Face="失望" Msg="大裂谷，要穿越風岩沙漠啊，那個地方太多不可知因素了……" option="但是我們還是要去的對吧！"/>
+				<Talk NpcID="10287" Face="正常" Msg="為了麼麼公主，為了我的王，無論如何都是要去一趟的！泰尼伯伯，王，他還好嗎？" Option=""/>
+				<Talk NpcID="10294" Face="正常" Msg="當然不好，世界蟲洞開啟，氣場波動，王受到黑暗魔法力量的影響，非常不安定，穿越沙漠的時候一定要注意！" option=""/>
+				<Talk NpcID="10287" Face="正常" Msg="恩，好吧！那麼我們出發吧！" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>
+
+
+
+

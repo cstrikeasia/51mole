@@ -1,0 +1,113 @@
+﻿<Tasks ID="1022" Name="寒心水牢" AwardMsg="恭喜你獲得1個火能量（摩靈），1只粉紅寶石豬（肥肥館）和1萬摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="393">
+		<EnterMap MapID="393">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="正常" Msg="到哪裡是不是都要那麼熱鬧啊？" Option="(⊙o⊙)…長老大人，長老大大，表生氣了啦~我們這就去啊，您放心~~"/>
+				<Talk NpcID="10294" Face="生氣" Msg="你們跑去騷擾王，我有什麼好放心的啊？我憑什麼放心啊？" Option=""/>
+				<Talk NpcID="10287" Face="失望" Msg="泰尼伯伯，我們走了啊，您多保重身體！小仙草葉子記得服用，不要逞強了啦！走了走了~" Option="哦~~~~"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="泰尼長老一把年紀了，竟然脾氣那麼大還能那麼長壽，真是太強大了！！那個沙漠，還有那個峽谷，突然好期待後面的冒險！"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+			<Action Cmd="GO_MAP" MapID="394" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="394">
+		<EnterMap MapID="394">
+		    <Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>			
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="焦急" Msg="要不要這麼玩我們啊？熱死了……" Option="難怪這裡寸草不生呢，這麼恐怖的天氣！！！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="焦急" Msg="我們是不是得罪誰了啊？誰見過一分鐘天氣變三次的啊？喂！" Option="噓，我覺得和我們廢話太多有關係"/>
+				<Talk NpcID="10287" Face="失望" Msg="總算醒悟了，哎~行了，閉嘴了！" Option="（很小聲）女王大大，這裡到底是什麼鬼地方啊？"/>
+				<Talk NpcID="10287" Face="失望" Msg="這裡的每一粒沙子，每一個小植物，不管活的還是死的，都是它的耳目，所以你們安靜點！" Option="它？"/>
+				<Talk NpcID="10287" Face="正常" Msg="它來了！" Option=""/>
+			</Action>
+			
+            <Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+
+			<!--<Action Cmd="JUMP_TASK_UI" Param="到了這個全新的世界，小C似乎擁有了更加強大的力量，希望我們可以快些適應，快些找到救治公主的辦法。"/>  -->
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="3" TarMapID="394">
+		<EnterMap MapID="394">	
+			<Action Cmd="ACT_EVENT" Param="MagicSpirite_figth" ClearMap="1" Data = "3"/>
+			<Action Cmd="ADD_EVENT" Param="Task1022GamepanelOver"/>
+<!-- 			<Action Cmd="SAY"> -->
+<!-- 				<Talk NpcID="10287" Face="開心" Msg="表現不錯喲，那麼我們還是速度溜走吧！" Option="哇，我贏了耶"/> -->
+<!-- 				<Talk NpcID="10287" Face="開心" Msg="如果你知道這個石頭疙瘩的再生能力有多強，強過金剛狼，你就不會那麼開心了，快走吧！" Option="哦！！！"/> -->
+<!-- 			</Action> -->
+			
+<!-- 			<Action Cmd="SAY"> -->
+<!-- 				<Talk NpcID="10287" Face="失望" Msg="呃…輸了啊！快逃~~~~~~" Option="啊？"/> -->
+<!-- 				<Talk NpcID="10287" Face="失望" Msg="別啊了，速度速度！" Option="是！女王大人"/> -->
+<!-- 			</Action> -->
+
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+	
+			<Action Cmd="JUMP_TASK_UI" Param="這個恐怖的沙漠好像要把人吞掉一下，逃吧，嚇死人了！！！"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+			<Action Cmd="GO_MAP" MapID="395" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" TarMapID="395">
+		<EnterMap MapID="395">
+		    <Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="正常" Msg="好冷啊，怎麼回事啊？我們進了冰窖了嗎？" Option=""/>
+				<Talk NpcID="10287" Face="失望" Msg="封印之地，沒想到我還會來到這裡，你們兩個快點找找小仙草！" Option="哦！！！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_200"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10287" Face="正常" Msg="恩，不錯，就是這樣！" Option="啊？我做了什麼了？"/>
+				<Talk NpcID="10287" Face="正常" Msg="你找了關鍵點！讓我們看到了牢籠！" Option="報告老師，沒有聽懂！"/>
+				<Talk NpcID="10287" Face="正常" Msg="聽不懂沒關係。看到小仙草的位置了嗎？他們果然是被關押在這裡，打敗守衛，救出小仙草，就能得到救麼麼公主的小仙草葉片了！" Option="太棒了！我這就去！"/>
+				<Talk NpcID="10287" Face="正常" Msg="恩，你去吧！" option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="找到了小仙草，可是小C完全沒有高興的樣子，她好像非常非常哀傷，這是怎麼了？我們該怎麼辦？還是先跟著她吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+			<Action Cmd="GO_MAP" MapID="396" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="5" TarMapID="396">
+		<EnterMap MapID="396">
+		    <Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>
