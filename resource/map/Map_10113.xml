@@ -1,0 +1,26 @@
+<Map>
+	<NpcList>
+		<Npc ID="10084" Layer="controlLevel" Name="神秘蝸牛先生" Ex="313" Ey="433" Cmd="s" Param="100" />
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="100" NpcID="10084" Face="正常" Msg="唉，鍛煉身體果然是要有人督促啊，謝謝你。其實我有件事想拜托你!" Option="神秘花種$你說吧$我下次再找你" Cmd="act$act$s" Param="mysticFlower$woniu_checkIsVip$1" />
+		
+		<Talk ID="1" NpcID="10084" Face="正常" Msg="那好吧，還是感謝你督促我鍛煉，下次再找我哦。" Option="好的！" Cmd="none" Param="6" />
+		<Talk ID="2" NpcID="10084" Face="正常" Msg="我在蟲蟲谷找到了很多神秘菊花種子，但是我種不了，聽說只有超級拉姆的能力可以種植的好......" Option="我有超級拉姆！$我下次再找你" Cmd="s$s" Param="4$1" />
+		<Talk ID="3" NpcID="10084" Face="正常" Msg="我在蟲蟲谷找到了很多神秘菊花種子，但是我種不了，聽說只有超級拉姆的能力可以種植的好......" Option="我也沒有超級拉姆!$我下次再找你" Cmd="s$s" Param="5$1" />
+		<Talk ID="4" NpcID="10084" Face="正常" Msg="真的嗎？太好了，那這2顆神秘菊花種子送給你，很珍貴哦。明天再來督促我跑步吧，我再找找這種子，到時候再給你。" Option="謝謝！" Cmd="act" Param="woniu_getSeed" />
+		<Talk ID="5" NpcID="10084" Face="正常" Msg="沒關系，如果你知道誰有的話，讓他來找我吧，我會給他的。還要謝謝你督促我鍛煉。" Option="好的" Cmd="none" Param="6" />
+		<Talk ID="6" NpcID="10084" Face="正常" Msg="Hi，你好啊。" Option="我很好" Cmd="none" Param="6" />
+		<Talk ID="7" NpcID="10084" Face="正常" Msg="Hi，你好啊。" Option="我很好" Cmd="none" Param="6" />
+	</Talks>
+</Map>
+
+
+
