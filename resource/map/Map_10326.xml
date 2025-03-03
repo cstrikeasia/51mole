@@ -1,0 +1,13 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_240" Layer="controlLevel" Ex="166" Ey="413" Cmd="alt_map" Param="240" Tips="庫拉城堡" />
+		
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
