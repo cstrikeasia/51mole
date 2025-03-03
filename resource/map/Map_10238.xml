@@ -1,0 +1,29 @@
+<Map>
+	<NpcList>
+<!-- 		<Npc ID="10009" Layer="depthLevel" Name="丫麗" Ex="690" Ey="397" Cmd="s" Param="1" /> -->
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+<!-- 		<Talk ID="1" NpcID="10009" Face="正常" Msg="Hi，你好啊，我是丫麗。" Option="我知道了！" Cmd="none" Param="6" AddTaskOption="1" /> -->
+		<Talk ID="121" NpcID="10009" Face="正常" Msg="中秋節快樂哈" Option="送你20個月餅" Cmd="act" Param="getMoonCakePrize"/>
+		<Talk ID="122" NpcID="10009" Face="正常" Msg="嗯，謝謝你~這個就送給你了~" Option="你太客氣了" Cmd="act" Param="getPrize"/>
+		<Talk ID="123" NpcID="10009" Face="正常" Msg="不用這麼客氣，你已經送給過我月餅了" Option="嗯，好的" Cmd="none" Param=""/>
+		
+		
+		<Talk ID="2" NpcID="10009" Face="正常" Msg="我的鼻子不見了，55555" Option="丫麗，不要哭！能說說事情的經過嗎？" Cmd="s" Param="3" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10009" Face="正常" Msg="昨晚我睡覺的時候還好好的，早上醒來就發現我的鼻子不見了" Option="啊？那你有發現什麼人進來你的房間嗎？" Cmd="s" Param="4" AddTaskOption="1" />
+		<Talk ID="4" NpcID="10009" Face="正常" Msg="額…..好像沒有吧" Option="好像？ 沒有……那你感覺現在有哪裡不舒服的嗎？" Cmd="s" Param="5" AddTaskOption="1" />
+		<Talk ID="5" NpcID="10009" Face="正常" Msg="我的頭有點暈，手臂有點痛……" Option="手臂！！ 給我瞧瞧吧" Cmd="s" Param="6" AddTaskOption="1" />
+		<Talk ID="6" NpcID="10009" Face="正常" Msg="看，上面有一些針孔，好疼" Option="這個針孔好眼熟啊，難道又是可惡的庫拉搞的鬼！！" Cmd="s" Param="7" AddTaskOption="1" />
+		<Talk ID="7" NpcID="10009" Face="正常" Msg="你一定要幫我！" Option="好，我這就去庫拉城堡找庫拉！！" Cmd="act" Param="noiceOne" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+
