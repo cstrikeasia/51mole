@@ -1,0 +1,36 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10007" Face="正常" Msg="這次的拉姆運動會，舉辦胡相當成功啊" Option="運動會大隊頒獎$MVP小隊頒獎$拉姆裝扮領取$夥還有事！$" Cmd="none" Param="6" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10150" Face="正常" Msg="{$username}，謝謝你為我們傳遞聖火，我將施法為聖壇灌注能量，讓我們共同期待3月3日19:30，聖壇被點燃的那一刻！" Option="嗯，好呀！" Cmd="act" Param="lamuSportsEnd"  />
+	</Talks>
+	
+	<Triggers>
+		<Trigger ResName="go_28" Layer="controlLevel" Ex="884" Ey="432" Cmd="alt_map" Param="28" Tips="進入拉姆學院" />
+		<!--  <Trigger ResName="go_344" Layer="controlLevel" Ex="645" Ey="195" Cmd="alt_map" Param="344" Tips="進入熔岩火山" />-->
+		<Trigger ResName="dump_btn" Layer="controlLevel" Ex="240" Ey="200" Cmd="act" Param="loadLamuDumpGame"  Tips="拉姆跳高"/>	
+		
+		<Trigger ResName="gameBtn_1" Layer="controlLevel" Ex="683" Ey="212" Cmd="act" Param="clickBtn1"  Tips="吹蠟燭對戰1"/>		
+		<Trigger ResName="gameBtn_2" Layer="controlLevel" Ex="774" Ey="262" Cmd="act" Param="clickBtn2"  Tips="吹蠟燭對戰2"/>	
+		<Trigger ResName="seat0" Layer="controlLevel" Ex="365" Ey="230" Cmd="act" Param="goMole0"/>
+		<Trigger ResName="seat1" Layer="controlLevel" Ex="385" Ey="280" Cmd="act" Param="goMole1"/>
+		<Trigger ResName="seat2" Layer="controlLevel" Ex="486" Ey="300" Cmd="act" Param="goMole2"/>
+		<Trigger ResName="seat3" Layer="controlLevel" Ex="586" Ey="280" Cmd="act" Param="goMole3"/>
+		<Trigger ResName="seat4" Layer="controlLevel" Ex="611" Ey="230" Cmd="act" Param="goMole4"/>
+		
+		
+	</Triggers>
+</Map>
+
+
+
+
+
