@@ -1,0 +1,8 @@
+<Map>
+	<Triggers> 
+		<Trigger ResName="go_392" Layer="controlLevel" Ex="240" Ey="456" Cmd="act" Param="changMap392"  Tips="水晶迷宮"/>  
+		<Trigger ResName="go_395" Layer="controlLevel" Ex="527" Ey="320" Cmd="alt_map" Param="395"  Tips="封印之地"/>  
+	</Triggers>
+</Map>
+
+

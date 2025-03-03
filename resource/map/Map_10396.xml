@@ -1,0 +1,7 @@
+<Map>
+	<Triggers>
+		<Trigger ResName="go_395" Layer="controlLevel" Ex="310" Ey="507" Cmd="alt_map" Param="395"  Tips="封印之地"/>  
+	</Triggers>
+</Map>
+
+
