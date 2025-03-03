@@ -1,0 +1,38 @@
+<Tasks ID="666" Name="萬聖之夜" AwardMsg="恭喜你獲得1個企鵝呆呆（肥肥豬）、2個胖胖浣熊（牧場動物）和10000摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="406">
+		<EnterMap MapID="406">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="變成黑貓的捷克王子讓哈哈魔法師把大家接回去了？"/>
+			
+			<Action Cmd="GO_MAP" MapID="24" MapType="0"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="24">
+		<EnterMap MapID="24">
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10033" Face="正常" Msg="哎，捷克到最終還是……" Option=""/>
+				<Talk NpcID="10307" Face="生氣" Msg="捷克……哈哈，有沒有辦法啊？ " Option=""/>
+				<Talk NpcID="10033" Face="正常" Msg="這次儀式失敗，摩爾之眼不知去向，女神之淚又沒有帶回來，我完全沒有辦法。" Option=""/>
+				<Talk NpcID="10307" Face="生氣" Msg="只要帶回女神之淚就可以嗎？ " Option=""/>
+				<Talk NpcID="10033" Face="正常" Msg="要摩爾真王帶回女神之淚，正式啟動王子的淨化儀式……" Option=""/>
+				<Talk NpcID="10307" Face="生氣" Msg="我現在就去！！ " Option=""/>
+				<Talk NpcID="10033" Face="正常" Msg="公主作為摩爾真王還沒有覺醒，請給她足夠的耐心，幫助她成為真王！" Option=""/>
+				<Talk NpcID="10307" Face="生氣" Msg="恩！ " Option="我也會幫忙的！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>
+
+
