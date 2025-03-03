@@ -1,0 +1,118 @@
+<Tasks ID="664" Name="黑貓的詛咒" AwardMsg="恭喜你獲得2個南瓜布丁（拉姆食品）、1個南瓜喵貓（牧場動物）和10000摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="350">
+		<EnterMap MapID="350">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10307" Face="焦急" Msg="……" Option="咦？這是哪裡？為什麼我會在這裡？"/>
+				<Talk NpcID="10307" Face="焦急" Msg="當然是我讓你來的啦！快說，捷克怎麼樣了？" Option="（一頭霧水）王子？他挺好的呀……"/>
+				<Talk NpcID="10307" Face="焦急" Msg="真是的，白問你了，我走了之後一直擔心王子遇到什麼事情，你怎麼一點都不擔心的？" Option="(⊙o⊙)…這樣啊，可是……要不我現在去看看王子？"/>
+				<Talk NpcID="10307" Face="焦急" Msg="我和你一起去！！！" Option="壞壞怎麼辦？"/>
+				<Talk NpcID="10307" Face="開心" Msg="壞壞沒事，睡得很好，走！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="沙沙擔心捷克王子擔心到不行，一定要去看看王子，好吧，一起去吧！相信王子一定沒事的啦。"/>
+			
+			<Action Cmd="GO_MAP" MapID="16" MapType="0"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="16">
+		<EnterMap MapID="16">
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10307" Face="疑惑" Msg="不知道為什麼，突然覺得有點害怕……" Option="發生什麼事了嗎？"/>
+				<Talk NpcID="10307" Face="焦急" Msg="不知道是不是我多心，有種不好的預感…… " Option="不會王子出什麼事吧？我們快去看看吧。"/>
+				<Talk NpcID="10307" Face="焦急" Msg="恩……" Option="走吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="來到城堡二樓，沙沙卻開始有些猶豫了，會不會有事呢？快進書房去看看王子吧！"/>
+			
+			<Action Cmd="GO_MAP" MapID="32" MapType="0"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="3" TarMapID="32">
+		<EnterMap MapID="32">	
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10036" Face="生氣" Msg="沙沙，你怎麼來了？壞壞呢？" Option=""/>
+				<Talk NpcID="10307" Face="疑惑" Msg="壞壞在夜市裡睡覺呢，怎麼了？ " Option=""/>
+				<Talk NpcID="10036" Face="生氣" Msg="你確定嗎？" Option=""/>
+				<Talk NpcID="10307" Face="疑惑" Msg="捷克我很擔心你啊，壞壞肯定沒事的啦！ " Option=""/>
+				<Talk NpcID="10036" Face="生氣" Msg="這下糟了!它們要找的東西我藏在壞壞身上啊！！！" Option=""/>
+				<Talk NpcID="10307" Face="焦急" Msg="什麼？我，現在就回去！ " Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10307" Face="疑惑" Msg="黑魔法學院的人！！什麼意思？壞壞體內的摩爾之眼？捷克你說的重要的東西？" Option=""/>
+				<Talk NpcID="10036" Face="憤怒" Msg="就是那個摩爾之眼，我拜託哈哈封印在壞壞體內，他們那些人果然目標非常明確！！" Option=""/>
+				<Talk NpcID="10307" Face="疑惑" Msg="怎麼辦？" Option=""/>
+				<Talk NpcID="10036" Face="憤怒" Msg="去找哈哈！！" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="大伯接下來的安排交給您了！艾爾、弗蘭克，請全力配合大伯。" Option=""/>
+				<Talk NpcID="10007" Face="正常" Msg="放心交給大伯吧~捷克，當心~" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="恩！" Option=""/>
+			</Action>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="壞壞竟然被抓住了，還說要取出壞壞體內的摩爾之眼，到底是什麼情況？跟王子一起去找哈哈魔法師吧！"/>
+			
+			<Action Cmd="GO_MAP" MapID="24" MapType="0"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="4" TarMapID="24">
+		<EnterMap MapID="24">	
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10033" Face="正常" Msg="你們來了，捷克我已經準備好了" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="哈哈，現在我就要過去，去找壞壞！" Option=""/>
+				<Talk NpcID="10033" Face="正常" Msg="別擔心，壞壞現在還在貓的夜市，他們遇到點麻煩，你去了就知道了！" Option=""/>
+				<Talk NpcID="10033" Face="正常" Msg="貓的夜市是一個非常詭異的地方，條條道路相通，條條道路相同，完全就是一個沒有地圖的迷宮。" Option=""/>
+				<Talk NpcID="10033" Face="正常" Msg="捷克，你們準備好了嗎？我開始定位壞壞的位置！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10033" Face="正常" Msg="捷克，準備好了嗎？你們三個一起去？" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="可以了，走吧！" Option=""/>
+				<Talk NpcID="10033" Face="正常" Msg="時間有限，務必在三個鐘頭之內處理好，不然我無法接你們回來，記住！" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="好！一切拜託你了！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>
+
+

@@ -1,0 +1,14 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	
+	<Triggers>
+		<!--<Trigger ResName="pot_mc" Layer="depthLevel" Ex="184" Ey="430" Cmd="p" Param="MagicPot"  Tips="神奇魔法鍋"/>
+		<Trigger ResName="throwCircle_mc" Layer="depthLevel" Ex="430" Ey="430" Cmd="p" Param="TossTheRingsPanel"  Tips="夜市套圈圈"/>-->
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
