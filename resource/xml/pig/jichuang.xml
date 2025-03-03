@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 機床
+AwardID:成品ItemID
+ProcLv:機械工廠等級
+ItemIn：輸入物品（可以有多條，上限為3）
+ID：輸入物品ID
+Count：輸入物品數量
+IsNew: 是否顯示new
+目前id到39
+ -->
+<CPProcess>
+  <Proc ID="38" AwardID="1613639" Count="1" ProcLv="3" WorkTime="3600" IsSpecial="0" IsNew="1">
+  	 <ItemIn ID="1613501" Count="10"/>
+  	 <ItemIn ID="1613502" Count="10"/>
+   	 <ItemIn ID="1613503" Count="5"/>     
+  </Proc>
+  <Proc ID="39" AwardID="1613640" Count="1" ProcLv="3" WorkTime="3600" IsSpecial="0" IsNew="1">
+  	 <ItemIn ID="1613501" Count="10"/>
+  	 <ItemIn ID="1613502" Count="10"/>
+   	 <ItemIn ID="1613503" Count="5"/>     
+  </Proc>
+  
+  <Proc ID="33" AwardID="1613634" Count="1" ProcLv="3" WorkTime="7200" IsSpecial="0" IsNew="1">
+  	 <ItemIn ID="1613501" Count="20"/>
+  	 <ItemIn ID="1613502" Count="10"/>
+   	 <ItemIn ID="1613503" Count="5"/>     
+  </Proc>
+  <Proc ID="34" AwardID="1613635" Count="1" ProcLv="2" WorkTime="900" IsSpecial="0" IsNew="1">
+  	 <ItemIn ID="1613502" Count="3"/>
+  </Proc>
+  <Proc ID="35" AwardID="1613636" Count="1" ProcLv="1" WorkTime="600" IsSpecial="0" IsNew="1">
+  	 <ItemIn ID="1613501" Count="5"/>
+  </Proc>
+  <Proc ID="36" AwardID="1613637" Count="1" ProcLv="2" WorkTime="900" IsSpecial="0" IsNew="1">
+  	 <ItemIn ID="1613501" Count="1"/>
+  	 <ItemIn ID="1613502" Count="2"/>
+  </Proc>
+  <Proc ID="37" AwardID="1613638" Count="1" ProcLv="2" WorkTime="1200" IsSpecial="0" IsNew="1">
+  	 <ItemIn ID="1613501" Count="10"/>
+  	 <ItemIn ID="1613502" Count="3"/>
+  </Proc>
+
+  <Proc ID="4" AwardID="1613600" Count="50" ProcLv="1" WorkTime="180" IsSpecial="0" IsNew="0" Energy="60">
+  	 <ItemIn ID="1613501" Count="1"/>
+  </Proc>
+
+  <Proc ID="5" AwardID="1613600" Count="100" ProcLv="1" WorkTime="240" IsSpecial="0" IsNew="0" Energy="100">
+  	 <ItemIn ID="1613501" Count="1"/>
+  </Proc>
+  
+  <Proc ID="6" AwardID="1613601" Count="50" ProcLv="1" WorkTime="180" IsSpecial="0" IsNew="0" Energy="60">
+  	 <ItemIn ID="1613501" Count="1"/>
+  </Proc>
+
+  <Proc ID="7" AwardID="1613601" Count="100" ProcLv="1" WorkTime="240" IsSpecial="0" IsNew="0" Energy="100">
+  	 <ItemIn ID="1613501" Count="1"/>
+  </Proc>
+  
+  <Proc ID="8" AwardID="1613602" Count="50" ProcLv="1" WorkTime="270" IsSpecial="0" IsNew="0" Energy="60">
+  	 <ItemIn ID="1613501" Count="1"/>
+  </Proc>
+
+  <Proc ID="9" AwardID="1613602" Count="100" ProcLv="1" WorkTime="360" IsSpecial="0" IsNew="0" Energy="100">
+  	 <ItemIn ID="1613501" Count="1"/>
+  </Proc>
+  
+  <Proc ID="32" AwardID="1613633" Count="1" ProcLv="1" WorkTime="180" IsSpecial="0">
+    <ItemIn ID="1613501" Count="3"/>
+  </Proc>
+  
+  <Proc ID="30" AwardID="1613629" Count="1" ProcLv="2" WorkTime="600" IsSpecial="0">
+    <ItemIn ID="1613501" Count="5"/>
+    <ItemIn ID="1613502" Count="5"/>
+  </Proc>
+
+  <Proc ID="31" AwardID="1613630" Count="1" ProcLv="2" WorkTime="600" IsSpecial="0">
+    <ItemIn ID="1613501" Count="5"/>
+    <ItemIn ID="1613502" Count="5"/>
+  </Proc>
+
+  <Proc ID="1" AwardID="1613600" Count="1" ProcLv="1" WorkTime="120" IsSpecial="0">
+    <ItemIn ID="1613501" Count="1"/>
+  </Proc>
+
+  <Proc ID="2" AwardID="1613601" Count="1" ProcLv="1" WorkTime="120" IsSpecial="0">
+    <ItemIn ID="1613501" Count="1"/>
+  </Proc>
+
+  <Proc ID="3" AwardID="1613602" Count="1" ProcLv="1" WorkTime="180" IsSpecial="0">
+    <ItemIn ID="1613501" Count="1"/>
+  </Proc>
+
+  <Proc ID="10" AwardID="1613603" Count="1" ProcLv="1" WorkTime="500" IsSpecial="0">
+    <ItemIn ID="1613501" Count="15"/>
+  </Proc>
+
+  <Proc ID="11" AwardID="1613604" Count="1" ProcLv="1" WorkTime="1500" IsSpecial="0">
+    <ItemIn ID="1613501" Count="100"/>
+  </Proc>
+
+  <Proc ID="12" AwardID="1613605" Count="1" ProcLv="1" WorkTime="600" IsSpecial="0">
+    <ItemIn ID="1613501" Count="15"/>
+  </Proc>
+
+  <Proc ID="13" AwardID="1613606" Count="1" ProcLv="1" WorkTime="600" IsSpecial="0">
+    <ItemIn ID="1613501" Count="15"/>
+  </Proc>
+
+  <Proc ID="14" AwardID="1613607" Count="1" ProcLv="1" WorkTime="750" IsSpecial="0">
+    <ItemIn ID="1613501" Count="30"/>
+  </Proc>
+
+  <Proc ID="15" AwardID="1613608" Count="1" ProcLv="1" WorkTime="750" IsSpecial="0">
+    <ItemIn ID="1613501" Count="30"/>
+  </Proc>
+
+  <Proc ID="16" AwardID="1613609" Count="1" ProcLv="1" WorkTime="750" IsSpecial="0">
+    <ItemIn ID="1613501" Count="30"/>
+  </Proc>
+
+  <Proc ID="17" AwardID="1613610" Count="1" ProcLv="1" WorkTime="750" IsSpecial="0">
+    <ItemIn ID="1613501" Count="30"/>
+  </Proc>
+
+  <Proc ID="18" AwardID="1613611" Count="1" ProcLv="1" WorkTime="1000" IsSpecial="0">
+    <ItemIn ID="1613501" Count="30"/>
+  </Proc>
+
+  <Proc ID="19" AwardID="1613612" Count="1" ProcLv="1" WorkTime="750" IsSpecial="0">
+    <ItemIn ID="1613501" Count="30"/>
+  </Proc>
+
+  <Proc ID="20" AwardID="1613613" Count="1" ProcLv="1" WorkTime="750" IsSpecial="0">
+    <ItemIn ID="1613501" Count="30"/>
+  </Proc>
+
+  <Proc ID="21" AwardID="1613614" Count="1" ProcLv="1" WorkTime="1000" IsSpecial="0">
+    <ItemIn ID="1613501" Count="50"/>
+  </Proc>
+
+  <Proc ID="22" AwardID="1613615" Count="1" ProcLv="1" WorkTime="1000" IsSpecial="0">
+    <ItemIn ID="1613501" Count="50"/>
+  </Proc>
+
+  <Proc ID="23" AwardID="1613616" Count="1" ProcLv="2" WorkTime="300" IsSpecial="0">
+    <ItemIn ID="1613502" Count="3"/>
+  </Proc>
+
+  <Proc ID="24" AwardID="1613617" Count="1" ProcLv="2" WorkTime="600" IsSpecial="0">
+    <ItemIn ID="1613502" Count="3"/>
+  </Proc>
+
+  <Proc ID="25" AwardID="1613618" Count="1" ProcLv="1" WorkTime="1200" IsSpecial="0">
+    <ItemIn ID="1613501" Count="80"/>
+  </Proc>
+
+  <Proc ID="26" AwardID="1613619" Count="1" ProcLv="1" WorkTime="600" IsSpecial="0">
+    <ItemIn ID="1613501" Count="10"/>
+  </Proc>
+
+  <Proc ID="27" AwardID="1613620" Count="1" ProcLv="2" WorkTime="600" IsSpecial="0">
+    <ItemIn ID="1613502" Count="5"/>
+  </Proc>
+
+  <Proc ID="28" AwardID="1613621" Count="1" ProcLv="1" WorkTime="900" IsSpecial="0">
+    <ItemIn ID="1613501" Count="20"/>
+  </Proc>
+
+  <Proc ID="29" AwardID="1613622" Count="1" ProcLv="2" WorkTime="900" IsSpecial="0">
+    <ItemIn ID="1613502" Count="10"/>
+  </Proc>
+    
+  </CPProcess>
+
+
+
+
