@@ -1,0 +1,75 @@
+﻿<Tasks ID="632" Name="激戰！扣扣海賊團" AwardMsg="恭喜你獲得1個家園裝飾風箏和1個小屋傢俱中國風長椅" AwardBean="">
+	<Step ID="1" TarMapID="240">
+		<EnterMap MapID="240">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10003" Face="感動" Msg="你是來給庫拉大魔法師送好消息的嗎？我的伊莉絲女神今天又做了什麼美好的事情？" Option="庫拉，你回家了呀~"/>
+				<Talk NpcID="10003" Face="開心" Msg="企鵝神都逃跑了，彩虹橋也不能每時每刻讓我看到我的女神了，我大魔法師庫拉當然是回家來看看啊！" Option="(⊙o⊙)……你家裡……還好吧……"/>
+				<Talk NpcID="10003" Face="開心" Msg="哈哈哈哈哈，不要以為我不知道你們小摩爾的小把戲，我偉大的庫拉魔法師怎麼可能讓你們把我的傢俱我的房子都拿去賣掉!那些都只是複製品，還好我可愛的2點還在！" Option="2點？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10003" Face="開心" Msg="我庫拉大魔法師是不是名不虛傳？" Option="這……其他的分身呢？"/>
+				<Talk NpcID="10003" Face="失望" Msg="你也不用每次都在我開心的時候都這麼打擊我吧？" Option="好吧……"/>
+				<Talk NpcID="10003" Face="感動" Msg="我的6點作為定情信物放在女神那裡…… " Option="信物？？？請原諒我八卦的心吧.........快說快說是怎麼回事XD"/>
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="240">
+		<EnterMap MapID="240">
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="3" TarMapID="240">
+		<EnterMap MapID="240">
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10003" Face="開心" Msg="我和我的女神之間是有羈絆的~" Option="庫拉，這不算羈絆吧？"/>
+				<Talk NpcID="10003" Face="開心" Msg="總之就是我的女神是離不開我的！" Option="為什麼有種綁架了人家的感覺？"/>
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="4" TarMapID="240">
+		<EnterMap MapID="240">
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10003" Face="開心" Msg="哎~女孩子就是這樣喜歡粘著~真是沒辦法~" Option="喂，你這樣不太好吧!"/>
+				<Talk NpcID="10003" Face="開心" Msg="哈哈哈哈，我去找我的女神聊天囉~你自己玩去吧~" Option="喂~不行，我也要去~"/>
+			</Action>
+			<Action Cmd="JUMP_TASK_UI" Param="   庫拉要和伊莉絲見面啊，不行，要跟著去看看，庫拉已經完全迷失自己了呀！"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+			<Action Cmd="GO_MAP" MapID="362" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="5" TarMapID="362">
+		<EnterMap MapID="362">
+		<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10265" Face="開心" Msg="快看快看，我可以像我的偶像一樣格鬥了！" Option="(⊙o⊙)…"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="107" Name="movie_107" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_107" />
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>
+
