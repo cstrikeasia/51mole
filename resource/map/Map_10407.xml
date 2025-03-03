@@ -1,0 +1,11 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	<Triggers>
+		  <Trigger ResName="seat" Layer="controlLevel" Ex="640" Ey="235" Cmd="act" Param="beginMovie" Tips="點我" /> 
+	</Triggers>
+	<Talks>
+	</Talks> 
+</Map>
+
+
