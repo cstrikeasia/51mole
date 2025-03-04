@@ -1,0 +1,120 @@
+﻿<Tasks ID="1023" Name="鏡花水月" AwardMsg="恭喜你獲得1個木能量（摩靈）、2顆夜女王曇花種子（家園種子）和1萬摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="396">
+		<EnterMap MapID="396">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="正常" Msg="哭了？{$username}，黑龍竟然哭了！！！！" Option="好安靜的感覺~黑龍安靜下來的？難道他是被關起來了？是之前被封印的原因嗎？"/>
+				<Talk NpcID="10000" Face="正常" Msg="可是，這個地方好狹小，黑龍一定憋得很難過！" Option="好可憐的樣子~~~~"/>
+				<Talk NpcID="10297" Face="正常" Msg="璨……" Option=""/>
+				<Talk NpcID="10287" Face="失望" Msg="王，我在~" Option=""/>
+				<Talk NpcID="10297" Face="正常" Msg="你要好好保重自己……" Option=""/>
+				<Talk NpcID="10287" Face="焦急" Msg="王，是不是發生什麼事了？" Option=""/>
+				<Talk NpcID="10297" Face="正常" Msg="王國的事情，只能拜託你了，璨！" Option=""/>
+				<Talk NpcID="10287" Face="焦急" Msg="王？" Option=""/>
+				<Talk NpcID="10297" Face="正常" Msg="請他們看看我們的國我們的家，究竟發生了什麼。讓他們可以繼續扶持你，幫助你！" Option=""/>
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="396">
+		<EnterMap MapID="396">
+			 <Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10286" Face="正常" Msg="咪咪咪咪哆，我是不是打擾了你們感動的再次相聚？感動感動，相擁而泣啊~" Option="壞蛋，你又來了~"/>
+				<Talk NpcID="10286" Face="正常" Msg="哆來咪，該來的總是要來，該走的可不一定會走哦！璨殿下竟然可以驅走我的餘音嫋嫋，來來來，你這巨大的力量正好補充給黑龍小乖乖！" Option="壞蛋你想幹什麼！！！！不要欺負老師！！！！！"/>
+				<Talk NpcID="10286" Face="正常" Msg="啦啦啦，小傢伙，我可不敢欺負誰，璨和明如此相愛，不讓他們的力量融為一體不是我的罪過嗎？ " Option="根本就是你們野心想要佔有一切。"/>
+				<Talk NpcID="10286" Face="正常" Msg="咪發嗦，大自然的優勝劣汰、相生相剋正是最美妙的自然規律啊~" Option="哼，那就讓我打敗你！"/>
+				<Talk NpcID="10286" Face="正常" Msg="餘音，來，戰一場！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="3" TarMapID="396">
+		<EnterMap MapID="396">
+			<Action Cmd="ACT_EVENT" Param="MagicSpirite_figth_1023" ClearMap="1" Data = "3"/>
+			<Action Cmd="ADD_EVENT" Param="Task1023GamepanelOver"/>
+			<Action Cmd="JUMP_TASK_UI" Param="彩衣吹笛人真的好壞啊，原來他不僅僅坑害莊園，還在摩靈世界中作惡呢！沒法做朋友呢！快跑……"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+			<Action Cmd="GO_MAP" MapID="397" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" TarMapID="397">
+		<EnterMap MapID="397">	
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+	
+	        <Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="107" Name="movie_107" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_107"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="5" TarMapID="397">
+		<EnterMap MapID="397">
+			<Action Cmd="SAY">
+				<Talk NpcID="10287" Face="失望" Msg="因為黑魔法學院，破壞了整個摩靈世界的平衡，雖然王已經盡力了~" Option="老師，大黑龍一直傷害我們摩爾，難道都是被黑魔法學院控制的嗎？"/>
+				<Talk NpcID="10287" Face="失望" Msg="你們眼中的大黑龍一定非常可怕，非常兇殘，可是無論到什麼時候，無論他變成什麼樣，他都是我無可替代的明，無可替代的王……" Option="老師，不要難過啦！我們會陪著你的，我們相信你！有什麼要我們幫忙的你就說吧！"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10287" Face="失望" Msg="希望我還能幫助明拯救這個世界。" Option="我們會幫忙的，老師！"/>
+				<Talk NpcID="10287" Face="失望" Msg="明，快給我啟示吧！" Option="啟示？"/>
+				<Talk NpcID="10287" Face="失望" Msg="這是摩靈王族特殊的能力，可以通過意念的力量向對方傳遞啟示。" Option="哇，好拉轟的技能！"/>
+				<Talk NpcID="10287" Face="正常" Msg="來了！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="正常" Msg="湖面有字……寫了什麼？" Option="呃…亂碼看不懂…"/>
+				<Talk NpcID="10287" Face="正常" Msg="別急，仔細看~" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="108" Name="movie_108" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_108"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10298" Face="正常" Msg="來到我的地盤，就由不得你們自由自在咯！" Option="哇，蘿莉！"/>
+				<Talk NpcID="10298" Face="生氣" Msg="╭(╯^╰)╮，什麼蘿莉，來站來戰！" Option="女孩子不要打打殺殺的啦！"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="109" Name="movie_109" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_109"/>
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>

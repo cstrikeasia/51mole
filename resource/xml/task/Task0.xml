@@ -1,0 +1,34 @@
+<Tasks ID="0" Name="我要成為蘑菇嚮導" >
+	<Step ID="1" >
+		<NPC ID="10037" Option="我要成為蘑菇嚮導" >
+			<Action Cmd="ACT_EVENT" Param="NPCOldJob" /><!-- 拋事件 -->
+		</NPC>
+		
+		<EnterMap MapID="100000001" >		<!-- 沒開始任務 -->							
+			<Action Cmd="SAY" >
+				<Talk NpcID="10037" Face="正常" Msg="有興趣成為一個樂於助人的嚮導嗎？你可以點擊右上角SMC徽章來獲取就職任務。" Option="好的，我這就去！"/>
+			</Action>
+		</EnterMap>
+		<EnterMap MapID="100000002" >								<!-- 未完成任務 -->
+				<Action Cmd="SAY" >
+					<Talk NpcID="10037" Face="正常" Msg="嘿，要找齊四盤磁帶，同時魅力值達到20以上才能成為嚮導哦！莊園很多小遊戲都能增加魅力值！" Option="好，我再試試看！" />
+				</Action>
+		</EnterMap>
+		
+		<EnterMap MapID="100000003" >									  <!-- 已完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10037" Face="正常" Msg="恭喜！你已經成為了一名嚮導。作為獎品你獲得嚮導四件套。" Option="謝謝傑西！" />
+			</Action>
+			<Action Cmd="ACT_EVENT" Param="OVERNPCOldJob" /><!-- 拋事件 -->
+		</EnterMap>
+		<EnterMap MapID="100000004" >									  <!-- 已完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10037" Face="正常" Msg="熱心助人是每個嚮導的職責，更多嚮導任務你可以點擊右上角SMC徽章獲取。" Option="好的，我知道了！" />
+			</Action>
+		</EnterMap>
+		
+	</Step>
+						
+</Tasks>
+
+

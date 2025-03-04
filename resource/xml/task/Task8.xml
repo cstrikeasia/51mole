@@ -1,0 +1,34 @@
+<Tasks ID="8" Name="我想成為摩爾莊園警官" >
+	<Step ID="1" >
+		<NPC ID="10019" Option="我想成為摩爾莊園警官" >
+			<Action Cmd="ACT_EVENT" Param="NPCOldJob" /><!-- 拋事件 -->
+		</NPC>
+		
+		<EnterMap MapID="100000001" >		  <!-- 沒開始任務 -->	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10019" Face="正常" Msg="使用舉報功能維護摩爾莊園的良好環境是每個警官的基礎工作，如果你有信心成為一個優秀的警官的話，那趕快點擊右上角徽章來獲取就職任務吧！" Option="好的，我這就去！" />
+			</Action>
+		</EnterMap>
+		
+		<EnterMap MapID="100000002" >		  <!-- 未完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10019" Face="正常" Msg="收集齊四種材料，同時要力量值達到20以上才能成為警官！莊園很多小遊戲都能增加力量值，繼續努力吧！" Option="好，我會再努力的！" />
+			</Action>
+		</EnterMap>	
+		<EnterMap MapID="100000003" >		  <!-- 已完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10019" Face="正常" Msg="恭喜你順利的完成了任務，現在你已經成為摩爾莊園一名合格的警官了，作為SMC警官的標志，一套警官套裝，已經放入你的百寶箱中，希望你能成為一個優秀的好警官！" Option="謝謝艾爾警官！" />
+				<Talk NpcID="10019" Face="正常" Msg="做為一名稱職的警官你有義務去維護莊園的安定和平，每個SMC警官都必須付出自己的努力，進行日常的站崗值勤！如果你想加入值勤可以直接點擊右上角的SMC徽章。" Option="好的，我知道了！" />
+			</Action>
+			<Action Cmd="ACT_EVENT" Param="OVERNPCOldJob" /><!-- 拋事件 -->
+		</EnterMap>
+		<EnterMap MapID="100000004" >		  <!-- 已完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10019" Face="正常" Msg="更多員警任務你可以點擊右上角SMC徽章獲取。" Option="好的，我知道了！" />
+			</Action>
+		</EnterMap>
+	</Step>
+						
+</Tasks>
+
+
