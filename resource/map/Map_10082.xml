@@ -1,0 +1,20 @@
+<Map>
+	<NpcList>
+		<Npc ID="10184" Layer="controlLevel" Name="許願星" Ex="473" Ey="531" Cmd="act" Param="checkCnt" />
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10184" Face="正常" Msg="真不好意思，你今天已經許了3個願望了，誠心祈禱吧！明天還可以再來許願！" Option="查看鮮花排行榜！$查看我的星星！$那我明天再來！" Cmd="act$act$none" Param="flowerRankList$viewMyStars$none" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10184" Face="正常" Msg="{$username}，你好，我是能幫助你實現願望的許願星！" Option="查看鮮花排行榜！$查看我的星星！$你真的可以幫助我實現願望嗎？" Cmd="act$act$s" Param="flowerRankList$viewMyStars$3" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10184" Face="正常" Msg="嗯，當然！我能讓流星幫你把願望掛在浩瀚的天際，只要你誠心祈禱，你的願望就一定能實現！不過，你每天最多只能許下3個願望，不能貪心哦！" Option="我要許願！$我還有事，待會兒再來許願！" Cmd="act$none" Param="wantVow$null" AddTaskOption="1" />	
+	</Talks>
+</Map>
+
+
+
