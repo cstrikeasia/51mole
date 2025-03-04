@@ -1,0 +1,23 @@
+<Map>
+	<NpcList>
+		<Npc ID="10063" Layer="depthLevel" Name="湯米" Ex="624" Ey="318" Cmd="s" Param="1" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_77" Layer="controlLevel" Ex="920" Ey="323" Cmd="gm" Param="77" Tips="進入摩爾大學" />
+		<Trigger ResName="rankBtn" Layer="depthLevel" Ex="857" Ey="329" Cmd="p" Param="GardonRankPanel" />
+		<Trigger ResName="ruleBtn" Layer="depthLevel" Ex="857" Ey="329" Cmd="p" Param="GardonPanel" />
+		
+		<Trigger ResName="woodBtn0" Layer="controlLevel" Ex="641" Ey="294" Cmd="act" Param="goWood0" />
+		<Trigger ResName="woodBtn1" Layer="controlLevel" Ex="709" Ey="311" Cmd="act" Param="goWood1" />
+		<Trigger ResName="woodBtn2" Layer="controlLevel" Ex="796" Ey="293" Cmd="act" Param="goWood2" />
+		<Trigger ResName="npcMc" Layer="depthLevel" Ex="498" Ey="332" Cmd="act" Param="denateWood" />
+		<Trigger ResName="sign_btn" Layer="controlLevel" Ex="584" Ey="378" Cmd="p" Param="MiWuStatePanel" />
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10063" Face="正常" Msg="你也是來幫忙的嗎？支援木材請點收集處的木牌，參與建設工程請點水車邊的建設台哦！" Option="我知道了！" Cmd="none" />
+	</Talks>
+</Map>
+
+
