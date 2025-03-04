@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ListAll>  
+	<item  NPCID="66"  NPCname="漢青"  NPCnamess="hq_">
+		<npcTips   msg="no"  tips="no"  changID="no"  Job="ok"/>
+		<JobList   JobID="62"  
+		msg0="    哈哈，大家好，我是來自東方的漢青哦！為了慶祝摩爾莊園歡樂節，我準備教大家做一款東方美食——饅頭。小摩爾趕快加入吧。" 
+		msg1="    非常抱歉，你目前還沒有足夠的材料和麵哦。漢青再提醒小摩爾一次，要想得到麵粉，需要先把小麥種子種到家園裏，等收穫麥穗後才能打磨出麵粉哦~"  
+		msg2="    你真是一位心靈手巧的小摩爾！作為獎勵，我送給你一套可愛的中國饅頭裝，趕快去試穿一下吧。rr    另外還有一份“拉姆小饅頭”的食譜哦，就藏在船上趕快找找吧！"   
+		msg3="    你已經得到中國饅頭裝了，不要太貪心哦！"   
+		needGood="190187;190188;190189"  getGood="12535"  needGoodname="麵粉;發酵粉;泉水"  
+		getGoodname="中國饅頭裝"  changID="no" />
+	</item>
+</ListAll>
