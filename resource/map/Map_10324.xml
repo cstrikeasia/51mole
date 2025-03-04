@@ -1,0 +1,21 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+		<!--  <Trigger ResName="btn0" Layer="depthLevel" Ex="170" Ey="275" Cmd="act" Param="clickLight0"  />
+		<Trigger ResName="btn1" Layer="depthLevel" Ex="97" 	Ey="404" Cmd="act" Param="clickLight1"  />
+		<Trigger ResName="btn2" Layer="depthLevel" Ex="714" Ey="263" Cmd="act" Param="clickLight2"  />
+		<Trigger ResName="btn3" Layer="depthLevel" Ex="804" Ey="384" Cmd="act" Param="clickLight3"  />
+		<Trigger ResName="pumpkinBtn" Layer="controlLevel" Ex="859" Ey="390" Cmd="act" Param="getKey"  />
+		<Trigger ResName="door_325_2" Layer="depthLevel" Ex="438" Ey="275" Cmd="act" Param="goMap325"  Tips="黑貓領地"/>
+		<Trigger ResName="door_323" Layer="controlLevel" Ex="838" Ey="298" Cmd="gm" Param="323"  Tips="南瓜屋迷宮"/>-->
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

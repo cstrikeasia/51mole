@@ -1,0 +1,13 @@
+<Map>
+	 <NpcList>
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_374" Layer="depthLevel" Ex="400" Ey="462" Cmd="alt_map" Param="374" Tips="深水之城"/>
+	</Triggers>
+
+	<Talks>
+	</Talks>
+</Map>
+
+
+

@@ -1,0 +1,16 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+	
+		<Trigger ResName="go_310" Layer="controlLevel" Ex="58" Ey="372" Cmd="alt_map" Param="310" Tips="榕樹樹冠" />
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

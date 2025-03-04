@@ -1,0 +1,17 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_38" Layer="controlLevel" Ex="813" Ey="203" Cmd="alt_map" Param="38" Tips="摩爾足球場" />
+		
+		<Trigger ResName="angel_btn" Layer="depthLevel" Ex="377" Ey="269" Cmd="act" Param="openAngel" Tips="" />
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

@@ -1,0 +1,23 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+	
+		<Trigger ResName="go_304" Layer="controlLevel" Ex="50" Ey="420" Cmd="alt_map" Param="304" Tips="荊棘叢林4" />
+		
+		<Trigger ResName="rnd1_mc" Layer="controlLevel" Ex="450" Ey="180" Cmd="act" Param="GoRndMap" Data="1" Tips="" />
+		<Trigger ResName="rnd2_mc" Layer="controlLevel" Ex="724" Ey="262" Cmd="act" Param="GoRndMap" Data="2" Tips="" />
+		<Trigger ResName="rnd3_mc" Layer="controlLevel" Ex="892" Ey="173" Cmd="act" Param="GoRndMap" Data="3" Tips="" />
+		
+		<Trigger ResName="npc_10115" Layer="controlLevel" Ex="470" Ey="320" Cmd="act" Param="check14335" Tips="" />
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10115" Face="正常" Option="占卜$我知道了！" Cmd="act$none" Param="divine$0" AddTaskOption="1" Msg="我是毛毛頭酋長，你可以叫我酋長，首領，或者是頭兒，你挑一個叫吧！ " />
+	</Talks>
+</Map>
+
+
+

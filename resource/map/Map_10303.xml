@@ -1,0 +1,17 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_302" Layer="buttonLevel" Ex="74" Ey="380" Cmd="alt_map" Param="302" Tips="荊棘叢林2" />
+		<Trigger ResName="go_304" Layer="buttonLevel" Ex="924" Ey="400" Cmd="alt_map" Param="304" Tips="荊棘叢林4" />
+	</Triggers>
+	
+	<Talks>
+	
+	</Talks>
+</Map>
+
+
+

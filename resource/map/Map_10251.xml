@@ -1,0 +1,13 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+	
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10015" Face="正常" Msg="什麼時候我要去採訪一下天使，天使真是太厲害了，我親眼見過天使把暗黑勢力給打敗了。" Option="我知道啦！" Cmd="none" Param="1" AddTaskOption="1" />
+	</Talks>
+</Map>

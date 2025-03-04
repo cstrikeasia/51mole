@@ -1,0 +1,17 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go258_btn" Layer="controlLevel" Ex="260" Ey="400" Cmd="alt_map" Param="258" Tips="海妖巢穴" />
+		
+		<Trigger ResName="go_264" Layer="controlLevel" Ex="515" Ey="357" Cmd="alt_map" Param="264" Tips="海妖王寶藏" />
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

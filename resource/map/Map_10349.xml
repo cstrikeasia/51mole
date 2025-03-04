@@ -1,0 +1,16 @@
+<Map>
+	<NpcList>
+		<Npc ID="10231" Layer="depthLevel" Name="莎士比亞" Ex="495" Ey="495" Cmd="none" Param="1" AddTaskOption="1" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_32" Layer="controlLevel" Ex="208" Ey="489" Cmd="alt_map" Param="32"  Tips="城堡書房"/>
+		<Trigger ResName="bookMc" Layer="depthLevel" Ex="513" Ey="398" Cmd="p" Param="BookStartPanel"  Tips="圖書大修復"/>
+		<Trigger ResName="npc_10231" Layer="depthLevel" Ex="460" Ey="410" Cmd="act" Param="openTollgate"  Tips="挑戰莎士魔亞"/>
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+

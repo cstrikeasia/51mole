@@ -1,0 +1,17 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+		<!-- <Trigger ResName="go_38" Layer="controlLevel" Ex="813" Ey="203" Cmd="alt_map" Param="38" Tips="摩爾足球場" />  -->
+		<Trigger ResName="go_38" Layer="controlLevel" Ex="161" Ey="241" Cmd="gm" Param="38" Tips="摩爾足球場" />
+		  <Trigger ResName="front" Layer="controlLevel" Ex="202" Ey="407" Cmd="act" Param="coffin" Tips="" />
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

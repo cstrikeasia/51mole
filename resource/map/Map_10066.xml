@@ -1,0 +1,22 @@
+<Map>
+	<NpcList>
+		<Npc ID="10034" Layer="controlLevel" Name="漢青" Ex="146" Ey="306" Cmd="s" Param="1" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="afuShop" Layer="controlLevel" Ex="292" Ey="312" Cmd="p" Param="AfuSmallShopPanel" Tips="阿福小店" /> 
+		<!--  <Trigger ResName="lion_0" Layer="controlLevel" Ex="456" Ey="300" Cmd="act" Param="joinLionDanceGame" Tips="鬥獅比賽" Data="0,0"/> 
+		<Trigger ResName="lion_1" Layer="controlLevel" Ex="375" Ey="380" Cmd="act" Param="joinLionDanceGame" Tips="鬥獅比賽" Data="0,1"/> 
+		<Trigger ResName="lion_2" Layer="controlLevel" Ex="600" Ey="300" Cmd="act" Param="joinLionDanceGame" Tips="鬥獅比賽" Data="1,0"/> 
+		<Trigger ResName="lion_3" Layer="controlLevel" Ex="690" Ey="380" Cmd="act" Param="joinLionDanceGame" Tips="鬥獅比賽" Data="1,1"/> 
+		<Trigger ResName="instr_mc" Layer="controlLevel" Ex="780" Ey="320" Cmd="intr" Param="lionDanceExplain" Tips="鬥獅比賽說明" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10034" Face="正常" Msg="我剛從東方回來，我來給你講講關於東方的奇聞異事吧" Option="沒什麼事" Cmd="none" Param="null" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+

@@ -1,0 +1,13 @@
+<Map>
+	 <NpcList>
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_378" Layer="depthLevel" Ex="727" Ey="462" Cmd="alt_map" Param="378" Tips="冰脊之巔"/>
+	</Triggers>
+
+	<Talks>
+	</Talks>
+</Map>
+
+
+

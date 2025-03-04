@@ -1,0 +1,40 @@
+<Map>
+	<NpcList>
+	<!-- 
+		<Npc ID="10038" Layer="depthLevel" Name="凱文" Ex="631" Ey="330" Cmd="s" Param="1" />
+	 -->
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+		
+		<Talk ID="100" NpcID="10086" Face="正常" Msg="嘿嘿，想要製作像白雲一樣美麗的飄飄棉花糖麼？快帶著你的超級拉姆吧，金葉子的神奇能量才能讓我運作起來喲！" Option="製作棉花糖" Cmd="act" Param="blower_initCotton" AddTaskOption="1" />
+		
+		<Talk ID="101" NpcID="10086" Face="正常" Msg="恩恩，接下來你的超級拉姆會變成超級棉花糖棒棒，用它接住所有飄出來的棉花糖才能製作成功哦！加油！" Option="知道了!$下次再說！" Cmd="act$none" Param="blower_playCotton$"  />
+		<Talk ID="102" NpcID="10086" Face="正常" Msg="╮(╯▽╰)╭還差得遠呢，接著努力啦！" Option="知道了!" Cmd="none" Param="4" />
+		<Talk ID="103" NpcID="10086" Face="正常" Msg="甜蜜蜜的草莓棉花糖，香香甜甜好味道！" Option="耶！" Cmd="act" Param="blower_getCotton" Data="1" />
+		<Talk ID="104" NpcID="10086" Face="正常" Msg="圓滾滾的可愛拉姆，這是香糯好吃的香蕉棉花糖哦！" Option="耶！" Cmd="act" Param="blower_getCotton" Data="2" />
+		<Talk ID="105" NpcID="10086" Face="正常" Msg="飄飄飛飛，悠悠盪盪，奶油香香，像雲朵一樣的奶油棉花糖，快來嘗一嘗！" Option="耶！" Cmd="act" Param="blower_getCotton" Data="3" />
+		<Talk ID="106" NpcID="10086" Face="正常" Msg="甜甜膩膩的棉花糖，吃多了要壞牙喲！今天就到這裡吧，歡迎你明天再來！拜尼~！" Option="知道了!" Cmd="none" Param="4" />
+		<Talk ID="107" NpcID="10086" Face="正常" Msg="嘿嘿，想要製作像白雲一樣美麗的飄飄棉花糖麼？快帶著你的超級拉姆吧，金葉子的神奇能量才能讓我運作起來喲！" Option="知道了!" Cmd="none" Param="4" />
+		
+		<Talk ID="201" NpcID="10087" Face="正常" Msg="恩？沒有超級拉姆就不要和高貴的我說話！" Option="知道了!" Cmd="none" Param="4" Data="1" />
+		<Talk ID="202" NpcID="10087" Face="正常" Msg="哦，你好，我是高貴美麗的七色花，你是帶著超級拉姆來照顧我的嘛？" Option="是的!$下次再說！" Cmd="act$none" Param="flower_flowerFun$4" Data="2" />
+		<Talk ID="203" NpcID="10087" Face="正常" Msg="澆水？好吧好吧讓你的拉姆使用水系技能為我灌注甘泉吧！" Option="知道了!" Cmd="act" Param="none" Data="3"  />
+		<Talk ID="204" NpcID="10087" Face="正常" Msg="似乎還不錯呢，我好像有些困了，讓我休息一會，等下再來找我試試吧！" Option="知道了!"  Cmd="act" Param="flower_flowerFun"  Data="4" />
+		<Talk ID="205" NpcID="10087" Face="正常" Msg="給我溫暖？每天太陽公公讓我舒坦著呢，雖然有的時候也曬得太厲害，不過好吧！讓你的拉姆用火系技能給我暖暖葉子尖兒！" Option="知道了!" Cmd="none" Param="4"  Data="5" />
+		<Talk ID="206" NpcID="10087" Face="正常" Msg="好吧，看在你那麼有誠意的份上送你些禮物吧！" Option="知道了!" Cmd="act" Param="flower_flowerFun" Data="6" />
+		<Talk ID="207" NpcID="10087" Face="正常" Msg="幫我舒活舒活筋骨？哎喲，這個我喜歡，來來來，用你家拉姆的木系技能來幫幫忙吧！" Option="知道了!" Cmd="none" Param="4"  Data="7" />
+		<Talk ID="208" NpcID="10087" Face="正常" Msg="不錯不錯，你的拉姆有專業按摩水準，來，這是我珍藏的七色花種子，收好吧！" Option="知道了!" Cmd="act" Param="flower_flowerFun" Data="8" />
+		<Talk ID="209" NpcID="10087" Face="正常" Msg="哎呀，別來煩我了，今天累了，明兒請趕早！" Option="知道了!" Cmd="none" Param="4"  Data="9" />
+		<Talk ID="210" NpcID="10087" Face="正常" Msg="我好像有些困了，讓我休息一會吧，等下在來找我試試看吧！" Option="知道了!" Cmd="none" Param="4"  Data="10" />
+	</Talks>
+</Map>
+
+
+

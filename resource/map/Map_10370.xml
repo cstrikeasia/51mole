@@ -1,0 +1,12 @@
+<Map>
+	 <NpcList>
+	 	
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_369" Layer="depthLevel" Ex="609" Ey="125" Cmd="alt_map" Param="369" Tips="麥田村"/>
+	</Triggers>
+
+</Map>
+
+
+

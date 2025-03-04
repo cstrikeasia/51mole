@@ -1,0 +1,50 @@
+<Map>
+	<NpcList>
+		<Npc ID="10043" Layer="controlLevel" Name="奇奇" Ex="599" Ey="333" Cmd="s" Param="1" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="kfcWall_mc" Layer="controlLevel" Ex="414" Ey="284" Cmd="p" Param="SuperClerkWall" Tips="優秀小店員牆" />
+		<Trigger ResName="activity_mc" Layer="controlLevel" Ex="530" Ey="338" Cmd="p" Param="KFCGuangGaoPaiZiPanel" Tips="KFC驚喜欄" />
+	</Triggers>
+	<Talks>
+		<Talk ID="1" NpcID="10043" Face="正常" Msg="親愛的朋友，歡迎來到奇可餐廳！" Option="第二件寶物$奇可小店員年度評選活動$小店員升職記$體驗奇奇美食店之旅$你的餐廳好漂亮$如何去生日飛艇" Cmd="act$p$p$act$s$s" Param="secondPrize$KFCSignUpPanel$SmallClerkPromotion$qiqi_gameStart$2$3" AddTaskOption="1" />		
+        <Talk ID="1" NpcID="10043" Face="正常" Msg="親愛的朋友，歡迎來到奇可餐廳！" Option="第二件寶物$奇可小店員年度評選活動$生日召集令$小店員升職記$體驗奇奇美食店之旅$你的餐廳好漂亮$如何去生日飛艇" Cmd="act$p$act$p$act$s$s" Param="secondPrize$KFCSignUpPanel$childrenDay$SmallClerkPromotion$qiqi_gameStart$2$3" AddTaskOption="1" />
+						
+		<Talk ID="2" NpcID="10043" Face="正常" Msg="謝謝，我的夢想就是我做的美食能夠傳播整個莊園，在你們享用美味的同時有一個舒適的環境，來放松心情。我希望我的奇可餐廳能給每一個小摩爾帶來更多的快樂和歡笑。" Option="你的夢想一定會實現的。" Cmd="none" Param="none" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10043" Face="正常" Msg="從奇可餐廳右邊的台階上去，就能直接進入生日飛艇啦！" Option="恩恩，我一定來！" Cmd="none" Param="none" AddTaskOption="1" />
+		<Talk ID="4" NpcID="10043" Face="正常" Msg="獲取神秘變身道具" Option="現在就去" Cmd="s" Param="5" AddTaskOption="1" />
+		<Talk ID="5" NpcID="10043" Face="正常" Msg="這禮物可神奇啦，可在舞會中脫穎而出，但需要你邀請1個好友共同來領取喔。" Option="好的,現在就去" Cmd="act" Param="KFCInvited" AddTaskOption="1" />
+		<Talk ID="6" NpcID="10043" Face="正常" Msg="哇，聰明的小摩爾果然邀請來了好友，快來猜猜我要送你的神奇禮物是什麼吧" Option="我已邀請到了1個好友" Cmd="s" Param="7" AddTaskOption="1" />
+		<Talk ID="7" NpcID="10043" Face="正常" Msg="兩款會變身的手表！神奇吧？帶著它參加舞會別提有多炫酷了。" Option="會是什麼呢？" Cmd="s" Param="8" AddTaskOption="1" />
+		<Talk ID="8" NpcID="10043" Face="正常" Msg="快來挑選你喜歡的款式吧" Option="我要男款$我要女款" Cmd="s$s" Param="9$10" AddTaskOption="1" />
+		<Talk ID="9" NpcID="10043" Face="正常" Msg="手表的作用是可以讓你在變身舞會中變身哦~請選擇你想要的造型吧！" Option="我要假面騎士$我要魔術師$我要鋼鐵騎士$我要勇猛戰士$我要海盜船長" Cmd="act$act$act$act$act" Param="wactch1$wactch2$wactch3$wactch4$wactch5" AddTaskOption="1" />
+		<Talk ID="10" NpcID="10043" Face="正常" Msg="手表的作用是可以讓你在變身舞會中變身哦~請選擇你想要的造型吧！" Option="我要粉紅公主$我要冰雪公主$我要紫霞公主$我要蔚藍公主$我要綠光公主" Cmd="act$act$act$act$act" Param="wactch6$wactch7$wactch8$wactch9$wactch10" AddTaskOption="1" />
+		<Talk ID="11" NpcID="10043" Face="正常" Msg="好的，你現在可以去變身舞會跳舞啦！" Option="我知道了" Cmd="alt_map" Param="38" AddTaskOption="1" />
+		<Talk ID="12" NpcID="10043" Face="正常" Msg="親愛的小摩爾，找我什麼事啊？" Option="奇奇，我做了好多美味漢堡，不知道美食餐廳需要嗎？" Cmd="s" Param="13" AddTaskOption="1" />
+		<Talk ID="13" NpcID="10043" Face="正常" Msg="哇，太好了，我們正巧缺人手，來不及做漢堡呢" Option="好吧，那我把漢堡都給你了" Cmd="s" Param="14" AddTaskOption="1" />
+		<Talk ID="14" NpcID="10043" Face="正常" Msg="嗯，不過我奇奇可不是貪小便宜的人，就按每個漢堡10摩爾豆計算怎麼樣啊？" Option="嗯，好的，成交啦！" Cmd="act" Param="task589Over" AddTaskOption="1" />
+		<Talk ID="15" NpcID="10043" Face="正常" Msg="" Option="神探任務$奪寶奇兵" Cmd="act$p" Param="KFCsmallSpy$KFCPlateARKGame" AddTaskOption="1" />
+		<Talk ID="16" NpcID="10043" Face="正常" Msg="小摩爾，給你好吃的蛋撻來補充體力吧！" Option="謝謝，奇奇真好!" Cmd="act" Param="KFCSpyEight" AddTaskOption="1" />
+		<Talk ID="17" NpcID="10043" Face="正常" Msg="當然可以啦，謝謝聰明英勇的小神探。" Option="哈哈，不客氣。" Cmd="act" Param="KFCSuiPianSwap" AddTaskOption="1" />
+		<Talk ID="18" NpcID="10043" Face="正常" Msg="經驗果實（大）送給你，麻煩你去讓更多的朋友加入這好玩又刺激的神探之旅 吧！" Option="太好了，太謝謝了" Cmd="s" Param="19" AddTaskOption="1" />
+		<Talk ID="19" NpcID="10043" Face="正常" Msg="聰明的小神探，再去找找吧，集滿5件還可以獲得榮譽摩爾星一顆喔！" Option="真的麼？再去找找。" Cmd="none" Param="null" AddTaskOption="1" />
+		<Talk ID="20" NpcID="10043" Face="正常" Msg="經驗果實（大）和榮譽摩爾星送給你，快點帶著威風一把~" Option="太好了，謝謝奇奇！" Cmd="act" Param="suipianrenwuOver" AddTaskOption="1" />
+		<Talk ID="21" NpcID="10043" Face="正常" Msg="奇奇，請問你見過菩提大伯嗎？" Option="我先先找找" Cmd="s" Param="22" AddTaskOption="1" />
+		<Talk ID="22" NpcID="10043" Face="正常" Msg="好吧，那我到處看看。" Option="嗯，只要仔細找一定會有發現的，別漏了生日飛艇哈。" Cmd="s" Param="23" AddTaskOption="1" />
+		<Talk ID="23" NpcID="10043" Face="正常" Msg="謝謝奇奇提示，這就去瞧瞧。" Option="不客氣。" Cmd="alt_map" Param="57" AddTaskOption="1" />
+		
+		<Talk ID="24" NpcID="10043" Face="正常" Msg="小摩爾要先去找菩提大伯報名哦!" Option="好的，我這就去" Cmd="alt_map" Param="53" AddTaskOption="1" />
+		<Talk ID="25" NpcID="10043" Face="正常" Msg="親愛的小摩爾，請問你想當繪畫老師？還是音樂老師？" Option="繪畫老師" Cmd="s" Param="26" AddTaskOption="1" />
+		<Talk ID="26" NpcID="10043" Face="正常" Msg="好吧，作為一個合格的繪畫老師，需要有正確的藝術審美。就我來考考你吧" Option="恩，好的。" Cmd="act" Param="artTeacher" AddTaskOption="1" />
+		
+		<Talk ID="27" NpcID="10043" Face="正常" Msg="親愛的小摩爾，請問你想當繪畫老師？還是音樂老師？" Option="音樂老師" Cmd="s" Param="28" AddTaskOption="1" />
+		<Talk ID="28" NpcID="10043" Face="正常" Msg="哦，那你一定是碰到難題了？" Option="是的，我想獲取你的幫助！" Cmd="s" Param="29" AddTaskOption="1" />
+		<Talk ID="29" NpcID="10043" Face="正常" Msg="你是說散落的校歌？哈哈，聰明的小摩爾，它真的在我這裡噢" Option="挖，太好了，能把他給我嗎？" Cmd="s" Param="30" AddTaskOption="1" />
+		<Talk ID="30" NpcID="10043" Face="正常" Msg="給你是可以，但你要答應我個條件。" Option="什麼條件呢？" Cmd="s" Param="31" AddTaskOption="1" />
+		<Talk ID="31" NpcID="10043" Face="正常" Msg="教會你的學生們唱這首光榮的校歌，並把它傳衍下去。" Option="好的，我可以答應你" Cmd="act" Param="musicCartoon" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+

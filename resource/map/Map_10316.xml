@@ -1,0 +1,16 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+	
+		<Trigger ResName="mapBtn_97" Layer="controlLevel" Ex="859" Ey="429" Cmd="alt_map" Param="315" Tips="古城堡遺跡" />
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

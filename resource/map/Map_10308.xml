@@ -1,0 +1,26 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+	
+		<Trigger ResName="gomap_307" Layer="controlLevel" Ex="183" Ey="446" Cmd="alt_map" Param="307" Tips="千年榕樹外" />
+		
+		<Trigger ResName="goPrivRoomBtn" Layer="controlLevel" Ex="642" Ey="325" Cmd="alt_map" Param="309" Tips="榕樹密室" />
+		
+		<!--<Trigger ResName="showPrivRoomBtn" Layer="controlLevel" Ex="292" Ey="260" Cmd="alt_map" Param="311" Tips="神秘洞穴" />  -->
+		
+		
+		<Trigger ResName="goHole0" Layer="controlLevel" Ex="189" Ey="228" Cmd="act" Param="EnterTreeHole" Data="1" Tips="" />
+		<Trigger ResName="goHole1" Layer="controlLevel" Ex="390" Ey="220" Cmd="act" Param="EnterTreeHole" Data="2" Tips="" />
+		<Trigger ResName="goHole2" Layer="controlLevel" Ex="768" Ey="319" Cmd="act" Param="EnterTreeHole" Data="3" Tips="" />
+		<Trigger ResName="goHole3" Layer="controlLevel" Ex="780" Ey="123" Cmd="act" Param="EnterTreeHole" Data="4" Tips="" />
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

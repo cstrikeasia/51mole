@@ -1,0 +1,24 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+	
+		<Trigger ResName="mapBtn_306" Layer="controlLevel" Ex="90" Ey="386" Cmd="alt_map" Param="306" Tips="千年榕樹" />
+		
+		<Trigger ResName="mapBtn_308" Layer="controlLevel" Ex="520" Ey="390" Cmd="alt_map" Param="308" Tips="榕樹樹洞" />
+		
+		<Trigger ResName="goto_btn" Layer="controlLevel" Ex="311" Ey="281" Cmd="alt_map" Param="310" Tips="榕樹樹冠" />
+		
+		
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10114" Face="正常" Msg="哇！你真厲害！這下我們可以進入樹洞了！" Option="裡面說不定很危險哦，你不怕嗎？" Cmd="s" Param="2" />
+		<Talk ID="2" NpcID="10114" Face="正常" Msg="當然不怕！我就是專門為了探險而來！我要為保衛莊園盡一份力！好啦，得抓緊時間，我們走吧！" Option="你也生活在莊園嗎？餵，等等，你慢點呀" Cmd="act" Param="playnextmovie" />
+	</Talks>
+</Map>
+
+
+

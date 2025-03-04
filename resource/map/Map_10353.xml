@@ -1,0 +1,20 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	
+	<Triggers>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10234" Face="正常" Msg="站住！說你呢！" Option="老摩爾王的禮物$我想來幫忙！$沒什麼事" Cmd="act$act$none" Param="step2Talk$helpEvent$0" />
+		<Talk ID="2" NpcID="10234" Face="正常" Msg="你說你要找尤瑞克？你們是尤瑞克的什麼人？" Option="我們是他的朋友" Cmd="s" Param="3" />
+		<Talk ID="3" NpcID="10234" Face="正常" Msg="有朋友？真奇怪，他現在正在遺跡大廳那邊站崗呢！" Option="遺跡大廳怎麼去？" Cmd="s" Param="4" />
+		<Talk ID="4" NpcID="10234" Face="正常" Msg="那邊啊？先要去到古樹，然後向古樹投擲10次水彈就能進去了。" Option="好的，謝謝！" Cmd="act" Param="moleKingStep3" />
+		
+		<Talk ID="5" NpcID="10234" Face="正常" Msg="幫忙？嗯！對了，我們最近剛打敗黑龍，又累又餓，大家都好想飽餐一頓，給我帶2隻鴨子，1隻紅豬，5個磷蝦來。" Option="這，我去去就來。$算了吧！" Cmd="s$none" Param="6$0" />
+		<Talk ID="6" NpcID="10234" Face="正常" Msg="好了嗎？" Option="好了！$稍等" Cmd="act$none" Param="helpEventTask0$0" />
+		<Talk ID="11" NpcID="10234" Face="正常" Msg="哎呀，太感謝你了，這個就給你吧！明天繼續來哦！" Option="不客氣" Cmd="act" Param="helpTask0Over" />
+	</Talks>
+</Map>
+
+

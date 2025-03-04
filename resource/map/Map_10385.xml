@@ -1,0 +1,39 @@
+<Map>
+	<NpcList>
+		<Npc ID="10022" Layer="depthLevel" Name="阿七" Ex="470" Ey="380" Cmd="s" Param="1" AddTaskOption="1" />
+	</NpcList>
+	
+	<!-- <Npc ID="10248" Layer="depthLevel" Name="聖誕老人" Ex="358" Ey="314" Cmd="s" Param="4" AddTaskOption="1" />
+		<Npc ID="10027" Layer="depthLevel" Name="西索" Ex="625" Ey="395" Cmd="s" Param="5" AddTaskOption="1" />
+		<Npc ID="10244" Layer="depthLevel" Name="老超" Ex="671" Ey="432" Cmd="s" Param="6" AddTaskOption="1" />
+		<Npc ID="10013" Layer="depthLevel" Name="花嬸" Ex="531" Ey="491" Cmd="s" Param="7" AddTaskOption="1" />
+		<Npc ID="10041" Layer="depthLevel" Name="梅森" Ex="381" Ey="459" Cmd="s" Param="8" AddTaskOption="1" /> -->
+		
+	<Triggers>
+		<Trigger ResName="go_60" Layer="controlLevel" Ex="700" Ey="437" Cmd="alt_map" Param="60" Tips="進入露天劇場"/>
+		<Trigger ResName="football_btn" Layer="controlLevel" Ex="74" Ey="240" Cmd="alt_map" Param="9" Tips="進入陽光牧場"/>
+		<Trigger ResName="go_83" Layer="controlLevel" Ex="843" Ey="232" Cmd="alt_map" Param="83" Tips="進入交通署"/>
+		<Trigger ResName="football_btn105" Layer="controlLevel" Ex="637" Ey="290" Cmd="alt_map" Param="105" Tips="進入三兄弟小屋"/>
+		<Trigger ResName="fmw_btn" Layer="controlLevel" Ex="441" Ey="200" Cmd="alt_map" Param="27" Tips="進入農場發明屋"/>
+		<Trigger ResName="map_mason" Layer="controlLevel" Ex="392" Ey="288" Cmd="alt_map" Param="56" Tips="進入梅森小屋"/>
+		<Trigger ResName="go_355" Layer="controlLevel" Ex="881" Ey="398" Cmd="alt_map" Param="355" Tips="進入東部沙灘碼頭"/>
+		
+<!-- 		<Trigger ResName="sesame_btn" Layer="depthLevel" Ex="660" Ey="330" Cmd="act" Param="sesame" Tips="變身芝麻"/> -->
+<!-- 		<Trigger ResName="cancelSesame_mc" Layer="depthLevel" Ex="705" Ey="325" Cmd="act" Param="cancelSesame" Tips="變身回摩爾"/> -->
+	</Triggers>
+	 
+	<Talks>
+		<Talk ID="1" NpcID="10022" Face="正常" Msg="hi～你沒見過我吧，我是大衛新研制出來的機器狗，叫做R7，小摩爾們都喜歡叫我阿七，專門幫助摩爾們看家護院的。" Option="你有什麼功能$來我家吧" Cmd="s$s" Param="2$3" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10022" Face="正常" Msg="我最擅長看護家園中的植物和牧場的動物了，只要有我在保證沒有一棵植物會乾旱，沒有一隻動物會逃跑。" Option="我知道了" Cmd="none" Param="1" />
+		<Talk ID="3" NpcID="10022" Face="正常" Msg="這可不行，我是梅森從大衛那裡租來的，不過你要是想要的話，可以到前面的大衛發明屋裡去，我記得大衛做了很多隻呢，你只要租一隻就行了。" Option="我知道了" Cmd="none" Param="1" />
+		<Talk ID="4" NpcID="10248" Face="正常" Msg="哦呵呵呵，這邊還真是挺熱鬧的嘛" Option="冰雪美食節" Cmd="act" Param="getItemThree" Data="2" AddTaskOption="1" />
+		<Talk ID="5" NpcID="10027" Face="正常" Msg="我可是準備了好多衣服，你們快來看看！" Option="冰雪美食節" Cmd="act" Param="getItemThree" Data="5" AddTaskOption="1" />
+		<Talk ID="6" NpcID="10244" Face="正常" Msg="我是企鵝商人，企鵝島上有的我這邊全都有賣" Option="冰雪美食節" Cmd="act" Param="getItemThree" Data="4" AddTaskOption="1" />
+		<Talk ID="7" NpcID="10013" Face="正常" Msg="為了這次美食節，我把壓箱底的東西都拿出來了！" Option="冰雪美食節$下次再來" Cmd="act$none" Param="getItemThree$1" Data="1" AddTaskOption="1" />
+		<Talk ID="8" NpcID="10041" Face="正常" Msg="要賺企鵝貝，然後去美食區吃好吃的！" Option="冰雪美食節" Cmd="act" Param="getItemThree" Data="3" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+
+

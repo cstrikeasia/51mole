@@ -1,0 +1,15 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+		<!-- 
+		<Trigger ResName="mermaid_mc" Layer="controlLevel" Ex="656" Ey="300" Cmd="p" Param="MermaidCountrySchedulePanel" Tips="" />
+		 -->
+	</Triggers>
+	
+	<Talks>
+		
+	</Talks>
+</Map>

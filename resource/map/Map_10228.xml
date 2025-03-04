@@ -1,0 +1,25 @@
+<Map>
+	<NpcList>
+		<Npc ID="10032" Layer="depthLevel" Name="吉娜" Ex="487" Ey="410" Cmd="s" Param="1" />
+		<Npc ID="10071" Layer="depthLevel" Name="小小亞撒" Ex="650" Ey="300" Cmd="s" Param="10" />
+	</NpcList>
+	
+	<Triggers>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10032" Face="正常" Msg="看看我穿的漂亮衣服，就知道我的眼光不會差，我挑選的東西可都是精品哦！悄悄告訴你，我的禮包裏還有更好的寶貝！你想看看我的禮包嗎？" Option="購買神力天使$兌換神奇天使$如何購買寶石卡" Cmd="act$act$s" Param="gina_Buy$gina_Swap$2" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10032" Face="正常" Msg="這次我在黑森林發現了一種神奇的寶石卡，它可以把摩摩怪從卡牌上變成真正的神奇天使呢！" Option="好神奇的寶石卡。" Cmd="s" Param="3" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10032" Face="正常" Msg="對呀，我也是意外發現的，所以我在收集更多的寶石卡，哈哈。你有寶石卡嗎？可以給我，我會送你神奇的天使喲！" Option="哪裏可以獲得寶石卡呢？$兌換神奇天使" Cmd="s$act" Param="4$gina_Swap" AddTaskOption="1" />
+		<Talk ID="4" NpcID="10032" Face="正常" Msg="玩摩摩怪大作戰就有機會得到寶石卡喲！期待你的表現喲！" Option="好的，我這就去！" Cmd="none" Param="none" AddTaskOption="1" />
+		
+		<Talk ID="10" NpcID="10071" Face="正常" Msg="我是亞撒長老的拉姆小小亞撒，我肩負著保衛摩爾莊園的使命，但是我的力量有限，希望更多的小摩爾和我共同保衛摩爾莊園。" Option="參加戰鬥！$我要加入！" Cmd="act$s" Param="saya358_JoinFight$11" AddTaskOption="1" />
+		<Talk ID="11" NpcID="10071" Face="正常" Msg="為了抵禦黑暗勢力的侵襲，為了保衛家園，我們要團結一致共同戰鬥。你願意加入我們，保衛摩爾莊園的和平嗎？" Option="我當然願意啦！" Cmd="s" Param="12" />
+		<Talk ID="12" NpcID="10071" Face="正常" Msg="要成為一名優秀的戰士，是需要過五關斬六將的。只有勇敢的小摩爾才能夠驅除外敵哦！" Option="我最勇敢的！" Cmd="s" Param="13" />
+		<Talk ID="13" NpcID="10071" Face="正常" Msg="想通過摩摩怪大作戰成為高級的摩爾鬥士，就讓我們勇敢的挑戰一回！" Option="我準備好了！" Cmd="act" Param="saya358_ShowAngelFightDemo" />
+		
+		<Talk ID="6" NpcID="10071" Face="正常" Msg="哈哈~看來你天資聰明！若堅持訓練，假以時日，必定大有成就！" Option="恩，我會努力的。" Cmd="s" Param="21" />
+		<Talk ID="21" NpcID="10071" Face="正常" Msg="從今天開始你要經常來訓練場進行摩摩怪大作戰的訓練。只有不斷提高自身的等級才能挑戰越來越高的怪物，才能成為最強的摩爾鬥士。" Option="恩，我會經常來訓練的。" Cmd="none" Param="none" />
+		<Talk ID="22" NpcID="10071" Face="正常" Msg="" Option="" Cmd="none" Param="none" />
+	</Talks>
+</Map>

@@ -1,0 +1,12 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="join98Mc" Layer="controlLevel" Ex="850" Ey="352" Cmd="gm" Param="324"  Tips="南瓜屋密室"/>
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>

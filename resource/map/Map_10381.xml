@@ -1,0 +1,17 @@
+<Map>
+	 <NpcList>
+	 	
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_380" Layer="depthLevel" Ex="799" Ey="399" Cmd="alt_map" Param="382" Tips="雨曇秘境"/>
+		<Trigger ResName="paizi" Layer="controlLevel" Ex="599" Ey="330" Cmd="p" Param="RomanticCherryStatePanel" Tips="活動說明"/>
+		
+		<Trigger ResName="seat0" Layer="controlLevel" Ex="281" Ey="310" Cmd="sit" Param="3$seat" Data="0" Tips="加入遊戲" />
+		<Trigger ResName="seat1" Layer="controlLevel" Ex="326" Ey="353" Cmd="sit" Param="3$seat" Data="1" Tips="加入遊戲" />
+		<Trigger ResName="seat2" Layer="controlLevel" Ex="451" Ey="357" Cmd="sit" Param="3$seat" Data="2" Tips="加入遊戲" />
+		<Trigger ResName="seat3" Layer="controlLevel" Ex="500" Ey="314" Cmd="sit" Param="3$seat" Data="3" Tips="加入遊戲" />
+	</Triggers>
+</Map>
+
+
+

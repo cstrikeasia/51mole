@@ -1,0 +1,54 @@
+<Map>
+	<NpcList>
+		<Npc ID="10081" Layer="controlLevel" Name="小水滴" Ex="363" Ey="253" Cmd="s" Param="1" />
+		<Npc ID="10082" Layer="controlLevel" Name="小水柱" Ex="237" Ey="290" Cmd="s" Param="10" />
+		<!--
+		<Npc ID="10002" Layer="controlLevel" Name="麼麼公主" Ex="358" Ey="460" Cmd="s" Param="1" />
+		-->
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+		<!--
+		<Talk ID="1" NpcID="10015" Face="正常" Msg="Hi，你好啊。" Option="我很好" Cmd="none" Param="6" AddTaskOption="1" />
+		-->
+		
+		<Talk ID="1" NpcID="10081" Face="正常" Msg="只有學會了水、火、木三系的技能才能進化為神力拉姆哦，加油吧！" Option="拼合碎片$隨便聊聊" Cmd="act$rs" Param="Lamu_LamuWorldConver$2-3" Data="116$0" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10081" Face="正常" Msg="聽說你們之中好多拉姆已經學會了火系和木系的技能，真的是這樣的嗎！那你們會不會順利進化成第五階段呢？" Option="我知道了！" Cmd="none" Param="6" />
+		<Talk ID="3" NpcID="10081" Face="正常" Msg="只有第四階段的拉姆才能升級為第五階段哦，建議你去神殿門口的溫泉裡泡一泡，就能加速成長哦！" Option="我知道了！" Cmd="none" Param="6" />
+		
+		<Talk ID="10" NpcID="10082" Face="正常" Msg="每一隻小拉姆都嚮往進化為神力拉姆，你呢？" Option="拼合碎片$隨便聊聊" Cmd="act$rs" Param="Lamu_LamuWorldConver$11-12" Data="117$0" AddTaskOption="1" />
+		<Talk ID="11" NpcID="10082" Face="正常" Msg="你知道拉姆碎片嗎，只要能找到碎片的另一半與我們的族人拼合，好事就會發生在你的身上哦！" Option="我知道了！" Cmd="none" Param="6" AddTaskOption="1" />
+		<Talk ID="12" NpcID="10082" Face="正常" Msg="很久以前我們就學會利用變身技能拿到各種神奇的東西，如果你能合理運用變身技能，一定會對你有幫助的！" Option="我知道了！" Cmd="none" Param="6" AddTaskOption="1" />
+		
+		
+		<Talk ID="20" NpcID="10083" Face="正常" Msg="很高興見到你勇士，能夠獨自闖入我們村落的拉姆已經不多見了，你有什麼事嗎？" Option="學習技能$拼合碎片$隨便聊聊" Cmd="act$act$rs" Param="water_studyWater$Lamu_LamuWorldConver$21-23" Data="0$114$21-23" AddTaskOption="1" />
+		<Talk ID="21" NpcID="10083" Face="正常" Msg="你身上有碎片嗎，聽說只要碎片拼合就會有幸福的事情降臨哦，如果你的碎片夠多的吧，記得找我們的族人拼合哦！" Option="我知道了！" Cmd="none" Param="6" AddTaskOption="1" />
+		<Talk ID="22" NpcID="10083" Face="正常" Msg="拉姆碎片被粉粉章魚女王搶走了，你知道它的意義嗎？當碎片拼合的時候，好事就會發生！快去找碎片與我們的村民拼合吧！" Option="我知道了！" Cmd="none" Param="6" AddTaskOption="1" />
+		<Talk ID="23" NpcID="10083" Face="正常" Msg="你無法想象神力拉姆會是什麼樣子，可每個神力拉姆必須經過嚴格的考驗，你能完成這項艱巨的任務嗎？" Option="我知道了！" Cmd="none" Param="6" AddTaskOption="1" />
+		
+		<Talk ID="24" NpcID="10083" Face="正常" Msg="粉粉章魚女王就在中間那扇門後，進去想辦法打倒粉粉章魚女王吧，記住要找到水系信物後回來找我哦！" Option="我知道了！" Cmd="none" Param="6" AddTaskOption="1" />
+		<Talk ID="25" NpcID="10083" Face="正常" Msg="" Option="" Cmd="none" Param="6" AddTaskOption="1" />
+		<Talk ID="26" NpcID="10083" Face="正常" Msg="哈，是我們的信物！好吧，或許你的確有潛力，現在我來示範一下如何運用技能，你有信心學會嗎？" Option="我一定會成功的！" Cmd="act" Param="water_waterPlay" />
+		<Talk ID="27" NpcID="10083" Face="開心" Msg="現在，你也開始變身吧，把自己變成小水滴，然後去拿底下的東西！怎麼樣，需要我再演示一遍嗎？" Option="看懂了！$再演示一遍！" Cmd="act$act" Param="water_waterOK$water_waterPlay" />
+		<Talk ID="28" NpcID="10083" Face="正常" Msg="你已經學會變身小水滴的技能啦，如果你能同樣得到其他兩位酋長的信任，就能學到他們的變身技能哦！" Option="我會努力的！" Cmd="s" Param="30" />
+		<Talk ID="29" NpcID="10083" Face="正常" Msg="你已經拿到水沙石啦，只要把水沙石交給我，我就會把基礎變身技能傳授給你哦！" Option="給你水沙石！" Cmd="act" Param="water_waterTaskOK"  />
+		<Talk ID="30" NpcID="10083" Face="開心" Msg="小拉姆使用技能時，會消耗它的飢餓、口渴、清潔和心情值，當拉姆狀態不好時，是無法使用變身技能的，需要補充後才能繼續使用哦！" Option="我知道了！" Cmd="none" Param="6" />
+		<Talk ID="31" NpcID="10083" Face="正常" Msg="" Option="" Cmd="none" Param="6" />
+		<Talk ID="32" NpcID="10083" Face="正常" Msg="" Option="" Cmd="none" Param="6" />
+		
+		
+		<Talk ID="40" NpcID="10083" Face="正常" Msg="你也想要進化為神力拉姆嗎，那就要通過我小小的考驗，你有這個能耐嗎！" Option="我一定行的！$沒什麼事！" Cmd="s$none" Param="41$6" />
+		<Talk ID="41" NpcID="10083" Face="正常" Msg="那就請你進入粉粉章魚女王的房間吧，只要戰勝她得到水系信物，我就把技能傳授給你哦。" Option="相信我吧！$好恐怖哦！" Cmd="act$s" Param="water_waterTaskStar$42" />
+		<Talk ID="42" NpcID="10083" Face="正常" Msg="嗯？這樣你就退縮了嗎，那我可不能教會你學習變身小水滴。我們的技能只會傳給有勇氣的小拉姆，快讓你的主人帶你回去吧，哼哼！" Option="我知道了！" Cmd="none" Param="6" />
+		
+		<Talk ID="43" NpcID="10083" Face="正常" Msg="中間那扇門背後就是粉粉章魚女王了！它霸佔了我們地盤，鑰匙被我冰封在住了，如果你夠聰明的話，快去拿吧！" Option="我一定會成功的！" Cmd="none" Param="6" />
+	</Talks>
+</Map>
+
+

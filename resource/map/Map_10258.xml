@@ -1,0 +1,19 @@
+<Map>
+	<NpcList>
+	<!-- 
+		<Npc ID="10097" Layer="depthLevel" Name="龍大俠" Ex="696" Ey="346" Cmd="s" Param="3" />
+		 -->
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go255_btn" Layer="topLevel" Ex="197" Ey="450" Cmd="alt_map" Param="255" Tips="龍王丸一號車廂" />
+		<Trigger ResName="go260_btn" Layer="controlLevel" Ex="838" Ey="344" Cmd="alt_map" Param="260" Tips="海妖巢穴" />
+	</Triggers>
+	
+	<Talks>
+		
+	</Talks>
+</Map>
+
+
+

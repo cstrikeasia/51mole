@@ -1,0 +1,22 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go260_btn" Layer="controlLevel" Ex="120" Ey="357" Cmd="alt_map" Param="260" Tips="海妖巢穴" />
+		
+<!-- 		<Trigger ResName="go_261" Layer="controlLevel" Ex="500" Ey="200" Cmd="act" Param="checkGo261" Tips="海妖巢穴第一層" /> -->
+		
+<!-- 		<Trigger ResName="swap1_mc" Layer="controlLevel" Ex="415" Ey="232" Cmd="p" Param="SirenHeartSwapPanel" Tips="" /> -->
+		<Trigger ResName="swap2_mc" Layer="controlLevel" Ex="714" Ey="424" Cmd="p" Param="HappySummerSwapPanel" Tips="" />
+		
+	</Triggers>
+	
+	<Talks>
+	
+	</Talks>
+</Map>
+
+
+

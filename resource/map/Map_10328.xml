@@ -1,0 +1,17 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_203" Layer="controlLevel" Ex="372.85" Ey="333" Cmd="alt_map" Param="203" Tips="奇可餐廳" />
+		<Trigger ResName="game_btn" Layer="controlLevel" Ex="443" Ey="473" Cmd="p" Param="KFCGamePanel" Tips="小遊戲天地" />
+		<Trigger ResName="quest_btn" Layer="controlLevel" Ex="699" Ey="435" Cmd="p" Param="KFCGameSpacePanel" Tips="大腦加油站" />
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

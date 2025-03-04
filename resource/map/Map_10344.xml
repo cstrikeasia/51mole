@@ -1,0 +1,39 @@
+<Map>
+	<NpcList>
+		<!--<Npc ID="10007" Layer="depthLevel" Name="菩提大伯" Ex="255" Ey="375" Cmd="s" Param="200" AddTaskOption="1"/>
+		<Npc ID="10045" Layer="depthLevel" Name="瑞琪" Ex="490" Ey="420" Cmd="s" Param="201" AddTaskOption="1"/>
+		  <Npc ID="10215" Layer="depthLevel" Name="火神" Ex="325" Ey="265" Cmd="s" Param="202" AddTaskOption="1" />
+		
+		<Npc ID="10206" Layer="depthLevel" Name="麼麼公主" Ex="561" Ey="402" Cmd="s" Param="100" />
+		<Npc ID="10207" Layer="depthLevel" Name="丫麗" Ex="508" Ey="425" Cmd="s" Param="101" />
+		<Npc ID="10208" Layer="depthLevel" Name="摩樂樂" Ex="490" Ey="400" Cmd="s" Param="102" />-->
+	</NpcList>
+	
+	<Triggers>
+		  <Trigger ResName="change" Layer="depthLevel" Ex="400" Ey="215" Cmd="p" Param="BlackDragonRewardsPanel"  Tips=""/>
+		<Trigger ResName="go_68" Layer="controlLevel" Ex="815" Ey="244" Cmd="alt_map" Param="68"  Tips="拉姆運動場"/>	
+	</Triggers>
+	
+	<Talks>
+<!-- 		<Talk ID="1" NpcID="10215" Face="正常" Msg="{$username}，你的元素卡牌實力夠強嗎，是否願意接受我的考驗，為本隊贏得榮耀？" Option="接受考驗$查看排名和領獎" Cmd="act$act" Param="openTollgate$openRank" /> -->
+			<Talk ID="100" NpcID="10206" Face="開心" Msg="雖然我們是本屆火神盃的冠軍得主，但是我們不能驕傲，應當繼續努力！" Option="參加火神盃" Cmd="act" Param="sport1" />
+		<Talk ID="8888" NpcID="10206" Face="開心" Msg="你已經是我們水元素隊的隊員了！" Option="領取獎杯$領取袖章$領取隊服" Cmd="act$act$act" Param="sport200$sport300$sport400" />
+		
+		<Talk ID="101" NpcID="10207" Face="正常" Msg="雖然在本屆火神盃比賽中我們獲得了第三名，但是我們並沒有氣餒。努力奮鬥，備戰下一屆火神盃！ " Option="參加火神盃" Cmd="act" Param="sport2" />
+		<Talk ID="8889" NpcID="10207" Face="正常" Msg="你已經是我們火元素隊的隊員了！" Option="領取獎杯$領取袖章$領取隊服" Cmd="act$act$act" Param="sport200$sport300$sport400" />
+		
+		<Talk ID="102" NpcID="10208" Face="正常" Msg="本屆火神盃比賽我們隊離冠軍只有一步之隔，我們要更加努力，超越自己！ " Option="參加火神盃" Cmd="act" Param="sport3" />
+		<Talk ID="8890" NpcID="10208" Face="正常" Msg="你已經是我們風元素隊的隊員了！" Option="領取獎杯$領取袖章$領取隊服" Cmd="act$act$act" Param="sport200$sport300$sport400" />
+		
+		<Talk ID="103" NpcID="10007" Face="正常" Msg="雖然我們在本屆火神盃的比賽中沒拿到第一，可歌可泣的是我們獲得了火神盃的貢獻冠軍！" Option="參加火神盃" Cmd="act" Param="sport4" />
+		<Talk ID="8891" NpcID="10209" Face="正常" Msg="你已經是我們土元素隊的隊員了！" Option="領取獎杯$領取袖章$領取隊服" Cmd="act$act$act" Param="sport200$sport300$sport400" />
+<!-- 		<Talk ID="151" NpcID="10007" Face="正常" Msg="你對生活充滿熱情，在你身邊的人都能被你的幹勁兒所帶動嗎？" Option="你知道，人不可能天天充滿熱情。$不是這樣。$對，這就是我" Cmd="s$s$s" Param="152$152$152" /> -->
+<!-- 		<Talk ID="152" NpcID="10007" Face="正常" Msg="熱情是一件好事，但是得把握好度。大伯年紀大啦，隻想靜靜的做一個美男子。" Option="……大伯，我還有事找絲爾特老師，先走了……" Cmd="act" Param="loveTestMap" /> -->
+		
+		<Talk ID="200" NpcID="10007" Face="正常" Msg="你好，小摩爾。" Option="火神盃報名" Cmd="p" Param="FireCupRegistrationPanel" />
+		<Talk ID="201" NpcID="10045" Face="正常" Msg="你好，小摩爾。" Option="領取隊服$光明騎士隊加油" Cmd="act$none" Param="choseTeamUniform$1" />
+		<Talk ID="202" NpcID="10215" Face="正常" Msg="你好，小摩爾。" Option="小摩爾比賽加油哦~$火神盃活動$隊伍徽章總榜$火神徽章每日排行榜" Cmd="none$p$p$p" Param="1$RidingDragonMainPanel$TeamBadgePanel$DayRankPanel" />
+	</Talks>
+</Map>
+
+

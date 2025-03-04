@@ -1,0 +1,16 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="explain_btn" Layer="controlLevel" Ex="210" Ey="435" Cmd="p" Param="WineshopExplainPanel" Tips="" />
+		<!--Trigger ResName="act_btn" Layer="depthLevel" Ex="353" Ey="493" Cmd="act" Param="openDibiPanel" -->
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

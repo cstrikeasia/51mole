@@ -1,0 +1,14 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_229" Layer="controlLevel" Ex="504" Ey="282" Cmd="alt_map" Param="229" Tips="超級拉姆俱樂部" />
+		<Trigger ResName="chuanchuanle" Layer="controlLevel" Ex="0" Ey="0" Cmd="null" Param="none" Tips=""/>
+		<Trigger ResName="tree" Layer="controlLevel" Ex="0" Ey="0" Cmd="null" Param="none" Tips=""/>
+		<Trigger ResName="treasule" Layer="controlLevel" Ex="0" Ey="0" Cmd="null" Param="none" Tips=""/>
+	</Triggers>
+	<Talks>
+	</Talks> 
+</Map>
+
+

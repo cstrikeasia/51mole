@@ -1,0 +1,19 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+	
+		<Trigger ResName="men_1" Layer="controlLevel" Ex="110" Ey="295" Cmd="alt_map" Param="308" Tips="榕樹樹洞" />
+		<!-- 
+		<Trigger ResName="men_2" Layer="controlLevel" Ex="865" Ey="316" Cmd="alt_map" Param="312" Tips="迷霧沼澤" />
+		 -->
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

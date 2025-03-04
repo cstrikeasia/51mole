@@ -1,0 +1,44 @@
+<Map>
+	<NpcList>
+	<!-- 
+		<Npc ID="10097" Layer="depthLevel" Name="龍大俠" Ex="696" Ey="346" Cmd="s" Param="3" />
+		 -->
+		<Npc ID="10105" Layer="depthLevel" Name="帕帕囧" Ex="690" Ey="344" Cmd="s" Param="10" />
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="500" Ey="326" Cmd="p" Param="SummerMainPanel" Tips="" />
+		
+		<Trigger ResName="btn_circle" Layer="controlLevel" Ex="744" Ey="331" Cmd="act" Param="openCircleGame" Tips="街邊套圈圈" />
+		<Trigger ResName="btn_snail2" Layer="depthLevel" Ex="621" Ey="366" Cmd="act" Param="exePrize" Tips="" />
+		<Trigger ResName="wheel_btn" Layer="depthLevel" Ex="324" Ey="335" Cmd="p" Param="OctopusWheelPanel" />
+		
+		<Trigger ResName="wheel_mc" Layer="controlLevel" Ex="232" Ey="277" Cmd="act" Param="WheelSeizePoint" />
+		<Trigger ResName="shark_mc" Layer="controlLevel" Ex="129" Ey="186" Cmd="act" Param="teaseShark" />
+		<Trigger ResName="btn_intro" Layer="depthLevel" Ex="487" Ey="362" Cmd="pm" Param="resource/task/seaPark/surgeIntro.swf" />
+		
+		<Trigger ResName="sit_1" Layer="controlLevel" Ex="338" Ey="433" Cmd="sit" Param="6" Tips="" />
+		<Trigger ResName="sit_2" Layer="controlLevel" Ex="403" Ey="426" Cmd="sit" Param="2" Tips="" />
+		<Trigger ResName="sit_3" Layer="controlLevel" Ex="258" Ey="462" Cmd="sit" Param="6" Tips="" />
+		<Trigger ResName="sit_4" Layer="controlLevel" Ex="314" Ey="460" Cmd="sit" Param="2" Tips="" />
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="10" NpcID="10105" Face="正常" Option="你是誰？" Cmd="s" Param="11" AddTaskOption="1" Msg="海底冰泉樂園正在檢修，現在還不能進去喲，哦嚯嚯。 " />
+		<Talk ID="11" NpcID="10105" Face="正常" Option="額= =！" Cmd="s" Param="12" Msg="我嘛！是冰泉管的管理員——海底一支花——帕帕囧！！記住我了吧！？" />
+		<Talk ID="12" NpcID="10105" Face="正常" Option="恩我一定來。" Cmd="none" Param="2" Msg="下週這裡要舉辦冰泉寶貝時尚秀。我看您身資婀娜，眉清目秀，下週可不要錯過哦！" />
+		
+		<Talk ID="13" NpcID="10105" Face="正常" Option="" Cmd="s" Param="2" Msg="" />
+		
+		<Talk ID="2" NpcID="10097" Face="正常" Option="" Cmd="s" Param="2" AddTaskOption="1" Msg="" />
+		<Talk ID="3" NpcID="10097" Face="正常" Option="" Cmd="s" Param="2" AddTaskOption="1" Msg="" />
+		<Talk ID="4" NpcID="10097" Face="正常" Option="" Cmd="s" Param="2" AddTaskOption="1" Msg="" />
+		<Talk ID="5" NpcID="10097" Face="正常" Option="" Cmd="s" Param="2" AddTaskOption="1" Msg="" />
+		<Talk ID="6" NpcID="10097" Face="正常" Option="" Cmd="s" Param="2" AddTaskOption="1" Msg="" />
+		<Talk ID="7" NpcID="10097" Face="正常" Option="" Cmd="s" Param="2" AddTaskOption="1" Msg="" />
+		<Talk ID="8" NpcID="10097" Face="正常" Option="" Cmd="s" Param="2" AddTaskOption="1" Msg="" />
+		
+	</Talks>
+</Map>
+
+
+

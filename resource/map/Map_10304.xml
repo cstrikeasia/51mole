@@ -1,0 +1,18 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_303" Layer="buttonLevel" Ex="83" Ey="368" Cmd="alt_map" Param="303" Tips="荊棘叢林3" />
+		
+		<Trigger ResName="go_305" Layer="controlLevel" Ex="550" Ey="275" Cmd="alt_map" Param="305" Tips="毛毛怪部落" />
+	</Triggers>
+	
+	<Talks>
+	
+	</Talks>
+</Map>
+
+
+

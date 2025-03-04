@@ -1,0 +1,24 @@
+<Map>
+	<NpcList>
+		<Npc ID="10054" Layer="controlLevel" Name="待女" Ex="512" Ey="301" Cmd="s" Param="1" />
+	</NpcList>
+	
+	<Triggers>
+	
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10054" Face="正常" Msg="公主，你快醒醒呀~公主……" Option="這是誰的頭髮這麼長！$長髮迷宮小遊戲$尋找翡翠剪刀$下次再說" Cmd="s$s$s$none" Param="2$5$6" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10054" Face="正常" Msg="她是美麗的長髮公主，中了壞巫婆的詛咒長睡不醒，只有王子才能救醒她。可是最近老是有個黑影騷擾我們的公主。" Option="黑影？" Cmd="s" Param="3" />
+		<Talk ID="3" NpcID="10054" Face="正常" Msg="是的，在公主沒有等到王子之前絕不能要黑影靠近公主，不然會給公主帶來不幸。" Option="那怎麼阻止黑影呢？" Cmd="s" Param="4" />
+		<Talk ID="4" NpcID="10054" Face="正常" Msg="我將公主的長髮挽成了一個迷宮，善良的小摩爾幫幫美麗的公主吧！決不能讓黑影靠近公主。" Option="好的，我一定會阻止他的。" Cmd="none" Param="" />
+		
+		<Talk ID="5" NpcID="10054" Face="正常" Msg="為了阻止騷擾公主的黑影，我將公主的長髮挽成了一個迷宮，善良的小摩爾幫幫美麗的公主吧，決不能讓黑影靠近公主。公主一定要等到真正的王子來營救才能獲得幸福。" Option="好的，我一定會幫助公主的！" Cmd="g" Param="BeautyMazeGame" />
+		<Talk ID="6" NpcID="10054" Face="正常" Msg="頭髮再這樣長下去會充滿整個臥室的，麼麼公主有一把鋒利的翡翠剪刀，幫我找一下吧！" Option="好的，我這就去麼麼公主的臥室找找看。" Cmd="act" Param="openGame110" />
+		
+		<Talk ID="7" NpcID="10054" Face="正常" Msg="太謝謝你了，等公主醒過來她一定會報答你的。" Option="不用謝！" Cmd="none" Param="" />
+	</Talks>
+</Map>
+
+
+

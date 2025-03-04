@@ -1,0 +1,16 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+	
+		<Trigger ResName="mapBtn_89" Layer="buttonLevel" Ex="849" Ey="322" Cmd="alt_map" Param="308" Tips="榕樹樹洞" />
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

@@ -1,0 +1,14 @@
+<Map>
+	 <NpcList>
+	</NpcList>
+	<Triggers>
+			<Trigger ResName="go_375" Layer="depthLevel" Ex="430" Ey="110" Cmd="alt_map" Param="375" Tips="灰燼深淵"/>
+			<Trigger ResName="go_377" Layer="depthLevel" Ex="836" Ey="316" Cmd="alt_map" Param="377" Tips="沙之迷穴"/>
+	</Triggers>
+
+	<Talks>
+	</Talks>
+</Map>
+
+
+

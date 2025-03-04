@@ -1,0 +1,41 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	
+	<Triggers>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10235" Face="正常" Msg="呼……呼……" Option="好啊，你在偷懶！" Cmd="s" Param="2" />
+		<Talk ID="2" NpcID="10235" Face="正常" Msg="對不起！長官！嗯？你？你是誰？" Option="嗯，哈哈，我是坐時光機來的" Cmd="s" Param="3" />
+		<Talk ID="3" NpcID="10235" Face="正常" Msg="時光機？你是未來的人嗎？" Option="是的，摩爾王是不是……" Cmd="s" Param="4" />
+		<Talk ID="4" NpcID="10235" Face="正常" Msg="啊？好厲害！未來到底是怎麼樣的？怎麼才能去未來？" Option="這個……古樹那邊有個傳送點……" Cmd="s" Param="5" />
+		<Talk ID="5" NpcID="10235" Face="正常" Msg="哦？好想去！麻煩你幫我站崗！我去未來看看就回來！" Option="什麼？啊？別……" Cmd="act" Param="moleKingStep40" />
+		
+		<Talk ID="6" NpcID="10235" Face="正常" Msg="哈哈哈，未來真好玩！" Option="那你可以告訴我一些事情了吧？" Cmd="s" Param="7" />
+		<Talk ID="7" NpcID="10235" Face="正常" Msg="嗯！你說吧，什麼事？" Option="就是摩爾王送給麼麼公主的禮物" Cmd="s" Param="8" />
+		<Talk ID="8" NpcID="10235" Face="正常" Msg="哦！你說這個啊！這樣吧，明天你繼續來幫我站崗，我就告訴你！" Option="啊？你！好吧" Cmd="act" Param="moleKingStep41" />
+		
+		<Talk ID="9" NpcID="10235" Face="正常" Msg="你果然來了，繼續替我站崗哈" Option="……" Cmd="act" Param="moleKingStep50" />
+		<Talk ID="10" NpcID="10235" Face="正常" Msg="我回來了！" Option="那你可以告訴摩爾王的禮物了吧！" Cmd="s" Param="11" />
+		<Talk ID="11" NpcID="10235" Face="正常" Msg="嗯，就在我身上呢！" Option="給我吧！我準備給麼麼一個驚喜！" Cmd="act" Param="moleKingStep51" />
+		
+		<Talk ID="12" NpcID="10235" Face="正常" Msg="呀！！！摩爾王的禮物……不見了！！！" Option="什麼？不見了？丟哪去了？" Cmd="s" Param="13" />
+		<Talk ID="13" NpcID="10235" Face="正常" Msg="我也不知道，之前還在的，這可怎麼辦，我怎麼去面對麼麼公主啊！怎麼對得起摩爾王……" Option="別急，別急，你去過哪些地方？" Cmd="s" Param="14" />
+		<Talk ID="14" NpcID="10235" Face="正常" Msg="嗯，昨天去和一個叫土靈的老頭下過棋，今天……" Option="今天呢？" Cmd="s" Param="15" />
+		<Talk ID="15" NpcID="10235" Face="正常" Msg="這不能說，說了，我的一世英明就毀於一旦了！" Option="你還英明？" Cmd="s" Param="16" />
+		<Talk ID="16" NpcID="10235" Face="正常" Msg="這……幫我去找找吧，土靈長老就在黑森林的森林訓練場，拜托了！" Option="好吧，我先去找土靈長老問問情況吧！" Cmd="act" Param="moleKingStep52" />
+		
+		
+		<Talk ID="17" NpcID="10235" Face="正常" Msg="找到了？" Option="是啊！在溫泉！" Cmd="s" Param="18" />
+		<Talk ID="18" NpcID="10235" Face="正常" Msg="啊？你都知道了！哎，我想去見見卡羅拉，可是沒找到，但想到她最喜歡的就是溫泉了，所以……可是……" Option="從實招來！" Cmd="act" Param="moleKingStep70" />
+		<Talk ID="19" NpcID="10235" Face="正常" Msg="謝謝你了，對了，你過幾天多來看看我，多幫我站站崗吧！" Option="又站崗！" Cmd="act" Param="moleKingOver" />
+		
+		<Talk ID="20" NpcID="10235" Face="正常" Msg="你來了？快幫我站崗！" Option="……$不行！" Cmd="act$none" Param="mokeKingTask2Event$0" />
+		<Talk ID="21" NpcID="10235" Face="正常" Msg="謝謝你哈，明天繼續幫我站崗！" Option="你怎麼可以這麼懶！" Cmd="act" Param="task2Over" />
+		
+		<Talk ID="22" NpcID="10235" Face="正常" Msg="哦！你說這個啊！這樣吧，明天你繼續來幫我站崗，我就告訴你！" Option="啊？你！好吧" Cmd="none" Param="0" />
+	</Talks>
+</Map>
+
+

@@ -1,0 +1,15 @@
+<Map>
+	 <NpcList>
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_382" Layer="depthLevel" Ex="221" Ey="416" Cmd="alt_map" Param="382" Tips="雨曇秘境"/>
+		<Trigger ResName="go_384" Layer="depthLevel" Ex="742" Ey="422" Cmd="alt_map" Param="384" Tips="國家花園"/>
+		<Trigger ResName="seat_0" Layer="controlLevel" Ex="411" Ey="259" Cmd="sit" Param="3$seat" Data="0" Tips="加入遊戲" />
+		<Trigger ResName="seat_1" Layer="controlLevel" Ex="475" Ey="285" Cmd="sit" Param="3$seat" Data="1" Tips="加入遊戲" />
+	</Triggers>
+
+	<Talks>
+	</Talks>
+</Map>
+
+

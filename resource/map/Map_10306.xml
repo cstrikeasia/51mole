@@ -1,0 +1,17 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="goMapBtn1" Layer="controlLevel" Ex="148" Ey="250" Cmd="alt_map" Param="305" Tips="毛毛怪部落" />
+		<Trigger ResName="gotoMap_mc" Layer="controlLevel" Ex="524" Ey="323" Cmd="alt_map" Param="307" Tips="千年榕樹外" />
+		
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

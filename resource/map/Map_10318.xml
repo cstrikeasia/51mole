@@ -1,0 +1,31 @@
+<Map>
+	<NpcList>
+		<!-- 
+		<Npc ID="10107" Layer="depthLevel" Name="寶羅" Ex="390" Ey="283" Cmd="s" Param="1" />
+		 -->
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="intro_btn" Layer="depthLevel" Ex="624" Ey="309" Cmd="pm" Param="resource/newTask/task10005/movie_10005_1.swf" Tips="" />
+		
+		<Trigger ResName="go_317" Layer="controlLevel" Ex="813" Ey="408" Cmd="alt_map" Param="317" Tips="仙堡前院" />
+		<Trigger ResName="go_319" Layer="controlLevel" Ex="236" Ey="271" Cmd="alt_map" Param="319" Tips="仙堡後庭" />
+		
+		<Trigger ResName="sit_1" Layer="controlLevel" Ex="485" Ey="160" Cmd="sit" Param="0" Tips="" />
+		<Trigger ResName="sit_2" Layer="controlLevel" Ex="393" Ey="177" Cmd="sit" Param="0" Tips="" />
+		<Trigger ResName="sit_3" Layer="controlLevel" Ex="575" Ey="176" Cmd="sit" Param="0" Tips="" />
+		
+		<Trigger ResName="swap_btn" Layer="controlLevel" Ex="600" Ey="311" Cmd="p" Param="IrisWeddingSwap2Panel" Tips="" />
+		<Trigger ResName="iris_btn" Layer="controlLevel" Ex="258" Ey="527" Cmd="p" Param="IrisWeddingPanel" Tips="" />
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10107" Face="正常" Msg="我將成為世界上最幸福的海妖！" Option="祝福你！" Cmd="none" Param="2" AddTaskOption="1" />
+		<!-- 
+		<Talk ID="10" NpcID="10107" Face="正常" Msg="你好象還沒有幫我做什麼呀！隻要為婚禮出一份力，都會送給你愛心別針的！" Option="哦！我再去試試！" Cmd="act" Param="openIris" />
+		<Talk ID="11" NpcID="10107" Face="正常" Msg="感謝你為我和籮絲的婚禮所做的貢獻，我先贈予你一套晚禮服。記得婚禮當天穿著晚禮服參加婚禮哦！" Option="謝謝保羅王子！" Cmd="act" Param="OverTask517" />
+		-->
+	</Talks>
+</Map>
+
+

@@ -1,0 +1,26 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	
+	<Triggers>
+		<!-- 
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="337" Ey="437" Cmd="p" Param="SummerMainPanel" Tips="" />
+		-->
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10090" Face="正常" Msg="庫拉被擊退了，我們趕緊破除冰晶石，去救蘿絲吧！咦？這個封印好像跟尼爾拉塔的封印很像，我知道怎麼解除！" Option="那我們就快點救人魚公主吧！" Cmd="act" Param="openGame3" />
+		<Talk ID="2" NpcID="10095" Face="正常" Msg="先不用管我，庫拉好像正在醞釀一個很大的陰謀，我們要快點去海妖國阻止他！要快點，我真怕晚了海妖國也將重蹈人魚國的覆轍！" Option="嗯，我們這就出發！" Cmd="act" Param="playGame3Movie"  />
+		<Talk ID="3" NpcID="10098" Face="開心" Msg="啊！是你救了我呀，萬分感激！" Option="你是……?" Cmd="s" Param="4"  />
+		<Talk ID="4" NpcID="10098" Face="開心" Msg="既然你救了我，我們就做朋友吧！" Option="（⊙_⊙）!!我不認識你呀！" Cmd="s" Param="5"  />
+		<Talk ID="5" NpcID="10098" Face="悲傷" Msg="不要這麼絕情嘛，人家一個人玩好寂寞！" Option="（= _=）好吧！" Cmd="s" Param="6"  />
+		<Talk ID="6" NpcID="10098" Face="開心" Msg="你也有紅鼻子，真好玩~ 咻咻" Option="你知道列車零件掉落在哪嗎？~" Cmd="s" Param="7"  />
+		<Talk ID="7" NpcID="10098" Face="開心" Msg="我這有一堆水底樂園廣告宣傳單，你幫我貼好我就告訴你。" Option="（=_= 真會利用人）….好吧！" Cmd="act" Param="SummerActGame2"  />
+		
+		<Talk ID="8" NpcID="10098" Face="開心" Msg="謝謝{$username}，我的任務總算完成了！！開心~咻咻！" Option="（^.^）該告訴我們零件所在了吧！" Cmd="s" Param="9"  />
+		<Talk ID="9" NpcID="10098" Face="開心" Msg="好呀，但我只告訴，這裡有三個輪子！" Option="又給我出難題….." Cmd="act" Param="showWheel"  />
+		<Talk ID="10" NpcID="10098" Face="開心" Msg="紅鼻子，真聰明！趕快拿給列車長龍大俠吧！" Option="好，我這就去找大龍蝦！" Cmd="act" Param="goMap255"  />
+
+		<Talk ID="99" NpcID="10095" Face="正常" Msg="" Option="" Cmd="none" Param="1" AddTaskOption="1" />
+	</Talks>
+</Map>

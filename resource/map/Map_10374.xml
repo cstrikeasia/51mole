@@ -1,0 +1,14 @@
+<Map>
+	 <NpcList>
+	</NpcList>
+	<Triggers>
+			<Trigger ResName="go_373" Layer="depthLevel" Ex="227" Ey="200" Cmd="alt_map" Param="373" Tips="信奉廣場"/>
+			<Trigger ResName="go_376" Layer="depthLevel" Ex="816" Ey="431" Cmd="alt_map" Param="376" Tips="黑岩旋梯"/>
+	</Triggers>
+
+	<Talks>
+	</Talks>
+</Map>
+
+
+

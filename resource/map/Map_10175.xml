@@ -1,0 +1,21 @@
+<Map>
+	<NpcList>
+<!-- 		<Npc ID="10001" Layer="topLevel" Name="拉仔" Ex="700" Ey="450" Cmd="s" Param="1" /> -->
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_38" Layer="controlLevel" Ex="652" Ey="312" Cmd="alt_map" Param="38" Tips="回到摩爾足球場" />
+		<Trigger ResName="rabbit" Layer="controlLevel" Ex="420" Ey="252" Cmd="p" Param="HitRiceCakeStartPanel"  Tips=""/> 
+		<Trigger ResName="tree" Layer="controlLevel" Ex="257" Ey="398" Cmd="p" Param="CutTreeEnterGamePanel"  Tips=""/> 
+	</Triggers>
+		
+	
+	<Talks>
+<!-- 		<Talk ID="1" NpcID="10001" Face="正常" Msg="麼麼公主好像有心事呢，小摩爾去看看吧。" Option="馬上去看看$稍後再去" Cmd="p$none" Param="TaskFilesPanel$null"/> -->
+	
+	
+	</Talks>
+</Map>
+
+
+

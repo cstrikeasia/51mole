@@ -1,0 +1,18 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+	
+		<Trigger ResName="mapBtn_94" Layer="controlLevel" Ex="45" Ey="237" Cmd="alt_map" Param="312" Tips="迷霧沼澤" />
+		<Trigger ResName="door_96" Layer="controlLevel" Ex="252" Ey="193" Cmd="alt_map" Param="314" Tips="沼澤木屋" />
+		<Trigger ResName="mapBtn_97" Layer="controlLevel" Ex="846" Ey="204" Cmd="alt_map" Param="315" Tips="古城堡遺跡" />
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

@@ -1,0 +1,13 @@
+<Map>
+	 <NpcList>
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_380" Layer="depthLevel" Ex="275" Ey="407" Cmd="alt_map" Param="380" Tips="目靈祭台"/>
+	</Triggers>
+
+	<Talks>
+	</Talks>
+</Map>
+
+
+

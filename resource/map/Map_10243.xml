@@ -1,0 +1,19 @@
+<Map>
+	<NpcList>
+		<Npc ID="10064" Layer="depthLevel" Name="灰姑娘" Ex="759" Ey="375" Cmd="s" Param="1" />
+	</NpcList>
+	
+	<Triggers>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10064" Face="正常" Msg="王子和姐姐就要結婚了……他把我忘了嗎？為什麼？" Option="了解灰姑娘的故事$裝扮灰姑娘$參加水晶慶典舞會$沒什麼事" Cmd="act$act$act$none" Param="grayGirl_PlayGirlMovie$grayGirl_JoinFacelifeGame$grayGirl_SwitchToMap18$none" AddTaskOption="1" />
+		
+		<Talk ID="4" NpcID="10064" Face="正常" Msg="那天王子來我家，我還以為他會記得我……現在連水晶鞋也破了。" Option="不能讓王子娶你姐姐" Cmd="s" Param="5"  />
+		<Talk ID="5" NpcID="10064" Face="正常" Msg="除非把水晶鞋修復好，讓王子認出我，可誰願意幫我呢？" Option="我願意幫你！" Cmd="s" Param="6"  />
+		<Talk ID="6" NpcID="10064" Face="正常" Msg="真的嗎？那你在愛心教堂玩拼合水晶鞋遊戲來幫助我可以嗎？" Option="好的，沒問題！" Cmd="none" Param="6" />
+	</Talks>
+</Map>
+
+
+

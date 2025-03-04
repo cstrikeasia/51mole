@@ -1,0 +1,18 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+	
+		<Trigger ResName="mapBtn_313" Layer="controlLevel" Ex="196" Ey="400" Cmd="alt_map" Param="313" Tips="沼澤東岸" />
+		<Trigger ResName="door99_mc" Layer="controlLevel" Ex="672" Ey="442" Cmd="alt_map" Param="316" Tips="摩爾王寶藏" />
+		<Trigger ResName="door98_mc" Layer="controlLevel" Ex="592" Ey="356" Cmd="alt_map" Param="316" Tips="摩爾王寶藏" />
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

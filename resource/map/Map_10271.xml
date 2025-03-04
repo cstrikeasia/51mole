@@ -1,0 +1,28 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_151" Layer="controlLevel" Ex="240" Ey="240" Cmd="alt_map" Param="151" Tips="藤蔓森林" />
+		<Trigger ResName="go_272" Layer="controlLevel" Ex="785" Ey="291" Cmd="alt_map" Param="272" Tips="實戰訓練營" />
+		
+		<Trigger ResName="cloth_mc" Layer="controlLevel" Ex="167" Ey="350" Cmd="p" Param="SirenKnightGetClothPanel" Tips="海妖騎士訓練服" />
+		<Trigger ResName="train_mc" Layer="controlLevel" Ex="167" Ey="350" Cmd="p" Param="SirenKnightTrainPanel" Tips="技巧訓練營" />
+		<Trigger ResName="show_mc" Layer="depthLevel" Ex="682" Ey="400" Cmd="p" Param="SirenKnightAwardShowPanel" Tips="海妖冒險訓練獎勵展示" />
+		
+		<Trigger ResName="agile_mc" Layer="topLevel" Ex="247" Ey="416" Cmd="act" Param="openAgile" Tips="" />
+		<Trigger ResName="fly_mc" Layer="depthLevel" Ex="790" Ey="370" Cmd="act" Param="openFly" Tips="" />
+		
+		<Trigger ResName="shuriken_mc" Layer="controlLevel" Ex="620" Ey="260" Cmd="act" Param="openShuriken" Tips="手裡劍訓練" />
+		<Trigger ResName="bow_mc" Layer="controlLevel" Ex="418" Ey="260" Cmd="act" Param="openBow" Tips="弓箭訓練" />
+		
+		<Trigger ResName="siren_mc" Layer="topLevel" Ex="770" Ey="390" Cmd="act" Param="openSiren" Tips="海妖冒險訓練" />
+	</Triggers>
+	
+	<Talks>
+	
+	</Talks>
+</Map>
+
+

@@ -1,0 +1,26 @@
+<Map>
+	<NpcList>
+		<Npc ID="10066" Layer="depthLevel" Name="醜小鴨" Ex="754" Ey="476" Cmd="s" Param="1" />
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10066" Face="正常" Msg="都怪我，要不是我和媽媽吵架，媽媽也不會失蹤了。。。。。。" Option="了解醜小鴨的故事$帮醜小鴨做翅膀$訓練醜小鴨飛翔$沒什麼事" Cmd="s$act$act$none" Param="23$duck_openPanel$duck_openGame$"  />
+		
+		<Talk ID="23" NpcID="10066" Face="正常" Msg="從小，我就是一隻醜小鴨，但我卻有個漂亮又會飛的媽媽，大傢都笑話我！" Option="啊？" Cmd="s" Param="24" />
+		<Talk ID="24" NpcID="10066" Face="正常" Msg="媽媽說，等我長大了也會和她一樣，可我已經長大了，卻根本沒變！我和媽媽大吵一架後離傢齣走了。" Option="那後來呢？" Cmd="s" Param="25" />
+		<Talk ID="25" NpcID="10066" Face="正常" Msg="後來我後悔了，等我迴去，媽媽卻不見了，隻髮現了她的日記本……" Option="說了些什麼呢？" Cmd="act" Param="duck_openDiary"  />
+		<Talk ID="26" NpcID="10066" Face="正常" Msg="原來我並不是媽媽的親生孩子，媽媽還這麼愛我，我對不起她……" Option="我們找哈哈魔法師打聽你媽媽的下落！" Cmd="avy" Param="duck_duckMovie"  />
+		<Talk ID="27" NpcID="10066" Face="正常" Msg="媽媽竟然為了我，冒險去找飛行石！都怪我，我不該說什麼我也想飛……是我害了媽媽！" Option="醜小鴨你別傷心！" Cmd="s" Param="28"  />
+		<Talk ID="28" NpcID="10066" Face="正常" Msg="媽媽把所有的好東西都留給我，為了我付齣一切，我卻如此對她，我真是個壞孩子……" Option="所以你更要為了媽媽好好活下去！" Cmd="s" Param="29"  />
+		<Talk ID="29" NpcID="10066" Face="正常" Msg="不行！我得去把媽媽給找迴來！" Option="懸崖那邊很危險，怎麼辦呢？" Cmd="s" Param="30"  />
+		<Talk ID="30" NpcID="10066" Face="正常" Msg="隻要我能飛起來就可以去找媽媽了！小摩爾你能帮我一起造一對翅膀嗎？" Option="造翅膀！我們可以嗎？" Cmd="s" Param="31"  />
+		<Talk ID="31" NpcID="10066" Face="正常" Msg="為了最愛我的媽媽，一定可以！小摩爾可以帮我準備一些材料來製造飛機嗎？" Option="好，我這就去！" Cmd="none" Param="6"  />
+		
+	</Talks>
+</Map>

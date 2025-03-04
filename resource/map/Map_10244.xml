@@ -1,0 +1,15 @@
+<Map>
+	<NpcList>
+		<Npc ID="10026" Layer="controlLevel" Name="克勞" Ex="770" Ey="415" Cmd="s" Param="1" />
+		<Npc ID="10064" Layer="depthLevel" Name="灰姑娘" Ex="496" Ey="264" Cmd="s" Param="10" />
+	</NpcList>
+	
+	<Triggers>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10026" Face="正常" Msg="超級拉姆還有很多神奇的能力等待我們去開發呢！" Option="沒什麽事" Cmd="none" Param="6" />
+		
+		<Talk ID="10" NpcID="10064" Face="正常" Msg="每天的19:00-20:00可以來參加我們舉辦的舞會，每輪的第一名可以獲得多個慶典勳章呢！！" Option="我知道啦！" Cmd="none" Param="6" />
+	</Talks>
+</Map>

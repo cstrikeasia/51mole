@@ -1,0 +1,27 @@
+<Map>
+	<NpcList>
+		<Npc ID="10107" Layer="depthLevel" Name="寶羅" Ex="390" Ey="283" Cmd="s" Param="1" />
+	</NpcList>
+	
+	<Triggers>
+	
+	<!-- 
+		<Trigger ResName="go_151" Layer="controlLevel" Ex="240" Ey="240" Cmd="alt_map" Param="151" Tips="藤蔓森林" />
+		 -->
+		<Trigger ResName="go_271" Layer="controlLevel" Ex="142" Ey="399" Cmd="alt_map" Param="271" Tips="騎士訓練營" />
+		
+		<Trigger ResName="defend_mc" Layer="controlLevel" Ex="615" Ey="248" Cmd="act" Param="open_SirenCombatDefendPanel" Tips="" />
+		<Trigger ResName="sailed_mc" Layer="topLevel" Ex="245" Ey="392" Cmd="act" Param="open_SailedGame" Tips="" />
+		
+		<Trigger ResName="swap_mc" Layer="controlLevel" Ex="744" Ey="309" Cmd="p" Param="SirenCombatTrainPanel" Tips="" />
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10107" Face="正常" Msg="我將成為世界上最幸福的海妖！" Option="祝福你！" Cmd="none" Param="2" AddTaskOption="1" />
+		
+		<Talk ID="10" NpcID="10107" Face="正常" Msg="你好象還沒有幫我做什麼呀！只要為婚禮出一份力，都會送給你愛心別針的！" Option="哦！我再去試試！" Cmd="act" Param="openIris" />
+		<Talk ID="11" NpcID="10107" Face="正常" Msg="感謝你為我和籮絲的婚禮所做的貢獻，我先贈予你一套晚禮服。記得婚禮當天穿著晚禮服參加婚禮哦！" Option="謝謝保羅王子！" Cmd="act" Param="OverTask517" />
+	</Talks>
+</Map>
+
+

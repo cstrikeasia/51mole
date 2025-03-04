@@ -1,0 +1,32 @@
+<Map>
+	<NpcList>
+		<Npc ID="10202" Layer="depthLevel" Name="零零" Ex="412" Ey="412" Cmd="s" Param="1" />
+		
+		<Npc ID="10206" Layer="depthLevel" Name="麼麼公主" Ex="561" Ey="402" Cmd="s" Param="100" />
+		<Npc ID="10207" Layer="depthLevel" Name="丫麗" Ex="508" Ey="425" Cmd="s" Param="101" />
+		<Npc ID="10208" Layer="depthLevel" Name="摩樂樂" Ex="592" Ey="379" Cmd="s" Param="102" />
+		<Npc ID="10209" Layer="depthLevel" Name="菩提大伯" Ex="676" Ey="367" Cmd="s" Param="103" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_47" Layer="controlLevel" Ex="478" Ey="478" Cmd="alt_map" Param="47" Tips="粒粒小廣場" />
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10202" Face="正常" Msg="嗨,小摩爾，馬戲團表演正式開始了，精彩不容錯過~" Option="沒什麼事！" Cmd="act$p$none" Param="2" AddTaskOption="1" />
+		
+		<Talk ID="100" NpcID="10206" Face="開心" Msg="我們是充滿勇氣的激流隊，我們的口號是“浩浩盪盪，勇奪第一！”我們不畏懼任何對手，超越自己是比賽的目標！先來決定主場吧~" Option="參加火神盃" Cmd="act" Param="sport1" />
+		<Talk ID="8888" NpcID="10206" Face="開心" Msg="你已經是我們水元素隊的隊員了！" Option="我要交紋章$領取袖章$領取隊服" Cmd="act$act$act" Param="sport2$sport3$sport4" />
+		
+		<Talk ID="101" NpcID="10207" Face="正常" Msg="我們是代表熱情的火焰隊，我們的口號是“激情似火，冠軍歸我！”我們的主場一定會是最熱火朝天的一個~火元素的各位，都來給火焰隊加油哦！ " Option="參加火神盃" Cmd="act" Param="sport1" />
+		<Talk ID="8889" NpcID="10207" Face="正常" Msg="你已經是我們火元素隊的隊員了！" Option="我要交紋章$領取袖章$領取隊服" Cmd="act$act$act" Param="sport2$sport3$sport4" />
+		
+		<Talk ID="102" NpcID="10208" Face="正常" Msg="我們是風馳電掣的疾風隊，我們的口號是“八面威風，必勝無疑！”這場比賽的起跑線就在主場，我們疾風隊可不能輸在起跑線上呀！ " Option="參加火神盃" Cmd="act" Param="sport1" />
+		<Talk ID="8890" NpcID="10208" Face="正常" Msg="你已經是我們風元素隊的隊員了！" Option="我要交紋章$領取袖章$領取隊服" Cmd="act$act$act" Param="sport2$sport3$sport4" />
+		
+		<Talk ID="103" NpcID="10209" Face="正常" Msg="我們是永不言棄的大地隊，我們的口號是“希望之隊，冠軍之隊！”低調不代表弱小，選擇主場隻是一個開始，我們要證明自己的功底！" Option="參加火神盃" Cmd="act" Param="sport1" />
+		<Talk ID="8891" NpcID="10209" Face="正常" Msg="你已經是我們土元素隊的隊員了！" Option="我要交紋章$領取袖章$領取隊服" Cmd="act$act$act" Param="sport2$sport3$sport4" />
+	</Talks>
+</Map>
+
+

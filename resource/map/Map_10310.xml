@@ -1,0 +1,18 @@
+<Map>
+	<NpcList>
+	
+	</NpcList>
+	
+	<Triggers>
+	
+		<Trigger ResName="mapBtn_88" Layer="controlLevel" Ex="146" Ey="400" Cmd="alt_map" Param="307" Tips="千年榕樹外" />
+		
+		
+	</Triggers>
+	
+	<Talks>
+	</Talks>
+</Map>
+
+
+

@@ -1,0 +1,20 @@
+<Map>
+	<NpcList>
+		<!--
+		<Npc ID="10002" Layer="controlLevel" Name="麼麼公主" Ex="358" Ey="460" Cmd="s" Param="1" />
+		-->
+	</NpcList>
+	
+	<Triggers>
+		<!--
+		<Trigger ResName="mermaid_mc" Layer="depthLevel" Ex="450" Ey="148" Cmd="p" Param="MermaidAndPrincePanel" Tips="美人魚與王子的故事" /> 
+		-->
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10092" Face="正常" Msg="嘻嘻！你身上沒有絲絲刮刮樂哦！絲姐姐在淘淘樂街的服裝大促銷已經結束囉！刮刮樂已經拿不到了啊！期待下一次大促銷吧！" Option="我知道了" Cmd="none" Param="6" AddTaskOption="1" />
+	</Talks>
+</Map>
+
+
+

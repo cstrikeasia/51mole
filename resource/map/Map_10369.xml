@@ -1,0 +1,14 @@
+<Map>
+	 <NpcList>
+	 	
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_365" Layer="depthLevel" Ex="155" Ey="204" Cmd="alt_map" Param="365" Tips="吉普豆村"/>
+		<Trigger ResName="go_366" Layer="depthLevel" Ex="857" Ey="38" Cmd="alt_map" Param="366" Tips="世界樹"/>
+		<Trigger ResName="go_370" Layer="depthLevel" Ex="542" Ey="338" Cmd="alt_map" Param="370" Tips="時光井底"/>
+	</Triggers>
+
+</Map>
+
+
+

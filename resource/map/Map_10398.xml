@@ -1,0 +1,13 @@
+<Map>
+	<NpcList>
+		<Npc ID="10299" Layer="depthLevel" Name="花荊藤" Ex="424" Ey="311"  Cmd="act" Param="goFight" />
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_397" Layer="controlLevel" Ex="132" Ey="397" Cmd="alt_map" Param="397"  Tips="鏡花水月"/>  
+		<Trigger ResName="go_400" Layer="controlLevel" Ex="655" Ey="228" Cmd="alt_map" Param="400"  Tips="摩靈宮殿"/>  
+	</Triggers>
+	<Talks>
+	</Talks> 
+</Map>
+
+

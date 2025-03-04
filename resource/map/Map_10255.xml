@@ -1,0 +1,26 @@
+<Map>
+	<NpcList>
+		<Npc ID="10097" Layer="depthLevel" Name="龍大俠" Ex="696" Ey="346" Cmd="s" Param="431" Data="4"/>
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="getOff" Layer="controlLevel" Ex="684" Ey="325" Cmd="act" Param="getOff" Tips="下車" /> 
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10097" Face="正常" Msg="紅鼻子的朋友，多虧了你們， “龍王丸號”的排水總算疏通了！" Option=" 修水管是小事啦！" Cmd="s" Param="2" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10097" Face="正常" Msg="額(X. X)……剛才老夫去檢查了一下，我的寶貝機車頭出故障了，得等我修好，才能再次啟動！" Option="要我幫忙嗎？我可修過飛船呢！" Cmd="s" Param="3" AddTaskOption="1" />
+		<Talk ID="3" NpcID="10097" Face="正常" Msg="老夫的寶貝，老夫自己修！你們年輕人也不用閒著，我這可少了不少機車零件吧，你們想辦法幫我弄點來！" Option="機車零件？交通署那應該能搞到！" Cmd="act" Param="goGame4" AddTaskOption="1" />
+		
+		<Talk ID="4" NpcID="10097" Face="正常" Msg="為了迎接7月28日的夏日盛典，本車現免費接送遊客。" Option="選擇站點" Cmd="act" Param="Ride" AddTaskOption="1" />
+		
+		<Talk ID="11" NpcID="10097" Face="正常" Cmd="none" Param="1" AddTaskOption="1" Option="" Msg=""  />
+		
+		<Talk ID="431" NpcID="10097" Face="正常" Msg="為了迎接7月28日的夏日盛典，本車現免費接送遊客。" Option="選擇站點" Cmd="act" Param="Ride" AddTaskOption="1" />
+		<Talk ID="432" NpcID="10097" Face="正常" Msg="為了迎接7月28日的夏日盛典，本車現免費接送遊客。" Option="龍大俠，辛苦你了！$選擇站點" Cmd="s$act" Param="433$Ride" AddTaskOption="1" />
+		<Talk ID="433" NpcID="10097" Face="正常" Msg="呵呵，不辛苦，小摩爾，你要去海底樂園隨時和我說，我一定將你安全送到目的地！" Option="好，謝謝龍大俠！" Cmd="act" Param="npcSwapPrize" AddTaskOption="1" Data="4"/>
+	</Talks>
+</Map>
+
+
+

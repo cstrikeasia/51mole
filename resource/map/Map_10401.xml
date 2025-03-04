@@ -1,0 +1,12 @@
+<Map>
+	<NpcList>
+	</NpcList>
+	<Triggers>
+		<Trigger ResName="go_400" Layer="controlLevel" Ex="510" Ey="520" Cmd="alt_map" Param="400"  Tips="摩靈宮殿"/> 
+		<Trigger ResName="boss_mc" Layer="controlLevel" Ex="0" Ey="0" Cmd="p" Param="ChoseMoGameLevelPanel"  Tips=""/> 
+	</Triggers>
+	<Talks>
+	</Talks> 
+</Map>
+
+

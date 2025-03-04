@@ -1,0 +1,26 @@
+<Map>
+	<NpcList>
+		<Npc ID="10122" Layer="controlLevel" Name="愛麗莎" Ex="728" Ey="333" Cmd="s" Param="1"/>
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_318" Layer="controlLevel" Ex="266" Ey="145" Cmd="alt_map" Param="318" Tips="仙堡大廳" />
+		
+		
+		<Trigger ResName="intro_btn" Layer="depthLevel" Ex="446" Ey="495" Cmd="pm" Param="resource/newTask/task10005/movie_10005_2.swf" Tips="" />
+	
+		<Trigger ResName="sit_1" Layer="controlLevel" Ex="351" Ey="381" Cmd="sit" Param="3$sit1" Tips="" />
+		<Trigger ResName="sit_2" Layer="controlLevel" Ex="497" Ey="294" Cmd="sit" Param="3$sit2" Tips="" />
+		<Trigger ResName="sit_3" Layer="controlLevel" Ex="519" Ey="475" Cmd="sit" Param="3$sit3" Tips="" />
+		<Trigger ResName="sit_4" Layer="controlLevel" Ex="662" Ey="352" Cmd="sit" Param="3$sit4" Tips="" />
+		
+		<Trigger ResName="get_btn" Layer="depthLevel" Ex="304" Ey="436" Cmd="act" Param="getFlower" Tips="" />
+		
+		<Trigger ResName="swap_btn" Layer="controlLevel" Ex="633" Ey="297" Cmd="p" Param="IrisWeddingSwap2Panel" Tips="" />
+		<Trigger ResName="iris_btn" Layer="controlLevel" Ex="406" Ey="263" Cmd="p" Param="IrisWeddingPanel" Tips="" />
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10122" Face="正常" Msg="親愛的{$username}，有什麼需要我幫忙的嗎？" Option="兌換COS獎勵" Cmd="act" Param="openCosTwo" AddTaskOption="1" />
+	</Talks>
+</Map>
