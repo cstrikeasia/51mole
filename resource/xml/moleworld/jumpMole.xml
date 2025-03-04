@@ -1,0 +1,183 @@
+<jumpMole density="3" friction="0.5" jumpDis="60" moveDis="5" isGround="true">
+  <level>
+    <thing x="16.733" y="9.467" type="2"/>
+    <thing x="10.233" y="14.7" type="2"/>
+    <thing x="22.6" y="14.767" type="2"/>
+    <thing x="16.833" y="20.367" type="2"/>
+    <thing x="9" y="25.5" type="3"/>
+    <thing x="5.867" y="28.133" type="1"/>
+    <thing x="19.567" y="32.133" type="7"/>
+    <thing x="6.733" y="37.4" type="1"/>
+    <thing x="10.6" y="39.933" type="3"/>
+    <thing x="15" y="42.6" type="3"/>
+    <thing x="19.367" y="45.3" type="3"/>
+    <thing x="26.8" y="51.9" type="1"/>
+    <thing x="23.4" y="48.7" type="3"/>
+    <thing x="23.2" y="54.7" type="1"/>
+    <thing x="19.2" y="56.9" type="1"/>
+    <thing x="15.5" y="59.167" type="1"/>
+    <thing x="10.967" y="61.7" type="3"/>
+    <thing x="9.033" y="66.7" type="10"/>
+    <thing x="18.333" y="73.3" type="12" angle="280"/>
+    <thing x="9.333" y="78.567" type="12"/>
+    <thing x="20.5" y="86.7" type="15"/>
+    <thing x="10.633" y="92.9" type="14"/>
+    <thing x="16.867" y="102.8" type="4"/>
+    <thing x="25.104" y="109.317" type="16"/>
+    <thing x="6.833" y="122.867" type="12"/>
+    <thing x="15.867" y="130.267" type="2"/>
+    <thing x="20.137" y="135.85" type="16"/>
+    <thing x="11.204" y="135.884" type="16"/>
+    <thing x="25.171" y="135.85" type="16"/>
+    <thing x="8.9" y="142.1" type="2"/>
+    <thing x="23.033" y="142.2" type="2"/>
+    <thing x="7.967" y="24.6" type="997" angle="0"/>
+    <thing x="20.933" y="33.567" type="997" angle="0"/>
+    <thing x="15.133" y="57.9" type="997" angle="0"/>
+    <thing x="8.067" y="66.033" type="997" angle="0"/>
+    <thing x="12" y="94.967" type="997" angle="0"/>
+    <thing x="13.8" y="102.467" type="997" angle="0"/>
+    <thing x="19.267" y="116.267" type="8" angle="0"/>
+    <thing x="16.533" y="147.9" type="3" angle="0"/>
+    <thing x="15.7" y="147.067" type="997" angle="0"/>
+    <thing x="17.133" y="147" type="997" angle="0"/>
+    <thing x="6" y="136" type="16" angle="0"/>
+  </level>
+  <level>
+    <thing x="22.467" y="10.433" type="11" angle="0"/>
+    <thing x="11" y="15.633" type="14" angle="0"/>
+    <thing x="22.4" y="22.833" type="19" angle="0"/>
+    <thing x="19.567" y="25.567" type="19" angle="0"/>
+    <thing x="16.6" y="28.333" type="19" angle="0"/>
+    <thing x="13.433" y="31.267" type="19" angle="0"/>
+    <thing x="10.567" y="34.1" type="19" angle="0"/>
+    <thing x="13.4" y="30.267" type="997" angle="0"/>
+    <thing x="10.933" y="64.933" type="997" angle="0"/>
+    <thing x="3.2" y="71.567" type="18" angle="30"/>
+    <thing x="9.3" y="83.033" type="14" angle="0"/>
+    <thing x="10.567" y="85.733" type="997" angle="0"/>
+    <thing x="22.633" y="94.3" type="15" angle="0"/>
+    <thing x="18.7" y="95.067" type="997" angle="0"/>
+    <thing x="9.167" y="104.4" type="4" angle="0"/>
+    <thing x="13.167" y="104.567" type="996" angle="0"/>
+    <thing x="5.9" y="104.433" type="997" angle="0"/>
+    <thing x="22.533" y="112.833" type="20" angle="0"/>
+    <thing x="9.567" y="42.567" type="997" angle="0"/>
+    <thing x="19.8" y="44.9" type="997" angle="0"/>
+    <thing x="6.067" y="38.8" type="3" angle="0"/>
+    <thing x="16.7" y="43.8" type="7" angle="0"/>
+    <thing x="18.867" y="65.733" type="7" angle="0"/>
+    <thing x="25.5" y="67.1" type="997" angle="0"/>
+    <thing x="24.633" y="84.067" type="6" angle="0"/>
+    <thing x="12.9" y="77.333" type="6" angle="0"/>
+    <thing x="6.633" y="51.933" type="5" angle="0"/>
+    <thing x="10.067" y="115.733" type="11" angle="0"/>
+    <thing x="18.9" y="120.467" type="4" angle="0"/>
+    <thing x="27" y="125.667" type="19" angle="0"/>
+    <thing x="9.967" y="124.933" type="19" angle="0"/>
+    <thing x="9.833" y="123.833" type="997" angle="0"/>
+    <thing x="23.733" y="129.067" type="19" angle="0"/>
+    <thing x="18.767" y="133.567" type="17" angle="0"/>
+    <thing x="7.967" y="137.267" type="12" angle="0"/>
+    <thing x="18.667" y="143.233" type="7" angle="0"/>
+    <thing x="9.667" y="150.7" type="4" angle="0"/>
+    <thing x="24.833" y="158.667" type="16" angle="4.025985844259165"/>
+    <thing x="19.067" y="158.767" type="16" angle="0"/>
+    <thing x="18" y="170.233" type="6" angle="0"/>
+    <thing x="18.367" y="169.367" type="997" angle="0"/>
+    <thing x="9.567" y="165.433" type="12" angle="0"/>
+    <thing x="23.533" y="175.033" type="20" angle="0"/>
+    <thing x="8.833" y="174.733" type="20" angle="0"/>
+    <thing x="17.333" y="182.467" type="10" angle="0"/>
+    <thing x="18" y="181.967" type="997" angle="0"/>
+    <thing x="24.033" y="189.3" type="21" angle="0"/>
+    <thing x="23.933" y="195.167" type="19" angle="0"/>
+    <thing x="18.033" y="195.233" type="19" angle="0"/>
+    <thing x="12" y="195.267" type="19" angle="0"/>
+    <thing x="5.967" y="195.467" type="19" angle="0"/>
+    <thing x="12.033" y="194.367" type="997" angle="0"/>
+    <thing x="24.167" y="194.367" type="997" angle="0"/>
+    <thing x="15.9" y="207.667" type="2" angle="0"/>
+    <thing x="22.067" y="201.5" type="16" angle="0"/>
+    <thing x="9.467" y="201.5" type="16" angle="0"/>
+    <thing x="15.833" y="206.567" type="997" angle="0"/>
+    <thing x="15.9" y="182.033" type="997" angle="0"/>
+    <thing x="24.367" y="144.8" type="996" angle="0"/>
+  </level>
+  <level>
+    <thing x="16.5" y="10.433" type="1" angle="0"/>
+    <thing x="8.567" y="14.933" type="3" angle="0"/>
+    <thing x="13.833" y="19.367" type="3" angle="0"/>
+    <thing x="22.9" y="24.5" type="13" angle="0"/>
+    <thing x="18.033" y="32.633" type="2" angle="90"/>
+    <thing x="16.733" y="33.8" type="2" angle="90"/>
+    <thing x="15.4" y="35.333" type="2" angle="90"/>
+    <thing x="13.733" y="37" type="2" angle="90"/>
+    <thing x="11.867" y="38.633" type="2" angle="90"/>
+    <thing x="8.367" y="40.8" type="19" angle="0"/>
+    <thing x="7.433" y="47.233" type="20" angle="0"/>
+    <thing x="7.067" y="54.2" type="17" angle="0"/>
+    <thing x="18.1" y="64.667" type="17" angle="0"/>
+    <thing x="12.8" y="59.7" type="17" angle="0"/>
+    <thing x="24.833" y="70.267" type="2" angle="0"/>
+    <thing x="18.567" y="75.633" type="21" angle="0"/>
+    <thing x="16.9" y="81.433" type="21" angle="0"/>
+    <thing x="21.767" y="87.067" type="21" angle="4.340402031164605"/>
+    <thing x="10.633" y="92.333" type="21" angle="0"/>
+    <thing x="7.767" y="107.567" type="5" angle="0"/>
+    <thing x="17.2" y="116.967" type="13" angle="0"/>
+    <thing x="11.4" y="121.933" type="14" angle="0"/>
+    <thing x="22.7" y="126.333" type="16" angle="72.00030090027929"/>
+    <thing x="15.467" y="132.333" type="14" angle="0"/>
+    <thing x="25.7" y="138.133" type="16" angle="-149.9998432811046"/>
+    <thing x="21.067" y="147.3" type="8" angle="0"/>
+    <thing x="2.267" y="152.367" type="18" angle="30"/>
+    <thing x="9.067" y="157.267" type="17" angle="0"/>
+    <thing x="14.767" y="161.667" type="17" angle="0"/>
+    <thing x="21.467" y="165.867" type="19" angle="0"/>
+    <thing x="25.667" y="170.567" type="16" angle="0"/>
+    <thing x="21.267" y="173.367" type="16" angle="0"/>
+    <thing x="16.533" y="175.633" type="16" angle="0"/>
+    <thing x="11.967" y="178.367" type="16" angle="0"/>
+    <thing x="9.967" y="184.433" type="14" angle="0"/>
+    <thing x="14.667" y="194.633" type="4" angle="0"/>
+    <thing x="18.133" y="201.433" type="4" angle="0"/>
+    <thing x="15.667" y="201.433" type="996" angle="0"/>
+    <thing x="26.933" y="206.6" type="19" angle="0"/>
+    <thing x="22.767" y="209.233" type="3" angle="0"/>
+    <thing x="16" y="213.8" type="13" angle="0"/>
+    <thing x="8.967" y="220.167" type="16" angle="126.00024448147673"/>
+    <thing x="7.933" y="227.567" type="2" angle="0"/>
+    <thing x="17.067" y="227.6" type="3" angle="0"/>
+    <thing x="25.667" y="227.6" type="2" angle="0"/>
+    <thing x="13.1" y="233.7" type="3" angle="0"/>
+    <thing x="21.467" y="233.767" type="3" angle="0"/>
+    <thing x="17.367" y="237.667" type="19" angle="0"/>
+    <thing x="14" y="18.333" type="997" angle="0"/>
+    <thing x="8.4" y="39.733" type="997" angle="0"/>
+    <thing x="6.467" y="52.333" type="997" angle="0"/>
+    <thing x="27.033" y="69.033" type="997" angle="0"/>
+    <thing x="21.7" y="100.767" type="997" angle="0"/>
+    <thing x="12.267" y="100.867" type="997" angle="0"/>
+    <thing x="19.7" y="134.8" type="997" angle="0"/>
+    <thing x="12.367" y="130.467" type="997" angle="0"/>
+    <thing x="13.3" y="131.333" type="997" angle="0"/>
+    <thing x="27.2" y="146.233" type="997" angle="0"/>
+    <thing x="23.333" y="148.133" type="997" angle="0"/>
+    <thing x="12.867" y="148.2" type="997" angle="0"/>
+    <thing x="12.667" y="160.3" type="997" angle="0"/>
+    <thing x="13.8" y="160.3" type="997" angle="0"/>
+    <thing x="21.433" y="164.867" type="997" angle="0"/>
+    <thing x="6.3" y="181.833" type="997" angle="0"/>
+    <thing x="13.033" y="186.7" type="997" angle="0"/>
+    <thing x="11.233" y="194.4" type="997" angle="0"/>
+    <thing x="24.333" y="208.4" type="997" angle="0"/>
+    <thing x="24.733" y="226.433" type="997" angle="0"/>
+    <thing x="7.633" y="226.267" type="997" angle="0"/>
+    <thing x="21.4" y="232.7" type="997" angle="0"/>
+    <thing x="13.333" y="232.7" type="997" angle="0"/>
+    <thing x="20.333" y="100.3" type="8" angle="0"/>
+    <thing x="17.467" y="236.5" type="997" angle="0"/>
+    <thing x="18.8" y="148.033" type="996" angle="0"/>
+  </level>
+</jumpMole>
