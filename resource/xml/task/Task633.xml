@@ -1,0 +1,86 @@
+﻿<Tasks ID="633" Name="激戰！扣扣海賊團" AwardMsg="恭喜你獲得家園裝飾秋千坐椅和太陽傘。" AwardBean="">
+	<Step ID="1" TarMapID="120">
+		<EnterMap MapID="120">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10264" Face="疑惑" Msg="庫拉的拉姆叫什麼名字呀？會在哪裡呢？" Option="你是來幫庫拉找骰子的嗎？"/>
+				<Talk NpcID="10264" Face="靈感" Msg="骰子，嗯，我記住了~我要像偶像摩爾格鬥之王一樣，不畏艱難險阻……" Option="黑森林裡面可是很危險的喲~~（格鬥王⊙﹏⊙b汗）"/>
+				<Talk NpcID="10264" Face="靈感" Msg="好啦，出發！" Option="喂，天都快黑了，你確定要去嗎？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="JUMP_TASK_UI" Param="   伊莉絲獨自去黑森林幫庫拉找骰子去了，可是現在黑森林正籠罩在陰霾當中，很危險啊，不能讓她一個人去，快去找庫拉！"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+			<Action Cmd="GO_MAP" MapID="240" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="240">
+		<EnterMap MapID="240">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10266" Face="正常" Msg="嗯？你要找主人嗎？" Option="是呀，伊莉絲一個人去黑森林找骰子分身了，好危險的！我要跟庫拉說！"/>
+				<Talk NpcID="10266" Face="疑惑" Msg="主人說他去莊園裡懸賞去了，要不你給他打電話吧！" Option="真是不靠譜……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="JUMP_TASK_UI" Param="   伊莉絲一個人去了黑森林，庫拉超級不放心，拉上你一塊去找伊莉絲~黑森林很危險，一定要注意安全喲！"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="151" MapType="0"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="3" TarMapID="151">
+		<EnterMap MapID="151">
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="JUMP_TASK_UI" Param="   伊莉絲似乎找到了奇怪的怪獸，這完全不是拉姆啊喂！那麼巨大！！！！不要被吃掉呀！！！！！！"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+		</EnterMap>
+	</Step>
+	<Step ID="4" TarMapID="151">
+		<EnterMap MapID="151">
+			<Action Cmd="OPEN_PANEL" Param="FlappyElise" ClearMap="1" Data = "0"/>
+			<Action Cmd="ADD_EVENT" Param="Task633GamepaneOver"/>
+			<Action Cmd="JUMP_TASK_UI" Param="   安全躲過怪獸了，快點離開危險的藤蔓森林吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+				<Action Cmd="GO_MAP" MapID="123" MapType="0"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="5" TarMapID="123">
+		<EnterMap MapID="123">
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6"/>
+		</EnterMap>
+	</Step>
+	<Step ID="6" TarMapID="123">
+		<EnterMap MapID="123">
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10003" Face="生氣" Msg="我庫拉大魔法師是不是名不虛傳？拉姆王，說好的骰子呢？" Option="....."/>
+				<Talk NpcID="10150" Face="正常" Msg="庫拉，經歷一年的考驗，我看的出來你對骰子的感情。" Option="....."/>
+				<Talk NpcID="10003" Face="生氣" Msg="去年讓我變成女生，也沒有讓我找回骰子……現在我也只找到了2點、4點和6點。" Option="....."/>
+				<Talk NpcID="10150" Face="開心" Msg="246找回來了，是呀，4點是我讓他待在神秘世界等你的。你的拉姆必須你自己用心才能找回來，請一定要用心去尋找他們，他們也許就在你的身邊。" Option="....."/>
+				<Talk NpcID="10003" Face="正常" Msg="所以你也不知道什麼時候可以找回我所有的拉姆嗎？" Option="....."/>
+				<Talk NpcID="10150" Face="開心" Msg="對於救了你的人一定要心懷感激。今年的拉姆運動會，由你和凱文來領隊，讓我看看你的決心吧！" Option="....."/>
+				<Talk NpcID="10003" Face="正常" Msg="所以你也不知道什麼時候可以找回我所有的拉姆嗎？" Option="....."/>
+				<Talk NpcID="10003" Face="無聊" Msg="你確定今年的拉姆運動會考驗完骰子就能回到我身邊嗎？" Option="....."/>
+				<Talk NpcID="10150" Face="正常" Msg="心懷這樣的信念，相信，你可以找回它的！現在，請努力支撐起今年的拉姆運動會吧！" Option="....."/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>
+
