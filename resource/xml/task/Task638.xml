@@ -1,0 +1,91 @@
+﻿<Tasks ID="638" Name="實現願望" AwardMsg="恭喜你獲得1個小屋裝飾驚恐拉姆和2個魔術城山茶種子。" AwardBean="">
+	<Step ID="1" TarMapID="53">
+		<EnterMap MapID="53">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10007" Face="正常" Msg="呵呵呵，可愛的小摩爾們，運動會大家都玩累了吧！" Option="大伯，出事啦~外面都亂套了你還不知道嗎？"/>
+				<Talk NpcID="10007" Face="疑惑" Msg="出事？" Option="對呀，愛心廣場那邊大爆炸……"/>
+				<Talk NpcID="10007" Face="正常" Msg="哦，這點小事啊，艾爾已經來過我這裡了，他沒事，說明愛心廣場不會有太大的問題。你們年輕人啊，就是沒有經歷過風浪……" Option="....."/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="53">
+		<EnterMap MapID="53">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="JUMP_TASK_UI" Param="   大伯說要去找安迪和彩虹姐姐，現在就出發吧！先去愛心救治室找救治師安迪！"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="70" MapType="0"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="3" TarMapID="70">
+		<EnterMap MapID="70">
+			<Action Cmd="SAY">
+				<Talk NpcID="10020" Face="正常" Msg="小摩爾跑的好快呀~一身汗的時候不要喝杯水~" Option="安迪，拉姆4點被污染了，大伯說讓你去一趟~"/>
+				<Talk NpcID="10020" Face="生氣" Msg="污染？我馬上就去！" Option="嗯~"/>
+			</Action>
+			<Action Cmd="JUMP_TASK_UI" Param="   你非常棒喲，找到了救治師安迪，接下來去找彩虹姐姐咯~加油"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+			<Action Cmd="GO_MAP" MapID="21" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="4" TarMapID="21">
+		<EnterMap MapID="21">
+			<Action Cmd="SAY">
+				<Talk NpcID="10052" Face="正常" Msg="拉姆運動會結束了，要讓你的小拉姆好好休息喲~給它洗洗泡泡浴能夠幫助迅速恢復精力喲！" Option="彩虹姐姐，不好了，庫拉的拉姆4點被污染了！"/>
+				<Talk NpcID="10052" Face="焦急" Msg="污染？怎麼會？小拉姆……不行，我要去看看~" Option="大伯就是讓我來找你的！去大伯那裡喲！"/>
+				<Talk NpcID="10052" Face="焦急" Msg="好，我跟你一塊去！" Option="嗯，我們現在就出發吧！"/>
+			</Action>
+			<Action Cmd="JUMP_TASK_UI" Param="   找到彩虹姐姐了，姐姐好擔心小拉姆的身體啊，快點趕回大伯那裡，看看我們該怎麼辦吧~"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+			<Action Cmd="GO_MAP" MapID="53" MapType="0"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="5" TarMapID="53">
+		<EnterMap MapID="53">
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="6" TarMapID="53">
+		<EnterMap MapID="53">
+			<Action Cmd="OPEN_PANEL" Param="Task638GamePanel" ClearMap="0" Data = "0"/>
+			<Action Cmd="ADD_EVENT" Param="Task638GamepanelOver"/>
+			<Action Cmd="SET_BUFFER" Panel="7" Step="7"/>
+		</EnterMap>
+	</Step>
+	<Step ID="7" TarMapID="53">
+		<EnterMap MapID="53">
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105"/>
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106"/>
+			<Action Cmd="PLAY_MOVIE" Param="107" Name="movie_107" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_107"/>
+			<Action Cmd="PLAY_MOVIE" Param="108" Name="movie_108" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_108"/>
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_107"/>
+			<Action Cmd="PLAY_MOVIE" Param="109" Name="movie_109" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_109"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>
+

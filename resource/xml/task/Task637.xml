@@ -1,0 +1,39 @@
+﻿<Tasks ID="637" Name="摩摩商會緊急會議" AwardMsg="恭喜你獲得1個小屋傢俱古董電話和1隻下金蛋的鵝。" AwardBean="">
+	<Step ID="1" TarMapID="149">
+		<EnterMap MapID="149">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10058" Face="焦急" Msg="愛心廣場這次的事態非常嚴重，看來摩爾銀行是要重建了。" Option="那麼嚴重呀~那我們就不能取錢啦？我有好多摩爾豆存在銀行裡呢~！"/>
+				<Talk NpcID="10036" Face="生氣" Msg="這些魔物竟然可以這樣隨便在莊園裡搗亂，騎士團要負主要責任！！" Option="王子，那些怪物一路飄進來，騎士團也沒辦法吧！"/>
+				<Talk NpcID="10036" Face="生氣" Msg="那也必須第一時間趕來通知我！先不說這些了，那麼多摩爾居民的摩爾豆存款是第一要務！" Option="....."/>
+				<Talk NpcID="10058" Face="焦急" Msg="嗯，我已經讓大衛幫忙啟動了當時的R5備份設備：R5S，現在在摩摩商會內部就可以取款了。" Option="R5S，聽起來是高科技啊~讓我看看"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="149">
+		<EnterMap MapID="149">
+			<Action Cmd="OPEN_PANEL" Param="Task637GamePanel" ClearMap="1" Data = "0"/>
+			<Action Cmd="ADD_EVENT" Param="Task637GamepanelOver"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="3" TarMapID="149">
+		<EnterMap MapID="149">
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>
+
+

@@ -1,0 +1,24 @@
+<Map>
+	<NpcList>
+		<Npc ID="10020" Layer="controlLevel" Name="安迪" Ex="331" Ey="329" Cmd="s" Param="1" /> 
+	</NpcList>
+	
+	<Triggers>
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="999" NpcID="10020" Face="正常" Msg="ZZZ~~~" Option="……" Cmd="act" Param="fatherDayOver" AddTaskOption="1"  />
+	
+		<Talk ID="1" NpcID="10020" Face="正常" Msg="你好呀，小摩爾，要照看好你的拉姆哦，只要用心去照看它們，你就會發現拉姆是你離不開的好幫手呢。" Option="父親節的問候$沒什麼事！" Cmd="act$none" Param="fatherDay$6" AddTaskOption="1" />
+		
+		<Talk ID="10" NpcID="10020" Face="正常" Msg="你是來要菩提大伯恢復記憶力的藥是吧，嗯，差不多快做好了，但還差一些材料，只是這些材料都比較難獲得……" Option="需要什麼材料？我去弄吧！" Cmd="s" Param="11" />
+		<Talk ID="11" NpcID="10020" Face="正常" Msg="那太好了！還差1個黑色漿果，1個四色百合花種子。" Option="怎麼找到呢？" Cmd="s" Param="12" />
+		<Talk ID="12" NpcID="10020" Face="正常" Msg="1個黑色漿果需要在彩虹瀑布裡的力量之泉找到綠色藤蔓，1個四色百合花種子需要到蟲蟲谷的神秘花蕊中找到並且幫助小蟲洗澡才能獲得。" Option="好的，我去去就來。" Cmd="act" Param="beginFindSeedTimeMachine"  />
+		<Talk ID="13" NpcID="10020" Face="正常" Msg="就是這些材料，小摩爾你太棒了！我們快來製作藥吧！" Option="好！" Cmd="act" Param="playMakeMedicineMovie" />
+		<Talk ID="14" NpcID="10020" Face="正常" Msg="藥水做好了，快把給菩提大伯。" Option="好，我這就去。" Cmd="act" Param="goMapTimeMachine" Data="5,53" />
+		<Talk ID="15" NpcID="10020" Face="正常" Msg="小摩爾，材料不夠，快去找找看！1個黑色漿果需要在彩虹瀑布裡的力量之泉找到綠色藤蔓，1個四色百合花種子需要到蟲蟲谷的神秘花蕊中找到並且幫助小蟲洗澡才能獲得。" Option="我這就去。" Cmd="none" Param="12" />
+	</Talks>
+</Map>
+
+
+

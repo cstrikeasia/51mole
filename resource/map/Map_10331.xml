@@ -1,0 +1,26 @@
+<Map>
+	<NpcList>
+		<Npc ID="10192" Layer="depthLevel" Name="尤瑞克" Ex="500" Ey="382" Cmd="s" Param="1" AddTaskOption="1" />
+	</NpcList>
+	
+	<Triggers>
+		<Trigger ResName="go_330" Layer="controlLevel" Ex="270" Ey="350" Cmd="gm" Param="330" Tips="進入遺忘田園" />
+		<Trigger ResName="houseMc" Layer="depthLevel" Ex="488" Ey="512" Cmd="act" Param="openSeekGame" Tips="小屋尋踪" />
+		<Trigger ResName="yorikBook_btn" Layer="controlLevel" Ex="241.75" Ey="424.9" Cmd="p" Param="KaluoLaDiaryBookPanel" Tips="卡羅拉日記本" />
+	</Triggers>
+	
+	<Talks>
+		<Talk ID="1" NpcID="10192" Face="生氣" Msg="“咦~我的衣服怎麼也不見了……我衣櫃裡的衣服呢！！！！！到底是誰偷走了我全部的衣服啊！" Option="爺爺，還有我們陪著你！$猜尤瑞克喜歡" Cmd="none$p" Param="1$YorickLike2IntroPanel" AddTaskOption="1" />
+		<Talk ID="2" NpcID="10192" Face="正常" Msg="想當年我也是一名騎士，貴族生活也是略知一二！" Option="啊哈~~~不明覺厲！" Cmd="s" Param="3" />
+		<Talk ID="3" NpcID="10192" Face="正常" Msg="讓我來給你普及一下關於貴族的知識吧！" Option="好呀好呀！" Cmd="s" Param="4" />
+		<Talk ID="4" NpcID="10192" Face="正常" Msg="答對的題目越多，獎勵越豐厚喲！" Option="哇~~那我一定要努力努力啦！" Cmd="p" Param="QuestionPanel" />
+		
+		<Talk ID="10" NpcID="10192" Face="正常" Msg="哦……老摩爾王，呵呵，那是我的老朋友了，想當年和他一起大戰黑龍那會……" Option="夠了夠了，我們是來問別的" Cmd="s" Param="11" />
+		<Talk ID="11" NpcID="10192" Face="正常" Msg="禮物？哦！我想起來了，那個禮物很特別啊！" Option="嗯，那禮物在哪呢？" Cmd="s" Param="12" />
+		<Talk ID="12" NpcID="10192" Face="正常" Msg="嗯？在哪？在哪呢？" Option="你是有多不靠譜？！" Cmd="s" Param="13" />
+		<Talk ID="13" NpcID="10192" Face="正常" Msg="真記不得了，你們不是有能回到過去的時光機嗎？回去問問以前的我不就都知道了？" Option="那當年你是在哪個地方呢？" Cmd="s" Param="14" />
+		<Talk ID="14" NpcID="10192" Face="正常" Msg="當時我們小隊應該是在叫做“遺跡”的地方。" Option="好吧，真拿你沒辦法" Cmd="act" Param="moleKingStep2" />
+	</Talks>
+</Map>
+
+
