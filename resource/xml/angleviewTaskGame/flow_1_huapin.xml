@@ -1,0 +1,144 @@
+﻿<flow>
+<option>
+	<swf path='module/angleviewTaskGame/swf'/>
+	<map path='module/angleviewTaskGame/swf/map.swf' node='6' >
+		<taketurns>true</taketurns>
+		<infoname>MissionInfo</infoname>
+		<tipslabel>警長看上去很著急，先聽聽他想說什麼!</tipslabel>
+	</map>
+</option>
+
+<props>
+	<prop id='0' name='Pifa' pinid='10'/>
+	<prop id='1' name='Toufa' changescene='1|id:10'/>
+	<prop id='2' name='Duanmu'  changescene='1|id:10'/>
+	<prop id='3' name='Shoudiantong' />
+	<prop id='4' name='Saozhou' pinid='10' />
+	<prop id='5' name='Peigenpisa'/>
+	<prop id='6' name='Niuroupisa'/>
+	<prop id='7' name='Haixianpisa'/>
+	<prop id='8' name='Huapin' changescene='8|id:13'/>
+	<prop id='10' name='GoodPifa' />
+</props>
+
+<swfs>
+	<swf url='scene_1_policestation_first.swf' move='true'>
+		<question name='question_1' >
+			<item jumpFrame='next'/>
+			<item jumpFrame='90'/>
+		</question>
+		<question name='question_2' >
+			<item jumpFrame='140' openscene='1,2' changeParameters='1|parametes:firstBo=true'/>
+		</question>
+	</swf>
+	
+	<swf url='scene_2_office_first.swf'  move='true' revolve='true'>
+		<question name='question_1' x='0' y='0'>
+			<item jumpFrame='next'/>
+			<item jumpFrame='1'/>
+		</question>
+		<question name='question_2' >
+			<item jumpFrame='next'/>
+			<item jumpFrame='1'/>
+		</question>
+		<question name='question_3' >
+			<item jumpFrame='1' openscene='4,5'/>
+		</question>
+		<question name='question_4' >
+			<item jumpFrame='next'/>
+		</question>
+	</swf>
+
+	<swf url='scene_3_invent.swf' move='true' revolve='false' parameters=''>
+		<question name='question_1' >
+			<item jumpFrame='next'/>
+			<item jumpFrame='317'/>
+		</question>
+		<question name='question_2' >
+			<item jumpFrame='next' openscene='4'/>
+		</question>
+	</swf>
+	
+	<swf url='scene_4_dining.swf'  revolve='true' >
+		<switch url='module/angleviewTaskGame/swf/game/opendoor.swf' />
+		<question name='question_1' >
+			<item jumpFrame='next'/>
+			<item jumpFrame='218'/>
+		</question>
+		<question name='question_2' >
+			<item jumpFrame='next'/>
+			<item jumpFrame='358'/>
+		</question>
+		<question name='question_3' >
+			<item jumpFrame='next'/>
+		</question>
+		<question name='question_4' >
+			<item jumpFrame='next' changeParameters='4|parametes:firstBo=true' getThings='6'/>
+			<item jumpFrame='next' changeParameters='4|parametes:firstBo=true' getThings='7'/>
+			<item jumpFrame='next' changeParameters='4|parametes:firstBo=true' getThings='5'/>
+		</question>
+	</swf>
+	
+	<swf url='scene_5_art.swf' move='true'>
+		<question name='question_2' >
+			<item jumpFrame='next'/>
+			<item jumpFrame='1'/>
+		</question>
+		<question name='question_2' >
+			<item jumpFrame='next'/>
+		</question>
+		<question name='question_2' >
+			<item jumpFrame='next'openscene='6' changeParameters='5|parametes:firstBo=true'/>
+		</question>
+	</swf>
+
+	<swf url='scene_6_taole.swf' move='true'>
+		
+	</swf>
+
+	<swf url='scene_7_lake.swf' move='true'>
+		<boating url='module/angleviewTaskGame/swf/game/boating.swf' />
+	</swf>
+
+	<swf url='scene_8_house.swf' move='true'>
+		<question name='question_1' >
+			<item jumpFrame='next'/>
+		</question>
+		<question name='question_2' >
+			<item jumpFrame='next' changeParameters='8|parametes:firstBo=true' changescene='2|id:9'/>
+		</question>
+	</swf>
+	
+	<swf url='scene_9_office_second.swf' move='true' revolve='true' >
+		<question name='question_1'>
+			<item jumpFrame='1'/>
+			<item jumpFrame='next' getThings='-8'/>
+		</question>
+		<question name='question_2' >
+			<item jumpFrame='next' changeParameters='9|parametes:firstBo=true'/>
+		</question>
+		<question name='question_3' >
+			<item jumpFrame='next' changescene='1|id:11' getThings='-8'/>
+		</question>
+	</swf>
+	
+        <swf url='scene_10_policestation_second.swf' move='true' >
+		<question name='question_1' >
+			<item jumpFrame='next'/>
+			<item jumpFrame='174'/>
+		</question>
+		<question name='question_2' >
+			<item jumpFrame='next' openscene='3'/>
+		</question>
+	</swf>
+	<swf url='scene_11_policestation_thrid.swf'>
+		<question name='question_1'>
+			<item jumpFrame='next'/>
+		</question>
+	</swf>
+	<swf url='scene_12_office_third.swf' move='true' revolve='true'>
+	</swf>
+	<swf url='scene_13_house.swf' move='true'>
+	</swf>
+</swfs>
+</flow>
