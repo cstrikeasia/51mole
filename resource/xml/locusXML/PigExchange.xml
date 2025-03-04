@@ -1,0 +1,38 @@
+<pig>
+<item id="1593002"  socketID = "722">
+	<exitem id="190890" num="10" logo="nan"/>
+</item>
+
+<item id="1593003"  socketID = "723">
+	<exitem id="190890" num="15" logo="nv"/>
+</item>
+
+<item id="1593005"  socketID = "725">
+	<exitem id="190890" num="40" logo="nv"/>
+</item>
+
+<item id="1593004"  socketID = "724">
+	<exitem id="190890" num="35" logo="nan"/>
+</item>
+
+<item id="1593006"   socketID = "726">
+	<exitem id="190890" num="60" logo="nan"/>
+</item>
+
+<item id="1593007"   socketID = "727">
+	<exitem id="190890" num="65" logo="nv"/>
+</item>
+
+<item id="1593000"   socketID = "728">
+	<exitem id="190890" num="50" logo="nan"/>
+</item>
+
+<item id="1593001"   socketID = "729">
+	<exitem id="190890" num="55" logo="nv"/>
+</item>
+
+
+
+
+
+</pig>
