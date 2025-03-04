@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--海底樂園兌換面板-->
+<xml>
+	<items ID="14323" Count="600" Type="1613"/>
+	<items ID="14324" Count="400" Type="1614"/>
+	<items ID="14325" Count="500" Type="1615"/>
+	<items ID="14326" Count="150" Type="1616"/>
+	<items ID="14327" Count="150" Type="1617"/>
+	<items ID="14336" Count="300" Type="1618"/>
+	<items ID="14334" Count="400" Type="1619"/>
+	<items ID="14333" Count="400" Type="1620"/>
+	<items ID="1230047" Count="100" Type="1621"/>
+	<items ID="1593030" Count="500" Type="1623"/>
+	<items ID="1593037" Count="500" Type="1624"/>
+</xml>
