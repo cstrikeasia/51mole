@@ -1,0 +1,239 @@
+<Tasks ID="522" Name="禮物總動員" AwardMsg="恭喜你獲得2000摩爾豆！快去找炸花校長領取校服吧！" AwardBean="2000" >
+	<Step ID="1" >
+		<EnterMap MapID="239" >
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10000" Visible="0" />  
+			<Action Cmd="PLAY_MOVIE" Param="20" Name="movie_20" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_20" />				
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="大家終於到齊了，我等你們老半天啦！" Option="樂樂你叫我們來有什麼事嗎？" />
+				<Talk NpcID="10000" Face="正常" Msg="是一件大事哦！教師節馬上就要來了，可我們還沒給老師們準備禮物，很多同學都在開始準備了！" Option="這可不行，我們不能落後了！" />
+				<Talk NpcID="10000" Face="正常" Msg="今年還新來了炸花校長呢！眼看飯店管理課程就要開課了，我們也要好好為炸花校長準備禮物表達對他的謝意！" Option="嗯，沒錯！" />
+				<Talk NpcID="10000" Face="正常" Msg="準備禮物？！這可難不倒我！最近我又發現了很多好吃的零食，味道簡直太棒了，怎麼吃都吃不夠，老師們肯定會喜歡！" Option="啊？送老師零食？" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10011" Face="正常" Msg="平時老師們那麼辛苦，當然要送有益身體的禮物呀！嘻嘻，枕頭什麼的最有愛了，香噴噴，軟綿綿，靠在上面特別愜意了，呼呼，老師們一定會喜歡！" Option="送枕頭？這……合適嗎？" />
+			</Action>									
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="正常" Msg="瞧你們，一個就知道吃，一個就知道睡！也不想想，老師們怎麼會稀罕零食和枕頭嘛！" Option="丫麗有什麼更好的建議嗎？" />
+				<Talk NpcID="10009" Face="正常" Msg="要我說，教師節嘛，還是該送老師們鮮花，美麗的鮮花最能表達對老師的愛了……" Option="這倒也是，誰都會喜歡鮮花！" />
+			</Action>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="生氣" Msg="真是的！到底還有什麼更好的點子嘛？把我腦袋都想破了……" Option="這年頭，創新不容易呀！" />
+				<Talk NpcID="10000" Face="正常" Msg="其實……我倒是有個提議，說出來，你們可不許笑我哦……來，給你們看看！" Option="哦？！什麼東西？" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="這隻蟋蟀是我偶然抓到的。記得大伯以前很喜歡和別人鬥蟋蟀呢，要是把大蟋蟀送給大伯，他一定很開心！" Option="送蟋蟀？！倒是很特別的禮物哦！" />
+				<Talk NpcID="10000" Face="正常" Msg="所以我在想，如果也能收集一些其他老師喜歡的昆蟲送給他們，在夏天的尾巴上給他們留下一段美妙的回憶，多好呀！" Option="不錯！可其他老師會喜歡什麼昆蟲呢？" />
+				<Talk NpcID="10009" Face="開心" Msg="這還用問麼，絲爾特老師喜歡的，肯定是蝴蝶啦！" Option="哦？！絲爾特老師喜歡蝴蝶？" />
+				<Talk NpcID="10009" Face="開心" Msg="作為一個女孩子，我毫不懷疑這一點！絲爾特老師那麼愛美，當然也會被蝴蝶這樣美好的事物所吸引！" Option="有道理，那我們抓些漂亮的蝴蝶送她！" />
+				<Talk NpcID="10000" Face="正常" Msg="好！那我們到處去找找，一定要抓最美麗的蝴蝶來送絲爾特老師！" Option="嗯！好的~" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10000" Visible="1" />  
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="112" MapType="0" />	
+		</EnterMap>		
+	</Step>			
+	
+	<Step ID="2" >
+		<EnterMap MapID="112" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />				
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="開心" Msg="果然很漂亮吧？嘻嘻~絲爾特老師一定會很喜歡的！" Option="是呀！不過凱文老師喜歡什麼昆蟲呢？" />
+				<Talk NpcID="10010" Face="正常" Msg="我知道，我知道！凱文老師喜歡螢火蟲！" Option="你怎麼知道的呢？" />
+				<Talk NpcID="10010" Face="正常" Msg="去年夏天，有一次我在野外看見凱文老師在捉螢火蟲，他還跟我說，螢火蟲在夜裡會發出點點星光，可美啦！" Option="嗯~我們可以送凱文老師螢火蟲啦！" />
+				<Talk NpcID="10000" Face="正常" Msg="漿果叢林裡就有哦！我們趕緊去抓一些吧！" Option="好，這就去！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="41" MapType="0" />	
+		</EnterMap>		
+	</Step>
+	
+	<Step ID="3" >
+		<EnterMap MapID="41" >
+			<!--<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			 <Action Cmd="SET_BUFFER" Panel="3" Step="4" />
+					<Action Cmd="OPEN_PANEL" Param="fireBug" />
+					這裡需要玩家自己打開螢火蟲的小遊戲，分數滿了200分以後繼續執行下面的步驟。
+			 -->	
+		</EnterMap>	
+	</Step>	
+
+	<Step ID="4" >
+		<!--<SubmitScore ModuleID="啊哦哦" MinScore="1" LoseMsg="沒能在遊戲中獲得200分哦，要重新試試嗎？" >  -->
+		<EnterMap MapID="41" >	
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />	
+			<Action Cmd="PLAY_MOVIE" Param="8_1" Name="movie_8_1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="螢火蟲也收集到了，這下可以給老師們一個驚喜了！不過……我們好像漏了新來的炸花校長……不知道他喜歡什麼昆蟲呢？" Option="這個……還真不大清楚……" />
+				<Talk NpcID="10000" Face="正常" Msg="算了，在這空想也沒用，我們去實地考察一下吧，跟蹤炸花校長，看看他到底喜歡什麼！" Option="好！就這麼辦！" />
+			</Action>							
+			<Action Cmd="DELETE_MOVIE" Param="movie_8_1" />			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="5" />
+			<Action Cmd="GO_MAP" MapID="77" MapType="0" />
+		</EnterMap>		
+	</Step>	
+
+	<Step ID="5" >
+		<EnterMap MapID="77" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />	
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />			
+			<Action Cmd="SET_BUFFER" Panel="5" Step="6" />
+			<Action Cmd="GO_MAP" MapID="38" MapType="0" />	
+		</EnterMap>	
+	</Step>	
+	
+	<Step ID="6" >
+		<EnterMap MapID="38" >
+		<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />				
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10011" Face="正常" Msg="咦~炸花校長旁邊的兩隻小傢伙是什麼呀，好奇怪！還會推著小球球跑來跑去呢！" Option="我也沒見過這樣的小蟲子……" />
+				<Talk NpcID="10009" Face="驚訝" Msg="不……不是吧！好噁心好噁心……" Option="丫麗，你在說什麼？" />
+				<Talk NpcID="10009" Face="驚訝" Msg="這種小蟲，爸爸曾經給我說過，它叫……叫……屎……屎殼郎！" Option="啊？屎殼郎？" />
+			</Action>				
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10010" Face="正常" Msg="這麼說來，它們滾的小球球，呃，其實就是……" Option="沒錯，就是小糞球……" />
+				<Talk NpcID="10009" Face="驚訝" Msg="沒想到炸花校長竟然喜歡屎殼郎……也太非主流了！我們不會還要給炸花校長抓屎殼郎吧！" Option="不然怎麼辦呢……" />
+				<Talk NpcID="10000" Face="正常" Msg="為了炸花校長的足球隊，再苦再累也不怕！走吧，去陽光培育室看看，那兒說不定會有……呃，屎殼郎……" Option="好吧，去陽光培育室抓屎殼郎去！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />	
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_BUFFER" Panel="6" Step="7" />
+			<Action Cmd="GO_MAP" MapID="107" MapType="0" /> 
+		</EnterMap>	
+	</Step>	
+
+	<Step ID="7" >
+		<EnterMap MapID="107" >
+		<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="嘿嘿，太好了！炸花校長的足球隊有希望了！" Option="他會不會邀請我們看比賽呀？哈哈~" />
+				<Talk NpcID="10000" Face="正常" Msg="現在禮物都準備齊了，我們趕緊給菩提大伯、絲爾特校長和凱文老師送去吧！炸花校長的禮物我們最後偷偷送！" Option="嗯，好的！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_BUFFER" Panel="7" Step="8" />
+			<Action Cmd="OPEN_TASK_PANEL" />
+		</EnterMap>	
+	</Step>	
+	
+	<Step ID="8" >
+		<NPC ID="10055" Option="禮物總動員" Bit="1" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10055" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="14" Name="movie_14" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10055" Face="開心" Msg="哇~好……好美的蝴蝶呀！" Option="祝您永遠和蝴蝶一樣美麗！" />
+				<Talk NpcID="10055" Face="開心" Msg="謝謝孩子們！謝謝你們在夏天的尾巴上，給了老師一個美麗的教師節！" Option="嘻嘻，不客氣！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_14" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10055" Visible="1" />
+			<Action Cmd="SET_BIT" Param="1" />
+		</NPC>
+		
+		<NPC ID="10007" Option="禮物總動員" Bit="2" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10007" Visible="0" /> 
+			<Action Cmd="PLAY_MOVIE" Param="13" Name="movie_13" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="開心" Msg="哇~好大的蟋蟀呀！回想我上一次鬥蟋蟀，都是多年前的事啦……現在你們漸漸長大，而大伯卻老囉！" Option="大伯永遠都不老！祝大伯教師節快樂！" />
+				<Talk NpcID="10007" Face="開心" Msg="哦呵呵呵~太謝謝你們了，我的孩子們！有空的時候，記得來和大伯一起鬥蟋蟀哦！" Option="嗯！好呀O(∩_∩)O" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_13" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10007" Visible="1" /> 
+			<Action Cmd="SET_BIT" Param="2" />
+		</NPC>
+		
+		<NPC ID="10038" Option="禮物總動員" Bit="3" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10038" Visible="0" /> 
+			<Action Cmd="PLAY_MOVIE" Param="15" Name="movie_15" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10038" Face="開心" Msg="哇！真沒想到，竟然是螢火蟲！好久沒見過這麼漂亮的螢火蟲了！" Option="嘻嘻，真的很美呢！" />
+				<Talk NpcID="10038" Face="開心" Msg="真是一份充滿“亮點”的禮物，哈哈！謝謝你們，我可愛的同學們！" Option="凱文老師不客氣！^_^" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_15" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10038" Visible="1" /> 
+			<Action Cmd="SET_BIT" Param="3" />
+		</NPC>
+		
+		<Test Bits="1,2,3" >
+			<In>
+				<Action Cmd="SET_BUFFER" Panel="8" Step="10" />
+				<Action Cmd="OPEN_TASK_PANEL" />
+				<!-- <Action Cmd="ALERT" Param="還剩炸花校長囉！趕快去摩爾大學把禮物送給他吧！" Face="開心" /> -->
+			</In>
+			<Out>
+				<Action Cmd="OPEN_TASK_PANEL" /> 
+			</Out>
+		</Test>
+	</Step>	
+
+	<Step ID="9" >
+		<NowTrigger>
+			<Action Cmd="ALERT" Param="還剩炸花校長囉！現在就把禮物給他送去吧！" Face="開心" />
+			<Action Cmd="SET_BUFFER" Panel="8" Step="10" />
+			<Action Cmd="OPEN_TASK_PANEL" />
+		</NowTrigger>
+	</Step>	
+	
+	<Step ID="10" >
+		<EnterMap MapID="78" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10127" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10055" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="30" Name="movie_30" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10127" Face="正常" Msg="喔？！大家是專門來送我教師節禮物的？" Option="嘻嘻，對呀！" />
+				<Talk NpcID="10127" Face="正常" Msg="好期待哦……讓我猜猜究竟是什麼禮物呢？好吃的？好玩的？還是鮮花呢？哎呀呀，生命是如此滴精彩呀，哈哈哈~" Option="嘿嘿，還是您自己看看吧！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_30" />
+			<Action Cmd="PLAY_MOVIE" Param="16" Name="movie_16" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_16" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105" />
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10127" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10055" Visible="1" />
+			<Action Cmd="OVER" />																																		
+		</EnterMap>	
+	</Step>				
+</Tasks>
+
+
+

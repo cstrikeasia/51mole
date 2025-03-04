@@ -1,0 +1,86 @@
+﻿<Tasks ID="622" Name="積雪鎮之戰" AwardMsg="恭喜你獲得2個山葵種子，麋鹿抱枕 " AwardBean="">
+	<Step ID="1" TarMapID="10">
+		<EnterMap MapID="10">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10244" Face="悲傷" Msg="他小的時候真的非常可愛！" Option="哎？他？老超爺爺你說啥？"/>
+				<Talk NpcID="10244" Face="悲傷" Msg="那個時候，他還會叫我爸比，還會要我給他唱小星星……" Option="老超爺爺，你振作一點！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="10">
+		<EnterMap MapID="10">
+			<Action Cmd="SAY">
+				<Talk NpcID="10244" Face="悲傷" Msg="當年的他是那麼可愛，那麼小一隻……" Option="那是老超爺爺的孩子嗎？真是太可愛了！！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10241" Face="焦急" Msg="老大，不好了！" Option="咦？這不是那個成天問我要金豆的傑西嗎？"/>
+				<Talk NpcID="10244" Face="正常" Msg="慌慌張張的像什麼樣子？讓小摩爾們笑話你沒有見識！" Option="-_-!！"/>
+				<Talk NpcID="10241" Face="焦急" Msg="老大，不好了，老大！蛋蛋回來了！老大！" Option="蛋蛋是誰啊？"/>
+				<Talk NpcID="10244" Face="正常" Msg="蛋蛋回來就回來嘛，小鬼頭能成什麼氣候！帶他來見我！" Option="蛋蛋是誰啊？"/>
+				<Talk NpcID="10241" Face="焦急" Msg="老大，不好了，老大！蛋蛋被凍成冰塊了！" Option="你們倆幹嘛一直自顧自說啊！！！！蛋蛋到底是誰啊！！！！！！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="JUMP_TASK_UI" Param="   小企鵝蛋蛋被凍成冰塊了？到底發生什麼事了？跟傑西去看看吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="356" MapType="0"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="3" TarMapID="356">
+		<EnterMap MapID="356">
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10241" Face="焦急" Msg="{$username}！怎麼辦？蛋蛋凍成這樣了……" Option="他是從哪來的？"/>
+				<Talk NpcID="10241" Face="焦急" Msg="就剛才我在瞌睡，聽到有什麼東西在咚咚咚的撞我們的小漁船，就拉著肖恩一塊去看看……" Option="然後呢？"/>
+				<Talk NpcID="10241" Face="焦急" Msg="然後蛋蛋就是這個樣子，在水裡一浮一沉，然後我們就把他撈起來了……" Option="然後呢？"/>
+				<Talk NpcID="10241" Face="焦急" Msg="然後我就不知道該怎麼辦了……" Option="這樣啊……讓我想想看"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+		</EnterMap>
+	</Step>
+	<Step ID="4" TarMapID="356">
+		<EnterMap MapID="356">
+			<Action Cmd="OPEN_PANEL" Param="Task622GamePanel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="Task622GamePanelOver"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+		</EnterMap>
+	</Step>
+	<Step ID="5" TarMapID="356">
+		<EnterMap MapID="356">
+			<Action Cmd="SAY">
+				<Talk NpcID="10249" Face="正常" Msg="肚子好餓啊，有沒有吃的啊~" Option="咦？怎麼突然不萌了？"/>
+				<Talk NpcID="10249" Face="正常" Msg="肚子餓了還要人賣萌，你對小動物太沒有愛心了吧！" Option="好吧，給你吃的好了~	"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6"/>
+		</EnterMap>
+	</Step>
+	<Step ID="6" TarMapID="356">
+		<EnterMap MapID="356">
+			<Action Cmd="SAY">
+				<Talk NpcID="10249" Face="開心" Msg="蛋蛋吃飽了，你們都是好人……" Option="蛋蛋你從哪裡來？"/>
+				<Talk NpcID="10249" Face="開心" Msg="蛋蛋從冰塊裡來啊！" Option="冰塊從哪裡來？"/>
+				<Talk NpcID="10249" Face="開心" Msg="冰塊從海上飄來的啊！" Option="海上從哪裡出發的？"/>
+				<Talk NpcID="10249" Face="開心" Msg="蛋蛋不記得啦！" Option="摔~蛋蛋你這樣是不對的~快點好好想想~"/>
+				<Talk NpcID="10249" Face="開心" Msg="呐~這裡是摩爾莊園對不對？" Option="是啊……"/>
+				<Talk NpcID="10249" Face="開心" Msg="帶蛋蛋玩好不好？好不好嘛~" Option="好啊……"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>

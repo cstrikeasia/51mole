@@ -1,0 +1,176 @@
+<Tasks ID="1013" Name="耀眼光輝之門" AwardMsg="恭喜你獲得2個梔子花種子、粉色蛋糕裙！" AwardBean="" >
+
+	<!-- 龍巢迷宮  -->
+	<Step ID="1" TarMapID="339">
+		<EnterMap MapID="339">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="topLevel" ResName="mc_0" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="magma_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="pala_mc" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10206" Face="正常" Msg="說要找圖騰，但是該從何找起呢？" Option=""/>
+				<Talk NpcID="10207" Face="正常" Msg="這裡都是岩漿，完全看不到圖騰的蹤跡！該不會已經被岩漿覆蓋了吧？" Option=""/>
+				<Talk NpcID="10208" Face="正常" Msg="會不會是藏在對面看不到的牆壁上？" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="哇哈哈，{$username}，你用這個手電筒探照一下對面的牆壁看看吧。" Option="恩，我試試~"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10208" Face="正常" Msg="{$username}你真厲害！這個圖騰說不定可以打開眼前的機關~" Option=""/>
+				<Talk NpcID="10207" Face="正常" Msg="你說得倒是輕鬆，其實根本看不清上面寫著什麼吧！" Option=""/>
+				<Talk NpcID="10206" Face="正常" Msg="與其說看不清，不如說完全看不懂呢……菩提大伯，您有線索嗎？" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="咳咳，我覺得，和警署裡的那張黑森林密碼表有點像。但是，好像哪裡又不太一樣。" Option="總之，我們先去警署看看吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="44" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	
+	<!-- 摩爾莊園警署 -->
+	<Step ID="2" TarMapID="44">
+		<NPC ID="10019" Option="耀眼光輝之門"  MapID="" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10019" Face="正常" Msg="你是說黑森林密碼表？恩，那的確被用來翻譯毛毛怪的語言和一些古老石碑上的文字。" Option="能不能借我看一下呢？"/>
+				<Talk NpcID="10019" Face="正常" Msg="當然可以，拿去用吧。" Option=""/>
+				<Talk NpcID="10208" Face="正常" Msg="{$username}，你記得那些密碼嗎？" Option="哎呀，我忘記抄下來了！"/>
+				<Talk NpcID="10206" Face="正常" Msg="瞧瞧你們這些小粗心，其實我已經偷偷抄下來啦。趕緊來對比密碼表吧~" Option="哈，不愧是麼麼公主！"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10019" Face="正常" Msg="怎麼樣？有幫助到你們嗎？" Option="很可惜，好像不是黑森林密碼"/>
+				<Talk NpcID="10019" Face="正常" Msg="唔……能不能說說，你們是在哪兒看到的這組密碼？" Option="告訴艾爾警官龍巢迷宮的事"/>
+				<Talk NpcID="10019" Face="正常" Msg="恩~根據我這個警官的推理，這組密碼應該不屬於“黑森林”。" Option="不屬於“黑森林”？"/>
+				<Talk NpcID="10019" Face="正常" Msg="你們應該是在地下的某個圖騰上發現了這組密碼吧？實際上，根據黑森林的探險記錄，黑森林的古文明裡，從來沒有發現過你們說的圖騰。" Option="這麼說，難道是其他種族的語言？"/>
+				<Talk NpcID="10209" Face="正常" Msg="哇哈哈，{$username}，我大概明白了。" Option="菩提大伯，別賣關子啦！"/>
+				<Talk NpcID="10209" Face="正常" Msg="還記得我給你看的《格曆爾傳說》嗎？裡面曾經提到了“摩爾一世”。" Option="恩，好像記得~"/>
+				<Talk NpcID="10209" Face="正常" Msg="正是賢明的摩爾一世統一了“地下城摩爾”和“黑森林摩爾”，並在地下建立了王城“摩利亞”。" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="“摩利亞”孕育了屬於摩爾特有的文明，那時開始的歷史變得有據可查，因為摩爾一世統一了文字，從而出現了“史書”這種東西。" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="據我推測，這些在地底被發現的密碼，應該屬於摩利亞古文明的文字，同時也是黑森林古文字的起源，所以它們看起來才會那麼相似。" Option=""/>
+				<Talk NpcID="10206" Face="正常" Msg="那現在我們該怎麼辦，這個密碼難道無法破解了嗎？" Option=""/>
+				<Talk NpcID="10019" Face="正常" Msg="如果是古文明的東西，不是應該問問那位偉大的先知——尼爾拉大法師嗎？" Option="的確如此，謝謝艾爾警官！"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="84" MapType="0" />
+		</NPC>
+	</Step>
+	
+	
+	<!-- 尼爾拉塔一層 -->
+	<Step ID="3" TarMapID="84">
+		<EnterMap MapID="84">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10161" Face="正常" Msg="我想你們也差不多該來了，一直在等著呢。" Option=""/>
+				<Talk NpcID="10206" Face="正常" Msg="尼爾拉大法師，您怎麼知道我們要來？" Option=""/>
+				<Talk NpcID="10161" Face="正常" Msg="你們之前不是來問過古代機關的事嗎？我就琢磨著，應該和摩利亞時代留下的迷題有關吧。如果是遇到了看不懂的文字，你們一定還會再來。" Option=""/>
+				<Talk NpcID="10207" Face="正常" Msg="哈，您可真是神算！這不，我們想要破解這些古文字，您就幫忙看看吧！" Option=""/>
+				<Talk NpcID="10161" Face="正常" Msg="恩……這些文字是摩利亞時代常用的暗號，我曾經寫過一張密碼表，保存在摩爾城堡地下的密室中，但是……" Option="但是？"/>
+				<Talk NpcID="10161" Face="正常" Msg="但是，那個密室內遭遇了失竊，遺失了一部分和黑魔法有關的書籍資料，那張密碼表也連同一起不見了。" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="尼爾拉大法師，您說的該不會是……10年前的那件事吧？" Option=""/>
+				<Talk NpcID="10161" Face="正常" Msg="沒錯，正是摩爾王七世殿下去世後不久，庫拉作為黑魔法師被驅逐之前發生的事。" Option="什麼？竟然和庫拉有關？"/>
+				<Talk NpcID="10209" Face="正常" Msg="幾乎可以肯定的是，庫拉偷走了密室中關於黑魔法的禁忌書籍，從此走入黑魔法的歧途。" Option=""/>
+				<Talk NpcID="10208" Face="正常" Msg="這麼說來，庫拉的城堡裡也許有線索！尼爾拉大法師，謝謝您告訴我們這些線索，我們先去看看！" Option=""/>
+				<Talk NpcID="10161" Face="正常" Msg="好好好，孩子們，路上可要小心啊。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1002" Name="movie_1002" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1002" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="326" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 庫拉城堡大廳 -->
+	<Step ID="4" TarMapID="326">
+		<EnterMap MapID="326">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10209" Face="正常" Msg="恩……{$username}，你看從哪裡開始找線索呢？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="201" Name="movie_201" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_201" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10209" Face="正常" Msg="這……這是……" Option="怎麼了，菩提大伯？"/>
+				<Talk NpcID="10209" Face="正常" Msg="沒事沒事，哇哈哈。（菩提大伯把紙片收了起來）" Option="（好可疑……）"/>
+				<Talk NpcID="10207" Face="正常" Msg="別磨磨蹭蹭的，不等你們了哦！" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="走吧，{$username}，我們回龍巢迷宮去！" Option="（哎，下次一定要問個清楚！）"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+		
+		<Action Cmd="PLAY_MOVIE" Param="1003" Name="movie_1003" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1003" />
+			
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="GO_MAP" MapID="339" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+		<!-- 龍巢迷宮 -->
+	<Step ID="5" TarMapID="339">
+		<EnterMap MapID="339">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10208" Face="正常" Msg="{$username}，快把對應的數字寫到石板裡去吧~" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			
+			<Action Cmd="OPEN_PANEL"  Param="DecodeGameTwoPanel" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10207" Face="正常" Msg="看，前面有一扇大門，看起來和前面的機關門不太一樣。" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="哇哈哈，錯不了，一定就是那扇古老的“耀眼光輝之門”啊。" Option="耀眼光輝之門？"/>
+				<Talk NpcID="10209" Face="正常" Msg="恩，耀眼光輝之門，就是象徵著永遠封閉摩利亞的大門。不管你信不信，現在我們的正上方應該就是尼爾拉塔了。" Option="什麼？竟然繞到了那麼遠的地方！"/>
+				<Talk NpcID="10208" Face="正常" Msg="咳咳，打斷一下，{$username}，你有沒有發現一件奇怪的事？" Option="到了地底幾乎都是奇怪的事嘛"/>
+				<Talk NpcID="10208" Face="正常" Msg="我可是說正經的啊，剛才那個密碼你還記得是多少嗎？" Option="恩……04711……怎麼了？"/>
+				<Talk NpcID="10206" Face="正常" Msg="摩爾曆……" Option="哎？什麼？"/>
+				<Talk NpcID="10207" Face="驚訝" Msg="對啊！今年是摩爾曆4711年！這……這個圖騰是怎麼知道的，難道只是巧合？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+		
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

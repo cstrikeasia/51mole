@@ -1,0 +1,88 @@
+<Tasks ID="588" Name="魔術的秘密" AwardMsg="恭喜你獲得20個歡樂券、10個經驗果實！" AwardBean="" >
+
+	<!-- 西部遊樂場  -->
+	<Step ID="1" TarMapID="6">
+		<NPC ID="10203" Option="魔術的秘密"  MapID=""  Layer="depthLevel" Name="盧卡斯" Ex="688" Ey="385" Px="688" Py="370"  Msg="想要欣賞前所未有的魔術嗎？快來找我吧！" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10203" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="mogu" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="驚訝" Msg="這究竟是怎麼回事？箱子被鋸成兩半，裡面的助手肯定也被鋸成兩半了，可他怎麼看起來沒事一樣——當然我不希望他有事，可是這究竟該怎麼解釋呢？" Option=""/>
+				<Talk NpcID="10197" Face="驚訝" Msg="這電鋸活人真是太神奇了，好好的一個摩爾，就這麼活生生被分成了兩半！" Option=""/>
+				<Talk NpcID="10203" Face="正常" Msg="是不是很不可思議呢？其實這個魔術的原理相當簡單，不知道在場的各位是否有人能猜到其中的秘密？" Option=""/>
+				<Talk NpcID="10000" Face="開心" Msg="我知道~嘿嘿！" Option=""/>
+				<Talk NpcID="10197" Face="驚訝" Msg="樂樂，你知道這個魔術是怎麼回事？" Option=""/>
+				<Talk NpcID="10000" Face="開心" Msg="當然！哈哈~讓我來告訴你們！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+<!-- 			<Action Cmd="GO_MAP" MapID="333" MapType="0" /> -->
+		</NPC>	
+	</Step>
+	
+	
+	<!-- 西部遊樂場 -->
+	<Step ID="2" TarMapID="6">
+		<EnterMap MapID="6">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="mogu" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10203" Face="正常" Msg="想看更精彩的魔術？哦，呵呵，看來，我得使出我的拿手絕活才行。" Option=""/>
+				<Talk NpcID="10197" Face="開心" Msg="哇，還有拿手絕活？好期待哦！" Option=""/>
+				<Talk NpcID="10203" Face="正常" Msg="不過，我需要兩位觀眾來配合配合。有人願意嗎？噢，我看你們兩位挺合適的嘛（眼神直勾勾地盯著布多多和布少少）。" Option=""/>
+				<Talk NpcID="10010" Face="開心" Msg="啊？是說我們嗎？忽然變成焦點了，都沒反應過來，嘿嘿嘿……" Option=""/>
+				<Talk NpcID="10011" Face="開心" Msg="好耶好耶~變魔術什麼的我最喜歡了！" Option=""/>
+			</Action>
+			
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+		</EnterMap>
+	</Step>
+	
+	
+	<!-- 西部遊樂場 -->
+	<Step ID="3" TarMapID="6">
+		<EnterMap MapID="6">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="mogu" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="驚訝" Msg="這……這兩隻熊，真的是多多和少少嗎？" Option=""/>
+				<Talk NpcID="10000" Face="驚訝" Msg="我還是不大信……多多和少少怎麼會變成熊？他們是不是被藏起來啦？我們在周圍找找看！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="驚訝" Msg="快看，這兩隻熊，一隻貪吃，一隻貪睡，和多多少少還真是很像呢！" Option=""/>
+				<Talk NpcID="10009" Face="驚訝" Msg="這麼說……他們真的是多多和少少變成的了！盧卡斯魔術師真是厲害呢！" Option=""/>
+				<Talk NpcID="10000" Face="驚訝" Msg="好吧，這下我徹底信服了。不過，還是讓多多少少趕緊變回來吧，他們這副模樣，總覺得看著不大習慣……" Option=""/>
+				<Talk NpcID="10197" Face="驚訝" Msg="是呀是呀，我還是喜歡他們原來的樣子。讓盧卡斯魔術師把他們變回來吧。呀，可是，魔術師去哪兒了？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="mogu" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

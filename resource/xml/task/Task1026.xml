@@ -1,0 +1,92 @@
+﻿<Tasks ID="1026" Name="全世界的幸福" AwardMsg="恭喜你獲得1個水冰冰摜奶杯（摩靈）、1個小豬麵包機（傢俱）和1萬摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="400">
+		<EnterMap MapID="400">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="焦急" Msg="-_-||| 好漫長啊，我已經開始犯困了……" Option="要不問問長老我們能不能幫上什麼忙吧~"/>
+				<Talk NpcID="10000" Face="正常" Msg="好呀，不然我真的要睡著了，花藤的毒難道還沒有過去？" Option=""/>
+				<Talk NpcID="10295" Face="正常" Msg="不用問了，當心長老又發脾氣。其實，你們有很重要的任務要做，只是，不知道你們願不願意。" Option="當然願意啦，我們都會貢獻自己的力量的！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="疑惑" Msg="所以我們要做什麼呢？" Option=""/>
+				<Talk NpcID="10295" Face="正常" Msg="去摩靈世界的不同空間，找回關鍵的能量核……" Option=""/>
+				<Talk NpcID="10000" Face="開心" Msg="好叻，現在就出發了~" Option=""/>
+				<Talk NpcID="10295" Face="正常" Msg="別急，聽我說完。" Option="恩恩！"/>
+				<Talk NpcID="10295" Face="正常" Msg="請在三天之內一定要回來，不然會趕不上和璨公主配合最佳時機，一定要記住！" Option="我們該去哪裡找呢？"/>
+				<Talk NpcID="10295" Face="正常" Msg="這個給你們，按照圖上去找就可以了，注意安全，快些回來！" Option="知道啦！樂樂，我們出發吧！"/>
+				<Talk NpcID="10000" Face="開心" Msg="哦耶！探險小分隊，出發！！" Option=""/>
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="400">
+		<EnterMap MapID="400">
+			<Action Cmd="OPEN_PANEL" Param="Task1026Panel" ClearMap="0"/>
+<!-- 			<Action Cmd="ACT_EVENT" Param="findFiveMagicBall" Name="movie_200" IsBg="1" IsFullScreen="1"/>這裡直接做成一個面板，感覺更加方便。 -->
+			<Action Cmd="ADD_EVENT" Param="findFiveMagicBall"></Action>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="這些摩珠好像高智商生物哦，竟然自己會飛往摩靈宮殿，我們也跟著去吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="400" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="3" TarMapID="400">
+		<EnterMap MapID="400">
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="開心" Msg="我們趕上了吧？" Option=""/>
+				<Talk NpcID="10295" Face="焦急" Msg="正是時候，黑龍應該也快來了~" Option="黑龍？他也聽你的？"/>
+				<Talk NpcID="10295" Face="焦急" Msg="當然不是，你看~" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10295" Face="焦急" Msg="說來就來了，快點讓開，不要讓能量波及，大家都找到地方抓好啊~" Option="會怎麼樣啊？"/>
+				<Talk NpcID="10295" Face="正常" Msg="可能會被能量波吹走啊~" Option="吹走了會怎麼樣？"/>
+				<Talk NpcID="10295" Face="正常" Msg="飄到哪裡算哪裡咯，不過……" Option="什麼什麼？不過什麼？"/>
+				<Talk NpcID="10295" Face="正常" Msg="應該不至於啦！還是不說了！" Option="你不說我只會更加害怕！"/>
+				<Talk NpcID="10295" Face="正常" Msg="其實也就是會被吹到不同空間之間的縫隙找不到回來的路，永遠飄蕩著，再也回不來……" Option="好恐怖！"/>
+				<Talk NpcID="10295" Face="正常" Msg="所以，請無論何時，系好安全帶……風來了……" Option="安全帶？？？？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="有大事要發生的感覺，希望這次能夠順利的拯救摩靈世界，消滅一切邪惡勢力，耶！"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" TarMapID="400">
+		<EnterMap MapID="400">	
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10294" Face="悲傷" Msg="璨公主啊……" Option="小C老師會怎麼樣啊？"/>
+				<Talk NpcID="10294" Face="悲傷" Msg="你這是何苦呢？" Option=""/>
+				<Talk NpcID="10300" Face="正常" Msg="泰尼伯伯，明就拜託給你了，我們的王就拜託給你了。不這樣做，暗能量總有一天會反噬的，為了全世界的幸福，犧牲璨一個人，沒有關係！" Option=""/>
+			</Action>
+			
+	        <Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+	        <Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			
+<!-- 			<Action Cmd="OPEN_PANEL"  Param="Task1025Panel" ClearMap="0"/> -->
+<!-- 			<Action Cmd="ADD_EVENT" Param="Task1025ChooseRight"/> -->
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>

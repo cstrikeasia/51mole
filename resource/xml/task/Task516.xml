@@ -1,0 +1,190 @@
+<Tasks ID="516" Name="遺跡探秘" AwardMsg="恭喜你獲得羊毛淑女扇、2000摩爾豆！" AwardBean="2000" >
+	<Step ID="1" >
+		<EnterMap MapID="312" >
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />	
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1"/>							
+			<Action Cmd="SAY" >
+				<Talk NpcID="10045" Face="正常" Msg="公主殿下，您怎麼會出現在這裡？剛才有多麼危險您知道嗎？" Option="前情回顧" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />				
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="焦急" Msg="我……我只是……聽說庫拉要搶奪金色鳶尾花，我身為公主，不想眼睜睜看著莊園陷入危機，所以就……" Option="原來公主也是因為金色鳶尾花而來。" />
+				<Talk NpcID="10045" Face="正常" Msg="可也不能一個人跑出來呀！要是您遇到什麼危險，莊園怎麼辦？" Option="剛才還好瑞琪及時出現！" />
+				<Talk NpcID="10002" Face="悲傷" Msg="嗚嗚……就因為這個公主身份，即便是莊園陷入危機，我都不能像一個普通小摩爾那樣，為莊園盡一份力……" Option="看來公主也不是那麼好當的……" />
+				<Talk NpcID="10002" Face="悲傷" Msg="我保證，以後再也不像這樣任性了。不過，這次還是讓我完成我的探險，就這一次，行嗎？" Option="瑞琪團長，你就答應公主吧！" />
+				<Talk NpcID="10045" Face="正常" Msg="哎……好吧！但是，公主您必須答應，要讓我好好保護你，知道嗎？" Option="我也會保護您的，公主殿下！" />
+				<Talk NpcID="10002" Face="正常" Msg="嗯，一定！對了，瑞琪，你怎麼也來黑森林了？" Option="難道瑞琪也聽到了什麼風聲？" />
+				<Talk NpcID="10045" Face="正常" Msg="我來此的目的和你們一樣，也是在追蹤金色鳶尾花。之前得知莊園遭遇了危機，我便一路打探，來到了這裡，希望能找到鳶尾仙堡。" Option="那，你有發現了什麼線索嗎？" />
+				<Talk NpcID="10045" Face="正常" Msg="很遺憾，恐怕我們還得繼續調查！只是，這裡的霧太濃，不利於前行，我們先想辦法把霧氣驅散吧！" Option="嗯，我來試試驅散迷霧！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+		</EnterMap>	
+	</Step>		
+	
+	<Step ID="20" >  
+		<EnterMap MapID="313" >
+			  <!-- 做完青蛙的遊戲過後，設置panel == 3，<Action Cmd="SET_BUFFER" Panel="3" Step="2" />	不過設在這裡也可以的 -->									
+						
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10045" Face="正常" Msg="噓~你們聽，好像哪兒傳來了一陣呼救聲？" Option="這裡除了我們，還會有誰呢？" />
+				<Talk NpcID="10002" Face="焦急" Msg="難道有人遇到危險了？也許，我們應該去幫幫他！" Option="不過都沒看見那個人在哪兒！" />	
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4"  IsBg="0" />
+			
+			<!--修改看看<Action Cmd="DELETE_MOVIE" Param="movie_4" />  -->
+				
+			<Action Cmd="SET_BUFFER" Panel="4" Step="30" />	
+		</EnterMap>b
+	</Step>
+	
+	<Step ID="30" >
+		<EnterMap MapID="314" >
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="看來，是有人被困在下面了，如果能有根繩子，或許我們可以把他拉上來。" Option="不過這裡好像沒有繩子！" />
+				<Talk NpcID="10045" Face="正常" Msg="沒有繩子，我們只好利用現有資源了。{$username}，你來幫幫我，我們利用這些藤條做一條繩子，把下面的人救上來！" Option="嗯，好的！" />	
+			</Action>						
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="PLAY_MOVIE" Param="5_1" Name="movie_5_1" IsBg="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_5_1" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="7_1" Name="movie_7_1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10045" Face="正常" Msg="庫拉？！竟然是你？你怎麼會被囚禁於此？" Option="對呀，不是從來都是你欺負別人嗎？" />
+				<Talk NpcID="10003" Face="正常" Msg="哎，這，這……說來話長啊……我的一世英名，就這麼被活生生地毀了……" Option="究竟發生了什麼事？" />	
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7_1" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="PLAY_MOVIE" Param="7_1" Name="movie_7_1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10045" Face="正常" Msg="所以說，當初你製造分身的時候，肯定沒想到他會背叛你吧！" Option="分明就是自作自受！" />
+				<Talk NpcID="10003" Face="正常" Msg="還說我！現在我的分身力量越來越強大，如果不制止他，我們大家都不會有好下場！如果你們願意，我倒是有個辦法……" Option="哼，還不是都怪你！" />	
+				<Talk NpcID="10045" Face="正常" Msg="說吧，你有什麼辦法？" Option="庫拉能想出什麼好辦法！" />
+				<Talk NpcID="10003" Face="正常" Msg="單憑我們各自的力量，恐怕難以跟我的分身抗衡。不過如果我們能合作，那就不一樣了。而且，我還可以告訴你們鳶尾仙堡的位置所在。怎麼樣，划算吧？" Option="你知道怎麼去鳶尾仙堡？" />	
+				<Talk NpcID="10003" Face="開心" Msg="哈哈哈~鳶尾仙堡對你們來說確實難找了點，但對我，卻是小菜一碟！我可以肯定，它就在摩爾王寶藏附近。只要打敗黑龍就有辦法了！" Option="黑龍？黑龍不是早被消滅了嗎？" />	
+				<Talk NpcID="10003" Face="正常" Msg="那是以前的黑龍，現在我的分身又複製出了另一條黑龍來阻止我們。怎麼樣？瑞琪團長，有興趣和我合作嗎？" Option="這……" />	
+				<Talk NpcID="10045" Face="正常" Msg="好，我跟你合作，但這僅僅是為了莊園！如果你膽敢耍小花招，我一定饒不了你！" Option="我也饒不了你！" />
+				<Talk NpcID="10003" Face="正常" Msg="哈哈哈，我怎敢在瑞琪團長您的面前耍花招呢？事不宜遲，我們先趕往古城堡遺跡吧，那可是去摩爾王寶藏的必經之路。" Option="好，我們朝古城堡遺跡出發！" />	
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_7_1" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="40" />		
+			<Action Cmd="GO_MAP" MapID="315" MapType="0" />	
+		</EnterMap>		
+	</Step>
+	
+	<Step ID="40" >
+		<EnterMap MapID="315" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10120" Face="正常" Msg="嗨~各位，我在此恭候你們多時啦！啊哈哈哈……哦，不對，哦呵呵呵……" Option="菩提大伯？你怎麼也來這裡了？" />
+				<Talk NpcID="10120" Face="正常" Msg="只許你來不許我來呀？噢，不，不，我是說，我是專程來接你們回去的，嗯，沒錯，接你們回去！" Option="大伯，我們還得去找金色鳶尾花呢！" />
+				<Talk NpcID="10120" Face="正常" Msg="找什麼鳶尾花呀，大伯這樣樣花都有，什麼杜鵑花、牡丹花，都比鳶尾花漂亮。跟大伯一起回去，隨你挑！" Option="可是莊園的危機怎麼辦？" />
+				<Talk NpcID="10120" Face="正常" Msg="什麼危機，什麼金色鳶尾花，那都是江湖傳言，別聽他們胡說！大伯跟你保證，莊園壓根就沒有什麼危機！該吃喝的吃喝，該玩的玩去~" Option="啊……不是吧？" />
+				<Talk NpcID="10003" Face="正常" Msg="我說，老菩提，別在這裝傻了！就憑你那點見識，不知道金色鳶尾花絲毫也不奇怪！你的這群小朋友，如今跟我是一夥的了，你還是回去洗澡睡覺吧！" Option="話說今天的大伯怪怪的？" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="焦急" Msg="{$username}，你有沒有覺得，今天菩提大伯像變了個人似的，莊園明明就遭受了危機，他怎麼可能說這樣的話！" Option="對，我也這樣覺得！" />
+				<Talk NpcID="10045" Face="正常" Msg="而且，菩提校長見到我，怎麼像是不認識我了一樣。越覺得奇怪了……" Option="肯定是有人假冒大伯！讓我來揭穿他！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			 <Action Cmd="SET_BUFFER" Panel="6" Step="50" />	
+			<Action Cmd="OPEN_PANEL" Param="MoleSearch" />																
+		</EnterMap>	
+	</Step>	
+
+	<Step ID="50" >
+		<SubmitScore ModuleID="10029" MinScore="1" LoseMsg="很遺憾你沒有揭穿菩提大伯，想再試一下嗎" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />	
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="焦急" Msg="對了，{$username}，你看見瑞琪了嗎？他怎麼不見了？還有庫拉，和他的分身，統統都不見了？" Option="瑞琪和庫拉，不會被分身給抓走了吧？" />
+				<Talk NpcID="10002" Face="焦急" Msg="不，不會的，瑞琪答應要保護我的！我們先四處找找，希望能找到他們才好！" Option="好，那我們先在這周圍找找！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />	
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />	
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10118" Face="生氣" Msg="要讓我再見到我的分身，我非得，扒他的皮，抽他的筋！把我堂堂庫拉大人變成這幅模樣！我還有什麼臉見人啊！！" Option="呃，你確定能打過你的分身嗎？" />
+				<Talk NpcID="10118" Face="生氣" Msg="要你管！反正，反正我一定要報仇！報仇！！！" Option="對了，你剛才看見瑞琪了嗎？" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />	
+			<Action Cmd="PLAY_MOVIE" Param="13" Name="movie_13" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_13" />				
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />				
+			<Action Cmd="PLAY_MOVIE" Param="14" Name="movie_14" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10119" Face="正常" Msg="啊？剛才我不是在戰鬥嗎？有一瞬間，我似乎被彈飛到好遠，等我反應過來，就發現自己身在遺跡上面。周圍的一切，都變得巨大無比！" Option="不是周圍變大了，而是你變小了！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_14" />
+			<Action Cmd="PLAY_MOVIE" Param="15" Name="movie_15" IsBg="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105" />				
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="瑞琪，別擔心，我們一定會找到辦法幫你恢復正常的！" Option="對呀！（不過現在這樣也挺可愛的^_^）" />
+				<Talk NpcID="10119" Face="正常" Msg="當下，我們還是趕緊朝摩爾王寶藏前進吧！得早日找到鳶尾仙堡才行！" Option="好，我們立即出發！" />
+				<Talk NpcID="10119" Face="正常" Msg="{$username}，我現在變成了這樣，恐怕……後面的一切，要多多靠你了！當然，我會儘量用我的戰鬥經驗幫助你！" Option="沒問題！我們趕快去摩爾王寶藏吧！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_15" />	
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />	
+			<Action Cmd="SET_BUFFER" Panel="7" Step="60" />					
+			<Action Cmd="GO_MAP" MapID="316" MapType="0" />	
+		</SubmitScore>		
+	</Step>	
+
+	<Step ID="60" >
+		<EnterMap MapID="316" >	
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="boss_dragon_mc" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="16" Name="movie_16" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10119" Face="正常" Msg="勇敢的{$username}，黑龍就交給你了，我和小庫拉在一旁保護公主，關鍵的時候我也會來幫你的，加油吧！" Option="嗯！我會盡力的！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_16" />	
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="boss_dragon_mc" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />		
+			<!-- 打黑龍！！打敗過後繼續下面步驟 -->	
+			<Action Cmd="ADD_EVENT" Param="DragonDie" /><!-- 偵聽事件後執行 -->					
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="boss_dragon_mc" Visible="0" />			
+			<Action Cmd="PLAY_MOVIE" Param="17" Name="movie_17" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10119" Face="正常" Msg="{$username}，我果然沒看錯，你真是個勇敢的小摩爾！多虧你了！" Option="嘻嘻，應該的，應該的！" />
+				<Talk NpcID="10002" Face="正常" Msg="等危機解除了，一定要好好地嘉獎{$username}。不過，現在我們的問題是，該如何去鳶尾仙堡呢？" Option="我們在周圍找找，看有沒有什麼線索！" />		
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_17" />	
+			<Action Cmd="PLAY_MOVIE" Param="18" Name="movie_18" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_18" />	
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />	
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="boss_dragon_mc" Visible="1" />		
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106" />			
+			<Action Cmd="PLAY_MOVIE" Param="107" Name="movie_107" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_107" />	
+			<Action Cmd="OVER" />																																																
+		</EnterMap>
+	</Step>
+		
+</Tasks>
+
+
+

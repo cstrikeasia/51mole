@@ -1,0 +1,56 @@
+<Tasks ID="565" Name="永遠的戰友" AwardMsg="恭喜你獲得10個經驗果實（大），2000摩爾豆！" AwardBean="2000" >
+	<!-- 前哨站 -->
+	<Step ID="1" TarMapID="61">
+		<EnterMap MapID="61 ">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="ACT_EVENT" Param="hideKnight" /><!-- 拋事件 -->
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10172" Face="正常" Msg="看著你們關係好，讓我想起了一些往事，不禁黯然神傷……" Option="你哪裡看到他們關係好了？"/>
+				<Talk NpcID="10172" Face="正常" Msg="從前，我也有個好朋友，我們一同拜師學藝，一同練功，同吃同住，同進同出，關係非一般的好." Option="你確定他和你是兄弟，不是夫妻？"/>
+				<Talk NpcID="10172" Face="正常" Msg="可惜，好景不長，有次比劍，他將我刺傷，我便昏迷不醒，他以為是他親手殺了我，便自甘墮落……" Option="怎麼會這樣？"/>
+				<Talk NpcID="10172" Face="正常" Msg="等我醒來，隊長告訴我，他已經被零蠱惑，吃下變身藥丸而變成了惡魔，如果……如果他知道我還未死，一定會清醒的！可惜我有要務在身，實在……" Option="那我們去幫轉告他."/>
+				<Talk NpcID="10172" Face="正常" Msg="真的？他現在是惡魔隊長，你們只要讓他們抓住，他應該會親自審問你們，到時候你們把這個項鍊交給他，他一定會醒悟的！" Option="那我們豈不是自投羅網？"/>
+				<Talk NpcID="10172" Face="正常" Msg="不會的，如果他不肯放人，我們一定會設法救你們出去！放心吧！" Option="那……那好吧……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="80" MapType="0" />
+		</EnterMap>
+	</Step>
+	<!-- 前哨站 -->
+	<Step ID="2" TarMapID="80">
+		<EnterMap MapID="80 ">
+			<Action Cmd="OPEN_PANEL" Param="PacManPanel"/> 
+		</EnterMap>
+	</Step>
+	
+	<!-- 前哨站 -->
+	<Step ID="3" TarMapID="61">
+		<EnterMap MapID="61">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10160" Face="正常" Msg="這……這件物件，你們從何而來？他……他難道還活著？" Option="是啊，他說他很掛念你."/>
+				<Talk NpcID="10160" Face="正常" Msg="沒死最好，我一直沒贏過他，這次要在戰場上好好和他較量一番！" Option="他的勝敗記錄想必和喜狼狼差不多吧."/>
+				<Talk NpcID="10160" Face="正常" Msg="看你們也搞不出什麼花樣，趕緊滾吧，有多遠滾多遠." Option="你真是壞透了！"/>
+				<Talk NpcID="10160" Face="正常" Msg="對了，這封戰書你拿去，回頭交給他，讓他有心理準備！" Option="哼！別理他，我們走."/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+		</EnterMap>
+	</Step>
+		<!-- 前哨站 -->
+	<Step ID="4" TarMapID="61">
+		<EnterMap MapID="61 ">
+			<Action Cmd="ACT_EVENT" Param="hideKnight" /><!-- 拋事件 -->
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" sFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

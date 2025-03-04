@@ -1,0 +1,130 @@
+﻿<Tasks ID="618" Name="積雪鎮之戰" AwardMsg="恭喜你獲得2個山葵種子、摩摩忍者鏢" AwardBean="">
+
+	<Step ID="1" TarMapID="53">
+		<EnterMap MapID="53">
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="生氣" Msg="這幫強盜企鵝，竟然連聖誕老人都綁架了，小摩爾們，我菩提，正式向他們宣戰！" Option="大伯，您當心閃著腰！"/>
+				<Talk NpcID="10007" Face="生氣" Msg="放心，大伯還沒老到動不了的程度！來，我們開作戰會議！" Option="嗯"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="PLAY_MOVIE" Param="201" Name="movie_201" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_201" />
+			<Action Cmd="JUMP_TASK_UI" Param="   小摩爾們提起精神來，不能讓菩提大伯失望，沖啊！戰勝企鵝！"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="355" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="2" TarMapID="355">
+		<EnterMap MapID="355">
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="JUMP_TASK_UI" Param="   看來企鵝還沒有登陸碼頭，我們繼續前進，目標浮冰島海灣，go！"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="356" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="3" TarMapID="356">
+		<EnterMap MapID="356">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+			<Action Cmd="GO_MAP" MapID="356" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" TarMapID="356">
+		<EnterMap MapID="356">
+			<Action Cmd="OPEN_PANEL" Param="Task618StoneGamepanel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="Task618StoneGamepanelOver"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+			<Action Cmd="GO_MAP" MapID="356" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="5" TarMapID="356">
+		<EnterMap MapID="356">
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />	
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6"/>
+			<Action Cmd="GO_MAP" MapID="356" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="6" TarMapID="356">
+		<EnterMap MapID="356">
+			<Action Cmd="OPEN_PANEL" Param="Task618dinPiGamePanel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="Task618dinPiGamePanelOver"/>
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="JUMP_TASK_UI" Param="    順利通關浮冰島海灣，最終目標積雪鎮就在眼前！"/>
+			<Action Cmd="SET_BUFFER" Panel="7" Step="7"/>
+			<Action Cmd="GO_MAP" MapID="357" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="7" TarMapID="357">
+		<EnterMap MapID="357">
+			<Action Cmd="SAY">
+				<Talk NpcID="10244" Face="正常" Msg="那兩個沒用的東西，竟然連你們幾個小不點都擋不住！" Option="╭(╯^╰)╮摩爾戰無不勝！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY">
+				<Talk NpcID="10244" Face="正常" Msg="大話不要說得太早，敢不敢和我比一比？" Option="有什麼不敢的！比就比！"/>
+				<Talk NpcID="10000" Face="正常" Msg="{$username}，讓我來跟他比一比！壞企鵝，你說比什麼！" Option="樂樂加油！！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			<Action Cmd="SET_BUFFER" Panel="8" Step="8"/>
+			<Action Cmd="GO_MAP" MapID="357" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="8" TarMapID="357">
+		<EnterMap MapID="357">
+			<Action Cmd="OPEN_PANEL" Param="Task618SailedGame" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="Task618SailedGameOver"/>
+			<Action Cmd="SET_BUFFER" Panel="9" Step="9"/>
+			<Action Cmd="GO_MAP" MapID="357" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="9" TarMapID="357">
+		<EnterMap MapID="357">
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10244" Face="失望" Msg="好吧，我輸了，你們想怎麼樣，你們說吧！" Option="偷了莊園的東西統統還回來！！"/>
+				<Talk NpcID="10244" Face="失望" Msg="留一點食物給孩子們吧，你看孩子們都餓了！" Option="這……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10244" Face="失望" Msg="我們是真的沒有辦法！" Option="不行，偷走的東西一定要還回來，但是我們會幫助你們渡過難關！"/>
+				<Talk NpcID="10244" Face="失望" Msg="真是太謝謝你們了，你們摩爾真是太善良了！" Option="我們有一個條件，先把聖誕老人放了！"/>
+				<Talk NpcID="10244" Face="失望" Msg="聖誕老人……就在這裡，你們隨時可以帶走他！" Option="凍上了呀，快點化凍！"/>
+				<Talk NpcID="10244" Face="失望" Msg="事情是這樣的……" Option="？？？？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_105" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10244" Face="失望" Msg="你看，積雪鎮特殊的天氣環境讓聖誕老人被凍起來了，我們本來只是想要他的東西，沒想綁架他！" Option="搶東西也是不對的！"/>
+				<Talk NpcID="10244" Face="失望" Msg="是是是，你說的沒錯！" Option="我們一定要想辦法在耶誕節之前把聖誕老人救出來！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_106" />
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>

@@ -1,0 +1,195 @@
+<Tasks ID="1016" Name="第二個摩爾之眼" AwardMsg="恭喜你獲得2個曼珠沙華種子、小丑面具！" AwardBean="" >
+
+	<!-- 摩利亞王城 -->
+	<Step ID="1" TarMapID="343">
+		<EnterMap MapID="343">
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10198" Face="正常" Msg="{$username}，我們要衝入摩利亞王城了。無論前方出現怎樣的敵人，我們一定要堅守摩爾莊園和摩利亞，你準備好了嗎？" Option="我準備好了！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="GO_MAP" MapID="346" MapType="0" />
+		</EnterMap>	
+		
+		<EnterMap MapID="346">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10156" Face="正常" Msg="你們總算來了，等得我可真是心急啊！" Option="零！難道你就是第四個黑魔法師？"/>	
+				<Talk NpcID="10156" Face="正常" Msg="這不是{$username}嘛，我想怎麼那麼眼熟呢！那邊那個品味不錯的騎士團長，該不會就是傳說中的瑞琪吧？" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="你就是隨著惡魔島一起出現的古德摩•零？" Option=""/>
+				<Talk NpcID="10156" Face="正常" Msg="答對了！我零帥的名氣看來還是挺響的嘛。難得演員到齊了，我們不好好玩一玩嗎？" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="{$username}，小心，注意躲開他的魔法空間！" Option="哎？什麼？魔法空間？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10198" Face="正常" Msg="{$username}，我保護公主，你要保護好艾蓮娜！" Option=""/>
+				<Talk NpcID="10216" Face="焦急" Msg="{$username}，你在哪？" Option="艾蓮娜，抓住我的手！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="GO_MAP" MapID="337" MapType="0" />
+		</EnterMap>	
+		
+		<EnterMap MapID="337">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="正常" Msg="這是哪裡？" Option=""/>
+				<Talk NpcID="10216" Face="正常" Msg="看起來是蘑菇森林，但好像並不是。也許是“另一個世界”的蘑菇森林吧。大家都分散到各個空間裡去了，這裡只有我們兩個。" Option="另一個世界？"/>
+				<Talk NpcID="10216" Face="正常" Msg="艾蓮娜在書裡看到過哦，如果不走正確的出口，就會永遠在這片區域徘徊。" Option="正確的出口在哪裡？"/>
+				<Talk NpcID="10216" Face="正常" Msg="你試試這盞螢火蟲燈，用它照亮地面，螢火蟲會告訴你怎麼做！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />
+			
+			<Action Cmd="GO_MAP" MapID="346" MapType="0" />
+		</EnterMap>	
+			
+		<EnterMap MapID="346">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="焦急" Msg="{$username}，瑞琪團長正陷入苦戰！你快去幫幫他吧！" Option="瑞琪團長，我來幫您！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+		</EnterMap>	
+	</Step>
+	
+	
+	<!-- 王者大廳 -->
+	<Step ID="2" TarMapID="346">
+		<EnterMap MapID="346">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10210" Face="正常" Msg="零，你不是說把他們引到這裡來就可以找到女神之淚嗎，找到沒？你那沒用的魔法空間很快就要被破解了！" Option=""/>
+				<Talk NpcID="10154" Face="正常" Msg="注意你的用詞！竟然說我零帥的魔法沒用，哼哼哼！趁著其他地方沒人，伊絲特，拉比特，已經去搜女神之淚了，你負責拖住他們就行！" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="{$username}，艾蓮娜，小心，他們攻過來了！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="201" Name="movie_201" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_201" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10154" Face="正常" Msg="真是辛苦你了，華利弗" Option=""/>
+				<Talk NpcID="10210" Face="正常" Msg="你就這樣抱著手臂看別人幹活嗎？" Option=""/>
+				<Talk NpcID="10154" Face="正常" Msg="不不不，我只是說，這作為你最後的表演已經足夠了。" Option=""/>
+				<Talk NpcID="10210" Face="正常" Msg="你要做什麼？！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10154" Face="正常" Msg="哈哈哈哈哈哈！！！！摩爾之眼！真是不費吹灰之力！" Option="什麼，摩爾之眼？"/>
+				<Talk NpcID="10154" Face="正常" Msg="愚蠢的摩爾們！你們以為封印了摩爾之眼和王冠就可以高枕無憂？天真！太天真了！只要我零帥想，摩爾之眼要多少就能造多少出來！當然，得有這些愚蠢的黑魔法師給我當祭品才行！" Option="華利弗怎樣了！"/>
+				<Talk NpcID="10154" Face="正常" Msg="那個怪模怪樣的小丑嗎？他已經被詛咒成這個又黑又醜的石頭啦！哈哈哈哈！" Option="竟然背叛自己的同伴！"/>
+				<Talk NpcID="10154" Face="正常" Msg="傻~瓜！我的目的就是打開黑龍的封印，召喚地獄之門，讓這個世界重新被惡魔佔領！他們要女神之淚，就送給他們好啦！" Option="竟然背叛自己的同伴！"/>
+				<Talk NpcID="10206" Face="正常" Msg="原來如此，所以你才花了那麼多心思騙我來到這裡，其實是想利用我的皇室之血吧！" Option=""/>
+				<Talk NpcID="10154" Face="正常" Msg="不愧是公主，真是聰明！既然你那麼聰明，能不能幫忙給我一點你的皇室之血呢？本帥想再造一個摩爾王冠！" Option="摩爾之眼張開之時，地獄之門開啟之始！"/>
+				<Talk NpcID="10154" Face="正常" Msg="哎呀哎呀，摩爾莊園的課本裡專門教這條嗎？沒錯啦，本帥就是要結合摩爾王冠和摩爾之眼，打開黑龍的封印！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+<!-- 			<Action Cmd="GO_MAP" MapID="84" MapType="0" /> -->
+		</EnterMap>
+	</Step>
+	
+	
+	<!-- 王者大廳 -->
+	<Step ID="3" TarMapID="346">
+		<EnterMap MapID="346">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10198" Face="正常" Msg="公主請退後，危險！" Option=""/>
+				<Talk NpcID="10206" Face="靈感" Msg="零，如果你的目的只是這樣，那恐怕要落空了！" Option=""/>
+				<Talk NpcID="10154" Face="驚訝" Msg="什麼……難道！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10188" Face="正常" Msg="哈哈哈哈！我最喜歡看自以為聰明的傢伙被我耍得團團轉了！" Option=""/>
+				<Talk NpcID="10154" Face="正常" Msg="唔……可惡！你把公主藏到什麼地方去了！" Option=""/>
+				<Talk NpcID="10188" Face="正常" Msg="誰會告訴你啊，笨~蛋！你看，那麼多人找你，你不迎接一下嗎？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="13" Name="movie_13" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="疑惑" Msg="零，你這個幕後黑手，我絕不放過你！用大家的力量一定能戰勝你！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_13" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="202" Name="movie_202" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_202" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="14" Name="movie_14" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10154" Face="正常" Msg="哼……別以為我會善罷甘休，你們最好好好記住我今天說的話！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_14" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="15" Name="movie_15" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10198" Face="正常" Msg="RK，穿著女裝到處行動很不方便吧。" Option=""/>
+				<Talk NpcID="10188" Face="正常" Msg="開什麼玩笑，一個合格的怪盜是不會介意男扮女裝的！" Option="其實是水元素騎士套裝都是女裝吧= ="/>
+				<Talk NpcID="10198" Face="正常" Msg="為什麼你要假扮成麼麼公主？" Option=""/>
+				<Talk NpcID="10188" Face="正常" Msg="“我是為了還人情才來幫你們的”——這個答案如何？" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="那看來只有捉住你帶回莊園好好問詢了。" Option=""/>
+				<Talk NpcID="10188" Face="正常" Msg="哼……我怎麼可能會乖乖被你抓住！而且，是你們的麼麼公主委託我代她調查摩利亞事件的。" Option="原來公主早就預料到零的陰謀了"/>
+				<Talk NpcID="10188" Face="正常" Msg="好啦！接下來就是提問時間！我是什麼時候冒充了麼麼公主呢？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_15" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="203" Name="movie_203" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_203" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="16" Name="movie_16" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10188" Face="正常" Msg="全~部~錯~誤~！答案是E——你成為元素騎士的時候！" Option="還是那麼愛裝腔作勢= ="/>
+				<Talk NpcID="10188" Face="正常" Msg="其他的事，就等你們找到麼麼公主之後問她吧。摩爾之眼我就收下了！" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="麼麼公主在哪裡？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_16" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="17" Name="movie_17" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_17" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" MapID="345"/>
+		</EnterMap>
+	</Step>
+</Tasks>

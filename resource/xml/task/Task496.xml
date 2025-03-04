@@ -1,0 +1,106 @@
+<Tasks ID="496" Name="海妖之心" AwardMsg="恭喜你獲得嘟嘟眼鏡男髮型、2000摩爾豆。" AwardBean="2000" >
+	<Step ID="1" >
+		<EnterMap MapID="254" >
+			<Action Cmd="SET_ATTRIBUTE" Level="buttonLevel" ResName="fishBtn" Visible="0" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="太好了，籮絲，我們終於又見面了！" Option="前情回顧" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1"  IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="眼下，我們先把籮絲安頓好，再慢慢從長計議，想辦法解救人魚國！" Option="正好也可以休息休息~" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="驚訝" Msg="莊園出什麼事了？別急，慢慢說！" Option="一驚一乍的，難道發生了不好的事？" />
+				<Talk NpcID="10099" Face="正常" Msg="麼麼公主、捷克王子，不好了，前些日子神秘湖海水就離奇變紅，最近越來越嚴重，現在已經影響到莊園居民的正常生活了！" Option="啊？水都不能喝了( ⊙ o ⊙ )"/>
+				<Talk NpcID="10095" Face="悲傷" Msg="什麼？你剛剛說什麼？不，不會的，這樣可怕的事情，絕不可能再發生，絕不可能……" Option="人魚公主你在說什麼？" />
+				<Talk NpcID="10095" Face="悲傷" Msg="紅色海水預示著大災難，當初人魚國被石化時，也曾被鮮紅的海水包圍……要不是父王用盡全力將我傳送到安全的地方，我也不會幸免於難……" Option="天，不會這麼巧吧？" />
+				<Talk NpcID="10095" Face="悲傷" Msg="如今神秘湖的海水也變紅，是災難要重演了嗎？不，我不要再看到這樣的事情發生，太可怕了……" Option="怎樣才能阻止災難發生呢？" />
+				<Talk NpcID="10095" Face="悲傷" Msg="或許，只有找到海妖之心，才能阻止悲劇的發生了……" Option="海妖之心？那是什麼？" />
+				</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4"/>								
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="雖然我還沒明白海妖之心到底是個什麼東西，但既然它能實現任何願望，為了人魚國和莊園，無論如何我都要去試一試！" Option="（到時候可以多許幾個願望嗎？）" />
+				<Talk NpcID="10036" Face="正常" Msg="原來，傳說中的海妖寶藏就是這個海妖之心。可是，我們該從何入手去尋找海妖之心呢？" Option="沒人能比海妖國的王子更清楚了！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10090" Face="正常" Msg="這一切，對於我來說也同樣是個謎。寶藏存在於海妖國禁地，曾經的我也十分好奇，可父王從來不讓任何人接近禁地……" Option="連海妖王子都不知道，這下怎麼辦呢？" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />						
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+		</EnterMap>	
+	</Step>			
+
+	<Step ID="2" >
+		<EnterMap MapID="254" >
+			<Action Cmd="SET_ATTRIBUTE" Level="buttonLevel" ResName="fishBtn" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsFullScreen="1"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="籮絲，別擔心，我們再想想辦法，我們先去海妖國城中心打探打探，一定能找到海妖之心的線索！" Option="嗯！還是靠我們自己努力吧！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" />			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="咦？通往海妖國中心的末班車？說不定這隻大龍蝦可以帶我們到達海妖國中心呢！" Option="嗯，咱們問問去！" />
+				<Talk NpcID="10097" Face="正常" Msg="說嘛呢說嘛呢？我的名字是“龍大俠”，不是“大龍蝦”，謝謝！" Option="額，龍大俠能帶我們去海妖國中心嗎？" />
+				<Talk NpcID="10097" Face="正常" Msg="這你可就找對人了！這海底，嘛地方我沒去過呀！熟悉著呢！海妖國中心，我閉著眼睛都能到達……" Option="太好了，那咱們出發吧！" />
+			</Action>		
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />	
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="255" MapType="0" />				
+		</EnterMap>		
+	</Step>					
+	
+	<Step ID="3" >
+		<EnterMap MapID="255" >
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10097" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />			
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10095" Face="正常" Msg="剛才窗外似乎飄過一個黑影……會是誰呢？誰在暗中使壞？是來針對我人魚國的嗎？" Option="莫非還有人在打海妖之心的主意？" />
+				<Talk NpcID="10036" Face="正常" Msg="猜測也沒用，當務之急，還是得趕緊把列車修好，我們得趕到海妖國中心才行！" Option="那還得麻煩龍大俠幫忙修理列車了！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />
+			<Action Cmd="PLAY_MOVIE" Param="13" Name="movie_13" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10097" Face="正常" Msg="經過我的檢驗，發現列車引擎被損壞，無法制動。裡面的齒輪構造比較複雜，我還得慢慢研究研究。" Option="龍大俠，我來幫你！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_13" />
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10097" Visible="1" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="OPEN_PANEL" Param="SeaHeartUi" />														
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="4" >
+		<SubmitScore ModuleID="10013" MinScore="1" LoseMsg="小摩爾沒能完成！需要重新試試嗎？" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10097" Face="正常" Msg="你這個紅鼻子小傢伙挺厲害的嘛！有我龍大俠當年的風範！" Option="嘿嘿，過獎了過獎了~" />
+				<Talk NpcID="10097" Face="正常" Msg="不過，列車的輪子還不翼而飛，還得想辦法找回輪子才行！我先四處去找找去……" Option="啊~那我們什麼時候才能去海妖國呢？" />
+				<Talk NpcID="10097" Face="正常" Msg="別急嘛，等列車完全修好，龍大俠我親自載你們去海妖國！如果你們發現了我的輪子，別忘了告訴我啊！" Option="嗯，好的！" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="14" Name="movie_14" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_14" />			
+			<Action Cmd="OVER" />																			
+		</SubmitScore>
+	</Step>	
+	
+</Tasks>
+
+

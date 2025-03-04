@@ -1,0 +1,118 @@
+<Tasks ID="570" Name="獎盃上的手印策劃案" AwardMsg="恭喜你獲得拉姆長跑紀念獎盃、30個拉姆小火炬、10個經驗果實（大）！" AwardBean="" >
+
+	<!-- 拉姆運動場  -->
+	<Step ID="1" TarMapID="68">
+		<EnterMap MapID="68">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="fireShoot_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10002" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>	
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="焦急" Msg="怎麼會這樣？獎盃由主辦方保管，昨天都還好好的，今天就被染上了難看的黑手印……" Option="確實，這黑手印太影響美觀了！"/>
+				<Talk NpcID="10002" Face="焦急" Msg="拉姆運動會一年才一次，精心打造的紀念獎盃被染上污漬，多對不住賽場上奮力拼搏的小拉姆們。可是，現在要重新製作也來不及了……" Option="唉，這可怎麼辦呢！"/>
+				<Talk NpcID="10000" Face="正常" Msg="公主，別擔心，讓我來把獎盃擦乾淨！大伯總說我不會打掃衛生，其實我厲害著呢，看我的！" Option="樂樂，你確定行嗎？( ⊙ o ⊙ )"/>
+			</Action>
+			
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="生氣" Msg="樂樂，就知道你是吹牛的！瞧你得意的樣子~黑手印根本就沒有被擦掉嘛！" Option="是呀，絲毫也沒有變淡……"/>
+				<Talk NpcID="10000" Face="焦急" Msg="我……平時大伯打掃衛生的時候就是這麼做的嘛……要怪只能怪弄上黑手印的那個人，這印的什麼東西呀，擦都擦不掉！" Option="唉……還真麻煩！"/>
+				<Talk NpcID="10009" Face="生氣" Msg="哼，要是讓我逮到污染獎盃的那個人，我非把他……刷刷刷，一定要讓他付出代價！" Option="可是，都不知道是誰弄的……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10010" Face="焦急" Msg="噢，沒沒沒啥，我，我最近，有點怕冷。沒，沒事……" Option="天氣明明都在變暖和了嘛……"/>
+				<Talk NpcID="10011" Face="焦急" Msg="我，我被多多傳染了，也有點怕冷。其，其實，獎盃上的手印，說不定只是誰不小心弄上的，應該沒這麼嚴重吧……" Option="誰說不嚴重呀！這可是運動會獎盃！"/>
+				<Talk NpcID="10000" Face="正常" Msg="要知道，獎盃可是拉姆運動會榮譽的象徵啊！我還等著拉仔抱獎盃回家呢~我的拉仔最勇敢了，就連惡魔先遣隊來搗亂的時候也……" Option="等等，你剛剛提到了什麼？"/>
+				<Talk NpcID="10009" Face="生氣" Msg="惡魔？先遣隊？！我知道了，獎盃上的手印一定是那群小惡魔弄的，之前來運動會搗亂不成，心裡肯定不爽，於是就拿我們的獎盃出氣……" Option="確實有這個可能！"/>
+				<Talk NpcID="10000" Face="生氣" Msg="走，找他們算帳去！之前我看見他們在雲霧迷橋那邊溜達，我們趕緊過去，或許他們還在！" Option="好，讓他們賠我們獎盃！"/>
+				<Talk NpcID="10010" Face="焦急" Msg="啊~真的要去嗎？雲霧迷橋那麼遠，我，我們還是關注比賽吧……也許……" Option="多多，別猶豫啦，我們趕緊走吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="120" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 雲霧謎橋 -->
+	<Step ID="2" TarMapID="120">
+		<EnterMap MapID="120">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10160" Face="正常" Msg="發發發發生了什麼事？我這個蘋果才吃一口就掉了，可惜啊……" Option="都什麼時候了，還想著吃~o(╯□╰)o"/>
+				<Talk NpcID="10009" Face="生氣" Msg="真是夠壞的，幹了壞事還這麼心安理得地享受！" Option="要不怎麼是小惡魔呢！"/>
+				<Talk NpcID="10160" Face="正常" Msg="我，我們幹什麼壞事啦？這年頭，還不許別人曬個太陽吃個水果了？" Option="幹什麼壞事你們還不清楚？"/>
+				<Talk NpcID="10009" Face="正常" Msg="別不承認！上次你們運動會搗亂不成，就想回來報復了是吧？{$username}，你來幫幫我，看他們不老實交代！" Option="嗯~沒問題！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="120" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 雲霧謎橋-->
+	<Step ID="3" TarMapID="120">
+		<EnterMap MapID="120">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10160" Face="正常" Msg="饒命啊！千萬不能把我的臉畫花了，我是靠臉吃飯的呀！我招，我招，就是我們幹的！千萬別畫花我的臉……" Option="終於承認了o(╯□╰)o"/>
+				<Talk NpcID="10009" Face="生氣" Msg="果然是你們，早該承認的嘛！你們說，我是該收拾你們呢還是收拾你們呢還是收拾你們呢……" Option="哇~丫麗出馬，小惡魔慘兮兮了~"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="生氣" Msg="多多，少少，你們這是怎麼啦？難道你不想好好懲罰一下弄髒我們獎盃的傢伙？" Option="是呀，多多少少怎麼還幫小惡魔？"/>
+				<Talk NpcID="10010" Face="悲傷" Msg="嗚嗚，我也不知道事情會弄成這樣，我們真的不是故意的。其實，弄髒獎盃的是我和少少，別再打小惡魔了！" Option="啊？多多，你在說什麼？"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10011" Face="悲傷" Msg="真的對不起，都怪我們把最最珍貴的獎盃弄得不完美了……我們有想盡各種辦法，可那手印真的怎麼擦也擦不掉……我們很害怕，都不敢說……" Option="看來黑色漿果果汁果然不一般~"/>
+				<Talk NpcID="10010" Face="悲傷" Msg="樂樂、丫麗、{$username}，你們不會再理我們了對不對？麼麼公主、菩提大伯也一定很生氣，還有所有的小拉姆，都會怪我們……嗚嗚，真的太可怕了！" Option="多多，其實也沒那麼嚴重啦o(╯□╰)o"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="多多、少少，傻孩子！沒錯，獎盃確實很珍貴，但也是因為獎盃凝聚了大家團結、誠信、拼搏的精神才顯得珍貴呀！比起你們的誠實來說，其它都不重要！" Option="大伯說得真好！"/>
+				<Talk NpcID="10007" Face="正常" Msg="你們能主動承認錯誤，大伯非常開心。其實仔細看看，獎盃上的黑手印也挺有意思的嘛！" Option="對，偶爾拿一次“黑手印”獎盃也不錯！"/>
+				<Talk NpcID="10002" Face="開心" Msg="嘻嘻，我倒是有個提議，或許會讓獎盃變得好看起來！" Option="公主又有什麼新奇的好點子了？"/>
+				<Talk NpcID="10002" Face="開心" Msg="一個黑手印看起來也許像瑕疵，但如果是各種各樣五彩繽紛的小手印，說不定會好看呢！" Option="哇~公主，你是說……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="開心" Msg="怎麼樣，還不錯吧？嘻嘻，{$username}，你也來一個吧！" Option="哈哈，好呀！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="120" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 雲霧謎橋 -->
+	<Step ID="4" TarMapID="120">
+		<EnterMap MapID="120">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="OPEN_PANEL" Param="Task570HandPrintPanel" ClearMap="1"/>
+			<Action Cmd="ADD_EVENT" Param="task570HandPrintPanelOver"/>
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="開心" Msg="哇哈哈哈，麼麼的辦法還真不錯！我們也把各自的手印蓋上去吧，讓今年的獎盃成為一個特別的“手印紀念杯”！" Option="真不錯~手印紀念杯！"/>
+				<Talk NpcID="10011" Face="開心" Msg="哇~我是不是也可以再蓋一個手印呢？我要好好挑挑，其實我不喜歡黑色，這次，我得選一個好看點的顏色……" Option="嗯，嗯！大家一起蓋！O(∩_∩)O"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

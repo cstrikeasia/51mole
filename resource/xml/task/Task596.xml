@@ -1,0 +1,54 @@
+<Tasks ID="596" Name="火神的復甦" AwardMsg="恭喜你獲得20個火神紋章！" AwardBean="" >
+
+	<!-- 永夜哨站  -->
+	<Step ID="1" TarMapID="342">
+		<NPC ID="10216" Option="火神的復甦"  MapID="" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			a
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="正常" Msg="{$username}，提問！" Option="回答！"/>
+				<Talk NpcID="10216" Face="正常" Msg="什麼東西，本來只有指尖大小。但是我給它吃了幾張紙片，它就能漸漸長成房子那麼大？" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="正常" Msg="哎嘿~答對了~答案就是火！在摩利亞，火可是很神聖的東西哦。因為在地底很難生火，火神便賜予了我們火種。每一顆火種都有火神的神力呢。" Option=""/>
+				<Talk NpcID="10216" Face="正常" Msg="{$username}，你能幫我把這顆火種帶去火山嗎？雖然它失去了神力，但我一直想把它還給火神，並跟他說一聲“謝謝”！可惜爸爸不讓我離開摩利亞。" Option="交給我吧！"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="341" MapType="0" />
+		</NPC>	
+	</Step>
+	
+	
+	<!-- 火山場景 -->
+	<Step ID="2" TarMapID="341">
+		<EnterMap MapID="341">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10215" Face="正常" Msg="是誰喚醒了我？" Option=""/>
+				<Talk NpcID="10197" Face="驚訝" Msg="偉大的火神，我是代替一位摩利亞的小摩爾而來，將一顆失去神力的火種還給您，她一直很想對您說“謝謝”！" Option=""/>
+				<Talk NpcID="10215" Face="正常" Msg="失去神力的火種？如果喚醒我的不是這顆火種，那又是什麼力量將我喚醒？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" MapID="344"/>
+		</EnterMap>
+	</Step>
+</Tasks>

@@ -1,0 +1,39 @@
+<Tasks ID="529" Name="神秘占星師到來" AwardMsg="恭喜你獲得一個貝殼調味罐、1000摩爾豆！" AwardBean="1000" >
+	<Step ID="1" >
+	
+		<EnterMap MapID="238" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="正常" Msg="{$username}，你聽說了嗎？鳶尾仙堡裡來了一位神秘的占星師！還帶來了一個神秘星座魔盒和一顆魔法水晶球！" Option="怪不得大夥最近都在討論星座！" />
+				<Talk NpcID="10009" Face="正常" Msg="哇！好想去看看呀！順便叫大師幫我算算我未來的星座運勢！" Option="丫麗~你居然對星座感興趣？" />
+				<Talk NpcID="10009" Face="正常" Msg="人家好歹也是女孩子好不好！是女生都超迷星座的！而且，我有著牧羊座與生俱來的冒險精神和領袖氣質……你難道沒看出來？！" Option="呵呵~是哦，典型牧羊座的暴力女……" />
+				<Talk NpcID="10009" Face="正常" Msg="本來想叫大家一起去的，可是多多、少少就知道宅在家吃零食看電視，摩樂樂也不知道哪兒去了！{$username}，想跟我一起去嗎？" Option="這個……我……" />
+				<Talk NpcID="10009" Face="正常" Msg="這麼激動人心的事，你還考慮什麼啊？！走，時間還早，我們快去快回！" Option="……等一下，丫麗，你走慢點！" />
+			</Action>
+ 			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+ 			<Action Cmd="GO_MAP" MapID="319" MapType="0" />	
+ 		</EnterMap>	
+	</Step>			
+	
+	<Step ID="2" >
+		<NPC ID="10129" Option="神秘占星師到來" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10129" Face="正常" Msg="這位氣質非凡的紅衣黑髮小摩爾，一定就是大名鼎鼎的丫麗了吧！典型的牧羊座，正義直率，坦誠勇敢，但有點暴躁，急性子……" Option="你，你……你怎麼知道她？！！！" />
+				<Talk NpcID="10129" Face="正常" Msg="我的魔法水晶球，能預知未來，通曉過去，上知天文下知地理！我早知道你們要來，已在此等候多時了！" Option="真有這麼神奇嗎？？？" />
+				<Talk NpcID="10129" Face="正常" Msg="你們不相信？我還有一個神秘星座魔盒，裡面裝的是我從神秘星系帶來的12星座魔法時裝！我這就打開讓你們開開眼界！" Option="快打開！讓我們看看！讓我們看看！" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" /> 
+			<Action Cmd="OPEN_PANEL" Param="StarSalePanel" /> 
+		</NPC>	
+	</Step>	
+	
+	<Step ID="3" >
+		<SubmitScore ModuleID="10038" MinScore="1" LoseMsg="" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10129" Face="正常" Msg="丫麗,{$username}，這下你們該相信我說的話了吧？現在每天都有好多小摩爾我這兒來占卜、諮詢星座！" Option="現在莊園裡人人都在討論星座！" />
+				<Talk NpcID="10129" Face="正常" Msg="你們什麼都不用說……我既然知道你要來，也就知道你來的目的是什麼了！這個貝殼調味罐就給你們了，把它放在海妖館裡，它會給你們帶來好運的！" Option="哇！大師就是大師啊！" />
+				<Talk NpcID="10129" Face="正常" Msg="哇！好精緻的調味罐呀！謝謝你大師！{$username}，我們趕快回去拿給其他小摩爾也看看吧！" Option="好耶！GO GO GO ！" />
+			</Action>
+			<Action Cmd="OVER" />
+		</SubmitScore>			
+	</Step>	
+</Tasks>

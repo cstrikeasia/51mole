@@ -1,0 +1,231 @@
+<Tasks ID="604" Name="華麗謝幕" AwardMsg="恭喜你獲得2個經驗藥劑（小）、吟游詩人的口琴！" AwardBean="" >
+
+	<!-- 扭曲的書閣 -->
+	<Step ID="1" TarMapID="349">
+		<EnterMap MapID="349">
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10231" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="{$username}，我覺得這裡堆著的一些書好眼熟。" Option="咦？我怎麼沒發現！"/>
+				<Talk NpcID="10036" Face="正常" Msg="果然沒錯，這些書，是之前從城堡書房裡消失了的書！莎士摩亞為什麼要拿這些書？而且還翻得亂七八糟的！" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="{$username}，你能幫我整理一下這些書本嗎？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="多虧你的幫助，這麼快就整理好了。我先把這些書帶回書房，你留在這裡繼續調查一下吧，最好看一下書桌！" Option="交給我吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="201" Name="movie_201" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_201" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10231" Face="正常" Msg="是誰！竟敢闖入我神聖的書閣！" Option="你……你是！"/>
+				<Talk NpcID="10231" Face="正常" Msg="恩？是叫{$username}嗎？讓我翻書查一下……恩，恩……（翻書中）" Option=""/>
+				<Talk NpcID="10231" Face="正常" Msg="什麼呀，書裡完全沒有你的名字啊，你是哪來的無名小卒！" Option="翻什麼書能查到我的名字啊……"/>
+				<Talk NpcID="10231" Face="正常" Msg="啊，你手裡拿的那是我珍貴的原稿！快給我放下！" Option="什麼？這本竟然是原稿？"/>
+				<Talk NpcID="10231" Face="正常" Msg="唔唔……你你你！難道就是你篡改了我偉大的劇本？！" Option=""/>
+				<Talk NpcID="10231" Face="生氣" Msg="絕不原諒！絕不原諒！我要向這個冷酷的世界報仇！" Option="你為什麼要復仇？"/>
+				<Talk NpcID="10231" Face="生氣" Msg="憑什麼？你們動動筆，我的人生就悲催得像破抹布一樣！我不服，我要詛咒你們！" Option="你是指那本寫你的悲劇小說嗎？"/>
+				<Talk NpcID="10231" Face="正常" Msg="我要詛咒賦予我命運的作者，還有這個世界！讓你們嘗嘗悲劇的滋味，讓你們知道悲劇角色的絕望……憤怒！" Option="賦予你命運的作者是？"/>
+				<Talk NpcID="10231" Face="正常" Msg="哼，他已經變成紙雕像，放在這個房間裡了！但我還是很生氣，我要看到更多人落得像我一樣的下場！" Option="但你的劇本已經被我破壞了！"/>
+				<Talk NpcID="10231" Face="生氣" Msg="啊啊啊，絕不原諒，絕不原諒！我要重新寫一個劇本，就是現在！" Option="你……你要幹什麼？"/>
+				<Talk NpcID="10231" Face="正常" Msg="哼，把所有寫在你們莊園書裡的名字，全都吸收到我的劇本裡來！只要在我的劇本裡，他們的命運就像木偶一樣隨我擺佈！" Option="吸收到劇本裡？"/>
+				<Talk NpcID="10231" Face="正常" Msg="我可是紙之國王，紙上的東西全都隨我擺佈！你難道不知道嗎，寫在書中的名字都是有靈魂的！" Option="難道，只要在書上留下名字……"/>
+				<Talk NpcID="10231" Face="正常" Msg="沒錯，只要在書上留下過名字，全都會成為我的傀儡！比如說，讓麼麼公主蒙受冤屈死在最愛的人手下什麼的……" Option="你……快住手！"/>
+				<Talk NpcID="10231" Face="正常" Msg="對對，我就喜歡看你這種因為憤怒而扭曲的臉。對了，這次的劇本，就叫《奧賽羅》好了！哈哈哈哈哈！！！" Option="唔……可惡！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10231" Face="生氣" Msg="恩？怎麼搞的？怎麼一個名字都找不到？" Option="啊，剛才捷克王子已經……"/>
+				<Talk NpcID="10231" Face="生氣" Msg="不可能，看我用全力！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10231" Face="正常" Msg="糟了！我自己的名字也被寫在書裡啊！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="焦急" Msg="{$username}，不要緊吧？發生了什麼事？" Option="把莎士摩亞的事情告訴捷克王子"/>
+				<Talk NpcID="10036" Face="焦急" Msg="真難以置信，你說莎士摩亞自己把自己給封印了？" Option="沒錯，全是我親眼所見"/>
+				<Talk NpcID="10224" Face="焦急" Msg="我還是很難以置信，他說……我是被操控著的傀儡？" Option="你是摩爾莊園的麼麼公主啊！"/>
+				<Talk NpcID="10224" Face="焦急" Msg="麼麼？之前，雷地阿斯好像也這麼喊過我。{$username}，你有什麼證據可以證明這一切嗎？" Option="將《王子復仇記》原稿給麼麼公主"/>
+				<Talk NpcID="10224" Face="正常" Msg="這是什麼？書？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="太好了，麼麼，你終於恢復過來了！" Option=""/>
+				<Talk NpcID="10002" Face="驚訝" Msg="這……我……捷克哥哥？{$username}？天啊，我好像做了一個很長很長的噩夢！" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="這不是噩夢，是一個企圖讓所有摩爾陷入悲劇的惡毒詛咒！" Option=""/>
+				<Talk NpcID="10002" Face="驚訝" Msg="那，之前我對粒粒冷言冷語，還差點刺傷菩提大伯，這些都是真的？" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="是真的。但是你抵制了詛咒的影響，並沒有傷害任何摩爾，安心吧！" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="恩……謝謝你安慰我，捷克哥哥。" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="對了，既然知道解開詛咒的方法，我們趕緊去解開大家身上的詛咒吧！" Option="恩，我們趕緊回城堡大廳！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="15" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 	城堡大廳 -->
+	<Step ID="2" TarMapID="15">
+		<EnterMap MapID="15">
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10047" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10227" Face="焦急" Msg="咦？哈姆雷特王子陛下，您怎麼變成公主了(⊙_⊙)" Option=""/>
+				<Talk NpcID="10228" Face="驚訝" Msg="嗚哇，嚇了我一跳！歐菲莉亞，我早說過你不能嫁給這個可疑的小子！" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="粒粒，菩提大伯，你們還是先看看這本劇本吧！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10012" Face="正常" Msg="咦？麼麼公主？啊啊啊，我剛才都說了些啥？！" Option=""/>
+				<Talk NpcID="10007" Face="正常" Msg="哈哈哈，哎呀，好像做了一個很長的夢啊！" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="太好了，你們終於恢復過來啦！" Option=""/>
+				<Talk NpcID="10012" Face="正常" Msg="雖然還不是很明白發生了什麼……這本書裡到底寫了什麼呀？" Option=""/>
+				<Talk NpcID="10007" Face="正常" Msg="哈哈，讓我看看……恩……這個這個……" Option=""/>
+				<Talk NpcID="10007" Face="驚訝" Msg="咦？這不是我們之前莫名其妙做的事情嗎？！怎麼都寫在這本書裡了？" Option="把莎士摩亞和詛咒的事告訴他"/>
+				<Talk NpcID="10007" Face="正常" Msg="原來如此，真是辛苦你了，{$username}，還有捷克王子，真是多虧了你們啊！" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="這沒什麼，你們沒事就太好了。我現在擔心的是，像皇后這樣不存在莊園裡的摩爾，解除了詛咒後會怎麼樣？" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="不管怎麼說，先試試吧。麼麼，你用劇本碰一下皇后試試。" Option=""/>
+				<Talk NpcID="10002" Face="悲傷" Msg="媽媽……" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="焦急" Msg="消失了……" Option=""/>
+				<Talk NpcID="10002" Face="悲傷" Msg="媽媽……果然沒有回來啊……" Option=""/>
+				<Talk NpcID="10036" Face="焦急" Msg="麼麼，別難過……" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />
+			
+<!-- 			<Action Cmd="TASK_SHOW_SELF" Hide="1"/> -->
+			
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10013" Face="正常" Msg="哎呀，大家都在這兒啊！那好辦了！" Option=""/>
+				<Talk NpcID="10002" Face="驚訝" Msg="花嬸，你怎麼跑來了？" Option=""/>
+				<Talk NpcID="10013" Face="正常" Msg="哎喲，花嬸我就不能來嗎？剛才我可是看見了怪事兒呐！" Option="發生了什麼事？"/>
+				<Talk NpcID="10013" Face="正常" Msg="剛才在擺攤兒的時候，我看到庫拉從攤前經過啊！他會不會又要做什麼壞事？" Option="庫拉？他在哪？"/>
+				<Talk NpcID="10013" Face="正常" Msg="花嬸兒我就看到他往庫拉城堡去啦！" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="{$username}，我們趕緊去看看吧！麼麼……" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="捷克哥哥，我沒事。你去吧！還有，這本劇本也一起帶走吧！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="326" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+		<!-- 	庫拉城堡大廳 -->
+	<Step ID="3" TarMapID="326">
+		<EnterMap MapID="326">
+<!-- 			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10047" Visible="0" /> -->
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="13" Name="movie_13" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10225" Face="正常" Msg="雖然被驅逐到這種鬼地方，但不知道為什麼，有一種懷念的感覺……" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_13" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="14" Name="movie_14" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10003" Face="開心" Msg="哼，區區詛咒，也想要困住我庫拉大人！" Option=""/>
+				<Talk NpcID="10003" Face="開心" Msg="不過很久沒回來了，真懷念啊。看來這些紙蝴蝶飛走的時候，我也會從這裡消失吧。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_14" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="PLAY_MOVIE" Param="15" Name="movie_15" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="驚訝" Msg="庫拉！你恢復了？" Option="會黑魔法果然不一樣！"/>
+				<Talk NpcID="10003" Face="開心" Msg="哈哈哈，對於我這樣的天才，怎麼可能被那種程度的詛咒打倒！" Option=""/>
+				<Talk NpcID="10003" Face="開心" Msg="只不過，我不能一直留在這裡，因為真正的我還在很遠的地方尋找骰子的六個分身。" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="庫拉！告訴我你是怎麼恢復的！" Option=""/>
+				<Talk NpcID="10003" Face="開心" Msg="我會告訴你這把椅子能夠去除各種詛咒嗎？只要把那本劇本放上來，就可以解除所有摩爾的詛咒了……哎呀，我好像不小心說漏嘴了。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_15" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="16" Name="movie_16" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="我們要相信庫拉的話嗎？" Option="我覺得這次應該試試！"/>
+				<Talk NpcID="10036" Face="正常" Msg="不過，還有誰沒有解除詛咒呢？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_16" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="17" Name="movie_17" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="這是塞拉的記憶？" Option="他消失了……"/>
+				<Talk NpcID="10036" Face="正常" Msg="你還記得莎士摩亞說的話嗎？在書中被記下的名字，都是有靈魂的。" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="這些消失了的摩爾們，如果不是被書記錄下來，一定會被大家遺忘的。但是，書可以留住他們。" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="無論他們是生是死，都永遠活在書中。" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="回去吧，我很擔心麼麼，發生了那麼多事，她應該很難過。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_17" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1002" Name="movie_1002" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1002" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="32" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	
+	<!-- 	城堡書房 -->
+	<Step ID="4" TarMapID="32">
+		<EnterMap MapID="32">
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10036" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="18" Name="movie_18" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="麼麼，對不起，在你難過的時候，我沒有陪著你。" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="捷克哥哥，我已經不是以前那個愛撒嬌的小姑娘了。而且，我答應過瑞琪團長，我會變得更加堅強。。" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="其實，我有個想法。我想讓莎士摩亞繼續寫故事。" Option=""/>
+				<Talk NpcID="10036" Face="驚訝" Msg="什麼，你瘋啦？你要讓悲劇重演嗎？" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="當然不是寫詛咒啦。我今天看了書房裡的書之後，忽然發現，書真的是很重要的東西！" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="書記錄了一切，它是寶貴的資料。書也能創造一切，它蘊藏著無窮的奇妙世界。" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="莎士摩亞雖然詛咒了大家，但他的文筆和豐富的想像力是很棒的才能。如果他能為莊園創造更多故事，一定是件好事吧！" Option=""/>
+				<Talk NpcID="10002" Face="開心" Msg="萬一他又詛咒了大家，我相信，我們還會像這次一樣努力克服的。無論我變成了什麼樣，我的決心不會改變！" Option="麼麼好勇敢！"/>
+				
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_18" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10036" Visible="1" />
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>

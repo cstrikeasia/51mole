@@ -1,0 +1,47 @@
+<Tasks ID="549" Name="SMC_珠寶師" AwardMsg="恭喜你獲得5個經驗果實、1000摩爾豆！" AwardBean="1000" >
+	<Step ID="1" TarMapID="3">
+		<NPC ID="10155" Option="珠寶師入職">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10155" Face="正常" Msg="我是一個珠寶商人，遊歷世界各地，收集了無數的寶石。但在我剛來到摩爾莊園的時候發生了一件不幸的事……" Option="被打劫了？" />
+				<Talk NpcID="10155" Face="正常" Msg="咳咳~~摩爾們的聰明真是名不虛傳。但幸好一個叫樂樂俠的小超人救了我，還幫我找回散落的寶石。" Option="樂樂俠？好久沒見到他了" />
+				<Talk NpcID="10155" Face="正常" Msg="看來你認識樂樂俠呢！那正好幫我把這個紫水晶球帶給他，算是我的謝禮。上次他走得匆忙，我來不及送給他。" Option="好漂亮的紫水晶球！我現在就去" />
+			</Action>
+<!--暫缺一個【樂樂俠】 = 【摩樂樂】	的面板-->
+		
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="239" MapType="0" />	
+		</NPC>
+	</Step>	
+	
+	<Step ID="2" TarMapID="239" >
+		<EnterMap MapID="239" >
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10000" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="開心" Msg="珠寶師？聽起來好有趣。" Option="不光有趣，還很好玩!"/>
+				<Talk NpcID="10000" Face="開心" Msg="哈哈，SMC又有好玩的職業了，可是怎麼加入呢？" Option="當然要做入職任務啦"/>
+				<Talk NpcID="10000" Face="正常" Msg="做完入職任務，就能成為珠寶師了嗎？有什麼好玩的呢？" Option="珠寶師能升級還有專屬遊戲玩"/>
+				<Talk NpcID="10000" Face="正常" Msg="嗯嗯~~那我要先體驗一番了，好了，謝謝你告訴我這些。我要第一個去入職！" Option="東西給你，我要走啦。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="ALERT" Param="　　紫水晶球給摩樂樂了，快去告訴珠寶商人吧！" Face="開心" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10000" Visible="1" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="3" MapType="0" />	
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="3" TarMapID="3" >
+		<EnterMap MapID="3" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10155" Face="正常" Msg="辛苦了{$username}，謝禮送到了嗎？" Option="送到了，那我入職完成了嗎？"/>
+				<Talk NpcID="10155" Face="正常" Msg="快了，快了，聽完我的講述，你就能成為一名合格珠寶師了！" Option="嗯嗯~~我會認真聽的"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200"  IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100"  IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="OVER" />	
+		</EnterMap>	
+	</Step>
+</Tasks>

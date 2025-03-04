@@ -1,0 +1,21 @@
+<Tasks ID="501" Name="最炫家園風" AwardMsg="" AwardBean="0" >
+	<Step ID="1" >
+		<EnterMap MapID="42" >
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />		
+			<Action Cmd="SAY" >
+				<Talk NpcID="10102" Face="正常" Msg="荷葉羅裙一色裁，芙蓉向臉兩邊開。清風捎卻沁脾香，荷花仙子踏蓮來。" Option="( ⊙o⊙ )哇，遇到神仙了嗎？！" />
+				<Talk NpcID="10102" Face="正常" Msg="今日你我相見，乃是有緣，贈你一盆青蓮。需悉心照料，靜心栽培，也可請好友協助。他日或許將會給你帶來不少奇遇。 " Option="神仙要送我寶物啦~\(≧▽≦)/~" />
+			</Action>
+		
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />	
+			<Action Cmd="OPEN_PANEL" Param="BestHomeFly" />
+			<Action Cmd="OVER" />
+			
+		</EnterMap>	
+	</Step>
+</Tasks>

@@ -1,0 +1,92 @@
+﻿<Tasks ID="625" Name="真相只有一個" AwardMsg="恭喜你獲得1小星星,2個元素騎士經驗藥劑（小）" AwardBean="">
+	<Step ID="1" TarMapID="53">
+		<EnterMap MapID="53">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10009" Face="傷心" Msg="{$username},之前丫麗還一直不敢相信，看來爸爸真的背叛莊園了！" Option="...."/>
+				<Talk NpcID="10007" Face="靈感" Msg="丫麗，乖孩子，現在還不著急下結論，來，咱們再看看你爸爸的信。" Option="難道信裡還藏著秘密嗎？"/>
+				<Talk NpcID="10009" Face="傷心" Msg="大伯，真的嗎？不是你為了安慰我騙我的吧？" Option="大伯，難道信裡藏著什麼秘密嗎？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10007" Face="正常" Msg="找到了，應該就是它了！孩子們，讓我們看看漢青有沒有藏著什麼秘密！" Option="嗯啊嗯啊~！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="OPEN_PANEL" Param="Task625GameOnePanel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="Task625GamePanelOver"/>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="53">
+		<EnterMap MapID="53">
+			<Action Cmd="SAY">
+				<Talk NpcID="10009" Face="驚訝" Msg="( ⊙o⊙ )哇！爸爸真的留了資訊給我們哎，可是為什麼點不亮了大伯？" Option="紫外線真神奇！"/>
+				<Talk NpcID="10007" Face="焦急" Msg="霍霍，看來多年不玩了，手電筒沒電了……" Option="⊙﹏⊙b汗，大伯，替換電池有嗎？"/>
+				<Talk NpcID="10007" Face="焦急" Msg="沒事，大伯去找大衛，孩子們，你們去找漢青，我剛才看到了，暗號是“真相只有一個”。後面的事就交給大伯吧！" Option="好！我們這就去！"/>
+			</Action>
+			<Action Cmd="JUMP_TASK_UI" Param="   大伯的紫外線電筒似乎沒有電了，但是我們可以確定一點，漢青叔叔是清白的，快去接應他！"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="356" MapType="0"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="3" TarMapID="356">
+		<EnterMap MapID="356">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="生氣" Msg="丫麗，別衝動！！菩提大伯還沒有趕到！" Option="是呀，大伯還沒來，我們不要輕舉妄動！"/>
+				<Talk NpcID="10009" Face="生氣" Msg="不行，知道爸爸是冤枉的，不能讓爸爸一個人呆在那麼危險的地方！！！" Option="丫麗別急，我們都會幫你的！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10249" Face="傷心" Msg="我，我不是……我…… " Option="你又偷聽！！"/>
+				<Talk NpcID="10009" Face="生氣" Msg="壞蛋，你就不會改好了，看來上次打得太輕了！" Option="小壞蛋！哼！"/>
+				<Talk NpcID="10249" Face="傷心" Msg="我，我沒有，我只是正好路過……" Option="這次不能饒了你。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="正常" Msg="丫麗，我們倆來擋住其他的人，你跟漢青叔叔說好暗號，就沖過去打扣扣！出發！" Option="嗯，我跟樂樂幫忙擋住那些壞蛋海賊們！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			<Action Cmd="JUMP_TASK_UI" Param="   現在，我們就要出去去救漢青叔叔了，大家都做好準備了嗎？"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+			<Action Cmd="GO_MAP" MapID="359" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="4" TarMapID="359">
+		<EnterMap MapID="359">
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6"/>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+		</EnterMap>
+	</Step>
+	<Step ID="5" TarMapID="359">
+		<EnterMap MapID="359">
+			<Action Cmd="OPEN_PANEL" Param="MotherHunterPanel" ClearMap="0" Data = "0"/>
+			<Action Cmd="ADD_EVENT" Param="Task625GameTwoPanelOver"/>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6"/>
+		</EnterMap>
+	</Step>
+	<Step ID="6" TarMapID="359">
+		<EnterMap MapID="359">
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10009" Face="正常" Msg="壞蛋，丫麗說過要打敗你，就一定會打敗你！" Option="丫麗真棒！"/>
+				<Talk NpcID="10254" Face="無聊" Msg="你們真的以為你們勝利了嗎？哈哈哈，果然是天真的摩爾！" Option="╭(╯^╰)╮我們才不會相信你的鬼話~"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>
+

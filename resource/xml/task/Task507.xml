@@ -1,0 +1,98 @@
+<Tasks ID="507" Name="驚險會飛的魚" AwardMsg="恭喜你獲得KFC飛魚、1000摩爾豆，KFC飛魚已放入百寶箱坐騎欄內。" AwardBean="1350112$0" >
+	<Step ID="1" >
+		<EnterMap MapID="45" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10015" Face="正常" Msg="摩爾報社已經成立四年多了，我們希望給小摩爾們帶來最新最快最全的消息" Option="我知道啦！" />
+				<Talk NpcID="10015" Face="正常" Msg="{$username}，你來啦！你知道最近莊園出現了許多神奇的飛魚麼？" Option="有聽說……" /> 
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10015" Face="正常" Msg="就是這種神奇飛魚！現在莊園中冒出許多神奇的飛魚，好像魚身上還有KFC的標記，不如你去問問奇奇吧！他或許知道一些線索！" Option="我這就去！" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="203" MapType="0" />
+		</EnterMap>	
+	</Step>			
+	
+	<Step ID="2" >
+		<EnterMap MapID="203" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10043" Face="正常" Msg="快樂的小摩爾，歡迎光臨我的餐廳！這裡是充滿快樂和歡樂的KFC餐廳" Option="奇奇，奇奇！" />
+				<Talk NpcID="10043" Face="正常" Msg="發生什麼事啦？不要太著急，慢慢說……" Option="關於飛魚……" />
+				<Talk NpcID="10043" Face="正常" Msg="哦!這是我的神奇飛魚啊！他們本來是我為你們舉辦“尋找驚喜”派對而養的魚，可是……" Option="發生什麼事了？" />
+				<Talk NpcID="10043" Face="正常" Msg="可是馴養過程中，由於小魚們不習慣摩爾莊園的生活，在訓練路途上有好幾條都迷路了。。。" Option="這……" />
+				<Talk NpcID="10043" Face="正常" Msg="能拜託你幫忙把它們找回來嗎？我正為這事著急呢！" Option="我來幫忙！" />
+				<Talk NpcID="10043" Face="正常" Msg="我好像在愛心教堂見過那些神奇飛魚，你快去看看吧！" Option="我這就去！" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="2" MapType="0" />
+		</EnterMap>			
+	</Step>		
+	
+	<Step ID="3" >
+		<EnterMap MapID="2" >
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Talk NpcID="10043" Face="正常" Msg="哇你真厲害！趕快前往下一地點看看吧，我在那裡也看到過神奇飛魚的蹤跡！" Option="我這就去！" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="258" MapType="0" />
+		</EnterMap>			
+	</Step>
+	
+	<Step ID="4" >
+		<EnterMap MapID="258" >
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Talk NpcID="10043" Face="正常" Msg="哇你真厲害！趕快前往下一地點看看吧，我在那裡也看到過神奇飛魚的蹤跡！" Option="我這就去！" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="GO_MAP" MapID="252" MapType="0" />
+		</EnterMap>			
+	</Step>	
+	
+	<Step ID="5" >
+		<EnterMap MapID="252" >
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Talk NpcID="10043" Face="正常" Msg="哇你真厲害！趕快前往下一地點看看吧，我在那裡也看到過神奇飛魚的蹤跡！" Option="我這就去！" />
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+			<Action Cmd="GO_MAP" MapID="3" MapType="0" />
+		</EnterMap>			
+	</Step>	
+	
+	<Step ID="6" >
+		<EnterMap MapID="3" >
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Talk NpcID="10043" Face="正常" Msg="哇你真厲害！趕快前往下一地點看看吧，我在那裡也看到過神奇飛魚的蹤跡！" Option="我這就去！" />
+			<Action Cmd="SET_BUFFER" Panel="7" Step="7" />
+			<Action Cmd="GO_MAP" MapID="28" MapType="0" />
+		</EnterMap>			
+	</Step>	
+	
+	<Step ID="7" >
+		<EnterMap MapID="28" >
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Talk NpcID="10043" Face="正常" Msg="哇你真厲害！趕快前往下一地點看看吧，我在那裡也看到過神奇飛魚的蹤跡！" Option="我這就去！" />
+			<Action Cmd="SET_BUFFER" Panel="8" Step="8" />
+			<Action Cmd="GO_MAP" MapID="203" MapType="0" />
+		</EnterMap>			
+	</Step>	
+	
+	<Step ID="8" >
+		<EnterMap MapID="203" >
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10043" Face="正常" Msg="你真是個能幹的小摩爾呢！你為我們做了很大的貢獻哦！這下我的驚喜派對也能順利舉辦啦！" Option="奇奇過獎了！" />
+				<Talk NpcID="10043" Face="正常" Msg="作為我感謝，我把這只神奇飛魚送給你，希望你好好培養它哦！下周再來到這裡，會有更大的驚喜等你哦" Option="謝謝奇奇！" />
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="20" Name="movie_20" IsBg="1"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_20" />
+			
+			<Action Cmd="OVER" />
+		</EnterMap>			
+	</Step>	
+</Tasks>

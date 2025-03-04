@@ -1,0 +1,213 @@
+<Tasks ID="518" Name="仙堡奇遇" AwardMsg="恭喜你獲得1條“李小籠”、2000摩爾豆！" AwardBean="2000" >
+	<Step ID="1" >
+		<EnterMap MapID="317" >
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="cannon1_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="cannon2_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="cannon3_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="cannon4_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="get_btn" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="intro_btn" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10122" Visible="0" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10119" Face="正常" Msg="我們，剛剛不是掉海裡去了嗎？忽然間，我似乎看見一群魚朝我們游了過來……" Option="前情回顧" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10118" Face="正常" Msg="看這周圍的景象，莫非，這就是傳說中的——鳶尾仙堡？！" Option="真的嗎？我們到達仙堡了？！" />
+				<Talk NpcID="10002" Face="開心" Msg="哇~這周圍的景色，實在是太美了！" Option="這就是世外桃源嗎O(∩_∩)O" />
+			</Action>									
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10126" Face="正常" Msg="呀！你們是來這裡玩的嗎？這裡非常危險，趕緊回去吧！" Option="危險？這樣的仙境，怎麼會危險呢？" />
+				<Talk NpcID="10126" Face="正常" Msg="從前這裡的確是仙境，可自從前幾天，那個紫色的傢伙出現，控制了整個鳶尾仙堡，一切都改變了……他現在還在城堡裡面呢！我得趕緊躲起來！" Option="紫色的傢伙？難道是庫拉分身？" />
+				<Talk NpcID="10118" Face="正常" Msg="哼，肯定是那個叛徒！讓我逮到他，非得好好收拾他不可！" Option="我們先進城堡去看看吧！" />
+			</Action>									
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="318" MapType="0" />	
+		</EnterMap>	
+	</Step>			
+	
+	<Step ID="2" >
+		<EnterMap MapID="318" >
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="shinv1" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="shinv2" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10119" Face="正常" Msg="庫拉分身，識相的話，趕緊將我們恢復原樣！" Option="否則絕不饒你！" />
+				<Talk NpcID="10121" Face="正常" Msg="庫拉分身？NO~NO~像我這樣充滿了皇室貴族氣息的男人，怎麼能用聽起來這麼廉價的稱呼？我可不想和我那沒出息的主人扯上半點關係！" Option="管你叫什麼呢！解除你的魔法就行！" />
+				<Talk NpcID="10121" Face="正常" Msg="想恢復原樣？這個嘛，得看我的騎士們答不答應了……" Option="什麼？騎士？難道……" />
+			</Action>						
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10119" Face="正常" Msg="啊？這些不就是前哨戰失蹤的騎士嗎？他們想攻擊我們！" Option="我們一起迎戰他們！" />
+				<Talk NpcID="10119" Face="正常" Msg="不行，這些都是我的同伴，千萬不能傷了他們！{$username}，我們只需躲避即可。" Option="嗯，好的！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="OPEN_PANEL" Param="EagleGrabbedGame" />
+		</EnterMap>		
+	</Step>
+
+	<Step ID="3" >
+			<SubmitScore ModuleID="10032" MinScore="1" LoseMsg="沒能成功阻擋騎士的襲擊哦，小摩爾要重新試試嗎？" > 
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10045" Face="正常" Msg="終於等到機會反擊了！{$username}，你在一旁好好保護公主！讓我來想想辦法！" Option="瑞琪團長放心，我一定好好保護公主！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />				
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10122" Face="正常" Msg="一直以來，仙堡在鳶尾仙子的護佑下，四季繁花似錦，花仙們也都過著寧靜的生活。可就在幾天前，這一切都改變了……" Option="是因為庫拉分身嗎？" />
+				<Talk NpcID="10122" Face="正常" Msg="對，他想搶奪金色鳶尾花，可他沒想到，金色鳶尾花的力量，早在多年前就隨著鳶尾仙子的沉睡而被封印了。" Option="沉睡？仙子為什麼會沉睡呢？" />
+				<Talk NpcID="10122" Face="正常" Msg="那是仙堡史上最可怕的一場浩劫呀……" Option="當時發生了什麼事？" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10122" Face="正常" Msg="所幸，邪惡勢力終於被仙子擊退，可仙子也因為透支了自己的力量而陷入了無盡的沉睡……" Option="仙子真是太無私了……" />
+				<Talk NpcID="10122" Face="正常" Msg="庫拉分身逼我們幫他喚醒仙子來開啟金色鳶尾花的力量，可是我們也根本沒有辦法……" Option="仙子現在在哪呢？我們能去看看嗎？" />
+				<Talk NpcID="10122" Face="正常" Msg="她就在後花園，請跟我來！" Option="謝謝仙女姐姐！" />
+			</Action>										
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="319" MapType="0" />	
+		</SubmitScore>
+	</Step>	
+	
+	<Step ID="4" >
+		<EnterMap MapID="319" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10122" Face="正常" Msg="我們一直把仙子封印在了金色鳶尾花之中，讓仙子的法力和花的靈力互相滋養，從而讓生命得以延續。" Option="真的就沒辦法喚醒仙子了嗎？" />
+				<Talk NpcID="10122" Face="正常" Msg="想喚醒仙子？難道你們來鳶尾仙堡的目的，也是要找仙子？" Option="其實，我們有事是來向仙子求助的！" />
+				<Talk NpcID="10122" Face="正常" Msg="呵呵，能否見到仙子，恐怕得看你們和仙子是否有緣了，否則我也幫不了你們。仙堡還有事務要打點，我先回去了。" Option="啊？！這……" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="焦急" Msg="沒辦法喚醒鳶尾仙子，這可怎麼辦呢？" Option="是呀，還怎麼解除莊園危機呢？" />
+				<Talk NpcID="10003" Face="正常" Msg="真是一群笨蛋！這麼點小問題都解決不了！" Option="難道你有辦法？" />
+				<Talk NpcID="10003" Face="正常" Msg="那是當然！有什麼是庫拉大人辦不到的？" Option="啊？說來聽聽？" />
+				<Talk NpcID="10003" Face="正常" Msg="如果能在事發之前阻止仙子的沉睡，不就等於喚醒她了嗎？當然，這樣聰明的辦法你們是絕對想不到的，哈哈哈~" Option="阻止她沉睡？" />
+				<Talk NpcID="10003" Face="正常" Msg="沒錯！只需我輕輕揮一揮手，把你們送回過去。只是，不知道有沒有人敢試一試了！" Option="當然要試試！" />
+				<Talk NpcID="10003" Face="正常" Msg="對了，還忘了提醒你們，如果行動失敗，我可不能保證還能順利把你給接回來。" Option="啊？！還有可能回不來了？" />
+				<Talk NpcID="10003" Face="正常" Msg="沒錯！怎麼樣？是不是膽怯了？退縮了？" Option="怎麼可能！絕不能放過任何一個辦法！" />
+				<Talk NpcID="10045" Face="正常" Msg="{$username}，我跟你一起去！公主殿下，您留在仙堡等我們！這一次，請您一定要聽我的！" Option="對，公主好好在這裡等我們回來！" />
+				<Talk NpcID="10002" Face="焦急" Msg="好吧……瑞琪，{$username}，你們一定要小心，不管怎樣，你們都要平安回來……" Option="公主放心，我們一定會盡力的！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105" />		
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />		
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="GO_MAP" MapID="317" MapType="0" />	
+		</EnterMap>	
+	</Step>	
+
+	<Step ID="5" >
+		<EnterMap MapID="317" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="cannon1_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="cannon2_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="cannon3_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="cannon4_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="get_btn" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="intro_btn" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10122" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10045" Face="正常" Msg="這一定就是鳶尾仙子！{$username}，我去幫幫仙子，你先留守在這裡！" Option="好的，瑞琪團長多加小心！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10045" Face="正常" Msg="{$username}，女神雕像是在給我們什麼提示嗎？你幫忙看看能否從中找到擊退敵人的辦法呢？" Option="好！我去研究一下！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />	
+			<Action Cmd="PLAY_MOVIE" Param="13" Name="movie_13" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_13" />	
+			<Action Cmd="PLAY_MOVIE" Param="14" Name="movie_14" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_14" />
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />												
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />				
+			<Action Cmd="GO_MAP" MapID="319" MapType="0" />										
+		</EnterMap>			
+	</Step>	
+
+	<Step ID="6" >
+		<EnterMap MapID="319" >		
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="15" Name="movie_15" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="開心" Msg="瑞琪，{$username}，太好了，你們平安回來了！" Option="公主，我們成功啦！" />
+				<Talk NpcID="10003" Face="開心" Msg="不錯，不錯！鳶尾仙子呢？可怎麼還沒見到鳶尾仙子？" Option="你可真心急！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_15" />
+			<Action Cmd="PLAY_MOVIE" Param="16" Name="movie_16" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10003" Face="開心" Msg="太好了，仙子你終於醒過來了！你不知道我是多麼的擔心！還好我成功把你喚醒了！當然，我不求報答，不過如果你願意……" Option="哼，就知道邀功！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_16" />	
+			<Action Cmd="PLAY_MOVIE" Param="17" Name="movie_17" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10123" Face="正常" Msg="謝謝你們，我的勇士！多虧你們的幫助，才擊退了黑森林的邪惡勢力！" Option="應該的，應該的O(∩_∩)O" />
+				<Talk NpcID="10123" Face="正常" Msg="你們此行，是想得到金色鳶尾花嗎？作為報答，你們提的任何要求，我都會答應。" Option="不，不，我們並不想要金色鳶尾花" />
+				<Talk NpcID="10045" Face="正常" Msg="正如{$username}所說，我們並不想得到金色鳶尾花。我們此行的目的，只是希望仙子能幫助莊園解除危機！" Option="只要莊園恢復平靜，我們什麼都不要！" />
+				<Talk NpcID="10123" Face="正常" Msg="善良的人們，會得到花神的庇佑的！我這就來幫莊園解除危機！" Option="謝謝你，鳶尾仙子！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_17" />	
+			<Action Cmd="PLAY_MOVIE" Param="18" Name="movie_18" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_18" />
+			<Action Cmd="PLAY_MOVIE" Param="107" Name="movie_107" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_107" />	
+			<Action Cmd="PLAY_MOVIE" Param="18_1" Name="movie_18_1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10123" Face="正常" Msg="莊園已經恢復平靜了，請放心！" Option="真是太好了！" />
+				<Talk NpcID="10002" Face="正常" Msg="我替整個莊園謝謝您，鳶尾仙子！莊園恢復正常，我們也不便再打擾了，希望以後還有機會再來這個美麗的地方！" Option="嗯！有機會一定要回來看看~！" />
+				<Talk NpcID="10123" Face="正常" Msg="有緣一定會再見的！鳶尾仙堡的大門，隨時為你們而開！" Option="再見了，鳶尾仙子！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_18_1" />
+			<Action Cmd="PLAY_MOVIE" Param="19" Name="movie_19" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10125" Face="正常" Msg="您就是鳶尾仙子對嗎？真不好意思來打擾您，不過如果我的婚禮能得到仙子的祝福，將是我最大的榮幸！" Option="咦？這不是保羅王子和人魚公主嗎？" />
+				<Talk NpcID="10124" Face="正常" Msg="{$username}，你也在這裡！正好參加我和籮絲的婚禮！到時候我偷偷把最好的禮物留給你！" Option="哈哈，好呀，好呀！" />
+				<Talk NpcID="10123" Face="正常" Msg="呵呵，既然你們是瑞琪他們的朋友，我自然會為你們送上婚禮的祝福。你們先在仙堡住下，等你們準備好了，就開始舉行婚禮吧！" Option="太好了，那我們也參加完婚禮再回去！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_19" />	
+			<Action Cmd="PLAY_MOVIE" Param="20" Name="movie_20"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_20" />
+			<Action Cmd="PLAY_MOVIE" Param="21" Name="movie_21" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_21" />
+			<Action Cmd="PLAY_MOVIE" Param="109" Name="movie_109" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_109" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />	
+			<Action Cmd="OVER" />																																		
+		</EnterMap>
+	</Step>
+		
+</Tasks>
+
+
+

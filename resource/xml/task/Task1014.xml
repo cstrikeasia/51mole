@@ -1,0 +1,115 @@
+<Tasks ID="1014" Name="永夜哨站的會面" AwardMsg="恭喜你獲得2個跳舞蘭種子，藍藍小雞仔！" AwardBean="" >
+
+	<!-- 龍巢迷宮  -->
+	<Step ID="1" TarMapID="339">
+		<EnterMap MapID="339">
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="GO_MAP" MapID="342" MapType="0" />
+		</EnterMap>	
+		
+		<EnterMap MapID="342">
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10206" Face="正常" Msg="這裡好像有很多摩爾居住的樣子，不愧是舊王城摩利亞。" Option=""/>
+				<Talk NpcID="10207" Face="正常" Msg="{$username}，你有沒有感覺到，好像有人在偷看我們？" Option="真的嗎？"/>
+				<Talk NpcID="10207" Face="正常" Msg="我的感覺還是很准的，你看看四周！" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10207" Face="正常" Msg="哪來的小淘氣，鬼鬼祟祟很可疑哦！" Option=""/>
+				<Talk NpcID="10216" Face="正常" Msg="嘻嘻，哥哥姐姐你們好，我叫艾蓮娜，剛才是在跟你們開玩笑呢！" Option="你可真調皮！"/>
+				<Talk NpcID="10216" Face="正常" Msg="哥哥姐姐，你們不是摩利亞的摩爾吧，艾蓮娜我是第一次見到你們~" Option="是呀，我來自摩爾莊園。"/>
+				<Talk NpcID="10216" Face="正常" Msg="艾蓮娜沒去過那裡~聽說很好玩呢！你們來永夜哨站做什麼？" Option="把黑魔法師的事情告訴艾蓮娜"/>
+				<Talk NpcID="10216" Face="正常" Msg="原來你們是來幫助摩利亞的~謝謝你們！那些黑魔法師闖進來後，正在到處搜尋“女神之淚”呢！" Option="他們現在在哪？"/>
+				<Talk NpcID="10216" Face="正常" Msg="艾蓮娜不知道他們在哪，你問問我的爸爸吧！他叫巴圖魯，應該就在永夜哨站糧倉附近吧。" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+		</EnterMap>	
+	</Step>
+	
+	
+	<!-- 永夜哨站 -->
+	<Step ID="2" TarMapID="342">
+		<NPC ID="10213" Option="永夜哨站的會面"  MapID="" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10213" Face="正常" Msg="黑魔法師們忽然沖入摩利亞，我們雖然組織了反抗軍，但是力量敵不過他們，一直敗退到了這裡。" Option="他們現在在哪？"/>
+				<Talk NpcID="10213" Face="正常" Msg="恐怕很快要追擊過來了。我正準備和反抗軍們商量下一步的計畫。" Option=""/>
+				<Talk NpcID="10214" Face="正常" Msg="酋長，以我所見，當務之急是保護居民的安全。" Option=""/>
+				<Talk NpcID="10213" Face="正常" Msg="說得對，你趕緊把傷兵和居民們轉移到安全的地方！" Option=""/>
+				<Talk NpcID="10214" Face="正常" Msg="{$username}，你能來幫忙嗎？我需要你來清理路障，讓傷患和居民平穩地走到兵營裡！" Option="沒問題，交給我！"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="201" Name="movie_201" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_201" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+<!-- 			<Action Cmd="GO_MAP" MapID="84" MapType="0" /> -->
+		</NPC>
+	</Step>
+	
+	
+	<!-- 永夜哨站 -->
+	<Step ID="3" TarMapID="342">
+		<NPC ID="10213" Option="永夜哨站的會面"  MapID="" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10214" Face="正常" Msg="多虧了{$username}協助，居民和傷患都安頓好了。" Option=""/>
+				<Talk NpcID="10213" Face="正常" Msg="我代表摩利亞的摩爾們感謝你。" Option="這是一名騎士應該做的！"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="正常" Msg="唔……好強！" Option=""/>
+				<Talk NpcID="10212" Face="正常" Msg="哼，說什麼大話，早點交出女神之淚，還能少受皮肉之苦。" Option=""/>
+				<Talk NpcID="10216" Face="正常" Msg="大哥哥，不要傷害他們，我知道女神之淚在哪裡哦。" Option="艾蓮娜，你知道？"/>
+				<Talk NpcID="10216" Face="正常" Msg="哎嘿嘿，女神之淚，當然在女神的眼睛裡啦~" Option=""/>
+				<Talk NpcID="10212" Face="生氣" Msg="你是在戲弄我嗎，小東西！" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10198" Face="正常" Msg="黑魔法師，勝負已分，你還要繼續嗎？" Option=""/>
+				<Talk NpcID="10212" Face="生氣" Msg="哼，別以為我怕你了，摩利亞王城見！" Option=""/>
+				<Talk NpcID="10206" Face="驚訝" Msg="瑞琪團長！你……你怎麼會在這裡？" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="在調查格曆爾大陸的時候，我發現黑魔法派對摩利亞蠢蠢欲動。我擔心黑魔法派會做出愚蠢的舉動，所以隱藏身份暗中調查。" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="黑魔法學院為什麼要搶奪“女神之淚”，你知道嗎？" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="幾百年前，黑魔法派被流放到東部大陸。由於土地過於貧瘠，一直難以保持溫飽。他們雖然依靠魔法解決了很多問題，但作為魔法能量的來源也日益減少。" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="恐怕，他們奪走女神之淚，是為了獲得更多的魔法力量，然後建造一個“黑魔法之國”吧。" Option="原來如此！"/>
+				<Talk NpcID="10206" Face="正常" Msg="一直以來辛苦你調查了，有句話忘了說呢。" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="謔謔謔，沒錯沒錯，我也忘了說。" Option=""/>
+				<Talk NpcID="10206" Face="開心" Msg="歡迎你回來，瑞琪。" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</NPC>
+	</Step>
+</Tasks>

@@ -1,0 +1,140 @@
+<Tasks ID="590" Name="魔術師與黑魔法" AwardMsg="恭喜你獲得20個歡樂券、10個經驗果實！" AwardBean="" >
+
+	<!-- 馬戲團內景  -->
+	<Step ID="1" TarMapID="334">
+		<NPC ID="10202" Option="魔術師與黑魔法"  MapID=""  >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10202" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10202" Face="驚訝" Msg="什麼？盧卡斯把你的朋友變成了熊？而且盧卡斯還不見了？" Option=""/>
+				<Talk NpcID="10197" Face="焦急" Msg="是呀，多多少少好可憐，現在還是熊的模樣，都不知道怎樣才能變回來。" Option=""/>
+				<Talk NpcID="10202" Face="驚訝" Msg="我們團的變形術從來不會這樣，即使不主動解除，被變形的人也會在十分鐘後自動恢復。現在，恐怕只有找到盧卡斯才能找到解決辦法了。" Option=""/>
+				<Talk NpcID="10197" Face="焦急" Msg="嗯！那我們再到處找找看。" Option=""/>
+				<Talk NpcID="10202" Face="正常" Msg="好的。多多和少少就暫時由我來照看，希望你們好運！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="47" MapType="0" />
+		</NPC>	
+	</Step>
+	
+	
+	<!-- 粒粒小廣場 -->
+	<Step ID="2" TarMapID="47">
+		<EnterMap MapID="47">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="GO_MAP" MapID="4" MapType="0" />
+		</EnterMap>
+		
+		<EnterMap MapID="4">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="GO_MAP" MapID="1" MapType="0" />
+		</EnterMap>
+		
+		<EnterMap MapID="1">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="2" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	
+	<!-- 愛心廣場 -->
+	<Step ID="3" TarMapID="2">
+		<EnterMap MapID="2">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10191" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="驚訝" Msg="奇怪，看剛剛那個身影也不像是艾米呀，除了他，還會有誰在這	去裡面究竟幹什麼？" Option=""/>
+				<Talk NpcID="10197" Face="驚訝" Msg="不會是來偷東西的吧？走，我們去電視牆裡檢查看看。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="222" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 電視牆 -->
+	<Step ID="4" TarMapID="222">
+		<EnterMap MapID="222">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="lmMC" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="clickBtn" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="0" />	
+			<Action Cmd="OPEN_PANEL" Param="Task590Panel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="task590PanelOver"/>
+			
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 電視牆 -->
+	<Step ID="5" TarMapID="222">
+		<EnterMap MapID="222">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="lmMC" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="clickBtn" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" hideBg="1" IsStopSound="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="驚訝" Msg="這……這是怎麼回事呀？NO.7，這是什麼？聽起來好像是什麼黑暗組織的代號……" Option=""/>
+				<Talk NpcID="10000" Face="驚訝" Msg="而且，原來之前我們看到的盧卡斯並不是真正的盧卡斯……天啊，怎麼越聽越玄了……" Option=""/>
+				<Talk NpcID="10009" Face="焦急" Msg="剛剛那個人說雪蓮花可以幫助多多和少少復原，要不我們先帶多多少少去試試吧，其它的再慢慢解決。" Option=""/>
+				<Talk NpcID="10197" Face="焦急" Msg="好，就這麼辦！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+			<Action Cmd="GO_MAP" MapID="37" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	
+	<!-- 摩爾拉雅山頂 -->
+	<Step ID="6" TarMapID="37">
+		<EnterMap MapID="37">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1" IsFullScreen="1" />	
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10010" Face="驚訝" Msg="哇~~這不是做夢吧？天啊，我又能開口說話了，我終於不是熊的樣子了！" Option=""/>
+				<Talk NpcID="10011" Face="悲傷" Msg="真是太好了，嗚嗚嗚，我以為我要一輩子做熊了，嚇死我了！" Option=""/>
+				<Talk NpcID="10197" Face="開心" Msg="還好這個辦法有效，多多和少少終於恢復正常了，真是令人開心！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

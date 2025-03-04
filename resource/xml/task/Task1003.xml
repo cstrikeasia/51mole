@@ -1,0 +1,89 @@
+<Tasks ID="1003" Name="不打不相識" AwardMsg="恭喜你獲得2000摩爾豆、5個螃蟹變變變！" AwardBean="" >
+
+	<!-- 	城堡大廳  -->
+	<Step ID="1" TarMapID="15">
+		<NPC ID="10047" Option="不打不相識"  MapID="" ><!--  Layer="depthLevel" Name="潘恩" Ex="470" Ey="380" Px="470" Py="400"  Msg="天啊，前哨站居然會出現怪獸？！真是恐怖呢！" >-->
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10047" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="32" MapType="0" />
+		</NPC>
+	</Step>
+	
+	<!-- 城堡書房 -->
+	<Step ID="2" TarMapID="32">
+		<EnterMap MapID="32" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10036" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="焦急" Msg="怎麼辦怎麼辦，我都還沒查到什麼資料RK就來了，這下該怎麼辦？我要不要追過去看看呢？不知道我打不打得過他……" Option=""/>
+				<Talk NpcID="10197" Face="焦急" Msg="……哎呀，算了，豁出去了，總不能坐視不理吧！就算是RK，我也拼了！趕緊跟過去看看！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="16" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 	城堡二樓 -->
+	<Step ID="3" TarMapID="16">
+		<EnterMap MapID="16" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="什麼？竟然不是RK？！" Option=""/>
+				<Talk NpcID="10009" Face="驚訝" Msg="樂樂，都怪你，說城堡書房裡有個身影鬼鬼祟祟，一定是RK。我們埋伏這麼半天，竟然抓錯人了……" Option=""/>
+				<Talk NpcID="10197" Face="悲傷" Msg="看吧看吧，就說你們抓錯人了嘛！還不趕緊放我出去！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 	城堡二樓 -->
+	<Step ID="4" TarMapID="16">
+		<EnterMap MapID="16" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="悲傷" Msg="可真是疼死我啦！我不就為了查個資料、抓個RK麼，結果被你們這樣對待，容易嘛我……" Option=""/>
+				<Talk NpcID="10000" Face="驚訝" Msg="咦？你也是來抓RK的？以前好像沒見過你呢。" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="我叫{$username}，剛來到摩爾莊園。你們呢？" Option=""/>
+				<Talk NpcID="10000" Face="開心" Msg="我叫摩樂樂，這些是我的好朋友，丫麗，以及雙胞胎兄弟布多多、布少少。" Option=""/>
+				<Talk NpcID="10010" Face="開心" Msg="很高興認識你，{$username}！你也知道RK要來竊取皇室秘密的消息了？剛才樂樂碰巧聽到些風聲，就召集我們一起過來，準備隨時抓住RK！" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="我剛好也是想在書房裡查一些資料呢。對了，你們知道RK的目的到底是什麼呢？這個皇室秘密又是指什麼？" Option=""/>
+				<Talk NpcID="10011" Face="正常" Msg="啊……說起來，貌似我們也不大清楚呢。樂樂說要過來抓RK，我們就過來了……" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="不過，雖然我們不知道，但有個人他一定知道！而且他肯定會告訴我們哦！" Option=""/>
+				<Talk NpcID="10197" Face="疑惑" Msg="噢？是誰呢？" Option=""/>
+				<Talk NpcID="10000" Face="正常" Msg="就是傳說中的“紅發團長”，他經歷過莊園的歷史變遷，雖已卸任皇家騎士團團長多年，可仍然是莊園的大名人呢。總之，他知道的東西，比“天上的星星還多”。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

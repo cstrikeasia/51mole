@@ -1,0 +1,81 @@
+<Tasks ID="494" Name="太漬系列：2敵菌大排查" AwardMsg="恭喜你獲得1隻食人花花、1000摩爾豆。" AwardBean="0" >
+	<Step ID="1" >
+		<EnterMap MapID="240" >
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10020" Face="焦急" Msg="這次情況比較特殊，莊園裡從來沒見過，庫拉看上去依然很不舒服呀。連我最新配制的萬能注射劑都沒用！" Option="⊙0⊙不會是那個“禽流感”吧？" />
+				<Talk NpcID="10004" Face="悲傷" Msg="主人…你不會就這樣丟下我，一個人駕鶴西歸了吧 T_T " Option="骰子別灰心啊，我們都會幫你的。" />
+				<Talk NpcID="10020" Face="正常" Msg="對了，我最近認識了個“新朋友”，他叫汰漬除菌小精靈，是衛生與衣物除菌方面的專家，或許他有辦法！" Option="“新朋友？”" />
+				<Talk NpcID="10020" Face="正常" Msg="他昨天剛下船，現在在神秘湖碼頭，你們攙扶庫拉一起過去吧！" Option="過去看看吧！" />
+			</Action>
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="176" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="2" >
+		<EnterMap MapID="176" >
+		<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10020" Face="焦急" Msg=" 你好，汰漬除菌小精靈，我件事情想請你幫一下忙，這裡有個病人，吃藥打針都不行呢。" Option="⊙_⊙ 原來他就是安迪的朋友！" />
+				<Talk NpcID="10093" Face="正常" Msg="沒問題,我看一下，讓我檢查一下……" Option="給他打一針，嘿嘿^.^!" />
+				<Talk NpcID="10093" Face="正常" Msg="……我探測到了你的朋友身上有很多有害的敵菌…他吃壞東西了嗎？還是很久沒洗澡？" Option="( ⊙ o ⊙ )什麼?！）" />
+				<Talk NpcID="10004" Face="悲傷" Msg="我主人平時乾淨的很，這麼大一個城堡，他用魔法打掃的一塵不染。而且他自己經常洗手，洗澡也用除菌產品，衣服我也天天都給他洗呢。" Option="是啊，敵菌藏在哪裡呢？" />
+				<Talk NpcID="10020" Face="正常" Msg=" 別擔心，汰漬除菌小精靈可是衛生和衣物除菌方面的專家哦！我們趕緊去庫拉家進行一次搜查吧！" Option="好的！去看看吧！" />
+			</Action>
+			<Action Cmd="GO_MAP" MapID="240" MapType="0" />
+				<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="3" >
+		<EnterMap MapID="240" >
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10020" Face="正常" Msg="汰漬除菌小精靈，你讓我把這些東西拿出來，給我們看什麼呀！" Option="？？？" />
+				<Talk NpcID="10093" Face="正常" Msg="請仔細看，這些東西都被敵菌侵襲過，{$username}，你能幫我把所有細菌都找出來嗎？" Option="……好！" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="OPEN_PANEL" Param="TidePanel" />
+		</EnterMap>
+	</Step>	
+	
+	
+	<Step ID="4" >
+			<SubmitScore ModuleID="10014" MinScore="1" LoseMsg="小摩爾沒能解開謎題哦！需要重新試試嗎？" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10093" Face="正常" Msg="找到他們了！" Option="好多有害菌…@_@!" />
+				<Talk NpcID="10003" Face="正常" Msg="原來是這些壞傢伙搗的鬼！" Option="（=。= 壞還是你壞！）" />
+			</Action>	
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="SAY" >
+  			    <Talk NpcID="10093" Face="正常" Msg="不用擔心，區區衣物細菌，讓我消滅他們！" Option="......" />
+  			 </Action>   
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10003" Face="正常" Msg="感覺好多了~哈哈。我體內的魔法又在湧動了！" Option="你可不要做壞事呀！" />
+				<Talk NpcID="10004" Face="開心" Msg="謝謝，汰漬除菌小精靈！謝謝你{$username}" Option="助人為樂！" />
+				<Talk NpcID="10093" Face="正常" Msg="不客氣，舉手之勞。這次敵菌軍團比較強大，我已經用自己的力量幫助庫拉穩定下來，接來下我得想想對付他們的辦法，這需要點時間……" Option="知道了。" />
+				<Talk NpcID="10093" Face="正常" Msg="另外，提醒小摩爾們跟拉姆們：除了經常洗洗澡保持乾淨之外，衣服上也含有很多細菌，也需要經常除菌哦。小摩爾們跟拉姆們可得記住啦！" Option="恩，恩，知道了。" />
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="OVER" />
+		</SubmitScore>
+		
+	</Step>
+			
+	
+</Tasks>	
+	
+
+

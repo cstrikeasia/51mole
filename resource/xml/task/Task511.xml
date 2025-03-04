@@ -1,0 +1,41 @@
+<Tasks ID="511" Name="拉線上" AwardMsg="恭喜你獲得黑森林探險裝、黑森林探險鞋！" >
+	<Step ID="1" >
+		<EnterMap MapID="47" >
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2"  IsBg="1" IsFullScreen="1" IsStopSound="1" />
+ 			<Action Cmd="DELETE_MOVIE" Param="movie_2" /> 
+ 			
+ 			<Action Cmd="DELETE_MOVIE" Param="movie_1" /> 
+ 			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3"/>
+ 			<Action Cmd="DELETE_MOVIE" Param="movie_3" /> 
+ 			
+			<Action Cmd="SET_BUFFER" Step="2" />
+			<Action Cmd="OPEN_PANEL" Param="HappySummerGrandCeremonyPanel" Data="4" />
+		</EnterMap>			
+	</Step>	
+	
+	<Step ID="2" >
+		<EnterMap MapID="61" >
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="arrow_mc" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4"/>
+		</EnterMap>
+		
+		<EnterMap MapID="10000" >
+ 			<Action Cmd="DELETE_MOVIE" Param="movie_4" /> 
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5"/>
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsFullScreen="1" IsStopSound="1" />
+ 			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+ 			 
+ 			<Action Cmd="DELETE_MOVIE" Param="movie_5" /> 
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="arrow_mc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="recall_mc" Visible="1" />
+			
+			
+			<Action Cmd="SET_BUFFER" Step="3" />
+			<Action Cmd="OPEN_PANEL" Param="HappySummerGrandCeremonyPanel" Data="4" />
+		</EnterMap>	
+	</Step>	
+</Tasks>

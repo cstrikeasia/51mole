@@ -1,0 +1,99 @@
+<Tasks ID="521" Name="MBA大行動" AwardMsg="恭喜你獲得2000摩爾豆！" AwardBean="2000" >
+	<Step ID="1" >
+		<EnterMap MapID="239" >
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10000" Visible="0" />  
+			<Action Cmd="PLAY_MOVIE" Param="20" Name="movie_20" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_20" />				
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="{$username}，你好久沒來找我玩啦！快來一起看電視吧，我發現了一個精彩的節目！" Option="噢？是什麼節目呢？我也來看看！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />				
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="開心" Msg="哇~七星級帆船飯店，太棒啦！如果有一天，我也能擁有屬於自己的高級飯店，那該多好啊！" Option="我也好想啊~~( ⊙o⊙ )" />
+				<Talk NpcID="10000" Face="正常" Msg="看來阿伯塔先生是學了MBA才這麼厲害的！{$username}，你知道MBA是什麼嗎？" Option="這個這個，不知道呀……" />
+				<Talk NpcID="10000" Face="正常" Msg="MBA你都不知道？所以人家都說，沒文化真可怕。讓我來告訴你吧，MBA就是——" Option="是什麼？" />
+				<Talk NpcID="10000" Face="正常" Msg="MBA嘛，當然就是指——摩爾最大的優勢（Mole’s Best Advantage）啦！" Option="哦？！( ⊙ o ⊙ )~" />
+				<Talk NpcID="10000" Face="正常" Msg="好啦，別耽誤時間了，我們還是先去摩爾大學看看再說吧！" Option="好，我們走！" />
+			</Action>									
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10000" Visible="1" />  
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="77" MapType="0" />	
+		</EnterMap>		
+	</Step>			
+	
+	<Step ID="2" >
+		<EnterMap MapID="77" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />				
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="看來這MBA還真是有名呢，到處都在開設課程。可是，這什麼NBA、GBA的又是什麼呢？" Option="GBA不是我們玩的那個遊戲機嗎？" />
+				<Talk NpcID="10000" Face="正常" Msg="怎麼感覺怪怪的……這人不會是騙子吧？這年頭，還是小心為好！" Option="我們還是去摩爾大學看看吧，正規！" />
+				<Talk NpcID="10128" Face="正常" Msg="哎，別走呀！摩爾大學報名很擠的，來我們這，不用排隊！隨到隨學！" Option="噢，不用了，謝謝啊！" />
+				<Talk NpcID="10128" Face="正常" Msg="等等！經我目測，發現你們是非常有潛質的小摩爾，豁出去了，虧血本再給你們優惠5000摩爾豆如何？頂呱呱學習套裝也免費贈送！" Option="真的不用了，再見！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="78" MapType="0" />	
+		</EnterMap>		
+	</Step>
+	
+	<Step ID="3" >
+		<EnterMap MapID="78" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10127" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10055" Visible="0" />    
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />				
+			<Action Cmd="SAY" >
+				<Talk NpcID="10127" Face="正常" Msg="當然，學飯店管理，那可是要講天賦滴！帆船飯店可不是一天就能蓋起來滴！同學們，你們準備好了嗎？" Option="準備好啦！" />
+				<Talk NpcID="10127" Face="正常" Msg="好！那我就先來看看你們的綜合素質吧！小摩爾快來盡情地展示自己吧！" Option="綜合素質？" />
+				<Talk NpcID="10127" Face="正常" Msg="沒錯！待會兒我會讓工作人員搬椅子過來，我和幾位老師背對大家而坐，如果你的演講能征服我們的話，我們的椅子會為你而轉過來哦！" Option="哇~聽上去挺不錯的呢！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="樂樂、{$username}，你們也來報名參加MBA飯店管理課程了嗎？" Option="是呀，希望沒來晚呀！" />
+				<Talk NpcID="10007" Face="正常" Msg="不晚，不晚！能跟著炸花校長好好學習，對你們是很有好處的！不過，你們知道MBA是什麼意思嗎？" Option="我，我不知道呢……" />
+				<Talk NpcID="10000" Face="正常" Msg="嘿嘿，我知道哦！MBA是指“摩爾最大的優勢”！" Option="我感覺不大像啊……" />
+				<Talk NpcID="10007" Face="正常" Msg="錯啦，錯啦！MBA是工商管理碩士（Master Of Business Administration）的意思！這個你們可以慢慢跟著炸花校長學。" Option="恩，好吧！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10127" Face="正常" Msg="沒錯，我們學校的一大特色就是——注重實踐！不懂得實踐的小摩爾我們是不需要的哦！想挑戰的小摩爾，就來接受我的考驗吧！" Option="好的，我會努力的！" />
+				<Talk NpcID="10127" Face="正常" Msg="好！看你是一個非常有潛質的小摩爾，想不送你隊服都不行了。來吧，男款、女款、任選一套！" Option="哇，謝謝校長！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10055" Visible="1" />  
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10127" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+		</EnterMap>	
+	</Step>	
+
+	<Step ID="4" >
+		<EnterMap MapID="78" >
+			<Action Cmd="OPEN_PANEL" Param="Task521GetPanel" />
+			<Action Cmd="OVER" />																																		
+		</EnterMap>	
+	</Step>	
+		
+</Tasks>
+
+
+

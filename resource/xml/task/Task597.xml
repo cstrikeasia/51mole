@@ -1,0 +1,79 @@
+<Tasks ID="597" Name="跳過火山的勇士" AwardMsg="恭喜你獲得20個火神紋章！" AwardBean="" >
+
+	<!-- 永夜哨站  -->
+	<Step ID="1" TarMapID="342">
+		<NPC ID="10216" Option="跳火山的勇士"  MapID="" >
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="正常" Msg="{$username}，艾蓮娜很想見識真正的火山，你能偷偷帶我去嗎？" Option="好啊，我們出發吧！"/>
+				<Talk NpcID="10213" Face="正常" Msg="艾蓮娜，我的女兒，你要上哪兒去？" Option=""/>
+				<Talk NpcID="10216" Face="焦急" Msg="爸爸！我……我就想去看一眼火山……" Option=""/>
+				<Talk NpcID="10213" Face="正常" Msg="恩……作為父親不能總是保護過度，應該支持女兒的想法。" Option=""/>
+			</Action>
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10213" Face="正常" Msg="{$username}，拿著這個神馬護身符！" Option=""/>
+				<Talk NpcID="10213" Face="正常" Msg="你要好好保護艾蓮娜！要是艾蓮娜出了什麼差錯……（巴圖魯的肌肉嘎嘣作響）" Option="我……我一定會保護好她！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="341" MapType="0" />
+		</NPC>	
+	</Step>
+	
+	
+	<!-- 火山場景 -->
+	<Step ID="2" TarMapID="341">
+		<EnterMap MapID="341">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="正常" Msg="{$username}，這裡比龍巢迷宮還要熱！" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="沒錯，你知道摩爾莊園火神盃的由來嗎？相傳能夠不畏懼濃煙和酷熱，跳過火山口的摩爾，才是最勇敢的摩爾。" Option=""/>
+				<Talk NpcID="10216" Face="正常" Msg="原來還有這樣的說法！摩爾莊園果然很有趣~" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="焦急" Msg="（怎麼辦？眼前都是濃煙和岩漿，我能跳過去嗎？但是……我答應過巴圖魯要保護好艾蓮娜的！艾蓮娜是我的朋友啊！）" Option=""/>
+				<Talk NpcID="10216" Face="焦急" Msg="{$username}，救我！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="焦急" Msg="艾蓮娜，你沒事吧？" Option=""/>
+				<Talk NpcID="10216" Face="正常" Msg="我沒事！可我們要怎麼回去呢？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="焦急" Msg="（奇怪，岩石怎麼會自己回到岸邊？）" Option=""/>
+				<Talk NpcID="10216" Face="正常" Msg="不管怎麼說，{$username}，謝謝你救了我！原來你就是跳過火山的真正勇士呀！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" MapID="344"/>
+		</EnterMap>
+	</Step>
+</Tasks>
+
+

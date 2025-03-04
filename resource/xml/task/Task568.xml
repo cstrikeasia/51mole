@@ -1,0 +1,128 @@
+<Tasks ID="568" Name="比賽風波！" AwardMsg="恭喜你獲得20個拉姆火炬，10個經驗果實！" AwardBean="" >
+	<!-- 雲霧謎橋 -->
+	<Step ID="1" TarMapID="120">
+		<EnterMap MapID="120">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10176" Face="正常" Msg="雖然一句沒聽懂，但是覺得好厲害哦！" Option="（無語中）…………"/>
+				<Talk NpcID="10160" Face="正常" Msg="哇，第一名還有金獎盃可以拿！有的玩又有利可賺！" Option="就憑你，也想拿第一名？"/>
+				<Talk NpcID="10176" Face="正常" Msg="哈哈哈哈~~~金獎盃、獎金、豐厚的獎勵……統統都是我們的！" Option="你確定是你們的？寫了你們名字嗎？"/>
+				<Talk NpcID="10160" Face="正常" Msg="事不宜遲，行動！向運動會出發！" Option="繼續。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="68" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 拉姆運動場  -->
+	<Step ID="2" TarMapID="68">
+		<EnterMap MapID="68 ">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10180" Face="正常" Msg="接下來就有一場長跑比賽？哇哈哈~~~我們運氣也太好了吧！這麼快就能拿到屬於我們的第一個金獎盃了！" Option="比賽都還沒開始，就在那兒自我感覺良好了！"/>
+				<Talk NpcID="10182" Face="正常" Msg="不過…大家看起來都好專業、實力好強的樣子，想拿第一，恐怕很有難度。" Option="還算有個有自知之明的……"/>
+				<Talk NpcID="10180" Face="正常" Msg="哼~~~要想拿第一還不簡單嗎？魯魯，都教過你多少次了，不要每次都長他人志氣，滅自己威風！" Option="怎麼個簡單法？"/>
+				<Talk NpcID="10182" Face="正常" Msg="我哪裡有每…每次……" Option="@_@……"/>
+				<Talk NpcID="10181" Face="正常" Msg="夠啦！不要吵了，要想拿第一名，就趕緊想辦法！" Option="繼續。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="28" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 拉姆學院 -->
+	<Step ID="3" TarMapID="28">
+		<EnterMap MapID="28">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10173" Face="正常" Msg="小拉姆，你們這個神秘藥水真有這麼神奇？要知道，製造神秘藥水我可是行家，千萬不要想欺騙我！" Option="庫拉，你也想買？"/>
+				<Talk NpcID="10179" Face="正常" Msg="當然，這可是我祖傳的秘方。喝了之後，保證你的拉姆輕鬆拿冠軍。再說，您都是行家，我怎麼能坑自己人呢！" Option="你確定可以成為冠軍？"/>
+				<Talk NpcID="10173" Face="正常" Msg="好，給我拿1打………………等等，給我拿5打好了………………算了，拿10打吧！拿10打！" Option="這麼多？不會是買給你們隊所有拉姆喝的吧？"/>
+				<Talk NpcID="10179" Face="正常" Msg="{$username}，你要不也買一瓶？你看你們的大魔法師都買了我這個神秘藥水，你可以放心買了！我保證你的拉姆場場比賽都拿冠軍！" Option="這個嘛……我想想啊。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 拉姆學院-->
+	<Step ID="4" TarMapID="28">
+		<EnterMap MapID="28">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />
+			<Action Cmd="ALERT" Param="恭喜你，獲得了小拉姆送你的神秘藥水！" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="GO_MAP" MapID="68" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 拉姆運動場 -->
+	<Step ID="5" TarMapID="68">
+		<EnterMap MapID="68">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10173" Face="正常" Msg="我們隊的拉姆全都喝了神秘藥水，哇哈哈，第一名一定是我們這隊的！距離找到6只拉姆的目標又近了一步了！！！" Option="全部？庫拉你還真買了這麼多！"/>
+				<Talk NpcID="10179" Face="正常" Msg="O(∩_∩)o 哈哈~~~好戲要上演了！不要走開！" Option="繼續。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			<Action Cmd="PLAY_MOVIE" Param="501" Name="movie_501" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10173" Face="正常" Msg="這……這……這怎麼可能？這絕對不可能！！！我們隊的拉姆怎麼可能會輸！！！" Option="我的拉姆也…………"/>
+				<Talk NpcID="10179" Face="正常" Msg="O(∩_∩)o 哈哈，成功啦！輕輕鬆鬆第一名！" Option="繼續。"/>
+				<Talk NpcID="10180" Face="正常" Msg="老大這招果然管用！現在前3名都是我們的了，坐等領獎啦！哇哈哈！！！" Option="繼續。"/>
+				<Talk NpcID="10173" Face="正常" Msg="喝了神秘藥水不是穩拿第一名嘛！！！怎麼現在全都暈倒了！！！" Option="我的拉姆也暈倒了…………"/>
+				<Talk NpcID="10173" Face="正常" Msg="除非…除非這神秘藥水是假的！…………等等……怎麼這個得第一名的拉姆看著如此眼熟？" Option="有點像……賣神秘藥水的那只拉姆。"/>
+				<Talk NpcID="10173" Face="正常" Msg="你也覺得有點像對不對？對不對？是他，肯定是他！{$username}，走！我們現在就去揭發他！這種人不配拿到第一名！" Option="可…可我……不確定……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_501"/>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 拉姆運動場 -->
+	<Step ID="6" TarMapID="68">
+		<EnterMap MapID="68">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="strManBtn" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="driftBtn" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="ballBtn" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="schMc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="scoreMc" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="201" Name="movie_201" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_201" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10173" Face="正常" Msg="居然是惡魔先遣隊的小惡魔！{$username}還好我們及時揭發他們，不然金獎盃就被他們奪走了！" Option="這個惡魔先遣隊，簡直太可惡了！"/>
+				<Talk NpcID="10002" Face="正常" Msg="庫拉、{$username}多虧了你們勇敢地站出來，揭發他們！不然的話……" Option="拉姆運動會，怎能允許小惡魔來搗亂！"/>
+				<Talk NpcID="10002" Face="疑惑" Msg="可是現在，原本的前4名都跑掉了，那本次比賽的金獎盃該頒給誰呢？" Option="……………………"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="strManBtn" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="driftBtn" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="ballBtn" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="schMc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="scoreMc" Visible="1" />
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

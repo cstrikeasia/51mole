@@ -1,0 +1,170 @@
+<Tasks ID="1018" Name="摩利亞之歌" AwardMsg="恭喜你獲得黑魔法袍、2個捕蠅草種子！" AwardBean="" >
+
+	<!-- 王者大廳 -->
+	<Step ID="1" TarMapID="346">
+		<EnterMap MapID="346">
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10213" Face="焦急" Msg="那個女魔法師真是太可惡了，竟然帶走了艾蓮娜！我一定要將艾蓮娜找回來，並不因為她是女神之淚，她是我最重要的女兒啊！" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="巴圖魯酋長，不要著急，我認為這個王城裡一定有什麼線索。" Option=""/>
+				<Talk NpcID="10213" Face="焦急" Msg="機智的騎士團長，這個王者大廳，是我們摩利亞居民最熟悉的地方，我並沒有發現什麼線索啊。" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="您錯了，仔細想一下，那幾個魔法師行走的方式，只有那個女魔法師不同。" Option="她會瞬間移動！"/>
+				<Talk NpcID="10198" Face="正常" Msg="沒錯，會瞬間移動的魔法師，她的腳印一定非常特別。{$username}，你能找到那個女魔法師經常經過的地方嗎？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="201" Name="movie_201" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_201" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10198" Face="正常" Msg="看來有人比我們先發現這條線索啊。" Option="怎麼會有兩張紙？"/>	
+				<Talk NpcID="10198" Face="正常" Msg="很顯然，RK很早就發現了這張紙，他認為我們遲早會找到這裡，就留下了另一張字條。原本的紙應該是那個女魔法師留下的。" Option="接下來我們該怎麼辦？"/>
+				<Talk NpcID="10198" Face="正常" Msg="我認為應該優先解RK留下的謎。" Option="為什麼？"/>
+				<Talk NpcID="10198" Face="正常" Msg="{$username}，你還記得，RK偽裝成了誰嗎？" Option="麼麼公主！"/>
+				<Talk NpcID="10198" Face="正常" Msg="沒錯，為了避人耳目，RK應該是把公主藏到什麼地方去了。巴圖魯酋長，雖然很不好意思，但請允許我們先去營救公主。" Option=""/>
+				<Talk NpcID="10213" Face="正常" Msg="我能理解你們的心情，快去吧。我會留在這裡繼續尋找線索。" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="343" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 	摩利亞王城 -->
+	<Step ID="2" TarMapID="343">
+		<EnterMap MapID="343">
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10198" Face="正常" Msg="“歡樂頌的另一個聲部，在沉睡的英雄腳下。”看來是很棘手的字謎啊。" Option=""/>
+				<Talk NpcID="10029" Face="正常" Msg="瑞琪團長，恕我直言，我認為“歡樂頌”三個字非常值得注意。" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="哦！法蘭克，快說說你的看法。" Option=""/>
+				<Talk NpcID="10029" Face="正常" Msg="歡樂頌是一部非常有名的交響樂，它有另一個名字，叫《第九交響樂》。" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="第九交響樂……另一個聲部……{$username}，你認為歡樂頌指的是什麼？" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="202" Name="movie_202" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_202" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10198" Face="正常" Msg="原來如此，因為RK假扮了麼麼公主，所以有兩個“未來的摩爾九世”，也就是說，歡樂頌的另一個聲部指的就是麼麼公主。{$username}，你真的很聰明！" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="第一句的意思應該解開了，接下來是第二句：“在沉睡的英雄腳下”。弗蘭克，這會不會也是什麼交響樂的名字？" Option=""/>
+				<Talk NpcID="10029" Face="正常" Msg="是的，這是寫歡樂頌的音樂家另一部著名的作品，原名是“降E大調第三交響樂”，也被人稱為“英雄交響曲”。" Option="法蘭克，你怎麼知道這麼多音樂知識？"/>
+				<Talk NpcID="10198" Face="正常" Msg="如果法蘭克把他癡迷古典樂的勁兒用在騎士訓練上，早晚能擺脫“代理團長”的名號，成為真正的騎士團長呐！" Option="看不出法蘭克還有這樣的一面~"/>
+				<Talk NpcID="10029" Face="正常" Msg="團長，您這是什麼話，我們一直都等待著您早日真正歸來，帶領我們守衛公主和摩爾莊園！" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="我又何嘗不想呢？所以，趕緊解出謎題，找出公主吧！" Option=""/>
+				<Talk NpcID="10029" Face="正常" Msg="我認為，和前一句的“聲部”一樣，這句中的“沉睡”一定也是個關鍵字。" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="我也這麼想，{$username}，你怎麼看？" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="203" Name="movie_203" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_203" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10198" Face="正常" Msg="躺倒的E和3？唔……無論向哪個方向躺倒，的確都會出現一個“山”字和一個“M”字母。但原文說的是“沉睡的英雄腳下”，也就是說山……腳下……M" Option=""/>
+				<Talk NpcID="10029" Face="正常" Msg="啊，團長，我知道了！" Option="我想我也知道了！"/>
+				<Talk NpcID="10198" Face="正常" Msg="哦？那麼{$username}，請你帶路吧，在地圖上指出公主在哪裡！" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="204" Name="movie_204" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_204" />
+			
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="GO_MAP" MapID="5" MapType="0" />
+		</EnterMap>
+			
+		<EnterMap MapID="5">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10198" Face="正常" Msg="過了那麼久，這裡還是沒有變。走吧，讓我們去見見老朋友。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			
+		</EnterMap>
+	</Step>
+	
+	<!-- 摩爾拉雅滑冰場 -->
+	<Step ID="3" TarMapID="5">
+		<EnterMap MapID="5">
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="GO_MAP" MapID="34" MapType="0" />
+		</EnterMap>
+		
+		<EnterMap MapID="34">
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10053" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="瑞琪團長！法蘭克！{$username}！你們都來了，也就是說……" Option=""/>	
+				<Talk NpcID="10198" Face="正常" Msg="公主殿下，黑魔法師和RK都已經離開了摩爾莊園，當然，女神之淚也一起被……" Option=""/>
+				<Talk NpcID="10002" Face="焦急" Msg="先不說這些，摩利亞的居民們怎麼樣了？" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="請放心，他們都很好，黑魔法師們沒有造成很大的破壞。" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="那就好。我唯一擔心的，就是大家的平安。為了破壞零的陰謀，我只能悄悄躲在這裡，可是我多麼想和你們一起戰鬥！" Option=""/>
+				<Talk NpcID="10053" Face="正常" Msg="公主殿下，您的安全也是非常重要的，請不要說這麼任性的話，您看，這麼多關心您的人就是最好的證明，" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="說得沒錯。請原諒我，我的公主殿下，不能一直守護在您的身邊，這是我最大的遺憾。這次，就請讓我護送您回城堡吧！" Option=""/>
+				<Talk NpcID="10002" Face="驚訝" Msg="等等，瑞琪團長！" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="獵人M叔叔，謝謝您“窩藏”我那麼久。我要走了，今後一定還會來看您的！" Option=""/>
+				<Talk NpcID="10053" Face="正常" Msg="哈哈哈，您這是什麼見外的話。幫助公主是每一個公民義不容辭的事！雖然看到兩個麼麼公主出現在我的小屋裡，還真是嚇了一大跳呢！隨時恭候您再來和我下棋！" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="雖然一段時間沒見，您又變得更加成熟了啊，公主殿下。" Option=""/>
+				<Talk NpcID="10002" Face="生氣" Msg="不要總是把公主當小孩看啦！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1002" Name="movie_1002" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1002" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="15" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 城堡大廳 -->
+	<Step ID="4" TarMapID="15">
+		
+		<EnterMap MapID="15">
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="{$username}，這一段時間來，真是辛苦你了。還有騎士團的各位，一直瞞著你們，對不起。" Option=""/>	
+				<Talk NpcID="10198" Face="正常" Msg="公主殿下平安無事就好。那麼，我也該啟程了。" Option=""/>
+				<Talk NpcID="10002" Face="焦急" Msg="可……可是！瑞琪團長，我們才剛重逢，你又要去哪？" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="非常抱歉，公主殿下。恐怕女神之淚已經被帶去了東部的荒蕪大陸“黑魔法之家”，我必須在女神之淚的力量被用於邪惡的黑魔法之前阻止他們，所以，我必須走了。" Option=""/>
+				<Talk NpcID="10002" Face="焦急" Msg="是啊……女神之淚也不在這裡了……摩爾莊園的土地會漸漸乾涸，邪惡的魔物也會趁虛而入……" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="不要難過，公主殿下，請您一定要相信，這裡是公主您最重要的國家，也是我瑞琪唯一的家。無論如何，我會盡自己所能地守護它，您心中一定也是這麼想的，對嗎？" Option=""/>
+				<Talk NpcID="10002" Face="悲傷" Msg="………………恩" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="公主，請您鼓起勇氣來，像破壞零的陰謀一樣，用自己的方式守護這個莊園吧，請相信自己身上的正義之力！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="我答應你，一定會勇敢面對所有的困難，我會好好地守護這個國家，我答應你！所以，你也答應我，一定要再回來！" Option=""/>	
+				<Talk NpcID="10198" Face="正常" Msg="遵命！公主殿下。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="SET_BG_MUSIC" Mute="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SET_BG_MUSIC" Mute="0"/>
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>

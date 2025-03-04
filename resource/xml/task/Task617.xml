@@ -1,0 +1,107 @@
+﻿<Tasks ID="617" Name="倒楣的聖誕老人" AwardMsg="恭喜你獲得了2個元素騎士經驗藥劑（小）,壽司企鵝刀!" AwardBean="">
+	<Step ID="1" TarMapID="355">
+		<EnterMap MapID="355">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OPEN_PANEL" Param="TaskGuessWordPanel" ClearMap="1"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="355">
+		<SubmitScore ModuleID="10083" MinScore="1" LoseMsg="不對不對哦，再研究下小精靈們說的話吧！">
+			<Action Cmd="JUMP_TASK_UI" Param="聖誕小精靈們在東部海灘醒來，迷迷糊糊的說了一串話。原來聖誕老人被抓走了，得趕緊去找艾爾警官報案！"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="44" MapType="0"/>
+		</SubmitScore>
+	</Step>
+	<Step ID="3" TarMapID="44">
+		<EnterMap MapID="44">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="buttonLevel" ResName="npc_10019" Visible="0"/>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10019" Face="正常" Msg="最近莊園先是出現了眾多失竊案，現在連聖誕老人都有人敢綁架，真是無法無天了！" Option="耶誕節快要到了，一定要把聖誕老人解救出來。"/>
+				<Talk NpcID="10019" Face="正常" Msg="恩恩，是的。你們可以協助我調查嗎？" Option="當然可以，你不說我們也會這麼做的。"/>
+				<Talk NpcID="10019" Face="正常" Msg="恩，那就辛苦你們了！" Option="為了莊園，這都是我們應該做的。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="JUMP_TASK_UI" Param="耶誕節快要到了，我們得趕緊找到被綁架的聖誕老人！"/>
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="buttonLevel" ResName="npc_10019" Visible="1"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+			<Action Cmd="GO_MAP" MapID="27" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="4" TarMapID="27">
+		<EnterMap MapID="27">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10016" Visible="0"/>
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10016" Face="正常" Msg="唉！你們怎麼有空到我這了啊？" Option="聖誕老人被綁架了，我們是來找線索的。"/>
+				<Talk NpcID="10016" Face="正常" Msg="耶誕節就快要到啦！聖誕老人怎麼可以被綁架？" Option="所以我們要儘快的找到他。"/>
+				<Talk NpcID="10016" Face="正常" Msg="可是我早上在陽臺上澆花的時候還看到聖誕老人在天上騎著摩托車呢！" Option="什麼？你看見了？"/>
+				<Talk NpcID="10016" Face="正常" Msg="是啊，我當時還想著今年聖誕老人會給我什麼禮物呢！" Option="你是在早上看到的，這就說明，聖誕老人被綁架的時間還不久。"/>
+				<Talk NpcID="10016" Face="正常" Msg="那得趕緊找了！" Option="恩恩，謝謝你啊大衛，給我們提供了線索。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="JUMP_TASK_UI" Param="大衛早上竟然看到了聖誕老人，還得再去找找其他的線索！"/>
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10016" Visible="1"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+			<Action Cmd="GO_MAP" MapID="56" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="5" TarMapID="56">
+		<EnterMap MapID="56">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10041" Face="正常" Msg="你們來我這是有什麼好的農作物要給我嘛？" Option="再不找到聖誕老人，今年的禮物就沒啦！"/>
+				<Talk NpcID="10041" Face="正常" Msg="急什麼，耶誕節不是還沒到嘛！" Option="聖誕老人被綁架了，一定要在耶誕節找到他啊！"/>
+				<Talk NpcID="10041" Face="正常" Msg="聖誕老人被綁架？我沒聽錯吧？" Option="你沒有聽錯，我們就是想來跟你打聽有關線索的。"/>
+				<Talk NpcID="10041" Face="正常" Msg="線索？我可沒有綁架聖誕老人啊！" Option="你怎麼可能綁架，我就是想來問問你知道什麼蛛絲馬跡嗎？"/>
+				<Talk NpcID="10041" Face="正常" Msg="聖誕老人我是沒看見，倒是早上的時候天空飄了點雪落在了我的莊稼上。" Option="恩恩，我知道了。謝謝你梅森。"/>
+				<Talk NpcID="10041" Face="正常" Msg="不客氣！" Option="看來聖誕老人是經過了農場一帶後去的東部沙灘碼頭。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="JUMP_TASK_UI" Param="看來聖誕老人曾經經過了農場一帶，快去告訴艾爾警官。"/>
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6"/>
+			<Action Cmd="GO_MAP" MapID="44" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="6" TarMapID="44">
+		<EnterMap MapID="44">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="buttonLevel" ResName="npc_10019" Visible="0"/>
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10019" Face="正常" Msg="怎麼樣了，找到什麼線索了沒？" Option="聖誕老人就在早上，經過了開心農場。"/>
+				<Talk NpcID="10019" Face="正常" Msg="其實我一直覺得聖誕老人被綁架與浮冰島上的企鵝有關。" Option="其實我也這麼覺得的。"/>
+				<Talk NpcID="10019" Face="正常" Msg="看來我們要仔細的查一查了！" Option="恩恩。"/>
+				<Talk NpcID="10019" Face="正常" Msg="我們先不要打草驚蛇，主動跟企鵝示好，給他們送點東西，這樣方便打探到島上內部的一些情況。" Option="恩，這個辦法好。"/>
+				<Talk NpcID="10019" Face="正常" Msg="那大家快行動起來吧！" Option="好的！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			<Action Cmd="JUMP_TASK_UI" Param="快去東部沙灘碼頭，執行我們的計畫吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="7" Step="7"/>
+			<Action Cmd="GO_MAP" MapID="355" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="7" TarMapID="355">
+		<EnterMap MapID="355">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6"/>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>

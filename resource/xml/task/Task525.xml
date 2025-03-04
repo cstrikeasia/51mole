@@ -1,0 +1,38 @@
+<Tasks ID="525" Name="kfc教師節餐會" AwardMsg="恭喜你獲得KFC店員服、KFC領帶！" AwardBean="14400" >
+	<Step ID="1" >
+	
+		<EnterMap MapID="109" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="開心" Msg="你來啦~教師節餐會馬上要開始咯，瑪麗和其他小拉姆已經把邀請函都發出去啦！我們也趕快去KFC餐廳準備吧！" Option="恩！各就各位！" />
+			</Action>
+ 			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+ 			<Action Cmd="GO_MAP" MapID="203" MapType="0" />	
+ 		</EnterMap>	
+	</Step>			
+	
+	<Step ID="2" >
+		<EnterMap MapID="203" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10043" Face="正常" Msg="{$username},再過一會兒老師們就要陸續到啦~我們趕緊開始準備吧！" Option="恩！沒問題！" />
+				<Talk NpcID="10043" Face="正常" Msg="對了~我還為老師們準備了特別的驚喜哦！" Option="特別的驚喜？" />
+				<Talk NpcID="10043" Face="正常" Msg="我準備了賀卡製作的材料，大家可以製作賀卡送給最愛的老師呢！" Option="太棒啦！" />
+				<Talk NpcID="10043" Face="正常" Msg="{$username}，趁現在老師們還沒有來，你願意製作一張賀卡，將最真摯的祝福送給老師嗎？" Option="馬上開始吧！" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="OPEN_PANEL" Param="MakeCardUi" /> 
+		</EnterMap>	
+	</Step>	
+	
+	<Step ID="3" >
+		<SubmitScore ModuleID="10037" MinScore="1" LoseMsg="小摩爾還沒有做好教師節賀卡哦！" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10043" Face="正常" Msg="線下實體肯德基餐廳還有教師節活動！記得去看看！" Option="一定參加！" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="OPEN_PANEL" Param="ChouJiang" /> 
+			<Action Cmd="OVER" />
+		</SubmitScore>			
+	</Step>	
+	
+</Tasks>

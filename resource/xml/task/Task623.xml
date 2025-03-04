@@ -1,0 +1,134 @@
+﻿<Tasks ID="623" Name="莊園大危機" AwardMsg="恭喜你獲得1個貝羅壽司，潑卡壽司，2個元素騎士經驗藥劑（小）" AwardBean="">
+	<Step ID="1" TarMapID="10">
+		<EnterMap MapID="10">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10244" Face="正常" Msg="來來來，老超爺爺給你講故事啊~" Option="老超爺爺，從你的外形完全看不出你原來是個那麼慈祥的爺爺！"/>
+				<Talk NpcID="10244" Face="正常" Msg="嘿嘿，因為我們企鵝一族都是大海訓練出來的男子漢！都有非同一般的魅力！" Option="(*^__^*) 嘻嘻……"/>
+				<Talk NpcID="10244" Face="正常" Msg="怎麼？{$username}你不信啊？爺爺給你講講浮冰島上的大秘密！" Option="嗯噠~"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="10">
+		<EnterMap MapID="10">
+			<Action Cmd="SAY">
+				<Talk NpcID="10010" Face="焦急" Msg="(ㄒoㄒ)好恐怖，布少少，我們去上廁所吧……" Option="布多多你喝多了果汁，連廁所都不敢去啦……"/>
+				<Talk NpcID="10011" Face="正常" Msg="嗯？什麼？讓我再睡一會兒！" Option="布多多你還是自己去吧，我要聽老超爺爺講故事啦，別鬧啦！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10244" Face="正常" Msg="{$username},爺爺講的故事是不是很精彩？" Option="老超爺爺我們繼續講嘛！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="3" TarMapID="10">
+		<EnterMap MapID="10">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10011" Face="悲傷" Msg="嗯？哥哥？哥哥去哪了？" Option="尿尿去了吧！"/>
+				<Talk NpcID="10011" Face="焦急" Msg="哦！我說怎麼來了那麼大兩個好吃的哥哥都沒有吃呢！" Option="⊙﹏⊙b汗……這倆不能吃吧！"/>
+				<Talk NpcID="10250" Face="焦急" Msg="po ka！po ka！城 po 堡 ka！" Option="咦？你們不是城堡門口的那倆壽司嗎？你是說城堡怎麼了？"/>
+				<Talk NpcID="10251" Face="焦急" Msg="bello！ bello冰！bello! " Option="冰？冬天當然有冰啊！"/>
+				<Talk NpcID="10250" Face="焦急" Msg="po ka！po ka！momo momo！ " Option="公主？和公主有什麼關係？不行我要去看看！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="JUMP_TASK_UI" Param="   城堡門口的兩隻壽司慌慌忙忙的來，說了一堆奇奇怪怪的話，到底發生什麼事了？"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+			<Action Cmd="GO_MAP" MapID="1" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="4" TarMapID="1">
+		<EnterMap MapID="1">
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10012" Face="疑惑" Msg="是啊，粒粒也被嚇死了呢~~" Option="粒粒你看到是誰幹的嗎？"/>
+				<Talk NpcID="10012" Face="疑惑" Msg="嗯……讓粒粒想想看啊~半夜的時候粒粒聽到背後有咯啦啦的聲音……" Option="然後呢？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+		</EnterMap>
+	</Step>
+	<Step ID="5" TarMapID="1">
+		<EnterMap MapID="1">
+			<Action Cmd="SAY">
+				<Talk NpcID="10012" Face="疑惑" Msg="就是這樣咯！粒粒好像看到兩個黑影，一大一小的，嗖嗖的就沒有了……" Option="嗯！對了，城堡被凍了，粒粒知不知道公主怎麼樣了？"/>
+				<Talk NpcID="10012" Face="疑惑" Msg="不知道呀，粒粒沒有注意到哎~公主的房間在那麼裡面，應該沒事吧~" Option="我去看看她吧！粒粒自己當心哦！"/>
+			</Action>
+			<Action Cmd="JUMP_TASK_UI" Param="   城堡竟然被凍成大冰塊了，粒粒說看到兩個黑影，不知道公主怎麼樣了，快去看看！"/>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6"/>
+			<Action Cmd="GO_MAP" MapID="109" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="6" TarMapID="109">
+		<EnterMap MapID="109">
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="悲傷" Msg="嗚嗚嗚嗚~怎麼會這樣？城堡怎麼會凍起來的？" Option="公主，你沒有受傷吧？有沒有壞人闖進來？"/>
+				<Talk NpcID="10002" Face="悲傷" Msg="麼麼沒事，沒有壞人進來過，可是城堡，城堡……捷克哥哥……" Option="公主放心好了，王子不會有事的！"/>
+				<Talk NpcID="10002" Face="焦急" Msg="嗯，麼麼會堅強的，城堡的事情，麼麼去找大伯、大衛和艾爾一起解決！" Option="公主真棒！加油！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="焦急" Msg="{$username}，麼麼公主，布多多被凍住了……" Option="啊？布多多？"/>
+				<Talk NpcID="10011" Face="悲傷" Msg="我好像看見……" Option="黑影嗎？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="SET_BUFFER" Panel="7" Step="7"/>
+		</EnterMap>
+	</Step>
+	<Step ID="7" TarMapID="109">
+		<EnterMap MapID="109">
+			<Action Cmd="SAY">
+				<Talk NpcID="10011" Face="悲傷" Msg="怎麼辦？布多多被凍起來了……" Option="走，我們去看看！"/>
+				<Talk NpcID="10000" Face="焦急" Msg="對了，今天你看到丫麗了嗎？昨天她一直在神秘湖碼頭呆著，今天就沒看到她了！" Option="( ⊙ o ⊙ )啊！丫麗不會有事吧！"/>
+				<Talk NpcID="10002" Face="焦急" Msg="樂樂和{$username}去大伯那裡看看丫麗在不在！麼麼陪布少少去看看怎麼救布多多！" Option="嗯，好噠！"/>
+			</Action>
+			<Action Cmd="JUMP_TASK_UI" Param="   丫麗今天一天都沒有出現，她不會有事吧！快去拉姆學院看看她在不在！"/>
+			<Action Cmd="SET_BUFFER" Panel="8" Step="8"/>
+			<Action Cmd="GO_MAP" MapID="28" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="8" TarMapID="28">
+		<EnterMap MapID="28">
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="驚訝" Msg="丫麗……你沒事真是太好了…" Option="是啊是啊！今天一天都沒有看到你呢！"/>
+				<Talk NpcID="10009" Face="正常" Msg="嘻嘻，我沒事啊！就是……" Option="是漢青叔叔給你寄信了嗎？連小笨生都來了，小笨生你好！"/>
+				<Talk NpcID="10252" Face="正常" Msg="你好！主人讓我給丫麗送信呢！" Option="真好，漢青叔叔又快來了吧！真快，又要過年了！"/>
+				<Talk NpcID="10252" Face="正常" Msg="厄……" Option="？？？"/>
+				<Talk NpcID="10009" Face="悲傷" Msg="爸爸說讓我到碼頭等他，今年我們不到莊園過年……" Option="( ⊙ o ⊙ )啊！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="SET_BUFFER" Panel="9" Step="9"/>
+		</EnterMap>
+	</Step>	
+	<Step ID="9" TarMapID="28">
+		<EnterMap MapID="28">
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="焦急" Msg="大家都在這裡，太好了，麼麼有一個新的決定！！" Option="公主……"/>
+				<Talk NpcID="10002" Face="正常" Msg="老超爺爺說，他們浮冰島傳說中的大惡棍可能來了，我們需要啟動集訓計畫！！" Option="大惡棍？？"/>
+				<Talk NpcID="10244" Face="悲傷" Msg="是啊，我看到莊園的情況，判斷應該是那個傢伙來了！小摩爾們，不要放鬆警惕，老超要啟動浮冰島集訓中心，大家要做好準備啊！" Option="那個傢伙是誰啊？"/>
+				<Talk NpcID="10244" Face="悲傷" Msg="哎~別問了，反正是浮冰島的恥辱！！" Option="(⊙o⊙)…好吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>	
+</Tasks>
+

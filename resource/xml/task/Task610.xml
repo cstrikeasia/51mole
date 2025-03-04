@@ -1,0 +1,116 @@
+	<Tasks ID="610" Name="萬聖節回憶錄" AwardMsg="恭喜你獲得2個經驗藥劑（小）、南瓜墨鏡！" AwardBean="" >
+
+	<!-- 城堡書房 -->
+	<Step ID="1" TarMapID="32">
+		<EnterMap MapID="32">
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10036" Visible="0" />
+<!-- 			<Action Cmd="TASK_SHOW_SELF" Hide="1"/> -->
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="聽了你之前和我說的那些事情，我突然回憶起了很多。" Option="回憶？？"/>
+				<Talk NpcID="10036" Face="正常" Msg="恩，我自己好像也經歷過和你一樣的事情。" Option="難怪你之前會說感覺似曾相識呢！"/>
+				<Talk NpcID="10036" Face="正常" Msg="不過我唯一和你不同的是……" Option="是什麼？？？"/>
+				<Talk NpcID="10036" Face="正常" Msg="你沒有吃他們給你的食物，而我卻……" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="哎…………竟然全部都想起來了。" Option="什麼？你竟然吃了？"/>
+				<Talk NpcID="10036" Face="正常" Msg="恩，是的。" Option="你怎麼沒有抵抗住美食的誘惑呢？"/>
+				<Talk NpcID="10036" Face="正常" Msg="我懷疑自己每到萬聖節變成黑貓，一定和我吃了他們的食物有關係？" Option="很有可能！  "/>
+				<Talk NpcID="10036" Face="正常" Msg="哎……這可如何是好啊！" Option="我這就去喵的夜市找找可以讓你不再變黑貓的方法。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="350" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 貓的夜市 -->
+	<Step ID="2" TarMapID="350">
+		<EnterMap MapID="350">
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10233" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10233" Face="正常" Msg="咦？你怎麼又回來了？" Option="我是想來找能讓捷克王子不再變黑貓的方法的。"/>
+				<Talk NpcID="10233" Face="正常" Msg="這………………" Option="既然你曾經也是摩爾，那就幫幫我們，快告訴我吧！"/>
+				<Talk NpcID="10233" Face="正常" Msg="這…………" Option="別老這這這的了，萬聖節就要到了，捷克王子沒有多少時間了。"/>
+				<Talk NpcID="10233" Face="正常" Msg="好吧，那我就告訴你。" Option="快快快說！！！！"/>
+				<Talk NpcID="10233" Face="正常" Msg="其實要解除捷克王子不在萬聖節變黑貓的方法很簡單。" Option="什麼方法？？？"/>
+				<Talk NpcID="10233" Face="正常" Msg="不過你要答應我一個條件才可以。" Option="什麼條件？"/>
+				<Talk NpcID="10233" Face="正常" Msg="你覺得我帥嗎？" Option="額…………"/>
+				<Talk NpcID="10233" Face="正常" Msg="你也覺得我醜？" Option="不不不，哪有！只是帥的不明顯！"/>
+				<Talk NpcID="10233" Face="正常" Msg="你只要能讓我變帥一點，我就告訴你方法。" Option="這…………"/>
+				<Talk NpcID="10233" Face="正常" Msg="很困難嗎？" Option="我試試看！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10233" Face="正常" Msg="看在我變帥的份上，我決定把方法告訴你了啊！" Option="恩恩，快說吧！"/>
+				<Talk NpcID="10233" Face="正常" Msg="只要在原地左轉三圈、右轉三圈，大聲說一句“變”就可以了。" Option="So Easy！！！你不會騙我的吧！"/>
+				<Talk NpcID="10233" Face="正常" Msg="騙你我就變醜，這下總可以了吧！" Option="可是……為什麼你自己不把自己變回摩爾呢？"/>
+				<Talk NpcID="10233" Face="正常" Msg="其實吧，我不想變回摩爾，不想回去了。" Option="額……為什麼呢？"/>
+				<Talk NpcID="10233" Face="正常" Msg="莊園也沒有什麼值得我牽掛的了，反而我現在已經習慣了這裡的生活。" Option="好吧，那你自己多保重啦！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="32" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 城堡書房 -->
+	<Step ID="3" TarMapID="32">
+		<EnterMap MapID="32">
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10036" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="找到不讓我在萬聖節變黑貓的方法了嗎？" Option="恩，找到了找到了！"/>
+				<Talk NpcID="10036" Face="正常" Msg="那真是太好了，快告訴我吧！" Option="只要在原地左轉三圈、右轉三圈，大聲說一句“變”就可以了。"/>
+				<Talk NpcID="10036" Face="正常" Msg="這……這麼簡單？" Option="是的，你趕快試試看吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="你確定是這樣沒錯吧！" Option="那個黑貓就是這麼和我說的，看樣子應該是真的沒錯。"/>
+				<Talk NpcID="10036" Face="正常" Msg="哎……心裡的一塊大石頭總算是落地了。謝謝你啦！" Option="不客氣，為王子效勞是我應該的。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10036" Visible="1" />
+<!-- 			<Action Cmd="TASK_SHOW_SELF" Hide="0"/> -->
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>

@@ -1,0 +1,94 @@
+	<Tasks ID="613" Name="永遠的遺憾" AwardMsg="2個元素騎士經驗藥劑（小），屠龍盾牌  " AwardBean="" >
+	<!-- 農場發明屋 -->
+	<Step ID="1" TarMapID="331">
+		<EnterMap MapID="331">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10192" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10192" Face="正常" Msg="你們從菩提團長那聽完故事啦？" Option="我們不只聽完故事，還穿越到了當年那場大戰黑龍的戰場！"/>
+				<Talk NpcID="10192" Face="正常" Msg="什麼？你們穿越了？" Option="我們去找大衛借時光機穿越過去的。"/>
+				<Talk NpcID="10192" Face="正常" Msg="那一定看到了當年英姿颯爽，打敗黑龍的我吧！" Option="額…………"/>
+				<Talk NpcID="10192" Face="正常" Msg="怎麼了？難道你們沒看到？" Option="看到了，只是……"/>
+				<Talk NpcID="10192" Face="正常" Msg="只是什麼？" Option="（尤瑞克爺爺畢竟年紀大了，還是不要把真相告訴他了。）"/>
+				<Talk NpcID="10192" Face="正常" Msg="怎麼不說話了？" Option="噢~我剛在想您打敗黑龍的畫面呢，可威風了！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="47" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 莉莉小廣場 -->
+	<Step ID="2" TarMapID="47">
+		<EnterMap MapID="47">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10016" Face="正常" Msg="你們怎麼又來啦！難道又想穿越了？" Option="嘿嘿！大衛現在和我們真是心有靈犀了啊！"/>
+				<Talk NpcID="10016" Face="正常" Msg="咦！麼麼公主也來啦！" Option="恩，這回麼麼公主是要和我們一起穿越到過去呢！"/>
+				<Talk NpcID="10016" Face="正常" Msg="那你們準備好了，我等會就啟動時光機了啊！" Option="恩恩，好的！"/>
+			</Action>
+				
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="110" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	
+	<Step ID="3" TarMapID="110">
+		<EnterMap MapID="110">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="嗚嗚嗚……我親愛的父王~~" Option="麼麼……麼麼公主……"/>
+				<Talk NpcID="10002" Face="正常" Msg="嗚嗚嗚……我竟然親眼看著父王墜入了深淵，自己卻無能為力。" Option="麼麼公主，你不要自責了。這都是過去發生的事情，"/>
+				<Talk NpcID="10002" Face="正常" Msg="可是……父王就這麼離開我了。" Option="摩爾王雖然墜入了深淵，但不代表就一定離開了我們啊！"/>
+				<Talk NpcID="10002" Face="正常" Msg="難道墜入深淵還能活下來嗎？" Option="這可說不準呢，摩爾王福大命大！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="PLAY_MOVIE" Param="1002" Name="movie_1002" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1002" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="331" MapType="0" />
+		</EnterMap>
+	</Step>	
+	
+	<Step ID="4" TarMapID="331">
+		<EnterMap MapID="331">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10192" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7"  IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10192" Face="正常" Msg="你們怎麼回來啦？" Option="尤瑞克老爺爺，我們是想問您一件事情的！"/>
+				<Talk NpcID="10192" Face="正常" Msg="什麼事情啊？" Option="我們當時看見摩爾王讓您轉交給麼麼公主一個木盒子呢！"/>
+				<Talk NpcID="10192" Face="正常" Msg="木盒子？" Option="是呀是呀，裡面是什麼呀？"/>
+				<Talk NpcID="10192" Face="正常" Msg="額………我沒有轉交給麼麼公主，而且~我也忘記放在哪了哎——！" Option="這……………………"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8"  IsFullScreen="1" IsBg="1"/>	
+				<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10192" Visible="1" />
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>

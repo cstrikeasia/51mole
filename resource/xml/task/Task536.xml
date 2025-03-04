@@ -1,0 +1,194 @@
+<Tasks ID="536" Name="A計劃大揭秘" AwardMsg="恭喜你獲得兔蘿蔔、2000摩爾豆！" AwardBean="2000" >
+	<Step ID="1" >
+	
+		<EnterMap MapID="326" >
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="大家不要怕！我菩提身經百戰，對付這隻小黑貓還是綽綽有餘的！不過，它好像並不是想攻擊大家，好像只是想向我們說明些什麼呢？" Option="大伯還是要小心啊！" />
+				<Talk NpcID="10000" Face="疑惑" Msg="可是每個事發現場，都有許多黑貓的腳印，它肯定脫不了關係。它現在跟著我們到了這裡，不知道又會發生什麼奇怪可怕的事情！" Option="樂樂說的也有道理~~~" />
+				<Talk NpcID="10009" Face="正常" Msg="不要怕！我們這麼多人，難道還鬥不過一隻黑貓嗎？我倒要看看它能耍出什麼花樣來！" Option="丫麗就是丫麗！" />
+				<Talk NpcID="10002" Face="疑惑" Msg="可是這隻黑貓怎麼看，都不像是搞破壞的罪魁禍首啊！我們還是看看它想幹什麼再說吧！" Option="對，靜觀其變~~~" />
+				<Talk NpcID="10009" Face="正常" Msg="反正現在我們也是毫無頭緒，不如先看看這隻黑貓到底想帶我們去哪兒，說不定還能找到一些線索呢。" Option="嗯，反正我們人多，不怕。" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />	
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="32" MapType="0" />	
+		</EnterMap>	
+	</Step>		
+		
+	<Step ID="2" >	
+		<EnterMap MapID="32" >
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />	
+			<!-- 彈出一個面板，現在還沒做，一哥翻書類似的面板 -->
+			<Action Cmd="PLAY_MOVIE" Param="999" Name="movie_999" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_999" />	
+			<Action Cmd="PLAY_MOVIE" Param="2000" Name="movie_2000" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="生氣" Msg="看來之前的推測沒有錯，果然跟庫拉、黑暗天使有關係！這個可惡的庫拉！" Option="(⊙_⊙)啊？" />
+				<Talk NpcID="10000" Face="疑惑" Msg="可為什麼現場會有貓腳印，誰能保證你們不是一夥的？" Option="這個……" />
+				<Talk NpcID="10009" Face="疑惑" Msg="庫拉為什麼要來城堡裡查找有關萬聖節黑貓詛咒的傳說呢？他到底想幹什麼？" Option="？？？" />
+				<Talk NpcID="10007" Face="正常" Msg="小黑貓，既然你發現了庫拉和黑暗天使的可疑行徑，並跟蹤了他們，那你肯定知道他們接下來去了哪裡？做了什麼？" Option="趕快把你知道的說出來吧！" />
+				<Talk NpcID="10000" Face="正常" Msg="哼~誰知道你們是不是一夥的，別想把責任都推到別人身上。庫拉搗鬼，這是肯定的；至於你有沒有參與其中……那就說不清楚了。" Option="(⊙_⊙)?" />
+				<Talk NpcID="10002" Face="悲傷" Msg="樂樂，我相信捷克哥哥不會這樣的。雖然他逃脫不了黑貓的詛咒。但是我相信，就算哥哥失去了自我意識而化身成了黑貓，他的內心也是善良的。" Option="善良的麼麼公主……" />
+				<Talk NpcID="10007" Face="疑惑" Msg="現在不是爭論這個的時候，目前最重要的，還是搞清楚庫拉和黑暗天使到底有什麼陰謀！他們究竟想利用“黑貓的詛咒”做什麼呢？" Option="就是嘛！我也這樣想的！" />
+				<Talk NpcID="10009" Face="正常" Msg="對，不管黑貓是好是壞，請大家放心，有我保護大家！先調查清楚庫拉的陰謀比較重要！" Option="丫麗，大家的安危可都交給你了！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2000" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />	
+			<Action Cmd="GO_MAP" MapID="9" MapType="0" />	
+		</EnterMap>	
+	</Step>	
+	
+	<Step ID="3" >
+		<EnterMap MapID="9" >	
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />	
+			<Action Cmd="PLAY_MOVIE" Param="3000" Name="movie_3000" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="疑惑" Msg="之後我跟拉仔就出現了，看見一隻黑貓的影子……難道，那個黑影就是小黑貓你？" Option="照這樣來看，應該是它……" />
+				<Talk NpcID="10009" Face="正常" Msg="他有沒有說謊，問問尤尤姐姐就知道了！最開始如果尤尤姐姐看到的是兩隻黑貓，那就說明他沒撒謊；如果不是……" Option="如果不是，那他就是在撒謊！！！" />
+				<Talk NpcID="10007" Face="正常" Msg="對，先問問尤尤，看看當時發生的事情，是不是像小黑貓說的這樣。" Option="尤尤姐姐應該還記得當時的情形。" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3000" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10050" Face="正常" Msg="大家都在呢，找我有什麼事情嗎？最近莊園裡發生的怪事太多了，大家還是不要經常出來走動啊！" Option="我們有丫麗，不怕！" />
+				<Talk NpcID="10009" Face="正常" Msg="尤尤姐姐，我們來就是想搞清楚為什麼莊園最近多了這麼多奇怪的事情。你還記得那天發生在陽光牧場裡的怪事嗎？" Option="能跟我們詳細說說嗎？" />
+				<Talk NpcID="10050" Face="焦急" Msg="我那天可被嚇壞了，就看見有黑影在農場裡。“唰唰唰”幾下功夫，就把我的農場弄得雞飛狗跳的了……" Option="尤尤姐姐應該還記得當時的情形。" />
+				<Talk NpcID="10009" Face="正常" Msg="那你看清楚了有幾個黑影沒？是不是黑貓的影子？" Option="對！這才是關鍵啊！" />
+				<Talk NpcID="10050" Face="焦急" Msg="這……我倒是沒注意，當時太混亂了，而且黑影移動的很快，根本看不清楚有幾個。不過是貓的影子這倒是可以肯定的，因為牧場裡留下了不少貓爪印！" Option="@_@……" />
+				<Talk NpcID="10000" Face="正常" Msg="尤尤姐姐記不清楚了沒關係，不是還有梅森和阿七嗎？他們肯定知道，我們趕快去開心農場問問他們不就清楚了嘛。" Option="萬一他們也沒看清楚呢？？？" />
+				<Talk NpcID="10007" Face="正常" Msg="小黑貓如果是在撒謊，謊言遲早會被揭穿的！既然大家都來到了事發現場，那我們就再四處看看，說不定還能找到一些線索。" Option="哇，最喜歡偵探破案什麼的了！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<!-- 打開大家來找茬的遊戲 -->	
+			<Action Cmd="OPEN_PANEL" Param="SmallSpyPanel" />	
+		</EnterMap>		
+	</Step>
+	
+	<Step ID="4" >
+		<SubmitScore ModuleID="10050" MinScore="1" LoseMsg="小摩爾，你還沒找到5個關鍵線索哦！繼續加油！" >
+			<!-- 場景中沒人 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="{$username}，真是太謝謝你了！找到了這麼重要的線索！" Option="(*^__^*) 嘻嘻，應該的！" />
+				<Talk NpcID="10007" Face="正常" Msg="現在我們再去開心農場找找線索吧！說不定還會有更大的收穫。" Option="嗯，好的。" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="GO_MAP" MapID="10" MapType="0" />																						
+		</SubmitScore>
+	</Step>	
+	
+	
+	<Step ID="5" >
+		<EnterMap MapID="10" >
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />	
+			<!-- movie5的最後一幀 -->
+			<Action Cmd="PLAY_MOVIE" Param="5000" Name="movie_5000" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="我跟拉仔來到農場的時候，梅森和阿七就已經被懸掛在半空中了。" Option="那有黑影閃過嗎？" />
+				<Talk NpcID="10000" Face="正常" Msg="不過我們只看到一個黑貓的影子，沒有兩個。" Option="再跟梅森確認一下！" />
+				<Talk NpcID="10009" Face="正常" Msg="梅森跟阿七，一共兩雙眼睛，應該有看清楚，問問就知道真相。哼~~~小黑貓的謊言就快被揭穿了！" Option="哇，緊張時刻啊！" />
+			</Action>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_5000" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10041" Face="正常" Msg="樂樂，你們怎麼來了呀？大家也都在。" Option="來找你問問之前發生的事情……" />
+				<Talk NpcID="10000" Face="正常" Msg="我們找到了關於之前莊園頻頻發生怪事的重要線索。但還有一點小疑問需要問問你和阿七。" Option="樂樂還頗有小偵探的風采啊！" />
+				<Talk NpcID="10041" Face="焦急" Msg="上次我跟阿七正在農場裡忙活著，不知道哪裡颳來一陣風，只見兩個黑影唰的一下從我眼前閃過……" Option="你確定看清楚了嗎？" />
+				<Talk NpcID="10000" Face="正常" Msg="你確定是兩個黑影？看清楚了，是兩隻黑貓的影子嗎？" Option="是兩隻黑貓的影子嗎？" />
+				<Talk NpcID="10041" Face="焦急" Msg="是不是黑貓這倒是沒注意，不過我肯定是有兩個黑影，其中的一個還會吐閃電，我和阿七都看見了的！" Option="吐閃電？怎麼這麼像……" />
+				<Talk NpcID="10022" Face="正常" Msg="對的~對的！現在想想那兩隻黑影還真有點像黑貓的樣子，不過有點醜陋就是了。而且我在農場裡也發現了貓腳印。" Option="現在是八九不離十可以得出結論了！" />
+				<Talk NpcID="10009" Face="正常" Msg="{$username}，你怎麼看呢？你覺得誰的嫌疑最大？" Option="我覺得吧……" />
+			</Action>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+			<!-- 打開一個"謎底搶險猜"面板 -->	
+			<Action Cmd="OPEN_PANEL" Param="GuessAnswerPanel" Data ="1"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="6" >
+		<SubmitScore ModuleID="10048" MinScore="1" LoseMsg="小摩爾，有猜到麼！" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="從現在掌握的線索推測，小黑貓說的應該是事實，它沒有撒謊的可能性比較大。看來，這一切都是庫拉和黑暗天使的陰謀！" Option="庫拉！庫拉！又是庫拉！" />
+				<Talk NpcID="10007" Face="正常" Msg="這樣一來，之前發生的所有事情也都說得過去了。" Option="比如……" />
+				<Talk NpcID="10007" Face="正常" Msg="庫拉再聰明，也有疏忽的時候啊！害他露出馬腳的，竟然是他身邊的黑暗天使。" Option="這就叫百密一疏啊！" />
+				<Talk NpcID="10000" Face="正常" Msg="可現在還有謎團沒解開……" Option="(＞﹏＜)~~~" />
+				
+				<Talk NpcID="10007" Face="疑惑" Msg="是城堡書房裡，為什麼會有打鬥的痕跡嗎？還有那半張掉落的便條紙，以及我們在陽光牧場找到的那五張小紙片，對吧？" Option="哇……分析的好到位啊！" />
+				<Talk NpcID="10009" Face="疑惑" Msg="這樣看來，小黑貓還是沒有完全洗脫嫌疑……" Option="嗯……就差這最關鍵的一步啦。" />
+				<Talk NpcID="10002" Face="正常" Msg="我相信它，一定是清白的！" Option="公主……" />
+				<Talk NpcID="10007" Face="正常" Msg="大家放心吧，最後的謎底很快就能解開啦！我們現在就去城堡書房吧！既然有打鬥過的痕跡，就肯定會留下蛛絲馬跡，大家一定要小心留意四周！" Option="最後謎底，即將揭曉。" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="7" Step="7" />
+			<Action Cmd="GO_MAP" MapID="32" MapType="0" />																						
+		</SubmitScore>
+	</Step>
+	
+	<Step ID="7" >
+		<EnterMap MapID="32" >
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />	
+			<!-- movie7的最後一幀 -->	
+			<Action Cmd="PLAY_MOVIE" Param="7000" Name="movie_7000" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="庫拉和黑暗天使竟然還想毀了城堡書房！真是豈有此理！" Option="太過分了！" />
+				<Talk NpcID="10000" Face="正常" Msg="現在看來……其實捷克王子變成的那隻黑貓一直在幫助我們。" Option="嗚嗚嗚~~~原來如此……" />
+				<Talk NpcID="10009" Face="正常" Msg="原來是我們錯怪它了，都是庫嫁禍給它的！沒有它的指引，我們肯定找不到這些線索，說不定我們還毫無頭緒的到處找黑貓呢。" Option="這次，還真多虧了它。" />
+				<Talk NpcID="10000" Face="正常" Msg="可……那半張紙條呢？還有找到的5塊小紙片……" Option="對呀，這個謎底還沒解開。" />
+			</Action>
+				<Action Cmd="DELETE_MOVIE" Param="movie_7000" />
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="大家快看！捷克王子，捷克王子在這裡！" Option="啊！捷克王子恢復摩爾形象了嗎？" />
+				<Talk NpcID="10036" Face="正常" Msg="相信大家現在都已經有結論了吧——到底誰才是真正的陰謀策劃者！" Option="嗯……………………" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<!-- 打開謎底搶先猜面板 -->
+			<Action Cmd="SET_BUFFER" Panel="8" Step="8" />
+			<Action Cmd="OPEN_PANEL" Param="GuessAnswerPanel"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="8" >
+		<SubmitScore ModuleID="10048" MinScore="1" LoseMsg="小摩爾，你還沒找到5個關鍵線索哦！繼續加油！" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="雖然每年萬聖節，我都逃不過黑貓的詛咒……可是我也不想給大家，給莊園帶來危機，我只想大家能好好過一個萬聖節。" Option="嗚嗚嗚~我們的捷克王子……" />
+				<Talk NpcID="10007" Face="正常" Msg="捷克王子回來就好了！現在總算是虛驚一場，大家都平安無事！" Option="對，捷克王子不用擔心。" />
+				<Talk NpcID="10000" Face="正常" Msg="只是還有這個紙條……" Option="對！還有惡魔島專用便條紙……" />
+				<Talk NpcID="10036" Face="正常" Msg="如果我猜測的沒錯，那5塊小紙片，應該就是紙條的另一半！只要我們把它拼湊起來，就應該知道紙條上的秘密了。" Option="事不宜遲，開始吧！" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="9" Step="9" />
+			<!-- 打開拼圖的面板交互 -->
+			<Action Cmd="OPEN_PANEL" Param="SpainGhostPanel" />	
+		</SubmitScore>
+	</Step>
+		
+	<Step ID="9" >
+		<SubmitScore ModuleID="10049" MinScore="1" LoseMsg="小摩爾，你還沒找到5個關鍵線索哦！繼續加油！" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="好個庫拉！竟然想利用黑貓的詛咒，來完成他的萬聖節A計劃！" Option="簡直太可惡了！" />
+				<Talk NpcID="10007" Face="正常" Msg="好在大家齊心協力，成功破壞了庫拉的陰謀！" Option="眾志成城，戰勝庫拉！" />
+				<Talk NpcID="10002" Face="正常" Msg="太好了，現在終於真像大白了！哥哥，我就相信你肯定不會破壞莊園，更不會傷害大家的！我……我……" Option="看來公主的堅持是對的！" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />		
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105" />
+			<Action Cmd="OVER" />																			
+		</SubmitScore>
+	</Step>	
+</Tasks>

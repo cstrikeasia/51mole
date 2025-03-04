@@ -1,0 +1,46 @@
+<Tasks ID="131" Name="我想成為摩爾消防員" >
+	<Step ID="1" >
+		<NPC ID="10039" Option="我想成為摩爾消防員" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10039" Face="正常" Msg="你想成為摩爾消防員？" Option="我準備好了！" />
+			</Action>
+			
+			<Action Cmd="ACT_EVENT" Param="NPCOldJob" /><!-- 拋事件 -->
+		</NPC>
+
+		<EnterMap MapID="100000001" >		                         <!-- 沒開始任務 -->	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10039" Face="正常" Msg="營造莊園的安全環境，離不開摩爾消防員！小摩爾願意為保衛莊園安全盡自己的力量的話，就趕快點擊右上角徽章來獲取就職任務吧！" Option="好的，我這就去！" />
+			</Action>
+		</EnterMap>	
+		
+		<EnterMap MapID="100000002" >								<!-- 未完成任務 -->
+				<Action Cmd="SAY" >
+					<Talk NpcID="10039" Face="正常" Msg="拿到消防員職業資格證，同時力量值達到20以上才能成為消防員哦！莊園很多遊戲都能增加力量值，小摩爾加油！" Option="好，我再試試！" />
+				</Action>
+		</EnterMap>
+		
+		<EnterMap MapID="100000003" >									  <!-- 已完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10039" Face="正常" Msg="恭喜你，順利完成了消防員任職任務！從現在起，你就是一名光榮的摩爾消防員了！一起為維護莊園的安全環境努力吧！" Option="恩，我一定會的！" />
+			</Action>
+			
+			<Action Cmd="ACT_EVENT" Param="OVERNPCOldJob" /><!-- 拋事件 -->
+			
+		</EnterMap>
+		
+		
+		<EnterMap MapID="100000004" >									  <!-- 已完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10039" Face="正常" Msg="更多消防員任務你可以點擊右上角SMC徽章獲取。" Option="好的，我知道了！" />
+			</Action>
+			
+			
+			
+		</EnterMap>
+		
+	</Step>
+					
+</Tasks>
+
+

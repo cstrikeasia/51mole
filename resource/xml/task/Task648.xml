@@ -1,0 +1,65 @@
+﻿<Tasks ID="648" Name="夢醒時分" AwardMsg="恭喜你獲得1只肥肥館的寶石豬,1片家園裝飾金葉子和10000摩爾豆。" AwardBean="">
+	<Step ID="1" TarMapID="109">
+		<EnterMap MapID="109">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10284" Face="正常" Msg="……" Option="公主，還是不能講話嗎？"/>
+				<Talk NpcID="10282" Face="開心" Msg="沒事的，這只是暫時現象，只要公主跟我一塊去我們木精靈的國度，很快就會好的！" Option="好擔心公主啊，上次棋局說公主要獻出生命……"/>
+				<Talk NpcID="10282" Face="開心" Msg="公主，我們今天就出發好不好？" Option="今天就出發？大伯也一起去嗎？公主怎麼能一個人出發？"/>
+				<Talk NpcID="10282" Face="開心" Msg="公主不是一個人啊，有我跟她在一起……" Option="這……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="悲傷" Msg="哎，好擔心公主啊~" Option="樂樂，你怎麼又躲在角落裡？上次在雲霧謎橋……"/>
+				<Talk NpcID="10000" Face="悲傷" Msg="噓~~別說了~~" Option="厄，樂樂還真是心疼公主。"/>
+				<Talk NpcID="10000" Face="悲傷" Msg="我現在只是擔心棋局上的預言會成真，不論如何，我都打算一直偷偷跟著公主。" Option="恩，我也一起跟著，他們去哪了？"/>
+				<Talk NpcID="10000" Face="悲傷" Msg="聽剛才王子說的，應該是去跟洛克行政官告別了，我們走吧……" Option="恩！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="JUMP_TASK_UI" Param="化身精靈，失去紅鼻子的麼麼公主，要跟著蒙斯特王子去什麼木精靈的國度？好擔心呀，讓我們跟著他們吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+			<Action Cmd="GO_MAP" MapID="15" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="15">
+		<EnterMap MapID="15">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="悲傷" Msg="哎，公主都不要帶我一起去~" Option="公主好像很不開心啊，是不是又發生什麼事了？"/>
+				<Talk NpcID="10000" Face="驚訝" Msg="又發生什麼事了？剛才公主不是還很開心？" Option="我們快點跟上吧，希望公主會沒事……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="JUMP_TASK_UI" Param="木精靈國度在哪裡，不知道能不能跟得上公主他們，他們這是要去哪裡呢？"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="120" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="3" TarMapID="120">
+		<EnterMap MapID="120">
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="焦急" Msg="還是跟丟了，怎麼辦啊？公主去了哪裡啊？" Option="好奇怪，剛才還看到他們的……難道去了蘑菇森林？"/>
+				<Talk NpcID="10000" Face="焦急" Msg="不會吧，去找那個壞巫女了？不是要去什麼木精靈國度嗎？" Option="那個地方聽也沒聽說過……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="JUMP_TASK_UI" Param="遠處傳來呼救的聲音，難道是麼麼公主？哇哦~！樂樂俠登場，快趕去看看！"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+			<Action Cmd="GO_MAP" MapID="337" MapType="0"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="4" TarMapID="337">
+		<EnterMap MapID="337">
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>			
+</Tasks>
+

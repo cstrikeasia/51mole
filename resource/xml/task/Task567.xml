@@ -1,0 +1,107 @@
+<Tasks ID="567" Name="不速之客！" AwardMsg="恭喜你获得20个拉姆火炬，10个经验果实！" AwardBean="" >
+	<!-- 拉姆运动场 -->
+	<Step ID="1" TarMapID="68">
+		<EnterMap MapID="68 ">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="生气" Msg="是什么人在捣蛋？赶快把获奖名单还给我！" Option="何方妹纸，身手如此敏捷！"/>
+				<Talk NpcID="10007" Face="正常" Msg="队长选拔赛的比赛现场可不是拿来让大家恶作剧的。小摩尔，不许胡闹，快把名单拿过来。" Option="这小摩尔，恶作剧的手段也太低级了一点吧！"/>
+				<Talk NpcID="10015" Face="正常" Msg="{$username}你有没有觉得这个粉红色的背影好熟悉。像是……" Option="像是……库拉？"/>
+				<Talk NpcID="10015" Face="正常" Msg="对对对，就是库拉！那粉红的蘑菇头太扎眼了！………………咦，不对啊，库拉的蘑菇头怎么会是粉红色的呢？" Option="果然，这个库拉怎么浑身上下都是粉红色的呢？"/>
+				<Talk NpcID="10015" Face="正常" Msg="{$username}拿好你手中的相机，一定要拍到这个人是谁！" Option="嗯！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 拉姆运动场  -->
+	<Step ID="2" TarMapID="68">
+		<EnterMap MapID="68 ">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 拉姆运动场 -->
+	<Step ID="3" TarMapID="68">
+		<EnterMap MapID="68">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="OPEN_PANEL" Param="Task567Panel" ClearMap="0"/> 
+			<Action Cmd="ADD_EVENT" Param="task567" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 拉姆运动场 -->
+	<Step ID="4" TarMapID="68">
+		<EnterMap MapID="68">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10015" Face="正常" Msg="明天的头条已经到手啦！名字就叫——庄园惊现娘化版库拉！哈哈哈，一听名字就很有看点！" Option="粉嫩滴库拉萌妹纸……哈哈哈哈……"/>
+				<Talk NpcID="10002" Face="正常" Msg="(*^__^*) 嘻嘻，这可真是闻所未闻，见所未见。库拉居然也穿粉裙子扮萌！粉红的蝴蝶结比我的都还可爱！" Option="成熟中，还带着那么一点小俏皮！"/>
+				<Talk NpcID="10007" Face="开心" Msg="哦嚯嚯嚯~~~我去过的地方比星星还多，什么奇闻异事没见过，可这库拉穿粉裙子我还真是大开眼见啊！哦嚯嚯嚯~~~~" Option="菩提大伯，你该不会也想试试吧？哦嚯嚯嚯~~~"/>
+				<Talk NpcID="10038" Face="正常" Msg="都给我认真点，严肃！现在是选拉姆运动会队长，不是来选啦啦队队长的！" Option="严肃点！严肃点！…………噗~~可我还是忍不住想笑啊，哈哈哈！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"  IsStopSound="0"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10174" Face="正常" Msg="还说库拉是坏人，我看你们才是呢！不分青红皂白就嘲笑我的库拉主人！" Option="你是……骰子？你真的是骰子吗？"/>
+				<Talk NpcID="10174" Face="正常" Msg="哼~~~什么骰子，我叫点点！我现在是库拉大法师的拉姆！" Option="点点是谁？没听过。"/>
+				<Talk NpcID="10007" Face="疑惑" Msg="那你知不知道库拉为什么会变成现在这样？" Option="继续。"/>
+				<Talk NpcID="10174" Face="正常" Msg="当然知道。那天，一个穿着紫色衣服的摩尔来到了黑森林里，说是要找拉姆王……" Option="继续。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 拉姆运动场 -->
+	<Step ID="5" TarMapID="68">
+		<EnterMap MapID="68">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" IsStopSound="0"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="悲伤" Msg="没想到啊没想到，库拉的内心还是…………" Option="库拉跟骰子，真是主仆情深！"/>
+				<Talk NpcID="10002" Face="悲伤" Msg="库拉原来也有这么真性情的一面，后来呢？后来库拉怎么样了？拉姆王会有办法帮他吗？" Option="就算有办法，可……"/>
+				<Talk NpcID="10007" Face="悲伤" Msg="可就算有办法，骰子复活了，是不是就意味着那6只无辜的小拉姆又要消失掉了？" Option="@_@……"/>
+				<Talk NpcID="10174" Face="正常" Msg="先听我把话说完吧！" Option="你接着说。"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10174" Face="正常" Msg="库拉主人知道你们一定会是这样的反应，可他还是来了。果然如此，你们大家刚刚就是那样嘲笑他的……" Option="我们…… …… ……"/>
+				<Talk NpcID="10007" Face="正常" Msg="原来库拉…… …… ……" Option="继续。"/>
+				<Talk NpcID="10002" Face="正常" Msg="库拉为了骰子，竟然甘愿被我们笑话……" Option="继续。"/>
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 拉姆运动场 -->
+	<Step ID="6" TarMapID="68">
+		<EnterMap MapID="68">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="好，我们就重新来一次队长选拔赛！这一次，点点也参加！" Option="继续。"/>
+				<Talk NpcID="10038" Face="正常" Msg="只要有运动精神，只要有运动热情，只要你追求更高、更快、更强的正能量！就有资格参加我们的拉姆运动会，就有资格参加我们的队长选拔赛！" Option="继续。"/>
+				<Talk NpcID="10002" Face="正常" Msg="点点加油！库拉加油！" Option="点点加油！库拉加油！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" IsStopSound="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" IsStopSound="0"/>
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

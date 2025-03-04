@@ -1,0 +1,31 @@
+<Tasks ID="519" Name="拜訪婚紗小店" AwardMsg="恭喜你獲得10個坐騎魚食、1000摩爾豆！" >
+	<Step ID="1" >
+		<EnterMap MapID="20" >
+			<Action Cmd="SAY" Param="" >
+				<Talk NpcID="10027" Face="開心" Msg="咦，親愛的{$username}，你來的可真是時候啊！" Option="啊？出了什麼事？" />
+				<Talk NpcID="10027" Face="開心" Msg="鳶尾仙堡婚紗小屋你知道嗎？聽說那裡的婚紗材質一流不說，做工、設計方面更是堪稱美輪美奐！" Option="能讓西索這麼誇獎的，肯定不錯！" />
+				<Talk NpcID="10027" Face="開心" Msg="鳶尾仙堡婚紗小店新開張，我應該送一份賀禮給愛麗莎……可是……我實在有事走不開。親愛的{$username}，可否請你帶我轉送一下呢？" Option="OK！沒問題！我順便也去逛逛！" />
+				<Talk NpcID="10027" Face="開心" Msg="親愛的{$username}，真是太謝謝你了，還請你跟愛麗莎說，改天我一定親自前去拜訪！" Option="我辦事兒，你放心！我這就去！" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="317" MapType="0" />				
+		</EnterMap>
+	</Step>	
+	
+	<Step ID="2" >
+		<NPC ID="10122" Option="拜訪婚紗小店">
+			<Action Cmd="SAY" Param="">
+				<Talk NpcID="10122" Face="正常" Msg="歡迎來到我們鳶尾仙堡婚紗小屋！" Option="哇！摩特兒身上穿的婚紗美呆啦！" />
+				<Talk NpcID="10122" Face="正常" Msg="婚禮以幸福的魔法，將每對新人的命運相連，婚紗用甜蜜的絲線，縫製專屬於你們的紀念，請問有什麼可以為你服務的呢？" Option="我想看看你們的婚紗！" />
+			</Action>
+			<Action Cmd="OPEN_PANEL" Param="VisitWeddingShop" />	 
+			<Action Cmd="SAY" Param="">
+				<Talk NpcID="10122" Face="正常" Msg="親愛的{$username}，你對我們的婚紗還滿意嗎？" Option="啊！只顧著看婚紗，忘了正事了！" />
+				<Talk NpcID="10122" Face="正常" Msg="正事？{$username}，你還有什麼事需要我幫忙的嗎？" Option="是西索姐姐叫我給你送禮物來的！" />
+				<Talk NpcID="10122" Face="正常" Msg="啊！好精緻的小禮物，西索姐姐有心了！小摩爾也謝謝你幫我把禮物送過來！" Option="你太客氣了，助人為快樂之本嘛！" />
+				<Talk NpcID="10122" Face="正常" Msg="{$username},有空一定要常來哦！鳶尾仙堡婚紗小屋隨時歡迎你的光臨！" Option="一定一定！" />
+			</Action>
+			<Action Cmd="OVER" />				
+		</NPC>
+	</Step>	
+</Tasks>

@@ -1,0 +1,66 @@
+﻿<Tasks ID="639" Name="遠古穿越" AwardMsg="恭喜你獲得1個小屋裝飾瘋狂拉姆和1隻可愛的星錘兔。" AwardBean="">
+	<Step ID="1" TarMapID="32">
+		<EnterMap MapID="32">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10036" Face="正常" Msg="你想要成為一個睿智的摩爾嗎？" Option="當然啦！"/>
+				<Talk NpcID="10036" Face="正常" Msg="那就常常來城堡書房咯，當然去圖書館也可以，不停的閱讀就能不斷成長。" Option="王子你一直在書房裡呢，是一直在閱讀嗎？"/>
+				<Talk NpcID="10036" Face="正常" Msg="森林大火毀掉了大多數的王國藏書。有很多殘卷遺留下來，修復這些書才能讓它們留得更加長久。" Option="( ⊙o⊙ )哇，王子好厲害！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="32">
+		<EnterMap MapID="32">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10036" Face="焦急" Msg="我還是要去看一下！去尼爾拉塔看一下！" Option="王子萬一有危險呢？"/>
+				<Talk NpcID="10036" Face="焦急" Msg="就是擔心有危險才不能等，全莊園的摩爾們如果有危險怎麼辦？" Option="王子一定要去我也去！"/>
+				<Talk NpcID="10036" Face="焦急" Msg="壞壞，你在這裡呆著不要出去，我很快就回來！" Option="壞壞真乖"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="JUMP_TASK_UI" Param="   王子聽說到處都有怪獸，感覺非常不放心，他決定自己去尼爾拉塔調查，跟王子一塊去吧，自己也要當心喲！"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="80" MapType="0"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="3" TarMapID="80">
+		<EnterMap MapID="80">
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6"/>
+			<Action Cmd="JUMP_TASK_UI" Param="   ╮(╯▽╰)╭這裡好危險，還是不要停留了，先回到城堡書房吧！王子，不要衝動呀！"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+			<Action Cmd="GO_MAP" MapID="32" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="4" TarMapID="32">
+		<EnterMap MapID="32">
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7"/>
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105"/>
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>
+
+

@@ -1,0 +1,160 @@
+	<Tasks ID="612" Name="穿越之戰" AwardMsg="恭喜獲得2個元素騎士經驗藥劑（小），時光機模型 " AwardBean="" >
+	<!-- 農場發明屋 -->
+	<Step ID="1" TarMapID="27">
+		<EnterMap MapID="27">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10016" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10016" Face="正常" Msg="哈哈，快來看看我剛修好的時光機，比之前更神奇囉！" Option="哇……好厲害啊！"/>
+				<Talk NpcID="10016" Face="正常" Msg="想不想試一試啊？" Option="嘿嘿，其實我們來找你，就是來借時光機回到過去的。"/>
+				<Talk NpcID="10016" Face="正常" Msg="我們這真是一拍即合啊！" Option="哈哈，快驅動你的時光機，把我們帶回到摩爾王八世那個時代吧！"/>
+				<Talk NpcID="10016" Face="正常" Msg="跟我去粒粒小廣場吧，我把時光機放在那裡了！" Option="好了，我們快走吧！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="47" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 莉莉小廣場 -->
+	<Step ID="2" TarMapID="47">
+		<EnterMap MapID="47">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="GO_MAP" MapID="1" MapType="0" />
+		</EnterMap>
+		
+		<EnterMap MapID="1">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsFullScreen="1"  IsStopSound="1" IsBg="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" IsStopSound="0"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="47" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	
+	<!-- 城堡大廳 -->
+	<Step ID="3" TarMapID="47">
+		<EnterMap MapID="47">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10016" Face="正常" Msg="你們怎麼這麼快就回來啦？" Option="我們到錯地方了。"/>
+				<Talk NpcID="10016" Face="正常" Msg="怎麼會呢？" Option="真的呀，不信你去看。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="GO_MAP" MapID="6" MapType="0" />
+		</EnterMap>
+		
+		<EnterMap MapID="6">
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6"  IsFullScreen="1" IsStopSound="1" IsBg="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="1002" Name="movie_1002"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1002"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" IsStopSound="0"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="47" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="4" TarMapID="47">
+		<EnterMap MapID="47">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7"  IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10016" Face="正常" Msg="你們……" Option="大衛，我們又到錯地方了！"/>
+				<Talk NpcID="10016" Face="正常" Msg="啊？又錯了？" Option="你的時光機到底可不可靠啊！"/>
+				<Talk NpcID="10016" Face="正常" Msg="這回我來按啟動按鈕試試看！" Option="好！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="GO_MAP" MapID="7" MapType="0" />
+		</EnterMap>
+		
+		<EnterMap MapID="7">
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8"  IsFullScreen="1" IsStopSound="1" IsBg="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="1003" Name="movie_1003"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1003"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" IsStopSound="0"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="GO_MAP" MapID="47" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	
+	<Step ID="5" TarMapID="47">
+		<EnterMap MapID="47">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9"  IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10016" Face="正常" Msg="別告訴我，你們又到錯地方了！" Option="沒錯，我們又去錯了地方。"/>
+				<Talk NpcID="10016" Face="正常" Msg="看來你已經有未卜先知的能力了！" Option="我再去檢查檢查！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11"  IsFullScreen="1" IsStopSound="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" IsStopSound="0"/>
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12"  IsFullScreen="1" IsStopSound="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" IsStopSound="0"/>
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			<Action Cmd="PLAY_MOVIE" Param="13" Name="movie_13"  IsFullScreen="1" IsStopSound="1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="剛才那一幕真是驚心動魄啊！" Option="是啊！還好黑龍撞到了尤瑞克背後的長槍上，受傷逃走了。"/>
+				<Talk NpcID="10000" Face="正常" Msg="原來尤瑞克身穿黃金甲是摩爾王的，大戰黑龍的也是摩爾王。" Option="最後關頭是尤瑞克陰差陽錯的刺傷了黑龍！"/>
+				<Talk NpcID="10000" Face="正常" Msg="不過尤瑞克能在那種環境下捨身救主，真是令人敬佩！" Option="恩，雖然沒有聽說的那麼威猛，但是也是個英雄好漢！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_13" IsStopSound="0"/>
+			<Action Cmd="GO_MAP" MapID="8" MapType="0" />
+		</EnterMap>
+		
+		<EnterMap MapID="8">
+			<Action Cmd="PLAY_MOVIE" Param="14" Name="movie_14"  IsFullScreen="1" IsStopSound="1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="正常" Msg="不知道尤瑞克和摩爾王之後怎麼樣了？" Option="肯定達到了安全的地方。"/>
+				<Talk NpcID="10009" Face="正常" Msg="不過，摩爾王讓尤瑞克轉交給麼麼公主的木盒子又是什麼呢？" Option="我也好奇呢！"/>
+				<Talk NpcID="10009" Face="正常" Msg="要不我們回去找麼麼公主問問？" Option="恩，好的。"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1004" Name="movie_1004"  IsFullScreen="1" IsStopSound="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1004" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_14" IsStopSound="0"/>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+			<Action Cmd="GO_MAP" MapID="47" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="6" TarMapID="47">
+		<EnterMap MapID="47">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="15" Name="movie_15"  IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10016" Face="正常" Msg="這回你們總算到了對的地方吧！" Option="恩，這回我們總算是去對了。"/>
+				<Talk NpcID="10016" Face="正常" Msg="哈哈，我的時光機是不是很厲害！" Option="是是是，如果以後第一次就能穿越到對的地方就好了。"/>
+				<Talk NpcID="10016" Face="正常" Msg="嘿嘿，下次絕對不會再出問題啦！" Option="恩恩。我們先找尤瑞克詢問一些事情去啦！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_15" />
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+	
+</Tasks>

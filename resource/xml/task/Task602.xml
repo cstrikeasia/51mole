@@ -1,0 +1,182 @@
+<Tasks ID="602" Name="扭轉的命運" AwardMsg="恭喜你獲得2個經驗藥劑、音符髮夾！" AwardBean="" >
+
+	<!-- 麼麼的臥室 -->
+	<Step ID="1" TarMapID="110">
+		<EnterMap MapID="110">
+		
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="焦急" Msg="菩提大伯危在旦夕，但我也想不出什麼好辦法去阻止悲劇的發生，我們最好再問問摩爾王的靈魂有什麼提示！" Option="趕緊打開衣櫥吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="GO_MAP" MapID="348" MapType="0" />
+		</EnterMap>	
+		
+		<EnterMap MapID="348">
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10223" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10223" Face="正常" Msg="你們果然來了，現在應該親眼確認了那個詛咒了吧！" Option="是的，菩提大伯有危險！"/>
+				<Talk NpcID="10223" Face="正常" Msg="如果你們想問解除詛咒的方法，請記住一句話：“改變悲劇的根源就能改變命運！”" Option="悲劇的……根源？"/>
+				<Talk NpcID="10036" Face="正常" Msg="原來如此，謝謝您的提點！" Option="捷克王子，我還不是很明白！"/>
+				<Talk NpcID="10036" Face="正常" Msg="跟我來你就明白了，我們先去救菩提大伯！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="16" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 	城堡二樓 -->
+	<Step ID="2" TarMapID="16">
+		<EnterMap MapID="16">
+<!-- 			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10002" Visible="0" /> -->
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="根據劇本，菩提大伯扮演的角色“波洛涅斯”將在這個軟帷幔後面被刺死。" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="我們只要將幕布前加上硬屏風，就可以保護菩提大伯不被刺殺了！" Option="原來如此！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="這樣就可以啦，現在我們先小心地躲起來吧！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10226" Face="正常" Msg="哈姆雷特，你把你父親大大得罪了。" Option=""/>
+				<Talk NpcID="10224" Face="生氣" Msg="母親，您才是把我父親大大的得罪了！" Option=""/>
+				<Talk NpcID="10226" Face="悲傷" Msg="好了，好了，你的回答真是瞎扯。" Option=""/>
+				<Talk NpcID="10224" Face="生氣" Msg="得了得了，您的問話別有居心。" Option=""/>
+				<Talk NpcID="10226" Face="悲傷" Msg="你這孩子，怎麼這麼和我說話。" Option=""/>
+				<Talk NpcID="10224" Face="生氣" Msg="我怎麼了？您現在是皇后，您丈夫弟弟的妻子……可我真想您不是我的母親！" Option=""/>
+				<Talk NpcID="10224" Face="生氣" Msg="是您親手把婚約變成了賭鬼的誓言！為什麼要毒害父王？是什麼魔鬼迷了你的心呢？您難道不感到羞恥麼？" Option=""/>
+				<Talk NpcID="10226" Face="悲傷" Msg="哈姆雷特，別再說了，這些話就像一把把尖刀，求求你別說了，好哈姆雷特。" Option=""/>
+				<Talk NpcID="10224" Face="生氣" Msg="我一定要說到您感到後悔，這是我的忠告，不要再和叔父來往了！看一看您自己的靈魂吧，真讓我感到萬分心寒！" Option=""/>
+				<Talk NpcID="10226" Face="悲傷" Msg="你幹什麼，難道你要殺了我？" Option=""/>
+				<Talk NpcID="10224" Face="生氣" Msg="什麼人？竟敢在幕布後面偷聽！看我刺死你！" Option=""/>
+				<Talk NpcID="10228" Face="驚訝" Msg="啊啊！救……救命！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10224" Face="生氣" Msg="波洛涅斯，是你……你可知偷聽是不道德的？幸好這屏風保住了你的命，還不速速退下！" Option=""/>
+				<Talk NpcID="10228" Face="驚訝" Msg="王……王子，請息怒，小臣這就退下！" Option=""/>
+				<Talk NpcID="10224" Face="生氣" Msg="哼，算你識相！" Option=""/>
+				<Talk NpcID="10224" Face="生氣" Msg="母親，時間不早了，請記住我今天說的話，晚安！" Option=""/>
+				<Talk NpcID="10226" Face="悲傷" Msg="…………………………" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="{$username}，快看，劇本上的字改變了！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="看來只要改變了摩爾們的命運，劇本也會隨之改變呢。" Option="真神奇！"/>
+				<Talk NpcID="10036" Face="正常" Msg="太好了，菩提大伯終於逃過一劫。接下來用同樣的方法去解救其他摩爾吧！" Option="下一個有危險的摩爾好像是……"/>
+				<Talk NpcID="10036" Face="正常" Msg="下一個有危險的摩爾是粒粒，她會掉到湖裡去！快去莊園有湖的地方看看吧！" Option="好，快走！"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="8" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!--	神秘湖 -->
+	<Step ID="3" TarMapID="8">
+		<EnterMap MapID="8">
+<!-- 			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10053" Visible="0" /> -->
+			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="噓！你看，粒粒就在那兒，該怎麼做才可以保護她不落水呢？" Option="讓我想想！"/>	
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="201" Name="movie_201" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_201" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10227" Face="焦急" Msg="咦？我怎麼會在這裡？糟了，我得趕緊回城堡去！雷地阿斯哥哥，你可千萬別受國王陛下的挑撥啊！" Option=""/>	
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="{$username}，多虧了你，粒粒終於也平安無事。快看看劇本怎樣了？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="202" Name="movie_202" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_202" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="這個莎士摩亞可真是死心不息！無論我們怎麼改變大家的命運，他還是要將悲劇進行下去。" Option="下一個有危險的摩爾是塞拉！"/>
+				<Talk NpcID="10036" Face="正常" Msg="除了塞拉，還有麼麼也有危險，事不宜遲，趕緊回城堡吧！" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1002" Name="movie_1002" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1002" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="15" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 城堡大廳 -->
+	<Step ID="4" TarMapID="15">
+		<EnterMap MapID="15">
+		
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10229" Face="生氣" Msg="哈姆雷特，你雖為王子，但對我的父親暴力相向，還讓我的妹妹歐菲莉亞傷心欲絕，我不能原諒！" Option=""/>
+				<Talk NpcID="10224" Face="生氣" Msg="雷地阿斯，我是聽說歐菲莉亞跌入水中才匆匆趕來，直到看見歐菲莉亞好好地站在那裡，才明白了某些陰謀家的用意！我們本是朋友，何必彼此相殘？" Option=""/>	
+				<Talk NpcID="10225" Face="生氣" Msg="閉嘴，哈姆雷特！現在本王宣佈，你必須和雷地阿斯進行一場決鬥！不許你還嘴！" Option=""/>	
+				<Talk NpcID="10229" Face="正常" Msg="國王陛下，哈姆雷特匆匆趕來，想必也沒做好什麼準備。如果讓他休息一下……唔……" Option=""/>	
+				<Talk NpcID="10224" Face="焦急" Msg="雷地阿斯？" Option=""/>	
+				<Talk NpcID="10229" Face="焦急" Msg="唔……麼……麼…………咳……" Option=""/>	
+				<Talk NpcID="10224" Face="焦急" Msg="咦？那是……誰？" Option=""/>	
+				<Talk NpcID="10226" Face="悲傷" Msg="克洛帝阿斯，看起來孩子們今天不適合決鬥，不如延期吧……" Option=""/>	
+				<Talk NpcID="10225" Face="正常" Msg="哼，也罷。你們去休息吧，這場決鬥改到下周進行！也好讓我看看哈姆雷特的“風采”！哈哈哈！" Option=""/>	
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="焦急" Msg="塞拉的樣子好奇怪，他剛才是不是說了“麼麼”……？" Option="我也聽到了！"/>
+				<Talk NpcID="10036" Face="焦急" Msg="看起來他也不像是完全的人偶……總之，決鬥延遲到下周進行的話，至少暫時不會有摩爾因為詛咒死掉了。" Option=""/>	
+				<Talk NpcID="10036" Face="焦急" Msg="其實我更在意的是這一切背後的操縱者——莎士摩亞，他到底是何方神聖？又為什麼要詛咒莊園？" Option=""/>	
+				<Talk NpcID="10036" Face="正常" Msg="不過，如果我們繼續破壞他的劇本，他一定會親自現身吧，我相信！到時候一定要抓住他好好問個清楚！" Option=""/>	
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>

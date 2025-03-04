@@ -1,0 +1,167 @@
+<Tasks ID="573" Name="消失的願望" AwardMsg="恭喜你獲得20個許願星、10個經驗果實！" AwardBean="" >
+
+	<!-- 布多多布少少房間  -->
+	<Step ID="1" TarMapID="237">
+		<EnterMap MapID="237">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="buttonLevel" ResName="npc_10010" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="buttonLevel" ResName="npc_10011" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="{$username}，快來，多多少少遇到了件怪事，讓他們再給你講講。" Option="噢？是什麼事情呢？"/>
+				<Talk NpcID="10010" Face="正常" Msg="{$username}，昨晚有個黑影從我們窗邊飄過，鬼鬼祟祟的，接著就是一陣奇怪的聲音，嚇得我和少少躲被窩裡不敢出來。" Option="啊？！不會和清明節有關吧？！"/>
+				<Talk NpcID="10011" Face="正常" Msg="哈哈，{$username}，看你怕怕的樣子。還有下文呢，你先聽多多說完！" Option="哪，哪兒有，我才不怕呢！o(╯□╰)o"/>
+				<Talk NpcID="10010" Face="正常" Msg="沒想到，天亮後我和少少在門口發現了一個大禮包，裡面竟然是我最喜歡吃的水果，和少少盼了好久的“美滋滋”枕頭，太神奇了！" Option="啊？這麼好！"/>
+				<Talk NpcID="10011" Face="正常" Msg="是呀，這些東西，剛好就是我和少少前天在許願池前許的願望呢，沒想到這麼靈驗！" Option="我許的願望怎麼從來沒實現過？"/>
+				<Talk NpcID="10000" Face="正常" Msg="一定是神仙顯靈！莊園的五周年慶典就快來了，神仙專程來為我們慶祝、來實現我們的願望！" Option="真的嗎？我怎麼覺得有點怪怪的……"/>
+				<Talk NpcID="10000" Face="正常" Msg="別多想了，機會難得，我也得趕緊去許個願。{$username}，你也一起吧！" Option="那……我跟你去看看吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="2" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 愛心廣場 -->
+	<Step ID="2" TarMapID="2">
+		<EnterMap MapID="2">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="開心" Msg="哇哦~~~我想得鳳凰坐騎的願望總算能實現囉！{$username}，你也快想想自己的願望吧！" Option="額……我先看看~"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="開心" Msg="大功告成，嘿嘿~很快我就可以得到鳳凰坐騎囉！" Option="我怎麼覺得許願池和往常不大一樣了"/>
+				<Talk NpcID="10000" Face="開心" Msg="別多想啦，{$username}，咱們先回去，我今天要等著神仙給我送了鳳凰來才睡覺。" Option="噢，好吧( ⊙ o ⊙ )"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="239" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 摩樂樂家-->
+	<Step ID="3" TarMapID="239">
+		<EnterMap MapID="239">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10000" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="開心" Msg="哇~{$username}，神仙給我送鳳凰來了，咱們快出去迎接神仙吧！" Option="嗯，出去看看！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="204" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 天空樹 -->
+	<Step ID="4" TarMapID="204">
+		<EnterMap MapID="204">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10000" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10001" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="fireSeat_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="seat_1" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="0"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="天啊，這就是神仙送給我的鳳凰嗎？差距也太大了~" Option="怎麼看都是一隻雞嘛o(╯□╰)o"/>
+				<Talk NpcID="10000" Face="生氣" Msg="不行，神仙偏心，都幫多多和少少實現了願望，卻不給我一隻真正的鳳凰。{$username}，我們趕緊去追上神仙！他朝神秘湖那邊跑了！" Option="嗯，好吧……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="GO_MAP" MapID="8" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="5" TarMapID="8">
+		<!-- 神秘湖 -->
+		<EnterMap MapID="8">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+<!-- 			<Action Cmd="SET_BIT" Param="1" /> -->
+ 			<Action Cmd="GO_MAP" MapID="9" MapType="0" />
+		</EnterMap>
+		
+		<!-- 陽光牧場 -->
+		<EnterMap MapID="9" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+<!-- 			<Action Cmd="SET_BIT" Param="2" /> -->
+ 			<Action Cmd="GO_MAP" MapID="38" MapType="0" />
+		</EnterMap>
+		
+		<!-- 摩爾足球場 -->
+		<EnterMap MapID="38">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="大……大伯？怎麼是你？能幫人實現願望的神仙，竟然是大伯你？" Option="啊( ⊙ o ⊙ )"/>
+				<Talk NpcID="10007" Face="正常" Msg="樂樂，你在說什麼？什麼神仙？什麼願望？大伯不知道啊。我只是剛好路過這裡而已。" Option="怎麼可能，我們明明是跟著你過來的！"/>
+				<Talk NpcID="10000" Face="驚訝" Msg="（小聲說）{$username}，大伯還不承認他就是剛剛跑掉的那個“神仙”，看來我們得在大伯身上找出些證據才行。" Option="嗯，好，我們來找找！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+<!-- 			<Action Cmd="SET_BIT" Param="3" /> -->
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+<!--  			<Action Cmd="GO_MAP" MapID="38" MapType="0" /> -->
+		</EnterMap>
+	</Step>
+	
+	<!-- 摩爾足球場 -->
+	<Step ID="6" TarMapID="38">
+		<EnterMap MapID="38">
+			<Action Cmd="OPEN_PANEL" Param="Task573Panel" ClearMap="1"/>
+			<Action Cmd="ADD_EVENT" Param="task573PanelOver"/>
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="帽子上的絨毛、袖口上的水果殘汁、鞋底的雞毛，這不充分證明了給多多少少以及我送東西的就是大伯你嗎？" Option="這下大伯不得不承認了~"/>
+				<Talk NpcID="10007" Face="正常" Msg="哎，既然已經被你們發現了，那大伯就不再否認了。" Option="哈哈，果然~"/>
+				<Talk NpcID="10000" Face="正常" Msg="就算大伯不管，許願池自己也會幫大家實現願望的呀，為什麼大伯還要這樣做？" Option="對呀，大伯是為了什麼呢？"/>
+			</Action>
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="焦急" Msg="後來，我才知道，原來許願池已經出了問題，無法再實現小摩爾的願望了。但我不忍心看見大家失望的樣子，所以就……" Option="所以您就自己來幫大家實現願望……"/>
+				<Talk NpcID="10007" Face="焦急" Msg="是呀，可惜大伯能力有限，不能將大家的願望一一實現，樂樂想要鳳凰，大伯也找不到鳳凰呀，只好找了一隻雞來代替……" Option="大伯……"/>
+				<Talk NpcID="10000" Face="悲傷" Msg="大伯，都怪我，我不該這麼貪心的……" Option="以後還是不能隨便許願了o(╯□╰)o"/>
+				<Talk NpcID="10007" Face="焦急" Msg="這也不能怪你！不過，我們還是再回許願池看看吧，不知道究竟發生了什麼事，希望不要因為許願池而影響了周年慶啊……" Option="好，現在就去許願池！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			<Action Cmd="SET_BUFFER" Panel="7" Step="7" />
+			<Action Cmd="GO_MAP" MapID="2" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 愛心廣場 -->
+	<Step ID="7" TarMapID="2">
+		<EnterMap MapID="2">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="wish_btn" Visible="1" />
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="天~許願池裡的水，怎麼全不見了？" Option="是呀，這可怎麼辦？！"/>
+				<Talk NpcID="10007" Face="焦急" Msg="許願池是莊園聖地，絕不會輕易消失的，這其中必有蹊蹺啊……" Option="快看，池邊那個奇怪的東西是什麼？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="焦急" Msg="吊墜有個字母“R”……這不是？難道他回莊園了？" Option="大伯，你是說的RK嗎？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

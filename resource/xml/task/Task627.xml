@@ -1,0 +1,80 @@
+﻿<Tasks ID="627" Name="真相只有一個" AwardMsg="恭喜你獲得1甜蛋超人套裝,2個金橘種子" AwardBean="">
+	<Step ID="1" TarMapID="359">
+		<EnterMap MapID="359">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10254" Face="無聊" Msg="{$username},你是來釋放我的嗎？哈哈哈哈哈，想通了？" Option="別瞎說，誰要放了你啊！"/>
+				<Talk NpcID="10254" Face="無聊" Msg="這兩個小鬼頭一早就來吵吵嚷嚷，聽了半天我才明白，哈哈哈哈哈哈哈哈，原來是來求我的！" Option="誰要求你這個大壞蛋啊？╭(╯^╰)╮"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="359">
+		<EnterMap MapID="359">
+			<Action Cmd="SAY">
+				<Talk NpcID="10009" Face="生氣" Msg="喂，可以解凍莊園了吧？" Option="快點快點，我們要裝飾莊園呢！"/>
+				<Talk NpcID="10254" Face="無聊" Msg="小鬼頭就是嘰嘰喳喳的！行了行了，給你們解凍！" Option="╭(╯^╰)╮ 這還差不多！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10254" Face="無聊" Msg="行了行了，莊園就快化凍好了！" Option="什麼叫就快？"/>
+				<Talk NpcID="10254" Face="無聊" Msg="最後需要你們幫幫忙咯！" Option="啊？你在逗我玩嗎？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="3" TarMapID="359">
+		<EnterMap MapID="359">
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_200"/>
+			<Action Cmd="OPEN_PANEL" Param="Task627GameFirstPanel" ClearMap="0" Data = "0"/>
+			<Action Cmd="ADD_EVENT" Param="Task627GamepanelOver"/>
+			<Action Cmd="JUMP_TASK_UI" Param="   芝麻芝麻快開門呀！怎麼就那麼呆呢？能不能有點新意啊喂，你家口令全是芝麻芝麻快開門呀好嘛~"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+		</EnterMap>
+	</Step>
+	<Step ID="4" TarMapID="359">
+		<EnterMap MapID="359">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="生氣" Msg="難道，剛才，他是故意讓我們跑來跑去？" Option="哎呀，我們上當了！"/>	
+				<Talk NpcID="10009" Face="生氣" Msg="不能讓他跑了，氣死我了，一定要抓住他好好錘一頓！" Option="我覺得他有可能逃回積雪鎮了！"/>
+				<Talk NpcID="10000" Face="驚訝" Msg="有道理！我們快去找找看吧！" Option="嗯！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="JUMP_TASK_UI" Param="   扣扣調虎離山，自己想辦法逃走了，說不定就在積雪鎮，快去找找看！"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+			<Action Cmd="GO_MAP" MapID="357" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="5" TarMapID="357">
+		<EnterMap MapID="357">
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			<Action Cmd="OPEN_PANEL" Param="Task627GameTwoPanel" ClearMap="0" Data = "0"/>
+			<Action Cmd="ADD_EVENT" Param="Task627Gamepane2Over"/>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6"/>
+			<Action Cmd="GO_MAP" MapID="360" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="6" TarMapID="360">
+		<EnterMap MapID="360">
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>
+

@@ -1,0 +1,68 @@
+<Tasks ID="543" Name="麼麼的金色回憶" AwardMsg="恭喜你獲得金色記憶泡泡、1000摩爾豆！" AwardBean="1000" >
+	<Step ID="1" TarMapID="151">
+		<EnterMap MapID="151" >
+		
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10151" Face="正常" Msg="哪裡來的野摩爾，衣服都沒穿，膽敢來阻攔我的大事！" Option="哼~我可是摩爾莊園優秀公民" />
+				<Talk NpcID="10151" Face="正常" Msg="優秀公民？聽起來不錯，看來你也有幾分本事了！" Option="那當然！你識相就快點離開" />
+				<Talk NpcID="10151" Face="正常" Msg="嘿，嘿嘿……好大口氣，還沒人敢跟我庫……酷法師這樣說話。" Option="我就是第一個了" />
+				<Talk NpcID="10047" Face="正常" Msg="小摩爾，你不是他的對手，快離開這。" Option="不用擔心，我有絕招" />
+			</Action>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10149" Face="開心" Msg="謝謝你救了我，你叫什麼名字呢？嗯…我覺得大葉子不錯，我就叫你大葉子吧！" Option="大葉子，好土的名字" />
+				<Talk NpcID="10150" Face="生氣" Msg="我可是拉姆王啊！竟然被公主叫成了大葉子~~我不要" Option="嘿嘿，拉姆王成了大葉子" />
+				<Talk NpcID="10149" Face="開心" Msg="大葉子，我沒有拉姆，在城堡也沒有朋友一起玩，你能成為我的拉姆和我一起玩嗎？" Option="可憐的小公主" />
+				<Talk NpcID="10150" Face="正常" Msg="摩爾都喜歡拉姆，但拉姆不一定需要主人" Option="好有深度……" />
+				<Talk NpcID="10149" Face="開心" Msg="大葉子你沒有主人吧？讓我當你的主人，我會對你很好的！一定！" Option="哇，公主想當拉姆王的主人" />
+				<Talk NpcID="10150" Face="正常" Msg="我不需要主人，但我可以陪你回城堡。" Option="我也和你們一起" />
+			</Action>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />	
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="110" MapType="0" />	
+		</EnterMap>	
+	</Step>	
+<!--	黑衣人和拉姆王沒號碼-->
+	<Step ID="2" TarMapID="110">	
+		<EnterMap MapID="110" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="white_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="purple_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="redBall_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="blueBall_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="yellowBall_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="star_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="memoryBall_mc" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10149" Face="驚訝" Msg="哇，好可愛的拉姆~" Option="公主你喜歡嗎？" />
+				<Talk NpcID="10149" Face="開心" Msg="嗯嗯~~它叫什麼名字呢？你這麼可愛，我叫你瑪麗吧！" Option="(⊙_⊙)又自作主張給拉姆取名字" />
+				<Talk NpcID="10057" Face="正常" Msg="瑪麗，好好聽的名字。我喜歡麼麼公主！" Option="一個名字就讓你喜歡她了啊！" />
+				<Talk NpcID="10149" Face="開心" Msg="謝謝你,{$username},送給我這麼珍貴的禮物。她和大葉子一樣，好多葉子呢！" Option="（其實不是我買的）公主喜歡就好" />
+				<Talk NpcID="10149" Face="開心" Msg="{$username}，你想當皇家騎士嗎？這樣你就可以留在城堡陪我玩了。" Option="可是，我不能留在這裡" />
+				<Talk NpcID="10149" Face="疑惑" Msg="為什麼呢？" Option="我是來尋找金色記憶泡泡的" />
+			</Action>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />	
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />	
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />	
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="white_mc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="purple_mc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="redBall_mc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="blueBall_mc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="yellowBall_mc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="star_mc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="memoryBall_mc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10127" Visible="1" />
+			<Action Cmd="OVER" />	
+		</EnterMap>	
+	</Step>	
+</Tasks>

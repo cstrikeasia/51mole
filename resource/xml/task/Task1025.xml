@@ -1,0 +1,105 @@
+﻿<Tasks ID="1025" Name="黑龍之心" AwardMsg="恭喜你獲得1個暗能量、5個變身拉姆果實和1萬摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="398">
+		<EnterMap MapID="398">
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="驚訝" Msg="那這裡怎麼辦？" Option=""/>
+				<Talk NpcID="10287" Face="焦急" Msg="在這樣下去，整個摩靈世界都要崩塌毀滅了，快回宮去，找到明要的東西！" Option="那是什麼啊？"/>
+				<Talk NpcID="10287" Face="正常" Msg="王的心，明的心……去了就知道了……" Option="好高深的樣子啊，好吧。"/>
+			</Action>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="戰鬥還在繼續，黑龍似乎已經進入狂暴狀態，這個時候要脫離戰場，當然是為了更重要的使命，跟著小C去摩靈宮殿一探究竟吧！"/>
+			<Action Cmd="GO_MAP" MapID="400" MapType="0"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="400">
+		<EnterMap MapID="400">
+		
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="焦急" Msg="怎麼回事啊？在震動哎，好恐怖啊~" Option=""/>
+				<Talk NpcID="10287" Face="焦急" Msg="看來摩靈世界的波動已經開始了！" Option="怎麼回事啊？有點不明白啊，老師。"/>
+				<Talk NpcID="10287" Face="焦急" Msg="當王處於一個情緒不穩定狀態的時候，整個摩靈世界就會趨於崩塌，這是非常危險的！ " Option="你們的世界能延續到現在簡直是個奇跡啊，竟然那麼脆弱。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10294" Face="生氣" Msg="誰說的？誰說我們的世界脆弱？脆弱在哪裡？" Option="不是說王情緒不穩定……"/>
+				<Talk NpcID="10294" Face="生氣" Msg="王，作為摩靈世界的王，就是必須穩穩端坐在王座上，不能因為私人的事情而情緒化，知道嗎？" Option="厄，這個好難的樣子。"/>
+				<Talk NpcID="10294" Face="生氣" Msg="哪裡難了？你們摩爾的內心就是脆弱，一點擔待和承受力都沒有，果然是低等種族！哼！" Option="老爺爺，不能這樣說小摩爾的，摩爾是勇敢、善良、智慧的民族……"/>
+				<Talk NpcID="10287" Face="焦急" Msg="泰尼伯伯，王的心到底是什麼？" Option=""/>
+				<Talk NpcID="10294" Face="開心" Msg="璨公主，王的心就是你啊~" Option=""/>
+				<Talk NpcID="10287" Face="疑惑" Msg="我？" Option=""/>
+				<Talk NpcID="10294" Face="開心" Msg="在王的心中，璨公主就是一切，只要璨公主回到宮殿，只要璨公主平平安安的，怎麼都好！" Option=""/>
+				<Talk NpcID="10287" Face="疑惑" Msg="我該怎麼做？" Option=""/>
+				<Talk NpcID="10294" Face="正常" Msg="站在宮殿門口，默念祝禱咒。" Option=""/>
+				<Talk NpcID="10287" Face="疑惑" Msg="這麼簡單？" Option=""/>
+				<Talk NpcID="10294" Face="正常" Msg="王等這一刻已經很久了，他的力量完全釋放出來之後，就會進入最最虛弱的狀態，這是把他還原、拯救摩靈世界的唯一機會。" Option=""/>
+				<Talk NpcID="10287" Face="正常" Msg="好，只要能夠拯救整個世界……" Option=""/>
+				<Talk NpcID="10294" Face="正常" Msg="璨公主，咒語要念整整三天三夜。當力量膨脹爆炸的時候，請一定要離開，泰尼老臣還想看到明殿下和璨公主的孩子，還想為你們繼續記載歷史。" Option=""/>
+				<Talk NpcID="10287" Face="開心" Msg="恩！我會堅持下來的！伯伯放心。" Option=""/>
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="3" TarMapID="400">
+		<EnterMap MapID="400">
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10294" Face="悲傷" Msg="璨公主，加油。" Option="老爺爺你沒事吧？好像受傷很重的樣子~"/>
+				<Talk NpcID="10294" Face="悲傷" Msg="我沒事，我記錄摩靈歷史已經2000年了，哪能跟你們小屁孩一樣不中用？" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10295" Face="焦急" Msg="泰尼長老……泰尼長老你沒事吧？" Option="老爺爺是受傷了對吧，小恩特？"/>
+				<Talk NpcID="10295" Face="焦急" Msg="我們木系的摩靈最怕的就是火焰啊，王早已跨越了摩靈屬性的限制，能夠使用火焰的力量，怎麼辦怎麼辦？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10287" Face="靈感" Msg="泰尼伯伯……請你們照顧好他……" Option="老師，不要分心了，放心我們會照顧好泰尼長老的！"/>
+				<Talk NpcID="10295" Face="焦急" Msg="(ㄒoㄒ)璨殿下，怎麼辦啊？" Option=""/>
+				<Talk NpcID="10287" Face="靈感" Msg="莫慌，長老會沒事的，把小仙草葉片給他服下，一整片…… " Option=""/>
+				<Talk NpcID="10295" Face="焦急" Msg="(ㄒoㄒ)恩恩。" Option=""/>
+			</Action>
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" TarMapID="400">
+		<EnterMap MapID="400">	
+			<Action Cmd="OPEN_PANEL"  Param="Task1025Panel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="Task1025ChooseRight"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10294" Face="開心" Msg="哈哈哈，我就說了我沒老吧，我就說了我還能工作2000年！" Option="(⊙o⊙)…好得好快！"/>
+				<Talk NpcID="10294" Face="開心" Msg="哈哈哈哈哈，看看我這健壯的體魄！" Option=""/>
+				<Talk NpcID="10295" Face="焦急" Msg="長老，別折騰了，快休息一會！ " Option=""/>
+				<Talk NpcID="10294" Face="開心" Msg="我不用休息，我要寫寫寫，把今天的盛況全都記錄下來，讓子子孫孫的摩靈都能看到！" Option=""/>
+				<Talk NpcID="10295" Face="焦急" Msg="是是是…… " Option=""/>
+			</Action>
+			
+	        <Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>

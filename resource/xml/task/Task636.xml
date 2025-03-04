@@ -1,0 +1,77 @@
+﻿<Tasks ID="636" Name="風穴時變" AwardMsg="恭喜你獲得1個拉姆小床和2個蒲公英種子。" AwardBean="">
+	<Step ID="1" TarMapID="240">
+		<EnterMap MapID="240">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10003" Face="感動" Msg="我的寶貝小拉姆們，你們都在我身邊的感覺真好~" Option="沒想到庫拉也是有愛心的摩爾~"/>
+				<Talk NpcID="10003" Face="感動" Msg="每一個摩爾都必須要疼愛自己的小拉姆，呵護自己的小拉姆~要知道拉姆能夠一直在身邊，是多麼幸福~" Option="庫拉，你還要施行那個暗黑魔法把他們都變成一個拉姆嗎？"/>
+				<Talk NpcID="10003" Face="失望" Msg="能不能不要提那麼當年的事啊~誰不知道庫拉當年年少，意氣風發……" Option="....."/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="240">
+		<EnterMap MapID="240">
+			<Action Cmd="OPEN_PANEL" Param="Task636GamePanel" ClearMap="1" Data = "0"/>
+			<Action Cmd="ADD_EVENT" Param="Task636GamepanelOver"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="3" TarMapID="240">
+		<EnterMap MapID="240">
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="JUMP_TASK_UI" Param="   小拉姆們商量之後得出結論，3點應該在愛心教堂附近喲，我們去找他吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+			<Action Cmd="GO_MAP" MapID="2" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="4" TarMapID="2">
+		<EnterMap MapID="2">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="5" TarMapID="2">
+		<EnterMap MapID="2">
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105"/>
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106"/>
+			<Action Cmd="JUMP_TASK_UI" Param="   巨大的氣浪沖毀了愛心廣場，親愛的小摩爾，這裡不能停留，快點離開吧！"/>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6"/>
+			<Action Cmd="GO_MAP" MapID="362" MapType="0"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="6" TarMapID="362">
+		<EnterMap MapID="362">
+			<Action Cmd="SAY">
+				<Talk NpcID="10265" Face="焦急" Msg="怎麼辦怎麼辦？愛心廣場被弄成那麼烏煙瘴氣的~闖禍了闖禍了~" Option="以後都不能去愛心廣場了嗎？"/>
+				<Talk NpcID="10003" Face="無聊" Msg="這個問題很嚴重，如果實在不行，我還要去找菩提……真心不想去找他……" Option="菩提大伯能有什麼辦法？他不是校長嗎？"/>
+				<Talk NpcID="10003" Face="無聊" Msg="呵呵，你小看當年的紅發菩提了，雖然很不想去找他，但是……" Option="....."/>
+				<Talk NpcID="10272" Face="焦急" Msg="主人，4妹子情況不大好~" Option="...."/>
+				<Talk NpcID="10003" Face="焦急" Msg="什麼？讓我看看……" Option="...."/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="107" Name="movie_107" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_107"/>
+			<Action Cmd="PLAY_MOVIE" Param="108" Name="movie_108" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_108"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>
+

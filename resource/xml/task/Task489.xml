@@ -1,0 +1,108 @@
+<Tasks ID="489" Name="希冀之海" AwardMsg="恭喜你獲得100個彩色魚食、紳士假面套裝、50個鐵錠。" AwardBean="0" >
+	<Step ID="1" >
+		<NPC ID="10012" Option="希冀之海" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10012" Face="正常" Msg="聽說要找到海妖寶藏才能解救人魚國，可這海妖寶藏要到哪兒去找呀！" Option="前情回顧" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10012" Face="正常" Msg="大家都在積極尋找對抗海妖的辦法，可不知道如何前往海妖國也不行呀！" Option="這確實是個問題！" />
+				<Talk NpcID="10012" Face="正常" Msg="哈哈魔法師見多識廣，{$username}，你幫忙去找他想想辦法行嗎？" Option="好的，我這就去！" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="24" MapType="0" />
+		</NPC>
+	</Step>
+	
+	<Step ID="2" >
+		<NPC ID="10033" Option="希冀之海" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10033" Face="正常" Msg="記得我從未在任何書上看到過有關海妖國的記載，我也不清楚該如何前往海妖國……" Option="啊……連哈哈魔法師都不知道！" />
+				<Talk NpcID="10033" Face="正常" Msg="讓我來查探下海妖國究竟在什麼地方！" Option="好，拜托了！" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10033" Face="正常" Msg="這……這不就是莊園的海洋嗎？雖然有幾隻小海妖在遊來遊去，可這哪裡是海妖國？" Option="這是怎麼回事呢？" />
+				<Talk NpcID="10033" Face="正常" Msg="可能是海妖國自己設了極其強力的結界，以至外人根本無法探尋！" Option="那，有什麼辦法嗎？" />
+				<Talk NpcID="10033" Face="正常" Msg="辦法倒不是沒有，但是很危險！" Option="總得試試！是什麼辦法呢？" />
+				<Talk NpcID="10033" Face="正常" Msg="我給你一個“時之印記”，它可以打開通往海妖國的時空之門，但海妖國結界力量強大，時空之門只能允許一人通過。" Option="哇~我願意去海妖國！" />
+				<Talk NpcID="10033" Face="正常" Msg="隻身前往海妖國太危險，{$username}你可要好好考慮清楚呀！" Option="我考慮好了，我願意去！" />
+				<Talk NpcID="10033" Face="正常" Msg="好吧，真是個勇敢的小摩爾！那你帶著時之印記去海之迷城吧！小心使用，稍有差池，我們可能再也找不到海妖國！" Option="嗯！謝謝哈哈魔法師！" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="252" MapType="0" />
+		</NPC>
+	</Step>
+	
+	<Step ID="3" >
+		<EnterMap MapID="252" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="{$username}，我在四週搜尋了半天，可根本找不到前往海妖國的辦法呀！" Option="哈哈魔法師告訴我一個辦法，就是……" />
+				<Talk NpcID="10036" Face="正常" Msg="時空之門？還只能允許一個小摩爾進入？不行，海妖國太危險，得由我去！" Option="王子要守衛莊園，還是我來吧！" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="哇~時空之門真的打開了！{$username}，你必須聽我的，海妖國太危險，得由我親自前往，記得幫我轉告麼麼~" Option="啊~捷克王子……" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="搗蛋鬼RK！他搶先一步進入了時空之門？！莫非他也在打海妖寶藏的主意？" Option="真是阻礙重重呀……" />
+				<Talk NpcID="10036" Face="正常" Msg="剛剛時空之門消失的時候掉出了一個東西，我們去看看呢！" Option="好的！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="OPEN_PANEL" Param="Task489Panel" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" >
+		<SubmitScore ModuleID="10007" MinScore="1" LoseMsg="小摩爾沒能解開謎題哦！需要重新試試嗎？" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="這……這幅圖，跟之前在哈哈魔法師那裡看到的好像！" Option="是啊……好奇怪！" />
+				<Talk NpcID="10036" Face="正常" Msg="{$username}，我們還是去找哈哈魔法師再打聽下吧！看看還能不能找到其它進入海妖國的辦法。" Option="嗯，好……" />
+			</Action>
+			
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="GO_MAP" MapID="24" MapType="0" />
+		</SubmitScore>
+	</Step>
+	
+	<Step ID="5" >
+		<EnterMap MapID="24" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="哈哈魔法師，對不起，我們沒能順利進入時空之門……拜托你，還能不能再想想其它辦法？" Option="真是抱歉……" />
+				<Talk NpcID="10033" Face="正常" Msg="這可難辦了……時空之門能量巨大，隻會讓海妖國的結界變得更強，現在恐怕無法再通過外力來強行進入海妖國了……" Option="啊？！" />
+				<Talk NpcID="10036" Face="正常" Msg="哈哈魔法師，真的沒有其它辦法了嗎？剛才我們在海底發現了一幅圖，和之前在你這裡看到的很相像，你看！" Option="是呀……" />
+			</Action>
+			<Action Cmd="SET_ATTRIBUTE" Level="buttonLevel" ResName="npc_10033" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="SET_ATTRIBUTE" Level="buttonLevel" ResName="npc_10033" Visible="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10033" Face="正常" Msg="真的和之前看到的圖一樣呢！難道說，這意味著我們最終需要的是海妖的幫忙嗎？" Option="海妖的幫忙？" />
+				<Talk NpcID="10033" Face="正常" Msg="如果……如果海妖能幫助我們，說不定真的能找到另外的途徑前往海妖國呢！" Option="可海妖怎麼可能幫我們呢？" />
+				<Talk NpcID="10033" Face="正常" Msg="照目前來看，海妖確實不會幫我們。可如果能和它們建立友好關係，那就不一樣了！" Option="和海妖？建立友好關係？" />
+				<Talk NpcID="10033" Face="正常" Msg="看這圖上的樣子，說明海妖是能被馴化的。如果我們能將它們馴養起來，一定可以和它們建立友好關係！" Option="可我們要怎麼來馴養它們呢？" />
+				<Talk NpcID="10033" Face="正常" Msg="海洋……沒錯！海洋！如果每個小摩爾都能擁有一片屬於自己的海洋，我們就可以馴養海妖了！" Option="啊~" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10033" Face="正常" Msg="剛剛我施法將那些小海妖傳送到了莊園的海洋，小摩爾快去看看吧！在那裡可以馴養屬於自己的海妖朋友了！" Option="哇~好啊！" />
+				<Talk NpcID="10033" Face="正常" Msg="不過我只能暫時使馴服它們，後面會是什麼情況，就要看大家的努力了！" Option="嗯，我一定會努力的！" />
+				<Talk NpcID="10033" Face="正常" Msg="嗯！就讓我們一起來馴養海妖吧，另尋辦法來開啟通往海妖國的大門！" Option="嗯，好的！" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>
+
+

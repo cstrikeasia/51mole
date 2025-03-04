@@ -1,0 +1,111 @@
+<Tasks ID="1001" Name="午夜迷影" AwardMsg="恭喜你獲得2000摩爾豆、5個水蜜桃變身糖果！" AwardBean="" >
+
+	<!-- 	摩爾城堡的長廊 -->
+	<Step ID="1" TarMapID="108">
+		<EnterMap MapID="108">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10201" Face="正常" Msg="雕像？！我堂堂皇家衛兵，怎麼可能是雕像！你是誰？看起來很陌生啊。" Option=""/>
+				<Talk NpcID="10197" Face="驚訝" Msg="啊~~對不起，對不起，我看你站著一動不動，就以為…… （天啊，竟然不是雕像，這下糗大了⊙ o ⊙）" Option=""/>
+				<Talk NpcID="10201" Face="正常" Msg="當然得一動不動，咳，這可是軍隊的紀律！怎麼樣，帥吧？對了，你是剛來摩爾莊園嗎？以前沒見過你。" Option=""/>
+				<Talk NpcID="10197" Face="開心" Msg="是呀，我叫{$username}，很高興見到你！" Option=""/>
+				<Talk NpcID="10201" Face="正常" Msg="{$username}？不錯的名字。我叫潘恩，來摩爾莊園有些日子了，這兒真是個不錯的地方。" Option=""/>
+				<Talk NpcID="10197" Face="開心" Msg="哇哦~真的嗎？那我可得好好逛逛~城堡再過去點，那邊視野應該很不錯，我現在就去看看！" Option=""/>
+				<Talk NpcID="10201" Face="正常" Msg="城堡再過去？你不會是說前哨站那邊吧？別！別！今天天色不早了，你還是趕緊回家去吧！明天再去逛。" Option=""/>
+				<Talk NpcID="10197" Face="驚訝" Msg="明天再去？為什麼呀？" Option=""/>
+				<Talk NpcID="10201" Face="驚訝" Msg="難道你都不知道嗎？那個恐怖的傳言，都快傳遍整個莊園了。" Option=""/>
+				<Talk NpcID="10197" Face="驚訝" Msg="傳言？我並沒有聽到什麼恐怖的傳言呀……" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10201" Face="正常" Msg="這個說來就話長了，下次吧。今晚我還要去前哨站值夜，我剛加入皇家衛隊，今天第一次執勤，得好好表現表現。你沒事就早點回家去吧。" Option=""/>
+				<Talk NpcID="10197" Face="開心" Msg="值夜？聽起來不錯呢~我可以跟你一起去嗎？還可以給你做個伴！" Option=""/>
+				<Talk NpcID="10201" Face="正常" Msg="這可不行，我這是去工作，不是鬧著玩的。為了你的安全，你還是乖乖回家去吧！好了，時間不早了，我也準備前往前哨站了。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="正常" Msg="嗨~跑得還真是快呢！怎麼辦怎麼辦，還是想去前哨站看看呀！好吧，潘恩不帶我，我就自己去，嘿嘿~" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="61" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	
+	<!-- 	前哨站 -->
+	<Step ID="2" TarMapID="61">
+		<EnterMap MapID="61">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_0" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_1" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_2" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_3" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_4" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_5" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_6" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="正常" Msg="嗨~都過了這麼久了，一切正常。看起來根本不像會有怪獸出沒的樣子嘛！" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="真是無聊，早知道不來了！哎，找點什麼玩玩呢？啊哈……有了！既然潘恩認為這邊有怪獸，那我就來逗逗他好了。嘻~" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="box_mc" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10201" Face="生氣" Msg="什麼？！竟然是你這個調皮的小摩爾！不是叫你回家去的？我還真以為怪獸來了，差點就拉響了警報！" Option=""/>
+				<Talk NpcID="10201" Face="生氣" Msg="你可知道這事的嚴重性啊！要是我真拉響了警報，就會驚動我的戰友們，還會驚動整個城堡，然後是整個莊園……這個責任誰也負不起啊……" Option=""/>
+				<Talk NpcID="10197" Face="焦急" Msg="啊……對不起對不起，我都不知道會這麼嚴重，下次我絕對不敢了！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_105" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_0" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_1" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_2" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_3" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_4" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_5" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="knight_6" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="box_mc" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

@@ -1,0 +1,43 @@
+<Tasks ID="539" Name="浪漫滿城堡" AwardMsg="恭喜你獲得1000摩爾豆！" AwardBean="1000" >
+	<Step ID="1" >
+	
+		<EnterMap MapID="15" >
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10047" Face="正常" Msg="原來是{$username}，你找我有什麼事嗎？" Option="……（當好人，想辦法應付洛克）$沒有（準備揭發小浪和小漫）" Param="0$20001"/>
+				<Talk NpcID="10047" Face="疑惑" Msg="你怎麼不說話？" Option="我好像在城堡門口看見麼麼公主" />
+				<Talk NpcID="10047" Face="正常" Msg="什麼！！！麼麼公主在城堡外？怎麼不早說，你快帶我去！" Option="嗯，你跟我來。" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="1" MapType="0" />
+		</EnterMap>
+		<EnterMap MapID="20001" >
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />	
+		</EnterMap>
+	</Step>
+	<Step ID="2" >	
+		<EnterMap MapID="1" >
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10047" Face="疑惑" Msg="公主在哪？" Option="這個……" />
+				<Talk NpcID="10047" Face="疑惑" Msg="難道你在騙我？你有什麼目的？" Option="我沒有惡意，開個玩笑*^__^*" />
+				<Talk NpcID="10047" Face="生氣" Msg="你知道欺騙莊園洛克行政官是什麼下場嗎？來人，把這個說謊的摩爾關起來！" Option="啊！" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="你也是來送我玫瑰花的嗎？" Option="玫瑰花？我沒有" />
+				<Talk NpcID="10002" Face="正常" Msg="小浪和小漫說，他們玩耍的時候發現蟲蟲谷盛開著好多美麗的玫瑰。在玫瑰叢中漫舞一定很浪漫！" Option="玫瑰~浪漫~" />
+				<Talk NpcID="10047" Face="正常" Msg="公主殿下，為了您的安全，我不能再讓您出去。不過我可以讓他人給您獻上玫瑰花，裝飾城堡，也會很浪漫。" Option="我也會給公主獻上玫瑰！" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="401" Name="movie_401" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_401" />
+			<Action Cmd="OVER" />	
+		</EnterMap>	
+	</Step>
+</Tasks>

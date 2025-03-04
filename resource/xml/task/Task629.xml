@@ -1,0 +1,99 @@
+﻿<Tasks ID="629" Name="積雪神殿" AwardMsg="恭喜你獲得1個傢俱燈,2個金橘種子。" AwardBean="">
+	<Step ID="1" TarMapID="360">
+		<EnterMap MapID="360">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10260" Face="正常" Msg="我是彩虹橋的守護者，想要通過這裡就先通過庫拉！" Option="庫拉，你快讓開！我們要去捉扣扣！"/>
+				<Talk NpcID="10260" Face="正常" Msg="扣扣就躲在神殿裡這種事，我會告訴你嗎？庫拉現在是彩虹橋的守護者——海姆達爾。" Option="⊙﹏⊙b汗，海姆達爾又是什麼東東？不跟你廢話啦，快點讓我過去！"/>
+				<Talk NpcID="10260" Face="正常" Msg="不行就是不行！" Option="那我們就硬闖了！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<!--卡牌戰鬥-->
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101_1" Name="movie_101_1" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101_2" Name="movie_101_2" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101_2" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+<!-- 			<Action Cmd="GO_MAP" MapID="360" MapType="0"/> -->
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="360">
+		<EnterMap MapID="360">
+			<Action Cmd="PLAY_MOVIE" Param="102_1" Name="movie_102_1" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="102_2" Name="movie_102_2" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="102_3" Name="movie_102_3" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="102_4" Name="movie_102_4" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="102_5" Name="movie_102_5" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="開心" Msg="搞定！我們可以進去啦！快去開門" Option="太棒了！(*^__^*) 嘻嘻……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			</EnterMap>
+	</Step>
+	
+	
+	<Step ID="3" TarMapID="360">
+		<EnterMap MapID="360">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="正常" Msg="丫麗，冷靜冷靜，說不定裡面藏著什麼秘密呢！" Option="是呀，好擔心啊，扣扣可以躲在裡面，說不定裡面有什麼秘密呢？"/>
+				<Talk NpcID="10000" Face="驚訝" Msg="秘密？說不定真的有呢！老超爺爺之前不是說什麼去神殿搬救兵？" Option="對哦，對哦，我們該怎麼辦？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10244" Face="正常" Msg="老超爺爺本來不想跟你們說的，哎~看來是瞞不下去了！" Option="爺爺，這個神殿有什麼秘密嗎？裡面有神是什麼意思？"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="103_1" Name="movie_103_1" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="103_2" Name="movie_103_2" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="103_3" Name="movie_103_3" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="103_4" Name="movie_103_4" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="103_5" Name="movie_103_5" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103_5" />
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10244" Face="正常" Msg="門就在你們的眼前，推開門走進去就是要和三位主神決一死戰，就看你們敢不敢了！" Option="爺爺，摩爾什麼都不怕，讓我們去吧！"/>
+				<Talk NpcID="10244" Face="正常" Msg="我就知道我沒有看錯，遇到你們這群善良勇敢的摩爾，我們就有了希望，孩子們，推開門吧！老超爺爺會和你們一起戰鬥的！" Option="嗯啊！"/>
+			</Action>
+			
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			
+			<Action Cmd="GO_MAP" MapID="361" MapType="0"/>
+		</EnterMap>
+		
+		<EnterMap MapID="361">
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>

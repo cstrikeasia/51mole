@@ -1,0 +1,30 @@
+<Tasks ID="527" Name="服裝店新來小助手" AwardMsg="恭喜你獲得紅色圖釘椅子、200摩爾豆" AwardBean="161121$0" >
+	<Step ID="1" >
+	
+		<EnterMap MapID="20" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10027" Face="開心" Msg="親愛的{$username}，好久都沒來服裝店逛逛了！" Option="是呀，西索姐姐最近在忙什麼呢？" />
+				<Talk NpcID="10027" Face="開心" Msg="我呀，最近忙著給摩爾大學趕製新校服。我還請了一個小助手來幫忙呢！你來的正巧，我給你介紹一下他吧。" Option="服裝店來新助手了嗎？歡迎歡迎！" />
+				<Talk NpcID="10027" Face="開心" Msg="他叫迷你星，之前一直在幫忙整理摩爾時尚裡衣服，並負責組織每次的cosplay大賽。" Option="原來cosplay大賽就是迷你星在組織！" />
+				<Talk NpcID="10027" Face="開心" Msg="對呀，現在他來做我的小助理，不過還是會負責整理和舉辦大賽。以後想要參賽小摩爾就可以直接到服裝店找我的小助手迷你星啦！" Option="這下玩家比賽可方便多啦！" />
+				<Talk NpcID="10027" Face="開心" Msg="{$username}，你還想知道關於他的什麼事，就直接去問他本人吧！我要繼續趕製校服了！" Option="嗯，好的，西索姐姐，你先忙吧！" />
+			</Action>
+ 			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+ 		</EnterMap>	
+	</Step>			
+	
+	<Step ID="2" >
+		<NPC ID="10133" Option="服裝店新來小助手" >
+				<Action Cmd="SAY" >
+					<Talk NpcID="10133" Face="正常" Msg="你一定就是{$username}了吧，我聽西索姐姐說起過你！我以後就是服裝店裡的小助手了，有什麼事情也可以找我幫忙哦！" Option="早就聽說過迷你星了！很高興認識你！" />
+					<Talk NpcID="10133" Face="正常" Msg="呵呵，我也很高興認識你！希望你以後也來報名參加我們摩爾時尚每次舉辦的cosplay大賽！" Option="比賽的具體流程是怎樣的呢？" />
+					<Talk NpcID="10133" Face="正常" Msg="我們每次都有一個cosplay主題，大家就根據這個主題，發揮想像，穿著出相應的時尚裝扮，並參與評分。" Option="那選出的優秀穿著會有獎勵嗎？" />
+					<Talk NpcID="10133" Face="正常" Msg="這是當然！我們會交由西索姐姐審核、篩選。最後選出的優秀穿著可以登上前十名，獲得前十名能兌換的飾品。" Option="哇！聽起來很有誘惑力哦！" />
+					<Talk NpcID="10133" Face="正常" Msg="呵呵，想知道摩爾時尚有多少可搭配的衣服嗎?可以參見摩爾時尚，裡面就有詳細介紹哦！" Option="好的，我這就去看看摩爾時尚！" />
+				</Action>
+			<Action Cmd="ACT_EVENT" Param="openMoleFaBook" />
+			<Action Cmd="ADD_EVENT" Param="closeDressPanel" /> 
+			<Action Cmd="OVER" />	
+		</NPC>
+	</Step>	
+</Tasks>

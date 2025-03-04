@@ -1,0 +1,105 @@
+<Tasks ID="1017" Name="女神之淚" AwardMsg="恭喜你獲得2個白鷺花種子、伊絲特的眼鏡！" AwardBean="" >
+
+	<!-- 王者大廳 -->
+	<Step ID="1" TarMapID="346">
+		<EnterMap MapID="346">
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10198" Face="正常" Msg="你問我危機是不是解除了？當然沒有！黑魔法師還剩下兩個，我們應該將事件圓滿地解決，保護女神之淚！" Option="是！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10212" Face="生氣" Msg="喂，零，哪裡都找不到女神之淚，你這邊進展如何？咦，華利弗和零呢？！" Option=""/>	
+				<Talk NpcID="10198" Face="正常" Msg="華利弗被零變成摩爾之眼了。零的目的十分險惡，你們被他騙了！" Option=""/>
+				<Talk NpcID="10212" Face="生氣" Msg="我不信！可惡的自然派，一定是你們故意離間我們，好讓我們內部分裂，自取滅亡，我才不會上當！" Option=""/>
+				<Talk NpcID="10211" Face="正常" Msg="等等，拉比特，掉在王座邊上的，那不是華利弗的面具嗎？" Option=""/>
+				<Talk NpcID="10212" Face="正常" Msg="怎麼回事？難道他們說的是真的？我們……被同為黑魔法師的同伴給騙了……？" Option=""/>
+				<Talk NpcID="10212" Face="生氣" Msg="不可能！不可能！不可能！！！自然派的，你告訴我這不是真的！" Option=""/>
+				<Talk NpcID="10213" Face="正常" Msg="這是真的，黑魔法師啊。你們盲目追求掠奪，卻忽視了自身的團結，中了自己人的陷阱。" Option=""/>
+				<Talk NpcID="10212" Face="生氣" Msg="胡說！老傢伙，不要小看我們！聽著，我這把火可是能直接要了你的老命！要是你明白的話，就乖乖把女神之淚交出來！" Option=""/>
+				<Talk NpcID="10213" Face="正常" Msg="就算你拿我這條老命相逼，我也不會把女神之淚交給你們的。" Option=""/>
+				<Talk NpcID="10212" Face="生氣" Msg="是這樣啊~我明白了！那就讓這裡所有的摩爾為你這條老命陪葬吧！！哈哈哈哈哈！！！把這裡燒成焦炭，然後黑魔法師就算用扒的也要把那塊石頭扒出來！" Option=""/>
+				<Talk NpcID="10213" Face="焦急" Msg="住手！你有什麼事衝著我來，摩利亞居民是完全無辜的！" Option=""/>
+				<Talk NpcID="10212" Face="生氣" Msg="解放吧，我的生命！將意志化為紅蓮，將仇恨點燃火焰，將這片古跡化為焦土！！！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10211" Face="驚訝" Msg="拉比特，不要啊！" Option=""/>	
+				<Talk NpcID="10216" Face="焦急" Msg="爸爸，危險！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10220" Face="正常" Msg="時間啊，倒退吧！回到這裡沒有著火的時候！" Option=""/>
+			</Action>
+		
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10212" Face="正常" Msg="發生了什麼？怎麼回事？！我的火焰呢？" Option=""/>
+				<Talk NpcID="10211" Face="驚訝" Msg="什麼……女神之淚……不是石頭……" Option=""/>
+				<Talk NpcID="10220" Face="正常" Msg="黑魔法師，收起你的魔法吧，無論你使用多少次，我都可以讓時間回到什麼都沒發生的時候。" Option=""/>
+				<Talk NpcID="10212" Face="生氣" Msg="開……開什麼玩笑……難道我們黑魔法師的末路，註定是要被驅逐和流浪嗎！" Option=""/>
+				<Talk NpcID="10211" Face="驚訝" Msg="…………………………………………" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="焦急" Msg="伊絲特姐姐！你要做什麼？" Option=""/>
+				<Talk NpcID="10211" Face="悲傷" Msg="艾蓮娜……" Option=""/>
+				<Talk NpcID="10211" Face="正常" Msg="不，女神之淚。你說過，要做“自己認為正確的事情”。所以，我要帶你走。" Option=""/>
+				<Talk NpcID="10211" Face="悲傷" Msg="因為……我要讓我的家園不再被窮苦和貧瘠困擾，這要用到女神之淚的力量……所以我必須帶著女神之淚回家！" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="別慌張！這個女魔法師瞬移的距離很短，這裡離地面很遠，攔住她！" Option=""/>
+				<Talk NpcID="10211" Face="正常" Msg="拉比特，我們回家吧。" Option=""/>
+				<Talk NpcID="10212" Face="正常" Msg="等一下，伊絲特，你就這樣進行長距離移動，魔力消耗太多，你的性命……！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="GO_MAP" MapID="347" MapType="0" />
+		</EnterMap>	
+		
+		<EnterMap MapID="347">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="焦急" Msg="伊絲特姐姐！你……你不要緊吧！" Option=""/>
+				<Talk NpcID="10212" Face="悲傷" Msg="剛才的遠距離傳送已經超出她的能力，她把自己的生命也被當做魔力的來源了。應該……沒救了。" Option=""/>
+				<Talk NpcID="10216" Face="焦急" Msg="伊絲特姐姐！" Option=""/>
+				<Talk NpcID="10221" Face="正常" Msg="艾蓮娜，別難過……我本來……只是校長用黑魔法製造出來的……從出生開始，我的腦中只有完成任務這一個目標……" Option=""/>
+				<Talk NpcID="10221" Face="正常" Msg="遇到你之後，我才明白自己多麼愚蠢……看著這枚硬幣，我想了好久，自己真正想要的是什麼？" Option=""/>
+				<Talk NpcID="10221" Face="正常" Msg="然後我就明白了，我想為自己的家做點什麼……" Option=""/>
+				<Talk NpcID="10221" Face="正常" Msg="但同時我也明白了，摩爾莊園和摩利亞的摩爾們和我們一樣，都是為了自己的家園而戰鬥……那我做的事情究竟是對還是錯呢……" Option=""/>
+				<Talk NpcID="10221" Face="正常" Msg="直到我看到了你那女神之淚的姿態……我醒悟了。我是為了把你帶回來才站在那裡，那正是我存在的意義啊！" Option=""/>
+				<Talk NpcID="10221" Face="正常" Msg="……雖然必須要這樣才能把你帶回來，我好不甘心……好不甘心……我還不想消失……好害怕……" Option=""/>
+				<Talk NpcID="10216" Face="焦急" Msg="別說了，伊絲特姐姐！你會沒事的！我會用時間倒退讓你恢復！" Option=""/>
+				<Talk NpcID="10221" Face="正常" Msg="可憐的艾蓮娜啊，你能倒退時間，卻無法倒退空間，事到如今，已經無濟於事了……" Option=""/>
+				<Talk NpcID="10221" Face="正常" Msg="呐，艾蓮娜，你說，黑魔法之家，會不會有一天也像摩爾莊園那樣，在肥沃的土地上開滿花朵呢……" Option=""/>
+				<Talk NpcID="10216" Face="悲傷" Msg="會的，一定會的！！" Option=""/>
+				<Talk NpcID="10221" Face="開心" Msg="太好了…………請原……諒……我們……" Option=""/>
+				<Talk NpcID="10216" Face="悲傷" Msg="伊絲特——————！！！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" MapID="345"/>
+		</EnterMap>
+	</Step>
+</Tasks>

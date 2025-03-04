@@ -1,0 +1,118 @@
+<Tasks ID="533" Name="天使&惡魔的較量" AwardMsg="恭喜你獲得兔蘿蔔帽、2000摩爾豆！" AwardBean="2000" >
+	<Step ID="1" >
+	
+		<EnterMap MapID="53" >
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10007" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="{$username}，你來得正巧，快來幫我一起搬葡萄酒去足球場，今年的豐收節，大家可有口福了！" Option="足球場？……豐收節？" />
+				<Talk NpcID="10007" Face="正常" Msg="對呀！今年摩爾莊園大豐收，大家準備搞一個豐收祭大狂歡！每個人都把自己今年的收成拿出來，與大家一起分享。" Option="哇！那豈不是有很多好吃的好玩的！" />
+				<Talk NpcID="10007" Face="正常" Msg="這可是我珍藏了幾十年的葡萄美酒啊，香醇甘甜不醉人！大家一定都愛喝！{$username}，快跟我一起去吧，大家可都在等著我們呢！" Option="好吔！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />	
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="38" MapType="0" />	
+		</EnterMap>	
+	</Step>		
+		
+	<Step ID="2" >	
+		<EnterMap MapID="38" >
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="生氣" Msg="庫拉！你太過分了！今天是莊園裡一年一度的豐收節！你怎麼可以把大家一年的收獲全都毀了！" Option="對！太過分了！" />
+				<Talk NpcID="10003" Face="正常" Msg="哼哼~菩提老頭，沒人能阻止我這個無所不能的偉大魔法師！而且現在……我還有了一隻強大的戰鬥系黑暗天使！哈哈哈~~~" Option="黑暗天使？？？" />
+				<Talk NpcID="10007" Face="正常" Msg="黑暗天使？難道是……難道是傳說中，生存在黑暗地域裡的惡魔天使？" Option="什麼情況？惡魔天使？" />
+				<Talk NpcID="10003" Face="正常" Msg="菩提，算你還有點見識！沒錯，這就是暗夜魔王贈予我的黑暗天使！有了它，我簡直是如虎添翼啊！" Option="怎麼又來暗夜魔王了？？？" />
+				<Talk NpcID="10007" Face="正常" Msg="庫拉……原來這些年，你一直沒放棄對惡魔島的尋找，你竟然還投靠了黑暗勢力！庫拉！你真的已經走火入魔了！！！" Option="惡魔島！！！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />	
+			<!-- 這裡估計要加movie_2的最後一幀，到時候我再看下吧 -->
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10003" Face="正常" Msg="雖然沒人知道去惡魔島的路，但是……這難不倒我聰明的魔法師庫拉！終於功夫不負有心人，最後，還是讓我找到了這座神秘的島嶼——傳說中的惡魔島！" Option="你到惡魔島，有什麼企圖？" />
+				<Talk NpcID="10007" Face="正常" Msg="你終究還是沒抵擋住強大黑暗力量的誘惑，庫拉！你真是已經無可救藥了！這會害了你自己的！" Option="看來庫拉已經被黑暗勢力所控制了~~~" />
+				<Talk NpcID="10003" Face="正常" Msg="哼！我這是對魔法孜孜不倦的鑽研！不管用什麼方法，我都在所不惜！再說了，像我這麼偉大的魔法師，怎麼會受人控制！開玩笑啊！" Option="自戀的傢伙……" />
+				<Talk NpcID="10003" Face="正常" Msg="哈哈，我這次來，就是幫暗夜之王擴張領土的，摩爾莊園的天使園，也快成為我們的啦！今天，就讓你們見識見識黑暗天使的強大力量吧！" Option="⊙﹏⊙……還說不是被人控制！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="300" MapType="3" />	
+		</EnterMap>	
+	</Step>	
+		
+	<Step ID="3" >	
+		<EnterMap MapID="50003" >
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />	
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10004" Face="悲傷" Msg="BIBO~BIBO~主人，我找你找的好辛苦啊！自從你去了惡魔島，你就性情大變！主人，你怎麼可以丟下我？" Option="可憐的骰子啊~~~" />
+				<Talk NpcID="10003" Face="正常" Msg="骰子，我不是讓你好好練習魔法的嗎？現在我有黑暗天使幫忙，你現在應該繼續努力地鑽研魔法！" Option="庫拉，你居然連骰子都不要了？？？" />
+				<Talk NpcID="10004" Face="悲傷" Msg="嗚嗚嗚~主人，你醒醒吧！黑暗力量雖然強大，可它也會吞噬你的內心，最終讓你也受暗夜之王的控制！主人，你不能因為追求魔法，而迷失了自我啊！" Option="看來庫拉已經走火入魔了~~~" />
+				<Talk NpcID="10004" Face="悲傷" Msg="主人，你現在是一心想著要變得更強大！你放心，我一定會努力練習魔法，變得比黑暗天使更強大的！" Option="(⊙_⊙)~~~" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3000" Name="movie_3000" IsBg="1"/>
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="看！那就是善良之淚。大家趕快把它收集起來，先把火勢控制住吧！" Option="對！趕緊行動起來吧！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3000" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<!-- 下面是打開場景小交互 -->
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />	
+			<Action Cmd="PLAY_MOVIE" Param="6000" Name="movie_6000" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10003" Face="正常" Msg="哼！別以為把我的黑暗焰火撲滅了，就能挽救天使園。你們的天使園現在已經被我破壞啦！哈哈哈~~~哈哈哈~~~" Option="庫拉！你太壞了！" />
+				<Talk NpcID="10007" Face="生氣" Msg="庫拉！你竟敢毀了天使園，我菩提今天一定饒不了你！" Option="對！饒不了你！" />
+				<Talk NpcID="10003" Face="正常" Msg="老菩提，你能把我怎麼樣，我的黑暗天使，是惡魔天使中的戰鬥員！你還是省省吧！" Option="哼！你別太囂張了！" />
+			</Action>
+			
+			<!-- 打開天使之戰的小遊戲 
+				 <Action Cmd="ACT_EVENT" Param="openTaFang" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			
+			
+			<Action Cmd="GO_MAP" MapID="100001" MapType="0" />	
+		</EnterMap>	
+	</Step>	
+			
+	<Step ID="4" >
+		<EnterMap MapID="100001" >
+		-->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10003" Face="正常" Msg="我懶得跟你們這群小嘍囉在這裡浪費時間了，天使園裡的天使已經逃的逃，傷的傷了，我要去幫暗黑之王抓捕新的惡魔天使去了！" Option="哼~明明就是害怕了，想逃跑！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6000" />	
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="邪惡的力量終究還是會被正義所戰勝的！現在沒事了，大家不要擔心。" Option="可是天使園……" />
+				<Talk NpcID="10007" Face="正常" Msg="只要我們大家齊心協力，天使園一定會很快恢復的！讓我們一起來重建天使園吧！" Option="齊心協力，重建天使園！" />
+				<Talk NpcID="10007" Face="正常" Msg="就算遇到再大的困難，我們也要樂觀面對！" Option="對！樂觀面對！" />
+				<Talk NpcID="10007" Face="正常" Msg="你們放心，有我大伯再！我一定會保護好摩爾莊園的！大家現在還是回到足球場去吧！還有很多小摩爾都在等著我們呢……" Option="大家一起去足球場吧！" />
+				
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />	
+			<Action Cmd="OVER" />	
+ 		</EnterMap>	
+	</Step>	
+</Tasks>
+
+
+
+
+

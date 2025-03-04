@@ -1,0 +1,114 @@
+
+<Tasks ID="553" Name="禮物篇之碑文之謎" AwardMsg="恭喜你獲得1隻走獸系天使寶寶、10個經驗果實（大）、5顆融合石！" AwardBean="" >
+	<!-- 彩虹瀑布 -->
+	<Step ID="1" TarMapID="42">
+		<EnterMap MapID="42" >		
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="petMC_1" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="petMC_2" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="petMC_3" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="petMC_4" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="petMC_5" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>	
+						
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="開心" Msg="{$username}你看，嘟嚕嚕們見到番茄都高興壞了。" Option="O(∩_∩)o 哈哈~是啊，一群小饞嘴！" />
+				<Talk NpcID="10007" Face="悲傷" Msg="自從上次黑暗天使在彩虹瀑布搗亂之後，嘟嚕嚕們可被嚇壞了，都不敢像以前一樣，自由自在地在草坪上玩耍了。" Option="嘟嚕嚕怎麼比我還膽小呢？ " />
+				<Talk NpcID="10007" Face="開心" Msg="這群小傢伙肯定餓壞了。{$username}，還好今天有你幫忙，不然我一個人帶來的番茄肯定不夠它們吃的。" Option="啊~這都是給它們吃的啊？其實~我也很愛吃番茄的呢！" />
+				<Talk NpcID="10007" Face="開心" Msg="原來你才是個小饞嘴啊，哈哈！嗯~~~愛吃番茄是好的，不過可不是現在哦，這裡的番茄可都是給嘟嚕嚕準備的。" Option="我~~我又沒說現在要吃，我只是說我愛吃而已。" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsShowOthersMole="0" IsFullScreen="1"/>			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="疑惑" Msg="他怎麼會在這個時候，鬼鬼祟祟出現在這裡呢？上一次的教訓，難道還不夠深刻嗎？" Option="哼~手下敗將，還敢出現在莊園裡。" />
+				<Talk NpcID="10007" Face="疑惑" Msg="前哨站一役才剛過去不久，零應該知道現在莊園裡肯定是戒備森嚴，他怎麼還敢隻身來到莊園呢？" Option="呃……我又不是十萬個為什麼，我也不知道的呀！ " />
+				<Talk NpcID="10007" Face="疑惑" Msg="先看看情況再說！{$username}，你可藏好了啊，別被發現了。" Option="零那麼小眼睛，肯定看不見我的。" />			
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsShowOthersMole="0" IsFullScreen="1"/>		
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="疑惑" Msg="零來到莊園的目標不是攻打前哨站嗎？力量之泉和尼爾拉塔的突發情況都只是障眼法而已。現在又鬼鬼祟祟出現在力量之泉……嗯，一定有問題！" Option="大伯果然神機妙算，有什麼問題呢？" />
+				<Talk NpcID="10007" Face="疑惑" Msg="這個問題嘛……暫時還不清楚。不過先去力量之泉看看，要是零在裡面動了手腳，肯定會留下蛛絲馬跡的。" Option="囧……好吧，還是先看看再說。 " />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3 "/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />	
+			<Action Cmd="GO_MAP" MapID="43" MapType="0" />
+		</EnterMap>	
+	</Step>	
+	
+	<!-- 力量之泉 -->
+	<Step ID="2" TarMapID="43" >
+		<EnterMap MapID="43" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />	
+		
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsShowOthersMole="0" IsFullScreen="1"/>		
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="疑惑" Msg="剛剛那個不是尼爾拉法師嗎？他說的上古之謎……難道是…… …………" Option="上古之謎？從來都沒聽說過啊！"/>
+				<Talk NpcID="10007" Face="疑惑" Msg="你當然沒聽說過，這還是在我很小的時候，無意中聽尼爾拉法師提起過。現在，莊園裡知道這碑文中藏著上古之謎的人，那是少之又少。" Option="大伯很小時候？⊙﹏⊙那我當時得有多年幼啊！"/>
+				<Talk NpcID="10007" Face="疑惑" Msg="我很小時候你還沒出生呢，{$username}！尼爾拉法師怎會無緣無故提起上古之謎的事情呢？" Option="難道~~~還有人知道了這個秘密？"/>
+				<Talk NpcID="10007" Face="驚訝" Msg="那個人不就是你嗎？你現在不是也聽說了上古之謎。除了你，還有誰？" Option="什麼嘛，我就只聽到“上古之謎”4個字！內容一概不知！"/>
+				<Talk NpcID="10007" Face="驚訝" Msg="糟糕！不好了！…………古德摩.零！！！" Option="(⊙ｏ⊙)"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<!--<Action Cmd="GO_MAP" MapID="62" MapType="0" />	-->
+		</EnterMap>	
+	</Step>
+	
+	<!-- 力量之泉 -->
+	<Step ID="3" TarMapID="43" >
+		<EnterMap MapID="43" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<!-- 交互 -->
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsShowOthersMole="0" IsFullScreen="1"/>
+
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsShowOthersMole="0" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />	
+			
+		 	<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="驚訝" Msg="(⊙ｏ⊙)不好！零不會真的發現了水晶琥珀的秘密吧！！！先是尼爾拉塔，再是力量之泉，最後是前哨站……難道……他正是為了這個才來莊園的？？？ " Option="我怎麼越聽越糊塗了呢？到底上古之謎是什麼啊？"/>
+				<Talk NpcID="10007" Face="焦急" Msg="事情還得追溯到我很小的時候，有一天，尼爾拉法師帶著我在尼爾拉塔附近玩耍……" Option="然後呢？"/>
+			</Action>
+
+		 	<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />	
+			
+		 	<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="這是我第一次聽說這件上古時期的珍寶。據尼爾拉法師說，只要誰有了這件寶物，便可控制世間萬物的生長。要是在正義之人的手裡，它將造福天地間萬物，可要是…… " Option="可要是落入壞人之手……"/>
+				<Talk NpcID="10007" Face="焦急" Msg="可要是落入邪惡之人的手裡，它將成為破壞萬物生態平衡的最大利器。到時候只會給所有的物種都帶來災難，萬物都將不復存在……" Option="⊙︿⊙啊！！！它還真是個兩面刃啊！"/>
+				<Talk NpcID="10007" Face="正常" Msg="為了防止它落入壞人之手，早在上古時期，古老部族的長老們就合力把它封印了起來。" Option="那這顆水晶琥珀被封印在哪兒呢？"/>
+			</Action>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />		
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />	
+		</EnterMap>	
+	</Step>
+	
+	<!--  力量之泉 -->
+	<Step ID="4" TarMapID="43" >
+		<EnterMap MapID="43" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />	
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="有了這兩層結界的保護，水晶琥珀很安全。就算有人圖謀不軌，也要先解除了外層的結界，才有可能破壞上古封印的結界。" Option="結界沒了，恐怕也要再經過九九八十一道工序才能拿到吧！"/>
+				<Talk NpcID="10007" Face="疑惑" Msg="而且，究竟得到了水晶琥珀之後，是不是真的會像傳說中的那樣，就可以掌控天地萬物了呢？至今也無人知曉。" Option="哇！聽起來就好厲害的樣子呀！"/>
+				<Talk NpcID="10007" Face="疑惑" Msg="自從水晶琥珀被封印之後，有關於它的傳說便越來越少了。到了現在，莊園裡幾乎沒人知道這個碑文上的秘密。零該不會……" Option="零應該不會知道，也許這是巧合呢？"/>
+				<Talk NpcID="10007" Face="疑惑" Msg="零先是去到了尼爾拉塔、力量之泉，然後再是前哨站……石碑上還有惡魔島的標記。這一切到底是巧合，還是另有隱情？" Option="零這麼年輕，怎麼會知道上古時期留下的碑文之謎呢？"/>
+				<Talk NpcID="10007" Face="疑惑" Msg="{$username}，這件事你一定要守口如瓶！千萬不能讓其他人知道，現在我們還不清楚零是不是奔著碑文上的秘密而來的。" Option="看來這個零很不簡單啊！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" />		
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>	
+	</Step>
+</Tasks>

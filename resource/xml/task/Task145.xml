@@ -1,0 +1,32 @@
+<Tasks ID="145" Name="我想成為拉姆小導師" >
+	<Step ID="1" >
+		<NPC ID="10062" Option="我想成為拉姆小導師" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10062" Face="正常" Msg="    141 我想成為駕駛員" Option="我準備好了！" />
+			</Action>
+			
+			<Action Cmd="ACT_EVENT" Param="NPCOldJob141" /><!-- 拋事件 -->
+		</NPC>
+		
+		<EnterMap MapID="100620001" >								<!-- 未完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10062" Face="正常" Msg="    141 沒完成任務！" Option="我準備好了！" />
+			</Action>
+		</EnterMap>
+		<EnterMap MapID="100620002" >									  <!-- 已完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10062" Face="正常" Msg="    141  恭喜你完成任務了！" Option="我準備好了！" />
+			</Action>
+			
+			<Action Cmd="ACT_EVENT" Param="JustOverJob141" /><!-- 拋事件 -->
+		</EnterMap>
+		<EnterMap MapID="100620003" >									  <!-- 已完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10062" Face="正常" Msg="    141  得到獎勵！" Option="我準備好了！" />
+			</Action>
+		</EnterMap>
+		
+		
+	</Step>
+					
+</Tasks>

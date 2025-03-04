@@ -1,0 +1,108 @@
+<Tasks ID="517" Name="鳶尾仙堡的婚禮籌備" AwardMsg="" AwardBean="0" >
+	<Step ID="1" >
+		<NPC ID="10107" Option="婚禮的邀請" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10107" Face="正常" Msg="……鳶尾仙堡怎麼走呢？" Option="保羅王子在這裡做什麼呀？" />
+				<Talk NpcID="10107" Face="正常" Msg="{$username}，你來了啊？你知道鳶尾仙堡怎麼去嗎？" Option="鳶尾仙堡！我也想知道啊！" />
+				<Talk NpcID="10107" Face="正常" Msg="我在黑森林繞來繞去，怎麼也找不到呀！" Option="你不會也是去找金色鳶尾花吧？" />
+				<Talk NpcID="10107" Face="正常" Msg="金色鳶尾花是什麼？對了，我要告訴你一個好消息！" Option="好消息？" />
+				<Talk NpcID="10107" Face="正常" Msg="我和籮絲要結婚啦！我們準備在鳶尾仙堡舉辦婚禮。" Option="⊙o⊙啊？真的啊，恭喜恭喜！！" />
+				<Talk NpcID="10107" Face="正常" Msg="就訂在下週，你一定要來呀！順便帶上朋友一起！" Option="為什麼要選在鳶尾仙堡舉辦婚禮？" />
+				<Talk NpcID="10107" Face="正常" Msg="籮絲告訴我，人魚國有這樣一個傳說…" Option="⊙o⊙哦？？" />
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />
+ 			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+ 			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10107" Face="正常" Msg="事情就是這樣的。所以我現在先來這邊做些準備，籮絲隨後就到。" Option="王子您一定可以成為一個好丈夫的。" />
+				<Talk NpcID="10107" Face="正常" Msg="謝謝你，對了，能幫我把請帖分發給莊園裡的朋友嗎？我想邀請大家都來參加！" Option="好呀！" />
+			</Action>
+			
+ 			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="OPEN_TASK_PANEL" />
+ 		</NPC>	
+	</Step>			
+	
+	<Step ID="2" >
+		<NPC ID="10007" Option="婚禮的邀請" Bit="1" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="哦呵呵呵，年輕人的婚禮，大伯我是一定不會錯過的！幫我轉告保羅王子，我一定會去的！" Option="好的！" />
+			</Action>
+			
+			<Action Cmd="SET_BIT" Param="1" />
+			<Action Cmd="OPEN_PANEL" Param="Task517InvitationPanel" />
+		</NPC>
+		<NPC ID="10002" Option="婚禮的邀請" Bit="2" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="保羅和籮絲要結婚了啊？真心祝福他們。好的，我一定會去的，替我謝謝他的邀請。" Option="恩，我會轉告他的。" />
+			</Action>
+			
+			<Action Cmd="SET_BIT" Param="2" />
+			<Action Cmd="OPEN_PANEL" Param="Task517InvitationPanel" />
+		</NPC>
+		<NPC ID="10013" Option="婚禮的邀請" Bit="3" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10013" Face="正常" Msg="啊，邀請我這樣的美女參加婚禮再合適不過啦。當然我也不能太搶新娘風頭，你說是吧？請轉告王子殿下，美女我接受邀請。" Option="好的= _=！" />
+			</Action>
+			
+			<Action Cmd="SET_BIT" Param="3" />
+			<Action Cmd="OPEN_PANEL" Param="Task517InvitationPanel" />
+		</NPC>
+		<NPC ID="10009" Option="婚禮的邀請" Bit="4" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="正常" Msg="是籮絲公主的婚禮呀，那我肯定要去的！" Option="恩，一定很好玩。" />
+			</Action>
+			
+			<Action Cmd="SET_BIT" Param="4" />
+			<Action Cmd="OPEN_PANEL" Param="Task517InvitationPanel" />
+		</NPC>
+		<NPC ID="10000" Option="婚禮的邀請" Bit="5" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="哈哈，婚禮這麼熱鬧的事，怎麼能少了我摩樂樂呢！" Option="對呀，對呀。" />
+			</Action>
+			
+			<Action Cmd="SET_BIT" Param="5" />
+			<Action Cmd="OPEN_PANEL" Param="Task517InvitationPanel" />
+		</NPC>
+		<NPC ID="10010" Option="婚禮的邀請" Bit="6" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10010" Face="正常" Msg="婚禮上一定有很多很多,非常非常好吃的東西!恩,我和布少少一起去!" Option="一定要和布少少一起來哦！" />
+			</Action>
+			
+			<Action Cmd="SET_BIT" Param="6" />
+			<Action Cmd="OPEN_PANEL" Param="Task517InvitationPanel" />
+		</NPC>
+	</Step>
+	
+	<Step ID="3" >
+		<NPC ID="10107" Option="婚禮的邀請" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10107" Face="正常" Msg="{$username}，哦，是你啊！謝謝你我的朋友。" Option="哪裡啊，小事一樁！" />
+				<Talk NpcID="10107" Face="正常" Msg="我這裡還有很多請帖，我希望你幫我邀請更多的人來！" Option="好的，樂意為您效勞！" />
+				<Talk NpcID="10107" Face="正常" Msg="對了，我們婚禮上需要很多晚禮服，你看能不能想辦法幫我去做一些。當然，你可以用獲得的愛心別針來我這兌換報酬。" Option="愛心別針？" />
+				<Talk NpcID="10107" Face="正常" Msg="是呀，等你隨便搜集到一些愛心別針後，我有禮物給你。" Option="我現在就去收集！" />
+			</Action>
+ 			
+ 			<Action Cmd="SET_BUFFER" Panel="3" Step="4" />
+			<Action Cmd="OPEN_PANEL" Param="IrisWeddingPanel" />
+ 		</NPC>
+	</Step>
+	
+	<Step ID="4" >
+		<NPC ID="10107" Option="愛心別針！" >
+			<Action Cmd="ACT_EVENT" Param="Act_Task517_4" />
+		</NPC>
+		
+		<EnterMap MapID="10000" >
+			<Action Cmd="OPEN_PANEL" Param="Task517GetRodePanel" />
+			<Action Cmd="OVER" />
+			<Action Cmd="OPEN_PANEL" Param="IrisWeddingPanel" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />
+ 			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+ 			
+			
+ 		</EnterMap>	
+	</Step>		
+</Tasks>

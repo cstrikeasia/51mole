@@ -1,0 +1,82 @@
+﻿<Tasks ID="620" Name="冰雪美食節" AwardMsg="恭喜你獲得2個山葵種子,1個聖誕款沙發 " AwardBean="">
+	<Step ID="1" TarMapID="44">
+		<EnterMap MapID="44">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10019" Face="疑惑" Msg="老超、肖恩、豆豆，好好交代你們的罪行，坦白從寬！！" Option="嗯嗯！坦白從寬！"/>
+				<Talk NpcID="10244" Face="失望" Msg="警官大人，我們偷走的東西都已經送回來了，孩子們餓得沒有辦法才會偷東西的呀！" Option="艾爾警官，真的有很多小企鵝餓得好可憐啊！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+			<Action Cmd="GO_MAP" MapID="44" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="44">
+		<EnterMap MapID="44">
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10244" Face="失望" Msg="我們真的很可憐的，不像你們在莊園這樣物產豐富的地方住著！積雪鎮一直都是一個貧瘠的地方，我老超一直在努力保護著孩子們，想讓他們過上不缺吃不缺穿的日子……" Option="不管怎麼樣，你們也不能做壞事！"/>
+				<Talk NpcID="10247" Face="正常" Msg="老超爺爺，讓我來說吧~" Option="小豆豆，你要說實話哦~不能忽悠我們！"/>
+				<Talk NpcID="10247" Face="正常" Msg="事情是這樣的……" Option="...."/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="44" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="3" TarMapID="44">
+		<EnterMap MapID="44">
+			<Action Cmd="SAY">
+				<Talk NpcID="10007" Face="悲傷" Msg="小豆豆真是太可憐了！" Option="是呀，從小就那麼可憐~"/>
+				<Talk NpcID="10247" Face="悲傷" Msg="摩爾老爺爺，沒事噠，我們一直都是這樣噠~" Option="小豆豆一直被打，還沒有好吃的，怎麼能快樂成長呢？"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="疑惑" Msg="咦？小企鵝們，你們怎麼都在哭啊？是不是繩子綁著太疼了？" Option="公主來了~公主，他們小時候都好可憐啊~"/>
+				<Talk NpcID="10240" Face="正常" Msg="當年還在南極的時候……" Option="...."/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+			<Action Cmd="GO_MAP" MapID="44" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="4" TarMapID="44">
+		<EnterMap MapID="44">
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="悲傷" Msg="真是好慘呢！5555555~肖恩太可憐了，麼麼從小過得那麼幸福，都不知道你們從小那麼可憐！我一定要做一個好公主，改變這一切！" Option="公主已經是一個非常完美的好公主了！"/>
+				<Talk NpcID="10002" Face="悲傷" Msg="不夠不夠，麼麼之前只想著要讓所有的摩爾都幸福快樂，沒想到還有可憐的企鵝！是麼麼不好~555555~！" Option="公主加油，我們會幫你的！"/>
+				<Talk NpcID="10019" Face="正常" Msg="咳咳，好像有點跑題了……那個……老超……你還沒有交代罪行呐，讓孩子們頂罪是不厚道的行為！" Option="老超快點交代~快點快點~"/>
+				<Talk NpcID="10244" Face="失望" Msg="警官大人，我沒想逃避，其實積雪鎮所有的大小企鵝都是這樣度過每一天的……" Option="..."/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+			<Action Cmd="GO_MAP" MapID="44" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="5" TarMapID="44">
+		<EnterMap MapID="44">
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="開心" Msg="麼麼想啊，既然企鵝們那麼可憐，我們就按大伯說的和他們一塊過耶誕節吧~" Option="真的嗎？公主威武~"/>
+				<Talk NpcID="10002" Face="開心" Msg="(*^__^*) 嘻嘻……麼麼想要過一個有企鵝特色的耶誕節，慶祝企鵝和我們摩爾一族成為好朋友~" Option="打算怎麼過呢？好期待哦~"/>
+				<Talk NpcID="10002" Face="開心" Msg="那就讓麼麼來安排咯~首先，我們定下來在東部沙灘碼頭慶祝耶誕節！" Option="嗯嗯！"/>
+				<Talk NpcID="10002" Face="開心" Msg="然後呢~企鵝這邊要由老超來負責安排，手把手的教會小摩爾們做你們家鄉的特色菜！讓企鵝們在莊園也像在家裡一樣吃到好吃的家鄉風味！" Option="嗯嗯！"/>
+				<Talk NpcID="10244" Face="正常" Msg="公主~你真是太好了~我老超想當年也是號稱超一刀！菜刀在手，沒有什麼小魚小蝦能逃出我的刀下！就看我老超給你亮幾手！" Option="哦耶！"/>
+				<Talk NpcID="10002" Face="開心" Msg="把今年的耶誕節就定名為“冰雪美食節”！！讓我們開開心心的玩起來吧！" Option="O(∩_∩)O~"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>

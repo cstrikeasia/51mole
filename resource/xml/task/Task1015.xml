@@ -1,0 +1,167 @@
+<Tasks ID="1015" Name="命運的硬幣" AwardMsg="恭喜你獲得2個君子蘭種子、愛心彩蛋椅子！" AwardBean="" >
+
+	<!-- 龍巢迷宮  -->
+	<Step ID="1" TarMapID="339">
+		<EnterMap MapID="339">
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10217" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10219" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10029" Face="正常" Msg="{$username}，你可來了！麼麼公主還好嗎？" Option="她一直都好好的，怎麼啦？"/>
+				<Talk NpcID="10029" Face="正常" Msg="哎，摩樂樂被打傷後，麼麼公主就說，她一定要讓莊園恢復和平，粉碎黑魔法師的陰謀。" Option=""/>
+				<Talk NpcID="10029" Face="正常" Msg="但是召集我們騎士團的那天，公主非常奇怪，明明將我們召集在大廳，卻來得很遲。她明明是個遵守時間的好公主。" Option="麼麼還說了什麼？"/>
+				<Talk NpcID="10029" Face="正常" Msg="她希望我們在她到達摩利亞王城之前，不要跟著她。如果我們硬要跟去，她就故意把我們支開。" Option="她希望我們在她到達摩利亞王城之前，不要跟著她。如果我們硬要跟去，她就故意把我們支開。"/>
+				<Talk NpcID="10029" Face="正常" Msg="公主沒有說明，哎，所以我才急著找你。" Option="別擔心，我們遇見了瑞琪團長。"/>
+				<Talk NpcID="10029" Face="正常" Msg="這是真的嗎？那可太好了，瑞琪團長在的話，我就放心了。{$username}，一定要好好保護我們的公主！隨後的王城會戰，我們也會加入的！" Option="好的，放心吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="342" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	
+	<!-- 永夜哨站 -->
+	<Step ID="2" TarMapID="342">
+		<EnterMap MapID="342">
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10198" Face="正常" Msg="{$username}，你找我有事？" Option="把法蘭克的話轉告給瑞琪"/>
+				<Talk NpcID="10198" Face="正常" Msg="恩……我想，公主這麼做一定也有自己的用意。放心，我會一直守護公主的。" Option=""/>
+				<Talk NpcID="10206" Face="開心" Msg="你們在說什麼呢，那麼神神秘秘的。" Option="麼麼公主！"/>
+				<Talk NpcID="10198" Face="正常" Msg="麼麼公主，您來得正好。和巴圖魯的作戰會議馬上就要開始了，我們趕快去吧。" Option="作戰會議？"/>
+				<Talk NpcID="10206" Face="正常" Msg="{$username}，告訴你哦，我們已經和摩利亞反抗軍組成了聯盟，下一步，就是幫助他們收復摩利亞的失地，保護女神之淚！" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="公主，我們走吧！{$username}，能不能請你陪一下艾蓮娜？她很少有玩伴，自從你來到這裡後，她好像就很喜歡你的樣子。" Option="好的，我這就去找她！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+<!-- 			<Action Cmd="GO_MAP" MapID="84" MapType="0" /> -->
+		</EnterMap>
+	</Step>
+	
+	
+	<!-- 永夜哨站 -->
+	<Step ID="3" TarMapID="342">
+		<NPC ID="10216" Option="命運的硬幣"  MapID="" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="正常" Msg="爸爸他去開作戰會議了，好無聊啊。{$username}，我們去摩利亞古王城探險吧！" Option="哇，聽起來好像不錯，我想去！"/>
+				<Talk NpcID="10216" Face="正常" Msg="帶你去當然沒問題啦，哎嘿嘿，不過你能不能先幫我個忙？" Option="只要是我能做到的一定幫忙"/>
+				<Talk NpcID="10216" Face="焦急" Msg="我在永夜哨站弄丟了5枚硬幣，那是艾蓮娜很喜歡的紀念幣呢！你能幫我找回來嗎？" Option="別著急，我幫你找找"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="正常" Msg="哇！紀念幣！{$username}，謝謝你~我們現在就去摩利亞古王城吧！" Option="我們怎麼去呢？"/>
+				<Talk NpcID="10216" Face="正常" Msg="嘻嘻，其實這裡有一條密道！" Option=""/>
+			</Action>
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="GO_MAP" MapID="343" MapType="0" />
+		</NPC>	
+			
+		<EnterMap MapID="343">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="正常" Msg="歡迎來到摩利亞古王城！" Option="哇，這裡好漂亮~"/>
+				<Talk NpcID="10216" Face="正常" Msg="這裡是摩爾一世建立起來的古王城哦，不過現在摩利亞沒有王族了，這裡是我探險的樂園，嘿嘿！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10211" Face="正常" Msg="咦？你們怎麼會在這？" Option="我……我也想問你呢！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			
+			<Action Cmd="PLAY_MOVIE" Param="1002" Name="movie_1002" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1002" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 摩利亞王城 -->
+	<Step ID="4" TarMapID="343">
+		<EnterMap MapID="343">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10211" Face="正常" Msg="我本來跟他們在城內討論接下去的計畫，但是“第四個黑魔法師”一直堅持要不擇手段達到目的！" Option="第四個黑魔法師？"/>
+				<Talk NpcID="10211" Face="正常" Msg="那是一個恐怖的摩爾呐，雖然自稱是我們的同伴，但一直使喚惡魔到處破壞。我……我對他的不擇手段氣憤極了，就跑了出來。" Option=""/>
+				<Talk NpcID="10216" Face="正常" Msg="姐姐，你雖然是黑魔法師，但不像傳說中的那麼可怕！原來黑魔法師中也有像姐姐那麼善良的摩爾！" Option=""/>
+				<Talk NpcID="10211" Face="悲傷" Msg="我不是善良的摩爾！我只想早日得到女神之淚，讓我的家鄉“黑魔法之家”緩解能源危機。但為此如果要破壞你們的家園，我……" Option=""/>
+				<Talk NpcID="10216" Face="正常" Msg="姐姐只要去做自己認為對的事情就行了，不要一味想著完成任務！來，給你個好東西！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10211" Face="正常" Msg="這是……" Option="啊，這是艾蓮娜最喜歡的紀念幣！"/>
+				<Talk NpcID="10216" Face="正常" Msg="這是摩爾三世紀念硬幣，上面的鳥兒是白鷺哦。摩爾三世在離開摩利亞前，留下了這些硬幣，希望摩利亞的居民能放開觀念束縛，不僅只居住在地下。" Option=""/>
+				<Talk NpcID="10216" Face="正常" Msg="這枚硬幣是自由的象徵，也有傳言，向硬幣許願，說不定願望能成真呢！" Option=""/>
+				<Talk NpcID="10211" Face="悲傷" Msg="我的願望是……在寸草不生的黑魔法之家，如果能開出美麗的花朵就好了。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10210" Face="正常" Msg="哼哼，伊絲特好樣的，捉住那個小姑娘，她是酋長的女兒，她肯定知道些什麼！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10198" Face="正常" Msg="黑魔法師，不允許你傷害他們！" Option=""/>
+				<Talk NpcID="10212" Face="正常" Msg="哈哈哈哈，你總算來了！伊絲特，華利弗，給他們點厲害！" Option=""/>
+				<Talk NpcID="10211" Face="悲傷" Msg="……" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10212" Face="正常" Msg="哼，愚蠢的自然派，走著瞧！伊絲特，快轉移！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10198" Face="正常" Msg="馬上整頓隊伍，接下來準備對王城內部的黑魔法師發起總攻！" Option=""/>
+				<Talk NpcID="10099" Face="正常" Msg="是！" Option=""/>
+				<Talk NpcID="10198" Face="正常" Msg="{$username}，剛才真的是很危險！再怎麼說，你也是一名騎士，怎麼可以帶艾蓮娜來這裡？" Option="對不起……"/>
+				<Talk NpcID="10198" Face="正常" Msg="我知道你心中有很多謎團，但如果你是騎士，就不要畏懼。打起精神向前走，問題總有迎刃而解的一天！" Option="是！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

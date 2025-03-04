@@ -1,0 +1,158 @@
+	<Tasks ID="614" Name="最珍貴的禮物" AwardMsg="2個元素騎士經驗藥劑（小）,摩爾王的眼淚" AwardBean="" >
+	<!-- 農場發明屋 -->
+	<Step ID="1" TarMapID="239">
+		<EnterMap MapID="239">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10000" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="這下我們總算是把摩爾王留給麼麼公主的東西找到了。" Option="這次多虧了大衛呢！"/>
+				<Talk NpcID="10000" Face="正常" Msg="希望麼麼公主看到這份禮物心情會好一些！" Option="麼麼公主的生日也快到了，她看到這份禮物一定會開心的。"/>
+				<Talk NpcID="10000" Face="正常" Msg="不知道這次大家會送什麼禮物呢？" Option="這次一定要能給麼麼公主一個驚喜！"/>
+				<Talk NpcID="10000" Face="正常" Msg="要不我們去找大家問問？看看大家有什麼好的提議？" Option="好啊！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10000" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="15" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 莉莉小廣場 -->
+	<Step ID="2" TarMapID="15">
+		<EnterMap MapID="15">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10047" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10047" Face="正常" Msg="你們來的正好，麼麼公主生日快要到了，我正想著送她什麼好呢！" Option="哎呀，真巧。我們來也是想問問您這次送什麼禮物的呢！"/>
+				<Talk NpcID="10047" Face="正常" Msg="喔？是嗎？" Option="是的呢。洛克行政官您打算送什麼呀？"/>
+				<Talk NpcID="10047" Face="正常" Msg="我打算送給麼麼公主一個可愛的洋娃娃！" Option="洋娃娃？？？"/>
+				<Talk NpcID="10047" Face="正常" Msg="是啊！洋娃娃多可愛啊，麼麼公主抱著一定會喜歡的！" Option="這…………"/>
+				<Talk NpcID="10047" Face="正常" Msg="你們是不是覺得我的這份禮物很不錯呀！" Option="是很不錯呢！（可是這給不了麼麼公主足夠的驚喜啊！）"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10047" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="3" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	
+	<Step ID="3" TarMapID="3">
+		<EnterMap MapID="3">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10013" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10013" Face="正常" Msg="喲，你們怎麼過來啦！" Option="這不是快要到麼麼公主生日了嘛，我們來向你問問送什麼禮物好呢！"/>
+				<Talk NpcID="10013" Face="正常" Msg="我呀這次準備了一個精美的頭飾送給麼麼公主。" Option="頭飾？？？"/>
+				<Talk NpcID="10013" Face="正常" Msg="是啊！我想著麼麼公主戴在頭髮上一定很好看呢！" Option="肯定很漂亮呢！"/>
+				<Talk NpcID="10013" Face="正常" Msg="你們都準備送什麼呢？" Option="我們還沒想好呢，所以就來問問大家意見呢！"/>
+				<Talk NpcID="10013" Face="正常" Msg="其實這禮物啊，有一份心意就行了！禮輕情意重嘛！" Option="恩恩，說得對！（可是，我們這次是想給麼麼公主一個大驚喜來安慰她呢！）"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1002" Name="movie_1002" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1002" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10013" Visible="1" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="27" MapType="0" />
+		</EnterMap>
+	</Step>	
+	
+	<Step ID="4" TarMapID="27">
+		<EnterMap MapID="27">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10016" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10016" Face="正常" Msg="不是都找到那木盒子了嘛，這回又想來穿越到哪去啊！" Option="我們這次不是來穿越的，是想問問你關於送給麼麼公主的生日禮物的事情！"/>
+				<Talk NpcID="10016" Face="正常" Msg="是啊，麼麼公主的生日是快要到了！我還給準備了一個驚喜呢！" Option="驚喜？？什麼驚喜啊？快說說看！"/>
+				<Talk NpcID="10016" Face="正常" Msg="這個嘛……暫時保密！哈哈！" Option="還保密！！哎喲，快告訴我們吧！"/>
+				<Talk NpcID="10016" Face="正常" Msg="都說保密了，到時候一定給你們個大驚喜！" Option="哼，小氣。我們找菩提大伯去！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1003" Name="movie_1003" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1003" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="GO_MAP" MapID="28" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="5" TarMapID="28">
+		<EnterMap MapID="28">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="PLAY_MOVIE" Param="1003" Name="movie_1003" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1003" />
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+			<Action Cmd="GO_MAP" MapID="27" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="6" TarMapID="27">
+		<EnterMap MapID="27">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10016" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10016" Face="正常" Msg="你們怎麼又回來了？" Option="剛才我們去找菩提大伯他不在！"/>
+				<Talk NpcID="10016" Face="正常" Msg="可能……可能他去衛生間了，可能去逛公園了……他不在你來找我幹嘛啊？" Option="大衛，你那麼緊張幹嘛啊？"/>
+				<Talk NpcID="10016" Face="正常" Msg="我 ……我哪裡緊張啦！" Option="你看你說話都吞吞吐吐的！"/>
+				<Talk NpcID="10016" Face="正常" Msg="我……我哪有！" Option="是不是知道菩提大伯去哪裡啦？"/>
+				<Talk NpcID="10016" Face="正常" Msg="我什麼都不知道！" Option="是不是菩提大伯和你說的那個大驚喜有關啊！"/>
+				<Talk NpcID="10016" Face="正常" Msg="什麼……什麼關係都沒有！" Option="哈哈！肯定有關聯！你就告訴我們那個大驚喜是什麼吧！"/>
+				<Talk NpcID="10016" Face="正常" Msg="算了算了，什麼事都逃不過你的眼睛！" Option="嘿嘿，我們穿越了幾次，練就出了火眼金睛！"/>
+				<Talk NpcID="10016" Face="正常" Msg="我要菩提大伯穿越到過去，去說服摩爾王、皇后和塞拉，能在麼麼公主當天穿越到現在。" Option="什麼？穿越到現在？？？？"/>
+				<Talk NpcID="10016" Face="正常" Msg="是的，沒錯。不過只有半個鐘頭的時間。" Option="能見上一面比什麼都強啊！"/>
+				<Talk NpcID="10016" Face="正常" Msg="我已經都準備好了，就等著看菩提大伯把他們帶回來了！" Option="哇……這真是一個大大的驚喜啊！"/>
+				<Talk NpcID="10016" Face="正常" Msg="你們就負責把麼麼公主接到粒粒小廣場，因為時光機在那，到時候我們在那慶祝吧！" Option="好的，我們都好期待啊！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="1004" Name="movie_1004" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1004" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10016" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_BUFFER" Panel="7" Step="7" />
+			<Action Cmd="GO_MAP" MapID="47" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="7" TarMapID="47">
+		<EnterMap MapID="47">
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10002" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10057" Visible="0" />
+				
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />			
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="謝謝你們，謝謝你們為我做的這一切！" Option="您是我們的公主，這些都是我們應該做的。"/>
+				<Talk NpcID="10002" Face="正常" Msg="能作為你們的公主，我真的很榮幸！" Option="這是摩爾王當年讓尤瑞克給你的禮物，快打開看看！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10002" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10057" Visible="1" />
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>
+</Tasks>

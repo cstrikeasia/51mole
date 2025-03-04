@@ -1,0 +1,163 @@
+<Tasks ID="1010" Name="騎士誓言之始" AwardMsg="恭喜你獲得2個火龍果種子、黑貓鬍鬚！" AwardBean="" >
+
+	<!-- 城堡大廳  -->
+	<Step ID="1" TarMapID="15">
+		<NPC ID="10047" Option="騎士誓言之始"  MapID=""  >
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+<!-- 			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10047" Visible="0" /> -->
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10047" Face="正常" Msg="{$username}，你終於來了。我知道元素騎士資格訓練十分艱苦，百忙之中請你趕來，實在是有緊急的事情想拜託你。" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10047" Face="焦急" Msg="其實就在上周，摩爾皇室派遣了一位騎士去時光聖殿的結界附近監測能量波動，但前天夜裡，我們忽然與他失去了聯繫。" Option=""/>
+				<Talk NpcID="10047" Face="焦急" Msg="我們不清楚那裡發生了什麼事，現在正緊急組織勘察隊前去雲霧迷橋。{$username}，你是具備元素騎士資格的小摩爾之一，我們需要你的力量！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="正常" Msg="交給我吧，我現在就去雲霧迷橋！" Option=""/>
+				<Talk NpcID="10047" Face="正常" Msg="等等，你單獨去太危險了！叫上摩樂樂還有丫麗吧，你們平時不是一塊兒的嗎？" Option=""/>
+				<Talk NpcID="10197" Face="驚訝" Msg="對哦，今天趕來太急了，沒有叫上他們。我這就去天空樹！" Option=""/>
+			</Action>
+			
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="239" MapType="0" />
+		</NPC>	
+	</Step>
+	
+	
+	<!-- 摩樂樂家 -->
+	<Step ID="2" TarMapID="239">
+		<EnterMap MapID="239">
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10000" Visible="0" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="疑惑" Msg="樂樂好像不在家，真奇怪。調查一下看看吧。" Option=""/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="ALERT" Param="獲得可疑的金屬棍。"/>
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="疑惑" Msg="這是什麼？看起來像是斷掉的金屬棍子……" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="238" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	
+	<!-- 丫麗房間 -->
+	<Step ID="3" TarMapID="238">
+		<EnterMap MapID="238">
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10009" Visible="0" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="疑惑" Msg="今天是什麼日子啊，怎麼連丫麗也不在，還把書丟一地！" Option=""/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="ALERT" Param="獲得丫麗的髮帶。"/>
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="疑惑" Msg="“在「耀眼光輝之門」外設置的結界，永遠關閉了黑森林與地下城的邊界。”丫麗怎麼把髮帶夾在這頁……" Option=""/>
+			</Action>
+			
+			
+			<Action Cmd="PLAY_MOVIE" Param="1002" Name="movie_1002" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1002" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="120" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 雲霧謎橋 -->
+	<Step ID="4" TarMapID="120">
+		<EnterMap MapID="120">
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="疑惑" Msg="這折斷的痕跡，跟我撿到的金屬棍好像。難道……" Option=""/>
+			</Action>
+			
+			<Action Cmd="OPEN_PANEL" Param="Task1010RepairMachine" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="Task1010RepairMachineOver"/>
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="驚訝" Msg="黑魔法師就在正前方200米，看來一定要進入時光聖殿調查一下！" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1003" Name="movie_1003" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1003" />
+			
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+		</EnterMap>
+	</Step>
+	
+	
+		<!-- 雲霧謎橋 -->
+	<Step ID="5" TarMapID="120">
+		<EnterMap MapID="120">
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="OPEN_PANEL" Param="Task1010ElementKnightPanel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="Task1010ElementKnightPanelOver"/>
+			
+			<Action Cmd="GO_MAP" MapID="336" MapType="0" />
+		</EnterMap>
+		
+		<!-- 時光聖殿 -->
+		<EnterMap MapID="336">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="焦急" Msg="你們總是那麼衝動，還好騎士團及時趕到。你們怎麼和這麼危險的人物對峙上了？" Option=""/>
+				<Talk NpcID="10009" Face="焦急" Msg="昨晚我們經過雲霧迷橋時，遇見黑魔法師正在追打一名士兵。情急之下，樂樂與風元素締結了契約，借用疾風的速度，帶著重傷的士兵飛回了莊園。" Option=""/>
+				<Talk NpcID="10197" Face="疑惑" Msg="（看來失蹤的士兵是被黑魔法師襲擊了，幸好樂樂把他救了回來，怪不得檢測器的天線在樂樂家……）" Option=""/>
+				<Talk NpcID="10009" Face="悲傷" Msg="為了守護時光聖殿，我和樂樂決定聯手阻止黑魔法師。但是樂樂一下就被那個叫拉比特的黑魔法師用火魔法擊中了，一直沒有醒過來……我……" Option=""/>
+				<Talk NpcID="10002" Face="生氣" Msg="你們太衝動了！而且那個用火的黑魔法師，對樂樂的風屬性是最大的天敵，你在元素騎士訓練時學的東西都忘記了嗎？趕緊帶樂樂回莊園治療吧。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="{$username}，你都看到了吧，莊園現在面對的敵人，正是使用可怕黑魔法力量的“魔法派”成員。如果不是使用元素的力量，是很難和他們抗衡的。" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="看來變成元素騎士，這四塊元素石碑很關鍵。剛才也是因為火元素石碑亮了一下，丫麗才變身了。" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="是的，我和樂樂、丫麗他們都是接受了石碑的考驗之後才獲得元素騎士力量的。為了成為對抗黑魔法的重要戰力，{$username}，向女神像宣誓吧，然後接受元素石碑的考驗！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

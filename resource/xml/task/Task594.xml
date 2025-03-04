@@ -1,0 +1,93 @@
+<Tasks ID="594" Name="大小摩尔去郊游" AwardMsg="恭喜你获得哈哈魔法师礼盒，现在可以去找哈哈魔法师兑换礼物了！" AwardBean="" >
+	<Step ID="1" TarMapID="83">
+		<EnterMap MapID="83">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10100" Face="正常" Msg="{$username}，快点来试试这辆带有小拉姆安全座椅的道奇酷威环游庄园吧！ " Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="什么是试驾呀？" Option=""/>
+				<Talk NpcID="10100" Face="正常" Msg="试驾就是沿着指定路线驾驶新车，从而了解这款车的性能！" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="哇！好酷呀！我想快点试驾！" Option=""/>
+				<Talk NpcID="10100" Face="正常" Msg="别急哦！先看下庄园环游地图！我们出发咯！" Option=""/>
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="OPEN_PANEL" Param="KeLaiSiLePanel" ClearMap="0"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="2" >
+		<SubmitScore ModuleID="10078" MinScore="1" LoseMsg="小摩尔没有成功答对哦" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10100" Face="正常" Msg="太棒啦！小摩尔，我们出发咯！ " Option=""/>
+			</Action>		
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="53" MapType="0" />
+		</SubmitScore>
+	</Step>	
+	
+	
+	<Step ID="3" TarMapID="53">
+		<EnterMap MapID="53">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="嚯嚯嚯~环游庄园呀~~~非常不错的想法呢！继续加油！ " Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="嘿嘿！大伯，我要去下一站啦！大伯再见！" Option=""/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="21" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" TarMapID="21">
+		<EnterMap MapID="21">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10052" Face="正常" Msg="环游庄园？你的小拉姆好开心的样子！  " Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="那当然，我这辆车有安全座椅呢！小拉姆和小小摩尔都可以安全舒服的坐在车上！" Option=""/>
+				<Talk NpcID="10052" Face="正常" Msg="哈哈，好开心！小摩尔赶快去下一站吧！  " Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="彩虹姐姐再见！" Option=""/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="GO_MAP" MapID="1" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="5" TarMapID="1">
+		<EnterMap MapID="1">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10012" Face="正常" Msg="Hi,亲爱大小摩尔！你的车真棒！  " Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="谢谢粒粒！你也可以去交通署蒋诚信那里借车试驾哦！" Option=""/>
+				<Talk NpcID="10012" Face="正常" Msg="恩！我一定去！再见！  " Option=""/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+			<Action Cmd="GO_MAP" MapID="149" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="6" TarMapID="149">
+		<EnterMap MapID="149">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10058" Face="正常" Msg="{$username}，环游庄园是个不错的体验呢！祝你玩的开心！  " Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="谢谢伊莲！再见啦~~！" Option=""/>
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="7" Step="7" />
+			<Action Cmd="GO_MAP" MapID="83" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="7" TarMapID="83">
+		<EnterMap MapID="83">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10100" Face="正常" Msg="{$username}，驾这道奇酷威玩的开心吗？   " Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="谢谢你！我们玩的非常开心!下次再来！" Option=""/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

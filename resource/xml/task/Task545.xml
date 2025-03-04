@@ -1,0 +1,205 @@
+<Tasks ID="545" Name="公主的禮物" AwardMsg="恭喜你獲得30個歡樂星星、2000摩爾豆" AwardBean="2000" >     
+	<Step ID="1" >
+		<EnterMap MapID="110" >
+		
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="麼麼公主不會……不會連最近這段時間發生的事情也都不記得了吧？？？" Option="啊？！"/>
+				<Talk NpcID="10057" Face="悲傷" Msg="糟啦！怎麼感覺公主連我都不記得了呢……" Option="嗚嗚嗚~可憐的瑪麗……" />
+				<Talk NpcID="10148" Face="正常" Msg="這怎麼可能啊，記憶泡泡明明就全都回到公主的腦海中了。" Option="雪精靈，這事你怎麼看？" />
+				<Talk NpcID="10148" Face="正常" Msg="該做的我們都已經做了，如果公主還是不能恢復記憶的話……這⊙︿⊙……" Option="連雪精靈也沒辦法了。" />
+			</Action>
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="疑惑" Msg="你們又是誰？怎麼可以擅自進入別人的家。" Option="啊，公主該不會真的……"/>
+				<Talk NpcID="10007" Face="焦急" Msg="麼麼……你……不會又不記得二叔了吧？！" Option="呃……這個，恐怕是的。" />
+				<Talk NpcID="10009" Face="驚訝" Msg="麼麼公主，我是你的閨蜜好友丫麗啊！你難道也不記得了嗎？" Option="哎，丫麗又要傷心了。" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" >	
+		<EnterMap MapID="110" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1"/>	
+				<Action Cmd="SAY" >
+					<Talk NpcID="10000" Face="焦急" Msg="大伯，別太傷心了。公主剛剛醒，說不定這只是暫時的呢？說不定麼麼公主多休息休息就好了呢？說不定……" Option="怎麼那麼多“說不定”啊……"/>
+					<Talk NpcID="10148" Face="正常" Msg="公主的記憶是被強行驅散出體內，再全部融入腦海中的。估計是記憶泡泡現在還沒有完全融合，還只是一些零散的記憶片段。" Option="雪精靈說的有幾分道理。" />
+					<Talk NpcID="10148" Face="正常" Msg="不過我也不敢肯定，還是要先看看再說。" Option="先讓公主好好休息一下。" />
+					<Talk NpcID="10007" Face="焦急" Msg="那就讓麼麼先休息，相信有我們大家的關心和陪伴，麼麼肯定會恢復記憶的。" Option="一起為麼麼公主祈禱！" />
+					<Talk NpcID="10007" Face="正常" Msg="我今天來還有一件重要的事要跟大家商量。" Option="什麼事？" />
+					<Talk NpcID="10007" Face="正常" Msg="大家也知道，麼麼公主的生日就快到了，每年公主生日，莊園裡都會大肆慶祝，今年也不能例外。" Option="可公主現在的情況……" />
+					<Talk NpcID="10007" Face="正常" Msg="還因為最近莊園裡發生的事情，都與惡魔島、黑暗力量等等有關，黑暗勢力已經悄悄潛入莊園。就連我們的公主，也深受其害。" Option="大家也都很擔心公主的安危。" />
+					<Talk NpcID="10007" Face="正常" Msg="為了不讓莊園上下全都人心惶惶，不讓大家對公主、對皇室失去信心。這場生日宴會一定要如期舉行，並且還要比以往更加熱鬧、更加隆重。" Option="這可是鼓舞士氣、團結人心的好時機。" />
+					<Talk NpcID="10000" Face="正常" Msg="可麼麼公主能準時出席宴會嗎？" Option="這……" />
+					<Talk NpcID="10009" Face="正常" Msg="公主不能準時出席，不是還有我嗎？我代替公主出席。" Option="丫麗不會又想上演一場真假公主吧？" />
+					<Talk NpcID="10009" Face="正常" Msg="樂樂，別以為只有你會完美變裝哦，我也可以！" Option="你倆真是一對歡喜冤家啊！" />
+					<Talk NpcID="10007" Face="正常" Msg="不過，這倒是可以作為備用計劃。最好的，還是公主能恢復記憶，參加自己的生日宴會。" Option="丫麗這個假小子，肯定會露餡兒啦！" />
+					<Talk NpcID="10007" Face="正常" Msg="事不宜遲，樂樂你們先去籌備公主的生日宴會吧，麼麼就交給丫麗和瑪麗照顧。" Option="那你呢？大伯？" />
+					<Talk NpcID="10007" Face="正常" Msg="我得去看看天使園的重建進行地怎麼樣了，一定做好萬全的防備措施，不能再讓公主的生日宴會出狀況。" Option="哇！全新的天使園就快要建成啦！" />
+				</Action>
+				<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+				<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1"/>	
+				<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+				<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1" IsStopSound="1"/>
+				<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+				<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+				<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+				<Action Cmd="GO_MAP" MapID="111" MapType="0" />	
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="3" >	
+		<EnterMap MapID="111" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="驚訝" Msg="{$username}，怎麼是你？你怎麼知道我在這兒？還有誰跟你一起的？" Option="公主，我……我……就我一個人……"/>
+				<Talk NpcID="10002" Face="驚訝" Msg="我剛剛說的話，你都聽到了？" Option="⊙﹏⊙說那麼大聲，能聽不到嗎？" />
+				<Talk NpcID="10002" Face="正常" Msg="好吧，既然你都聽到了，我也就跟你實話實說吧！其實……我已經恢復記憶啦！o(∩_∩)o 哈哈~~~" Option="淘氣的公主，大家可都擔心壞了！" />
+				<Talk NpcID="10002" Face="正常" Msg="我知道大家最近因為我的事，費了不少心。而且我的生日也快到了，每年都是大家為我過生日，送我禮物，今年……" Option="今年公主不想要禮物了？" />
+				<Talk NpcID="10002" Face="正常" Msg="笨蛋，是今年我要送大家禮物啦！想給大家一個大大的驚喜，在生日當天。所以才瞞著大家，假裝自己還沒恢復記憶。" Option="哦~~~原來如此。" />
+				<Talk NpcID="10002" Face="正常" Msg="{$username}，你可一定要替我保守秘密哦！(*^__^*) 嘻嘻，快來幫我一起找我為大家準備的第一份驚喜，好嗎？" Option="樂意之至！" />
+				<Talk NpcID="10002" Face="正常" Msg="我知道這是我跟丫麗都很喜歡的一個布偶，這是我們閨蜜友情的見證！" Option="閨蜜好友還有見證禮物~~~果然是小女生~" />
+				<Talk NpcID="10002" Face="焦急" Msg="可我現在怎麼找都找不到了……這可怎麼辦才好呢？" Option="別著急，我幫你一起找吧！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+<!--面板交互1		全屏的-->
+			<Action Cmd="OPEN_PANEL" Param="LightBearpanel" /> 
+		</EnterMap>		
+	</Step>
+	
+	<Step ID="4" >	
+		<SubmitScore ModuleID="10054" MinScore="1" LoseMsg="　　你還沒有找到小熊，需要繼續試嗎？" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="4000" Name="movie_4000" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="開心" Msg="{$username}謝謝你的幫忙！要是沒你在，我肯定不可能這麼快完成。" Option="這份驚喜，丫麗肯定會喜歡的。" />
+				<Talk NpcID="10002" Face="開心" Msg="為丫麗準備的驚喜已經大功告成了，接下來我們再去為摩樂樂準備驚喜去吧！{$username}快跟我來。" Option="公主，等等我~昏迷才醒，別走太快了。" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4000" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />	
+ 			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+ 			<Action Cmd="GO_MAP" MapID="41" MapType="0" />	
+ 		</SubmitScore>
+	</Step>
+	
+	<Step ID="5" >	
+		<EnterMap MapID="41" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="焦急" Msg="上次我害得樂樂吃苦瓜都吃吐了，我覺得有點過意不去。所以準備來這裡摘一點香甜的水果給樂樂送去。" Option="公主，你可真貼心。" />
+				<Talk NpcID="10002" Face="悲傷" Msg="我知道樂樂還在為欺騙了我而自責，我也知道大家瞞著我也是為了讓我開心，我知道大家的用心良苦。" Option="麼麼公主你明白就好了！" />
+				<Talk NpcID="10002" Face="開心" Msg="{$username}，幫我一起摘水果吧！記得要摘又大又甜的喲！" Option="保證比苦瓜甜120倍！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />	
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="疑惑" Msg="{$username}，你看見了嗎？剛剛有兩個黑影在叢林的另一邊，他們還在說著什麼“任務”……“什麼不會失望”……" Option="我怎麼沒聽見？" />
+				<Talk NpcID="10002" Face="焦急" Msg="啊！他們該不會是皇家騎士團派人來抓我回去的吧？！" Option="這個，不像是皇家騎士團的人……" />
+				<Talk NpcID="10002" Face="疑惑" Msg="那他們會是誰呢？怎麼會出現在這裡……" Option="公主，先不要想這個了，快摘水果吧！" />
+				<Talk NpcID="10002" Face="焦急" Msg="你說得對，不管他們是什麼人，我們都趕快摘了水果就走吧！別被發現了，小心一點哦！" Option="嗯，好的，公主殿下。" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="6" >
+		<EnterMap MapID="41" >	
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+<!--這裡打開摘果實的遊戲，只要摘到三個即可以過關-->
+			<Action Cmd="ACT_EVENT" Param="openPickFruit" /><!-- 拋事件 -->
+			<Action Cmd="ADD_EVENT" Param="taskGo" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="開心" Msg="這下摩樂樂不會再被苦得吐出來了！{$username}，你說是吧？" Option="那是當然，我摘的水果可是最甜的！" />
+				<Talk NpcID="10002" Face="開心" Msg="這……多少也有一點我的功勞在裡面吧！我可也幫忙摘了水果的哦！" Option="好吧，功勞一人一半！" />
+				<Talk NpcID="10002" Face="開心" Msg="這還差不多！接下來的這個驚喜……我可真不知道準備什麼才好了！" Option="是為誰準備的呢？" />
+				<Talk NpcID="10002" Face="正常" Msg="是為二叔準備的，我失去記憶的這段時間，二叔可為我操了不少心，我一定要給他一個大大的驚喜！" Option="我到覺得這個驚喜最簡單。" />
+				<Talk NpcID="10002" Face="疑惑" Msg="給二叔準備的驚喜，怎麼可能是最簡單的呢？他可是我最尊敬，最重要的親人。" Option="所以才是最簡單的啊！" />
+			</Action>
+<!--打開一個帶動畫效果的面板 ID為999-->
+			<Action Cmd="PLAY_MOVIE" Param="999" Name="movie_999" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_999" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="開心" Msg="謝謝你的提醒{$username}，我知道該怎麼做了。" Option="呵呵，麼麼公主，你太客氣了。" />
+				<Talk NpcID="10002" Face="開心" Msg="那我們現在就去學院教導處找二叔吧！" Option="GO！GO！GO！" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="7" Step="7" />
+ 			<Action Cmd="GO_MAP" MapID="53" MapType="0" />
+ 		</EnterMap>		
+	</Step>
+	
+	<Step ID="7" >	
+		<EnterMap MapID="53" >	
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10007" Visible="0" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="生氣" Msg="麼麼你知道大家有多擔心你嗎？眼看著你又要長大一歲了，怎麼還是這麼任性呢？" Option="嗚嗚~大伯，事情不是這樣子的……" />
+				<Talk NpcID="10007" Face="生氣" Msg="不要拿失憶當藉口，不管因為什麼原因，做錯了就是應該虛心接受別人的批評。" Option="大伯，不要責怪麼麼公主了……" />
+				<Talk NpcID="10007" Face="生氣" Msg="看見大家都著急得像熱鍋上的螞蟻，這樣很有意思嗎？麼麼，這次你任性的真的有點過分了哦！" Option="大伯，不要責怪麼麼公主了……" />
+				<Talk NpcID="10009" Face="正常" Msg="大伯，你也不要責怪麼麼公主了，現在公主不是平安回來了嗎？而且，還好像……好像……" Option="好像什麼？" />
+				<Talk NpcID="10000" Face="正常" Msg="好像麼麼公主的記憶已經全部恢復了。她剛剛叫大伯叫的「二叔」！" Option="……不是好像，這是真的！" />
+				<Talk NpcID="10009" Face="正常" Msg="對！麼麼公主，你真的恢復記憶了嗎？你都記得大家了對不對？" Option="當然還記得丫麗這個好閨蜜！" />
+				<Talk NpcID="10007" Face="焦急" Msg="麼麼，你的記憶都恢復了嗎？什麼時候恢復的？恢復了記憶，為什麼還不趕緊回家呢？你不知道大家會擔心你的嗎？" Option="我來幫麼麼公主解釋！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />	
+			<Action Cmd="SET_BUFFER" Panel="8" Step="8" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10007" Visible="1" />
+<!--出現解釋INg的面板			-->
+			<Action Cmd="OPEN_PANEL" Param="LuExplainIngPanel" /> 
+ 		</EnterMap>	
+	</Step>
+	
+	<Step ID="8" >	
+		<SubmitScore ModuleID="10053" MinScore="1" LoseMsg="　　小摩爾繼續加油哦！" >
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10007" Visible="0" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="悲傷" Msg="麼麼知道錯了，不該讓大家這麼擔心的，其實我醒來的時候已經恢復記憶了。" Option="嗚嗚嗚~公主沒事了就好！" />
+				<Talk NpcID="10002" Face="悲傷" Msg="我知道在我失去記憶的這段時間，大家都很照顧我。我不跟大家說我已經恢復記憶，是想給大家悄悄的準備驚喜，沒想到卻讓大家更擔心了。" Option="公主別難過了。" />
+				<Talk NpcID="10002" Face="悲傷" Msg="每年的生日宴會，都是大家為我準備禮物。今年，我想藉著這個機會，也給大家準備一點小驚喜。" Option="公主其實也是一番好意的。" />
+				<Talk NpcID="10007" Face="正常" Msg="傻孩子，二叔剛剛也是太著急了，才說了你幾句。希望你也能體諒二叔的關心和擔憂！" Option="真是愛之深，責之切啊！" />
+				<Talk NpcID="10009" Face="開心" Msg="麼麼公主，你現在真的已經什麼都記得了嗎？" Option="閨蜜~閨蜜~~~當然記得丫麗你了。" />
+				<Talk NpcID="10002" Face="開心" Msg="我的好閨蜜丫麗，我怎麼可能不記得你！我失去記憶的這段時間，真是謝謝你了。" Option="好朋友之間，是應該互相幫助。" />
+				<Talk NpcID="10002" Face="焦急" Msg="還有……還有樂樂……對不起，我知道大家不告訴我真相是因為不想讓我失望，大家也都是為了我好。" Option="謊言雖善意，但也不能說多了。" />
+				<Talk NpcID="10000" Face="開心" Msg="麼麼公主，別這麼說，是我不該讓大家瞞著你的。現在你回來，而且記憶也完全恢復，那就好了。" Option="摩樂樂啊……" />
+				<Talk NpcID="10002" Face="開心" Msg="為了表示我對大家的謝意，我跟{$username}一起為大家準備了驚喜喲！" Option="O(∩_∩)o 哈哈，快拿出來給大家看看！" />			
+			</Action>	
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+<!--面板2  帶動畫效果的	ID為9999		-->
+			<Action Cmd="PLAY_MOVIE" Param="9999" Name="movie_9999" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9999" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="開心" Msg="我們家的小麼麼真是長大啦！越來越懂事了。" Option="\(^o^)/" />
+				<Talk NpcID="10002" Face="開心" Msg="都是二叔教導有方！(*^__^*) 嘻嘻。" Option="難怪大家都喜歡麼麼公主，嘴真甜。" />
+				<Talk NpcID="10009" Face="開心" Msg="真好，現在大家又能開開心心的在一起玩耍了。有閨蜜好友真是件幸福的事情。" Option="原來丫麗也有這麼小女生的一面啊。" />
+				<Talk NpcID="10000" Face="開心" Msg="既然麼麼公主已經回來了，那我們趕快到為公主準備的生日宴會去把！" Option="哇！又有好吃的、好玩的啦！" />
+				<Talk NpcID="10002" Face="開心" Msg="好啊！好啊！我給大家也準備了好多小驚喜喲！給大家送驚喜去了！" Option="Let` go！" />
+			</Action>	
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />	
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10007" Visible="1" />
+ 			<Action Cmd="OVER" />	
+ 		</SubmitScore>
+	</Step>
+	
+	
+</Tasks>

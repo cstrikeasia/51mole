@@ -1,0 +1,52 @@
+﻿<Tasks ID="655" Name="三神的秘密" AwardMsg="恭喜你獲得1只肥肥魚尾豬（肥肥館）和1萬摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="53">
+		<EnterMap MapID="53">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10291" Face="正常" Msg="小傢伙，摩靈世界的探險是不是充滿兇險？" Option="大伯，你也去了嗎？你怎麼知道的？"/>
+				<Talk NpcID="10291" Face="開心" Msg="哈哈哈!大伯去過的地方比天上的星星還多，還能有大伯不知道的事情嗎？" Option="哇，大伯好厲害的樣子！大伯大伯，你為什麼自己坐在這裡擦寶劍啊？"/>
+				<Talk NpcID="10291" Face="正常" Msg="大伯也想加入摩靈戰鬥，大伯沒有老到要大家保護的程度，麼麼還沒有醒來，每個摩爾都要貢獻自己的力量！！" Option="大伯大伯！摩靈戰鬥用不上劍啊~都是摩靈在戰鬥呢，可厲害了！"/>
+				<Talk NpcID="10291" Face="正常" Msg="大伯知道，作為騎士，武器就是靈魂，靈魂懂嗎？要有氣勢~" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10258" Face="正常" Msg="大伯~~~~~飛飛回來了~~~~飛飛聽閃電說要舉行火神盃了！！！！！飛飛要玩火炬，飛飛要玩火炬嘛~！ " Option=""/>
+				<Talk NpcID="10291" Face="正常" Msg="飛飛乖，勇敢的小摩爾們才能傳遞神火的喲！" Option=""/>
+				<Talk NpcID="10258" Face="疑惑" Msg="為什麼？那飛飛不做拉姆了，飛飛也做摩爾，飛飛不管，飛飛要玩火炬嘛~" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+			<Action Cmd="GO_MAP" MapID="53" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="53">
+		<EnterMap MapID="53">			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10258" Face="開心" Msg="大伯大伯，你看，沒有說不許拉姆參加呢，快看快看！" Option=""/>
+				<Talk NpcID="10291" Face="開心" Msg="飛飛啊，你還真有心啊！不過今年的火神盃真的很危險，大伯答應帶你去看好不好？" Option=""/>
+				<Talk NpcID="10258" Face="失望" Msg="好吧，好沒勁哦……" Option=""/>
+				<Talk NpcID="10291" Face="正常" Msg="{$username}，小傢伙過來……" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10291" Face="正常" Msg="很快，大家就可以一起參加今年的火神盃了！" Option="大伯，聽說今年要請出三神？"/>
+				<Talk NpcID="10291" Face="正常" Msg="恩，摩靈的力量太過強大，我們必須請三神出場，給我們帶來滿滿的正能量！" Option="為什麼以前都沒有見到水神和木神呢？"/>
+				<Talk NpcID="10291" Face="開心" Msg="神和神之間也有著不為人知的秘密哦！" Option="哦？是嗎？"/>
+				<Talk NpcID="10291" Face="開心" Msg=" 當然啦，水、火、木原本就是相生相剋的三個屬性啊，他們之間的故事，謔謔謔，大伯都要說上九天九夜啊！" Option="大伯，你能說給我聽嗎？"/>
+				<Talk NpcID="10291" Face="開心" Msg="當然可以啊，現在大伯要做大賽準備工作了。開幕式之後來找大伯吧！現在去幫忙火神盃的準備工作啦！" Option="好噠~"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>

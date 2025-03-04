@@ -1,0 +1,154 @@
+<Tasks ID="575" Name="夢想守護者" AwardMsg="恭喜你獲得20個許願星、10個黃色水晶！" AwardBean="" >
+
+	<!-- 拉姆神秘世界  -->
+	<Step ID="1" TarMapID="123">
+		<EnterMap MapID="123">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="開心" Msg="耶嘿~水彈果然有效，零這下無計可施了，看他還怎麼逞強！" Option="果然是“摩爾齊心，其利斷金”！"/>
+				<Talk NpcID="10188" Face="正常" Msg="我以為傳說中的古德摩零是有天大的本事，原來也不過如此。" Option="主要是我們太厲害了嘻嘻嘻~"/>
+				<Talk NpcID="10154" Face="正常" Msg="哈哈哈……不要一時占了上風就得意忘形，遊戲可不是這麼玩的。" Option="還嘴硬！o(╯□╰)o"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="生氣" Msg="切~打不過就跑，還真是零的拿手好戲啊！" Option="那確實o(╯□╰)o"/>
+				<Talk NpcID="10000" Face="正常" Msg="不過……話說回來，RK怎麼會突然出現在莊園的？又為什麼和零打了起來？" Option="RK總是這麼的出人意料( ⊙ o ⊙ )"/>
+				<Talk NpcID="10188" Face="正常" Msg="小朋友，還是收起你們的好奇心吧，我很感謝你們的幫忙，但我的事你們最好還是別過問——這是為了你們好。好了，我也得走了，再見！" Option="等等，說清楚再走啊！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="焦急" Msg="真是讓人摸不著頭腦……算了，不管他了，還是好好想想咱們的許願池該怎麼辦吧！" Option="對，這才是最重要的！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10010" Face="正常" Msg="樂樂、{$username}，告訴你們一個好消息，許願池的池水回來了呢。嘿嘿，我之前有很努力地為許願池打水哦！" Option="哇~~真的嗎？太好了！"/>
+				<Talk NpcID="10011" Face="正常" Msg="看來我們一起拯救許願池還是很有效的。走吧，我們一起回許願池看看！" Option="嗯，我們這就過去！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="2" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 愛心廣場 -->
+	<Step ID="2" TarMapID="2">
+		<EnterMap MapID="2">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="wish_btn" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="開心" Msg="看咱們的許願池水，多美呀！嘻嘻，我來試試，想想看，許個什麼願望好呢……嘿~有了！" Option="丫麗動作還真是快呀！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="驚訝" Msg="怎，怎麼會這樣？我的許願瓶……" Option="丫麗，你許的什麼願望呀，連許願池都被你嚇到了！"/>
+				<Talk NpcID="10009" Face="焦急" Msg="才沒有呢，我就只許了個小小的願望而已，太奇怪了！難道……現在的許願池還是有問題？！" Option="難道我們白開心了一場？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="生氣" Msg="天啊，一波未平一波又起！究竟是誰這麼大膽，竟然闖入我們的聖地。我非得去把他逮住不可！" Option="啊，等等我，我也一起去~"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="43" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 力量之泉-->
+	<Step ID="3" TarMapID="43">
+		<EnterMap MapID="43">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10160" Face="生氣" Msg="是哪個冒失鬼啊，沒看見本大人還站在這裡嗎？哎喲，我的腦袋……" Option="小惡魔？！好哇~又是你們！"/>
+				<Talk NpcID="10009" Face="驚訝" Msg="原來闖入力量之泉的是你們這群壞傢夥，又到這兒來幹什麼壞事？嘖，嘖，天啊，這石碑……好好的石碑就這麼被你們破壞掉了！" Option="破壞公共財產，太可惡了！"/>
+				<Talk NpcID="10160" Face="正常" Msg="丫，丫麗？！哦，不不，是女王大人！什麼風把您給吹來了？正好，我們得到了一件寶貝，可以好好孝敬下您！孩兒們，快把寶蛋給女王大人送過來！" Option="這嘴臉，變得可真夠快的……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10160" Face="正常" Msg="女王大人，這可不是一顆普通的蛋哦，能煎能煮能清蒸，吃一頓可管三天，營養多多滴！上古神蛋，女王專享！" Option="汗，這馬屁拍的……"/>
+				<Talk NpcID="10009" Face="生氣" Msg="好啦，別廢話了，趕緊交代你們來這裡幹什麼的！" Option="丫麗好同志，經得起考驗！"/>
+				<Talk NpcID="10160" Face="正常" Msg="我，我們就是為零大人過來辦點事，零大人很喜歡這塊石碑，所以……好啦，談公事多無趣，我們還是談談這顆蛋吧……" Option="看來零又想來破壞石碑的正義之力！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="不愧是零的手下，逃跑水準一流啊！不過，這顆蛋又是怎麼回事，看起來好奇特啊，還挺漂亮的！呀，你們快看，這顆蛋在發光！" Option="真的呢，它發光了！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+<!--  			<Action Cmd="GO_MAP" MapID="43" MapType="0" /> -->
+		</EnterMap>
+	</Step>
+	
+	<!-- 力量之泉 -->
+	<Step ID="4" TarMapID="43">
+		<EnterMap MapID="43">
+			<Action Cmd="OPEN_PANEL" Param="Task575Panel" ClearMap="1"/>
+			<Action Cmd="ADD_EVENT" Param="task575PanelOver"/>
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="13" Name="movie_13" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10189" Face="正常" Msg="是夢想的力量，喚醒了沉睡千年的我，我就是夢想的守護者。充滿夢想的小摩爾，在尋夢途中，你是否遇到什麼難題需要我説明的嗎？" Option="哇~夢，想，守，護，者？！"/>
+				<Talk NpcID="10189" Face="正常" Msg="沒錯，我就是為夢想而生的夢想守護者。夢想的力量，將助你戰勝一切難題。" Option="那，你可以幫助恢復許願池的神力嗎？"/>
+				<Talk NpcID="10189" Face="正常" Msg="我可以盡力試試，但能否成功，這還取決於你們自身，取決於你們心中夢想的力量。請跟我一起去許願池吧！" Option="嗯，好的！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_13" />
+			
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+ 			<Action Cmd="GO_MAP" MapID="2" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 愛心廣場 -->
+	<Step ID="5" TarMapID="2">
+		<EnterMap MapID="2">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="wish_btn" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="14" Name="movie_14" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="天啊，這究竟是發生了什麼？夢想守護者、RK，一切出現得太快，消失得也太快，我都快回不過神來了……" Option="是啊，整個事情越來越離奇了……"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_14" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

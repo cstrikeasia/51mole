@@ -1,0 +1,201 @@
+<!-- task_movie_512_100到105之間是美術還沒做好的全屏動畫，到時候可以替換 -->
+<Tasks ID="512" Name="勇闖荊棘林" AwardMsg="恭喜你獲得藍絲帶公主髮型、2000摩爾豆！" AwardBean="2000" >
+	<Step ID="1" >
+		<EnterMap MapID="120" >
+			<Action Cmd="SET_ATTRIBUTE" Level="buttonLevel" ResName="Cloud_btn" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />	
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1"/>       <!-- 這裡需要遮罩場景中的紫風靈雲 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10108" Face="正常" Msg="嗨，老朋友，好久不見啦！" Option="哇！紫風靈雲，是你！" />
+				<Talk NpcID="10108" Face="正常" Msg="你這是要去黑森林嗎？最近這邊總是霧濛濛的，很難看清方向，不如讓我來載你一程吧！" Option="嗯，好呀！太感謝了！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />	
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="OPEN_PANEL" Param="AvoidCloudPanel" />
+			<!--打開搜集紫風靈雲的遊戲 -->																			
+		</EnterMap>	
+	</Step>			
+	
+	<Step ID="2" >
+		<SubmitScore ModuleID="10026" MinScore="0" LoseMsg="沒有成功通過遊戲的第一關哦！要重新試試嗎？" >
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+					
+			<Action Cmd="GO_MAP" MapID="301" MapType="0" />	
+		</SubmitScore>
+	</Step>	
+	
+	<Step ID="3" >  
+		<EnterMap MapID="301" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10109" Face="悲傷" Msg="嗚嗚~我要媽媽，我要回家~" Option="小刺蝟，你在哭什麼呀？" />
+				<Talk NpcID="10109" Face="悲傷" Msg="嗚嗚，別亂叫，人家才不是小刺蝟呢！" Option="啊？我看你滿身刺，我以為……" />
+				<Talk NpcID="10109" Face="悲傷" Msg="都怪荊棘寶寶把我弄成這樣~不知道誰把荊棘寶寶惹生氣了，最近荊棘叢林變得躁動不安，我再不敢出來玩了……" Option="荊棘寶寶是誰？" />
+				<Talk NpcID="10109" Face="悲傷" Msg="你能先幫忙把我身上的刺給拔下來嗎？我再慢慢告訴你！" Option="嗯，好呀！" />
+			</Action>
+			
+			 <Action Cmd="SET_BUFFER" Panel="4" Step="4" />	
+			<!--打開蘑蘑菌刺蝟的交互面板 -->	
+			<Action Cmd="OPEN_PANEL" Param="AnimalThornsPullPanel" Data ="1" />																
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" >
+		<SubmitScore ModuleID="10025" MinScore="1" LoseMsg="很遺憾你成功，和媽媽一起再努力一次吧！" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10110" Face="正常" Msg="真是太謝謝你了！我又恢復原樣了！" Option="那你能給我講講荊棘叢林的事了嗎？" />
+				<Talk NpcID="10110" Face="正常" Msg="嗯！荊棘寶寶是荊棘叢林的主人，原本這裡都很寧靜，最近幾天，荊棘寶寶不知怎麼變得非常憤怒，小動物們因此而受到牽連呢……" Option="就沒人能平息荊棘寶寶的憤怒嗎？" />
+				<Talk NpcID="10110" Face="正常" Msg="試過了，不行！恐怕只有德高望重的毛毛頭酋長能幫忙平息荊棘寶寶的憤怒了！可是毛毛怪部落路途遙遠，一般人去不了……" Option="我去找找毛毛頭部落！" />
+				<Talk NpcID="10110" Face="正常" Msg="你真勇敢！一直往前走就能到達毛毛怪部落！不過要小心，叢林裡到處都是危險。媽媽給了我一些平安果，還剩三顆，都給你吧！可以抵擋一些襲擊。" Option="好呀，謝謝你！" />
+				<Talk NpcID="10110" Face="正常" Msg="記得要在平安果消耗完之前成功抵達毛毛怪部落！對了，要戴上“毛毛頭翻譯頭套”才能聽懂毛毛頭的話，如果沒有頭套，毛毛怪部落那應該能找到！" Option="嗯，好呀！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />	
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />	
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			 <Action Cmd="SET_BUFFER" Panel="5" Step="5" />										
+		</SubmitScore>
+	</Step>
+	
+	<Step ID="5" >
+		<EnterMap MapID="302" >
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10111" Face="焦急" Msg="怎麼辦呀，變得這麼難看，這可怎麼辦呀！" Option="你遇到什麼麻煩了嗎？" />
+				<Talk NpcID="10111" Face="焦急" Msg="哎，我本來準備和我的好朋友花花一起去玩，可沒想到遇到了憤怒的荊棘寶寶，它把我弄成了現在這幅模樣，這麼難看，還怎麼去見花花呀！" Option="啊，又是荊棘寶寶！" />
+				<Talk NpcID="10111" Face="焦急" Msg="是呀，最近荊棘寶寶總是怒氣衝衝，大家都不敢惹它，沒想到我一出門就碰到它，真不走運。對了，你能幫幫我，讓我變得好看些嗎？" Option="嗯，沒問題！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />			
+			<Action Cmd="SET_BUFFER" Panel="5" Step="6" />
+			<Action Cmd="OPEN_PANEL" Param="AnimalThornsPullPanel" Data="2" />	
+		</EnterMap>			
+	</Step>	
+	
+	<Step ID="6" >
+		<SubmitScore ModuleID="10025" MinScore="1" LoseMsg="" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />			
+			<Action Cmd="SET_BUFFER" Panel="5" Step="7" />										
+		</SubmitScore>
+	</Step>		
+
+	<Step ID="7" >
+		<EnterMap MapID="303" >
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10112" Face="悲傷" Msg="嗚嗚，疼~我身上好疼……" Option="可憐的小傢伙，你怎麼受傷了？" />
+				<Talk NpcID="10112" Face="悲傷" Msg="嗚嗚，我剛才只是和荊棘寶寶開個玩笑，誰知它就把我打成了這樣，嗚嗚，疼……" Option="荊棘寶寶也太暴力了吧( ⊙ o ⊙ )" />
+				<Talk NpcID="10112" Face="悲傷" Msg="疼得我都走不動了，這可怎麼回家去呀……" Option="別傷心，我來幫你清理下傷口！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />			
+			<Action Cmd="SET_BUFFER" Panel="5" Step="8" />
+			<Action Cmd="OPEN_PANEL" Param="AnimalThornsPullPanel"  Data ="3"/>	
+		</EnterMap>			
+	</Step>	
+
+	<Step ID="8" >
+		<SubmitScore ModuleID="10025" MinScore="1" LoseMsg="小摩爾繼續加油哦！" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="9" />
+			
+			<!--
+			<Action Cmd="SAY" >
+				<Talk NpcID="10114" Face="正常" Msg="我是毛毛頭酋長，你可以叫我酋長，首領！" Option="我知道了！" />
+			</Action>
+			 這裡還要判斷玩家是否裝扮了毛毛頭翻譯頭套啊！！穿了頭套才出現下面的語言，具體參見案子 -->
+			 
+		</SubmitScore>
+	</Step>	
+
+	<Step ID="9" >
+		<NPC ID="10115" Option="勇闖荊棘林"  >
+			<Action Cmd="SET_BUFFER" Panel="6" Step="9" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10115" Face="正常" Msg="作為毛毛頭最偉大的部落酋長，我可是對黑森林的一切都瞭若指掌！" Option="請問您有辦法平息荊棘寶寶的憤怒嗎？" />
+				<Talk NpcID="10115" Face="正常" Msg="平息憤怒自然沒問題，不過得先弄明白它憤怒的原因。" Option="您能幫幫忙嗎？" />
+				<Talk NpcID="10115" Face="正常" Msg="我試試吧！" Option="謝謝酋長！" />
+			</Action>
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10115" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />		
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />		
+			<Action Cmd="SAY" >
+				<Talk NpcID="10115" Face="正常" Msg="原來，荊棘寶寶是受人欺負才變得如此暴躁！黑森林少有外人，那個穿斗篷的人為何突然闖入呢？" Option="是庫拉！他似乎在打什麼寶貝的主意！" />
+				<Talk NpcID="10115" Face="正常" Msg="待我再來查探一番！" Option="嗯，好的！" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1"/>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />	
+			
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />	
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10115" Visible="1" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10115" Face="正常" Msg="我還是很小很小的時候，從長輩們口中聽過金色鳶尾花的故事了。傳說金色鳶尾花是用生命澆灌的神奇花朵，凝聚了最純正的白魔法，壓制了黑森林中的黑暗力量數百年……" Option="一定得想辦法阻止庫拉！" />
+				<Talk NpcID="10115" Face="正常" Msg="還是先去治好荊棘寶寶，平息它的憤怒吧！你先返回荊棘叢林找荊棘寶寶，稍後我會派小毛毛頭去幫你的！" Option="好的，我這就去！" />
+			</Action>
+			
+			<Action Cmd="SET_BUFFER" Panel="7" Step="10" />	
+			<Action Cmd="GO_MAP" MapID="301" MapType="0" />		
+		</NPC>																									
+	</Step>	
+
+	<Step ID="10" >
+		<EnterMap MapID="301" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10116" Face="正常" Msg="荊棘寶寶，你別生氣，這個小摩爾不是壞人，他想幫助你呢！" Option="是呀！我沒有惡意的！" />
+				<Talk NpcID="10116" Face="正常" Msg="看！我還帶來了我們毛毛怪族的神奇果實，是爸爸施過法的，它能治好荊棘寶寶身上的傷。" Option="哇~真高級，還是開過光的！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />	
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10113" Face="正常" Msg="太好了，我又恢復原樣了！下次再看到那個壞摩爾，一定饒不了他！" Option="他是惡法師庫拉，是來找金色鳶尾花的！" />
+				<Talk NpcID="10113" Face="正常" Msg="金色鳶尾花！我曾聽爺爺說過，金色鳶尾花的力量非常強大……哎呀，我們先別管這些啦！為了謝謝你，我帶你們盪鞦韆吧，很好玩的！" Option="啊？盪鞦韆~~" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />	
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="owl" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="showTip" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="13" Name="movie_13" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_13" />	
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106" />	
+			
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105" />	
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="owl" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="showTip" Visible="1" />
+			
+			<Action Cmd="OVER" />						
+		</EnterMap>
+	</Step>	
+</Tasks>
+
+
+

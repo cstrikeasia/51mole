@@ -1,0 +1,28 @@
+<Tasks ID="514" Name="KFC：尋找驚喜！" AwardMsg="恭喜你獲得KFC友誼帽" AwardBean="14400" >
+	<Step ID="1" >
+		<EnterMap MapID="203" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10043" Face="正常" Msg="快樂的小摩爾，歡迎光臨我的餐廳！這裡是充滿快樂和歡樂的KFC餐廳" Option="奇奇你好！" />
+				<Talk NpcID="10043" Face="正常" Msg="{$username}，我正等著你呢。這次特意為你準備的4個驚喜已經藏好咯，你要不要找找看呢？" Option="當然啦！" />
+				 <Talk NpcID="10043" Face="正常" Msg="所有的小驚喜藏在餐廳內哦，你快去找找看吧！" Option="我這就去！" />
+			</Action>
+				<Action Cmd="OPEN_PANEL" Param="KFCSearchUi2" />                <!-- 此時是找尋5個禮物 -->	
+ 			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+ 		</EnterMap>	
+	</Step>			
+	
+	<Step ID="2" >
+ 		<SubmitScore ModuleID="10023" MinScore="1" LoseMsg="很遺憾你沒有找到所有的KFC道具，和媽媽一起再努力一次吧！" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10043" Face="正常" Msg="恩，我看看……有超能骨頭、棉花種子、草莓棉花糖、 肯德基線下活動告知…" Option="……" />
+				<Talk NpcID="10043" Face="正常" Msg="真厲害呢，你已經找到了我藏起來的4個驚喜咯！" Option="是的！" />
+				<Talk NpcID="10043" Face="正常" Msg="另外，送你一頂友誼帽，戴上它就可以和朋友分享友誼啦！和好友互相點擊對方的友誼帽，就可以獲得精美禮品哦！" Option="我要馬上戴上友誼帽！" />
+				<Talk NpcID="10043" Face="正常" Msg="我給你那個“友誼帽”的願意就是希望讓你懂得一個道理，就是與人分享，與夥伴們分享！" Option="恩？" />
+				<Talk NpcID="10043" Face="正常" Msg="現在你帶上“友誼帽”，帶上它你還可以可以與你的小夥伴分享KFC雙層漢堡、草莓棉花糖、超能骨頭！每天都可以分享一次哦！你願意與你的小夥伴分享嗎？不要忘記點擊其它小朋友的”友誼帽”哦！" Option="當然願意！" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2"/>
+ 			<Action Cmd="DELETE_MOVIE" Param="movie_2" />                 <!-- 此時是彈出一個面板 --> 
+			<Action Cmd="OVER" />
+		</SubmitScore>			
+	</Step>	
+</Tasks>

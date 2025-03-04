@@ -1,0 +1,35 @@
+<Tasks ID="365" Name="我想成為SMC小獵人" >
+	<Step ID="1" >
+		<NPC ID="10053" Option="我想成為SMC小獵人" >
+			<Action Cmd="ACT_EVENT" Param="NPCOldJob" /><!-- 拋事件 -->
+		</NPC>
+		
+		<EnterMap MapID="100000001" >		                         <!-- 沒開始任務 -->	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10053" Face="正常" Msg="小摩爾是否想抓捕各種可愛豬豬，馴養在屬於自己的肥肥館裡呢？如果你有信心成為一個優秀的小獵人的話，那趕快點擊右上角SMC徽章來獲取就職任務吧！" Option="好的，我這就去！" />
+			</Action>
+		</EnterMap>		
+		
+		<EnterMap MapID="100000002" >								<!-- 未完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10053" Face="正常" Msg=" 非常遺憾，你的任務還未完成，暫時還不能成為小獵人的一員。不過不用灰心，只要仔細觀察多動腦筋，相信你一定會成功的，加油哦！" Option="嗯！我再試一試！" />
+			</Action>
+		</EnterMap>
+		<EnterMap MapID="100000003" >									  <!-- 已完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10053" Face="正常" Msg=" 恭喜你，順利完成了小獵人的任職任務！從現在開始，你可以通過自己的努力來抓捕和馴養可愛豬豬了！趕緊去肥肥館看一看吧！" Option="好的，謝謝您！" />
+			</Action>
+			
+			<Action Cmd="ACT_EVENT" Param="JustOverJob" /><!-- 拋事件 -->
+		</EnterMap>
+		<EnterMap MapID="100000004" >									  <!-- 已完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10053" Face="正常" Msg=" 更多小獵人任務你可以點擊右上角SMC徽章獲取。" Option="好的，我知道了！" />
+			</Action>
+		</EnterMap>
+		
+	</Step>
+					
+</Tasks>
+
+

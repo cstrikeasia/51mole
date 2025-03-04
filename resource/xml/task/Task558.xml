@@ -1,0 +1,75 @@
+<Tasks ID="558" Name="新年愛禮盒" AwardMsg="恭喜你獲得了5個紅包樹種子、經驗果實（小）!" AwardBean="" >
+	<!-- 學院教導處 -->
+	<Step ID="1" TarMapID="203" >
+		<NPC ID="10043" Option="新年愛禮盒">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10043" Face="正常" Msg="親愛的小摩爾，歡迎光臨我的餐廳。新年就要到了，今年奇可給大家準備了豐盛的禮物呢！" Option="是什麼？是什麼？好期待啊" />
+				<Talk NpcID="10043" Face="正常" Msg="先別著急！前段時間莊園裡發生了好多事情，大家都累壞了，不如趁這個機會讓大家開心下吧！" Option="嗯，可是有什麼好辦法讓大家都開心呢" />
+				<Talk NpcID="10043" Face="正常" Msg="這下你可問對人了，我為大家準備了好多新年禮物，不如就由你來派發給大家吧" Option="太好了，我很樂意呢！" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="OPEN_TASK_PANEL" />/>
+		</NPC>
+	</Step>
+	
+	<Step ID="2">
+		<NPC ID="10000" Option="新年愛禮盒" Bit="1" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="你好，我是摩樂樂，歡迎來到我的家。找我有什麼事嗎？" Option="摩樂樂，你好，我來給你送新年禮物了" />
+				<Talk NpcID="10000" Face="正常" Msg="太感動了，謝謝你親愛的小摩爾，有你的支持我們一定會越來越好的！" Option="加油！我要回去送更多的禮物囉！" />
+			</Action>
+			<Action Cmd="SET_BIT" Param="1" />
+			<Action Cmd="OPEN_TASK_PANEL" />/>
+		</NPC>
+		<NPC ID="10010" Option="新年愛禮盒" Bit="2" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10010" Face="正常" Msg="你好，有好吃的一定要告訴我布多多哦，對了，你來我家有事嗎？" Option="新年好，我來送好吃的啦！" />
+				<Talk NpcID="10010" Face="正常" Msg="真的嗎？布少少快醒醒，有人來送新年禮物啦！可愛的小摩爾，新年快樂，真是太感謝你了。" Option="這沒什麼啦，大家開心最重要" />
+				<Talk NpcID="10010" Face="正常" Msg="太好了，為了感激慷慨大方的小摩爾，我要送你顆「紅包樹種子」，讓愛在莊園裡綻放開吧！" Option="哇，太驚喜了！謝謝" />
+			</Action>
+			<Action Cmd="SET_BIT" Param="2" />
+			<Action Cmd="OPEN_TASK_PANEL" />/>
+		</NPC>
+		<NPC ID="10007" Option="新年愛禮盒" Bit="3" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="一轉眼又快過年了，今年發生了好多事情，不知該為大家準備點什麼好呢？" Option="大伯， 我來給你送新年禮物了！" />
+				<Talk NpcID="10007" Face="正常" Msg="真的嗎？我的小摩爾果然長大了，真是太謝謝你了，我很感動！" Option="這是應該的，大伯新年快樂喔！" />
+			</Action>
+			<Action Cmd="SET_BIT" Param="3" />
+		</NPC>
+		<Test Bits="1,2,3" >
+			<In>
+				<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+				<Action Cmd="ALERT" Param="聽說奇可還準備了一份特殊的新年禮物，快回奇可餐廳問問吧！" Face="開心" />
+				<Action Cmd="GO_MAP" MapID="203" MapType="0" />	
+			</In>
+			<Out>
+				<Action Cmd="OPEN_TASK_PANEL" />
+			</Out>
+		</Test>
+	</Step>
+	<!-- kfc餐廳 -->
+	<Step ID="3" TarMapID="203" >
+		<NPC ID="10043" Option="新年愛禮盒">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10043" Face="正常" Msg="親愛的小摩爾，還差一個神秘人喲~猜猜還有誰沒有收到禮物呢？" Option="這個神秘人會是誰呢？" />
+				<Talk NpcID="10043" Face="正常" Msg="除了好朋友之外，是不是想想你的「死對頭」，因為新年大家都應該得到禮物呢！" Option="對哦，怎麼把「可惡的庫拉」給忘了" />
+				<Talk NpcID="10043" Face="正常" Msg="雖然他已經離開了莊園，但說不定在新年裡又會偷偷回來「看望大家」喔！" Option="好吧，這就給庫拉送禮去！" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="326" MapType="0" />	
+		</NPC>
+	</Step>
+	<Step ID="4" TarMapID="326" >
+		<EnterMap MapID="326" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="ALERT" Param="恭喜你獲得了鑰匙。集齊兩把鑰匙即可找奇可開啟愛的禮盒！" Face="開心" />
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

@@ -1,0 +1,120 @@
+<Tasks ID="574" Name="最漫長的戰鬥" AwardMsg="恭喜你獲得20個許願星、10個黃色水晶！" AwardBean="" >
+
+	<!-- 愛心廣場  -->
+	<Step ID="1" TarMapID="2">
+		<EnterMap MapID="2">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="wish_btn" Visible="1" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="焦急" Msg="這條吊墜，上面還有個字母“R”的標誌，如果我沒猜錯，一定是他回來了。" Option="搗蛋鬼……RK？"/>
+				<Talk NpcID="10000" Face="焦急" Msg="RK？！他已經很久沒出現在莊園了，在臨近周年慶的時候忽然回來，是不是有什麼目的？" Option="許願池水乾涸，莫非和RK有關？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="焦急" Msg="大伯，{$username}，你們看，這下面似乎有個地道呢，以前怎麼從來沒發現？" Option="我也從來都不知道這兒有地道呢！"/>
+				<Talk NpcID="10007" Face="焦急" Msg="我肯定這裡以前是沒有地道的。會不會，許願池水消失的秘密，就隱藏在這個地道之中？" Option="那我們得進去調查調查！"/>
+				<Talk NpcID="10000" Face="焦急" Msg="大伯，我和{$username}進到地道裡去打探打探，您先回去忙，等我們消息！" Option="嗯！包在我和樂樂身上~"/>
+				<Talk NpcID="10007" Face="焦急" Msg="好吧，因為還得趕著籌備周年慶相關事宜，大伯都無法陪你們去了。不過你們千萬要小心，有什麼情況先回來商量，一定不能讓自己陷入危險之中。" Option="嗯！大伯放心！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="151" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 藤蔓森林 -->
+	<Step ID="2" TarMapID="151">
+		<EnterMap MapID="151">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="好哇！又是你們這群小惡魔！原來這地道是你們幹的好事！" Option="好好的土地就這麼被你們破壞啦！"/>
+				<Talk NpcID="10160" Face="正常" Msg="你你你你們怎麼會從地道裡鑽出來？" Option="你們可以挖我們還不可以鑽啦？"/>
+				<Talk NpcID="10000" Face="生氣" Msg="別這麼多廢話！快老實交代，你們挖地道是想幹嘛？" Option="快說，你們又有什麼陰謀！"/>
+				<Talk NpcID="10160" Face="正常" Msg="哼！你們一問我就回答，那樣豈不是很沒面子！" Option="看來是死不悔改！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10160" Face="正常" Msg="咳咳，本來不想說的，不過看在你們這麼有誠意的份上，我就適當地表示表示好了。" Option="切~明明是被丫麗嚇到了o(╯□╰)o"/>
+				<Talk NpcID="10160" Face="正常" Msg="是零老大下令讓我們從這裡挖一條通往莊園的地道，好像是和什麼正義什麼力量有關，具體我也不大清楚，你也知道，我們打工的，不容易啊……" Option="古德摩零？他也回來了？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="123" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 拉姆神秘世界-->
+	<Step ID="3" TarMapID="123">
+		<EnterMap MapID="123">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="sceneCartoon_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="bloodBar_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="shuoming_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="paizi_mc" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="天啊~是RK和零在打架！哦，NO~！RK好危險，邪龍是想將他逼進岩漿裡去！" Option="我們趕緊幫幫他吧！"/>
+				<Talk NpcID="10000" Face="焦急" Msg="這裡是火山口，一個不小心可能還會引發火山噴發，我們是得想個方法才行。" Option="快看！這三個拉姆神像在發光！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="焦急" Msg="呀，難道是拉姆王來幫我們了？{$username}，我們來研究研究這些拉姆神像吧！" Option="嗯，好的！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="OPEN_PANEL" Param="Task574Panel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="task574PanelOver"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+<!--  			<Action Cmd="GO_MAP" MapID="123" MapType="0" /> -->
+		</EnterMap>
+	</Step>
+	
+	<!-- 拉姆神秘世界 -->
+	<Step ID="4" TarMapID="123">
+		<EnterMap MapID="123">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="sceneCartoon_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="bloodBar_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="shuoming_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="paizi_mc" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="開心" Msg="哇塞~{$username}，我們成功了，討厭的邪龍被趕跑了！" Option="真是太好了！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="焦急" Msg="RK果然還是老樣子啊……" Option="不能上前幫他，這可怎麼辦啊？"/>
+				<Talk NpcID="10000" Face="正常" Msg="{$username}，你看，零一直是在用火焰攻擊，如果我們能用水彈澆滅他的火焰，這樣RK的壓力會減輕不少，肯定就能將零打退了！" Option="嗯，這是個好辦法！我來試試！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="sceneCartoon_mc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="bloodBar_mc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="shuoming_mc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="paizi_mc" Visible="1" />
+			<Action Cmd="OVER" MapID="2" MapType="0" />
+		</EnterMap>
+	</Step>
+</Tasks>

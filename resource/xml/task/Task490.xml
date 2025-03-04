@@ -1,0 +1,175 @@
+<Tasks ID="490" Name="神殿囚徒" AwardMsg="恭喜你獲得100個彩色魚食、5個章魚怪觸須、50個銅錠。" AwardBean="0" >
+	<Step ID="1" >
+		<EnterMap MapID="252" >
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="qishi1" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="qishi2" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="{$username}，你看，宮殿那邊閃現的光芒，好奇怪……" Option="這是怎麼回事呢？" />
+				<Talk NpcID="10036" Face="正常" Msg="裡面是不是有什麼東西？我們一起進去看看吧！" Option="嗯，好呀！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />	
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="253" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="2" >
+		<EnterMap MapID="253" >
+		
+			<Action Cmd="ACT_EVENT" Param="hideBoss" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="這……這就是人魚宮殿嗎？怎麼會是這樣的景象？這周圍……真奇怪！" Option="這些閃閃發光的是什麼東西？" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="OPEN_PANEL" Param="Task399SpinPanel" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="3" >
+		<SubmitScore ModuleID="10008" MinScore="1" LoseMsg="小摩爾沒能解開謎題哦！需要重新試試嗎？" >
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5_2" Name="movie_5_2" IsFullScreen="1"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_5_2" />
+			
+			<Action Cmd="GO_MAP" MapID="252" MapType="0" />
+		</SubmitScore>
+	</Step>
+	
+	<Step ID="4" >
+		<EnterMap MapID="252" >
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="qishi1" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="qishi2" Visible="0" />
+		
+		
+			<Action Cmd="PLAY_MOVIE" Param="5_3" Name="movie_5_3" />
+			
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="剛才發生了什麼事？那些人是誰？為什麼如此生氣，我們並沒做什麼呀！" Option ="我也很想知道o(╯□╰)o" />
+				<Talk NpcID="10036" Face="正常" Msg="騎士呢？他們怎麼不見了？{$username}，一起幫忙找找他們好嗎？" Option ="嗯，好的！" />
+							
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5_3" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="5" />
+			
+		
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+		
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="mei_mc" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="6_2" Name="movie_6_2" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_6_2" />
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="mei_mc" Visible="1" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10067" Face="正常" Msg="海妖國的那些人，還嫌害我們不夠嗎？" Option="海妖國？是指宮殿裡那些人嗎？" />
+				<Talk NpcID="10067" Face="正常" Msg="不是他們還有誰？當年就是因為他們的到來，人魚國才變成了如今的慘狀……" Option="這究竟是怎麼回事呢？" />
+				<Talk NpcID="10067" Face="正常" Msg="這，還得從多年前說起了……" Option="哦？" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10067" Face="正常" Msg="口口聲聲說要和我們的國王談判，可背地裡卻耍如此陰謀，實在是可惡至極！" Option="可他們為什麼會被冰封於此呢？" />
+				<Talk NpcID="10067" Face="正常" Msg="這個我也不大清楚了……也許是上天的懲罰吧，惡人必有惡報！" Option="額……真的是上天懲罰嗎？" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="8_1" Name="movie_8_1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_8_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8_2" Name="movie_8_2" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_8_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8_3" Name="movie_8_3"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_8_3" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="這……人魚石像說是那些祭司害了人魚國，可祭司又口口聲聲說是人魚國冰封了他們……" Option="這其中是有什麼誤會嗎？" />
+				<Talk NpcID="10036" Face="正常" Msg="我們也搞不清楚其中的玄機……還是去找哈哈魔法師打聽打聽吧！" Option="哦，好的！" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="6" />
+			<Action Cmd="GO_MAP" MapID="24" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="5" >
+		<EnterMap MapID="252" >
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6_2" Name="movie_6_2"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_6_2" />
+			
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10067" Face="正常" Msg="海妖國的那些人，還嫌害我們不夠嗎？" Option="海妖國？是指宮殿裡那些人嗎？" />
+				<Talk NpcID="10067" Face="正常" Msg="不是他們還有誰？當年就是因為他們的到來，人魚國才變成了如今的慘狀……" Option="這究竟是怎麼回事呢？" />
+				<Talk NpcID="10067" Face="正常" Msg="這，還得從多年前說起了……" Option="哦？" />
+			</Action>
+			
+			
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10067" Face="正常" Msg="口口聲聲說要和我們的國王談判，可背地裡卻耍如此陰謀，實在是可惡至極！" Option="可他們為什麼會被冰封於此呢？" />
+				<Talk NpcID="10067" Face="正常" Msg="這個我也不大清楚了……也許是上天的懲罰吧，惡人必有惡報！" Option="嗯……真的是上天懲罰嗎？" />
+			</Action>
+			
+				<Action Cmd="PLAY_MOVIE" Param="8_1" Name="movie_8_1"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_8_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8_2" Name="movie_8_2"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_8_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8_3" Name="movie_8_3"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_8_3" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="這……人魚石像說是那些祭司害了人魚國，可祭司又口口聲聲說是人魚國冰封了他們……" Option="這其中是有什麼誤會嗎？" />
+				<Talk NpcID="10036" Face="正常" Msg="我們也搞不清楚其中的玄機……還是去找哈哈魔法師打聽打聽吧！" Option="哦，好的！" />
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="6" />
+			<Action Cmd="GO_MAP" MapID="24" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="6" >
+		<NPC ID="10033" Option="神殿囚徒" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10033" Face="正常" Msg="海妖祭司？他們被冰封在人魚國宮殿裡？" Option="嗯，不知道當年究竟發生了什麼事" />
+				<Talk NpcID="10033" Face="正常" Msg="也許這其中真的有什麼誤會，可現在海妖祭司怒火攻心，根本不會跟我們解釋。" Option="那該怎麼辦呢？" />
+				<Talk NpcID="10033" Face="正常" Msg="或許只能用海洋之淚能淨化他們的心靈、消除他們的怒氣，才能解開整個謎團了。" Option="那應該怎麼做呢？" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10033" Face="正常" Msg="經過我施法調查，發現人魚宮殿裡能找到辦法淨化海妖祭司，大家去那裡看看呢！小心別再驚動海妖祭司！" Option="好的，我再去看看！" />
+				<Talk NpcID="10033" Face="正常" Msg="嗯！如果能淨化海妖祭司，讓他們協助我們，解開這些纏繞的誤會，或許能帶給我們希望！" Option="嗯，我一定努力！" />
+			</Action>	
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10"  IsFullScreen="1"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			
+			<Action Cmd="OVER" MapID="253" MapType="0" />
+		</NPC>
+	</Step>
+</Tasks>
+
+

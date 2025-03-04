@@ -1,0 +1,155 @@
+<Tasks ID="547" Name="聖誕奇遇記之奇幻篇" AwardMsg="恭喜你獲得一個天使寶寶、2000摩爾豆！" AwardBean="2000" >
+	<Step ID="1" TarMapID="111">
+		<EnterMap MapID="111" >
+<!--			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />-->
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="驚訝" Msg="發生什麼事了，剛剛是地板在震動嗎？" Option="這皇宮裡的地板，確實是該翻修一下了" />
+				<Talk NpcID="10002" Face="焦急" Msg="哈？皇宮裡的建築一直都有人維護和翻修的啊！不會唯獨把我這間小密室給遺漏了吧？" Option="那說不定哦，我剛開始就找不到這密室" />
+				<Talk NpcID="10002" Face="生氣" Msg="哼，不行！下次皇宮翻修，我一定要親自監督，一定不能讓任何地方被遺漏。" Option="這地板還能撐到下次翻修嗎？" />
+				<Talk NpcID="10009" Face="驚訝" Msg="公主，你看那發光的是什麼？" Option="什麼東西？~~" />
+			</Action>		
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>		
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="疑惑" Msg="怎麼了，公主？地板裂了這麼大個窟窿，要趕緊找人來修啊。" Option="怎麼感覺公主似乎另有想法……" />
+				<Talk NpcID="10002" Face="開心" Msg="丫麗，我們的機會來啦！" Option="機會？什麼機會？" />
+				<Talk NpcID="10009" Face="疑惑" Msg="每次公主這樣，我怎麼都有種不好的預感……" Option="……" />
+				<Talk NpcID="10002" Face="開心" Msg="丫麗，不如我們趁此機會……去地洞裡探探險，怎麼樣？" Option="探險？去地洞裡？" />
+				<Talk NpcID="10009" Face="焦急" Msg=" 啊！麼麼公主，這……這……這不好吧？難道你忘了你是不能隨意離開皇宮的。" Option="公主，上次偷偷溜走的教訓又忘了嗎？" 
+
+/>
+				<Talk NpcID="10002" Face="開心" Msg="唉唷~丫麗這事你不說，我不說，沒人會知道的。再說了，這不就是在我臥室的地下嗎，怎麼能算逃離皇宮呢？{$username}，你說對不對？" Option="好像也是的哦" />
+				<Talk NpcID="10002" Face="疑惑" Msg="丫麗，你不會是看見地洞這麼黑漆漆的，害怕了，不敢去探險吧？" Option="傳說中的——激將法？" />
+				<Talk NpcID="10009" Face="生氣" Msg="我丫麗就沒有害怕的事情，誰怕誰，去就去。" Option="呃……丫麗果然中計了。" />
+				<Talk NpcID="10002" Face="開心" Msg="耶！這一招果然有效！本公主宣布，神秘的地洞探險，現在開始啦！準備出發。" Option="GO！GO！GO！" />
+				<Talk NpcID="10009" Face="開心" Msg="怎麼有種上當受騙的感覺？o(︶︿︶)o 算啦，誰叫麼麼公主是我的死黨呢？一起探險去了！" Option="呃果然是好閨蜜！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />		
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />	
+		</EnterMap>	
+	</Step>	
+	
+	<Step ID="2" TarMapID="111" >
+		<EnterMap MapID="111" >
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />	
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />	
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="3" TarMapID="111" >
+		<EnterMap MapID="111" >
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="71" Name="movie_71" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_71" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="丫麗，不是說找到機關之後，就能解開結界了嗎？怎麼一點反應也沒有呢？我懷疑我們被捉弄了……" Option="這三個機關，我一直都知道的啊！"/>
+				<Talk NpcID="10009" Face="生氣" Msg="誰敢這麼大膽捉弄我丫麗和麼麼公主，不要再裝神弄鬼的了！快給我出來！" Option="太調皮了！我竟然也差點上當了！"/>
+				<Talk NpcID="10002" Face="生氣" Msg="不是吧，還以為會是一次驚心動魄的探險，結果只是一場惡作劇？誰這麼大膽，竟敢破壞我偉大的探險計劃？" Option="也破壞了我偉大的探險計劃！過分！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="疑惑" Msg="這……難道是傳說中的“任意傳送陣”嗎？還是通向另一個世界的入口？還是……" Option="麼麼公主的想象力還真豐富~"/>
+				<Talk NpcID="10002" Face="開心" Msg="看來現在才是我們奇幻之旅真正的開始啊！丫麗，你準備好了嗎？" Option="可是，這兩個“門”是什麼都沒搞清楚。"/>
+				<Talk NpcID="10009" Face="開心" Msg="雖然不知道現在是個什麼情況，但我也開始有點小激動了呢！(*^__^*) 嘻嘻~~~”" Option="我……還是先看看再說。"/>
+				<Talk NpcID="10009" Face="驚訝" Msg="可是公主，我們出來已經好長一段時間了，不早點回去的話，菩提大伯和洛克行政官又跑滿莊園找你了。" Option="可是，我們好不容易就要接近謎底了~~"/>
+				<Talk NpcID="10002" Face="開心" Msg="不用擔心，丫麗，我們很快就回去的。事不宜遲，趕緊選一個入口吧，我們早去早回！" Option="那我也可以選一個嗎？(*^__^*) 嘻嘻"/>
+			</Action>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />		
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="112" MapType="0" />	
+		</EnterMap>	
+	</Step>
+	
+				<!-- 蟲蟲谷 -->
+	<Step ID="4" TarMapID="112" >
+		<EnterMap MapID="112" >		
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />	
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />		
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10154" Face="正常" Msg="不好意思，剛剛如有失禮的地方，還望公主殿下你見諒。我是古德摩.零，叫我零就可以了。" Option="哇！居然比我還有型！"/>
+				<Talk NpcID="10002" Face="正常" Msg="你好，剛剛真是謝謝你了。對了，怎麼以前在莊園裡沒見過你呢？" Option="咦？對呀，新面孔喲！"/>
+				<Talk NpcID="10154" Face="正常" Msg="我四處遊學，來到了這個美麗的莊園，感覺一切那麼美好純潔，於是便多逗留了一段時間。" Option="再帥！也終究是莊園的一個“過客”！"/>
+				<Talk NpcID="10009" Face="開心" Msg="你好！我叫丫麗，歡迎你來到摩爾莊園。" Option="丫麗很開心嘛~~~"/>
+				<Talk NpcID="10154" Face="正常" Msg="對了，你們經常來這裡玩耍嗎？" Option="難道你對這裡很熟悉？"/>
+				<Talk NpcID="10002" Face="正常" Msg="我們今天才發現這個奇妙的地方。這裡就跟莊園的蟲蟲谷一模一樣，但又感覺這不是我們熟悉的那個蟲蟲谷。" Option="有種似是而非的感覺。"/>
+				<Talk NpcID="10154" Face="正常" Msg="那我帶你們去個比這裡更好玩的地方。" Option="還有比這裡更好玩的地方？"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="13" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_13" />	
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="GO_MAP" MapID="113" MapType="0" />	
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="5" TarMapID="113" >
+		<EnterMap MapID="113" >
+			<!-- <Action Cmd="TASK_SHOW_SELF" Hide="1" />-->
+			<Action Cmd="PLAY_MOVIE" Param="14" Name="movie_14" IsBg="1" IsFullScreen="1"/>			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="焦急" Msg="天啊，剛剛真是太囧了……第一次見面，竟然是我如此囧的場景。" Option="汗……"/>
+				<Talk NpcID="10009" Face="正常" Msg="唉唷，我們公主隨時隨地都是高貴而典雅，氣質而淑女的，就連摔倒也如風中拂柳，輕盈優雅。所以，公主，你根本不用擔心啦！" Option="閨蜜之間不是應該說真話的嗎？"/>
+				<Talk NpcID="10002" Face="開心" Msg="真的嗎，丫麗？(*^__^*) 嘻嘻，沒失態最好了。" Option="真是個善良而單純的小公主。"/>
+				<Talk NpcID="10154" Face="正常" Msg="我親愛的公主殿下，歡迎你來到這個奇幻的夢中之蕊，請看！" Option="我也要看！我也要看！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_14" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="15" Name="movie_15" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_15" />
+				
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+			<Action Cmd="GO_MAP" MapID="111" MapType="0" />	
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="6" TarMapID="111" >
+		<EnterMap MapID="111" >
+			<!-- <Action Cmd="TASK_SHOW_SELF" Hide="1" />-->
+		<Action Cmd="PLAY_MOVIE" Param="16" Name="movie_16" IsBg="1" IsFullScreen="1"/>
+		<Action Cmd="DELETE_MOVIE" Param="movie_16" />	
+		<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="疑惑" Msg="難道公主也夢見密室的地板壞了？" Option="難道我們三人都做同一個夢？"/>
+				<Talk NpcID="10002" Face="疑惑" Msg="對呀！丫麗你也夢見了？" Option="還有我呢！"/>
+				<Talk NpcID="10002" Face="開心" Msg="一切都那麼奇妙，有會唱歌的石頭和花，會飛的小木偶……還有一個英俊瀟灑的帥氣摩爾……也不知道他是誰……" Option="還帥咧，最後變得那麼兇神惡煞的……"/>
+				<Talk NpcID="10002" Face="焦急" Msg="啊！可是後面……周圍的一切突然都變得好嚇人……" Option="終於想起來了哈。"/>
+				<Talk NpcID="10002" Face="焦急" Msg="不行！我要趕緊去找侍衛來翻修密室的地板了，我還是不放心！" Option="呃……"/>
+				<Talk NpcID="10009" Face="正常" Msg="公主，我陪你一起去！" Option="等等我，我也跟你們一起。"/>
+			</Action>
+		
+			<Action Cmd="PLAY_MOVIE" Param="17" Name="movie_17" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_17" />
+			<Action Cmd="PLAY_MOVIE" Param="19" Name="movie_19" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_19" />	
+			<Action Cmd="PLAY_MOVIE" Param="18" Name="movie_18" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_18" />		
+			<Action Cmd="OVER" />	
+		</EnterMap>	
+	</Step>
+</Tasks>
+
+

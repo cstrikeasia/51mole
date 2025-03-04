@@ -1,0 +1,65 @@
+<Tasks ID="662" Name="馴獸師大賽" AwardMsg="恭喜你獲得1個小月燈（摩靈）、1個小眉（馴化獸）和10000摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="109">
+		<EnterMap MapID="109">
+			<Action Cmd="SAY">
+				<Talk NpcID="10002" Face="開心" Msg="{$username}，麼麼有一個新的決定！" Option="又有？"/>
+				<Talk NpcID="10002" Face="開心" Msg="麼麼要讓所有的小摩爾都成為優秀的馴獸師！" Option="(⊙o⊙)…公主你是認真的嗎？"/>
+				<Talk NpcID="10002" Face="開心" Msg="當然啦！麼麼要舉辦馴獸師大賽！可以激勵所有的小摩爾成為更強更好的馴獸師。" Option="公主現在變好能幹的樣子！"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="開心" Msg="公主，聽說你要舉辦馴獸師大賽大家都來幫忙了！給我們安排任務吧！" Option="要幫忙嗎？算我一個，算我一個！"/>
+				<Talk NpcID="10002" Face="開心" Msg="麼麼第一次舉辦大賽，希望讓菩提大伯、洛克行政官他們都不要辛苦，由我們自己來搞定整個大賽。" Option="恩恩！"/>
+				<Talk NpcID="10002" Face="開心" Msg="活動很多哦，開幕慶典有遊行、走秀、放氣球、放煙火、還有宣傳站宣傳！大家一定要去哦！" Option="放心好了公主殿下，我一定不會錯過的！"/>
+				<Talk NpcID="10002" Face="開心" Msg="你說的喲，幫麼麼去東部沙灘碼頭放一次氣球好嘛？" Option="沒問題！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="收到公主委託去東部沙灘碼頭放飛氣球，慶祝首屆馴獸師大賽的開幕！出發嘍！"/>
+			
+			<Action Cmd="GO_MAP" MapID="355" MapType="0"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="355">
+		<EnterMap MapID="355">
+			<Action Cmd="ACT_EVENT" Param="Task662IsOn"/>		
+			<Action Cmd="ADD_EVENT" Param="finishBallonGame"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>	
+			
+			<Action Cmd="JUMP_TASK_UI" Param="真是太棒了，氣球永遠那麼美麗美好，快去向公主報告一下"/>
+			
+			<Action Cmd="GO_MAP" MapID="109" MapType="0"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="3" TarMapID="109">
+		<EnterMap MapID="109">	
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10007" Face="開心" Msg="大伯的小麼麼長大了啊！大伯可以放心了" Option=""/>
+				<Talk NpcID="10002" Face="生氣" Msg="大伯老覺得麼麼是小孩子，╭(╯^╰)╮" Option=""/>
+				<Talk NpcID="10007" Face="開心" Msg="呼呼呼，大伯可以放心出去環遊世界，找找古董休息休息啦！莊園就交給小麼麼了！" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="去吧去吧，大伯想去哪裡玩就去哪裡玩，辛苦的事情都交給麼麼好了，放心放心！" Option=""/>
+				<Talk NpcID="10007" Face="開心" Msg="大伯也參加馴獸師大賽吧！麼麼舉辦的第一次賽事可不能錯過……" Option="( ⊙o⊙ )哇~連大伯都要參加啊！"/>
+				<Talk NpcID="10002" Face="開心" Msg="{$username}，麼麼看到你放飛的氣球了！謝謝你，真的很美麗！" Option="（不好意思）嘻嘻，沒什麼沒什麼！"/>
+				<Talk NpcID="10002" Face="開心" Msg="一定要加油參加比賽哦，麼麼會一直看著的！" Option="那當然!!"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>
+
+

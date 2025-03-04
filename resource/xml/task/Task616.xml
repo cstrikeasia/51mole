@@ -1,0 +1,135 @@
+﻿<Tasks ID="616" Name="莊園失竊記" AwardMsg="恭喜你獲得了2個元素騎士經驗藥劑（小）,壽司企鵝衣服 ." AwardBean="" >
+	<Step ID="1" TarMapID="20">
+		<EnterMap MapID="20">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10133" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1"  IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10027" Face="正常" Msg="糟糕……我這店裡的衣服都去哪裡了？" Option="怎麼了，西索？"/>
+				<Talk NpcID="10027" Face="正常" Msg="剛才發現我這服裝店的衣服不見了，不知道是被誰拿了去！" Option="會不會只是別人暫時借用了一下呢？"/>
+				<Talk NpcID="10027" Face="正常" Msg="這借衣服總不能把我這裡所有的衣服都拿走，還一聲不吭的吧？" Option="這好像有點誇張了，不是借衣服那麼簡單了。"/>
+				<Talk NpcID="10027" Face="正常" Msg="是啊，我都快愁死了。還是去報警吧！" Option="恩恩，我們陪你去。"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10133" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="3" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="2" TarMapID="3">
+		<EnterMap MapID="3">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10013" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10155" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10013" Face="正常" Msg="這可怎麼辦啊？急死我了！！！！！！" Option="花嬸，你這是怎麼啦？"/>
+				<Talk NpcID="10013" Face="正常" Msg="我的攤位不見了，裡面可都是我剛進的貨啊！" Option="什麼時候發現的？"/>
+				<Talk NpcID="10013" Face="正常" Msg="昨天還在呢，今天過來就不見了！" Option="這…………要不再找找看？"/>
+				<Talk NpcID="10013" Face="正常" Msg="這附近都找過了，都沒有！" Option="剛才西索服裝店裡的衣服不見了，這回你連攤位都無故失蹤。"/>
+				<Talk NpcID="10013" Face="正常" Msg="什麼？西索服裝店也遭竊了？" Option="是啊，正想著陪他去警署報案呢，又碰到你無故失竊。"/>
+				<Talk NpcID="10013" Face="正常" Msg="那我和你們一塊去警署報案吧！" Option="恩恩，好的。那我們快去吧！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1002" Name="movie_1002" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1002" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10013" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10155" Visible="1" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="44" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	
+	<Step ID="3" TarMapID="44">
+		<EnterMap MapID="44">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+				<Action Cmd="SET_ATTRIBUTE" Level="buttonLevel" ResName="npc_10019" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10019" Face="正常" Msg="你們來我這也是因為東西無故消失吧！" Option="是的是的，西索的衣服和花嬸的攤位貨物都不見了！"/>
+				<Talk NpcID="10019" Face="正常" Msg="這次失竊的人數眾多，時間也很接近，想必絕非巧合！" Option="是的是的，絕非巧合。"/>
+				<Talk NpcID="10019" Face="正常" Msg="能偷走那麼多東西的，肯定是一個蓄謀已久的作案團夥。" Option="作案團夥？聽起來很可怕的樣子！"/>
+				<Talk NpcID="10019" Face="正常" Msg="不用害怕！只要大家齊心協力，就一定能夠將惡人繩之以法！" Option="恩恩~說的對！我們也去幫忙找找線索！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1003" Name="movie_1003" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1003" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="buttonLevel" ResName="npc_10019" Visible="1" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="355" MapType="0" />
+		</EnterMap>
+	</Step>	
+	
+	<Step ID="4" TarMapID="355">
+		<EnterMap MapID="355">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="PLAY_MOVIE" Param="1004" Name="movie_1004" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1004" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="GO_MAP" MapID="44" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="5" TarMapID="44">
+		<EnterMap MapID="44">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="buttonLevel" ResName="npc_10019" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10019" Face="正常" Msg="你們找到線索了？" Option="我們在東部沙灘碼頭的海面上發現了一座漂浮的冰島。"/>
+				<Talk NpcID="10019" Face="正常" Msg="冰島？？？" Option="是的，沒錯！"/>
+				<Talk NpcID="10019" Face="正常" Msg="奇怪？這是從哪裡冒出來了一個冰島啊！" Option="我們也正納悶呢！"/>
+				<Talk NpcID="10019" Face="正常" Msg="冰島靠近的話一定會溫度驟降，大家要注意保暖啊！" Option="我們剛才就被凍著了。話說，我們要不要去島上看看啊！"/>
+				<Talk NpcID="10019" Face="正常" Msg="這個可以有，搞不好還能發現些什麼！" Option="搞不好還能找到這次莊園失竊案的線索呢！"/>
+				<Talk NpcID="10019" Face="正常" Msg="那大家準備準備，出海頓島！" Option="好嘞！"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1005" Name="movie_1005" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1005" />
+			<Action Cmd="SET_ATTRIBUTE" Level="buttonLevel" ResName="npc_10019" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+			<Action Cmd="GO_MAP" MapID="355" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="6" TarMapID="355">
+		<EnterMap MapID="355">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SET_BUFFER" Panel="7" Step="7" />
+			<Action Cmd="OPEN_PANEL" Param="DanDanSkipGame" ClearMap="1"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="7" TarMapID="355">
+		<SubmitScore ModuleID="10082" MinScore="1" LoseMsg="小摩爾沒有成功，需要再試一下嗎！" >
+			<Action Cmd="SET_BUFFER" Panel="8" Step="8" />
+			<Action Cmd="GO_MAP" MapID="356" MapType="0" />
+		</SubmitScore>
+	</Step>
+	
+	<Step ID="8" TarMapID="356">
+		<EnterMap MapID="356">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsFullScreen="1" IsBg="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>

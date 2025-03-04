@@ -1,0 +1,61 @@
+<Tasks ID="513" Name="海妖騎士的邀請" AwardMsg="恭喜你獲得蕃茄茄、2000摩爾豆！" AwardBean="2000" >
+	<Step ID="1" >
+		<EnterMap MapID="61" >
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" />
+ 			<Action Cmd="DELETE_MOVIE" Param="movie_1" /> 
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"  />
+ 			<Action Cmd="DELETE_MOVIE" Param="movie_2" /> 
+ 			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10099" Face="驚訝" Msg="剛剛出現的不是庫拉嗎？莫非他……" Option="他怎麼了？" />
+				<Talk NpcID="10099" Face="驚訝" Msg="最近前哨站有一批兄弟離奇失蹤，我懷疑很可能和庫拉有關！他嘴裡還碎碎念著什麼金色鳶尾花……不行，得趕緊把此事上報捷克王子！" Option="我幫你去轉告捷克王子！" />
+			</Action>
+ 			
+			<Action Cmd="SET_BUFFER" Step="2" Panel="2" />
+			
+			<Action Cmd="GO_MAP" MapID="32" MapType="0" />
+		</EnterMap>			
+	</Step>	
+	
+	<Step ID="2" >
+		<NPC ID="10036" Option="海妖騎士的邀請" >
+		
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="{$username}，你說剛才庫拉出現在了前哨站？" Option="恩恩，騎士們都看見了！" />
+				<Talk NpcID="10036" Face="正常" Msg="看來庫拉真的在打金色鳶尾花的主意……" Option="恩，千萬不能讓庫拉得逞！" />
+				<Talk NpcID="10036" Face="正常" Msg="咦？{$username}，你也知道金色鳶尾花的秘密？" Option="是毛毛頭酋長告訴我的！" />
+				<Talk NpcID="10036" Face="正常" Msg="恩，我們必須得阻止庫拉！不過金色鳶尾花被存放在被魔法保護的無邊海中央，那裡不僅船隻無法航行，就連飛龍都不能在無邊海上空飛行！" Option="就沒有辦法可以過去嗎？" />
+				<Talk NpcID="10036" Face="正常" Msg="據說海妖魚由於體質特殊，是唯一可以穿越無邊海的生物。我已派騎士籌建了訓練營，{$username}，你想跟我一起去參觀嗎？" Option="哇！太榮幸了，快走吧！" />
+			</Action>
+			
+			<Action Cmd="SET_BUFFER" Step="3" Panel="3" />
+			
+			<Action Cmd="GO_MAP" MapID="151" MapType="0" />
+		</NPC>
+	</Step>	
+	
+	<Step ID="3" >
+		<EnterMap MapID="151" >
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" />
+ 			<Action Cmd="DELETE_MOVIE" Param="movie_3" /> 
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" />
+ 			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="{$username}，你是否願意成為海妖騎士，和我們一起並肩戰鬥？" Option="哇！我要加入海妖騎士！" />
+			</Action>
+			
+ 			<Action Cmd="DELETE_MOVIE" Param="movie_4" /> 
+ 			
+			<Action Cmd="OPEN_PANEL" Param="SirenKnightGetClothPanel" />
+ 			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="在海妖館的冒險模式裡可以鍛鍊海妖魚的能力，隨著冒險次數的增多，你的海妖騎士等級也會提升，可以獲得更高階的騎士服。現在要不要試著進行一次訓練？" Option="恩，開始冒險吧！" />
+			</Action>
+			
+			<Action Cmd="OVER" MapID="271" />
+		</EnterMap>			
+	</Step>	
+	
+</Tasks>

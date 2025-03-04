@@ -1,0 +1,104 @@
+<Tasks ID="566" Name="丫麗不哭！" AwardMsg="恭喜你獲得10個經驗果實（大），2000摩爾豆！" AwardBean="" >
+	<!-- 交通署 -->
+	<Step ID="1" TarMapID="83">
+		<EnterMap MapID="83 ">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10100" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="bodhiBox" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="quant_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_aoxi" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 交通署 -->
+	<Step ID="2" TarMapID="83">
+		<EnterMap MapID="83 ">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10100" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="bodhiBox" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_aoxi" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="blade_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="quant_mc" Visible="1" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="生氣" Msg="這年都還沒過完，我怎麼就這麼倒楣啊！最近不是踩著香蕉皮，就是差點被砸到頭。" Option="那我可得離你遠一點了，剛剛我也差一點點被砸到。"/>
+				<Talk NpcID="10010" Face="正常" Msg="我們離阿福號遠一點玩就行了，樂樂，別生氣了。" Option="是離樂樂遠一點，不是阿福號。"/>
+				<Talk NpcID="10034" Face="正常" Msg="怎麼樣？樂樂，{$username}沒有傷到哪兒吧？" Option="漢青叔叔，我們沒事，呵呵。"/>
+				<Talk NpcID="10000" Face="疑惑" Msg="漢青叔叔，你發現了沒？你的阿福號最近不是船槳斷了，就是螺絲掉，零件壞。該不會是有人故意搞破壞吧？你可要小心提防哦！" Option="誰會沒事破壞阿福號？"/>
+				<Talk NpcID="10034" Face="正常" Msg="不礙事，應該是我這阿福號該好好翻修一下了。到是你們，玩耍的時候要注意安全，可別像樂樂一樣不小心。" Option="漢青叔叔，你放心吧！才不像摩樂樂那麼粗心大意。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="疑惑" Msg="給我看看！這衣扣果真好熟悉，在哪裡見過呢？" Option="繼續。"/>
+				<Talk NpcID="10010" Face="正常" Msg="漢青的阿福號上，全都是從東方帶來的特色工藝品，阿福號上肯定有這些東西啊。" Option="繼續。"/>
+				<Talk NpcID="10000" Face="疑惑" Msg="嗯，多多說的也不是沒有道理，不過漢青帶來的禮物，都是一些我們沒見過的新奇飾物，可這顆扣子我怎麼看怎麼覺得眼熟。" Option="繼續。"/>
+				<Talk NpcID="10000" Face="疑惑" Msg="春節就快過完了，漢青也要回東方了，要是阿福號在飛回去的路上出現故障怎麼辦？" Option="我們快去告訴漢青，讓他做好安全措施。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="66" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 阿福號船艙 -->
+	<Step ID="3" TarMapID="66">
+		<EnterMap MapID="66">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10034" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="topLevel" ResName="npc_10009" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 阿福號船艙 -->
+	<Step ID="4" TarMapID="66">
+		<EnterMap MapID="66">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10034" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="topLevel" ResName="npc_10009" Visible="0" />
+			<Action Cmd="OPEN_PANEL" Param="Task566Panel" ClearMap="0"/> 
+			<Action Cmd="ADD_EVENT" Param="task566" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 阿福號船艙 -->
+	<Step ID="5" TarMapID="66">
+		<EnterMap MapID="66">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10034" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="topLevel" ResName="npc_10009" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10034" Face="悲傷" Msg="是爸爸虧欠了你，這麼多年以來，你始終不曾說出自己的怨言，一直都沒有埋怨過我半句，今天終於說出口了。" Option="繼續。"/>
+				<Talk NpcID="10034" Face="悲傷" Msg="爸爸知道你從小就獨立自強，乖巧聽話，沒讓我操心過。爸爸也很想留在你身邊，看著你一天天長大，陪你哭、陪你笑，帶你一起玩耍，和你一起打鬧，那該有多好啊！" Option="繼續。"/>
+				<Talk NpcID="10034" Face="悲傷" Msg="可你要知道，莊園裡有很多小摩爾，他們一年都見不到自己的父母。就連過春節，父母都因為各種原因不能回家陪他們過年。" Option="繼續。"/>
+				<Talk NpcID="10034" Face="悲傷" Msg="他們需要更多的關心和愛護，他們更需要從遠方寄回的新年祝福和希望。" Option="繼續。"/>
+				<Talk NpcID="10034" Face="悲傷" Msg="天底下沒有不疼愛子女的父母。父母都希望能一生陪伴在你們身邊，為你們遮風擋雨。可是……還有更多沒有父母的孩子，他們又怎麼辦呢？" Option="繼續。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10034" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="topLevel" ResName="npc_10009" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER"  MapID="83" MapType="0"/>
+		</EnterMap>
+	</Step>
+</Tasks>

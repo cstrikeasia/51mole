@@ -1,0 +1,88 @@
+<Tasks ID="526" Name="飯店第一課" AwardMsg="恭喜你獲得香蕉魚髮型、2000摩爾豆!" AwardBean="2000" >
+	<Step ID="1" >
+	
+		<EnterMap MapID="78" >
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10127" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10055" Visible="0" /> 
+			<Action Cmd="PLAY_MOVIE" Param="20" Name="movie_20" IsBg="0"/>    <!--movie20，讓berg補個炸花校長頭頂冒嘆號的動畫 -->
+			<Action Cmd="DELETE_MOVIE" Param="movie_20" />				
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="{$username}，沒想到你還先到！今天MBA飯店管理課程正式開課，你說炸花校長會給我們講些什麼呢？好期待呀！" Option="我也好期待，嘻嘻~" />
+				<Talk NpcID="10011" Face="正常" Msg="可是開學以後就不能賴床了，想想都很傷心呀！~~~~ " Option="好像是有這麼一回事……" />
+				<Talk NpcID="10009" Face="正常" Msg="看你們，就知道睡覺！等我以後擁有了自己的豪華飯店，你們就一旁偷偷哭去吧！哈哈~" Option="所以我們也得加油哦！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10127" Face="正常" Msg="嘿嘿，跟大家開個玩笑，緩解一下開學的緊張氣氛。現在，讓我們一起進入我們的MBA基地吧！" Option="MBA基地？" />
+				<Talk NpcID="10127" Face="正常" Msg="就是我們上課的教室，我身旁的牌子就是入口，同學們快從這裡進去吧！" Option="好，MBA基地，我們來啦！" />
+			</Action>									
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<!-- 發條協定播放movie 3播放 -->
+			<Action Cmd="ACT_EVENT" Param="BeginPlayMovie" />	
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+		</EnterMap>		
+	</Step>			
+	
+	<Step ID="2" >
+		<EnterMap MapID="321" >
+			<Action Cmd="PLAY_MOVIE" Param="99" Name="movie_99" IsFullScreen="1" IsBg="1"/>   <!--99就是那個大家擠在黑乎乎隧道裡的全屏動畫，案子裡和100是合在一起的，不過美術後來給分開了-->
+			<Action Cmd="DELETE_MOVIE" Param="movie_99" />			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="OPEN_PANEL" Param="Task526SearchGood" />	
+			<Action Cmd="PLAY_MOVIE" Param="400" Name="movie_400" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_400" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10127" Face="正常" Msg="同學們，剛才是我用“萬能模擬儀”為你們模擬出來的體驗，怎麼樣，還不錯吧？你們知道剛剛那是哪兒嗎？" Option="不知道，我只知道那裡實在太豪華了！" />
+				<Talk NpcID="10127" Face="正常" Msg="當然！帆船飯店的豪華，那可是名符其實的！" Option="什麼？剛剛那是……帆船飯店？！" />
+				<Talk NpcID="10127" Face="正常" Msg="沒錯，正是世界上最豪華的飯店——杜拜帆船飯店！好了，大家先找好自己的位子，我慢慢跟你們講解。" Option="好哦，開始上課囉！" />
+				<Talk NpcID="10000" Face="正常" Msg="可惜呀，原來剛才見到的都是假像。{$username}，我們倆坐一塊吧！到時候你筆記借我抄抄，嘿嘿~" Option="好呀，沒問題！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+		</EnterMap>		
+	</Step>
+	
+	<Step ID="3" >
+		<EnterMap MapID="321" >
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />	
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="哇哦~聽上去很不錯的樣子呢！{$username}，什麼時候我們也能去住上一晚！" Option="這麼豪華，不知道住宿費得多貴呢！" />
+				<Talk NpcID="10127" Face="正常" Msg="怎麼樣？同學們是不是心動了呢？是不是也想親自去住上一晚體驗一下呢？那我就來給大家介紹一下帆船飯店的客房。" Option="哇哦~期待ing   O(∩_∩)O" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />	
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />	
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="悲傷" Msg="{$username}，你聽到沒有，最低也要1299美元一晚，我聽別人說，美元可貴啦，換算成摩爾豆的話，還要貴上好多好多倍……" Option="啊？！貴多少倍？" />
+				<Talk NpcID="10000" Face="悲傷" Msg="5倍？6倍？還是10倍？20倍？這個我也不大清楚，反正就是很多很多！不吃不喝也賺不了這麼多摩爾豆呀……" Option="這下完蛋了……T_T" />
+				<Talk NpcID="10127" Face="正常" Msg="同學們，請安靜！除了客房體驗，飯店的其它服務，也都是奢華的享受哦！下面我繼續為大家講解，請同學們仔細聽。" Option="哎，越聽越想去，越聽越傷心……" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />				
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />	
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10127" Face="正常" Msg="同學們，不要灰心，只要肯努力，成功一定會屬於你們！好好學習飯店管理課程，將來好好經營自己的飯店，帆船飯店，根本不是夢！" Option="嗚嗚~真的嗎？" />
+				<Talk NpcID="10127" Face="正常" Msg="當然是真的！現在，我們就從基礎做起，先來嘗試下如何為客人提供最上等的服務吧！下一期，我將帶領大家一起欣賞澳門的威尼斯人大飯店！" Option="嗯，好的！" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />	
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsFullScreen="1" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />				
+			<Action Cmd="OVER" />																																		
+		</EnterMap>	
+	</Step>	
+
+</Tasks>
+
+
+

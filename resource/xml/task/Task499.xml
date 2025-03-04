@@ -1,0 +1,57 @@
+<Tasks ID="499" Name="庫拉的煩惱" AwardMsg="恭喜你獲得1000摩爾豆，1個牧場松鼠已經放入你的牧場中。" AwardBean="1000" >
+	<Step ID="1" >
+		<NPC ID="10052" Option="庫拉的煩惱">
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10052" Face="焦急" Msg="嗚哇~ 好恐怖啊，有個黑影在店子裡閃來閃去！" Option="⊙_⊙ 我也看到了。" />
+				<Talk NpcID="10052" Face="焦急" Msg="看那塊頭，肯定不是我店裡的拉姆。{$username}，幫我過去看一下吧！" Option="這…… =_=! （其實我也怕呀）" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10019" Face="生氣" Msg="嗚哇~ 剛接到報警，這邊有可疑人物出現。簡單描述下所你們所看見的！" Option="有個紫黑色的妖怪，跑來跑去。" />
+				<Talk NpcID="10019" Face="生氣" Msg="好，我們想辦法把他抓起來！但需要{$username}你來幫忙。" Option="……好！" />
+			</Action>
+			
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="OPEN_GAME" Param="TaskPackGame" />
+		</NPC>
+	</Step>
+	
+	<Step ID="2" >
+		<NPC ID="10052" Option="庫拉的煩惱" >
+			<Action Cmd="OPEN_GAME" Param="TaskPackGame" />
+		</NPC>
+		
+		<SubmitScore ModuleID="10009" MinScore="1" >
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10004" Face="正常" Msg="哎呦餵，這誰啊，撞的我好疼！" Option="……" />
+				<Talk NpcID="10019" Face="正常" Msg="原來是骰子呀，你在這裡鬼鬼祟祟的做什麼呀？" Option="（原來是骰子！）" />
+			
+				<Talk NpcID="10004" Face="正常" Msg="我在找拉姆萬能藥水，沒空跟你們理論啦~ ~" Option="（拉姆用的拉姆萬能藥？）" />
+				<Talk NpcID="10052" Face="正常" Msg="你要拉姆萬能藥水做什麼呀？！" Option="……" />
+				<Talk NpcID="10004" Face="悲傷" Msg="哎，說來話長……" Option="……" />
+			</Action>
+			
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10052" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10052" Visible="1" />
+			
+			<Action Cmd="OVER" MapID="1" MapType="0" />
+		</SubmitScore>
+	</Step>
+			
+</Tasks>
+
+

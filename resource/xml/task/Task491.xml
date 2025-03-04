@@ -1,0 +1,74 @@
+<Tasks ID="491" Name="王子之約" AwardMsg="恭喜你獲得1個栗子刺蝟、50個銅錠、2000摩爾豆。" AwardBean="0" >
+	<Step ID="1" >
+		<EnterMap MapID="253" >
+			<Action Cmd="ACT_EVENT" Param="hideBoss" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="{$username}，快看，這些冰塊，似乎被人動過一樣，上次來都沒發現呀！" Option="啊？！什麼情況？" />
+				<Talk NpcID="10036" Face="正常" Msg="照此看來，除了我們，應該還有別人發現了海妖祭司的秘密。{$username}，我們去看看海妖祭司怎樣了！" Option="嗯，好的！" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10088" Face="生氣" Msg="說！你們這些外來者，為何將我海妖國祭司冰封在這裡！" Option="啥？認錯人了吧？o(╯□╰)o" />
+				<Talk NpcID="10088" Face="正常" Msg="這聲音，這不是……捷克？！哼，沒想到居然又見面了！" Option="什麼？這兇巴巴的傢伙居然認識捷克王子？" />
+				<Talk NpcID="10036" Face="驚訝" Msg="你……你是誰？我們見過面嗎？" Option="這傢伙好像對捷克王子懷有敵意啊( ⊙ o ⊙ )" />
+				<Talk NpcID="10088" Face="生氣" Msg="哼，你倒是健忘！要不是你，當年籮絲怎麼會離我而去……" Option="啊？！難道你是……" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="驚訝" Msg="心形五彩珍珠項鏈？怎麼會在你這裡？是你抓走了籮絲？快說，你把籮絲藏到哪兒去了？" Option="快交出人魚公主！" />
+				<Talk NpcID="10088" Face="生氣" Msg="你算籮絲的什麼人？憑什麼來管她的事！籮絲的事情，都不需要你來操心！" Option="這就是所謂的情敵見面，分外眼紅嗎？" />
+				<Talk NpcID="10036" Face="驚訝" Msg="你最好趕緊放了籮絲，不然我就……" Option="看來真是把捷克王子逼急了" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3"  IsFullScreen="1"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9"/>	
+			<Action Cmd="SAY" >		
+				<Talk NpcID="10088" Face="生氣" Msg="都怪你！把項鏈弄壞了！那可是公主給我的信物！" Option="話說……你真的是海妖王子？" />
+				<Talk NpcID="10088" Face="正常" Msg="廢話！如假包換的海妖王子——保羅，人魚公主的未婚夫！" Option="嗯……只有你這麼認為吧？" />
+				<Talk NpcID="10036" Face="生氣" Msg="憑什麼說項鏈是公主給你的信物？一定是你抓走她，搶走了她的項鏈！" Option="嗯，這也有可能……" />
+				<Talk NpcID="10090" Face="正常" Msg="哼！我堂堂海妖王子，怎麼可能幹這等事！" Option="啊？究竟是怎麼回事呢？" />
+				<Talk NpcID="10090" Face="正常" Msg="你們把我項鏈都弄壞了，還想來套我話！" Option="不要生氣嘛，我來幫你修！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="9" Name="movie_9"/>									
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="OPEN_PANEL" Param="PrincerConventionUi" />
+		</EnterMap>	
+	</Step>
+
+	
+	<Step ID="2" >
+		<SubmitScore ModuleID="10010" MinScore="1" LoseMsg="小摩爾沒能解開謎題哦！需要重新試試嗎？" >
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10090" Face="正常" Msg="哼，算你識相！也不跟你們廢話了，我要去救人魚公主了！" Option="等等，我們也去！" />
+				<Talk NpcID="10036" Face="生氣" Msg="我也無時無刻不在想著早日救出籮絲，不如就讓我們和你一起去吧！" Option="是啊，大家一起去救人魚公主！" />
+				<Talk NpcID="10090" Face="正常" Msg="就憑你們？之前我曾多次嘗試解救籮絲，但都沒有成功……" Option="那後來呢？" />
+				<Talk NpcID="10090" Face="正常" Msg="後來她給了我這條項鏈，讓我帶著它到人魚國來，她說在這邊會找到救她的辦法……" Option="原來是這樣……" />
+				<Talk NpcID="10090" Face="正常" Msg="經過探索，我誤打誤撞進入到人魚宮殿。沒想到，竟然有人冰封了我海妖國的祭司們。這些都是你們幹的吧？" Option="怎麼可能，你也太看得起我們了！" />
+				<Talk NpcID="10090" Face="正常" Msg="狡辯！當年我國祭司出使人魚國，一去就再沒回來……人魚國也毫無徵兆地被石化。這件事除了對你們摩爾族有利，還會有誰？你們肯定是為了搶奪海妖寶藏！" Option="嗯……真不是我們……" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsFullScreen="1"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10090" Face="正常" Msg="口口聲聲說這一切不是你們幹的，但想讓我相信，除非查出真相證明你們的清白！" Option="本來嘛~要我說，這一切還得從海妖國入手！" />
+				<Talk NpcID="10036" Face="正常" Msg="嗯……保，保羅……為了早日查出真相，救出籮絲，我想跟你合作，我們之間的問題就暫時拋開可以嗎？" Option="哈哈~帥哥齊心，齊力斷金！" />
+				<Talk NpcID="10090" Face="正常" Msg="哼！我也不是不講道理的人！我可以跟你合作，但這並不代表我會放棄籮絲！我們的帳到後面慢慢再算！" Option="嗯……現在的問題是，如何前往海妖國" />
+				<Talk NpcID="10090" Face="正常" Msg="海妖國外人是不能輕易進入的，尤其還是你們這些生活在陸地上的摩爾！" Option="那有什麼辦法嗎？" />
+				<Talk NpcID="10090" Face="正常" Msg="恐怕只能依靠時空門。傳說中時空門跟古卷軸有關，具體我也不大清楚，只能靠你們先研究研究了。我得先回去了！" Option="嗯……好" />
+				<Talk NpcID="10090" Face="正常" Msg="早日建好時空門，我會在海妖國等著你們的！捷克，我很期待救出蘿絲後，和你來一場男人間的較量！" Option="好像聞到了有點酸的火藥味……" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsFullScreen="1"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="OVER" />									
+		</SubmitScore>
+	</Step>
+</Tasks>
+
+

@@ -1,0 +1,126 @@
+<Tasks ID="541" Name="藍色回憶" AwardMsg="恭喜你獲得藍色記憶泡泡、1000摩爾豆！" AwardBean="1000" >     
+	<Step ID="1" TarMapID="41" >
+		<EnterMap MapID="41" >
+		
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="是誰在求救呀？讓我聰明勇敢的樂樂超人來幫助他！噢~原來是這位可愛的紅衣姑娘~" Option="樂樂，竟然是你？！可把我撞痛了！"/>
+				<Talk NpcID="10000" Face="開心" Msg="咦？你認識我？我初到摩爾莊園，就有人認識我了？看來我樂樂超人聲名遠播啊，嘻嘻~" Option="初到莊園？水晶球把我帶回從前了？"/>
+				<Talk NpcID="10000" Face="開心" Msg="找我簽名的話請等等啊，我先幫幫這位姑娘！不知道她是遇到怪獸了，還是遇到惡法師了？不管怎樣，我樂樂超人一定會為她出頭的！" Option="簽著你名字的作業本還在我那呢……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10114" Face="正常" Msg="啊，哦~咦？怎麼長了兩個腦袋？噢，不對，不對……不好意思，我還有點眼花，看來我真是餓暈頭了……" Option="（話說這姑娘看起來怎麼這麼眼熟）"/>
+				<Talk NpcID="10000" Face="正常" Msg="我叫摩樂樂，剛搬到摩爾莊園來。你叫什麼呢？也住在摩爾莊園嗎？要不，我送你回家吧？" Option="（總覺得在哪兒見過這姑娘）"/>
+				<Talk NpcID="10114" Face="正常" Msg="噢，不，不，我不要回去，我還想玩一下……不過，其實，我在外面也沒什麼朋友，都不知道該去哪兒……" Option="（吱吱唔唔，略有奇怪）"/>
+				<Talk NpcID="10000" Face="開心" Msg="剛好我也還沒什麼朋友——除了我身旁的這位小粉絲。這樣，從今天起，我就是你的朋友了！我們一起玩吧！" Option="（我什麼時候成小粉絲了o(╯□╰)o）"/>
+				<Talk NpcID="10114" Face="正常" Msg="哇，真的嗎？樂樂，你真好！作為我們友誼的紀念，我送你一份禮物吧，希望你喜歡！" Option="（哇~有沒有我的份？）"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="204" MapType="0" />	
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="204"  >	
+		<EnterMap MapID="204" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10001" Visible="0" />  
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10114" Face="正常" Msg="咦？幾天前，我似乎在漿果叢林見過你。你也是來找樂樂的嗎？樂樂說好今天要來找我玩的，可一直都沒見到他，我都不知道該不該進去問問他……" Option="這個傢伙竟然失約！一定要問問！我幫你！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="20" Name="movie_20" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_20" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="111" MapType="0" />	
+		</EnterMap>
+	</Step>
+	
+	<Step ID="3" TarMapID="111"  >	
+		<EnterMap MapID="111" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="驚訝" Msg="咦？！小摩爾怎麼會找到我的密室的？難道你早都知道我公主的身份了嗎？" Option="這斗篷~啊，怪不得，原來是麼麼公主！"/>
+				<Talk NpcID="10002" Face="悲傷" Msg="天天呆在城堡，我覺得好悶、好孤獨，也沒人陪我玩，所以之前我才偷偷溜出去玩呢。" Option="原來當公主也會不開心o(╯□╰)o"/>
+				<Talk NpcID="10002" Face="悲傷" Msg="那天約好和樂樂見面，其實我是準備向他坦白我的身份，因為我不得不回家了。可是，沒想到……我原以為，樂樂真的想和我做朋友……我好想他……" Option="說不定，他也在想你呢！"/>
+				<Talk NpcID="10002" Face="悲傷" Msg="怎麼會呢……樂樂說他再也不想和我一起玩了，也許，我們以後都不會再見面了……" Option="不會的。我去找樂樂問問去！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="204" MapType="0" />	
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="4" TarMapID="204"  >	
+		<EnterMap MapID="204" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10001" Visible="0" />  
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="悲傷" Msg="小摩爾，你有沒有見到麼麼？就是那天我們遇見的小姑娘。怎麼辦，她真的生我氣了……都怪我，都怪我！我當時真是暈頭了！" Option="樂樂你終於意識到自己的錯誤了！"/>
+				<Talk NpcID="10000" Face="悲傷" Msg="就不該那樣在意別人的眼光！拿朋友發脾氣，這樣的我，還有什麼資格當大英雄呢？我想向麼麼道歉，可是我怎麼找都找不到她……" Option="知錯能改就好！我可以帶你去找公主！"/>
+				<Talk NpcID="10000" Face="驚訝" Msg="公主？我找公主做什麼？我只想找我的朋友，麼麼！我想她！我要向她道歉……哎，哎，你拖我幹什麼，喂，你要帶我去哪裡……" Option="好啦，安靜！去了你就知道了……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="GO_MAP" MapID="111" MapType="0" />	
+		</EnterMap>
+	</Step>
+	
+	<Step ID="5" TarMapID="111"  >	
+		<EnterMap MapID="111" >
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="咦？這不是麼麼的紅斗篷嗎？麼麼也在這裡嗎？不對，眼前的這位姑娘，好漂亮，好高貴……" Option="當然！這可是我們的公主，麼麼公主！"/>
+				<Talk NpcID="10002" Face="悲傷" Msg="樂樂，你來了？！噢，不，不，一定是小摩爾逼你來的，你上次說，以後再也不想和我一起玩了……" Option="沒有啦，樂樂只是和公主開玩笑呢！"/>
+				<Talk NpcID="10000" Face="驚訝" Msg="麼麼？公主？我的天啊，原來，一直和我一起玩的，竟然是摩爾莊園的公主！天啊~~~~~" Option="嘻嘻~沒想到吧！"/>
+				<Talk NpcID="10000" Face="悲傷" Msg="麼麼……哦，不，公主，你肯定還在生我氣，不管你會不會原諒我，我還是想對你說一聲“對不起”，之前是我不對。我早就想向你道歉了，可我都不知道去哪兒找你……" Option="樂樂還說他很想念公主喲！"/>
+				<Talk NpcID="10002" Face="開心" Msg="樂樂，你說的是真的嗎？你還是願意和我一起玩對嗎？我們還是朋友……對嗎？" Option="那是當然啦！"/>
+				<Talk NpcID="10000" Face="悲傷" Msg="當然——如果公主還當我是朋友的話……" Option="這得問問我們的公主了！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="開心" Msg="在我最需要幫助的時候，是樂樂送給我好吃的漿果，那甜甜的味道，麼麼永遠都不會忘記……樂樂，答應我，我們永遠都做好朋友，好嗎？" Option="哇哦~感動ing……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" IsBg="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			
+			<Action Cmd="OVER" />	
+		</EnterMap>	
+	</Step>
+</Tasks>

@@ -1,0 +1,34 @@
+<Tasks ID="221" Name="我想成為初級建築師" >
+	<Step ID="1" >
+		<NPC ID="10063" Option="我想成為初級建築師" >
+			<Action Cmd="ACT_EVENT" Param="NPCOldJob" /><!-- 拋事件 -->
+		</NPC>
+
+		<EnterMap MapID="100000001" >		                         <!-- 沒開始任務 -->	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10063" Face="正常" Msg="小摩爾是否希望通過自己的雙手來建造美麗的世界呢？如果你有信心成為一名優秀建築師的話，那趕快點擊右上角SMC徽章來獲取就職任務吧！" Option="好的，我這就去！" />
+			</Action>
+		</EnterMap>	
+		
+		<EnterMap MapID="100000002" >								<!-- 未完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10063" Face="正常" Msg="完成我提出的三個考驗，同時要力量值達到20以上才能成為初級建築師哦！小摩爾還得再努努力！" Option="恩，我一定會加油的！" />
+			</Action>
+		</EnterMap>
+		<EnterMap MapID="100000003" >									  <!-- 已完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10063" Face="正常" Msg="恭喜你，順利完成了建築師任職任務。從現在起，你就是莊園的初級建築師了！努力鑽研實踐，一定會建造出屬於自己的美麗世界！" Option="好的，我會努力的^_^" />
+			</Action>
+			<Action Cmd="ACT_EVENT" Param="OVERNPCOldJob" /><!-- 拋事件 -->
+		</EnterMap>
+		<EnterMap MapID="100000004" >									  <!-- 已完成任務 -->
+			<Action Cmd="SAY" >
+				<Talk NpcID="10063" Face="正常" Msg="更多建築師任務你可以點擊右上角SMC徽章獲取。" Option="好的，我知道了。" />
+			</Action>
+		</EnterMap>
+		
+	</Step>
+					
+</Tasks>
+
+

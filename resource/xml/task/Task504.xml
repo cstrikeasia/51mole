@@ -1,0 +1,142 @@
+<Tasks ID="504" Name="藏寶之地" AwardMsg="恭喜你獲得嘟嘟勇士鞋、2000摩爾豆。" AwardBean="2000" >
+	<Step ID="1" >
+		<EnterMap MapID="258" >
+			<Action Cmd="PLAY_MOVIE" Param="50" Name="movie_50" />	   <!--   movie_50 是加載的捷克王子一行人  -->	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="生氣" Msg="可惡的大章魚，還想把我們煮來吃了！輪到我讓你們嘗嘗下油鍋的滋味，哼！" Option="前情回顧" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_50" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100"  IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="60" Name="movie_60" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="不過，大章魚身上掉下來的這個東西是什麼？" Option="我們打開看看呢！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_60" />				
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />	
+			<Action Cmd="PLAY_MOVIE" Param="60" Name="movie_60" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="什麼破玩意兒？還當寶貝似的！亂七八糟，我都會畫！" Option="看樣子也不是什麼好東西！" />
+				<Talk NpcID="10096" Face="正常" Msg="算了，別管這玩意兒了，臭章魚身上能有什麼好東西！我們還是趕緊打聽海妖之心的消息去吧！" Option="好，我們繼續前進！"/>
+				<Talk NpcID="10097" Face="正常" Msg="等等~那張圖，快，給我看看！" Option="啊？這圖有什麼問題嗎？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_60" />							
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10097" Face="正常" Msg="這些符文，我咋記得在哪裡看到過！是哪裡呢……咋就想不起來了！" Option="想不起來就算了唄！" />
+				<Talk NpcID="10097" Face="正常" Msg="不行，我腦海中有個很強烈的聲音在告訴我，說這張圖非常重要！必須想起來才行！" Option="難道是龍蝦叔的第六感？"/>
+				<Talk NpcID="10097" Face="正常" Msg="啊啊啊啊~怎麼辦，還是想不起來！看來得用絕招了！" Option="絕招？什麼絕招呀？"/>
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />	
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10097" Face="正常" Msg="{$username}，來，你用這個平底鍋敲我的腦袋，這樣我肯定能想起來！" Option="不，不是吧？腦袋敲壞了怎麼辦？" />
+				<Talk NpcID="10097" Face="正常" Msg="不會的，我堂堂龍大俠，身經百戰，早已練就金剛不壞之身，連你龍蝦大媽敲我都沒事！一般人可都不能學我的！" Option="額……好吧，千萬要扛住啊！"/>
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="1" />
+			<Action Cmd="PLAY_MOVIE" Param="55" Name="movie_55" />     <!--   movie_55 是箭頭提示點擊平底鍋  -->
+			<Action Cmd="DELETE_MOVIE" Param="movie_55" />			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10097" Face="正常" Msg="你大媽總說腦袋得敲敲才會變靈光，果然沒錯！我終於想起在哪兒見過這些符文了！" Option="啊？！真的嗎？究竟怎麼回事？" />
+				<Talk NpcID="10097" Face="正常" Msg="先跟我一起回列車我來告訴你們！對了，{$username}，你可真夠大力的，敲得我腦袋現在都還疼！你大媽敲我的時候多溫柔呀……" Option="啊，哦，那我下次輕一點，嘿嘿~"/>
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />				
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="255" MapType="0" />				
+		
+		</EnterMap>	
+	</Step>			
+
+	<Step ID="2" >
+		<EnterMap MapID="255" >
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10097" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="51" Name="movie_51"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10097" Face="正常" Msg="記得俺爹還在的時候，有一天，他帶回來一張奇怪的紙條，還說這紙條和海妖國寶藏有關。後來俺爹把紙條留給了我，讓我好好收著。" Option="那後來呢？" />
+				<Talk NpcID="10097" Face="正常" Msg="當時我還小，哪兒管什麼寶藏不寶藏的呀！只覺得那張紙挺好的，還把它夾在我的故事書裡面了……" Option="( ⊙ o ⊙ )這……還能找到嗎？"/>
+				<Talk NpcID="10097" Face="正常" Msg="我也不知道呀！都過去這麼多年了……不過，先找找看吧！" Option="好，拜托了！？"/>
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_51" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10097" Face="感動" Msg="太感動了！我小時候最愛的故事書呀~要不是今天你們提醒了我，我都給忘了……" Option="那張紙條還在裡面嗎？" />
+			</Action>				
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="PLAY_MOVIE" Param="6_1" Name="movie_6_1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_6_1" />
+			<!-- 下面是折疊千紙鶴 -->	
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6"  IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			<Action Cmd="PLAY_MOVIE" Param="60" Name="movie_60"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="可我看不懂呀，這奇怪的紙條，和之前章魚身上那張圖有什麼關係？真的和海妖寶藏有關聯嗎？" Option="我也看不懂^_^" />
+				<Talk NpcID="10097" Face="正常" Msg="當時俺爹是這麼說的呀！好啦，你們慢慢研究，我重溫我小時候的故事書去了！" Option="好吧，謝謝龍大俠！" />
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_60" />								
+			<!-- 下面是加載猜數字的UI，以下是直接實現在偵上的代碼,請勿修改 941256-->
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200"  IsFullScreen="1"/>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />											
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" />		
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			<Action Cmd="PLAY_MOVIE" Param="56" Name="movie_56" />		
+			<Action Cmd="DELETE_MOVIE" Param="movie_56" />				
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="260" MapType="0" />
+		</EnterMap>																						
+	</Step>	
+
+	<Step ID="3" >
+		<EnterMap MapID="260" >
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101"  IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102"  IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />	
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" />					
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="焦急" Msg="不行，得趕緊把其其他們救下來！" Option="捷克王子你也要小心啊！" />
+			</Action>		
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103"  IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="PLAY_MOVIE" Param="61" Name="movie_61" />							
+			<Action Cmd="SAY" >
+				<Talk NpcID="10090" Face="正常" Msg="讓本王子來領教下庫拉的厲害！捷克、{$username}，你們快去救人吧！剛才我發現龍骨上似乎有什麼機關，你們去看看！" Option="謝謝你，保羅王子！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_61" />							
+			<Action Cmd="PLAY_MOVIE" Param="52" Name="movie_52" />      <!--   movie_52 是箭頭提示點擊掛繩子的龍骨  -->
+			<Action Cmd="DELETE_MOVIE" Param="movie_52" />						
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="OPEN_PANEL" Param="SpinGemUi" />																
+		</EnterMap>	
+	</Step>
+
+	<Step ID="4" >
+		<SubmitScore ModuleID="10021" MinScore="1" LoseMsg="還沒解開龍骨機關哦！小摩爾要重來一次嗎？" >
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104"  IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />				
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />				
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105"  IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_105" />		
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106"  IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_106" />					
+			<Action Cmd="OVER" />																	
+		</SubmitScore>
+	</Step>	
+</Tasks>
+
+<!-- movie100是以前的swf -->
+<!-- movie101是以前的swf -->
+<!-- movie103是以前的swf -->
+<!-- movie104是以前的swf -->
+<!-- movie105是以前的swf -->
+<!-- step3到step4的地圖跳轉的 “龍肚子新場景”暫時替換為258 -->
+
+
+

@@ -1,0 +1,136 @@
+<Tasks ID="598" Name="跟回家的火馬" AwardMsg="恭喜你獲得20個火神紋章！" AwardBean="" >
+
+	<!-- 火山地帶  -->
+	<Step ID="1" TarMapID="341">
+		<EnterMap MapID="341">
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="正常" Msg="{$username}，快來快來，我在火山這裡發現了好有趣的事情！" Option=""/>
+				<Talk NpcID="10216" Face="正常" Msg="剛才我找到了一個很神奇的石頭，試著吹了一下，結果岩漿裡咕嘟咕嘟開始冒泡了，不知道裡面藏著什麼？" Option="能發出聲音的石頭？"/>
+				<Talk NpcID="10216" Face="正常" Msg="恩，是一個中間空空的圓石頭，上面還有很多小洞洞！我記得就在這裡附近，你找找吧！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="正常" Msg="{$username}，你找到了！快來試著吹吹看吧~" Option="嘿嘿，我這就試試！"/>
+			</Action>
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="正常" Msg="看，我說得沒錯吧？嘿嘿，讓我再試試~" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="正常" Msg="原來岩漿裡藏著一匹小火馬！難道上次把我們推回岸邊的也是你嗎？" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="正常" Msg="哇，好乖的小火馬，你想跟我做朋友嗎？好想帶你回摩利亞，把你介紹給大家，你聽得懂我說的話嗎，嘻嘻。" Option="它好像很喜歡艾蓮娜呢"/>
+				<Talk NpcID="10216" Face="正常" Msg="決定了！我們這就回家吧~{$username}，如果我們把小火馬帶回家的話，爸爸會不會嚇一跳？" Option="這匹馬真的會跟來嗎？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="339" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	
+	<!-- 龍巢迷宮 -->
+	<Step ID="2" TarMapID="339">
+		<EnterMap MapID="339">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10219" Face="靈感" Msg="聽說前幾天有幾個冤大頭，被別的摩摩兔騙得白白打工。不知道今天在這兒等不等得到那些傢伙們呢？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10219" Face="靈感" Msg="（嘿嘿！說曹操曹操到~看我把他們騙得一文不剩~）" Option=""/>
+				<Talk NpcID="10216" Face="正常" Msg="{$username}，沒想打這匹小馬真的跟回來了耶！哈哈，我們快到家了哦！咦，這裡怎麼有只摩摩兔？" Option=""/>
+				<Talk NpcID="10219" Face="正常" Msg="可愛的小摩爾，我第一次見到那麼美麗的小火馬，你能讓我靠近一點看看嗎？" Option=""/>
+				<Talk NpcID="10216" Face="正常" Msg="當然沒問題啦，這是我的新朋友哦，請你靠近來看吧！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="焦急" Msg="發……發生了什麼事？" Option="好像是小火馬被綁架了呢"/>
+				<Talk NpcID="10216" Face="焦急" Msg="綁，綁架？！這可怎麼辦呀！" Option="先回去找你爸爸商量吧"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="342" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 永夜哨站 -->
+	<Step ID="3" TarMapID="342">
+		<NPC ID="10213" Option="跟回家的火馬"  MapID="" >
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10213" Face="正常" Msg="哦哦，艾蓮娜，我的乖女兒，你平安歸來了。玩得開不開心？有沒有遇到危險？" Option=""/>
+				<Talk NpcID="10216" Face="焦急" Msg="爸爸，糟糕了，我的朋友被綁架了！" Option=""/>
+				<Talk NpcID="10213" Face="正常" Msg="綁架？{$username}~難道你讓艾蓮娜陷入危險了？（巴圖魯的肌肉又開始嘎嘣作響）" Option="沒有！冤枉啊！"/>
+				<Talk NpcID="10216" Face="焦急" Msg="爸爸，我完全沒事啦，{$username}還一直保護我呢！是我的朋友小火馬被摩摩兔給綁架了！" Option=""/>
+				<Talk NpcID="10213" Face="正常" Msg="火馬？我怎麼越聽越糊塗了" Option="把發現小火馬的事告訴巴圖魯"/>
+				<Talk NpcID="10213" Face="正常" Msg="原來是這樣。艾蓮娜乖女兒，不要急！你不是吹了石頭之後，馬才出現的嗎？你現在再吹一次試試！" Option=""/>
+			</Action>
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10216" Face="正常" Msg="哇！真的出現了！" Option=""/>
+				<Talk NpcID="10219" Face="靈感" Msg="唔……好痛苦……脖子……" Option="你真是自作自受呀！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10218" Face="生氣" Msg="小兔崽子，越來越不學好了！暑假作業做完沒？月底考試再考砸我讓你三餐都沒胡蘿蔔吃！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="焦急" Msg="……………………………………………………" Option=""/>
+				<Talk NpcID="10216" Face="焦急" Msg="……………………………………………………" Option=""/>
+				<Talk NpcID="10213" Face="正常" Msg="……………………………………………………" Option=""/>
+				<Talk NpcID="10216" Face="焦急" Msg="好強勢的兔媽媽，一時間不知道說什麼好……" Option=""/>
+				<Talk NpcID="10213" Face="正常" Msg="好啦，話說回來。{$username}，你知道嗎，在摩利亞，火馬是火神的使者，是吉祥的象徵，一般都會舉辦集會來慶祝。" Option=""/>
+				<Talk NpcID="10216" Face="正常" Msg="我聽說，摩爾莊園的火神盃比賽即將閉幕了，把閉幕式放到摩利亞來舉辦好不好？" Option=""/>
+				<Talk NpcID="10213" Face="正常" Msg="好主意，真不愧是我的乖女兒！{$username}，你們下周會來一起慶祝吧？" Option="恩，我一定把消息傳達給大家！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</NPC>
+	</Step>
+</Tasks>

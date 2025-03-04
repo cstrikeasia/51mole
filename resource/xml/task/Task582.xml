@@ -1,0 +1,168 @@
+<Tasks ID="582" Name="迷霧之地" AwardMsg="恭喜你獲得尤瑞克戰靴，10個經驗果實！" AwardBean="" >
+
+	<!-- 遺忘田園  -->
+	<Step ID="1" TarMapID="329">
+		<EnterMap MapID="329">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" hideBg="1"/>	
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="開心" Msg="好棒！小水車終於被我們修好了！" Option="像嶄新的一樣，真是不容易啊！"/>
+				<Talk NpcID="10009" Face="正常" Msg="現在小水車還能咕嚕嚕地轉動，比我們剛看到時更好，要是尤瑞克老爺爺知道了一定會很開心的！" Option="可是都好些天沒見到尤瑞克老爺爺了！ "/>
+				<Talk NpcID="10000" Face="焦急" Msg="他不會還在生我們氣吧？這個小水車對於他來說好像非常珍貴的樣子。其實……不就是一個小水車嘛，為什麼……" Option="我也覺得很奇怪o(╯□╰)o"/>
+				<Talk NpcID="10009" Face="驚訝" Msg="咦？你們快看，那個小水車一閃一閃的，怎麼回事？" Option="哇~小水車發光了！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" hideBg="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+<!-- 			<Action Cmd="GO_MAP" MapID="1" MapType="0" /> -->
+		</EnterMap>	
+	</Step>
+	
+	
+	<!-- 遺忘田園  -->
+	<Step ID="2" TarMapID="329">
+		<EnterMap MapID="329">
+			<Action Cmd="OPEN_PANEL" Param="Task582Panel" ClearMap="1"/>
+			<Action Cmd="ADD_EVENT" Param="task582PanelOver"/>
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="330" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 過去的遺忘田園-->
+	<Step ID="3" TarMapID="330">
+		<EnterMap MapID="330">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="發生了什麼事？我們這是……到哪兒了？" Option="怎麼覺得像是在遺忘田園……看，那不是小水車麼！"/>
+				<Talk NpcID="10009" Face="驚訝" Msg="這裡是有點像遺忘田園，但又有點不像……哎呀，我也說不清楚……" Option="對了，迷霧！我們之前在遺忘田園看到的迷霧沒了！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="這，這不是尤瑞克老爺爺嗎？哦，不對，應該是年輕版的尤瑞克，額，老爺爺……" Option="難道說……我們被小水車帶回到了過去？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="15" Name="movie_15" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_15" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 過去的遺忘田園-->
+	<Step ID="4" TarMapID="330">
+		<EnterMap MapID="330">
+			<Action Cmd="OPEN_PANEL" Param="Task582Panel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="task582PanelOver"/>
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="咦？怎麼轉來轉去，還是在遺忘田園？但是剛剛那個年輕的老爺爺不見了……" Option="快看，老爺爺的妻子還在！ "/>
+				<Talk NpcID="10010" Face="正常" Msg="怎麼就剩她一個人了？老爺爺去哪裡了？" Option="走，我們去問問！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10196" Face="正常" Msg="咦？你們是誰？好像沒見過你們呢。……噢，請原諒我，主要是，平時這裡都見不到別人。" Option="我見過你，你是尤瑞克老爺爺的妻子。"/>
+				<Talk NpcID="10196" Face="正常" Msg="哈哈，老爺爺？我從來沒聽過別人這樣叫他。不過這倒是個有趣的稱呼，等他回來，我也要逗逗他。" Option="回來？請問他去哪兒了？"/>
+				<Talk NpcID="10196" Face="正常" Msg="他……他去了黑森林。前些日子，王國傳來消息，黑森林裡黑龍入侵，我親愛的丈夫，也應徵前往黑森林抵禦黑龍了。" Option="哇！尤瑞克老爺爺太英勇啦！"/>
+				<Talk NpcID="10196" Face="正常" Msg="（嘴角揚起一抹微笑）是呀，這也正是他吸引我的地方。他臨走的時候告訴我，說他一定會平安回來，他還要和小水車一起唱歌給我聽。" Option="真是太浪漫了，他一定會平安回來的！"/>
+				<Talk NpcID="10196" Face="正常" Msg="我天天都會來小水車這裡寫日記，等我的日記寫滿了，他一定就回來了。噢，我還得把今天的日記寫完，下次再和你們聊噢！" Option="嗯，好的！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+		</EnterMap>
+	</Step>
+	
+	
+	<!-- 過去的遺忘田園-->
+	<Step ID="5" TarMapID="330">
+		<EnterMap MapID="330">
+			<Action Cmd="OPEN_PANEL" Param="Task582Panel" ClearMap="0"/>
+			<Action Cmd="ADD_EVENT" Param="task582PanelOver"/>
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="驚訝" Msg="呀！快看，那邊有個人暈倒了！" Option="我們趕緊過去看看！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10195" Face="悲傷" Msg="我，我這是怎麼了……（看看四週）不，不，我要回家去，我還要去找我的卡羅拉……可是，可是我卻回不去了……" Option="回不去了？怎麼回事？"/>
+				<Talk NpcID="10195" Face="悲傷" Msg="這些迷霧……我不知道這裡怎麼會有這些迷霧……它擋住我的去路，我試了無數次，可每次我走進迷霧，最終又回到了原點……上天，為什麼不讓我去見我的卡羅拉……" Option="天啊，怎麼會變成這樣……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+			<Action Cmd="GO_MAP" MapID="329" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+		<!-- 遺忘田園-->
+	<Step ID="6" TarMapID="329">
+		<EnterMap MapID="329">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1" IsFullScreen="1" hideBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10063" Face="正常" Msg="{$username}，你們去哪兒啦？我找你們好半天！" Option="咦？湯米？！難道我們回到現實了？"/>
+				<Talk NpcID="10000" Face="正常" Msg="湯米，我們發現了一個秘密，原來尤瑞克老爺爺的家在這片迷霧的後面。他的妻子在那等著他。先不和你說了，我們得去霧後面看看！" Option="嗯！我們去找找老爺爺的妻子！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" IsBg="1" IsFullScreen="1" hideBg="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="13" Name="movie_13" IsBg="1" IsFullScreen="1" hideBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10063" Face="疑惑" Msg="你……你們怎麼都變成了這樣？" Option="天啊，我們也繞回了原點。年輕尤瑞克爺爺說得沒錯！"/>
+				<Talk NpcID="10000" Face="驚訝" Msg="哇~你們怎麼都變黑了？天，我好像也一樣……我們隻是在迷霧中走了一圈，怎麼就變成了這樣？" Option="啊啊啊~怎麼辦，被毀容了！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_13" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="14" Name="movie_14" IsBg="1" IsFullScreen="1" hideBg="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="開心" Msg="太好了，終於恢復原樣了！" Option="還好，還好，不用做黑摩爾了！"/>
+				<Talk NpcID="10009" Face="正常" Msg="尤瑞克老爺爺，希望您不要介意，我們已經知道了您和您妻子的故事——具體的會跟您慢慢解釋，不過，我們很希望能幫您穿過這片迷霧，讓您能再見到您的妻子！" Option="是呀！"/>
+				<Talk NpcID="10192" Face="正常" Msg="謝謝你們的心意，可是，我已經試了30年了，依然找不到辦法……" Option="不怕，我們有辦法！"/>
+				<Talk NpcID="10000" Face="開心" Msg="對，大衛可是摩爾莊園偉大的發明家哦！我們可以找他想想辦法，再加上我們這群小摩爾，一定會找到辦法的！" Option="嗯，嗯，嘿嘿~"/>
+				<Talk NpcID="10192" Face="正常" Msg="謝，謝謝你們……雖然不知道結果會怎樣，但還是謝謝你們。我的卡羅拉，我今生還能再見到你嗎……" Option="爺爺放心，一定行的！"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_14" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER"  MapID="330"/>
+		</EnterMap>
+	</Step>
+</Tasks>
+
+

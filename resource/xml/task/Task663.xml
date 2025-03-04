@@ -1,0 +1,96 @@
+<Tasks ID="663" Name="貓怪來襲" AwardMsg="恭喜你獲得1隻肥肥花兔（牧場動物）、1個貓怪鈴鐺（裝扮）和10000摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="32">
+		<EnterMap MapID="32">
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>	
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10036" Face="生氣" Msg="烈焰劍齒虎，到底是個什麼東西？竟然可以這樣肆無忌憚的在莊園搗亂！" Option="王子，會不會和塞拉王子說的什麼異世界大門有關？"/>
+				<Talk NpcID="10036" Face="疑惑" Msg="異世界？{$username}，塞拉還說了什麼？麼麼怎麼都沒跟我提起？" Option="公主一心想著馴獸師大賽吧，塞拉說異世界大門打開，通往新世界什麼的？"/>
+				<Talk NpcID="10036" Face="悲傷" Msg="頭疼，怎麼回事？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10036" Face="悲傷" Msg="怎麼又頭疼起來了？" Option="王子，你沒事吧？"/>
+				<Talk NpcID="10036" Face="悲傷" Msg="自從那個劍齒虎來了莊園，我就一陣一陣的冒冷汗，頭痛得厲害。 " Option="他影響力有這麼大？"/>
+				<Talk NpcID="10036" Face="悲傷" Msg="不見得，我感覺是有什麼不好的東西也一起來了！" Option="不好的東西？"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="32">
+		<EnterMap MapID="32">
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10307" Face="失望" Msg="貓的夜市王子解除魔咒完全是騙人的，只是他們的一個障眼法，喵喵公主和黑貓先生也只不過是一個幌子。" Option="啊？所以王子還沒有好？"/>
+				<Talk NpcID="10307" Face="失望" Msg="是的，捷克和{$username}跟我來！壞壞留下！ " Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="沙沙說王子並沒有解除魔咒，還身陷那個黑貓的魔咒之中。難道她有什麼證據嗎？我們跟著她去看看吧！"/>
+			
+			<Action Cmd="GO_MAP" MapID="80" MapType="0"/>
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>	
+	</Step>
+	
+	<Step ID="3" TarMapID="80">
+		<EnterMap MapID="80">	
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10307" Face="失望" Msg="（小小聲）你們看，這就是傳說中鈴鐺貓怪，它到過的地方，都籠上了一層紫色的薄霧，就像蜘蛛布上了它的網路。他們在尋找捷克。" Option="那我們帶著王子來這裡真的好嗎？"/>
+				<Talk NpcID="10307" Face="失望" Msg="好在現在王子是正常的摩爾，鈴鐺貓沒法聞到王子的氣息。但是整個氣息在影響著王子。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10036" Face="悲傷" Msg="沒事，這裡的紫色煙霧真的不大好，你看那三個結界貓爪。" Option=""/>
+				<Talk NpcID="10307" Face="疑惑" Msg="貓爪？讓我看看！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10307" Face="開心" Msg="捷克，你一如既往的敏銳！！沙沙沒有看錯！！" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="沙沙，謝謝你，我舒服多了！" Option=""/>
+				<Talk NpcID="10307" Face="失望" Msg="可是，如果我們破壞了所有的結界，就會暴露我的位置，這不是個好辦法。為了保護捷克和莊園，我們要找個更好的辦法。" Option="有什麼好辦法呢？"/>
+				<Talk NpcID="10307" Face="開心" Msg="有了！貓的夜市！！" Option="恩？"/>
+				<Talk NpcID="10307" Face="開心" Msg="只要有這種貓爪的地方，就可以進入貓的夜市，那是鈴鐺貓做出的幻境，我們可以去那裡。" Option="然後就躲過鈴鐺貓了？"/>
+				<Talk NpcID="10307" Face="開心" Msg="對呀！捷克我們走吧！" Option=""/>
+				<Talk NpcID="10036" Face="生氣" Msg="不行，我不去，你們帶著壞壞走，保護好壞壞，莊園我來守護！" Option=""/>
+				<Talk NpcID="10307" Face="焦急" Msg="捷克，他們的目標是你啊！！" Option=""/>
+				<Talk NpcID="10036" Face="生氣" Msg="他們的目標是我，是莊園，是所有的小摩爾和小拉姆，是我必須守護的一切！" Option=""/>
+				<Talk NpcID="10036" Face="生氣" Msg="沙沙，壞壞還小，是我回到莊園一直帶在身邊的拉姆。我把它託付給你了！我知道你為了救我，為了幫我吃了很多苦。" Option=""/>
+				<Talk NpcID="10307" Face="焦急" Msg="捷克！！你醒醒，他們的目標是你，你繼續留在這裡就會變回黑貓，會被他們帶走，你的力量會被他們濫用。" Option=""/>
+				<Talk NpcID="10036" Face="生氣" Msg="放心，那個時候我會讓哈哈繼續把我關進籠子裡，鎖上！" Option=""/>
+				<Talk NpcID="10307" Face="焦急" Msg="捷克，我……" Option=""/>
+				<Talk NpcID="10036" Face="生氣" Msg="不用說了，沙沙，我知道你是懂事的好拉姆。一直幫助我，一直守護我，謝謝你！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>
+
+

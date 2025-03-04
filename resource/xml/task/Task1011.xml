@@ -1,0 +1,212 @@
+<Tasks ID="1011" Name="蘑菇森林遭遇戰" AwardMsg="恭喜你獲得2個卡蘭花種子、可愛包包頭！" AwardBean="" >
+
+	<!-- 時光聖殿  -->
+	<Step ID="1" TarMapID="338">
+		<EnterMap MapID="338">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="正常" Msg="你問我變成元素騎士的秘密？" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="是啊，為什麼你們都變成了元素騎士？" Option=""/>
+				<Talk NpcID="10009" Face="正常" Msg="我也不清楚，只記得那時一心想保護樂樂，忽然力量湧了出來，一回神就穿上了鎧甲……" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="丫麗，你忘記了嗎，那天我們一起跟著菩提大伯進入時光聖殿的時候……" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="我們在女神石像前發誓後，卻沒有收到什麼考驗。我們都以為是搞錯了……" Option=""/>
+				<Talk NpcID="10009" Face="正常" Msg="啊！難道說，是為了考驗我們願不願意盡力幫助別人嗎？" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="似乎是呢，樂樂為了救出那位受傷的士兵，我為了幫助你們擺脫困境，所以都通過了考驗！" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="原來這就是石碑的考驗！我很樂於幫助他人，我會證明給女神和石碑看的！" Option=""/>
+				<Talk NpcID="10002" Face="正常" Msg="準備好了嗎，{$username}，就在這向女神像立下誓言，接受元素石碑的考驗吧！" Option=""/>
+			</Action>
+			
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10204" Face="正常" Msg="擁有元素騎士資格的摩爾啊，用行動證明你的誓言吧！" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+<!-- 			<Action Cmd="GO_MAP" MapID="239" MapType="0" /> -->
+		</EnterMap>	
+	</Step>
+	
+	
+	<!-- 時光聖殿 -->
+	<Step ID="2" TarMapID="338">
+		<EnterMap MapID="338">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="正常" Msg="麼麼公主！你有什麼需要我説明的嗎？" Option=""/>
+				<Talk NpcID="10002" Face="驚訝" Msg="幫助？恩……倒是有……" Option=""/>
+				<Talk NpcID="10197" Face="開心" Msg="快點告訴我吧，我馬上幫你做完！然後就能成為元素騎士了！啊~我會變得非常非常厲害，然後……" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="疑惑" Msg="嗚……頭好痛……" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="焦急" Msg="麼麼公主！麼麼公主你沒事吧！" Option=""/>
+				<Talk NpcID="10002" Face="焦急" Msg="唔……我們好像被襲擊了，我沒事。" Option=""/>
+				<Talk NpcID="10197" Face="疑惑" Msg="（還說要幫助公主呢……我連保護自己都做不到，哎！）" Option=""/>
+				<Talk NpcID="10002" Face="驚訝" Msg="糟了！是黑魔法陣！快阻止這個魔法陣，不然整個時光聖殿都會被黑魔法破壞的！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+<!-- 			<Action Cmd="GO_MAP" MapID="238" MapType="0" /> -->
+		</EnterMap>
+	</Step>
+	
+	
+	<!-- 時光聖殿 -->
+	<Step ID="3" TarMapID="338">
+		<EnterMap MapID="338">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="正常" Msg="這個魔法陣好像是由五根魔法杖構成的，如果我能拔起魔法杖的話，就能阻止魔法陣發動了吧！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_103" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="正常" Msg="好痛！為什麼這個拔不起來！" Option=""/>
+				<Talk NpcID="10002" Face="驚訝" Msg="{$username}，不要緊吧？這個黑魔法陣，必須同時破壞5個角才能消除。以{$username}的一己之力是無法解除的。" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_104" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="正常" Msg="樂樂，你的身體不要緊了嗎？" Option=""/>
+				<Talk NpcID="10000" Face="正常" Msg="托大家的福，完全恢復了呢！" Option=""/>
+				<Talk NpcID="10002" Face="開心" Msg="真是太好了，讓我們齊心協力把魔法陣破壞吧！" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_105" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10204" Face="正常" Msg="遵守諾言的摩爾啊，汝證明了自己的善良內心。汝將獲得元素騎士之名號，願汝將騎士精神發揚光大！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="開心" Msg="{$username}，你成功了！恭喜你！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="驚訝" Msg="這裡竟然有樓梯！" Option=""/>
+				<Talk NpcID="10009" Face="正常" Msg="這就是黑森林深處的秘密嗎，哈哈！走吧！探險去！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1002" Name="movie_1002" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1002" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 時光聖殿 -->
+	<Step ID="4" TarMapID="338">
+		<EnterMap MapID="338">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="GO_MAP" MapID="337" MapType="0" />
+		</EnterMap>
+		
+		<EnterMap MapID="337">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="stone_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="go_336" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="疑惑" Msg="這什麼地方啊，長了好多草！" Option=""/>
+				<Talk NpcID="10009" Face="正常" Msg="不走下去怎麼知道呢，嘿嘿，就讓我打頭陣吧！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10009" Face="焦急" Msg="有蛇！！！有蛇啊！！！！！！！！" Option=""/>
+				<Talk NpcID="10210" Face="正常" Msg="誰啊，把我和我的小夥伴們都嚇了一跳！" Option=""/>
+				<Talk NpcID="10197" Face="驚訝" Msg="啊！你是冒充小丑盧卡斯的那個……那個誰！" Option=""/>
+				<Talk NpcID="10210" Face="正常" Msg="嘖，本大爺是有名字的！我是魔法學院7號學員，幸運小丑華利弗！你們把我的小夥伴嚇到了，可是要付出代價的！" Option=""/>
+				<Talk NpcID="10197" Face="驚訝" Msg="小夥伴？你的同夥嗎？" Option=""/>
+				<Talk NpcID="10210" Face="正常" Msg="哼，大爺我的小夥伴比他們兩個可愛多了！就讓我的小夥伴陪你們玩玩吧！哼哼哼哼……哈哈哈哈哈！" Option=""/>
+				<Talk NpcID="10009" Face="生氣" Msg="喂！別跑！！！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1003" Name="movie_1003" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1003" />
+			
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+		</EnterMap>
+	</Step>
+	
+	
+		<!-- 蘑菇森林 -->
+	<Step ID="5" TarMapID="337">
+		<EnterMap MapID="337">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="stone_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="go_336" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1" IsFullScreen="1" />	
+			
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_106" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="正常" Msg="原來這就是元素騎士的戰鬥……雖然是第一次，但好像對自己更有信心了！" Option=""/>
+				<Talk NpcID="10206" Face="正常" Msg="將來的戰鬥還會更加困難吧。那幾個黑魔法學院的人，讓人有深不見底的感覺。" Option=""/>
+				<Talk NpcID="10207" Face="正常" Msg="管他華利弗還是華夫餅，放馬過來！讓你們嘗嘗雙錘的威力，哈哈！！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />
+			
+			
+			
+			<Action Cmd="PLAY_MOVIE" Param="107" Name="movie_107" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_107" />
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="stone_mc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="go_336" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

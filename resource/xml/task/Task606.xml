@@ -1,0 +1,39 @@
+<Tasks ID="606" Name="摩爾星智奪月餅" AwardMsg="恭喜你獲得2000摩爾豆、1個月餅！" AwardBean="2000" >
+
+	<Step ID="1" TarMapID="109">
+<!-- 		<NPC ID="10002" Option="未來星智奪月餅"  MapID=""  > -->
+		<EnterMap MapID="109">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="焦急" Msg=" 哎呀，急死了，急死了，這回怎麼辦呢！" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="麼麼公主，發生了什麼事了嗎？" Option=""/>
+				<Talk NpcID="10002" Face="焦急" Msg="中秋來了，我買了月餅準備送給嫦娥，可是不知道為什麼買好的月餅弄丟了，怎麼也找不到了！嗚嗚嗚~~~~~" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="麼麼公主，別著急，有什麼我可以幫忙的嗎？" Option=""/>
+				<Talk NpcID="10002" Face="開心" Msg=" 小摩爾要幫我嗎？太感謝了！其實我想到方法了，那就是參加摩爾星的小遊戲，通過以後就可以得到月餅作為獎品。" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="好的，麼麼公主等著我的好消息吧，我這就去參加！" Option=""/>
+			</Action>
+			<Action Cmd="OPEN_PANEL" Param="WeiLaiXingBigClassPanel" />
+			<Action Cmd="ADD_EVENT" Param="mengNiuJieShu" />
+			<Action Cmd="OVER"/>
+			
+<!-- 			<Action Cmd="SET_BUFFER" Panel="2" Step="2" /> -->
+<!-- 			<Action Cmd="GO_MAP" MapID="38" MapType="0" /> -->
+		</EnterMap>
+	</Step>
+	
+<!-- 	<Step ID="2" TarMapID="109"> -->
+<!-- 		<EnterMap MapID="109"> -->
+			
+<!-- 		</EnterMap> -->
+<!-- 	</Step> -->
+	
+<!-- 	<Step ID="3" > -->
+<!-- 		<NPC ID="10002" Option="摩爾星智奪月餅"  MapID=""  > -->
+<!-- 			<Action Cmd="SAY" > -->
+<!-- 				<Talk NpcID="10197" Face="正常" Msg="麼麼公主，我幫你贏到月餅了！這回你能交差了。" Option=""/> -->
+<!-- 				<Talk NpcID="10002" Face="正常" Msg=" 小摩爾，太感謝了！不過我的月餅已經找到了，原來是忘在摩樂樂家了，摩樂樂剛才已經給我送過來了。所以你辛辛苦苦贏到的月餅就自己收好吧！" Option=""/> -->
+<!-- 				<Talk NpcID="10197" Face="正常" Msg="哈哈，那真是太好了！代我向嫦娥姐姐問好哦！" Option=""/> -->
+<!-- 			</Action> -->
+<!-- 			<Action Cmd="OVER"/> -->
+<!-- 		</NPC> -->
+<!-- 	</Step> -->
+</Tasks>

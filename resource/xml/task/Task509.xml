@@ -1,0 +1,36 @@
+<Tasks ID="509" Name="汰漬健康大普查" AwardMsg="恭喜你獲得水泡泡天使種子、1000摩爾豆" AwardBean="1353211$0" >
+	<Step ID="1" >
+		<EnterMap MapID="252" >
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10093" Face="正常" Msg="呼…呼…現在的細菌們越來越厲害了，這次費了好大勁才消滅了它們！" Option="汰漬除菌小精靈！" />
+				<Talk NpcID="10093" Face="正常" Msg="{$username}，你來啦！莊園可能受到衣物細菌感染的小摩爾我都檢查過了，這次的危機應該可以解除啦！" Option="我還帶來1個！" /> 
+				<Talk NpcID="10093" Face="正常" Msg="呼，太驚險了！竟然還漏了1個小摩爾！如果一不小心讓那些細菌再重新聚集起來那就更麻煩了！" Option="真的好險！" />
+				<Talk NpcID="10093" Face="正常" Msg="{$username}，這次你來幫它們檢查吧，下次遇到這些細菌，就能想辦法對付它們了！" Option="讓我試試！" />
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="OPEN_PANEL" Param="TaiZiSearchUi" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+		</EnterMap>	
+	</Step>			
+	
+	<Step ID="2" >
+		<SubmitScore ModuleID="10022" MinScore="1" LoseMsg="很遺憾你沒有消滅所有的細菌哦，和媽媽一起再努力一次吧！" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10093" Face="正常" Msg="你應該在這次的體檢中學習到不少知識了吧！以後一定要小心防備這些細菌哦！" Option="謝謝你！" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10093" Face="正常" Msg="看來庫拉他們還是沒變啊~日常衣物上其實有很多細菌，為了不讓細菌有機可乘，因此要注意衣物除菌哦！" Option="我的校服上是不是也有很多細菌？" />
+				<Talk NpcID="10093" Face="正常" Msg="看似乾淨的衣服上其實都有很多細菌，同學們天天在學校上課玩耍，校服上的細菌肯定不少啦~~" Option="那該怎麼對付校服上的這些細菌啊？" />
+				<Talk NpcID="10093" Face="正常" Msg="很簡單，讓媽媽每天都用汰漬全效除菌洗衣粉洗洗就行，它加入了舒膚佳成分配方，不僅除菌，還裡外都潔淨呢！" Option="那小摩爾與拉姆們的衣服該怎麼辦？" />
+				<Talk NpcID="10093" Face="正常" Msg="到汰漬除菌室來吧！我也在那裡，可以幫大家清洗衣服。大家記得每天都要帶衣服來清洗哦 ^-^" Option="汰漬除菌小精靈再見！" />
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />	
+			<Action Cmd="OVER" />
+		</SubmitScore>
+	</Step>		
+</Tasks>

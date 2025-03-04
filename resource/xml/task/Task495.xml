@@ -1,0 +1,114 @@
+<Tasks ID="490" Name="最炫回歸風" AwardMsg="恭喜你獲得最炫回歸風T恤！同時小屋倉庫上限提升500格！" AwardBean="0" >
+	<Step ID="1" >
+		<NPC ID="10047" Option="最炫回歸風" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10047" Face="焦急" Msg="{$username}, 麼麼公主最近好像總是心事重重，你們年輕人比較好溝通，你能幫我去和公主聊聊嗎？" Option="好的，我這就去！" />
+			</Action>
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="109" MapType="0" />
+		</NPC>	
+	</Step>
+	
+	<Step ID="2" >
+		<NPC ID="10002" Option="最炫回歸風" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="悲傷" Msg="很多小摩爾說，莊園現在的生活沒有以前那麼快樂了。可是我希望所有小摩爾都能快快樂樂的，我很在意大家的感受呢！" Option="麼麼公主，你不要難過……" />
+				<Talk NpcID="10002" Face="悲傷" Msg="作為公主，我有義務為大家創造快樂的生活環境。{$username}，你能幫我問下大家，為什麼覺得摩爾莊園沒有以前那麼快樂了嗎？" Option="包在我身上，請公主放心。" />
+			</Action>
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="OPEN_TASK_PANEL" />
+		</NPC>
+	</Step>
+	
+	<Step ID="3" >
+		<NPC ID="10027" Option="最炫回歸風" Bit="1" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10027" Face="正常" Msg="Hi，{$username}，好久不見了，你找我有事嗎？" Option="你對目前的莊園有什麼看法？" />
+				<Talk NpcID="10027" Face="焦急" Msg="讓我想想……恩……我很懷念過去的《摩爾時報》，每期除了最新資訊外，還有碎片收集和隱藏禮物呢！" Option="報紙內容需要加強是嗎？" />
+				<Talk NpcID="10027" Face="焦急" Msg="是呀，我可是時報的忠實讀者，麻煩你一定要告訴兔兔主編，我很懷念時報過去帶給我的驚喜和發現呢！" Option="謝謝你，我一定轉告她。" />
+			</Action>
+			<Action Cmd="SET_BIT" Param="1" />
+		</NPC>
+		<NPC ID="10015" Option="最炫回歸風" Bit="2" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10015" Face="焦急" Msg="是你呀，你有什麼最近的新聞要爆料嗎？" Option="我在收集重建莊園的想法。" />
+				<Talk NpcID="10015" Face="正常" Msg="重建莊園？那可太好了！我好懷念SMC，SMC很久都沒更新了呢。那些刺激冒險的題材是我新聞的絕佳素材！" Option="SMC，恩，我記住了，謝謝。" />
+			</Action>
+			<Action Cmd="SET_BIT" Param="2" />
+		</NPC>
+		<NPC ID="10041" Option="最炫回歸風" Bit="3" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10041" Face="正常" Msg="{$username}，你好。找我有事嗎？" Option="你對目前的莊園生活有什麼看法？" />
+				<Talk NpcID="10041" Face="正常" Msg="唔……這個……如果超級拉姆們能像以前那樣，經常有自己的專屬任務和神奇道具就好了！" Option="恩，這個想法真不錯！" />
+			</Action>
+			<Action Cmd="SET_BIT" Param="3" />
+		</NPC>
+		<NPC ID="10007" Option="最炫回歸風" Bit="4" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="呵呵，拉姆們都開始放暑假了，我也能休息休息~" Option="你覺得莊園有什麼要改進的地方？" />
+				<Talk NpcID="10007" Face="正常" Msg="呵呵，我倒有個小建議，我希望禮品店能更新點新的禮物，我很想給優等生發些獎品呢！" Option="禮品店的禮品——恩，記下。" />
+				<Talk NpcID="10007" Face="正常" Msg="哎，我也很懷念以前郵件可以傳遞禮物的時候，那時每到教師節，好多學生都會給我發禮物呢！" Option="對，對，真讓人懷念啊！" />
+			</Action>
+			<Action Cmd="SET_BIT" Param="4" />
+		</NPC>
+		
+		<Test Bits="1,2,3,4" >
+			<In>
+				<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			</In>
+			<Out>
+				<Action Cmd="OPEN_TASK_PANEL" />
+			</Out>
+		</Test>
+	</Step>
+	
+	<Step ID="4" >
+		<NowTrigger>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="5" />
+			<Action Cmd="ALERT" Param="快回去告訴麼麼公主大家的想法吧！" Face="開心" />
+			<Action Cmd="GO_MAP" MapID="109" MapType="0" />
+		</NowTrigger>
+	</Step>
+	
+	<Step ID="5" >
+		<EnterMap MapID="109" >
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10057" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10002" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10047" Face="焦急" Msg="花園裡面好熱鬧啊，大家都在商量什麼呢？" Option="洛克行政官來了呀！" />
+				<Talk NpcID="10002" Face="正常" Msg="洛克，我正在和小摩爾們討論關於重建莊園的想法。" Option="我支持！" />
+				<Talk NpcID="10002" Face="正常" Msg="{$username}^.^你還沒說自己的想法呢！？" Option="。。。。" />
+			</Action>
+			
+			<Action Cmd="OPEN_PANEL" Param="FlybackSurveyPanel" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="好的，我知道了！謝謝你的寶貴意見！" Option="這是我應該做的！" />
+				<Talk NpcID="10002" Face="正常" Msg="重建家園是我們每一個人的責任，我們大家一起簽定契約吧！" Option="好！" />
+			</Action>
+			
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsFullScreen="1"  />
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsFullScreen="1" IsStopSound="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10057" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="npc_10002" Visible="1" />
+			
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>
+
+

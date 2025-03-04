@@ -1,0 +1,89 @@
+﻿<Tasks ID="1024" Name="滿是荊棘的歸途" AwardMsg="恭喜你獲得1個光能量（摩靈）、2個拉姆生日蛋糕（拉姆食品）和1萬摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="397">
+		<EnterMap MapID="397">
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="焦急" Msg="{$username}，快醒醒！！！" Option="恩？天亮了嗎？"/>
+				<Talk NpcID="10000" Face="焦急" Msg="什麼天亮不亮啊，你怎麼突然暈過去了？" Option="啊？不是剛睡醒？"/>
+				<Talk NpcID="10000" Face="焦急" Msg="當然不是啦，剛才老師跟我們說的好好的，你就睡著了……" Option="（尷尬）呵呵，一定是老師說的太好，我陶醉了……"/>
+				<Talk NpcID="10287" Face="正常" Msg="不對~剛才你夢見什麼了？一會兒開心一會害怕的！" Option="我夢見大黑龍、大火……"/>
+				<Talk NpcID="10287" Face="正常" Msg="那就對了，應該是它來了！" Option="它？"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="397">
+		<EnterMap MapID="397">
+		
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="疑惑" Msg="老師，你怎麼了？那麼大的怪獸你都不怕，反而怕這只小東西了？" Option=""/>
+				<Talk NpcID="10287" Face="失望" Msg="你們不知道這個傢伙的厲害，他們是團夥作案，手段多著呢！" Option="女王大人不是什麼都不怕的嗎？"/>
+				<Talk NpcID="10287" Face="失望" Msg="我從小最怕的就是它們，我們快走吧！不然完蛋了啦！ " Option="咦？"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="疑惑" Msg="我怎麼覺得情況不大對啊？" Option="怎麼一下子冒出來那麼多，好密集……"/>
+				<Talk NpcID="10000" Face="疑惑" Msg="我們快走吧！" Option="我覺得有點艱難……"/>
+			</Action>			
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="原來他們那麼可怕，難怪老師那麼害怕……不過現在這樣也蠻開心的哎，躺著也能走哎。咦？躺著走？？"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+			<Action Cmd="GO_MAP" MapID="398" MapType="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="3" TarMapID="398">
+		<EnterMap MapID="398">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10287" Face="失望" Msg="花藤，明的啟示你收到了嗎？" Option=""/>
+				<Talk NpcID="10299" Face="開心" Msg="收到了收到了，我昨天還以為自己眼花了。" Option=""/>
+				<Talk NpcID="10287" Face="失望" Msg="恩，我們回來就是來處理這個資訊，看來有希望了！ " Option=""/>
+				<Talk NpcID="10299" Face="開心" Msg="璨，我幫你解封吧！" Option=""/>
+				<Talk NpcID="10287" Face="正常" Msg="不要，等等再說，他們還不知道我的力量已經可以還原本體，我們先不要打草驚蛇。 " Option="老師的本體？好期待啊~"/>
+				<Talk NpcID="10287" Face="正常" Msg="噓，別說出來~ " Option=""/>
+			</Action>
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" TarMapID="398">
+		<EnterMap MapID="398">	
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+	
+	        <Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="107" Name="movie_107" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_107"/>
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>

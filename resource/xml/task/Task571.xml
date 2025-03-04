@@ -1,0 +1,58 @@
+<Tasks ID="571" Name="無冕之王" AwardMsg="恭喜你獲得10個經驗果實，2000摩爾豆！" AwardBean="2000" >
+
+	<!-- 拉姆運動場 -->
+	<Step ID="1" TarMapID="68">
+		<EnterMap MapID="68">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="fireShoot_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10002" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="{$username}，快，頒獎儀式馬上就要開始了！雖然沒拿到冠軍，但有麼麼公主親自頒獎，還是覺得好開心呀！" Option="嘿，還好我沒遲到！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="好奇怪，在這關鍵時刻，庫拉怎麼不見了？{$username}，你幫忙去庫拉城堡找找看好嗎？看看庫拉是不是回家去了~" Option="好的，我這就去庫拉城堡找找看！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="240" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	
+	<Step ID="2" TarMapID="240">
+		<EnterMap MapID="240">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="68" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	
+	<Step ID="3" TarMapID="68">
+		<EnterMap MapID="68">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="fireShoot_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10002" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10002" Face="正常" Msg="{$username}，你找到庫拉了嗎？" Option="庫拉……他離開莊園了！"/>
+				<Talk NpcID="10002" Face="正常" Msg="離開莊園？！難道……不過，其實也該料到，以庫拉對骰子的情誼，搜集好正能量後，他肯定是第一時間前去尋找骰子了……" Option="公主，冠軍不在，頒獎儀式怎麼辦呢？"/>
+				<Talk NpcID="10002" Face="正常" Msg="為了其他隊員，頒獎儀式還是得如期舉行。一會兒我們拍一張頒獎的照片，儀式結束後可以寄給庫拉留作紀念。" Option="嗯，好呀！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="fireShoot_mc" Visible="1" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10002" Visible="1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

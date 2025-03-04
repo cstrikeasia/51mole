@@ -1,0 +1,17 @@
+<Tasks ID="600" Name="摩爾星智力大闖關" AwardMsg="恭喜你獲得1000摩爾豆！" AwardBean="1000" >
+	<Step ID="1" TarMapID="342">
+		<EnterMap MapID="342">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10222" Face="正常" Msg="Hi小摩爾們大家好，我是來自摩爾星的X隊長，我們正在搜尋智慧星人去我們的星球做客。" Option="哇，聽上去很有意思。"/>
+				<Talk NpcID="10222" Face="正常" Msg="聽說小摩爾們都十分聰明，那麼先讓我就來考考你吧" Option="這有什麼？儘管放馬過來吧"/>
+				<Talk NpcID="10222" Face="正常" Msg="請聽題——為什麼白羊比黑羊吃的多？" Option="因為白羊多唄，這是什麼智力題，太簡單了吧"/>
+				<Talk NpcID="10222" Face="正常" Msg="嘿嘿，果然資質不淺，我喜歡！敢不敢跟我來“未來星智力大闖關”接受挑戰呢！" Option="誰怕誰呢！這就來。"/>
+			</Action>
+			<Action Cmd="ACT_EVENT" Param="openMengNiu" />
+		</EnterMap>
+	</Step>
+</Tasks>

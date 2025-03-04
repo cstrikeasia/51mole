@@ -1,0 +1,60 @@
+<Tasks ID="584" Name="李錦記：幸福番茄沙司" AwardMsg="恭喜你獲得幸福番茄沙司、1000摩爾豆！" AwardBean="1000" >
+
+	<!-- 開心農場  -->
+	<Step ID="1" TarMapID="53">
+		<NPC ID="10007" Option = "幸福番茄沙司">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="幸福番茄沙司呀~我把加工點放在陽光農場了喲，具體做法梅森會告訴你，重點是用心才能做出讓人幸福的番茄沙司！" Option="哇！好想試試看呀！"/>
+				<Talk NpcID="10007" Face="正常" Msg="哦謔謔謔~可以呀，不過……" Option="哦？"/>
+				<Talk NpcID="10007" Face="正常" Msg="真材實料的番茄沙司要耗費許多番茄，還要經歷多道工序，你需要找個幫手哦！" Option="幫手？"/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY" >
+				<Talk NpcID="10010" Face="正常" Msg="菩提大伯好！我們聽說你發現了幸福番茄沙司啦!我們也想吃~" Option="消息傳得真快呀~"/>
+				<Talk NpcID="10011" Face="正常" Msg="{$username}也在呀？你也是為了番茄沙司嘛？" Option="沒錯！"/>
+				<Talk NpcID="10007" Face="正常" Msg="太好啦，正好多多和少少也來了，這樣人數就夠了！" Option="耶！我們趕緊去陽光農場吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="56" MapType="0" />
+		</NPC>	
+	</Step>
+	
+	<Step ID="2" TarMapID="56">
+		<EnterMap MapID="56">
+			<Action Cmd="ADD_EVENT" Param="meisengTaskGo" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10041" Face="正常" Msg="你們想做幸福番茄沙司？做起來的工序可是沒有想像中這麼簡單的哦" Option="我們願意試試！"/>
+				<Talk NpcID="10041" Face="正常" Msg="恩！！好樣的！我們現在就開始吧！" Option="現在就開始！"/>
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="OPEN_PANEL" Param="TomatoSauceMakePanel" ClearMap="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="3" >
+		<SubmitScore ModuleID="10077" MinScore="1" LoseMsg="小摩爾沒有成功製作，需要再試一試麼" >
+			<Action Cmd="SAY" >
+				<Talk NpcID="10041" Face="正常" Msg="你們居然成功了！真了不起！這些幸福番茄沙司你準備如何使用呀？" Option="我想想…"/>
+				<Talk NpcID="10010" Face="正常" Msg="我要擠在明天的早餐吐司麵包片上，擠在義大利面上...擠在許多許多地方！！耶！" Option="不錯的主意！"/>
+				<Talk NpcID="10011" Face="正常" Msg="嘻嘻~我要做成美味的鳳梨咕嚕肉、茄汁雞翅、羅宋湯等等.和小拉姆們分享！" Option="這個也好！"/>
+				<Talk NpcID="10041" Face="正常" Msg="{$username}，你想如何使用呢？" Option="我想送給梅森和菩提大伯！"/>
+				<Talk NpcID="10010" Face="正常" Msg="你的主意真棒！我怎麼一開始沒想到呢~~~我也願意送給梅森和菩提大伯！" Option="恩恩！"/>
+				<Talk NpcID="10011" Face="正常" Msg="是呀~若不是梅森和菩提大伯，我們也不會做成這麼好的幸福番茄沙司。" Option="那當然啦！"/>
+				<Talk NpcID="10041" Face="正常" Msg="呀，真是太感謝你們了！我就收下這份了！歡迎你們常來製作幸福番茄沙司！現在趕快給菩提大伯送去吧！" Option="梅森再見！"/>
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="53" MapType="0" />
+		</SubmitScore>
+	</Step>
+	
+	<!-- 拉姆學院 -->
+	<Step ID="4" TarMapID="53">
+		<EnterMap MapID="53">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg="你們成功了呀！真是太棒了！非常感謝你們的禮物，我和葡萄有口福咯！" Option="必須的！"/>
+			</Action>
+			<Action Cmd="OVER" />
+		</EnterMap>
+	</Step>
+</Tasks>

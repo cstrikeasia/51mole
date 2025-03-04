@@ -1,0 +1,100 @@
+﻿<Tasks ID="642" Name="精靈花境" AwardMsg="恭喜你獲得1個牧場動物吉普豆花和2棵冬櫻樹苗。" AwardBean="">
+	<Step ID="1" TarMapID="384">
+		<EnterMap MapID="384">
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	<Step ID="2" TarMapID="384">
+		<EnterMap MapID="384">
+			<Action Cmd="OPEN_PANEL" Param="Task642GamePanel" ClearMap="1" Data = "0"/>
+			<Action Cmd="ADD_EVENT" Param="Task642GameOver"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>
+	</Step>
+	<Step ID="3" TarMapID="384">
+		<EnterMap MapID="384">
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102" />
+			<Action Cmd="PLAY_MOVIE" Param="103" Name="movie_103" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_103"/>
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10281" Face="正常" Msg="你想好了嗎？要毀掉這本書？" Option="給你這麼一說我覺得好猶豫啊~"/>
+				<Talk NpcID="10281" Face="正常" Msg="為什麼呢？" Option="王子說，他一直在修復它，可是，我們就這樣輕易的毀掉它！"/>
+				<Talk NpcID="10281" Face="正常" Msg="看來，你已經成為了懂得思考的孩子，不會盲目的去執行指令。" Option="可是，女神說不毀掉它就會……怎麼辦啊？"/>
+				<Talk NpcID="10281" Face="正常" Msg="也許我們可以找出更好的辦法來？" Option="更好的辦法？"/>
+				<Talk NpcID="10281" Face="正常" Msg="恩，想想……" Option="我可不可以不要毀掉它而是抹去它邪惡的力量呢？"/>
+				<Talk NpcID="10281" Face="開心" Msg="你果然是個聰明的孩子，讓我們用溫柔的心感化它吧！" Option="這樣有用嗎？"/>
+				<Talk NpcID="10281" Face="開心" Msg="有用啊，你試試看！" Option="...."/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="4" TarMapID="384">
+		<EnterMap MapID="384">
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			<Action Cmd="PLAY_MOVIE" Param="104" Name="movie_104" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_104"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10281" Face="開心" Msg="快張開眼睛吧！" Option="咦？書好了？"/>
+				<Talk NpcID="10281" Face="開心" Msg="你的愛心影響了它喲~" Option="太好了！好開心啊~仙女姐姐我可以求你一件事嗎？"/>
+				<Talk NpcID="10281" Face="正常" Msg="什麼事呢？說來聽聽啊~" Option="姐姐，我想留在這裡，不想走了……"/>
+				<Talk NpcID="10281" Face="正常" Msg="是嗎？那麼我帶你參觀一下我們花仙的世界吧？" Option="真的嗎？太好了！！！"/>
+			</Action>
+			<Action Cmd="JUMP_TASK_UI" Param="   露莎仙女說會帶我們去參觀花仙的世界，好期待啊…"/>
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5"/>
+			<Action Cmd="GO_MAP" MapID="381" MapType="0"/>
+		</EnterMap>	
+	</Step>
+	<Step ID="5" TarMapID="381">
+		<EnterMap MapID="381">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10281" Face="開心" Msg="看，這是我們的小仙子們在採集的食物。" Option="( ⊙o⊙ )哇，你們吃花蜜嗎？"/>
+				<Talk NpcID="10281" Face="開心" Msg="偶爾也吃吧，很美味喲，晚上來我家嘗嘗我去年釀的桂花蜜。" Option="好贊！！！"/>
+				<Talk NpcID="10281" Face="開心" Msg="好咯，我們繼續參觀吧！" Option="恩啊~"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			<Action Cmd="JUMP_TASK_UI" Param="   仙子們吃花蜜呢，好仙有木有！好期待好期待，在花的世界裡生活，一定很棒，很美好！繼續參觀咯！"/>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6"/>
+			<Action Cmd="GO_MAP" MapID="382" MapType="0"/>
+		</EnterMap>
+	</Step>
+	<Step ID="6" TarMapID="382">
+		<EnterMap MapID="382">
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10281" Face="開心" Msg="小仙子們沒事就會在花叢中聊天嬉戲。每天都很幸福很充實~" Option="我也想要這種幸福快樂的日子。"/>
+				<Talk NpcID="10281" Face="開心" Msg="你也可以的呀~" Option="仙女姐姐，我……"/>
+				<Talk NpcID="10281" Face="開心" Msg="怎麼了？" Option="有點想摩樂樂了……"/>
+				<Talk NpcID="10281" Face="開心" Msg="呵呵，沒事啦，跟我繼續參觀吧！" Option="恩啊~"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			<Action Cmd="JUMP_TASK_UI" Param="   仙子們在一起好開心的樣子啊，我也想要那麼開心呢！有點想念摩樂樂了，有點想念粒粒了……繼續參觀嗎？"/>
+			<Action Cmd="SET_BUFFER" Panel="7" Step="7"/>
+			<Action Cmd="GO_MAP" MapID="383" MapType="0"/>
+		</EnterMap>	
+	</Step>
+		<Step ID="7" TarMapID="383">
+		<EnterMap MapID="383">
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10281" Face="開心" Msg="小仙子們會互幫互助，我們拒絕悲傷、拒絕眼淚，一定要快樂的度過每一天。" Option="咕~~(╯﹏╰)b"/>
+				<Talk NpcID="10281" Face="正常" Msg="怎麼了？" Option="好想念小夥伴，好想念摩爾城堡……"/>
+				<Talk NpcID="10281" Face="正常" Msg="不想留在花的世界了？" Option="恩，花的世界好美麗，可是……"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5"/>
+			<Action Cmd="PLAY_MOVIE" Param="105" Name="movie_105" IsBg="1" IsFullScreen="1" IsStopSound="0"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_105"/>
+			<Action Cmd="PLAY_MOVIE" Param="106" Name="movie_106" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_106"/>
+			<Action Cmd="OVER"/>
+		</EnterMap>
+	</Step>	
+</Tasks>

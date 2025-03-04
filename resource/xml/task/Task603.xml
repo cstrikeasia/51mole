@@ -1,0 +1,175 @@
+<Tasks ID="603" Name="瘋狂劇作家" AwardMsg="恭喜你獲得2個經驗藥劑、紅酒杯！" AwardBean="" >
+
+	<!-- 城堡大廳 -->
+	<Step ID="1" TarMapID="15">
+		<EnterMap MapID="15">
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10047" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="幸好塞拉王子臨時出了狀況，決鬥被推遲了。" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="趁著這裡沒人，我們趕緊把危險的物品都替換掉吧！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="201" Name="movie_201" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_201" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10224" Face="焦急" Msg="雷地阿斯，你不要緊吧？" Option=""/>
+				<Talk NpcID="10229" Face="正常" Msg="什麼都不要說，去牆上取劍吧！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10229" Face="正常" Msg="哼，哈姆雷特，你相信命運嗎？" Option=""/>
+				<Talk NpcID="10224" Face="正常" Msg="命運？為什麼忽然說起這個？" Option=""/>
+				<Talk NpcID="10229" Face="正常" Msg="我總覺得，我們的命運將被改變。" Option=""/>
+				<Talk NpcID="10224" Face="正常" Msg="不管是怎樣的命運，我都不會向它低頭的。無論我變成了什麼樣，我的決心是永恆不變的！" Option=""/>
+				<Talk NpcID="10225" Face="正常" Msg="呵呵呵，我等了很久了，快點開始吧！讓我看看你們英勇驍戰的模樣！" Option=""/>
+				<Talk NpcID="10229" Face="正常" Msg="哈姆雷特，堂堂正正地決一勝負吧！" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10224" Face="正常" Msg="是你輸了，雷地阿斯。" Option=""/>
+				<Talk NpcID="10229" Face="正常" Msg="哼，看來我的確技不如你，我認輸。" Option=""/>
+				<Talk NpcID="10229" Face="正常" Msg="作為你戰勝我的獎勵，就告訴你一件好事吧！你知道這場決鬥是誰挑起的嗎？" Option=""/>
+				<Talk NpcID="10225" Face="生氣" Msg="雷地阿斯……你……你住嘴！" Option=""/>
+				<Talk NpcID="10229" Face="正常" Msg="此前，我被父親和歐菲莉亞的事氣昏了頭，結果聽信了某人的挑唆，決定與你進行決鬥。" Option=""/>
+				<Talk NpcID="10229" Face="正常" Msg="這個人就是新王——克洛帝阿斯！" Option=""/>
+				<Talk NpcID="10225" Face="生氣" Msg="雷地阿斯，你血口噴人！" Option=""/>
+				<Talk NpcID="10229" Face="正常" Msg="原本只想與你堂堂正正決勝負，可我萬萬沒想到，他竟然如此歹毒，在我的劍上塗上了毒！" Option=""/>
+				<Talk NpcID="10225" Face="生氣" Msg="唔！你胡說，你有證據嗎？" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="202" Name="movie_202" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_202" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10229" Face="生氣" Msg="證據？劍的皮套上都變色了，顯然是被下了毒！" Option=""/>
+				<Talk NpcID="10229" Face="生氣" Msg="若不是因為這把劍被皮套所包裹，只要一點點擦傷，哈姆雷特也會中毒而死！" Option=""/>
+				<Talk NpcID="10226" Face="悲傷" Msg="國王陛下！您說過不傷害哈姆雷特的！" Option=""/>
+				<Talk NpcID="10225" Face="正常" Msg="皇……皇后，你聽我解釋！" Option=""/>
+				<Talk NpcID="10226" Face="正常" Msg="看來我的確錯了，不該一時鬼迷了心竅聽信您的花言巧語。正如哈姆雷特所說，我是個讓人寒心的母親！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10224" Face="焦急" Msg="母親大人！" Option=""/>
+				<Talk NpcID="10229" Face="生氣" Msg="可惡……國王陛下為何知道那是杯毒酒？" Option=""/>
+				<Talk NpcID="10225" Face="焦急" Msg="啊……那……那個……" Option=""/>
+				<Talk NpcID="10229" Face="生氣" Msg="這原本是為了勝利者準備的紅酒吧！竟然在這酒裡也下了毒，您可真是深謀遠慮！" Option=""/>
+				<Talk NpcID="10229" Face="正常" Msg="哈姆雷特，皇后怎樣了？" Option=""/>
+				<Talk NpcID="10224" Face="焦急" Msg="…………" Option=""/>
+				<Talk NpcID="10224" Face="正常" Msg="好像只是昏過去了。這酒杯裡盛的不是酒，只是普通的水……" Option=""/>
+				<Talk NpcID="10229" Face="正常" Msg="呼……看來是虛驚一場。這酒，看來是不知被誰給調包了。" Option=""/>
+				<Talk NpcID="10224" Face="正常" Msg="不知該說是好運呢，還是父親在天之靈的保佑？但現在有一件事很清楚，唯有一個傢伙絕不能被原諒！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10224" Face="生氣" Msg="惡魔……你誘惑我母親，毒殺我父親，矇騙我的朋友，還想盡一切毒計想要殺害我，克洛帝阿斯！" Option=""/>
+				<Talk NpcID="10225" Face="正常" Msg="哈……哈哈哈哈哈……" Option=""/>
+				<Talk NpcID="10224" Face="生氣" Msg="笑什麼！" Option=""/>
+				<Talk NpcID="10225" Face="焦急" Msg="哈哈……哈哈哈哈哈哈姆雷特……饒……饒饒恕我！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="焦急" Msg="什麼……這是什麼聲音？！" Option="我也聽到了，這陰森森的聲音！"/>
+				<Talk NpcID="10036" Face="焦急" Msg="這難道是對麼麼公主的暗示？糟了，麼麼公主真的會下手嗎？" Option="麼麼公主，不要啊！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10224" Face="焦急" Msg="復……仇……" Option=""/>
+				<Talk NpcID="10229" Face="生氣" Msg="哈姆雷特，鎮靜點！" Option=""/>
+				<Talk NpcID="10224" Face="焦急" Msg="復……仇……我……不能……" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10224" Face="生氣" Msg="仇恨只能帶來仇恨，復仇什麼根本就是惡性循環……" Option=""/>
+				<Talk NpcID="10224" Face="生氣" Msg="克洛帝阿斯，我不會殺你，但你最好離這個王國遠遠的！因為你身上背負的罪惡，你不配稱為一個國王！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="焦急" Msg="這聲音，是從書房傳來的！" Option="真的？那麼麼公主怎麼辦？"/>
+				<Talk NpcID="10036" Face="焦急" Msg="要相信麼麼，她是不會做出殺害他人的行為的。我們趁此機會必須進行追查！" Option="好，走吧！揪出幕後黑手！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="32" MapType="0" />
+		</EnterMap>	
+	</Step>
+	
+	<!-- 	城堡書房 -->
+	<Step ID="2" TarMapID="32">
+		<EnterMap MapID="32">
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10036" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="驚訝" Msg="聲音消失了……書房裡有什麼線索嗎？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="紅酒杯？我在書房裡可從來沒喝過酒！這是誰留在這裡的呢？" Option="這紅酒杯難道是什麼機關？"/>
+				<Talk NpcID="10036" Face="正常" Msg="只是很普通的紅酒杯而已……" Option="我還以為找到了什麼線索呢……"/>
+				<Talk NpcID="10036" Face="焦急" Msg="啊！這……這是什麼？！" Option="怎麼了？發現了什麼？"/>
+				<Talk NpcID="10036" Face="驚訝" Msg="我只是透過這個紅酒杯看房間，就發現了奇怪的線索……嗚啊啊啊啊！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />
+			<Action Cmd="GO_MAP" MapID="349" MapType="0" />
+		</EnterMap>	
+		
+		<EnterMap MapID="349">
+<!-- 			<Action Cmd="TASK_SHOW_SELF" Hide="1"/> -->
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="npc_10231" Visible="0" />
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="驚訝" Msg="？？！這裡是？？" Option="我們是怎麼進來的？"/>
+				<Talk NpcID="10036" Face="正常" Msg="看來我們誤打誤撞找到了莎士摩亞的老巢！你看，這些小說和劇本，還有各種紙質品……" Option="莎士摩亞在哪裡？"/>
+				<Talk NpcID="10036" Face="正常" Msg="這裡好像沒有其他人了。先找找線索吧！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="13" Name="movie_13" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10036" Face="正常" Msg="{$username}，快來看，這本小說好可疑！" Option="這小說裡寫了什麼？"/>
+				<Talk NpcID="10036" Face="正常" Msg="我來給你讀一段！“紙之國誕生了一位王子，所有的國民們都為他們未來的新國王歡呼喝彩。”" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="“可是，皇后在生下王子不久後便去世了，國王悲傷至極，直到王子長到了十七歲，還是沒有另立皇后。”" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="“王子十八歲生日那天，老國王為他舉辦了隆重的成人典禮。在宴會上，老國王邂逅了美麗的諾頓夫人，那顆冰凍的心，忽然間為了她而瘋狂跳動。”" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="“然而，最為悲哀的是，年輕的王子也愛上了諾頓夫人。老國王惱羞成怒，下令驅逐王子，並迎娶了諾頓夫人。”" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="“可是，又有誰知道呢？諾頓夫人的心早已被年輕的王子所吸引。在一個陽光和煦的早晨，紙之國的新皇后便與被驅逐的王子一起私奔了。”" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="“憤怒的老國王下令抓回背叛自己的兩人，並親手將自己所愛的兩個人葬送於火海之中。第二天，老國王的身體變得像雪花一般四散風中，宛如他那破碎不堪的心。”" Option=""/>
+				<Talk NpcID="10036" Face="正常" Msg="“這便是紙之國王莎士摩亞的一生。”" Option="莎士摩亞！竟然是他！"/>
+				<Talk NpcID="10036" Face="正常" Msg="這本書的作者不詳，看起來像是某個吟游詩人留下的故事。真是悲慘啊。" Option="在我看來非常地狗血……"/>
+				<Talk NpcID="10036" Face="正常" Msg="不過，這個小說裡的人物怎麼會成為這場詛咒的幕後黑手呢？" Option="搞不懂，這可真是個迷！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_13" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_101" />
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>

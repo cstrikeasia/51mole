@@ -1,0 +1,71 @@
+﻿<Tasks ID="1027" Name="每一天每一夜" AwardMsg="恭喜你獲得1個火絨蛋糕（摩靈）、1個維納摩爾音樂貝（家園裝飾）和1萬摩爾豆哦！" AwardBean="">
+	<Step ID="1" TarMapID="400">
+		<EnterMap MapID="400">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10294" Face="開心" Msg="快點過來啊，國王身邊的位置屬於你們倆！" Option="真的嗎？"/>
+				<Talk NpcID="10000" Face="開心" Msg="哇，好厲害啊，第一看到加冕儀式呢……期待麼麼公主的加冕儀式。" Option="走吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_100"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="正常" Msg="哇，這氣勢，好厲害的樣子……" Option=""/>
+				<Talk NpcID="10295" Face="正常" Msg="噓……" Option="（吐舌頭）為什麼國王哭了呀？"/>
+				<Talk NpcID="10295" Face="正常" Msg="因為是為了璨公主……" Option=""/>
+			</Action>
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="400">
+		<EnterMap MapID="400">
+			<Action Cmd="PLAY_MOVIE" Param="101" Name="movie_101" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_101"/>
+			
+			<Action Cmd="SAY">
+				<Talk NpcID="10301" Face="正常" Msg="小摩爾們，感謝你們對我的國、我的家、我的愛妻的幫助！" Option="（不好意思的撓頭）陛下，那個，不用那麼客氣啦，都是我們應該做的！"/>
+				<Talk NpcID="10301" Face="正常" Msg="現在明還有一個請求……" Option="陛下您說吧，只要我們能辦到的！"/>
+				<Talk NpcID="10301" Face="正常" Msg="你們一定能辦到，經歷了那麼多艱難險阻，相信沒有什麼能攔得住你們。 " Option="(*^__^*) 嘻嘻……"/>
+				<Talk NpcID="10301" Face="正常" Msg="走吧，我們去探望一下花園中的璨，看看她還好不好…… " Option="真的嗎？可以見到老師嗎？"/>
+				<Talk NpcID="10301" Face="正常" Msg="她已經不是你們熟悉的璨了，走吧！ " Option=""/>
+			</Action>
+			
+			<Action Cmd="JUMP_TASK_UI" Param="去看看小C老師好不好吧！受到那麼多黑暗力量的侵蝕，希望她可以平安無事……"/>
+			<Action Cmd="GO_MAP" MapID="402" MapType="0"/>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="3" TarMapID="402">
+		<EnterMap MapID="402">
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10000" Face="驚訝" Msg="哇，怎麼那麼美麗，這是什麼地方啊？" Option=""/>
+				<Talk NpcID="10301" Face="正常" Msg="這裡曾經更加美麗，這裡是我和璨每天散步談天的地方。只是，現在這裡和我的璨一樣，受到了黑暗力量的侵蝕。" Option="好想看到這裡原來的樣子，一定非常美麗。"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="SAY">
+				<Talk NpcID="10301" Face="正常" Msg="璨，委屈你了……" Option="璨？小C老師？這是小C老師？"/>
+				<Talk NpcID="10301" Face="正常" Msg="這就是我想拜託給你們的事情，幫我清除這裡的黑暗，清除璨體內的黑暗。" Option="我們該怎麼做？"/>
+				<Talk NpcID="10301" Face="正常" Msg="我希望你們每天來挑戰璨身上的邪惡力量，逐步將它削弱。等到有一天，璨身上的一切侵蝕都退去……" Option=""/>
+				<Talk NpcID="10300" Face="感動" Msg="王，請不要一直等待，也許千年，也許兩千年，也許永遠，璨都無法恢復本體，請忘記璨，好好的守護我們的世界。" Option=""/>
+				<Talk NpcID="10301" Face="正常" Msg="待你長髮及腰，我非你不娶，你非我不嫁，這誓約明永生不忘，明一定會每日每夜守護你，直到迎娶你的那一天。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_4"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="102" Name="movie_102" IsBg="1" IsFullScreen="1"/>
+			<Action Cmd="DELETE_MOVIE" Param="movie_102"/>
+			
+			<Action Cmd="OVER"/>
+		</EnterMap>	
+	</Step>
+</Tasks>

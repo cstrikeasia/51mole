@@ -1,0 +1,215 @@
+<Tasks ID="1012" Name="地下通道機關" AwardMsg="恭喜你獲得2個風信子種子、淡粉小皮鞋！" AwardBean="" >
+
+	<!-- 蘑菇森林  -->
+	<Step ID="1" TarMapID="337">
+		<EnterMap MapID="337">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="stone_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="mushBtn" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10206" Face="正常" Msg="總算把那個黑暗小丑的“小夥伴”們都打敗了，{$username}，我們趕緊追上那些黑魔法師吧！" Option=""/>
+				<Talk NpcID="10207" Face="正常" Msg="我記得那個叫華夫餅的黑魔法小丑是向西面跑了！" Option="（人家明明叫華利弗= =）"/>
+				<Talk NpcID="10209" Face="正常" Msg="事不宜遲，出發吧！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10207" Face="正常" Msg="好大一塊石頭！看我砸了它！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="正常" Msg="真的好硬啊，以我的力氣完全鑿不開！這可怎麼辦？" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="哈哈哈，其實有很簡單的辦法可以快速碎石！" Option="有什麼好方法？"/>
+				<Talk NpcID="10209" Face="正常" Msg="你們知道“熱脹冷縮”的原理吧？先將石頭加熱，然後馬上冷卻它，石頭內部就會急劇收縮，並且產生裂痕。" Option=""/>
+				<Talk NpcID="10206" Face="正常" Msg="原來如此，只要對著裂痕再用力敲打，就可以輕鬆把石頭打碎了！" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="哈哈哈，麼麼真是聰明！{$username}，你記住了嗎？先加熱，後冷卻，再硬的石頭也會裂！" Option="這繞口令真好記！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			
+			
+			<Action Cmd="PLAY_MOVIE" Param="200" Name="movie_200" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_200" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="正常" Msg="真棒，輕輕鬆鬆就把石頭敲碎了！" Option=""/>
+				<Talk NpcID="10208" Face="正常" Msg="完全沒我出場的份……" Option=""/>
+				<Talk NpcID="10206" Face="正常" Msg="蘑菇森林原來這麼漂亮，和地上的風貌完全不同，到處充滿了發光的植物，真美！" Option=""/>
+				<Talk NpcID="10207" Face="正常" Msg="是啊，如果能和朋友一起在這裡開營火晚會一定不錯！" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="哈哈哈，等我們解決了一切，再一起來開慶功會吧！現在只有繼續前進，因為黑魔法學院比我們速度更快啊！" Option="恩，我們一定會在這點起篝火的！"/>
+				
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="1000" Name="movie_1000" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1000" />
+			
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+<!-- 			<Action Cmd="GO_MAP" MapID="239" MapType="0" /> -->
+		</EnterMap>	
+	</Step>
+	
+	
+	<!-- 蘑菇森林 -->
+	<Step ID="2" TarMapID="337">
+		<EnterMap MapID="337">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="stone_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="mushBtn" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="4" Name="movie_4" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_4" />
+			
+			<Action Cmd="GO_MAP" MapID="339" MapType="0" />
+		</EnterMap>
+		
+		<!-- 龍巢迷宮 -->
+		<EnterMap MapID="339">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="topLevel" ResName="mc_0" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="topLevel" ResName="fire_1" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="topLevel" ResName="fire_2" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="magma_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="pala_mc" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="5" Name="movie_5" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10206" Face="正常" Msg="這裡好暗啊！接下來該怎麼走？" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="哈哈哈，你們看到那扇門了嗎？那是扇機關門！快觀察一下四周有沒有可以用的物品吧！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_5" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="6" Name="movie_6" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10206" Face="正常" Msg="打開了！這扇機關門好像只要往盆子裡放珠子就能打開！不過，不知道是不是錯覺，總覺得這兒有點熱……" Option=""/>
+				<Talk NpcID="10208" Face="正常" Msg="看！又有一扇機關門，上面好像刻著字！{$username}，你看得清嗎？" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_6" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="201" Name="movie_201" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_201" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10208" Face="正常" Msg="哇，{$username}，你好聰明！這麼快就找到珠子了！這次讓我來開門吧，嘿嘿！" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="樂樂，先等等！" Option=""/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="7" Name="movie_7" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10206" Face="正常" Msg="這下可糟了，沒想到是陷阱！這裡難道連接著火山通道嗎？" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="看這四周的環境，這裡似乎還有龍蛋的殘骸啊！有可能是火龍穿過火山通道在這裡生活過。" Option=""/>
+				<Talk NpcID="10208" Face="正常" Msg="現在我們該怎麼辦？" Option=""/>
+				<Talk NpcID="10209" Face="正常" Msg="以我之見，最好先回莊園去找一下通過這裡的線索。這麼古老的機關，我也沒見過。" Option=""/>
+				<Talk NpcID="10206" Face="正常" Msg="那我們分頭去找吧！{$username}，你能不能留在這兒觀察情況？如果突發情況，一定要小心應付！" Option="好的，我留守你們就放心吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_7" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1001" Name="movie_1001" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1001" />
+			
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+		</EnterMap>
+	</Step>
+	
+	
+	<!-- 龍巢迷宮 -->
+	<Step ID="3" TarMapID="339">
+		<EnterMap MapID="339">
+			<Action Cmd="TASK_SHOW_SELF" Hide="1"/>
+			
+			<Action Cmd="SET_ATTRIBUTE" Level="topLevel" ResName="mc_0" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="controlLevel" ResName="magma_mc" Visible="0" />
+			<Action Cmd="SET_ATTRIBUTE" Level="depthLevel" ResName="pala_mc" Visible="0" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="8" Name="movie_8" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="疑惑" Msg="牆壁上都是些難懂的圖案，還有各種奇怪的化石……一點頭緒也沒有，這可怎麼辦！" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_8" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="9" Name="movie_9" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="疑惑" Msg="黑魔法師！你們到這裡來幹什麼？！" Option=""/>
+				<Talk NpcID="10212" Face="正常" Msg="啊？這句話該我問你吧？你在這裡幹什麼？時光聖殿裡吃的苦頭還不夠嗎？" Option="果然是你們這群壞蛋下的手！"/>
+				<Talk NpcID="10212" Face="正常" Msg="哼，連機關門都過不去的傢伙，想說教我還早了六百年！伊絲特，你覺得他是不是太笨了啊？" Option="竟然說我笨！！"/>
+				<Talk NpcID="10211" Face="正常" Msg="拉比特，再不趕緊跟上華利弗，任務計畫就亂了。" Option=""/>
+				<Talk NpcID="10212" Face="正常" Msg="啊？你這人可真無趣！沒有人會完全按照計畫做事啦！你以為這熔岩的機關是誰搞的，肯定又是華利弗那傢伙一時興起的花招！" Option="原來又是你們搞的鬼！"/>
+				<Talk NpcID="10211" Face="正常" Msg="我……我只想按計劃完成任務……" Option=""/>
+				<Talk NpcID="10212" Face="正常" Msg="任務任務，滿嘴的任務！那我現在給你個任務，把這礙眼的傢伙教訓一頓！" Option=""/>
+				<Talk NpcID="10211" Face="正常" Msg="眼前的任務和匯合的任務並不衝突，你可以先去和華利弗匯合。用我的魔法就可以讓你瞬間移動到熔岩地帶的另一邊。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_9" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="10" Name="movie_10" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10212" Face="正常" Msg="伊絲特，你這個不懂變通的傢伙~~~讓我過去！！我也要跟那傢伙打一場！！！" Option=""/>
+				<Talk NpcID="10211" Face="正常" Msg="以我目前的魔法等級沒法讓你瞬移回來……" Option="你們是要鬧哪樣啊= ="/>
+				<Talk NpcID="10212" Face="正常" Msg="你你你你！！算了！那你慢慢玩吧！哼！" Option=""/>
+				<Talk NpcID="10211" Face="正常" Msg="來吧，{$username}，戰鬥吧！" Option="我不會退縮的，開始吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_10" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="100" Name="movie_100" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_100" />
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10211" Face="正常" Msg="你贏了，為什麼不乾脆取我性命……" Option="我才不會做這種事呢！"/>
+				<Talk NpcID="10211" Face="悲傷" Msg="不殺我，我遲早還是要與你們對戰的。到時候，我不會顧及欠你的這份人情，因為，我們也有必須要得到的東西。" Option="你……"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="11" Name="movie_11" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10211" Face="正常" Msg="前方的戰爭已經打響，我必須走了。這裡往前會變得很危險，回去你們的莊園，不要再來了。" Option="是和誰的戰爭？"/>
+				<Talk NpcID="10211" Face="悲傷" Msg="……我們共同的先祖——地下城摩爾的遺族。" Option=""/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_11" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="12" Name="movie_12" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10029" Face="正常" Msg="{$username}，麼麼公主命令我來這裡代替你留守，你快去洛克行政官那裡彙報一下至今為止的情況吧。" Option="我這就去！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_12" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="1002" Name="movie_1002" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1002" />
+			
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="15" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<!-- 城堡大廳 -->
+	<Step ID="4" TarMapID="15">
+		<NPC ID="10047" Option="地下通道機關"  MapID=""  >
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			
+			<Action Cmd="SAY" >
+				<Talk NpcID="10047" Face="正常" Msg="{$username}，你在地下世界發現了什麼線索？" Option="將伊絲特的事告訴洛克行政官"/>
+				<Talk NpcID="10047" Face="正常" Msg="原來如此，看來黑魔法派是為了搶奪“女神之淚”而來。女神之淚的力量如果被黑魔法所用，恐怕莊園會一直被籠罩在黑魔法的恐懼之下吧。" Option=""/>
+				<Talk NpcID="10047" Face="正常" Msg="{$username}，身為元素騎士，請你一定要保衛我們的莊園！" Option="我一定盡力而為！"/>
+			</Action>
+			
+			<Action Cmd="PLAY_MOVIE" Param="13" Name="movie_13" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="SAY" >
+				<Talk NpcID="10206" Face="正常" Msg="{$username}，好消息！我們知道通過岩漿機關門的方法了！" Option="什麼方法？"/>
+				<Talk NpcID="10206" Face="正常" Msg="是尼爾拉大法師說的！地下城摩爾為了克服自然災害，會將強大的魔法附在圖騰上。" Option="這麼說，找到圖騰就能解決了？"/>
+				<Talk NpcID="10206" Face="正常" Msg="我也不清楚，不過我們再回去龍巢迷宮調查一次吧！" Option="好！讓我們出發吧！"/>
+			</Action>
+			<Action Cmd="DELETE_MOVIE" Param="movie_13" />
+			
+			<Action Cmd="PLAY_MOVIE" Param="202" Name="movie_202" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_202" />
+		
+			<Action Cmd="TASK_SHOW_SELF" Hide="0"/>
+			<Action Cmd="OVER" />
+		</NPC>
+	</Step>
+</Tasks>

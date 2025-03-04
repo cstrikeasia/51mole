@@ -1,0 +1,81 @@
+<Tasks ID="605" Name="放手觸,自在玩" AwardMsg="恭喜你獲得2000摩爾豆！" AwardBean="2000" >
+	<Step ID="1" TarMapID="204">
+		<EnterMap MapID="204">
+			<Action Cmd="PLAY_MOVIE" Param="1" Name="movie_1" IsBg="1" IsFullScreen="1" />	
+			<Action Cmd="DELETE_MOVIE" Param="movie_1" />
+			<Action Cmd="SET_BUFFER" Panel="2" Step="2" />
+			<Action Cmd="GO_MAP" MapID="239" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="2" TarMapID="239">
+		<EnterMap MapID="239">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg=" 哇！你果然來啦!" Option="沒錯，我收到了你的紙飛機就趕來啦！到底發生什麼事情才把你關禁閉？"/>
+				<Talk NpcID="10000" Face="正常" Msg="因為上次從黑森林回來後手上臟臟的，還引起了各種不適，大伯覺得不安全，就把讓我在家裡靜養一段時間…" Option="可是摩樂樂這樣就不能出去探險了！"/>
+				<Talk NpcID="10000" Face="正常" Msg="是啊，還不讓隨便觸摸臟東西,我好喜歡莊園呢！快幫我想想辦法吧！" Option="好！我一定會幫你的！"/>
+				<Talk NpcID="10000" Face="正常" Msg="太棒了！謝謝你！" Option="沒事！"/>
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="3" Step="3" />
+			<Action Cmd="GO_MAP" MapID="3" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="3" TarMapID="3">
+		<EnterMap MapID="3">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10013" Face="正常" Msg="魔法藥水？雖然花嬸這兒有很多神奇的道具，但是這類危險的道具不能隨便賣給小摩爾哦！" Option="摩樂樂最近因為不好好洗手被關禁閉了"/>
+				<Talk NpcID="10013" Face="正常" Msg="投機取巧是不行的！想想為什麼摩樂樂會因為手部衛生問題關禁閉呢？小摩爾還要多開動腦筋呢！" Option="對了！手部衛生還是要靠洗手來解決！我明白了！謝謝花嬸再見！"/>
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="4" Step="4" />
+			<Action Cmd="GO_MAP" MapID="239" MapType="0" />
+		</EnterMap>
+	</Step>
+	
+	<Step ID="4" TarMapID="239">
+		<EnterMap MapID="239">
+			<Action Cmd="SAY" >
+				<Talk NpcID="10197" Face="正常" Msg=" 摩樂樂，我想我已經想到了救你的辦法！" Option=""/>
+				<Talk NpcID="10000" Face="正常" Msg="哦？我就知道小摩爾最厲害啦！是什麼辦法呀？" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="洗手的問題還是要靠洗手解決，趕緊去洗洗乾淨吧！" Option=""/>
+				<Talk NpcID="10007" Face="正常" Msg="摩樂樂確實不是愛洗手的小摩爾呢！" Option=""/>
+				<Talk NpcID="10000" Face="正常" Msg="( ⊙ o ⊙ )啊！可是我從黑森林回來有洗手啊…不僅洗手，洗臉，洗腳，洗PP…總之都洗了！" Option=""/>
+				<Talk NpcID="10007" Face="正常" Msg="哦？雖然有洗手，但真的洗乾淨了嘛？讓我看看你的手…" Option=""/>
+			</Action>
+			<Action Cmd="PLAY_MOVIE" Param="2" Name="movie_2" IsBg="1" IsFullScreen="1" />
+			<Action Cmd="DELETE_MOVIE" Param="movie_2" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10007" Face="正常" Msg=" 大家看，雖然大家都有洗手，但沒有正確的洗手步驟和衛生習慣即使洗手了也有被細菌侵襲的危險；" Option=""/>
+				<Talk NpcID="10000" Face="正常" Msg="那要如何正確的洗手呢？" Option=""/>
+				<Talk NpcID="10007" Face="正常" Msg="恩，除了正確的洗手還要用消毒功能的洗手產品哦！我們一起來訓練吧!" Option=""/>
+				<Talk NpcID="10197" Face="正常" Msg="對啊，如果摩樂樂養成了良好的洗手習慣，大伯就再也不用擔心了！" Option=""/>
+				<Talk NpcID="10007" Face="正常" Msg="恩，如果摩樂樂能夠養成正確良好的洗手習慣，我可以繼續讓他出去探索和觸摸這個莊園！" Option=""/>
+				<Talk NpcID="10000" Face="正常" Msg="大伯，我們趕緊開始吧！" Option=""/>
+			</Action>	
+			<Action Cmd="SET_BUFFER" Panel="5" Step="5" />
+			<Action Cmd="OPEN_PANEL" Param="DiLuCirclePicPanel" ClearMap="0"/>
+		</EnterMap>
+	</Step>
+	
+	<Step ID="5" >
+		<SubmitScore ModuleID="10079" MinScore="1" LoseMsg="小摩爾沒有成功製作，需要再試一試麼" >
+				<Action Cmd="PLAY_MOVIE" Param="3" Name="movie_3" IsBg="1" IsFullScreen="1" />	
+				<Action Cmd="DELETE_MOVIE" Param="movie_3" />
+			<Action Cmd="SAY" >
+				<Talk NpcID="10000" Face="正常" Msg="哇！有了滴露洗手液，我就可以開始洗手啦！我們就把訓練營叫“滴露洗手幫”哈哈！" Option=""/>
+				<Talk NpcID="10007" Face="正常" Msg="恩！堅持14天就能養成良好的洗手習慣哦！洗手日快到啦！小摩爾們要加油訓練哦！" Option=""/>
+				<Talk NpcID="10000" Face="正常" Msg="我也要加滴露洗手幫！讓爸爸媽媽看到我的14天新變化！" Option=""/>
+			</Action>
+			<Action Cmd="SET_BUFFER" Panel="6" Step="6" />
+			<Action Cmd="OPEN_PANEL" Param="DiluTurnPanel" ClearMap="0"/>
+		</SubmitScore>
+	</Step>
+	
+	<Step ID="6" >
+		<SubmitScore ModuleID="10080" MinScore="1" LoseMsg="小摩爾沒有成功製作，需要再試一試麼" >
+			<Action Cmd="OVER"/>
+		</SubmitScore>
+	</Step>
+</Tasks>
+
+
