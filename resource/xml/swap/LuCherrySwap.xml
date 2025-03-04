@@ -1,0 +1,24 @@
+﻿<!-- 
+	TypeID	 後臺提供的TypeID
+	NeedID		兌換物品需要的ID
+	NeedCount	需要數量
+	ResID		生成的物品
+ -->
+<Exchange NeedID="191186" >
+	<Item TypeID="3395" NeedCount="80_0" ResID="12799"  Dec="黑色小兔耳:白櫻花瓣x80"/>
+	<Item TypeID="3396" NeedCount="100_0" ResID="12798"  Dec="超拉專屬小鈴鐺貓耳:白櫻花瓣x100"/> 
+	<Item TypeID="3397" NeedCount="60_0" ResID="12800"  Dec="超拉專屬棕色小熊耳:白櫻花瓣x60"/>
+	<Item TypeID="3398" NeedCount="80_0" ResID="12797"  Dec="超拉專屬粉紅咕咕頭:白櫻花瓣x80"/>
+	<Item TypeID="3399" NeedCount="100_0" ResID="15672"  Dec="雪櫻之翼:白櫻花瓣x100"/>
+	<Item TypeID="3400" NeedCount="0_150" ResID="15673"  Dec="緋櫻花插髮型:粉櫻花瓣x150"/> 
+	<Item TypeID="3401" NeedCount="0_200" ResID="15674"  Dec="緋櫻蓬裙:粉櫻花瓣x200"/>
+	<Item TypeID="3402" NeedCount="0_150" ResID="15675"  Dec="緋櫻樹枝:粉櫻花瓣x150"/> 
+	<Item TypeID="3403" NeedCount="0_180" ResID="15676"  Dec="緋櫻舞鞋:粉櫻花瓣x180"/>
+	<Item TypeID="3410" NeedCount="0_150" ResID="15605"  Dec="葡葡戰盔髮型:粉櫻花瓣x150"/> 
+	<Item TypeID="3404" NeedCount="0_180" ResID="15606"  Dec="葡葡戰甲:粉櫻花瓣x180"/> 
+	<Item TypeID="3405" NeedCount="0_200" ResID="15608"  Dec="葡葡寶劍:粉櫻花瓣x200"/>
+	<Item TypeID="3406" NeedCount="0_180" ResID="15607"  Dec="葡葡戰靴:粉櫻花瓣x180"/> 
+	<Item TypeID="3407" NeedCount="20_200" ResID="15682"  Dec="彩虹蛋糕裙:白櫻花瓣x20，粉櫻花瓣x200"/>
+	<Item TypeID="3408" NeedCount="50_500" ResID="15683"  Dec="彩虹魔法棒:白櫻花瓣x50，粉櫻花瓣x500"/>	
+	<Item TypeID="3409" NeedCount="10_50" ResID="15684"  Dec="彩虹豆豆鞋:白櫻花瓣x10，粉櫻花瓣x50"/>	
+</Exchange>
