@@ -1,0 +1,493 @@
+<root>
+<item>
+	<que id="1" content="摩爾總共有多少個指甲？" right="1">
+		<ans content="6"></ans>
+		<ans content="8"></ans>
+		<ans content="10"></ans>
+		<ans content="12"></ans></que></item>
+<item>
+	<que id="2" content="下面哪種瓜不能吃？" right="3">
+		<ans content="黃瓜"></ans>
+		<ans content="苦瓜"></ans>
+		<ans content="傻瓜"></ans>
+		<ans content="西瓜"></ans></que></item>
+<item>
+	<que id="3" content="什麼車子寸步難行？" right="2">
+		<ans content="汽車"></ans>
+		<ans content="風車"></ans>
+		<ans content="火車"></ans>
+		<ans content="自行車"></ans></que></item>
+<item>
+	<que id="4" content="打什麼東西不要花力氣？" right="3">
+		<ans content="拳擊"></ans>
+		<ans content="籃球"></ans>
+		<ans content="出租車"></ans>
+		<ans content="羽毛球"></ans></que></item>
+		
+<item>
+	<que id="5" content="書店裡買不到什麼書？" right="4">
+		<ans content="百科全書"></ans>
+		<ans content="教科書"></ans>
+		<ans content="輔導書"></ans>
+		<ans content="情書"></ans></que></item>
+		
+<item>
+	<que id="6" content="下面哪種花可以永遠盛開？" right="1">
+		<ans content="塑料花"></ans>
+		<ans content="牽牛花"></ans>
+		<ans content="牡丹花"></ans>
+		<ans content="玫瑰花"></ans></que></item>
+		
+		
+<item>
+	<que id="7" content="把8分成兩半，是多少？" right="4">
+		<ans content="7"></ans>
+		<ans content="1"></ans>
+		<ans content="2"></ans>
+		<ans content="3"></ans></que></item>
+		
+		
+<item>
+	<que id="8" content="什麼字全世界最通用？" right="4">
+		<ans content="漢字"></ans>
+		<ans content="英文"></ans>
+		<ans content="日文"></ans>
+		<ans content="阿拉伯數字"></ans></que></item>
+		
+<item>
+	<que id="9" content="什麼人從來不洗頭髮？" right="1">
+		<ans content="和尚"></ans>
+		<ans content="律師"></ans>
+		<ans content="科學家"></ans>
+		<ans content="班長"></ans></que></item>
+		
+<item>
+	<que id="10" content="“童話書”一共有幾個字？" right="4">
+		<ans content="158"></ans>
+		<ans content="63"></ans>
+		<ans content="36"></ans>
+		<ans content="3"></ans></que></item>
+		
+<item>
+	<que id="11" content="什麼牛不吃草？" right="1">
+		<ans content="吹牛"></ans>
+		<ans content="乳牛"></ans>
+		<ans content="水牛"></ans>
+		<ans content="公牛"></ans></que></item>
+		
+<item>
+	<que id="12" content="最堅固的鎖怕什麼？" right="3">
+		<ans content="錘頭"></ans>
+		<ans content="剪刀"></ans>
+		<ans content="鑰匙"></ans>
+		<ans content="電鋸"></ans></que></item>
+		
+<item>
+	<que id="13" content="什麼路不能用腳走？" right="1">
+		<ans content="電路"></ans>
+		<ans content="馬路"></ans>
+		<ans content="公路"></ans>
+		<ans content="道路"></ans></que></item>
+		
+<item>
+	<que id="14" content="什麼海裡沒有魚？" right="2">
+		<ans content="黃海"></ans>
+		<ans content="辭海"></ans>
+		<ans content="北海"></ans>
+		<ans content="南海"></ans></que></item>
+		
+<item>
+	<que id="15" content="什麼竹子不長在土裡？" right="1">
+		<ans content="爆竹"></ans>
+		<ans content="嫩竹"></ans>
+		<ans content="青竹"></ans>
+		<ans content="黃竹"></ans></que></item>
+		
+<item>
+	<que id="16" content="什麼雞沒有翅膀？" right="3">
+		<ans content="火雞"></ans>
+		<ans content="小雞"></ans>
+		<ans content="田雞"></ans>
+		<ans content="母雞"></ans></que></item>
+		
+<item>
+	<que id="17" content="什麼東西越熱越愛出來？" right="4">
+		<ans content="太陽"></ans>
+		<ans content="空調"></ans>
+		<ans content="帆船"></ans>
+		<ans content="汗"></ans></que></item>
+		
+<item>
+	<que id="18" content="什麼東西肥的快，瘦的更快？" right="2">
+		<ans content="豬"></ans>
+		<ans content="氣球"></ans>
+		<ans content="電報"></ans>
+		<ans content="泡麵"></ans></que></item>
+		
+<item>
+	<que id="19" content="能使我們眼睛透過牆的是什麼？" right="3">
+		<ans content="眼鏡"></ans>
+		<ans content="針劑"></ans>
+		<ans content="窗戶"></ans>
+		<ans content="消炎藥"></ans></que></item>
+		
+<item>
+	<que id="20" content="什麼筆不能寫？" right="3">
+		<ans content="毛筆"></ans>
+		<ans content="鉛筆"></ans>
+		<ans content="試電筆"></ans>
+		<ans content="鋼筆"></ans></que></item>
+		
+<item>
+	<que id="21" content="什麼馬不會跑？" right="1">
+		<ans content="木馬"></ans>
+		<ans content="斑馬"></ans>
+		<ans content="棗紅馬"></ans>
+		<ans content="白龍馬"></ans></que></item>
+		
+<item>
+	<que id="22" content="什麼虎不吃人？" right="2">
+		<ans content="華南虎"></ans>
+		<ans content="壁虎"></ans>
+		<ans content="東北虎"></ans>
+		<ans content="孟加拉虎"></ans></que></item>
+		
+<item>
+	<que id="23" content="什麼東西越擦越小？" right="2">
+		<ans content="拖把"></ans>
+		<ans content="橡皮擦"></ans>
+		<ans content="抹布"></ans>
+		<ans content="吸塵器"></ans></que></item>
+		
+<item>
+	<que id="24" content="一張桌子有四個角，砍掉一個叫還有幾個角？" right="3">
+		<ans content="3"></ans>
+		<ans content="4"></ans>
+		<ans content="5"></ans>
+		<ans content="6"></ans></que></item>
+		
+<item>
+	<que id="25" content="長胡子的山羊是公羊還是母羊？" right="3">
+		<ans content="公羊"></ans>
+		<ans content="母羊"></ans>
+		<ans content="都長"></ans>
+		<ans content="都不長"></ans></que></item>
+		
+<item>
+	<que id="26" content="用椰子和西瓜打頭哪一個比較疼？" right="3">
+		<ans content="椰子"></ans>
+		<ans content="西瓜"></ans>
+		<ans content="頭"></ans>
+		<ans content="冬瓜"></ans></que></item>
+		
+<item>
+	<que id="27" content="什麼照片看不出照的人是誰？" right="1">
+		<ans content="X光片"></ans>
+		<ans content="Y光片"></ans>
+		<ans content="C光片"></ans>
+		<ans content="Z光片"></ans></que></item>
+		
+<item>
+	<que id="28" content="什麼水要按照計劃發放？" right="4">
+		<ans content="自來水"></ans>
+		<ans content="井水"></ans>
+		<ans content="海水"></ans>
+		<ans content="薪水"></ans></que></item>
+		
+<item>
+	<que id="29" content="什麼布剪不斷？" right="1">
+		<ans content="瀑布"></ans>
+		<ans content="畫布"></ans>
+		<ans content="棉布"></ans>
+		<ans content="麻布"></ans></que></item>
+		
+<item>
+	<que id="30" content="進到海底樂園後，看到最多的是什麼？" right="2">
+		<ans content="豬"></ans>
+		<ans content="摩爾"></ans>
+		<ans content="雞"></ans>
+		<ans content="牛"></ans></que></item>
+		
+<item>
+	<que id="31" content="一般情況下，什麼情況下說話要付錢？" right="1">
+		<ans content="打電話"></ans>
+		<ans content="打電報"></ans>
+		<ans content="打出租"></ans>
+		<ans content="打籃球"></ans></que></item>
+		
+<item>
+	<que id="32" content="什麼書不能翻頁？" right="1">
+		<ans content="秘書"></ans>
+		<ans content="教科書"></ans>
+		<ans content="輔導書"></ans>
+		<ans content="暢銷書"></ans></que></item>
+		
+<item>
+	<que id="33" content="什麼東西你有，別人也有，但是不好交換？" right="1">
+		<ans content="姓名"></ans>
+		<ans content="衣服"></ans>
+		<ans content="褲子"></ans>
+		<ans content="玩具"></ans></que></item>
+		
+<item>
+	<que id="34" content="什麼酒大人也不能喝？" right="3">
+		<ans content="啤酒"></ans>
+		<ans content="白酒"></ans>
+		<ans content="碘酒"></ans>
+		<ans content="紅酒"></ans></que></item>
+		
+<item>
+	<que id="35" content="什麼船從來不需要水也可以開？" right="2">
+		<ans content="帆船"></ans>
+		<ans content="太空飛船"></ans>
+		<ans content="輪船"></ans>
+		<ans content="救生船"></ans></que></item>
+		
+<item>
+	<que id="36" content="什麼報一次隻發一份？" right="4">
+		<ans content="日報 "></ans>
+		<ans content="摩爾時報"></ans>
+		<ans content="晚報"></ans>
+		<ans content="電報"></ans></que></item>
+		
+<item>
+	<que id="37" content="一個蛋糕4刀切成9塊，怎樣切？" right="4">
+		<ans content="一字切"></ans>
+		<ans content="十字切"></ans>
+		<ans content="土字切"></ans>
+		<ans content="井字切"></ans></que></item>
+		
+<item>
+	<que id="38" content="蝸牛從神秘湖爬到摩爾城堡隻用了一分鐘，為什麼？" right="4">
+		<ans content="飛機上"></ans>
+		<ans content="輪船上"></ans>
+		<ans content="火車上"></ans>
+		<ans content="地圖上"></ans></que></item>
+		
+<item>
+	<que id="39" content="什麼門既打不開也關不上？" right="2">
+		<ans content="保險門"></ans>
+		<ans content="球門"></ans>
+		<ans content="鐵門"></ans>
+		<ans content="木門"></ans></que></item>
+		
+<item>
+	<que id="40" content="用什麼可以解開所有的迷？" right="1">
+		<ans content="謎底"></ans>
+		<ans content="謎面"></ans>
+		<ans content="謎題"></ans>
+		<ans content="謎語"></ans></que></item>
+		
+<item>
+	<que id="41" content="什麼球一定不能踢？" right="3">
+		<ans content="足球"></ans>
+		<ans content="皮球"></ans>
+		<ans content="火球"></ans>
+		<ans content="籃球"></ans></que></item>
+		
+<item>
+	<que id="42" content="什麼人每天靠運氣賺錢？" right="1">
+		<ans content="煤氣工人"></ans>
+		<ans content="鋼鐵工人"></ans>
+		<ans content="汽油工人"></ans>
+		<ans content="汽車工人"></ans></que></item>
+		
+<item>
+	<que id="43" content="拖什麼東西最輕鬆？" right="3">
+		<ans content="拖箱子"></ans>
+		<ans content="拖罐子"></ans>
+		<ans content="拖鞋"></ans>
+		<ans content="拖玩具"></ans></que></item>
+		
+<item>
+	<que id="44" content="一般情況下，什麼橋下沒有水？" right="1">
+		<ans content="立交橋"></ans>
+		<ans content="長江大橋"></ans>
+		<ans content="獨木橋"></ans>
+		<ans content="鐵索橋"></ans></que></item>
+		
+<item>
+	<que id="45" content="什麼蛋能看不能吃？" right="4">
+		<ans content="雞蛋"></ans>
+		<ans content="松花蛋"></ans>
+		<ans content="咸鴨蛋"></ans>
+		<ans content="臉蛋"></ans></que></item>
+		
+<item>
+	<que id="46" content="馬的頭部朝南，馬的尾巴朝哪？" right="4">
+		<ans content="東"></ans>
+		<ans content="西"></ans>
+		<ans content="上"></ans>
+		<ans content="下"></ans></que></item>
+		
+<item>
+	<que id="47" content="什麼最長？" right="1">
+		<ans content="時間"></ans>
+		<ans content="表帶"></ans>
+		<ans content="跑道"></ans>
+		<ans content="指針"></ans></que></item>
+		
+<item>
+	<que id="48" content="什麼槍能把人打跑卻不打傷？" right="1">
+		<ans content="水槍"></ans>
+		<ans content="火槍"></ans>
+		<ans content="手槍"></ans>
+		<ans content="機關槍"></ans></que></item>
+		
+<item>
+	<que id="49" content="一斤棉花和一斤鋼鐵，哪個重？" right="3">
+		<ans content="棉花"></ans>
+		<ans content="鋼鐵"></ans>
+		<ans content="一樣重"></ans>
+		<ans content="不好說"></ans></que></item>
+		
+<item>
+	<que id="50" content="什麼書中毛病最多？" right="1">
+		<ans content="醫書"></ans>
+		<ans content="輔導書"></ans>
+		<ans content="教科書"></ans>
+		<ans content="童話書"></ans></que></item>
+		
+<item>
+	<que id="51" content="誰是海妖國的王子?" right="3">
+		<ans content="RK"></ans>
+		<ans content="傑拉德"></ans>
+		<ans content="保羅"></ans>
+		<ans content="捷克"></ans></que></item>
+		
+<item>
+	<que id="52" content="海底列車的名字是?" right="2">
+		<ans content="和諧號"></ans>
+		<ans content="龍王丸號"></ans>
+		<ans content="龍大俠號"></ans>
+		<ans content="和平號"></ans></que></item>
+		
+<item>
+	<que id="53" content="庫拉的拉姆名字叫什麼?" right="1">
+		<ans content="骰子"></ans>
+		<ans content="拉仔"></ans>
+		<ans content="魯比"></ans>
+		<ans content="瑪麗"></ans></que></item>
+		
+<item>
+	<que id="54" content="海底冰泉館的管理員是誰?" right="1">
+		<ans content="帕帕囧"></ans>
+		<ans content="珍妮"></ans>
+		<ans content="小海妖"></ans>
+		<ans content="龍大俠"></ans></que></item>
+		
+<item>
+	<que id="55" content="當年的紅發騎士團團長是誰？" right="4">
+		<ans content="瑞琪"></ans>
+		<ans content="捷克"></ans>
+		<ans content="法蘭克"></ans>
+		<ans content="菩提大伯"></ans></que></item>
+		
+<item>
+	<que id="56" content="摩爾報社的首席小記者是誰？" right="4">
+		<ans content="兔兔"></ans>
+		<ans content="艾爾"></ans>
+		<ans content="摩樂樂"></ans>
+		<ans content="艾米"></ans></que></item>
+		
+<item>
+	<que id="57" content="1+1=？" right="4">
+		<ans content="1"></ans>
+		<ans content="3"></ans>
+		<ans content="4"></ans>
+		<ans content="2"></ans></que></item>
+		
+<item>
+	<que id="58" content="花嬸經常在哪裡擺攤？" right="3">
+		<ans content="摩爾城堡"></ans>
+		<ans content="愛心教堂"></ans>
+		<ans content="淘淘樂街"></ans>
+		<ans content="開心農場"></ans></que></item>
+		
+<item>
+	<que id="59" content="籮絲的真實身份是？" right="1">
+		<ans content="人魚國公主"></ans>
+		<ans content="海妖國公"></ans>
+		<ans content="麼麼的親戚"></ans>
+		<ans content="其其的媽媽"></ans></que></item>
+		
+<item>
+	<que id="60" content="拉姆是來自哪裡？" right="4">
+		<ans content="海妖國"></ans>
+		<ans content="人魚國"></ans>
+		<ans content="神秘湖"></ans>
+		<ans content="黑森林"></ans></que></item>
+		
+<item>
+	<que id="61" content="海底樂園的章魚摩天輪玩一次需要幾個遊戲幣？" right="2">
+		<ans content="1"></ans>
+		<ans content="2"></ans>
+		<ans content="5"></ans>
+		<ans content="10"></ans></que></item>
+		
+<item>
+	<que id="62" content="海底樂園裡的鯨魚每天幾點開始噴水？" right="2">
+		<ans content="12：00"></ans>
+		<ans content="13：00"></ans>
+		<ans content="14：00"></ans>
+		<ans content="15：00"></ans></que></item>
+		
+<item>
+	<que id="63" content="親親魚泉裡住著什麼？" right="3">
+		<ans content="胖墩魚"></ans>
+		<ans content="鯊魚"></ans>
+		<ans content="美人魚"></ans>
+		<ans content="食人魚"></ans></que></item>
+		
+<item>
+	<que id="64" content="帕帕囧我是什麼生物？" right="4">
+		<ans content="扇貝"></ans>
+		<ans content="龍蝦"></ans>
+		<ans content="海龜"></ans>
+		<ans content="海星"></ans></que></item>
+		
+<item>
+	<que id="65" content="海底樂園管理員珍妮是什麼生物？" right="2">
+		<ans content="海膽"></ans>
+		<ans content="海豚"></ans>
+		<ans content="海豹"></ans>
+		<ans content="海帶"></ans></que></item>
+		
+<item>
+	<que id="66" content="泡溫泉可以增加什麼值？" right="4">
+		<ans content="寶貝智慧值"></ans>
+		<ans content="寶貝體能值"></ans>
+		<ans content="寶貝人氣值"></ans>
+		<ans content="寶貝魅力值"></ans></que></item>
+		
+<item>
+	<que id="67" content="誰不是RK聯盟的一員？" right="4">
+		<ans content="庫比"></ans>
+		<ans content="比庫"></ans>
+		<ans content="其其"></ans>
+		<ans content="摩樂樂"></ans></que></item>
+		
+<item>
+	<que id="68" content="海底樂園裡的大浪能把遊客變成什麼？" right="1">
+		<ans content="螃蟹"></ans>
+		<ans content="大蝦"></ans>
+		<ans content="海螺"></ans>
+		<ans content="海龜"></ans></que></item>
+		
+<item>
+	<que id="69" content="溫泉管理員——帕帕囧我的相貌…？" right="1">
+		<ans content="英俊瀟灑"></ans>
+		<ans content="錯誤答案"></ans>
+		<ans content="錯誤答案"></ans>
+		<ans content="錯誤答案"></ans></que></item>
+		
+<item>
+	<que id="70" content="哪個冰泉隻準超拉使用？？" right="3">
+		<ans content="花瓣泉"></ans>
+		<ans content="氣泡泉"></ans>
+		<ans content="牛奶泉"></ans>
+		<ans content="冰片泉"></ans></que></item>
+		</root>
+
+
+
