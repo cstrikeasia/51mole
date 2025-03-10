@@ -1,0 +1,21 @@
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 0px;
+}
+
+.bg {
+  font-size: 14px;
+  background-color: #edebec;
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+img {
+  border: 0;
+}
